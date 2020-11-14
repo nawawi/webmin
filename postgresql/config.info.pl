@@ -1,10 +1,10 @@
 login=Login administracyjny,0
-pass=Has³o administracyjne,0
-psql=¦cie¿ka do polecenia <tt>psql</tt>,0
-plib=¦cie¿ka do bibliotek wspó³dzielonych PostgreSQLa,3,Nie wymagana
-basedb=Pocz±tkowa baza danych PostgreSQLa,0
-start_cmd=Polecenie uruchamiaj±ce PostgreSQLa,0
-stop_cmd=Polecenie zatrzymuj±ce PostgreSQLa,3,Zabicie procesu
-pid_file=¦cie¿ka z&nbsp;numerem PID procesu <tt>postmaster</tt>,0
-perpage=Ilo¶æ linii wy¶wietlanych na stronie,0
-host=Host PostgreSQLa&#44; z&nbsp;którym siê ³±czyæ,3,Localhost
+pass=HasÅ‚o administracyjne,0
+psql=ÅšcieÅ¼ka do polecenia <tt>psql</tt>,0
+plib=ÅšcieÅ¼ka do bibliotek wspÃ³Å‚dzielonych PostgreSQLa,3,Nie wymagana
+basedb=PoczÄ…tkowa baza danych PostgreSQLa,0
+start_cmd=Polecenie uruchamiajÄ…ce PostgreSQLa,0
+stop_cmd=Polecenie zatrzymujÄ…ce PostgreSQLa,3,Zabicie procesu
+pid_file=ÅšcieÅ¼ka z&nbsp;numerem PID procesu <tt>postmaster</tt>,0
+perpage=IloÅ›Ä‡ linii wyÅ›wietlanych na stronie,0
+host=Host PostgreSQLa&#44; z&nbsp;ktÃ³rym siÄ™ Å‚Ä…czyÄ‡,3,Localhost

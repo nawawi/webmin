@@ -1,1 +1,1 @@
-desc_pl=Dzia³aj±ce procesy
+desc_pl=DziaÂ³ajÂ±ce procesy

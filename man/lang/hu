@@ -1,21 +1,21 @@
 # webmin-0.81/man/lang/hu
 # Translated by <kissg@sztaki.hu>
 
-index_title=Programdokumentáció
-index_header=Keresés az op.rendszerhez adott dokumentációban
-index_for=Keresendõ szöveg
-index_exact=Ez egy dokumentum pontos címe?
-index_section=Kategória
+index_title=ProgramdokumentÃ¡ciÃ³
+index_header=KeresÃ©s az op.rendszerhez adott dokumentÃ¡ciÃ³ban
+index_for=KeresendÅ‘ szÃ¶veg
+index_exact=Ez egy dokumentum pontos cÃ­me?
+index_section=KategÃ³ria
 index_all=Mind
-index_reset=Törlés
-index_search=Keresés
-index_return=a kereséshez
+index_reset=TÃ¶rlÃ©s
+index_search=KeresÃ©s
+index_return=a keresÃ©shez
 
 search_efor=Nem adtad, hogy mit kell keresni
-search_euser=Nincs $1 azonosítójú felhasználó
-search_title=A keresés eredménye
+search_euser=Nincs $1 azonosÃ­tÃ³jÃº felhasznÃ¡lÃ³
+search_title=A keresÃ©s eredmÃ©nye
 search_noentry='$1' cimmel nincs dokumentum
 search_page=Dokumentum
-search_section=Kategória
-search_desc=Egysoros magyarázat
-search_none=A '$1' szöveg sehol nem fordul elõ
+search_section=KategÃ³ria
+search_desc=Egysoros magyarÃ¡zat
+search_none=A '$1' szÃ¶veg sehol nem fordul elÅ‘

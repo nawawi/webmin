@@ -1,2 +1,2 @@
 desc_pl=Logi Webmina
-longdesc_pl=Zobacz szczegó³owe dzienniki dzia³añ u¿ytkowników Webmina.
+longdesc_pl=Zobacz szczegÃ³Â³owe dzienniki dziaÂ³aÃ± uÂ¿ytkownikÃ³w Webmina.

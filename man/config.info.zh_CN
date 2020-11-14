@@ -1,7 +1,7 @@
-man_cmd=ÏÔÊ¾ manual page µÄÃüÁî,0
-man_cmd_sect=´ÓÄ³¶ÎÏÔÊ¾ manual page µÄÃüÁî,0
-search_cmd=ËÑË÷ pages µÄÃüÁî,0
-man_dir=Manual pages Ä¿Â¼,0
-list_cmd=ÏÔÊ¾ manual page ÎÄ¼şÂ·¾¶µÄÃüÁî,0
-list_cmd_sect=ÏÔÊ¾Ä³¶Î manual page ÎÄ¼şÂ·¾¶µÄÃüÁî,0
-man2html_path=man2html µÄÂ·¾¶,3,²»Ê¹ man2html
+man_cmd=æ˜¾ç¤º manual page çš„å‘½ä»¤,0
+man_cmd_sect=ä»æŸæ®µæ˜¾ç¤º manual page çš„å‘½ä»¤,0
+search_cmd=æœç´¢ pages çš„å‘½ä»¤,0
+man_dir=Manual pages ç›®å½•,0
+list_cmd=æ˜¾ç¤º manual page æ–‡ä»¶è·¯å¾„çš„å‘½ä»¤,0
+list_cmd_sect=æ˜¾ç¤ºæŸæ®µ manual page æ–‡ä»¶è·¯å¾„çš„å‘½ä»¤,0
+man2html_path=man2html çš„è·¯å¾„,3,ä¸ä½¿ man2html

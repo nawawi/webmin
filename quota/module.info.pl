@@ -1,1 +1,1 @@
-desc_pl=Przydzia³y (Quota) dysków
+desc_pl=PrzydziaÂ³y (Quota) dyskÃ³w

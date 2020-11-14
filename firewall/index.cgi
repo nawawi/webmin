@@ -459,7 +459,7 @@ else {
 	    foreach $s (@ipsets) {
 		local @cols;
 		local @h= split(/ /, $s->{'Header'});
-		# print matching pínet version
+		# print matching pÃ­net version
 		if ($h[1] =~ /inet${ipvx}$/) {
 			push(@cols, "&nbsp;&nbsp;$h[0] $h[1]", "&nbsp;&nbsp;<b>$s->{'Name'}</b>",
 					$s->{'Type'}, $s->{'Number'}, $h[5], $s->{'Size'});

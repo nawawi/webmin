@@ -1,71 +1,71 @@
-index_title=Configuração do Postfix
-index_epath=O comando de controle do Postfix $1 não está instalado em seu sistema. Cheque se a <a href='$2'>configuração do módulo</a> não está correta, ou se o Postfix não está instalado.
+index_title=ConfiguraÃ§Ã£o do Postfix
+index_epath=O comando de controle do Postfix $1 nÃ£o estÃ¡ instalado em seu sistema. Cheque se a <a href='$2'>configuraÃ§Ã£o do mÃ³dulo</a> nÃ£o estÃ¡ correta, ou se o Postfix nÃ£o estÃ¡ instalado.
 
 internal_error=Erro Interno
-index_econfig=O comando de configuração do Postfix $1 não existe. Cheque se a <a href='$2'>configuração do módulo</a> está incorreta.
+index_econfig=O comando de configuraÃ§Ã£o do Postfix $1 nÃ£o existe. Cheque se a <a href='$2'>configuraÃ§Ã£o do mÃ³dulo</a> estÃ¡ incorreta.
 index_stop=Parar o Postfix
 index_start=Iniciar o Postfix
-index_stopmsg=Clique neste botão para parar a execução do Servidor de Email Postfix. Isto irá parar a entrega de mensagens vindas de outros sistemas aos usuários locais, e impede que usuários usando este servidor como Servidor de Email enviem mensagens.
-index_startmsg=Clique neste botão para iniciar o Servidor de Email Postfix. Até que isto seja feito os usuários locais não estarão recebendo mensagens vindas de outros sistemas, e clientes não poderão usar este Servidor como sistema de Email.
-index_version=Postfix versão $1
-opts_err=Falhou salvando as configurações
+index_stopmsg=Clique neste botÃ£o para parar a execuÃ§Ã£o do Servidor de Email Postfix. Isto irÃ¡ parar a entrega de mensagens vindas de outros sistemas aos usuÃ¡rios locais, e impede que usuÃ¡rios usando este servidor como Servidor de Email enviem mensagens.
+index_startmsg=Clique neste botÃ£o para iniciar o Servidor de Email Postfix. AtÃ© que isto seja feito os usuÃ¡rios locais nÃ£o estarÃ£o recebendo mensagens vindas de outros sistemas, e clientes nÃ£o poderÃ£o usar este Servidor como sistema de Email.
+index_version=Postfix versÃ£o $1
+opts_err=Falhou salvando as configuraÃ§Ãµes
 
-check_error=Erro checando a configuração atual do Postfix. Por favor fixe a configuração manualmente.
+check_error=Erro checando a configuraÃ§Ã£o atual do Postfix. Por favor fixe a configuraÃ§Ã£o manualmente.
 
-address_rewriting_title=Reescrevendo e Mascarando endereços
-address_rewriting_ecannot=Você não tem permissão para editar Reescrevendo e Mascarando Endereços
+address_rewriting_title=Reescrevendo e Mascarando endereÃ§os
+address_rewriting_ecannot=VocÃª nÃ£o tem permissÃ£o para editar Reescrevendo e Mascarando EndereÃ§os
 aliases_title=Aliases de Email
-aliases_ecannot=Você não tem permissão para editar Aliases
-aliases_no_alias_file=Arquivos de Aliases não existe
+aliases_ecannot=VocÃª nÃ£o tem permissÃ£o para editar Aliases
+aliases_no_alias_file=Arquivos de Aliases nÃ£o existe
 aliases_failed_delete=Falha para deletar alias: $1
-aliases_cant_write=Não foi possível escrever no arquivo de alias
-aliases_cant_read=Não foi possível ler arquivo de alias
-aliasopts_title=Opções de Aliases
+aliases_cant_write=NÃ£o foi possÃ­vel escrever no arquivo de alias
+aliases_cant_read=NÃ£o foi possÃ­vel ler arquivo de alias
+aliasopts_title=OpÃ§Ãµes de Aliases
 aliases_internal_error=Aliases: erro interno
 edit_alias_title=Editando Propriedades de Alias
 alias_save=Salvar Alias
 alias_save_err=Falha para salvar alias
-alias_delete_create=Você quer deletar um alias que está criando atualmente !?
+alias_delete_create=VocÃª quer deletar um alias que estÃ¡ criando atualmente !?
 delete_alias=Deletar Alias
 aliases_click=Clique em qualquer alias para editar suas propriedades:
 
-general_title=Opções Gerais
-general_title_sensible=Opções Gerais mais usadas
-general_title_others=Outras Opções Gerais
-general_ecannot=Você não tem permissão para editar Opções Gerais
-what_is_it=O que é isto?
+general_title=OpÃ§Ãµes Gerais
+general_title_sensible=OpÃ§Ãµes Gerais mais usadas
+general_title_others=Outras OpÃ§Ãµes Gerais
+general_ecannot=VocÃª nÃ£o tem permissÃ£o para editar OpÃ§Ãµes Gerais
+what_is_it=O que Ã© isto?
 
-opts_default=Padrão
+opts_default=PadrÃ£o
 opts_none=None
-opts_relayhost=Saída de email via host
+opts_relayhost=SaÃ­da de email via host
 opts_direct=Enviar diretamente
-opts_myorigin=Que domínio usar na saída de email
-opts_myorigin_as_myhostname=Usar o nome da máquina
-opts_myorigin_as_mydomain=Usar o nome do domínio
-opts_mydestination=Receber email de que domínios
-opts_mydestination_default=Máquina Local
-opts_mydestination_domainwide=Domínio completo
+opts_myorigin=Que domÃ­nio usar na saÃ­da de email
+opts_myorigin_as_myhostname=Usar o nome da mÃ¡quina
+opts_myorigin_as_mydomain=Usar o nome do domÃ­nio
+opts_mydestination=Receber email de que domÃ­nios
+opts_mydestination_default=MÃ¡quina Local
+opts_mydestination_domainwide=DomÃ­nio completo
 opts_notify_classes=Que problemas reportar ao postmaster
-opts_queue_directory=Diretório da Fila de Correio
-opts_mail_owner=Usuário do Correio
-opts_default_privs=Direitos padrões do agente de entrega
+opts_queue_directory=DiretÃ³rio da Fila de Correio
+opts_mail_owner=UsuÃ¡rio do Correio
+opts_default_privs=Direitos padrÃµes do agente de entrega
 opts_inet_interfaces=Interfaces de rede para receber email
 opts_all_interfaces=Todas
 
-opts_local_recipient_maps=Rejeitar usuários locais desconhecidos
-opts_no=Não
+opts_local_recipient_maps=Rejeitar usuÃ¡rios locais desconhecidos
+opts_no=NÃ£o
 opts_save=Salvar e aplicar
 
 
 opts_allow_percent_hack=Reescrever "usuario%dominio" para "usuario@dominio"
 opts_append_at_myorigin=Reescrever "usuario" para "usuario@$mydomain"
 opts_append_dot_mydomain=Reescrever "usuario@host" para "usuario@host.$mydomain"
-opts_empty_address_recipient=Enviar email com destinatário vazio para...
-opt_empty_recip_default=Padrão
+opts_empty_address_recipient=Enviar email com destinatÃ¡rio vazio para...
+opt_empty_recip_default=PadrÃ£o
 opts_swap_bangpath=Reescrever "site!usuario" para "usuario@site"
-opts_masquerade_domains=Mascarando Endereço
-opts_masquerade_exceptions=Mascarando exceções
-index_return=Configuração do Postfix
+opts_masquerade_domains=Mascarando EndereÃ§o
+opts_masquerade_exceptions=Mascarando exceÃ§Ãµes
+index_return=ConfiguraÃ§Ã£o do Postfix
 
 
 opts_alias_maps=Database de Alias usado pelo agente de entrega local
@@ -76,10 +76,10 @@ aliases_name=Nome
 aliases_value=Alias para...
 
 new_alias=Criar um novo alias
-new_aliasmsg=Clique neste botão para criar um novo alias
+new_aliasmsg=Clique neste botÃ£o para criar um novo alias
 
 
-local_delivery_ecannot=Você não tem permissão para editar as opções de entrega local
+local_delivery_ecannot=VocÃª nÃ£o tem permissÃ£o para editar as opÃ§Ãµes de entrega local
 local_delivery_title=Entrega Local
 opts_local_transport=Nome do transporte para entrega local
 opts_local_transport_local=Local

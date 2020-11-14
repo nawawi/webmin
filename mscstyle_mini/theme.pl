@@ -226,9 +226,9 @@ print "</td></tr></table>";
     if (!$_[5]) {
 	    # Show page title in tab
 	    local $title = $_[0];
-	    $title =~ s/&auml;/ä/g;
-	    $title =~ s/&ouml;/ö/g;
-	    $title =~ s/&uuml;/ü/g;
+	    $title =~ s/&auml;/Ã¤/g;
+	    $title =~ s/&ouml;/Ã¶/g;
+	    $title =~ s/&uuml;/Ã¼/g;
 	    $title =~ s/&nbsp;/ /g;
 
 #	    print "<p><table border=0 cellpadding=0 cellspacing=0 width=95% align=center><tr><td><table border=0 cellpadding=0 cellspacing=0 height=20><tr>\n";

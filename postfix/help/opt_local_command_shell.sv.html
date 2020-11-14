@@ -1,21 +1,21 @@
-<header>Skal för sändning till externt kommando</header>
+<header>Skal fÃ¶r sÃ¤ndning till externt kommando</header>
 
 <center><tt>local_command_shell</tt></center>
 <hr>
 
-Denna parameter styr vilket skal som används vid sändning till externa
-kommandon. Standard är att externa kommandon körs direkt; kommandona skickas
-till <tt>/bin/sh</tt> endast då de innehåller metatecken eller inbyggda
+Denna parameter styr vilket skal som anvÃ¤nds vid sÃ¤ndning till externa
+kommandon. Standard Ã¤r att externa kommandon kÃ¶rs direkt; kommandona skickas
+till <tt>/bin/sh</tt> endast dÃ¥ de innehÃ¥ller metatecken eller inbyggda
 skalkommandon.
 
-<p>Ange ett annat skal om du vill ha mer kontroll över vilka program som
-kan köras exempelvis från <tt>.forward</tt>-filer.
+<p>Ange ett annat skal om du vill ha mer kontroll Ã¶ver vilka program som
+kan kÃ¶ras exempelvis frÃ¥n <tt>.forward</tt>-filer.
 
-<p>De flesta använder &quot;sendmail's restricted shell&quot; <tt>smrsh</tt>
+<p>De flesta anvÃ¤nder &quot;sendmail's restricted shell&quot; <tt>smrsh</tt>
 (<tt>smrsh</tt> finns i senare sendmail-distributioner).
 
-<p>Obs! Om ett skal anges kommer det att anropas även om kommandot inte innehåller
-några inbyggda skalkommandon eller metatecken.
+<p>Obs! Om ett skal anges kommer det att anropas Ã¤ven om kommandot inte innehÃ¥ller
+nÃ¥gra inbyggda skalkommandon eller metatecken.
 
 <p>Exempel: <tt>/some/where/smrsh -c</tt>
 

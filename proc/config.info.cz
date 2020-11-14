@@ -1,6 +1,6 @@
-line1=Mo¾nosti konfigurace,11
-default_mode=Vıchozí styl seznamu procesù,4,last-Poslední zmìna,tree-Strom peocesù,user-Poøadí podle u¾ivatele,size-Poøadí podle velikosti,cpu-Poøadí v CPU,search-Vyhledávací formuláø,run-Spou¹tìcí formuláø
-cut_length=Znaky usekávající pøíkazy na,3,Neomezeno
-trace_java=Zobrazit trasování systémovıch volání vyu¾ívající,1,1-Java applet,0-Text
-line2=Konfigurace systému,11
-ps_style=Styl vıstupu PS pøíkazu,1,sysv-SYSV,linux-Linux,hpux-HPUX,freebsd-FreeBSD,macos-MacOS,openbsd-OpenBSD
+line1=MoÂ¾nosti konfigurace,11
+default_mode=VÃ½chozÃ­ styl seznamu procesÃ¹,4,last-PoslednÃ­ zmÃ¬na,tree-Strom peocesÃ¹,user-PoÃ¸adÃ­ podle uÂ¾ivatele,size-PoÃ¸adÃ­ podle velikosti,cpu-PoÃ¸adÃ­ v CPU,search-VyhledÃ¡vacÃ­ formulÃ¡Ã¸,run-SpouÂ¹tÃ¬cÃ­ formulÃ¡Ã¸
+cut_length=Znaky usekÃ¡vajÃ­cÃ­ pÃ¸Ã­kazy na,3,Neomezeno
+trace_java=Zobrazit trasovÃ¡nÃ­ systÃ©movÃ½ch volÃ¡nÃ­ vyuÂ¾Ã­vajÃ­cÃ­,1,1-Java applet,0-Text
+line2=Konfigurace systÃ©mu,11
+ps_style=Styl vÃ½stupu PS pÃ¸Ã­kazu,1,sysv-SYSV,linux-Linux,hpux-HPUX,freebsd-FreeBSD,macos-MacOS,openbsd-OpenBSD

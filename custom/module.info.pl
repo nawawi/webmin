@@ -1,2 +1,2 @@
-desc_pl=W³asne polecenia
-longdesc_pl=Twórz przyciski do wykonywania czêsto u¿ywanych poleceñ lub edytowania plików w twoim systemie.
+desc_pl=WÂ³asne polecenia
+longdesc_pl=TwÃ³rz przyciski do wykonywania czÃªsto uÂ¿ywanych poleceÃ± lub edytowania plikÃ³w w twoim systemie.

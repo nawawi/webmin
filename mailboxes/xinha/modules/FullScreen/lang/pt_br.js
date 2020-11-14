@@ -1,4 +1,4 @@
-﻿// I18N constants
+ï»¿// I18N constants
 //
 // LANG: "pt_br", ENCODING: UTF-8
 // Portuguese Brazilian Translation
@@ -8,7 +8,7 @@
 // Site: http://www.mpg.com.br
 //
 // Last revision: 06 september 2007
-// Please don´t remove this information
+// Please donÂ´t remove this information
 // If you modify any source, please insert a comment with your name and e-mail
 //
 // Distributed under the same terms as HTMLArea itself.

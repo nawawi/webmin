@@ -1,24 +1,24 @@
 <header>Unix-processer</header>
 
-En process är enkelt uttryckt ett program som körs på systemet. Webbrowsern,
-fönsterhanteraren, terminalfönstret och X-servern är processer som man kan
-påverka direkt. Andra processer kör i bakgrunden, exempelvis webservrar
-och andra systemprogram. Varje gång man skriver in ett kommando, t ex
-<tt>ls</tt> ellr <tt>pwd</tt>, skapas en process (fast dessa processer är
-väldigt kortlivade).
+En process Ã¤r enkelt uttryckt ett program som kÃ¶rs pÃ¥ systemet. Webbrowsern,
+fÃ¶nsterhanteraren, terminalfÃ¶nstret och X-servern Ã¤r processer som man kan
+pÃ¥verka direkt. Andra processer kÃ¶r i bakgrunden, exempelvis webservrar
+och andra systemprogram. Varje gÃ¥ng man skriver in ett kommando, t ex
+<tt>ls</tt> ellr <tt>pwd</tt>, skapas en process (fast dessa processer Ã¤r
+vÃ¤ldigt kortlivade).
 
 <p>Varje process har ett unikt ID som kallas process-ID eller PID. Processer
-som kör samtidigt har olika ID, men med tiden återanvänds PID-nummer.
+som kÃ¶r samtidigt har olika ID, men med tiden Ã¥teranvÃ¤nds PID-nummer.
 
-<p>Bortsett från initieringsprocessen (vanligen <tt>init</tt>) har varje
-process en föräldraprocess som skapade den. Om man t ex kör <tt>vi</tt>
-från skalprompten är föräldraprocessen till <tt>vi</tt> skalet. En process
-kan ha ett obegränsat antal underprocesser men endast en förälder.
+<p>Bortsett frÃ¥n initieringsprocessen (vanligen <tt>init</tt>) har varje
+process en fÃ¶rÃ¤ldraprocess som skapade den. Om man t ex kÃ¶r <tt>vi</tt>
+frÃ¥n skalprompten Ã¤r fÃ¶rÃ¤ldraprocessen till <tt>vi</tt> skalet. En process
+kan ha ett obegrÃ¤nsat antal underprocesser men endast en fÃ¶rÃ¤lder.
 
-<p>Varje process körs med någon användares och grupps rättigheter, som
-gäller då processen försöker komma åt filer och kataloger. Användare och
-processer får bara slå ihjäl processer som de själva äger, utom <tt>root</tt>,
-som får slå ihjäl allt.
+<p>Varje process kÃ¶rs med nÃ¥gon anvÃ¤ndares och grupps rÃ¤ttigheter, som
+gÃ¤ller dÃ¥ processen fÃ¶rsÃ¶ker komma Ã¥t filer och kataloger. AnvÃ¤ndare och
+processer fÃ¥r bara slÃ¥ ihjÃ¤l processer som de sjÃ¤lva Ã¤ger, utom <tt>root</tt>,
+som fÃ¥r slÃ¥ ihjÃ¤l allt.
 
 <hr>
 

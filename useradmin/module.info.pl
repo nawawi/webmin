@@ -1,2 +1,2 @@
-desc_pl=U¿ytkownicy i&nbsp;grupy
-longdesc_pl=Twórz i edytuj u¿ytkowników i grupy Unix z plików /etc/passwd i /etc/group.
+desc_pl=UÂ¿ytkownicy i&nbsp;grupy
+longdesc_pl=TwÃ³rz i edytuj uÂ¿ytkownikÃ³w i grupy Unix z plikÃ³w /etc/passwd i /etc/group.

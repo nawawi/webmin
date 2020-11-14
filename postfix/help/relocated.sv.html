@@ -1,31 +1,31 @@
 <header>Omflyttningsuppslagning</header>
 
-"Har flyttat"-filen innehåller den information som används i studsmeddelanden
+"Har flyttat"-filen innehÃ¥ller den information som anvÃ¤nds i studsmeddelanden
 av typen &quot;user has moved to new_location&quot;.
 
-<p>Uppslagningarna är kastoberoende, dvs små och stora bokstäver behandlas
+<p>Uppslagningarna Ã¤r kastoberoende, dvs smÃ¥ och stora bokstÃ¤ver behandlas
 lika.
 
-<p>Fältet &quot;Hänvisar till ...&quot; anger kontaktinformation, t ex en
-e-postadress, eller kanske en gatuadress eller ett telefonnummer. Det är
-något av följande:
+<p>FÃ¤ltet &quot;HÃ¤nvisar till ...&quot; anger kontaktinformation, t ex en
+e-postadress, eller kanske en gatuadress eller ett telefonnummer. Det Ã¤r
+nÃ¥got av fÃ¶ljande:
 
 <ul>
 <li><tt>user@domain</tt>: Matchar <tt>user@domain</tt>. Denna form har
-högst prioritet.
+hÃ¶gst prioritet.
 
-<li><tt>user</tt>: Matchar <tt>användare@site</tt> när site är
+<li><tt>user</tt>: Matchar <tt>anvÃ¤ndare@site</tt> nÃ¤r site Ã¤r
 <tt>$myorigin</tt>, finns i <tt>$mydestination</tt> eller i
 <tt>$inet_interfaces</tt>.
 
-<li><tt>@domain</tt>: Matchar alla adresser under domänen. Denna form har
-lägst prioritet.
+<li><tt>@domain</tt>: Matchar alla adresser under domÃ¤nen. Denna form har
+lÃ¤gst prioritet.
 </ul>
 
-<p>ADRESSEXPANSION: Om adressen inte går att slå upp i tabellen och adressens
-lokala del innehåller en mottagarbegränsare (exempelvis
-<tt>användare+foo@domän</tt>), kommer sökningen
-att upprepas för den icke expanderade adressen (exempelvis
-<tt>användare@domän</tt>).
+<p>ADRESSEXPANSION: Om adressen inte gÃ¥r att slÃ¥ upp i tabellen och adressens
+lokala del innehÃ¥ller en mottagarbegrÃ¤nsare (exempelvis
+<tt>anvÃ¤ndare+foo@domÃ¤n</tt>), kommer sÃ¶kningen
+att upprepas fÃ¶r den icke expanderade adressen (exempelvis
+<tt>anvÃ¤ndare@domÃ¤n</tt>).
 
 <hr>

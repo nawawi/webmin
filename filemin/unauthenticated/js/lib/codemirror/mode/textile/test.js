@@ -247,7 +247,7 @@
       'p. [strong *foo ][strong&em _bar_][strong *]');
 
   MT('paragraphWithLanguage',
-      'p[attribute [[fr]]]. Parlez-vous français?');
+      'p[attribute [[fr]]]. Parlez-vous franÃ§ais?');
 
   MT('paragraphLeftAlign',
       'p[attribute <]. Left');

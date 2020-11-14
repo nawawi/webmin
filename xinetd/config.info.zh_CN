@@ -1,4 +1,4 @@
-xinetd_conf=Xinetd ÅäÖÃÎÄ¼ş,0
-protocols_file=ÍøÂçĞ­ÒéÎÄ¼ş,0
-pid_file=Ö¸Ïò Xinetd PID µÄÎÄ¼ş,0
-start_cmd=Æô¶¯ Xinetd µÄÃüÁî,0
+xinetd_conf=Xinetd é…ç½®æ–‡ä»¶,0
+protocols_file=ç½‘ç»œåè®®æ–‡ä»¶,0
+pid_file=æŒ‡å‘ Xinetd PID çš„æ–‡ä»¶,0
+start_cmd=å¯åŠ¨ Xinetd çš„å‘½ä»¤,0

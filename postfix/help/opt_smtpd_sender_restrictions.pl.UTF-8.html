@@ -1,49 +1,49 @@
-<header>Ograniczenia adresów nadawców</header>
+<header>Ograniczenia adresÃ³w nadawcÃ³w</header>
 
 <center><tt>smtpd_sender_restrictions</tt></center>
 <hr>
 
-Ten parametr określa fakultatywne ograniczenia dla adresów nadawców, które
-klient SMTP może przesłać w poleceniach MAIL FROM. <p>
+Ten parametr okreÅla fakultatywne ograniczenia dla adresÃ³w nadawcÃ³w, ktÃ³re
+klient SMTP moÅ¼e przesÅaÄ w poleceniach MAIL FROM. <p>
 
-Domyślne jest zezwalanie na dowolny adres nadawcy. Możliwe są następujące
+DomyÅlne jest zezwalanie na dowolny adres nadawcy. MoÅ¼liwe sÄ nastÄpujÄce
 ograniczenia:
 
 <ul>
-<li><tt>permit_mynetworks:</tt> zezwalać, gdy adres klienta pasuje do
+<li><tt>permit_mynetworks:</tt> zezwalaÄ, gdy adres klienta pasuje do
         <a href=opt_mynetworks><tt>$mynetworks</tt></a>.
-<li><tt>reject_unknown_client:</tt> odrzucać żądanie, gdy nazwa hosta
+<li><tt>reject_unknown_client:</tt> odrzucaÄ Å¼Ädanie, gdy nazwa hosta
         klienta jest nieznana.
-<li><tt>reject_maps_rbl:</tt> odrzucać, gdy klient jest wymieniony wśród
+<li><tt>reject_maps_rbl:</tt> odrzucaÄ, gdy klient jest wymieniony wÅrÃ³d
         <a href=opt_maps_rbl_domains><tt>$maps_rbl_domains</tt></a>.
-<li><tt>reject_invalid_hostname:</tt> odrzucać nazwę hosta HELO
-        o&nbsp;nieprawidłowej składni.
-<li><tt>reject_unknown_hostname:</tt> odrzucać nazwę hosta HELO nie
-        posiadającą rekordu A ani MX w DNS-ie.
-<li><tt>reject_unknown_sender_domain:</tt> odrzucać domenę nadawcy nie
-        posiadającą rekordu A ani MX.
-<li><tt>check_sender_access maptype:mapname:</tt> poszukiwać adresu nadawcy,
-        domeny nadrzędnej lub czescilokalnej@. Odrzucać, gdy wynikiem jest
-        REJECT lub &quot;[45]xx tekst&quot;. Zezwalać w&nbsp;pozostałych
+<li><tt>reject_invalid_hostname:</tt> odrzucaÄ nazwÄ hosta HELO
+        o&nbsp;nieprawidÅowej skÅadni.
+<li><tt>reject_unknown_hostname:</tt> odrzucaÄ nazwÄ hosta HELO nie
+        posiadajÄcÄ rekordu A ani MX w DNS-ie.
+<li><tt>reject_unknown_sender_domain:</tt> odrzucaÄ domenÄ nadawcy nie
+        posiadajÄcÄ rekordu A ani MX.
+<li><tt>check_sender_access maptype:mapname:</tt> poszukiwaÄ adresu nadawcy,
+        domeny nadrzÄdnej lub czescilokalnej@. OdrzucaÄ, gdy wynikiem jest
+        REJECT lub &quot;[45]xx tekst&quot;. ZezwalaÄ w&nbsp;pozostaÅych
         przypadkach.
 <li><tt>check_client_access maptype:mapname:</tt> patrz
         <a href=opt_smtpd_client_restrictions>smtpd_client_restrictions</a>.
 <li><tt>check_helo_access maptype:mapname:</tt> patrz
         <a href=opt_smtpd_helo_restrictions>smtpd_helo_restrictions</a>.
-<li><tt>reject_non_fqdn_hostname:</tt> odrzucać nazwę hosta HELO, która
+<li><tt>reject_non_fqdn_hostname:</tt> odrzucaÄ nazwÄ hosta HELO, ktÃ³ra
         nie jest postaci FQDN.
-<li><tt>reject_non_fqdn_sender:</tt> odrzucać adres nadawcy, który nie jest
+<li><tt>reject_non_fqdn_sender:</tt> odrzucaÄ adres nadawcy, ktÃ³ry nie jest
         postaci FQDN.
-<li><tt>reject:</tt> odrzucać połączenie. Umieszczaj to na końcu
+<li><tt>reject:</tt> odrzucaÄ poÅÄczenie. Umieszczaj to na koÅcu
         ograniczenia.
-<li><tt>permit:</tt> zezwalać na połączenie. Umieszczaj to na końcu
+<li><tt>permit:</tt> zezwalaÄ na poÅÄczenie. Umieszczaj to na koÅcu
         ograniczenia.
 </ul>
 
-Ograniczenia są stosowane w&nbsp;takiej kolejności, w&nbsp;jakiej je podano;
-wygrywa pierwsze pasujące ograniczenie. <p>
+Ograniczenia sÄ stosowane w&nbsp;takiej kolejnoÅci, w&nbsp;jakiej je podano;
+wygrywa pierwsze pasujÄce ograniczenie. <p>
 
-Podaj liste ograniczeń rozdzieloną przecinakami i/lub białymi znakami.
-Kontynuuj długie linie rozpoczynając następną od białego znaku. <p>
+Podaj liste ograniczeÅ rozdzielonÄ przecinakami i/lub biaÅymi znakami.
+Kontynuuj dÅugie linie rozpoczynajÄc nastÄpnÄ od biaÅego znaku. <p>
 
 <hr>

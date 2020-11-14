@@ -1,11 +1,11 @@
-line2=Configuration du système,11
-cfengine_dir=Chemin d'accès au répertoire des fichiers de configuration,0
-cfengine=Chemin d'accès au programme cfenginem,0
-cfengine_conf=Chemin d'accès au fichier cfengine.conf,3,Automatique
-cfrun=Chemin d'accès au programme cfrun,0
-cfrun_hosts=Chemin d'accès au fichier d'options du serveur,3,Automatique
-cfd=Chemin d'accès au programme cfd,0
-cfd_conf=Chemin d'accès au fichier cfd.conf,3,Automatique
-start_cmd=Commande pour démarrer cfd,3,Juste exécuter le démon
-stop_cmd=Commande pour arrêter cfd,3,Juste tuer le processus
+line2=Configuration du systÃ¨me,11
+cfengine_dir=Chemin d'accÃ¨s au rÃ©pertoire des fichiers de configuration,0
+cfengine=Chemin d'accÃ¨s au programme cfenginem,0
+cfengine_conf=Chemin d'accÃ¨s au fichier cfengine.conf,3,Automatique
+cfrun=Chemin d'accÃ¨s au programme cfrun,0
+cfrun_hosts=Chemin d'accÃ¨s au fichier d'options du serveur,3,Automatique
+cfd=Chemin d'accÃ¨s au programme cfd,0
+cfd_conf=Chemin d'accÃ¨s au fichier cfd.conf,3,Automatique
+start_cmd=Commande pour dÃ©marrer cfd,3,Juste exÃ©cuter le dÃ©mon
+stop_cmd=Commande pour arrÃªter cfd,3,Juste tuer le processus
 

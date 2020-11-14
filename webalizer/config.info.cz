@@ -1,4 +1,4 @@
-webalizer=Cesta k pøíkazu webalizeru,0
-webalizer_conf=Cesta ke konfiguraènímu souboru webalizeru,0
-alt_conf=Vzor webalizer konfiguraèního souboru,3,Nic
+webalizer=Cesta k pÃ¸Ã­kazu webalizeru,0
+webalizer_conf=Cesta ke konfiguraÃ¨nÃ­mu souboru webalizeru,0
+alt_conf=Vzor webalizer konfiguraÃ¨nÃ­ho souboru,3,Nic
 auto=Automaticky zahrnout log soubory z,2,apache-Apache,squid-Squid

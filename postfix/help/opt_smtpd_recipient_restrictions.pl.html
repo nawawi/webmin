@@ -1,102 +1,102 @@
-<header>Ograniczenia adresów odbiorców</header>
+<header>Ograniczenia adresÃ³w odbiorcÃ³w</header>
 
 <center><tt>smtpd_recipient_restrictions</tt></center>
 <hr>
 
-Ten parametr okre¶la ograniczenia dla adresów odbiorców, które klient SMTP
-mo¿e przes³aæ w&nbsp;poleceniach RCPT TO. <p>
+Ten parametr okreÂ¶la ograniczenia dla adresÃ³w odbiorcÃ³w, ktÃ³re klient SMTP
+moÂ¿e przesÂ³aÃ¦ w&nbsp;poleceniach RCPT TO. <p>
 
 <include relay_rules>
 
-Tych miejsc przeznaczenia nie trzeba wymieniaæ w¶ród
+Tych miejsc przeznaczenia nie trzeba wymieniaÃ¦ wÂ¶rÃ³d
 <a href=opt_relay_domains><tt>$relay_domains</tt></a>. <p>
 
-Mo¿liwe s± nastêpuj±ce ograniczenia (* jest czê¶ci± ustawienia domy¶lnego):
+MoÂ¿liwe sÂ± nastÃªpujÂ±ce ograniczenia (* jest czÃªÂ¶ciÂ± ustawienia domyÂ¶lnego):
 
 <ul>
-<li><tt>*permit_mynetworks:</tt> zezwalaæ, gdy adres klienta pasuje do
+<li><tt>*permit_mynetworks:</tt> zezwalaÃ¦, gdy adres klienta pasuje do
         <a href=opt_mynetworks><tt>$mynetworks</tt></a>.
-<li><tt>reject_unknown_client:</tt> odrzucaæ ¿±danie, gdy nazwa hosta
+<li><tt>reject_unknown_client:</tt> odrzucaÃ¦ Â¿Â±danie, gdy nazwa hosta
         klienta jest nieznana.
-<li><tt>reject_maps_rbl:</tt> odrzucaæ, gdy klient jest wymieniony w¶ród
+<li><tt>reject_maps_rbl:</tt> odrzucaÃ¦, gdy klient jest wymieniony wÂ¶rÃ³d
         <a href=opt_maps_rbl_domains><tt>$maps_rbl_domains</tt></a>.
-<li><tt>reject_invalid_hostname:</tt> odrzucaæ nazwê hosta HELO
-        o&nbsp;nieprawid³owej sk³adni.
-<li><tt>reject_unknown_hostname:</tt> odrzucaæ nazwê hosta HELO nie
-        posiadaj±c± rekordu A ani MX w DNS-ie.
-<li><tt>reject_unknown_sender_domain:</tt> odrzucaæ domenê nadawcy nie
-        posiadaj±c± rekordu A ani MX.
-<li><tt>*check_relay_domains:</tt> zezwalaæ na wysy³anie jedynie poczty:
+<li><tt>reject_invalid_hostname:</tt> odrzucaÃ¦ nazwÃª hosta HELO
+        o&nbsp;nieprawidÂ³owej skÂ³adni.
+<li><tt>reject_unknown_hostname:</tt> odrzucaÃ¦ nazwÃª hosta HELO nie
+        posiadajÂ±cÂ± rekordu A ani MX w DNS-ie.
+<li><tt>reject_unknown_sender_domain:</tt> odrzucaÃ¦ domenÃª nadawcy nie
+        posiadajÂ±cÂ± rekordu A ani MX.
+<li><tt>*check_relay_domains:</tt> zezwalaÃ¦ na wysyÂ³anie jedynie poczty:
 <ul>
-<li> do miejsc przeznaczenia pasuj±cych do
+<li> do miejsc przeznaczenia pasujÂ±cych do
 	<a href=opt_inet_interfaces><tt>$inet_interfaces</tt></a>,
 	<a href=opt_mydestination><tt>$mydestination</tt></a>,
 	lub <a href=opt_virtual_maps><tt>$virtual_maps</tt></a>,
-<li> od zaufanych klientów pasuj±cych do
+<li> od zaufanych klientÃ³w pasujÂ±cych do
 	<a href=opt_relay_domains><tt>$relay_domains</tt></a> lub ich
 	poddomen,
-<li> od niezaufanych klientów do miejsc przeznaczenia pasuj±cych do
+<li> od niezaufanych klientÃ³w do miejsc przeznaczenia pasujÂ±cych do
 	<a href=opt_relay_domains><tt>$relay_domains</tt></a> lub ich
-	poddomen (oprócz adresów o&nbsp;okre¶lonym przez nadawcê routingu).
+	poddomen (oprÃ³cz adresÃ³w o&nbsp;okreÂ¶lonym przez nadawcÃª routingu).
 </ul>
-	Odrzucaæ wszystko inne.
-<li><tt>permit_auth_destination:</tt> zezwalaæ na wysy³anie poczty:
+	OdrzucaÃ¦ wszystko inne.
+<li><tt>permit_auth_destination:</tt> zezwalaÃ¦ na wysyÂ³anie poczty:
 <ul>
-<li> do miejsc przeznaczenia pasuj±cych do
+<li> do miejsc przeznaczenia pasujÂ±cych do
 	<a href=opt_inet_interfaces><tt>$inet_interfaces</tt></a>,
 	<a href=opt_mydestination><tt>$mydestination</tt></a>,
 	lub <a href=opt_virtual_maps><tt>$virtual_maps</tt></a>,
-<li> do miejsc przeznaczenia pasuj±cych do
+<li> do miejsc przeznaczenia pasujÂ±cych do
 	<a href=opt_relay_domains><tt>$relay_domains</tt></a> lub ich
-	poddomen, oprócz adresów o&nbsp;okre¶lonym przez nadawcê routingu.
+	poddomen, oprÃ³cz adresÃ³w o&nbsp;okreÂ¶lonym przez nadawcÃª routingu.
 </ul>
-<li><tt>reject_unauth_destination:</tt> odrzucaæ pocztê, która nie jest
-       wysy³ana
+<li><tt>reject_unauth_destination:</tt> odrzucaÃ¦ pocztÃª, ktÃ³ra nie jest
+       wysyÂ³ana
 <ul>
-<li> do miejsc przeznaczenia pasuj±cych do
+<li> do miejsc przeznaczenia pasujÂ±cych do
 	<a href=opt_inet_interfaces><tt>$inet_interfaces</tt></a>,
 	<a href=opt_mydestination><tt>$mydestination</tt></a>,
 	lub <a href=opt_virtual_maps><tt>$virtual_maps</tt></a>,
-<li> do miejsc przeznaczenia pasuj±cych do
+<li> do miejsc przeznaczenia pasujÂ±cych do
 	<a href=opt_relay_domains><tt>$relay_domains</tt></a> lub ich
-	poddomen, oprócz adresów o&nbsp;okre¶lonym przez nadawcê routingu.
+	poddomen, oprÃ³cz adresÃ³w o&nbsp;okreÂ¶lonym przez nadawcÃª routingu.
 </ul>
-<li><tt>reject_unauth_pipelining:</tt> odrzucaæ pocztê od nieprawid³owo
-        przekazuj±cych pocztê ¼róde³ spamu.
-<li><tt>permit_mx_backup:</tt> przyjmowaæ pocztê dla domen, które
-        wymieniaj± mnie jako host MX.
-<li><tt>reject_unknown_recipient_domain:</tt> odrzucaæ domeny nie
-        posiadaj±ce rekordu A ani MX.
-<li><tt>check_recipient_access maptype:mapname:</tt> poszukiwaæ adresu
-        odbiorcy, domeny nadrzêdnej lub czescilokalnej@. Odrzucaæ, gdy
-        wynikiem jest REJECT lub &quot;[45]xx tekst&quot;. Zezwalaæ
-        w&nbsp;pozosta³ych przypadkach.
+<li><tt>reject_unauth_pipelining:</tt> odrzucaÃ¦ pocztÃª od nieprawidÂ³owo
+        przekazujÂ±cych pocztÃª Â¼rÃ³deÂ³ spamu.
+<li><tt>permit_mx_backup:</tt> przyjmowaÃ¦ pocztÃª dla domen, ktÃ³re
+        wymieniajÂ± mnie jako host MX.
+<li><tt>reject_unknown_recipient_domain:</tt> odrzucaÃ¦ domeny nie
+        posiadajÂ±ce rekordu A ani MX.
+<li><tt>check_recipient_access maptype:mapname:</tt> poszukiwaÃ¦ adresu
+        odbiorcy, domeny nadrzÃªdnej lub czescilokalnej@. OdrzucaÃ¦, gdy
+        wynikiem jest REJECT lub &quot;[45]xx tekst&quot;. ZezwalaÃ¦
+        w&nbsp;pozostaÂ³ych przypadkach.
 <li><tt>check_client_access maptype:mapname:</tt> patrz
         <a href=opt_smtpd_client_restrictions>smtpd_client_restrictions</a>.
 <li><tt>check_helo_access maptype:mapname:</tt> patrz
         <a href=opt_smtpd_helo_restrictions>smtpd_helo_restrictions</a>.
 <li><tt>check_sender_access maptype:mapname:</tt> patrz
         <a href=opt_smtpd_sender_restrictions>smtpd_sender_restrictions</a>.
-<li><tt>reject_non_fqdn_hostname:</tt> odrzucaæ nazwê hosta HELO, która
+<li><tt>reject_non_fqdn_hostname:</tt> odrzucaÃ¦ nazwÃª hosta HELO, ktÃ³ra
         nie jest postaci FQDN.
-<li><tt>reject_non_fqdn_sender:</tt> odrzucaæ adres nadawcy, który nie jest
+<li><tt>reject_non_fqdn_sender:</tt> odrzucaÃ¦ adres nadawcy, ktÃ³ry nie jest
         postaci FQDN.
-<li><tt>reject_non_fqdn_recipient:</tt> odrzucaæ adres odbiorcy, który nie
+<li><tt>reject_non_fqdn_recipient:</tt> odrzucaÃ¦ adres odbiorcy, ktÃ³ry nie
         jest postaci FQDN.
-<li><tt>reject:</tt> odrzucaæ po³±czenie. Umieszczaj to na koñcu
+<li><tt>reject:</tt> odrzucaÃ¦ poÂ³Â±czenie. Umieszczaj to na koÃ±cu
         ograniczenia.
-<li><tt>permit:</tt> zezwalaæ na po³±czenie. Umieszczaj to na koñcu
+<li><tt>permit:</tt> zezwalaÃ¦ na poÂ³Â±czenie. Umieszczaj to na koÃ±cu
         ograniczenia.
 </ul>
 
-Ograniczenia s± stosowane w&nbsp;takiej kolejno¶ci, w&nbsp;jakiej je podano;
-wygrywa pierwsze pasuj±ce ograniczenie. <p>
+Ograniczenia sÂ± stosowane w&nbsp;takiej kolejnoÂ¶ci, w&nbsp;jakiej je podano;
+wygrywa pierwsze pasujÂ±ce ograniczenie. <p>
 
-Podaj liste ograniczeñ rozdzielon± przecinakami i/lub bia³ymi znakami.
-Kontynuuj d³ugie linie rozpoczynaj±c nastêpn± od bia³ego znaku. <p>
+Podaj liste ograniczeÃ± rozdzielonÂ± przecinakami i/lub biaÂ³ymi znakami.
+Kontynuuj dÂ³ugie linie rozpoczynajÂ±c nastÃªpnÂ± od biaÂ³ego znaku. <p>
 
-UWAGA: MUSISZ PODAÆ CO MAJMNIEJ JEDNO Z PONI¯SZYCH OGRANICZEÑ.
-W&nbsp;PRZYCIWNYM PRZYPADKU POSTFIX ODMÓWI ODBIERANIA POCZTY:
+UWAGA: MUSISZ PODAÃ† CO MAJMNIEJ JEDNO Z PONIÂ¯SZYCH OGRANICZEÃ‘.
+W&nbsp;PRZYCIWNYM PRZYPADKU POSTFIX ODMÃ“WI ODBIERANIA POCZTY:
 <br>
 	<tt>reject, check_relay_domains, reject_unauth_destination</tt>
 

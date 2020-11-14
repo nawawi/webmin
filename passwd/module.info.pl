@@ -1,1 +1,1 @@
-desc_pl=Zmiany hase³
+desc_pl=Zmiany haseÂ³

@@ -1,50 +1,50 @@
 <header>Monitorowanie pasma</header>
 
-Moduł ten może być użyty do utworzenia prostych raportów na temat użycia pasma
-sieciowego według portów, hosta, protokołu i czasu dla ruchu wysłanego z lub
-przechodzącego przez twój system. Jest to użyteczne dla pojedynczych hostów i 
-bramek sieciowych (a zwłaszcza NAT). <p>
+ModuÅ ten moÅ¼e byÄ uÅ¼yty do utworzenia prostych raportÃ³w na temat uÅ¼ycia pasma
+sieciowego wedÅug portÃ³w, hosta, protokoÅu i czasu dla ruchu wysÅanego z lub
+przechodzÄcego przez twÃ³j system. Jest to uÅ¼yteczne dla pojedynczych hostÃ³w i 
+bramek sieciowych (a zwÅaszcza NAT). <p>
 
-Aby używać tego modułu należy ustawić kilka reguł firewalla i wpis logu
-systemowego do przechwytywania ruchu wysyłanego i otrzymywanego przez system.
-Przy ustawianiu musisz wybrać zewnętrzny interfejs sieciowy, na którym
-ruch będzie monitorowany. Zazwyczaj jest to interfejs ppp używany dla połączeń
-wdzwanianych lub połączenia ADSL lub też interfejs ethernetowy podłączony
+Aby uÅ¼ywaÄ tego moduÅu naleÅ¼y ustawiÄ kilka reguÅ firewalla i wpis logu
+systemowego do przechwytywania ruchu wysyÅanego i otrzymywanego przez system.
+Przy ustawianiu musisz wybraÄ zewnÄtrzny interfejs sieciowy, na ktÃ³rym
+ruch bÄdzie monitorowany. Zazwyczaj jest to interfejs ppp uÅ¼ywany dla poÅÄczeÅ
+wdzwanianych lub poÅÄczenia ADSL lub teÅ¼ interfejs ethernetowy podÅÄczony
 do modemu kablowego lub rutera. <p>
 
-Gdy przechwycona zostanie przynajmniej godzina ruchu, wówczas moduł wygeneruje raporty podsumowujące ruch według jednej z następujących kategorii:
+Gdy przechwycona zostanie przynajmniej godzina ruchu, wÃ³wczas moduÅ wygeneruje raporty podsumowujÄce ruch wedÅug jednej z nastÄpujÄcych kategorii:
 <ul>
 <li><strong>Godzina</strong><br>
-Data i czas, w którym dane zostały otrzymane.
-<li><strong>Dzień</strong><br>
-Data, kiedy dane zostały otrzymane.
+Data i czas, w ktÃ³rym dane zostaÅy otrzymane.
+<li><strong>DzieÅ</strong><br>
+Data, kiedy dane zostaÅy otrzymane.
 <li><strong>Host</strong><br>
-Host w sieci wewnętrznej lub host firewalla, który wysłał lub otrzymał dane.
-<li><strong>Port wewnętrzny</strong><br>
-Port hosta lub firewalla wewnętrznego, do którego dane zostały wysłane. Ten tryb jest użyteczny do określenia
-jak dużo ruchu jest generowane przez połączenia do każdego z serwerów.
-<li><strong>Port zewnętrzny</strong><br>
-Port na serwerze poza siecią, do którego wysłane zostały dane. Może być wykorzystany do określenia, z których
-usług korzystają użytkownicy twojej sieci.
+Host w sieci wewnÄtrznej lub host firewalla, ktÃ³ry wysÅaÅ lub otrzymaÅ dane.
+<li><strong>Port wewnÄtrzny</strong><br>
+Port hosta lub firewalla wewnÄtrznego, do ktÃ³rego dane zostaÅy wysÅane. Ten tryb jest uÅ¼yteczny do okreÅlenia
+jak duÅ¼o ruchu jest generowane przez poÅÄczenia do kaÅ¼dego z serwerÃ³w.
+<li><strong>Port zewnÄtrzny</strong><br>
+Port na serwerze poza sieciÄ, do ktÃ³rego wysÅane zostaÅy dane. MoÅ¼e byÄ wykorzystany do okreÅlenia, z ktÃ³rych
+usÅug korzystajÄ uÅ¼ytkownicy twojej sieci.
 <li><strong>Port</strong><br>
-Oba porty: zewnętrzny i wewnętrzny. Użyteczne do porównania całego ruchu sieciowego według rodzaju
-usługi.
+Oba porty: zewnÄtrzny i wewnÄtrzny. UÅ¼yteczne do porÃ³wnania caÅego ruchu sieciowego wedÅug rodzaju
+usÅugi.
 </ul>
 
-Możesz także wybrać filtr raportu wybierając host, port lub protokół. Host można wprowadzić
-za pomocą adresu IP, nazwy hosta lub adresu sieciowego takiego jak 192.168.1.0. 
-Port może być wprowadzony za pomocą nazwy lub liczby i odnosi się zarówno do TCP jak i UDP. <p>
+MoÅ¼esz takÅ¼e wybraÄ filtr raportu wybierajÄc host, port lub protokÃ³Å. Host moÅ¼na wprowadziÄ
+za pomocÄ adresu IP, nazwy hosta lub adresu sieciowego takiego jak 192.168.1.0. 
+Port moÅ¼e byÄ wprowadzony za pomocÄ nazwy lub liczby i odnosi siÄ zarÃ³wno do TCP jak i UDP. <p>
 
-Raport można także ograniczyć do ruchu zebranego w określonych godzinach za pomocą 
-pól <strong>Dla ruchu po</strong> i <strong>Dla ruchu przed</strong>. Ponieważ ruch jest
-podsumowywany według godziny, nie można ograniczyć raportu o okres mniejszy niż godzina. <p>
+Raport moÅ¼na takÅ¼e ograniczyÄ do ruchu zebranego w okreÅlonych godzinach za pomocÄ 
+pÃ³l <strong>Dla ruchu po</strong> i <strong>Dla ruchu przed</strong>. PoniewaÅ¼ ruch jest
+podsumowywany wedÅug godziny, nie moÅ¼na ograniczyÄ raportu o okres mniejszy niÅ¼ godzina. <p>
 
-Opcja <strong>Tylko porty serwerowe?</strong> jest użyteczna podczas raportowania wersług
-wchodzących, wychodzących lub wszystkich portów. Ogranicza wyświetlanie portów do najczęściej
-używanych przez serwery (tych poniżej 1024 lub z nazwami), aby zapobiec wyświetlaniu dużej liczby
-portów, które nie są używane. <p>
+Opcja <strong>Tylko porty serwerowe?</strong> jest uÅ¼yteczna podczas raportowania wersÅug
+wchodzÄcych, wychodzÄcych lub wszystkich portÃ³w. Ogranicza wyÅwietlanie portÃ³w do najczÄÅciej
+uÅ¼ywanych przez serwery (tych poniÅ¼ej 1024 lub z nazwami), aby zapobiec wyÅwietlaniu duÅ¼ej liczby
+portÃ³w, ktÃ³re nie sÄ uÅ¼ywane. <p>
 
-Opcja <strong>Rozwiązywać nazwy hostów?</strong> może być zaznaczona podczas raportowania według
-hostów. Spowoduje, że wszystkie adresy IP będą rozwiązane na nazwy hostów - jeśli będzie to możliwe. <p>
+Opcja <strong>RozwiÄzywaÄ nazwy hostÃ³w?</strong> moÅ¼e byÄ zaznaczona podczas raportowania wedÅug
+hostÃ³w. Spowoduje, Å¼e wszystkie adresy IP bÄdÄ rozwiÄzane na nazwy hostÃ³w - jeÅli bÄdzie to moÅ¼liwe. <p>
 
 <hr>

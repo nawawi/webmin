@@ -1,22 +1,22 @@
-<header>Begränsa e-post-vidaresändning</header>
+<header>BegrÃ¤nsa e-post-vidaresÃ¤ndning</header>
 
 <center><tt>relay_domains</tt></center>
 <hr>
 
-Denna parameter anger de klientdomäner (med underdomäner) som detta e-postsystem
-sänder vidare e-post från, och anger de destinationsdomäner (med underdomäner)
-som systemet sänder vidare e-post till.
+Denna parameter anger de klientdomÃ¤ner (med underdomÃ¤ner) som detta e-postsystem
+sÃ¤nder vidare e-post frÃ¥n, och anger de destinationsdomÃ¤ner (med underdomÃ¤ner)
+som systemet sÃ¤nder vidare e-post till.
 
 <p>
 <include relay_rules>
 
-<p>Ange en lista över datorer eller domäner, <tt>/fil/namn</tt>-mönster eller
+<p>Ange en lista Ã¶ver datorer eller domÃ¤ner, <tt>/fil/namn</tt>-mÃ¶nster eller
 <tt>type:name</tt>-uppslagningstabeller, separerade med kommatecken och/eller blanksteg.
-Ett filnamn ersätts med filens innehåll; en <tt>type:name</tt>-tabell matchar då en
-(föräldra-)domän är uppslagsnyckel.
+Ett filnamn ersÃ¤tts med filens innehÃ¥ll; en <tt>type:name</tt>-tabell matchar dÃ¥ en
+(fÃ¶rÃ¤ldra-)domÃ¤n Ã¤r uppslagsnyckel.
 
-<p>OBS: Postfix kommer inte automatiskt att sända vidare e-post till domäner
-som anger detta system som primär eller backup-MX-dator. Se restriktionen
+<p>OBS: Postfix kommer inte automatiskt att sÃ¤nda vidare e-post till domÃ¤ner
+som anger detta system som primÃ¤r eller backup-MX-dator. Se restriktionen
 <tt>permit_mx_backup</tt> i beskrivningen av parametern
 <a href=opt_smtpd_recipient_restrictions><tt>smtpd_recipient_restrictions</tt></a>.
 

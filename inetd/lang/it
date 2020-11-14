@@ -34,7 +34,7 @@ error_invalidpermin='$1' non e' un valido valore massimo per minuto
 error_invalidchildnum='$1' non e' un numero valido di processi figlio
 error_childnum=Se viene impostato un valore massimo per minuto allora deve essere impostato anche il numero di processi figlio
 error_serviceexist=Un servizio che usa la porta $1 e il protocollo $2 esiste gia'
-error_nameexist=Un servizio chiamato $1 e che usa il protocollo $2 esiste gi‡'
+error_nameexist=Un servizio chiamato $1 e che usa il protocollo $2 esiste gi√†'
 error_inetservice=Un servizio internet chiamato $1 e che usa il protocollo $2 esiste gia'
 
 editrpc_title1=Crea un programma RPC

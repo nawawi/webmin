@@ -1,29 +1,29 @@
 // I18N constants -- UTF-8
 // by Dave Lo -- dlo@interactivetools.com
 {
-  "Bold": "粗體",
-  "Italic": "斜體",
-  "Underline": "底線",
-  "Strikethrough": "刪除線",
-  "Subscript": "下標",
-  "Superscript": "上標",
-  "Justify Left": "位置靠左",
-  "Justify Center": "位置居中",
-  "Justify Right": "位置靠右",
-  "Justify Full": "位置左右平等",
-  "Ordered List": "順序清單",
-  "Bulleted List": "無序清單",
-  "Decrease Indent": "減小行前空白",
-  "Increase Indent": "加寬行前空白",
-  "Font Color": "文字顏色",
-  "Background Color": "背景顏色",
-  "Horizontal Rule": "水平線",
-  "Insert Web Link": "插入連結",
-  "Insert/Modify Image": "插入圖形",
-  "Insert Table": "插入表格",
-  "Toggle HTML Source": "切換HTML原始碼",
-  "Enlarge Editor": "放大",
-  "About this editor": "關於 Xinha",
-  "Help using editor": "說明",
-  "Current style": "字體例子"
+  "Bold": "ç²é«",
+  "Italic": "æé«",
+  "Underline": "åºç·",
+  "Strikethrough": "åªé¤ç·",
+  "Subscript": "ä¸æ¨",
+  "Superscript": "ä¸æ¨",
+  "Justify Left": "ä½ç½®é å·¦",
+  "Justify Center": "ä½ç½®å±ä¸­",
+  "Justify Right": "ä½ç½®é å³",
+  "Justify Full": "ä½ç½®å·¦å³å¹³ç­",
+  "Ordered List": "é åºæ¸å®",
+  "Bulleted List": "ç¡åºæ¸å®",
+  "Decrease Indent": "æ¸å°è¡åç©ºç½",
+  "Increase Indent": "å å¯¬è¡åç©ºç½",
+  "Font Color": "æå­é¡è²",
+  "Background Color": "èæ¯é¡è²",
+  "Horizontal Rule": "æ°´å¹³ç·",
+  "Insert Web Link": "æå¥é£çµ",
+  "Insert/Modify Image": "æå¥åå½¢",
+  "Insert Table": "æå¥è¡¨æ ¼",
+  "Toggle HTML Source": "åæHTMLåå§ç¢¼",
+  "Enlarge Editor": "æ¾å¤§",
+  "About this editor": "éæ¼ Xinha",
+  "Help using editor": "èªªæ",
+  "Current style": "å­é«ä¾å­"
 }

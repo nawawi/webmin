@@ -1,2 +1,2 @@
-desc_pl=Aktualizacja pakietów oprogramowania
-longdesc_pl=Wy¶wietla dostêpne aktualizacje pakietów z YUM, APT lub innego systemowego menad¿era pakietów
+desc_pl=Aktualizacja pakietÃ³w oprogramowania
+longdesc_pl=WyÂ¶wietla dostÃªpne aktualizacje pakietÃ³w z YUM, APT lub innego systemowego menadÂ¿era pakietÃ³w

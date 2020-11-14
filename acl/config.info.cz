@@ -1,5 +1,5 @@
-line1=Mo¾nosti konfigurace,11
-display=Mód pro zobrazení u¾ivatele a skupiny,1,1-Pouze jména,0-Jména a moduly
-order=Tøídit u¾ivatele a skupiny podle,1,0-poøadí v souboru,1-jména
-line2=Konfigurace systému,11
+line1=MoÂ¾nosti konfigurace,11
+display=MÃ³d pro zobrazenÃ­ uÂ¾ivatele a skupiny,1,1-Pouze jmÃ©na,0-JmÃ©na a moduly
+order=TÃ¸Ã­dit uÂ¾ivatele a skupiny podle,1,0-poÃ¸adÃ­ v souboru,1-jmÃ©na
+line2=Konfigurace systÃ©mu,11
 ssleay=Cesta k programu openssl nebo ssleay,0

@@ -1,5 +1,5 @@
-line2=Konfigurace systému,11
-at_style=At typ systému,1,linux-Linux,solaris-Solaris,freebsd-FreeBSD,irix-Irix,macos-MacOS X,openserver-OpenServer
-at_dir=At adresáø úkolù,0
-allow_file=Povolit soubor At u¾ivatelù,3,Nic
-deny_file=Zakázat soubor At u¾ivatelé,3,Nic
+line2=Konfigurace systÃ©mu,11
+at_style=At typ systÃ©mu,1,linux-Linux,solaris-Solaris,freebsd-FreeBSD,irix-Irix,macos-MacOS X,openserver-OpenServer
+at_dir=At adresÃ¡Ã¸ ÃºkolÃ¹,0
+allow_file=Povolit soubor At uÂ¾ivatelÃ¹,3,Nic
+deny_file=ZakÃ¡zat soubor At uÂ¾ivatelÃ©,3,Nic

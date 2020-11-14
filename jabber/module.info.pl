@@ -1,2 +1,2 @@
 desc_pl=Jabber IM - serwer
-longdesc_pl=Konfiguruj muli-protoko³owy serwer wiadomo¶ci Jabber.
+longdesc_pl=Konfiguruj muli-protokoÂ³owy serwer wiadomoÂ¶ci Jabber.

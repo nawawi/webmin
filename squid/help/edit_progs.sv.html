@@ -1,69 +1,69 @@
-<header>Hjälpprogram</header>
+<header>HjÃ¤lpprogram</header>
 
-<b>FTP-kolumnbredd</b>: Standardvärdet är 32. Anger bredden på ftp-listningar.
-Värdet bör sättas så att det passar bredden på en vanlig browser. Om värdet
-sätts för lågt kan långa filnamn klippas när ftp-siter listas.
+<b>FTP-kolumnbredd</b>: StandardvÃ¤rdet Ã¤r 32. Anger bredden pÃ¥ ftp-listningar.
+VÃ¤rdet bÃ¶r sÃ¤ttas sÃ¥ att det passar bredden pÃ¥ en vanlig browser. Om vÃ¤rdet
+sÃ¤tts fÃ¶r lÃ¥gt kan lÃ¥nga filnamn klippas nÃ¤r ftp-siter listas.
 
-<p><b>Anonym FTP-inloggning</b>: Standardinställningen är 'Squid@'. Om man vill
-att lösenordet för anonym inloggning ska vara mer informativt (och möjliggöra
-användning av petiga ftp-servrar) kan detta sättas till något som verkar
-rimligt för domänen, t ex wwwperson@någonstans.net.
+<p><b>Anonym FTP-inloggning</b>: StandardinstÃ¤llningen Ã¤r 'Squid@'. Om man vill
+att lÃ¶senordet fÃ¶r anonym inloggning ska vara mer informativt (och mÃ¶jliggÃ¶ra
+anvÃ¤ndning av petiga ftp-servrar) kan detta sÃ¤ttas till nÃ¥got som verkar
+rimligt fÃ¶r domÃ¤nen, t ex wwwperson@nÃ¥gonstans.net.
 
-<p>Anledningen till att standardvärdet inte har någon domän är att
-förfrågningen kan göras för en användare under vilken domän som helst, beroende
-på hur cachen används. En del ftp-servrar kontrollerar också att e-postadressen
+<p>Anledningen till att standardvÃ¤rdet inte har nÃ¥gon domÃ¤n Ã¤r att
+fÃ¶rfrÃ¥gningen kan gÃ¶ras fÃ¶r en anvÃ¤ndare under vilken domÃ¤n som helst, beroende
+pÃ¥ hur cachen anvÃ¤nds. En del ftp-servrar kontrollerar ocksÃ¥ att e-postadressen
 finns (exempelvis perl.com).
 
-<p><b>Squid DNS-program</b>: Standardinställningen är dnsserver. Ange var
-det körbara programmet finns för dnslookup-processen. Standarden är en
+<p><b>Squid DNS-program</b>: StandardinstÃ¤llningen Ã¤r dnsserver. Ange var
+det kÃ¶rbara programmet finns fÃ¶r dnslookup-processen. Standarden Ã¤r en
 icke-blockerande, cachande namnserver som installerats med Squid.
 
-<p><b>Antal DNS-program</b>: Standardvärdet är 5. Antalet processer som
-startas för att betjäna DNS-namnuppslagningar. För tungt belastade cacher på
-stora servrar bör detta nog ökas till minst 10. Maximum är 32.
+<p><b>Antal DNS-program</b>: StandardvÃ¤rdet Ã¤r 5. Antalet processer som
+startas fÃ¶r att betjÃ¤na DNS-namnuppslagningar. FÃ¶r tungt belastade cacher pÃ¥
+stora servrar bÃ¶r detta nog Ã¶kas till minst 10. Maximum Ã¤r 32.
 
-<p><b>Öppna domän för förfrågningar</b>: Standardinställningen är 'av'.
-Vanligtvis slår 'dnsserver' av inställningen RES_DEFNAMES-uppslagning (se
-res_init(3)). Detta gör att hierarkiska cacher inte kan tolka enkomponentsnamn
-lokalt. Slå på denna inställning för att dnsserver ska kunna hantera
+<p><b>Ã–ppna domÃ¤n fÃ¶r fÃ¶rfrÃ¥gningar</b>: StandardinstÃ¤llningen Ã¤r 'av'.
+Vanligtvis slÃ¥r 'dnsserver' av instÃ¤llningen RES_DEFNAMES-uppslagning (se
+res_init(3)). Detta gÃ¶r att hierarkiska cacher inte kan tolka enkomponentsnamn
+lokalt. SlÃ¥ pÃ¥ denna instÃ¤llning fÃ¶r att dnsserver ska kunna hantera
 enkomponentsnamn.
 
-<p><b>DNS-serveradresser</b>: Standardinställningen är att använda filen
-resolv.conf . Använd denna inställning för att ange en lista över
-DNS-namnservrar (IP-adresser) som ska användas istället för dem som angivits
+<p><b>DNS-serveradresser</b>: StandardinstÃ¤llningen Ã¤r att anvÃ¤nda filen
+resolv.conf . AnvÃ¤nd denna instÃ¤llning fÃ¶r att ange en lista Ã¶ver
+DNS-namnservrar (IP-adresser) som ska anvÃ¤ndas istÃ¤llet fÃ¶r dem som angivits
 i filen /etc/resolv.conf .
 
-<p><b>Cache-rensingsprogram</b>: Standardinställningen är 'unlinkd'. Ange
-var det körbara programmet för filraderingsprocessen finns. Detta kanske
-inte behövs om async-io används eftersom det använder trådar i en del
+<p><b>Cache-rensingsprogram</b>: StandardinstÃ¤llningen Ã¤r 'unlinkd'. Ange
+var det kÃ¶rbara programmet fÃ¶r filraderingsprocessen finns. Detta kanske
+inte behÃ¶vs om async-io anvÃ¤nds eftersom det anvÃ¤nder trÃ¥dar i en del
 versioner.
 
-<p><b>Squid ping-program</b>: Standardinställningen är 'pinger'. Ange var
-det körbara programmet för pinger-processen finns. Detta kan endast användas
+<p><b>Squid ping-program</b>: StandardinstÃ¤llningen Ã¤r 'pinger'. Ange var
+det kÃ¶rbara programmet fÃ¶r pinger-processen finns. Detta kan endast anvÃ¤ndas
 om Squid kompilerades med flaggan '--enable-icmp' .
 
-<p><b>Eget omdirigeringsprogram</b>: Standardinställningen är inget. Ange
-var det körbara programmet för URL-omdirigering finns. Eftersom detta kan
-inbegripa ungefär vilken funktion som helst finns det inget i detta paket.
-Se release-anteckningarna för mer information om hur man skriver ett.
+<p><b>Eget omdirigeringsprogram</b>: StandardinstÃ¤llningen Ã¤r inget. Ange
+var det kÃ¶rbara programmet fÃ¶r URL-omdirigering finns. Eftersom detta kan
+inbegripa ungefÃ¤r vilken funktion som helst finns det inget i detta paket.
+Se release-anteckningarna fÃ¶r mer information om hur man skriver ett.
 
-<p><b>Antal omdirigeringsprogram</b>: Standardvärdet är 5 om ett
+<p><b>Antal omdirigeringsprogram</b>: StandardvÃ¤rdet Ã¤r 5 om ett
 omdirigeringsprogram angivits. Detta anger antalet omdirigeringsprocesser som
-kan startas. Om för få startas kommer Squid att få vänta tills de har kommit
-igenom en massa URL:er, vilket slöar ned det. Om för många startas kommer de
-att i onödan ta upp RAM och andra systemresurser.
+kan startas. Om fÃ¶r fÃ¥ startas kommer Squid att fÃ¥ vÃ¤nta tills de har kommit
+igenom en massa URL:er, vilket slÃ¶ar ned det. Om fÃ¶r mÃ¥nga startas kommer de
+att i onÃ¶dan ta upp RAM och andra systemresurser.
 
-<p><b>Eget autentiseringsprogram</b>: Standardinställningen är inget. Ange
-ett kommando för extern autentiserare. Ett sådant program läser en rad som
-innehåller "användarnamn lösenord" och svarar "OK" eller "ERR" i en loop utan
-slut. Se till att ha en åtkomstlista av typen proxy_auth om en autentiserare
-ska användas.
+<p><b>Eget autentiseringsprogram</b>: StandardinstÃ¤llningen Ã¤r inget. Ange
+ett kommando fÃ¶r extern autentiserare. Ett sÃ¥dant program lÃ¤ser en rad som
+innehÃ¥ller "anvÃ¤ndarnamn lÃ¶senord" och svarar "OK" eller "ERR" i en loop utan
+slut. Se till att ha en Ã¥tkomstlista av typen proxy_auth om en autentiserare
+ska anvÃ¤ndas.
 
-<p>Om vanlig proxy-autentisering ska användas ska man ange något i stil med
-/usr/bin/ncsa_auth /usr/etc/passwd här, under förutsättning att ncsa_auth
-har kompilerats och installerats på systemet.
+<p>Om vanlig proxy-autentisering ska anvÃ¤ndas ska man ange nÃ¥got i stil med
+/usr/bin/ncsa_auth /usr/etc/passwd hÃ¤r, under fÃ¶rutsÃ¤ttning att ncsa_auth
+har kompilerats och installerats pÃ¥ systemet.
 
-<p><b>Antal autentiseringsprogram</b>: Standardvärdet är 5 om en autentiserare
-slagits på.
+<p><b>Antal autentiseringsprogram</b>: StandardvÃ¤rdet Ã¤r 5 om en autentiserare
+slagits pÃ¥.
 
 <hr>

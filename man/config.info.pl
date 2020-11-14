@@ -1,14 +1,14 @@
 line2=Konfiguracja systemu,11
-man_cmd=Polecenie wy¶wietlaj±ce stronê podrêcznika,0
-man_cmd_sect=Polecenie wy¶wietlaj±ce stronê podrêcznika z&nbsp;rozdzia³u,0
-search_cmd=Polecenie przeszukuj±ce strony,0
-man_dir=Katalogi zawieraj±ce strony podrêcznika (MANPATH),0
-list_cmd=Polecenie zwracaj±ce scie¿kê do pliku strony podrêcznika,0
-list_cmd_sect=Polecenie zwracaj±ce scie¿kê do pliku strony podrêcznika z&nbsp;rozdzia³u,0
-man2html_path=¦cie¿ka do <tt>man2html</tt>,3,Nie korzystaj z&nbsp;<tt>man2html</tt>
-doc_dir=Katalog dokumentacji pakietów,3,Brak
-howto_dir=Katalog dokumentów &quot;HOWTO&quot;,3,Brak
+man_cmd=Polecenie wyÅ›wietlajÄ…ce stronÄ™ podrÄ™cznika,0
+man_cmd_sect=Polecenie wyÅ›wietlajÄ…ce stronÄ™ podrÄ™cznika z&nbsp;rozdziaÅ‚u,0
+search_cmd=Polecenie przeszukujÄ…ce strony,0
+man_dir=Katalogi zawierajÄ…ce strony podrÄ™cznika (MANPATH),0
+list_cmd=Polecenie zwracajÄ…ce scieÅ¼kÄ™ do pliku strony podrÄ™cznika,0
+list_cmd_sect=Polecenie zwracajÄ…ce scieÅ¼kÄ™ do pliku strony podrÄ™cznika z&nbsp;rozdziaÅ‚u,0
+man2html_path=ÅšcieÅ¼ka do <tt>man2html</tt>,3,Nie korzystaj z&nbsp;<tt>man2html</tt>
+doc_dir=Katalog dokumentacji pakietÃ³w,3,Brak
+howto_dir=Katalog dokumentÃ³w &quot;HOWTO&quot;,3,Brak
 kernel_dir=Katalog dokumentacji kernela,3,Brak
 kde_dir=Katalog dokumentacji KDE,3,Brak
-custom_dir=Katalog w³asnej dokumentacji,3,Brak
-custom_desc=Nazwa w³asnej dokumentacji,3,Domy¶lnie
+custom_dir=Katalog wÅ‚asnej dokumentacji,3,Brak
+custom_desc=Nazwa wÅ‚asnej dokumentacji,3,DomyÅ›lnie

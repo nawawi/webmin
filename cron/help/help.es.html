@@ -1,74 +1,74 @@
 <body bgcolor=#ffffff>
 <title>Comandos y Tareas Planificadas</title>
 <center><img src="images/cron.gif"></center><br>
-<h2><i>Esta p·gina de ayuda no est· completa</i></h2>
+<h2><i>Esta p√°gina de ayuda no est√° completa</i></h2>
 <hr>
-<h3>IntroducciÛn</h3>
-Se puede usar este mÛdulo para configurar comandos que ejecutar
-autom·ticamente a determinadas horas. Utiliza el demonio est·ndar de Unix
+<h3>Introducci√≥n</h3>
+Se puede usar este m√≥dulo para configurar comandos que ejecutar
+autom√°ticamente a determinadas horas. Utiliza el demonio est√°ndar de Unix
 <tt>cron</tt>, que puede ejecutar comandos como distintos usuarios a
-ciertos minutos, horas, dÌas del mes, dÌas de la semana y meses del aÒo.
+ciertos minutos, horas, d√≠as del mes, d√≠as de la semana y meses del a√±o.
 Cada trabajo pertenece a un usuario, y cuando se ejecuta lo hace con los
 permisos de dicho usuario. <p>
 
-La p·gina principal del mÛdulo lista todos los trabajos planificados
-detectados, agrupados seg˙n el usuario como el que ejecutar·n. Algunos
-sistemas tendr·n trabajos que sean parte del sistema operativo,
-pertenecientes a usuarios tales como <tt>root</tt> o <tt>sys</tt>. TambiÈn
+La p√°gina principal del m√≥dulo lista todos los trabajos planificados
+detectados, agrupados seg√∫n el usuario como el que ejecutar√°n. Algunos
+sistemas tendr√°n trabajos que sean parte del sistema operativo,
+pertenecientes a usuarios tales como <tt>root</tt> o <tt>sys</tt>. Tambi√©n
 puede haber trabajos creados por usuarios en su sistema usando el comando
 <tt>crontab</tt>, y pertenecientes a los usuarios que los crearon. <p>
 
 <hr>
-<h3>CreaciÛn de un Nuevo Trabajo Planificado</h3>
+<h3>Creaci√≥n de un Nuevo Trabajo Planificado</h3>
 Para crear un nuevo trabajo, pulse en <tt>Crear un nuevo Trabajo
-Planificado</tt> a continuaciÛn de la lista de trabajos existentes. Esto le
-mostrar· un formulario para introducir los siguientes par·metros :
+Planificado</tt> a continuaci√≥n de la lista de trabajos existentes. Esto le
+mostrar√° un formulario para introducir los siguientes par√°metros :
 	<ul>
 	<li><b>Usuario como el que ejecutar</b><br>
-	    El nombre del usuario Unix como el que se ejcutar· el trabajo. <p>
-	<li><b>ø Activo ?</b><br>
-	    Aunque un trabajo no estÈ activo se mostrar· en la lista de
-	    trabajos conocidos, pero no se ejecutar· en su momento. <p>
+	    El nombre del usuario Unix como el que se ejcutar√° el trabajo. <p>
+	<li><b>¬ø Activo ?</b><br>
+	    Aunque un trabajo no est√© activo se mostrar√° en la lista de
+	    trabajos conocidos, pero no se ejecutar√° en su momento. <p>
 	<li><b>Comando</b><br>
 	    El comando Unix real que ejecutar en el momento configurado.
-	    Este puede ser cualquiera que pueda teclear en la lÌnea de
+	    Este puede ser cualquiera que pueda teclear en la l√≠nea de
 	    comandos. <p>
 	<li><b>Entrada del comando</b><br>
-	    Si este campo no est· vacÌo, cualquier cosa que teclee se
-	    proporcionar· como entrada al comando cuando se ejecute. Por
+	    Si este campo no est√° vac√≠o, cualquier cosa que teclee se
+	    proporcionar√° como entrada al comando cuando se ejecute. Por
 	    ejemplo, si el comando fuera <tt>mail foo@bar.com</tt> y la
 	    entrada <tt>hola mundo</tt>, entonces el texto de entrada se
-	    enviarÌa a <tt>foo@bar.com</tt>. <p>
+	    enviar√≠a a <tt>foo@bar.com</tt>. <p>
 	<li><b>Momentos en que ejecutar</b><br>
 	    Los momentos en que ejcutar un comando se eligen indicando los
-	    minutos, horas, dÌas del mes, meses del aÒo y dÌas de la semana
+	    minutos, horas, d√≠as del mes, meses del a√±o y d√≠as de la semana
 	    en que ejecutarse. Para cada uno de estos periodos de tiempo
 	    puede elegir <tt>Todos</tt>, o seleccionar los momentos en que
-	    el comando deberÌa ejecutarse. <p>
+	    el comando deber√≠a ejecutarse. <p>
 
-            Por ejemplo, si eligiÛ 5 para la hora y Martes para el dÌa de
-	    la semana, entonces el comando se ejecutarÌa cada minuto desde
+            Por ejemplo, si eligi√≥ 5 para la hora y Martes para el d√≠a de
+	    la semana, entonces el comando se ejecutar√≠a cada minuto desde
 	    05:00AM a las 05:59AM los Martes. <br>
-	    Otro ejemplo serÌa elegir 30 para el minuto y 14 para la hora,
-	    en cuyo caso el comando se ejcutarÌa cada dÌa a las 02:30PM. <p>
+	    Otro ejemplo ser√≠a elegir 30 para el minuto y 14 para la hora,
+	    en cuyo caso el comando se ejcutar√≠a cada d√≠a a las 02:30PM. <p>
 	</ul><p>
-Una vez haya rellenado el formulario, pulse el botÛn <tt>Crear</tt> en la
-parte inferior de la p·gina. ElÒ nuevo trabajo tendr· efecto
+Una vez haya rellenado el formulario, pulse el bot√≥n <tt>Crear</tt> en la
+parte inferior de la p√°gina. El√± nuevo trabajo tendr√° efecto
 inmediatamente. <p>
 
 <hr>
 <h3>Editar un Trabajo Planificado Existente</h3>
 Para editar un trabajo existente, pulse en el comando en la lista de
-trabajos de la p·gina principal. El formulario para editar un trabajo
+trabajos de la p√°gina principal. El formulario para editar un trabajo
 existente es el mismo que el usado para crear un nuevo trabajo, descrito
 con anterioridad. Una vez haya hecho los cambios necesarios, pulse el
-botÛn <tt>Guardar</tt> en la parte inferior de la p·gina. <p>
+bot√≥n <tt>Guardar</tt> en la parte inferior de la p√°gina. <p>
 
-Para borrar un trabajo, pulse el botÛn <tt>Borrar</tt> en la parte inferior
-del formulario de ediciÛn. Esto borrar· inmediatamente el trabajo sin pedir
+Para borrar un trabajo, pulse el bot√≥n <tt>Borrar</tt> en la parte inferior
+del formulario de edici√≥n. Esto borrar√° inmediatamente el trabajo sin pedir
 confirmacion. <p>
 
 <hr>
 <a href="/"><img alt="<-" align=middle border=0 src=/images/left.gif></a>
-&nbsp;&nbsp;<a href="">Volver al mÛdulo</a><p>
+&nbsp;&nbsp;<a href="">Volver al m√≥dulo</a><p>
 

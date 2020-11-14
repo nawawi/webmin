@@ -1,7 +1,7 @@
 index_title=Login via SSH/Telnet
-index_warn=AtenÁ„o! Esta sess„o telnet <b>n„o</b> est· encriptada.
-index_nojava=Este mÛdulo requer java para funcionar, mas seu navegador n„o suporta java
-index_credits=Aplicativo desenvolvido sob licenÁa GPL por <a href='$1' target=_top>Matthias L. Jugel &amp; Marcus Meiﬂner</a>.
+index_warn=Aten√ß√£o! Esta sess√£o telnet <b>n√£o</b> est√° encriptada.
+index_nojava=Este m√≥dulo requer java para funcionar, mas seu navegador n√£o suporta java
+index_credits=Aplicativo desenvolvido sob licen√ßa GPL por <a href='$1' target=_top>Matthias L. Jugel &amp; Marcus Mei√üner</a>.
 index_sshcredits=Inclui software desenvolvido por Cryptix Development Team (<a href=$1 target=_top>$1</a>).
-index_esocket=N„o h· nenhum servidor telnet rodando em $1 porta $2.
-index_esocket2=N„o h· nenhum servidor SSH rodando em $1 porta $2.
+index_esocket=N√£o h√° nenhum servidor telnet rodando em $1 porta $2.
+index_esocket2=N√£o h√° nenhum servidor SSH rodando em $1 porta $2.

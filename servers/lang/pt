@@ -1,26 +1,26 @@
 index_title=Servidores Webmin
-index_none=N„o foram registados nehuns servidores.
+index_none=N√£o foram registados nehuns servidores.
 index_add=Registar novo servidor
 index_find=Procurar servidores
-index_findmsg=Clique neste bot„o para autom·ticamente encontrar qualquer Webmin vers„o 0.75 ou superior na sua rede local.
+index_findmsg=Clique neste bot√£o para autom√°ticamente encontrar qualquer Webmin vers√£o 0.75 ou superior na sua rede local.
 index_return=servidores
 
 edit_title=Editar Servidor
 create_title=Registar Servidor
 edit_details=Detalhes do servidor
-edit_host=Nome do Anfitri„o
+edit_host=Nome do Anfitri√£o
 edit_port=Porta
 edit_type=Tipo de servidor
 edit_ssl=Servidor SSL?
-edit_link=Tipo de ligaÁ„o
-edit_mode0=LigaÁ„o normal ao servidor
+edit_link=Tipo de liga√ß√£o
+edit_mode0=Liga√ß√£o normal ao servidor
 edit_mode1=Login via Webmin com
 edit_user=username
 edit_pass=password
 
 save_err=Erro ao guardar servidor
-save_ehost=Nome de anfitri„o inv·lido ou em falta
-save_eport=Porta inv·lida ou em falta
+save_ehost=Nome de anfitri√£o inv√°lido ou em falta
+save_eport=Porta inv√°lida ou em falta
 save_euser=Username em falta
 save_epass=Password em falta
 

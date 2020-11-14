@@ -1,12 +1,12 @@
-init_base=Répertoire dans lequel les répertoires des niveaux d'exécution sont situés,0
-init_dir=Répertoire qui contient les scripts de démarrage,0
-soft_links=Type de liens utilisés pour les niveaux d'exécution,1,0-Dur,1-Symboliques
+init_base=RÃ©pertoire dans lequel les rÃ©pertoires des niveaux d'exÃ©cution sont situÃ©s,0
+init_dir=RÃ©pertoire qui contient les scripts de dÃ©marrage,0
+soft_links=Type de liens utilisÃ©s pour les niveaux d'exÃ©cution,1,0-Dur,1-Symboliques
 order_digits=Nombre de chiffre dans l'ordre d'action,0
-local_script=Script local de démarrage,3
-reboot_command=Commande pour redémarrer le système,0
-shutdown_command=Commande pour arrêter le système,0
-start_stop_msg=Le système supporte les messages de démarrage et d'arrêt,1,0-Non,1-Oui
-inittab_id=Numéro du niveau d'exécution du démarrage,0
+local_script=Script local de dÃ©marrage,3
+reboot_command=Commande pour redÃ©marrer le systÃ¨me,0
+shutdown_command=Commande pour arrÃªter le systÃ¨me,0
+start_stop_msg=Le systÃ¨me supporte les messages de dÃ©marrage et d'arrÃªt,1,0-Non,1-Oui
+inittab_id=NumÃ©ro du niveau d'exÃ©cution du dÃ©marrage,0
 
 
 line1=Options Configurables,11

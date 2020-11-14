@@ -1,29 +1,29 @@
-<header>Dostêp dla root-a</header>
+<header>DostÃªp dla root-a</header>
 
-Okre¶la, dla których hostów serwer bêdzie honorowaæ przwa root-a na nich
-Je¶li stacji klienckiej nie ma na li¶cie, to nawet w&nbsp;sytuacji, gdy ma
-ona prawo montowaæ zasób w&nbsp;trybie tylko do odczytu lub do odczytu
-i&nbsp;zapisu, serwer NFS-u bêdzie traktowaæ u¿ytkownika <tt>root</tt> na
-tej stacji jako <a href=anon>u¿ytkownika anonimowego</a>.
+OkreÂ¶la, dla ktÃ³rych hostÃ³w serwer bÃªdzie honorowaÃ¦ przwa root-a na nich
+JeÂ¶li stacji klienckiej nie ma na liÂ¶cie, to nawet w&nbsp;sytuacji, gdy ma
+ona prawo montowaÃ¦ zasÃ³b w&nbsp;trybie tylko do odczytu lub do odczytu
+i&nbsp;zapisu, serwer NFS-u bÃªdzie traktowaÃ¦ uÂ¿ytkownika <tt>root</tt> na
+tej stacji jako <a href=anon>uÂ¿ytkownika anonimowego</a>.
 <if $gconfig{'os_version'} == 7>
-    <br>Hosty mo¿na okre¶liæ na nastêpuj±ce sposoby&nbsp;: <p>
+    <br>Hosty moÂ¿na okreÂ¶liÃ¦ na nastÃªpujÂ±ce sposoby&nbsp;: <p>
 	<dl>
 	<dt><b>Nazwy hosta lub adresu IP</b> (np. <i>ftp.foo.com</i> lub 
             <i>1.2.3.4</i>)
-	<dd>Spe³nia go host o&nbsp;podanej nazwie lub adresie IP
+	<dd>SpeÂ³nia go host o&nbsp;podanej nazwie lub adresie IP
 	<dt><b>Grupy sieciowej</b> (np. <i>inzynieria</i>)
-	<dd>Spe³nia go dowolny host bêd±cy cz³onkiem grupy sieciowej
+	<dd>SpeÂ³nia go dowolny host bÃªdÂ±cy czÂ³onkiem grupy sieciowej
 	<dt><b>Domeny DNS-u</b> (np. <i>.foo.com</i>)
-	<dd>Spe³nia go dowolny host w&nbsp;domenie
+	<dd>SpeÂ³nia go dowolny host w&nbsp;domenie
 	<dt><b>Sieci</b> (np. <i>@10.254.1</i>)
-	<dd>Spe³nia go dowolny host w&nbsp;sieci
-	<dt><b>Sieci z&nbsp;mask±</b> (np. <i>@10.254.1/24</i>)
-	<dd>Spe³nia go dowolny host w&nbsp;sieci
+	<dd>SpeÂ³nia go dowolny host w&nbsp;sieci
+	<dt><b>Sieci z&nbsp;maskÂ±</b> (np. <i>@10.254.1/24</i>)
+	<dd>SpeÂ³nia go dowolny host w&nbsp;sieci
 	</dl><p>
-    Dodatkowo, dowoln± z&nbsp;powy¿szych notacji mo¿na poprzedziæ <i>-</i>,
-    co oznacza ¿e host, grupa sieciowa, domena lub sieæ <b>nie</b> mo¿e
-    montowaæ tego zasobu. Mo¿e to byæ przydatne do umo¿liwienia dostêpu dla
-    zbioru hostów z&nbsp;wy³±czeniem jednego jego cz³onka.
+    Dodatkowo, dowolnÂ± z&nbsp;powyÂ¿szych notacji moÂ¿na poprzedziÃ¦ <i>-</i>,
+    co oznacza Â¿e host, grupa sieciowa, domena lub sieÃ¦ <b>nie</b> moÂ¿e
+    montowaÃ¦ tego zasobu. MoÂ¿e to byÃ¦ przydatne do umoÂ¿liwienia dostÃªpu dla
+    zbioru hostÃ³w z&nbsp;wyÂ³Â±czeniem jednego jego czÂ³onka.
 </if>
 <hr>
 

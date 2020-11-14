@@ -1,113 +1,113 @@
 <header>Opcje buforowania</header>
 
-<b>Katalogi buforów</b>: Możesz podać kilka katalogów buforów cache, po
-jednym w&nbsp;linii, aby rozdzielić bufory pomiędzy różne partycje dysków.
+<b>Katalogi buforÃ³w</b>: MoÅ¼esz podaÄ kilka katalogÃ³w buforÃ³w cache, po
+jednym w&nbsp;linii, aby rozdzieliÄ bufory pomiÄdzy rÃ³Å¼ne partycje dyskÃ³w.
 <p>
 
-<em>Katalog</em> jest katalogiem najwyższego poziomu, w&nbsp;którym będą
-przechowywane pliki wymiany proxy. Jeśli cały dysk ma być wykorzystany na
-bufory, należy tu podać miejsce jego zamontowania. Katalog musi istnieć
-i&nbsp;proces Squida musi mieć prawo zapisu w&nbsp;nim. Squid NIE utworzy
+<em>Katalog</em> jest katalogiem najwyÅ¼szego poziomu, w&nbsp;ktÃ³rym bÄdÄ
+przechowywane pliki wymiany proxy. JeÅli caÅy dysk ma byÄ wykorzystany na
+bufory, naleÅ¼y tu podaÄ miejsce jego zamontowania. Katalog musi istnieÄ
+i&nbsp;proces Squida musi mieÄ prawo zapisu w&nbsp;nim. Squid NIE utworzy
 tego katalogu za ciebie. <p> 
 
-<em>Rozmiar</em> jest ilością przestrzeni dyskowej (w&nbsp;MB), która może
-być wykorzystana w&nbsp;tym katalogu. Domyślnie jest to 100&nbsp;MB. Dobierz
-wartość do swojej konfiguracji. <p>
+<em>Rozmiar</em> jest iloÅciÄ przestrzeni dyskowej (w&nbsp;MB), ktÃ³ra moÅ¼e
+byÄ wykorzystana w&nbsp;tym katalogu. DomyÅlnie jest to 100&nbsp;MB. Dobierz
+wartoÅÄ do swojej konfiguracji. <p>
  
-<em>Kat. 1. poziomu</em> jest liczbą katalogów pierwszego poziomu, które
-zostaną utworzone w&nbsp;<em>Katalogu</em>. Domyślnie 16. <p>
+<em>Kat. 1. poziomu</em> jest liczbÄ katalogÃ³w pierwszego poziomu, ktÃ³re
+zostanÄ utworzone w&nbsp;<em>Katalogu</em>. DomyÅlnie 16. <p>
 
-<em>Kat. 2. poziomu</em> jest liczbą katalogów drugiego poziomu, które
-zostaną utworzone w&nbsp;każdym z&nbsp;katalogów pierwszego poziomu.
-Domyślnie 256. <p>  
+<em>Kat. 2. poziomu</em> jest liczbÄ katalogÃ³w drugiego poziomu, ktÃ³re
+zostanÄ utworzone w&nbsp;kaÅ¼dym z&nbsp;katalogÃ³w pierwszego poziomu.
+DomyÅlnie 256. <p>  
 
-<b>Średni rozmiar obiektu</em>: Domyślnie 13&nbsp;kB. Średni rozmiar obiektu
-używany do oszacowania liczby obiektów, jaka może być przechowywana
+<b>Åredni rozmiar obiektu</em>: DomyÅlnie 13&nbsp;kB. Åredni rozmiar obiektu
+uÅ¼ywany do oszacowania liczby obiektÃ³w, jaka moÅ¼e byÄ przechowywana
 w&nbsp;buforach cache. <p>
  
-<b>Obiektów w&nbsp;porcji</b>: Domyślnie 50. docelowa liczba obiektów
-w&nbsp;porcji w&nbsp;przechowywanej tablicy haszy. Obniżenie tej wartości
-powoduje zwiększenie ogólnej liczby porcji, jak również szybkości
-zarządzania buforami cache. <p>
+<b>ObiektÃ³w w&nbsp;porcji</b>: DomyÅlnie 50. docelowa liczba obiektÃ³w
+w&nbsp;porcji w&nbsp;przechowywanej tablicy haszy. ObniÅ¼enie tej wartoÅci
+powoduje zwiÄkszenie ogÃ³lnej liczby porcji, jak rÃ³wnieÅ¼ szybkoÅci
+zarzÄdzania buforami cache. <p>
  
-<b>Nie buforuj URL-i dla ACL</b>: Domyślnie żaden. Wybierz dowolną ACL, dla
-której nie chcesz, aby Squid buforował dane. Pomaga zdefiniować wewnętrzny
-serwer WWW, do którego dostęp nie powinien być buforowany. <p>
+<b>Nie buforuj URL-i dla ACL</b>: DomyÅlnie Å¼aden. Wybierz dowolnÄ ACL, dla
+ktÃ³rej nie chcesz, aby Squid buforowaÅ dane. Pomaga zdefiniowaÄ wewnÄtrzny
+serwer WWW, do ktÃ³rego dostÄp nie powinien byÄ buforowany. <p>
 
-<b>Maksymalny czas buforowania</b>: Domyślnie 1 rok. Ten parametr określa
-maksymalny wiek LRU. Na przykład, ustawienie na '1 tydzień' spowoduje, że
-obiekty, do których nie było dostępu prez tydzień lub dłużej zostaną
-usunięte. <p>
+<b>Maksymalny czas buforowania</b>: DomyÅlnie 1 rok. Ten parametr okreÅla
+maksymalny wiek LRU. Na przykÅad, ustawienie na '1 tydzieÅ' spowoduje, Å¼e
+obiekty, do ktÃ³rych nie byÅo dostÄpu prez tydzieÅ lub dÅuÅ¼ej zostanÄ
+usuniÄte. <p>
 
-<b>Czas buforowania błędnych zapytań</b> Domyślnie 5 minut. Czas życia (TTL)
-błędnych zapytań. Pewne rodzaje zapytań (takie jak "odmowa połączenia" lub
-"404 nie znaleziono") są buforowane negatywnie przez określony okres czasu.
-Zauważ, że nie jest to to samo, co negatywne buforowanie wyników
+<b>Czas buforowania bÅÄdnych zapytaÅ</b> DomyÅlnie 5 minut. Czas Å¼ycia (TTL)
+bÅÄdnych zapytaÅ. Pewne rodzaje zapytaÅ (takie jak "odmowa poÅÄczenia" lub
+"404 nie znaleziono") sÄ buforowane negatywnie przez okreÅlony okres czasu.
+ZauwaÅ¼, Å¼e nie jest to to samo, co negatywne buforowanie wynikÃ³w
 przeszukiwania DNS. <p>
 
-<b>Czas buforowania przeszukiwań DNS</b>: Domyślnie 6 godzin (360 minut).
-Czas życia dla pozytywnego buforowania wyników przeszukiwania DNS. Jeżeli
-chcesz zminimalizować korzystanie z&nbsp;buforów IP Squida, ustaw to na 1,
+<b>Czas buforowania przeszukiwaÅ DNS</b>: DomyÅlnie 6 godzin (360 minut).
+Czas Å¼ycia dla pozytywnego buforowania wynikÃ³w przeszukiwania DNS. JeÅ¼eli
+chcesz zminimalizowaÄ korzystanie z&nbsp;buforÃ³w IP Squida, ustaw to na 1,
 nie na 0. <p>
 
-<b>Czas buforowania błędow DNS</b>: Domyślnie 5 minut. Czas życia (TTL) dla
-negatywnego buforowania błędnych wyników przeszukiwania DNS. <p>
+<b>Czas buforowania bÅÄdow DNS</b>: DomyÅlnie 5 minut. Czas Å¼ycia (TTL) dla
+negatywnego buforowania bÅÄdnych wynikÃ³w przeszukiwania DNS. <p>
 
-<b>Czas przeterminowania połączenia</b>: Domyślnie 120 sekund. Na niektórych
-systemach (w&nbsp;szczególności na Linuksie) nie można polegać
-w&nbsp;kwestii prawidłowego przeterminowywania zapytań connect(2).
-W&nbsp;związku z&nbsp;tym proces Squida wymusza swój własny czas
-przeterminowania dla połączeń z&nbsp;serwerami. <p>
+<b>Czas przeterminowania poÅÄczenia</b>: DomyÅlnie 120 sekund. Na niektÃ³rych
+systemach (w&nbsp;szczegÃ³lnoÅci na Linuksie) nie moÅ¼na polegaÄ
+w&nbsp;kwestii prawidÅowego przeterminowywania zapytaÅ connect(2).
+W&nbsp;zwiÄzku z&nbsp;tym proces Squida wymusza swÃ³j wÅasny czas
+przeterminowania dla poÅÄczeÅ z&nbsp;serwerami. <p>
  
-<b>Czas przeterminowania odczytu</b>: Domyślnie 15 minut. Stosuje się go
-przy połączeniach od strony serwera. Po każdym pomyślnie zakończonym read(),
-czas przeterminowania będzie przedłużany do tej wartości. Jeśli w&nbsp;ciągu
-tego czasu nie zostaną ponownie przeczytane żadne dane, zapytanie jest
-anulowane i&nbsp;logowane z&nbsp;błędem ERR_READ_TIMEOUT. <p>
+<b>Czas przeterminowania odczytu</b>: DomyÅlnie 15 minut. Stosuje siÄ go
+przy poÅÄczeniach od strony serwera. Po kaÅ¼dym pomyÅlnie zakoÅczonym read(),
+czas przeterminowania bÄdzie przedÅuÅ¼any do tej wartoÅci. JeÅli w&nbsp;ciÄgu
+tego czasu nie zostanÄ ponownie przeczytane Å¼adne dane, zapytanie jest
+anulowane i&nbsp;logowane z&nbsp;bÅÄdem ERR_READ_TIMEOUT. <p>
 
-<b>Czas przeterminowania wyboru miejsca</b>: Domyślnie 4 sekundy. Dla URN do
+<b>Czas przeterminowania wyboru miejsca</b>: DomyÅlnie 4 sekundy. Dla URN do
 wieloURL-owego wyboru. <p>
 
-<b>Czas przeterminowania zapytania klienta</b>: Domyślnie 15 minut. Stosuje
-się goStosuje się go przy połączeniach od strony serwera. Po każdym
-pomyślnie zakończonym read(), czas przeterminowania będzie przedłużany do
-tej wartości. Jeśli w&nbsp;ciągu tego czasu nie zostaną ponownie przeczytane
-żadne dane, zapytanie jest anulowane i&nbsp;logowane z&nbsp;błędem
+<b>Czas przeterminowania zapytania klienta</b>: DomyÅlnie 15 minut. Stosuje
+siÄ goStosuje siÄ go przy poÅÄczeniach od strony serwera. Po kaÅ¼dym
+pomyÅlnie zakoÅczonym read(), czas przeterminowania bÄdzie przedÅuÅ¼any do
+tej wartoÅci. JeÅli w&nbsp;ciÄgu tego czasu nie zostanÄ ponownie przeczytane
+Å¼adne dane, zapytanie jest anulowane i&nbsp;logowane z&nbsp;bÅÄdem
 ERR_READ_TIMEOUT. <p>
 
-<b>Maks. czas połączenia z&nbsp;klientem</b>: Domyślnie 1 dzień. Maksymalny
-okres czasu, przez który klient (przeglądarka) może być połączona
+<b>Maks. czas poÅÄczenia z&nbsp;klientem</b>: DomyÅlnie 1 dzieÅ. Maksymalny
+okres czasu, przez ktÃ³ry klient (przeglÄdarka) moÅ¼e byÄ poÅÄczona
 z&nbsp;procesem proxy. Zapobiega to posiadaniu przez proxy wielu gniazd
-(i&nbsp;w&nbsp;związku z&nbsp;tym deskryptorów plików) przywiązanych
-w&nbsp;stanie CLOSE_WAIT do zdalnych klientów, którzy się rozłączyli bez
-poprawnego zamknięcia połączenia (z&nbsp;powodu nieprawidłowej pracy sieci
+(i&nbsp;w&nbsp;zwiÄzku z&nbsp;tym deskryptorÃ³w plikÃ³w) przywiÄzanych
+w&nbsp;stanie CLOSE_WAIT do zdalnych klientÃ³w, ktÃ³rzy siÄ rozÅÄczyli bez
+poprawnego zamkniÄcia poÅÄczenia (z&nbsp;powodu nieprawidÅowej pracy sieci
 lub z&nbsp;powodu kiepskiej implementacji klienta). <p>
 
-<b>Maks. czas wyłączania</b>: Domyślnie 30 sekund. Gdy proxy otrzy ma sygnał
+<b>Maks. czas wyÅÄczania</b>: DomyÅlnie 30 sekund. Gdy proxy otrzy ma sygnaÅ
 SIGTERM lub SIGTERM jest on wprowadzany w&nbsp;stan "zawieszonego
-zamknięcia" aż wszystkie aktywne gniazda zostaną zamknięte. Wartość ta jest
-czasem życia ustawianym dla wszystkich otwartych deskryptorów w&nbsp;trybie
-zamykania. Wszyscy aktywni klienci po tej ilości sekund otrzymają komunikat
-o&nbsp;przeterminowaniu połączenia ('timeout'). <p>
+zamkniÄcia" aÅ¼ wszystkie aktywne gniazda zostanÄ zamkniÄte. WartoÅÄ ta jest
+czasem Å¼ycia ustawianym dla wszystkich otwartych deskryptorÃ³w w&nbsp;trybie
+zamykania. Wszyscy aktywni klienci po tej iloÅci sekund otrzymajÄ komunikat
+o&nbsp;przeterminowaniu poÅÄczenia ('timeout'). <p>
 
-<b>Klienci półzamknięci</b>:  Domyślnie 'włączone'. Niektórzy klienci mogą
-zamykać wysyłającą stronę swoich połączeń TCP, pozostawiając otwartą stronę
-odbierającą. Niekiedy SquidSquid ma problemy z&nbsp;odróżnieniem połączeń
-TCP półzamkniętych od całkowicie zamkniętych. Domyślnie, połączenia
-półzamknięte są utrzymywane aż read(2) lub write(2) dla gniazda zwróci błąd.
-Jeśli zmienisz tę opcję na 'wyłączone', Squid będzie zamykał połączenie
-klienta natychmiast po zwróceniu przez read(2) "nie ma więcej danych do
+<b>Klienci pÃ³ÅzamkniÄci</b>:  DomyÅlnie 'wÅÄczone'. NiektÃ³rzy klienci mogÄ
+zamykaÄ wysyÅajÄcÄ stronÄ swoich poÅÄczeÅ TCP, pozostawiajÄc otwartÄ stronÄ
+odbierajÄcÄ. Niekiedy SquidSquid ma problemy z&nbsp;odrÃ³Å¼nieniem poÅÄczeÅ
+TCP pÃ³ÅzamkniÄtych od caÅkowicie zamkniÄtych. DomyÅlnie, poÅÄczenia
+pÃ³ÅzamkniÄte sÄ utrzymywane aÅ¼ read(2) lub write(2) dla gniazda zwrÃ³ci bÅÄd.
+JeÅli zmienisz tÄ opcjÄ na 'wyÅÄczone', Squid bÄdzie zamykaÅ poÅÄczenie
+klienta natychmiast po zwrÃ³ceniu przez read(2) "nie ma wiÄcej danych do
 odczytu". <p>
 
-<b>Stały czas przeterminowania</b>: Domyślnie 120 sekund. Czas
-przeterminowania dla trwałych jałowych połączeń z&nbsp;klientami, serwerami
-i&nbsp;innymi proxy. Trwałe połączenia będą niemożliwe, jeśli wartość ta
-będzie mniejsza niż 10 sekund. <p>
+<b>StaÅy czas przeterminowania</b>: DomyÅlnie 120 sekund. Czas
+przeterminowania dla trwaÅych jaÅowych poÅÄczeÅ z&nbsp;klientami, serwerami
+i&nbsp;innymi proxy. TrwaÅe poÅÄczenia bÄdÄ niemoÅ¼liwe, jeÅli wartoÅÄ ta
+bÄdzie mniejsza niÅ¼ 10 sekund. <p>
 
-<b>Host przekazywania WAIS</b>: Domyślnie żaden. Nazwa lub adres hosta, do
-którego będą przekazywane zapytania WAIS. <p>
+<b>Host przekazywania WAIS</b>: DomyÅlnie Å¼aden. Nazwa lub adres hosta, do
+ktÃ³rego bÄdÄ przekazywane zapytania WAIS. <p>
 
-<b>Port przekazywania WAIS</b>: Domyślnie żaden. Port, na który będą
+<b>Port przekazywania WAIS</b>: DomyÅlnie Å¼aden. Port, na ktÃ³ry bÄdÄ
 przekazywane zapytania WAIS.
 
 <hr>

@@ -1,6 +1,6 @@
-postfix_control_command=Chemin d'accès complet à la commande de contrôle de Postfix,0
-postfix_config_command=Chemin d'accès complet à la commande de configuration de Postfix,0
-postfix_config_file=Chemin d'accès complet au fichier de configuration de Postfix,0
-postfix_aliases_table_command=Chemin d'accès complet à la commande de génération des alias,0
-postfix_newaliases_command=Chemin d'accès complet à la commande &quot;newaliases&quot; (compatibilité avec Sendmail),0
-postfix_lookup_table_command=Chemin d'accès complet à la commande de génération des tables de recherche (`postmap'),0
+postfix_control_command=Chemin d'accÃ¨s complet Ã  la commande de contrÃ´le de Postfix,0
+postfix_config_command=Chemin d'accÃ¨s complet Ã  la commande de configuration de Postfix,0
+postfix_config_file=Chemin d'accÃ¨s complet au fichier de configuration de Postfix,0
+postfix_aliases_table_command=Chemin d'accÃ¨s complet Ã  la commande de gÃ©nÃ©ration des alias,0
+postfix_newaliases_command=Chemin d'accÃ¨s complet Ã  la commande &quot;newaliases&quot; (compatibilitÃ© avec Sendmail),0
+postfix_lookup_table_command=Chemin d'accÃ¨s complet Ã  la commande de gÃ©nÃ©ration des tables de recherche (`postmap'),0

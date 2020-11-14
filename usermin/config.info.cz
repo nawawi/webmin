@@ -1,4 +1,4 @@
-usermin_dir=Adresáø Usermin konfigurace,0
-cron_mode=Zobrazit èas aktualizace jako,1,0-Jednoduché rozhraní,1-Vıbìr èasu jako v cronu
-host=Jméno hosta Userminu pro pøipojené u¾ivatele,3,Stejné jako u Webminu
-port=Port Userminu pro pøipojené u¾ivatele,3,Zjistit automaticky
+usermin_dir=AdresÃ¡Ã¸ Usermin konfigurace,0
+cron_mode=Zobrazit Ã¨as aktualizace jako,1,0-JednoduchÃ© rozhranÃ­,1-VÃ½bÃ¬r Ã¨asu jako v cronu
+host=JmÃ©no hosta Userminu pro pÃ¸ipojenÃ© uÂ¾ivatele,3,StejnÃ© jako u Webminu
+port=Port Userminu pro pÃ¸ipojenÃ© uÂ¾ivatele,3,Zjistit automaticky

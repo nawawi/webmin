@@ -1,28 +1,28 @@
-<header>Root-tillgång</header>
+<header>Root-tillgÃ¥ng</header>
 
-Här anger du de datorer som servern ska acceptera root-användaren för.
-Om en klient inte finns på denna listan, kommer NFS-servern att behandla
-root som en <a href=anon>anonym användare</a> - även om klienten får
+HÃ¤r anger du de datorer som servern ska acceptera root-anvÃ¤ndaren fÃ¶r.
+Om en klient inte finns pÃ¥ denna listan, kommer NFS-servern att behandla
+root som en <a href=anon>anonym anvÃ¤ndare</a> - Ã¤ven om klienten fÃ¥r
 montera resursen.
 
 <if $gconfig{'os_version'} == 7>
-    <br>Du kan ange datorer på följande sätt:
+    <br>Du kan ange datorer pÃ¥ fÃ¶ljande sÃ¤tt:
 	<dl>
 	<dt><b>Datornamn eller IP-adress</b> (t ex <i>ftp.foo.com</i> eller <i>1.2.3.4</i>)
 	<dd>Matchar datorer med angivet namn eller IP-nummer
-	<dt><b>Nätverksgrupp</b> (t ex <i>administration</i>)
-	<dd>Matchar alla datorer i nätverksgruppen
-	<dt><b>DNS-domän</b> (t ex <i>.foo.com</i>)
-	<dd>Matchar alla datorer i domänen
-	<dt><b>Nätverk</b> (t ex <i>@10.254.1</i>)
-	<dd>Matchar alla datorer på nätverket
-	<dt><b>Nätverk/nätmask</b> (t ex <i>@10.254.1/24</i>)
-	<dd>Matchar alla datorer på nätverket
+	<dt><b>NÃ¤tverksgrupp</b> (t ex <i>administration</i>)
+	<dd>Matchar alla datorer i nÃ¤tverksgruppen
+	<dt><b>DNS-domÃ¤n</b> (t ex <i>.foo.com</i>)
+	<dd>Matchar alla datorer i domÃ¤nen
+	<dt><b>NÃ¤tverk</b> (t ex <i>@10.254.1</i>)
+	<dd>Matchar alla datorer pÃ¥ nÃ¤tverket
+	<dt><b>NÃ¤tverk/nÃ¤tmask</b> (t ex <i>@10.254.1/24</i>)
+	<dd>Matchar alla datorer pÃ¥ nÃ¤tverket
 	</dl>
-    <p>Dessutom kan du framför varje datorbestämning som anges ovan skriva
-    ett <i>-</i>, som betyder att datorn, nätverksgruppen, domänen eller
-    nätverket <b>inte</b> får montera denna resurs. Detta är användbart
-    om du vill tillåta montering från en grupp datorer, men utesluta en
+    <p>Dessutom kan du framfÃ¶r varje datorbestÃ¤mning som anges ovan skriva
+    ett <i>-</i>, som betyder att datorn, nÃ¤tverksgruppen, domÃ¤nen eller
+    nÃ¤tverket <b>inte</b> fÃ¥r montera denna resurs. Detta Ã¤r anvÃ¤ndbart
+    om du vill tillÃ¥ta montering frÃ¥n en grupp datorer, men utesluta en
     viss dator.
 </if>
 <hr>

@@ -1,21 +1,21 @@
 <header>Asynchroniczny zapis</header>
 
-"Tak" - Operacje zapisu na serwerze bêd± siê odbywa³y asynchronicznie. Gdy
-klient NFS-u wy¶le do serwera ¿±danie zapisu, serwer zwróci klientowi
-odpowied¼ pozytywn± zanim zapisze jakiekolwiek dane na dysku. Klient mo¿e
-wówczas wys³aæ inne ¿±danie zapisu bez oczekiwania na zakoñczenie przez
-serwer poprzedniego zapisu. Przy zapisie asynchronicznym wydajno¶æ zapisu
-jest lepsza ni¿ przy zapisie synchronicznym. Jednak¿e, je¶li serwer ulegnie
-awarii po wys³aniu pozytywnej odpowiedzi do klienta, ale przed zapisaniem
-danych na dysku, dane zostan± stracone a klient nie zostanie o&nbsp;tym
+"Tak" - Operacje zapisu na serwerze bÃªdÂ± siÃª odbywaÂ³y asynchronicznie. Gdy
+klient NFS-u wyÂ¶le do serwera Â¿Â±danie zapisu, serwer zwrÃ³ci klientowi
+odpowiedÂ¼ pozytywnÂ± zanim zapisze jakiekolwiek dane na dysku. Klient moÂ¿e
+wÃ³wczas wysÂ³aÃ¦ inne Â¿Â±danie zapisu bez oczekiwania na zakoÃ±czenie przez
+serwer poprzedniego zapisu. Przy zapisie asynchronicznym wydajnoÂ¶Ã¦ zapisu
+jest lepsza niÂ¿ przy zapisie synchronicznym. JednakÂ¿e, jeÂ¶li serwer ulegnie
+awarii po wysÂ³aniu pozytywnej odpowiedzi do klienta, ale przed zapisaniem
+danych na dysku, dane zostanÂ± stracone a klient nie zostanie o&nbsp;tym
 powiadomiony. <p>
 
-"Nie" - Operacje zapisu bêd± siê odbywa³y synchronicznie. Gdy klient NFS-u
-wy¶le ¿±danie zapisu do serwera, serwer zapisze dane na dysku przed
-zwróceniem klientowi pozytywnej odpowiedzi. Klient musi czekaæ, a¿ serwer
-zapisze dane na dysku, zanim bêdzie móg³ wys³aæ inne ¿±danie zapisu.
-Wydajno¶æ zapisu synchronicznego nie jest tak dobra jak zapisu
+"Nie" - Operacje zapisu bÃªdÂ± siÃª odbywaÂ³y synchronicznie. Gdy klient NFS-u
+wyÂ¶le Â¿Â±danie zapisu do serwera, serwer zapisze dane na dysku przed
+zwrÃ³ceniem klientowi pozytywnej odpowiedzi. Klient musi czekaÃ¦, aÂ¿ serwer
+zapisze dane na dysku, zanim bÃªdzie mÃ³gÂ³ wysÂ³aÃ¦ inne Â¿Â±danie zapisu.
+WydajnoÂ¶Ã¦ zapisu synchronicznego nie jest tak dobra jak zapisu
 asynchronicznego. <p>
 
-Warto¶ci± domy¶ln± jest "Nie".
+WartoÂ¶ciÂ± domyÂ¶lnÂ± jest "Nie".
 <hr>

@@ -3,11 +3,11 @@ index_ok=Executa l&#039;ordre:
 index_history=Historial d'ordres
 index_clear=Neteja l&#039;historial
 index_clearcmds=Neteja les ordres
-index_desc=Introdueix una ordre shell a executar en el camp de sota. L'ordre <tt>cd</tt> es pot utilitzar per a canviar el directori per a ordres subsegüents.
+index_desc=Introdueix una ordre shell a executar en el camp de sota. L'ordre <tt>cd</tt> es pot utilitzar per a canviar el directori per a ordres subsegÃ¼ents.
 index_pok=Executa l'ordre anterior
 index_edit=Edita l'anterior
 index_trunced=La sortida total de $2 s'ha truncat a $1.
-index_timedout=S'ha cancel·lat l'ordre després de $1 segons d'execució.
+index_timedout=S'ha cancelÂ·lat l'ordre desprÃ©s de $1 segons d'execuciÃ³.
 
 acl_user=Executa les ordres com a usuari
 acl_user_def=Usuari Webmin actual

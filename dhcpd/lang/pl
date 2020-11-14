@@ -1,121 +1,121 @@
 __norefs=1
-acl_agrp=Dostêp do grup:
-acl_ahst=Dostêp do hostów:
-acl_apply=Mo¿e zastosowaæ zmiany?
-acl_asha=Dostêp do do sieci wspó³dzielonych:
-acl_asub=Dostêp do podsieci:
+acl_agrp=DostÄ™p do grup:
+acl_ahst=DostÄ™p do hostÃ³w:
+acl_apply=MoÅ¼e zastosowaÄ‡ zmiany?
+acl_asha=DostÄ™p do do sieci wspÃ³Å‚dzielonych:
+acl_asub=DostÄ™p do podsieci:
 acl_c=tworzenie
-acl_ernow=Je¶li chcesz w&nbsp;globalnych ACL-ach umo¿liwiæ dostêp do pewnego rodzaju obiektów z&nbsp;prawem zapisu, to musisz równie¿ nadaæ prawo do odczytu dla tego rodzaju obiektów.
-acl_err=B³±d podczas zachowywania listy ACL-i
-acl_global=Mo¿e zmieniaæ opcje ogólne?
-acl_hide=Ukrywaæ niedostêpne obiekty?
-acl_na=brak dostêpu
-acl_normal=zwyk³y
+acl_ernow=JeÅ›li chcesz w&nbsp;globalnych ACL-ach umoÅ¼liwiÄ‡ dostÄ™p do pewnego rodzaju obiektÃ³w z&nbsp;prawem zapisu, to musisz rÃ³wnieÅ¼ nadaÄ‡ prawo do odczytu dla tego rodzaju obiektÃ³w.
+acl_err=BÅ‚Ä…d podczas zachowywania listy ACL-i
+acl_global=MoÅ¼e zmieniaÄ‡ opcje ogÃ³lne?
+acl_hide=UkrywaÄ‡ niedostÄ™pne obiekty?
+acl_na=brak dostÄ™pu
+acl_normal=zwykÅ‚y
 acl_paranoic=paranoiczny
-acl_per_grp_acls=W³±czyæ ACL przez grupê?
-acl_per_hst_acls=W³±czyæ ACL-e dla poszczególnych hostów?
-acl_per_obj_acls=ACL-e dla poszczególnych obiektów...
-acl_per_sha_acls=W³±czyæ ACL per-shared-net?
-acl_per_sub_acls=W³±czyæ ACL-e dla poszczególnych podsieci?
+acl_per_grp_acls=WÅ‚Ä…czyÄ‡ ACL przez grupÄ™?
+acl_per_hst_acls=WÅ‚Ä…czyÄ‡ ACL-e dla poszczegÃ³lnych hostÃ³w?
+acl_per_obj_acls=ACL-e dla poszczegÃ³lnych obiektÃ³w...
+acl_per_sha_acls=WÅ‚Ä…czyÄ‡ ACL per-shared-net?
+acl_per_sub_acls=WÅ‚Ä…czyÄ‡ ACL-e dla poszczegÃ³lnych podsieci?
 acl_r=odczyt
 acl_r1=odczyt
-acl_r_leases=Mo¿e przegl±daæ dzier¿awy?
+acl_r_leases=MoÅ¼e przeglÄ…daÄ‡ dzierÅ¼awy?
 acl_rw=odczyt/zapis
-acl_seclevel=Zastosowaæ poziom bezpieczeñstwa:
-acl_uniq_hst=Unikalne nazwy hostów?
-acl_uniq_sha=Unikalne nazwy sieci wspó³dzielonych?
+acl_seclevel=ZastosowaÄ‡ poziom bezpieczeÅ„stwa:
+acl_uniq_hst=Unikalne nazwy hostÃ³w?
+acl_uniq_sha=Unikalne nazwy sieci wspÃ³Å‚dzielonych?
 acl_uniq_sub=Unikalne adresy IP podsieci?
 acl_w=zapis
-acl_w_leases=Mo¿e kasowaæ dzier¿awy?
-acl_zones=Mo¿e edytowaæ dynamiczne strefy DNS?
-butt_create=Utwórz
-butt_del=Usuñ
-butt_eco=Zmieñ opcje stacji klienckiej
-butt_leases=Lista dzier¿aw
+acl_w_leases=MoÅ¼e kasowaÄ‡ dzierÅ¼awy?
+acl_zones=MoÅ¼e edytowaÄ‡ dynamiczne strefy DNS?
+butt_create=UtwÃ³rz
+butt_del=UsuÅ„
+butt_eco=ZmieÅ„ opcje stacji klienckiej
+butt_leases=Lista dzierÅ¼aw
 butt_save=Zachowaj
-butt_vco=Poka¿ opcje stacji klienckiej
-cdel_confirm=Czy na pewno chcesz usun±æ tê $1&nbsp;?
-cdel_eunknown=Nieokre¶lony b³±d
+butt_vco=PokaÅ¼ opcje stacji klienckiej
+cdel_confirm=Czy na pewno chcesz usunÄ…Ä‡ tÄ™ $1&nbsp;?
+cdel_eunknown=NieokreÅ›lony bÅ‚Ä…d
 cdel_group=grupa
 cdel_group1=grupy
-cdel_group2=grupê
+cdel_group2=grupÄ™
 cdel_groups=grupy
-cdel_header=Ostrze¿enie
+cdel_header=OstrzeÅ¼enie
 cdel_host=host
 cdel_hosts=hosty
-cdel_return=listy hostów i podsieci
-cdel_shared1=sieci wspó³dzielonej
-cdel_shared2=sieæ wspó³dzielon±
-cdel_subnet=podsieæ
+cdel_return=listy hostÃ³w i podsieci
+cdel_shared1=sieci wspÃ³Å‚dzielonej
+cdel_shared2=sieÄ‡ wspÃ³Å‚dzielonÄ…
+cdel_subnet=podsieÄ‡
 cdel_subnet1=podsieci
-cdel_subnet2=podsieæ
+cdel_subnet2=podsieÄ‡
 cdel_subnets=podsieci
-cdel_txt=Usuniêcie $1 '$2' spowoduje usuniêcie równie¿ jej zawarto¶ci:
-default=Domy¶lne
-eacl_aviol=Naruszenie kontroli dostêpu
-eacl_np=Nie masz uprawnieñ do
-eacl_papply=restartu tej us³ugi
-eacl_pdg=usuniêcia grupy
-eacl_pdh=usuniêcia hosta
-eacl_pdl=kasowania dzier¿aw
-eacl_pdn=usuniêcia sieci wspó³dzielonej
-eacl_pds=usuniêcia podsieci
-eacl_pglob=zmiany opcji ogólnych
+cdel_txt=UsuniÄ™cie $1 '$2' spowoduje usuniÄ™cie rÃ³wnieÅ¼ jej zawartoÅ›ci:
+default=DomyÅ›lne
+eacl_aviol=Naruszenie kontroli dostÄ™pu
+eacl_np=Nie masz uprawnieÅ„ do
+eacl_papply=restartu tej usÅ‚ugi
+eacl_pdg=usuniÄ™cia grupy
+eacl_pdh=usuniÄ™cia hosta
+eacl_pdl=kasowania dzierÅ¼aw
+eacl_pdn=usuniÄ™cia sieci wspÃ³Å‚dzielonej
+eacl_pds=usuniÄ™cia podsieci
+eacl_pglob=zmiany opcji ogÃ³lnych
 eacl_pig=dodawania nowych grup
-eacl_pih=dodawania nowych hostów
-eacl_pin=dodawania nowych sieci wspó³dzielonych
+eacl_pih=dodawania nowych hostÃ³w
+eacl_pin=dodawania nowych sieci wspÃ³Å‚dzielonych
 eacl_pis=dodawania nowych podsieci
 eacl_psg=wybrania grupy
 eacl_psh=wybrania hosta
-eacl_psl=przegl±dania dzier¿aw
-eacl_psn=wybrania sieci wspó³dzielonej
+eacl_psl=przeglÄ…dania dzierÅ¼aw
+eacl_psn=wybrania sieci wspÃ³Å‚dzielonej
 eacl_pss=wybrania podsieci
 eacl_pug=modyfikacji grupy
 eacl_puh=modyfikacji hosta
-eacl_pun=modyfikacji sieci wspó³dzielonej
+eacl_pun=modyfikacji sieci wspÃ³Å‚dzielonej
 eacl_pus=modyfikacji podsieci
-eacl_uniq=tworzenia duplikatów
-eacl_uniqh=tworzenie hostów przez duplikowanie adresów sprzêtowych
-eacl_uniqi=tworzenie hostów ze zduplikowanych adresów IP
+eacl_uniq=tworzenia duplikatÃ³w
+eacl_uniqh=tworzenie hostÃ³w przez duplikowanie adresÃ³w sprzÄ™towych
+eacl_uniqi=tworzenie hostÃ³w ze zduplikowanych adresÃ³w IP
 egroup_assign=Grupa przypisana do
-egroup_crheader=Utwórz grupê hostów
+egroup_crheader=UtwÃ³rz grupÄ™ hostÃ³w
 egroup_desc=Opis grupy
-egroup_eheader=Zmieñ grupê hostów
+egroup_eheader=ZmieÅ„ grupÄ™ hostÃ³w
 egroup_hosts=Hosty w&nbsp;tej grupie
-egroup_nchoice=U¿ywaæ nazw hostów jako nazw stacji klienckich?
-egroup_retshar=sieci wspó³dzielonej
+egroup_nchoice=UÅ¼ywaÄ‡ nazw hostÃ³w jako nazw stacji klienckich?
+egroup_retshar=sieci wspÃ³Å‚dzielonej
 egroup_retsubn=podsieci
-egroup_return=listy hostów
+egroup_return=listy hostÃ³w
 egroup_tblhdr=Dane grupy
 ehost_assign=Host przypisany do
-ehost_crheader=Utwórz host
+ehost_crheader=UtwÃ³rz host
 ehost_desc=Opis hosta
-ehost_eheader=Zmieñ host
-ehost_fixedip=Sta³y adres IP
+ehost_eheader=ZmieÅ„ host
+ehost_fixedip=StaÅ‚y adres IP
 ehost_hname=Nazwa hosta
-ehost_hwaddr=Adres sprzêtowy
+ehost_hwaddr=Adres sprzÄ™towy
 ehost_in=w
 ehost_ingroup=grupy
-ehost_inshared=sieci wspó³dzielonej
+ehost_inshared=sieci wspÃ³Å‚dzielonej
 ehost_insubnet=podsieci
-ehost_nojavascr=Twoja przegl±darka nie obs³uguje javascriptu. Musisz teraz wybraæ w³a¶ciw± pozycjê z poni¿szej listy.
-ehost_retgroup=grupy hostów
-ehost_retshar=sieci wspó³dzielonej
+ehost_nojavascr=Twoja przeglÄ…darka nie obsÅ‚uguje javascriptu. Musisz teraz wybraÄ‡ wÅ‚aÅ›ciwÄ… pozycjÄ™ z poniÅ¼szej listy.
+ehost_retgroup=grupy hostÃ³w
+ehost_retshar=sieci wspÃ³Å‚dzielonej
 ehost_retsubn=podsieci
-ehost_return=listy hostów
-ehost_shared=W&nbsp;sieci wspó³dzielonej $1
+ehost_return=listy hostÃ³w
+ehost_shared=W&nbsp;sieci wspÃ³Å‚dzielonej $1
 ehost_subnet=W&nbsp;podsieci $1/$2
 ehost_tabhdr=Dane hosta
-ehost_toplevel=najwy¿szego poziomu
-eopt_alltitle=Dla wszystkich podsieci, hostów i&nbsp;grup
-eopt_baddr=Adres rozg³oszeniowy
+ehost_toplevel=najwyÅ¼szego poziomu
+eopt_alltitle=Dla wszystkich podsieci, hostÃ³w i&nbsp;grup
+eopt_baddr=Adres rozgÅ‚oszeniowy
 eopt_chost=Nazwa hosta stacji klienckiej
 eopt_cname=Nazwa
 eopt_cnum=Numer
 eopt_custom=Opcje dodatkowe
-eopt_cval=Warto¶æ
+eopt_cval=WartoÅ›Ä‡
 eopt_def=Opcja definicji
-eopt_defrouters=Domy¶lne bramki
+eopt_defrouters=DomyÅ›lne bramki
 eopt_dname=Opcja nazwy
 eopt_dnsserv=Serwery DNS
 eopt_dnum=Numer
@@ -128,134 +128,134 @@ eopt_header=Opcje stacji klienckiej
 eopt_hosttitle=Dla hosta $1
 eopt_logserv=Serwery logowania
 eopt_nbns=Serwery nazw NetBIOS
-eopt_nbntype=Typ wêz³a NetBIOS-u
-eopt_nbs=Zasiêg NetBIOS-u
+eopt_nbntype=Typ wÄ™zÅ‚a NetBIOS-u
+eopt_nbs=ZasiÄ™g NetBIOS-u
 eopt_nisdom=Domena NIS
 eopt_nisserv=Serwery NIS
 eopt_ntpserv=Serwey NTP
-eopt_rdpath=¦cie¿ka do dysku "root"
-eopt_returngroup=grupy hostów
+eopt_rdpath=ÅšcieÅ¼ka do dysku "root"
+eopt_returngroup=grupy hostÃ³w
 eopt_returnhost=hosta
-eopt_returnindex=listy podsieci i hostów
-eopt_returnshsub=sieci wspó³dzielonej
+eopt_returnindex=listy podsieci i hostÃ³w
+eopt_returnshsub=sieci wspÃ³Å‚dzielonej
 eopt_returnsub=podsieci
 eopt_slpa=Katalog SLP agenta IP
 eopt_slpaips=Tylko te adresy IP?
-eopt_slps=Zakres us³ugi SLP
+eopt_slps=Zakres usÅ‚ugi SLP
 eopt_slpsonly=Tylko ten zakres?
 eopt_smask=Maska podsieci
-eopt_snettitle=Dla sieci wspó³dzielonej $1
+eopt_snettitle=Dla sieci wspÃ³Å‚dzielonej $1
 eopt_statrouters=Statyczny routing
 eopt_subtitle=Dla podsieci $1
 eopt_swapserv=Serwer wymiany
 eopt_tabhdr=Opcje stacji klienckiej
 eopt_timeserv=Serwery czasu
-eopt_toffset=Przesuniêcie czasu
+eopt_toffset=PrzesuniÄ™cie czasu
 eopt_xdmserv=Serwery XDM
-esh_crheader=Utwórz sieæ wspó³dzielon±
-esh_desc=Opis wspólnej sieci
-esh_eheader=Zmieñ sieæ wspó³dzielon±
-esh_groups=Grupy nale¿±ce bezpo¶rednio do tej sieci wspó³dzielonej
-esh_hosts=Hosty nale¿±ce bezpo¶rednio do tej sieci wspó³dzielonej
+esh_crheader=UtwÃ³rz sieÄ‡ wspÃ³Å‚dzielonÄ…
+esh_desc=Opis wspÃ³lnej sieci
+esh_eheader=ZmieÅ„ sieÄ‡ wspÃ³Å‚dzielonÄ…
+esh_groups=Grupy naleÅ¼Ä…ce bezpoÅ›rednio do tej sieci wspÃ³Å‚dzielonej
+esh_hosts=Hosty naleÅ¼Ä…ce bezpoÅ›rednio do tej sieci wspÃ³Å‚dzielonej
 esh_netname=Nazwa sieci
-esh_pools=Pule adresowe dla wspólnej sieci
+esh_pools=Pule adresowe dla wspÃ³lnej sieci
 esh_return=listy podsieci
-esh_subn=Podsieci nale¿±ce do tej sieci wspó³dzielonej
-esh_tabhdr=Dane sieci wspó³dzielonej
-esub_arange=Zakresy adresów
-esub_crheader=Utwórz podsieæ
+esh_subn=Podsieci naleÅ¼Ä…ce do tej sieci wspÃ³Å‚dzielonej
+esh_tabhdr=Dane sieci wspÃ³Å‚dzielonej
+esub_arange=Zakresy adresÃ³w
+esub_crheader=UtwÃ³rz podsieÄ‡
 esub_dbooptpq=Dynamiczny BOOTP ?
 esub_desc=Opis podsieci
-esub_edheader=Zmieñ podsieæ
+esub_edheader=ZmieÅ„ podsieÄ‡
 esub_fopeer=Failover Peer
-esub_groups=Grupy nale¿±ce bezpo¶rednio do tej podsieci
-esub_hosts=Hosty nale¿±ce bezpo¶rednio do tej podsieci
+esub_groups=Grupy naleÅ¼Ä…ce bezpoÅ›rednio do tej podsieci
+esub_hosts=Hosty naleÅ¼Ä…ce bezpoÅ›rednio do tej podsieci
 esub_naddr=Adres sieci
 esub_nmask=Maska sieci
-esub_none=¿adna
+esub_none=Å¼adna
 esub_pool=Obszar $1
 esub_pooladd=Dodaj obszar adresowy
-esub_poolnone=Nie zdefiniowano obszarów adresowych
+esub_poolnone=Nie zdefiniowano obszarÃ³w adresowych
 esub_pools=Obszary adresowe dla podsieci
-esub_retshar=sieci wspó³dzielonej
+esub_retshar=sieci wspÃ³Å‚dzielonej
 esub_return=listy podsieci
-esub_shnet=Sieæ wspó³dzielona
+esub_shnet=SieÄ‡ wspÃ³Å‚dzielona
 esub_tabhdr=Dane podsieci
 hdelete_enone=Nic nie wybrano
-hdelete_err=Usuwanie hostów i grup nie powiod³o siê
-hdelete_ok=Usuñ teraz
-hdelete_rusure1=Czy na pewno chcesz usun±æ $1 wybrane hosty i $2 grupy? Inne hosty w grupach zostan± utracone.
-hdelete_rusure2=Czy na pewno chcesz usun±æ $1 wybrane hosty?
-hdelete_rusure3=Czy na pewno chcesz usun±æ wybrane $2 grupy? Inne hosty w grupach zostan± utracone.
-hdelete_title=Usuwanie hostów i grup
-iface_desc=Serwer DHCP mo¿e przypisaæ tylko adresy IP z pod³±czonej sieci do jednego interfejsu wybranego poni¿ej. Interfejs sieciowy dla wszystkich zdefiniowanych podsieci musi byæ za³±czony. Je¿eli nic nie jest wybrane, to serwer DHCP spróbuje znale¼æ go automatycznie.
-iface_listen=Nas³uch na interfejsach
+hdelete_err=Usuwanie hostÃ³w i grup nie powiodÅ‚o siÄ™
+hdelete_ok=UsuÅ„ teraz
+hdelete_rusure1=Czy na pewno chcesz usunÄ…Ä‡ $1 wybrane hosty i $2 grupy? Inne hosty w grupach zostanÄ… utracone.
+hdelete_rusure2=Czy na pewno chcesz usunÄ…Ä‡ $1 wybrane hosty?
+hdelete_rusure3=Czy na pewno chcesz usunÄ…Ä‡ wybrane $2 grupy? Inne hosty w grupach zostanÄ… utracone.
+hdelete_title=Usuwanie hostÃ³w i grup
+iface_desc=Serwer DHCP moÅ¼e przypisaÄ‡ tylko adresy IP z podÅ‚Ä…czonej sieci do jednego interfejsu wybranego poniÅ¼ej. Interfejs sieciowy dla wszystkich zdefiniowanych podsieci musi byÄ‡ zaÅ‚Ä…czony. JeÅ¼eli nic nie jest wybrane, to serwer DHCP sprÃ³buje znaleÅºÄ‡ go automatycznie.
+iface_listen=NasÅ‚uch na interfejsach
 iface_title=Interfejs sieciowy
 index_1memb=1&nbsp;host
 index_234memb=$1&nbsp;hosty
 index_addhst=Dodaj nowy host
-index_addhstg=Dodaj now± grupê hostów
-index_addnet=Dodaj now± sieæ wspó³dzielon±
-index_addsub=Dodaj now± podsieæ
-index_addzone=Dodaj now± strefê DNS
-index_apply=Naci¶nij ten przycisk, aby zastosowaæ bie¿±c± konfiguracjê dla dzia³aj±cego serwera DHCP poprzez zatrzymanie go i&nbsp;ponowne uruchomienie.
+index_addhstg=Dodaj nowÄ… grupÄ™ hostÃ³w
+index_addnet=Dodaj nowÄ… sieÄ‡ wspÃ³Å‚dzielonÄ…
+index_addsub=Dodaj nowÄ… podsieÄ‡
+index_addzone=Dodaj nowÄ… strefÄ™ DNS
+index_apply=NaciÅ›nij ten przycisk, aby zastosowaÄ‡ bieÅ¼Ä…cÄ… konfiguracjÄ™ dla dziaÅ‚ajÄ…cego serwera DHCP poprzez zatrzymanie go i&nbsp;ponowne uruchomienie.
 index_buttapply=Zastosuj zmiany
-index_buttego=Zmieñ opcje klienta
+index_buttego=ZmieÅ„ opcje klienta
 index_buttekey=Edytuj klucze TSIG
-index_buttetext=Rêczna edycja konfiguracji
+index_buttetext=RÄ™czna edycja konfiguracji
 index_buttiface=Edytuj interfejs sieciowy
-index_buttlal=Poka¿ aktywne dzier¿awy
+index_buttlal=PokaÅ¼ aktywne dzierÅ¼awy
 index_buttstart=Uruchom serwer
-index_delete=Usuñ wybrane
+index_delete=UsuÅ„ wybrane
 index_desc=Opis
 index_dhcpd=ISC DHCPd
-index_dhcpdnotfound=Nie znaleziono w&nbsp;Twoim systemie serwera DHCP <i>$1</i>. Mo¿liwe, ¿e nie jest on zainstalowany lub Twoja <a href="$2">konfiguracja modu³u DHCP</a> jest nieprawid³owa.
-index_dhcpdver2=Serwer DHCP <tt>$1</tt> nie wystêpuje w poprawnej wersji. Webmin wspiera tylko ISC DHCPD w wersjach od $2 do $3.
-index_ego=Zmieñ opcje klienta DHCP, które dotycz± wszystkich podsieci, sieci wspó³dzielonych, hostów i&nbsp;ich grup.
+index_dhcpdnotfound=Nie znaleziono w&nbsp;Twoim systemie serwera DHCP <i>$1</i>. MoÅ¼liwe, Å¼e nie jest on zainstalowany lub Twoja <a href="$2">konfiguracja moduÅ‚u DHCP</a> jest nieprawidÅ‚owa.
+index_dhcpdver2=Serwer DHCP <tt>$1</tt> nie wystÄ™puje w poprawnej wersji. Webmin wspiera tylko ISC DHCPD w wersjach od $2 do $3.
+index_ego=ZmieÅ„ opcje klienta DHCP, ktÃ³re dotyczÄ… wszystkich podsieci, sieci wspÃ³Å‚dzielonych, hostÃ³w i&nbsp;ich grup.
 index_gdom=Grupa dla $1
 index_group=Grupa:
-index_grplook2=Edytuj grupê nazwan±:
-index_grptoomany=Jest zbyt wiele grup, aby je wy¶wietliæ.
-index_hardware=Adres sprzêtowy
-index_hdisplay=Wy¶wietlaæ hosty i&nbsp;grupy wg:
-index_horder0=Przynale¿no¶ci
+index_grplook2=Edytuj grupÄ™ nazwanÄ…:
+index_grptoomany=Jest zbyt wiele grup, aby je wyÅ›wietliÄ‡.
+index_hardware=Adres sprzÄ™towy
+index_hdisplay=WyÅ›wietlaÄ‡ hosty i&nbsp;grupy wg:
+index_horder0=PrzynaleÅ¼noÅ›ci
 index_horder1=Struktury pliku
 index_horder2=Nazwy
-index_horder3=Adresu sprzêtowego
+index_horder3=Adresu sprzÄ™towego
 index_horder4=Adresu IP
 index_hostgroup=Host/grupa
-index_hst=Hosty i&nbsp;grupy hostów
+index_hst=Hosty i&nbsp;grupy hostÃ³w
 index_hstlook2=Edytuj host nazwany:
-index_hsttoomany=Jest zbyt wiele hostów, aby je wy¶wietliæ.
-index_iface=Ustaw interfejsy sieci, które serwer DHCP bêdzie nas³uchiwaæ po uruchomieniu.
-index_key=Edycja kluczy TSIG (u¿ywane do uwierzytelnienia aktualizacji do serwerów DNS)
-index_lal=Poka¿ dzier¿awy obecnie udzielone przez ten serwer DHCP dla dynamicznie przypisanych adresów IP.
-index_match0=równy
+index_hsttoomany=Jest zbyt wiele hostÃ³w, aby je wyÅ›wietliÄ‡.
+index_iface=Ustaw interfejsy sieci, ktÃ³re serwer DHCP bÄ™dzie nasÅ‚uchiwaÄ‡ po uruchomieniu.
+index_key=Edycja kluczy TSIG (uÅ¼ywane do uwierzytelnienia aktualizacji do serwerÃ³w DNS)
+index_lal=PokaÅ¼ dzierÅ¼awy obecnie udzielone przez ten serwer DHCP dla dynamicznie przypisanych adresÃ³w IP.
+index_match0=rÃ³wny
 index_match1=zawiera
-index_match2=pasuj±ce
-index_memb=$1&nbsp;hostów
+index_match2=pasujÄ…ce
+index_memb=$1&nbsp;hostÃ³w
 index_nameip=Nazwa lub IP hosta
-index_ndisplay=Wy¶wietlaæ sieci i&nbsp;podsieci wg:
-index_net=Podsieæ
+index_ndisplay=WyÅ›wietlaÄ‡ sieci i&nbsp;podsieci wg:
+index_net=PodsieÄ‡
 index_netmask=Maska sieci
-index_nohst=Nie zdefiniowano hostów ani grup hostów.
-index_nomemb=Brak hostów
-index_norder0=Przynale¿no¶ci
+index_nohst=Nie zdefiniowano hostÃ³w ani grup hostÃ³w.
+index_nomemb=Brak hostÃ³w
+index_norder0=PrzynaleÅ¼noÅ›ci
 index_norder1=Struktury pliku
 index_norder2=Nazwy/adresu IP
-index_nosubdef=Nie zdefiniowano podsieci ani sieci wspó³dzielonych.
+index_nosubdef=Nie zdefiniowano podsieci ani sieci wspÃ³Å‚dzielonych.
 index_nozones=Nie zdefiniowano jeszcze stref DNS.
-index_parent=Nale¿y do
+index_parent=NaleÅ¼y do
 index_return=indeksu
-index_shalook2=Edycja wspó³dzielonej sieci:
-index_shatoomany=Istnieje zbyt wiele wspó³dzielonych sieci, aby je wy¶wietliæ.
-index_start=Naci¶nij ten przycisk, aby uruchomiæ serwer DHCP w&nbsp;twoim systemie z&nbsp;wykorzystaniem bie¿±cej konfiguracji.
+index_shalook2=Edycja wspÃ³Å‚dzielonej sieci:
+index_shatoomany=Istnieje zbyt wiele wspÃ³Å‚dzielonych sieci, aby je wyÅ›wietliÄ‡.
+index_start=NaciÅ›nij ten przycisk, aby uruchomiÄ‡ serwer DHCP w&nbsp;twoim systemie z&nbsp;wykorzystaniem bieÅ¼Ä…cej konfiguracji.
 index_stop=Zatrzymaj serwer
-index_stopdesc=Naci¶nij na ten przycisk, aby zatrzymaæ uruchomiony serwer DHCP. Po zatrzymaniu, klienci DHCP nie bêd± mogli uzyskaæ dostêpu do ¿±danych adresów IP.
-index_sublook2=Edytuj podsieæ z adresem:
-index_subtitle=Podsieci i&nbsp;sieci wspó³dzielone
-index_subtoomany=Istnieje zbyt wiele wspó³dzielonych sieci, aby je wy¶wietliæ.
-index_text=Rêczna edycja pliku konfiguracyjnego
+index_stopdesc=NaciÅ›nij na ten przycisk, aby zatrzymaÄ‡ uruchomiony serwer DHCP. Po zatrzymaniu, klienci DHCP nie bÄ™dÄ… mogli uzyskaÄ‡ dostÄ™pu do Å¼Ä…danych adresÃ³w IP.
+index_sublook2=Edytuj podsieÄ‡ z adresem:
+index_subtitle=Podsieci i&nbsp;sieci wspÃ³Å‚dzielone
+index_subtoomany=Istnieje zbyt wiele wspÃ³Å‚dzielonych sieci, aby je wyÅ›wietliÄ‡.
+index_text=RÄ™czna edycja pliku konfiguracyjnego
 index_title=Serwer DHCP
 index_togroup=grupy:
 index_toshared=sieci:
@@ -264,114 +264,114 @@ index_version=Wersja ISC DHCPd $1
 index_zone=Strefa
 keys_alg=Algorytm
 keys_create=Utworzono klucze TSIG
-keys_ecannot=Nie masz uprawnieñ do edycji kluczy DNS
+keys_ecannot=Nie masz uprawnieÅ„ do edycji kluczy DNS
 keys_edit=Edycja klucza TSIG
-keys_ekey='$1' nie jest prawid³owym kluczem ID
-keys_err=B³±d zapisywania kluczy DNS
+keys_ekey='$1' nie jest prawidÅ‚owym kluczem ID
+keys_err=BÅ‚Ä…d zapisywania kluczy DNS
 keys_esecret=Brak lub niepoprawny sekretny tekst zakodowany przez base-64 dla klucza $1
 keys_id=Klucz ID
 keys_secret=Sekretny tekst
 keys_title=Klucze DNS
 listl_active=aktywmych
-listl_all=Poka¿ wszystkie dzier¿awy aktywne i przeterminowane
-listl_allocs=$1 dostêpnych adresów IP, $2 przydzielone ($3 %)
-listl_delete=Naci¶nij na wydzier¿awiony adres IP z&nbsp;powy¿szej listy aby dzier¿awê skasowaæ.
-listl_end=Data zakoñczenia
+listl_all=PokaÅ¼ wszystkie dzierÅ¼awy aktywne i przeterminowane
+listl_allocs=$1 dostÄ™pnych adresÃ³w IP, $2 przydzielone ($3 %)
+listl_delete=NaciÅ›nij na wydzierÅ¼awiony adres IP z&nbsp;powyÅ¼szej listy aby dzierÅ¼awÄ™ skasowaÄ‡.
+listl_end=Data zakoÅ„czenia
 listl_enone=Nic nie wybrano
-listl_err=Niepowodzenie usuniêcia dzier¿awy
+listl_err=Niepowodzenie usuniÄ™cia dzierÅ¼awy
 listl_ether=Ethernetowy
-listl_header=Dzier¿awy DHCP
+listl_header=DzierÅ¼awy DHCP
 listl_host=Nazwa hosta
 listl_ipaddr=Adres IP
-listl_lfnotcont=Plik dzier¿aw DHCPd <tt>$1</tt> nie zawiera ¿adnych dzier¿aw.
-listl_lfnotcont2=Plik dzier¿awy DHCPd <tt>$1</tt> nie zawiera ¿adnych dzier¿aw, które s± aktualnie aktywne.
-listl_lfnotexist=Plik dzier¿aw DHCPd <tt>$1</tt> nie istnieje.
-listl_mode=Tryb wy¶wietlania :
-listl_mode_0=Dzier¿awa DHCP
-listl_mode_1=Podsieci i u¿ycie
+listl_lfnotcont=Plik dzierÅ¼aw DHCPd <tt>$1</tt> nie zawiera Å¼adnych dzierÅ¼aw.
+listl_lfnotcont2=Plik dzierÅ¼awy DHCPd <tt>$1</tt> nie zawiera Å¼adnych dzierÅ¼aw, ktÃ³re sÄ… aktualnie aktywne.
+listl_lfnotexist=Plik dzierÅ¼aw DHCPd <tt>$1</tt> nie istnieje.
+listl_mode=Tryb wyÅ›wietlania :
+listl_mode_0=DzierÅ¼awa DHCP
+listl_mode_1=Podsieci i uÅ¼ycie
 listl_network=W sieci $1/$2
 listl_pc=procent
-listl_refresh=Od¶wie¿ listê
-listl_return=listy podsieci i hostów
+listl_refresh=OdÅ›wieÅ¼ listÄ™
+listl_return=listy podsieci i hostÃ³w
 listl_size=Wszystkich IP
-listl_start=Data rozpoczêcia
+listl_start=Data rozpoczÄ™cia
 listl_unknown=Nie znane
 listl_used=Przydzielony
 log_apply=Zastosowano zmiany
-log_create_group=Utworzono grupê $1 hostów
+log_create_group=Utworzono grupÄ™ $1 hostÃ³w
 log_create_host=Utworzono host $1
-log_create_shared=Utworzono sieæ wspó³dzielon± $1
-log_create_subnet=Utworzono podsieæ $1
-log_delete_group=Usuniêto grupê $1 hostów
-log_delete_host=Usuniêto host $1
-log_delete_hosts=Usuniêto $1 hostów i grup hosta
-log_delete_lease=Skasowano dzier¿awê dla $1
-log_delete_shared=Usuniêto sieæ wspó³dzielon± $1
-log_delete_subnet=Usuniêto podsieæ $1
-log_delete_subnets=Usuniêto $1 podsieci i wspó³dzielonych sieci
-log_modify_group=Zmieniono grupê $1 hostów
+log_create_shared=Utworzono sieÄ‡ wspÃ³Å‚dzielonÄ… $1
+log_create_subnet=Utworzono podsieÄ‡ $1
+log_delete_group=UsuniÄ™to grupÄ™ $1 hostÃ³w
+log_delete_host=UsuniÄ™to host $1
+log_delete_hosts=UsuniÄ™to $1 hostÃ³w i grup hosta
+log_delete_lease=Skasowano dzierÅ¼awÄ™ dla $1
+log_delete_shared=UsuniÄ™to sieÄ‡ wspÃ³Å‚dzielonÄ… $1
+log_delete_subnet=UsuniÄ™to podsieÄ‡ $1
+log_delete_subnets=UsuniÄ™to $1 podsieci i wspÃ³Å‚dzielonych sieci
+log_modify_group=Zmieniono grupÄ™ $1 hostÃ³w
 log_modify_host=Zmieniono host $1
-log_modify_shared=Zmieniono sieæ wspó³dzielon± $1
-log_modify_subnet=Zmieniono podsieæ $1
-log_options_group=Zmieniono opcje dla grupy $1 hostów
+log_modify_shared=Zmieniono sieÄ‡ wspÃ³Å‚dzielonÄ… $1
+log_modify_subnet=Zmieniono podsieÄ‡ $1
+log_options_group=Zmieniono opcje dla grupy $1 hostÃ³w
 log_options_host=Zmieniono opcje dla hosta $1
-log_options_shared=Zmieniono opcje dla sieci wspó³dzielonej $1
+log_options_shared=Zmieniono opcje dla sieci wspÃ³Å‚dzielonej $1
 log_options_subnet=Zmieniono opcje dla podsieci $1
 log_start=Uruchomiono serwer DHCP
 log_stop=Zatrzymano serwer DHCP
-lookup_egroup=Nie istnieje ¿adna grupa lub domena o nazwie $1
+lookup_egroup=Nie istnieje Å¼adna grupa lub domena o nazwie $1
 lookup_egroupname=Nie wpisano nazwy grupy lub domeny
 lookup_ehost=Nie istnieje host o takiej nazwie, adresie IP lub adresie MAC: $1
 lookup_ehostname=Nie wpisano nazwy, adresu IP lub adresu MAC
-lookup_eshared=Nie istnieje wspó³dzielona sieæ o nazwie $1
-lookup_esharedname=Nie wpisano nazwy wspó³dzielonej sieci
-lookup_esubnet=Nie istnieje podsieæ, której adres lub adres/maska sieci to $1
+lookup_eshared=Nie istnieje wspÃ³Å‚dzielona sieÄ‡ o nazwie $1
+lookup_esharedname=Nie wpisano nazwy wspÃ³Å‚dzielonej sieci
+lookup_esubnet=Nie istnieje podsieÄ‡, ktÃ³rej adres lub adres/maska sieci to $1
 lookup_esubnetname=Nie wpisano adresu lub adres/maska sieci dla podsieci
 none=Brak
 plib_adhoc=Ad-hoc
-plib_allow=Zezwól
-plib_auth_global=Serwer pe³ni nadrzêdn± rolê dla wszystkich podsieci?
-plib_auth_shared-network=Serwer pe³ni nadrzêdn± rolê dla wspó³dzielonych sieci?
-plib_auth_subnet=Serwer pe³ni nadrzêdn± rolê dla tej podsieci?
-plib_babbr=Adres rozg³oszeniowy
+plib_allow=ZezwÃ³l
+plib_auth_global=Serwer peÅ‚ni nadrzÄ™dnÄ… rolÄ™ dla wszystkich podsieci?
+plib_auth_shared-network=Serwer peÅ‚ni nadrzÄ™dnÄ… rolÄ™ dla wspÃ³Å‚dzielonych sieci?
+plib_auth_subnet=Serwer peÅ‚ni nadrzÄ™dnÄ… rolÄ™ dla tej podsieci?
+plib_babbr=Adres rozgÅ‚oszeniowy
 plib_bfname=Nazwa pliku BOOTa
 plib_bfserv=Nazwa serwera BOOTa
 plib_chname=Nazwa hosta klienta
-plib_clientupdates=Klienci mog± aktualizowaæ swoje w³asne rekordy?
+plib_clientupdates=Klienci mogÄ… aktualizowaÄ‡ swoje wÅ‚asne rekordy?
 plib_copt=Opcje stacji klienckiej
 plib_ddnsdom=Nazwa domeny dynamicznego DNS-u
 plib_ddnshost=Nazwa hosta w&nbsp;dynamicznym DNS-ie
 plib_ddnshost_def=Od klienta
 plib_ddnsrevdom=Domena odwrotna dynamicznego DNS-u
-plib_ddnsup=W³±czony dynamiczny DNS?
+plib_ddnsup=WÅ‚Ä…czony dynamiczny DNS?
 plib_ddnsupstyle=Styl aktualizacji Dynamic DNS
-plib_deflt=Domy¶lny czas dzier¿awy
-plib_defrouters=Domy¶lna bramka
-plib_deny=Zabroñ
+plib_deflt=DomyÅ›lny czas dzierÅ¼awy
+plib_defrouters=DomyÅ›lna bramka
+plib_deny=ZabroÅ„
 plib_dnsserv=Serwery DNS
 plib_domname=Nazwa domeny
-plib_eexpr=Ta sekcja konfiguracji DHCP zawiera dyrektywê wyra¿enia $1, która nie mo¿e byæ bezpiecznie edytowana przez Webmin.
+plib_eexpr=Ta sekcja konfiguracji DHCP zawiera dyrektywÄ™ wyraÅ¼enia $1, ktÃ³ra nie moÅ¼e byÄ‡ bezpiecznie edytowana przez Webmin.
 plib_fontserv=Serwery czcionek
 plib_forever=Na zawsze
 plib_ignore=Ignoruj
 plib_interim=Tymczasowy
-plib_invaliddom=$1 nie jest poprawn± nazw± domeny
-plib_invalidlt=nie jest poprawnym czasem dzier¿awy
-plib_invalidsn=nie jest poprawn± nazw± serwera
-plib_lebc=Koniec dzier¿awy dla klientów BOOTP
-plib_leformat=Data/czas wyga¶niêcia dzier¿awy musi mieæ postaæ W YYYY/MM/DD HH:MM:SS
-plib_llbc=Czas dzier¿awy dla klientów BOOTP
+plib_invaliddom=$1 nie jest poprawnÄ… nazwÄ… domeny
+plib_invalidlt=nie jest poprawnym czasem dzierÅ¼awy
+plib_invalidsn=nie jest poprawnÄ… nazwÄ… serwera
+plib_lebc=Koniec dzierÅ¼awy dla klientÃ³w BOOTP
+plib_leformat=Data/czas wygaÅ›niÄ™cia dzierÅ¼awy musi mieÄ‡ postaÄ‡ W YYYY/MM/DD HH:MM:SS
+plib_llbc=Czas dzierÅ¼awy dla klientÃ³w BOOTP
 plib_logserv=Serwery logowania
-plib_maxlt=Maksymalny czas dzier¿awy
+plib_maxlt=Maksymalny czas dzierÅ¼awy
 plib_nbns=Serwery nazw NetBIOS
-plib_nbntype=Typ wêz³a NetBIOS-u
-plib_nbscope=Zasiêg NetBIOS-u
+plib_nbntype=Typ wÄ™zÅ‚a NetBIOS-u
+plib_nbscope=ZasiÄ™g NetBIOS-u
 plib_never=Nigdy
 plib_nisdom=Domena NIS
 plib_nisserv=Serwery NIS
-plib_none=¯aden
+plib_none=Å»aden
 plib_ntpserv=Serwery NTP
-plib_rdpath=¦cie¿ka do dysku "root"
+plib_rdpath=ÅšcieÅ¼ka do dysku "root"
 plib_serverid=Identyfikator serwera DHCP
 plib_servname=Nazwa serwera
 plib_snmask=Maska podsieci
@@ -379,73 +379,73 @@ plib_statrouters=Statyczny routing
 plib_swapserv=Serwer wymiany
 plib_thisserv=Ten serwer
 plib_timeserv=Serwery czasu
-plib_toffset=Przesuniêcie czasu
-plib_unclients=Zezwoliæ nieznanym klientom?
+plib_toffset=PrzesuniÄ™cie czasu
+plib_unclients=ZezwoliÄ‡ nieznanym klientom?
 plib_xdmserv=Serwery XDM
 pool_allow=Dozwoleni klienci
 pool_create=Utworzono obszar adresowy
 pool_deny=Zabronieni klienci
-pool_edit=Zmieñ obszar adresowy
+pool_edit=ZmieÅ„ obszar adresowy
 pool_header=Opcje obszaru adresowego
 pool_return=podsieci
-restart_conftext=Linie oko³o $1 w $2 :
-restart_errmsg1=Nie uda³o siê ponownie uruchomiæ dhcpd
-restart_errmsg2=Nie uda³o siê wys³aæ sygna³u do procesu
+restart_conftext=Linie okoÅ‚o $1 w $2 :
+restart_errmsg1=Nie udaÅ‚o siÄ™ ponownie uruchomiÄ‡ dhcpd
+restart_errmsg2=Nie udaÅ‚o siÄ™ wysÅ‚aÄ‡ sygnaÅ‚u do procesu
 sdelete_enone=Nic nie wybrano
-sdelete_err=B³±d usuwania podsieci i wspó³dzielonych sieci
-sdelete_ok=Usuñ teraz
-sdelete_rusure1=Czy na pewno chcesz usun±æ $1 wybrane podsieci i $2 wspó³dzielone sieci? Wszystkie inne podsieci lub inne obiekty znajduj±ce siê w tych sieciach zostan± utracone.
-sdelete_rusure2=Czy na pewno chcesz usun±æ $1 wybrane podsieci? Wszystkie inne obiekty w tych podsieciach zostan± utracone.
-sdelete_rusure3=Czy na pewno chcesz usun±æ $2 wspó³dzielone sieci? Wszystkie podsieci lub inne obiekty znajduj±ce siê w tych sieciach zostan± utracone.
-sdelete_title=Usuwanie podsieci i wspó³dzielonych sieci
+sdelete_err=BÅ‚Ä…d usuwania podsieci i wspÃ³Å‚dzielonych sieci
+sdelete_ok=UsuÅ„ teraz
+sdelete_rusure1=Czy na pewno chcesz usunÄ…Ä‡ $1 wybrane podsieci i $2 wspÃ³Å‚dzielone sieci? Wszystkie inne podsieci lub inne obiekty znajdujÄ…ce siÄ™ w tych sieciach zostanÄ… utracone.
+sdelete_rusure2=Czy na pewno chcesz usunÄ…Ä‡ $1 wybrane podsieci? Wszystkie inne obiekty w tych podsieciach zostanÄ… utracone.
+sdelete_rusure3=Czy na pewno chcesz usunÄ…Ä‡ $2 wspÃ³Å‚dzielone sieci? Wszystkie podsieci lub inne obiekty znajdujÄ…ce siÄ™ w tych sieciach zostanÄ… utracone.
+sdelete_title=Usuwanie podsieci i wspÃ³Å‚dzielonych sieci
 secs=sek.
-sgroup_echanged=Plik konfiguracyjny zosta³ zmodyfikowany. Spróbuj ponownie.
-sgroup_faildel=Nie uda³o siê usun±æ grupy
-sgroup_failsave=Nie uda³o siê zachowaæ grupy
-sgroup_invassign=grupa przypisana do niew³a¶ciwej sekcji
-shost_faildel=Nie uda³o siê usun±æ hosta
-shost_failsave=Nie uda³o siê zachowaæ hosta
-shost_invalidaddr='$1' zawiera nieprawid³ow± nazwê hosta lub b³êdny adres IP
-shost_invalidhn=nie jest poprawn± nazw± hosta
+sgroup_echanged=Plik konfiguracyjny zostaÅ‚ zmodyfikowany. SprÃ³buj ponownie.
+sgroup_faildel=Nie udaÅ‚o siÄ™ usunÄ…Ä‡ grupy
+sgroup_failsave=Nie udaÅ‚o siÄ™ zachowaÄ‡ grupy
+sgroup_invassign=grupa przypisana do niewÅ‚aÅ›ciwej sekcji
+shost_faildel=Nie udaÅ‚o siÄ™ usunÄ…Ä‡ hosta
+shost_failsave=Nie udaÅ‚o siÄ™ zachowaÄ‡ hosta
+shost_invalidaddr='$1' zawiera nieprawidÅ‚owÄ… nazwÄ™ hosta lub bÅ‚Ä™dny adres IP
+shost_invalidhn=nie jest poprawnÄ… nazwÄ… hosta
 shost_invalidhwa='$1' nie jest poprawnym adresem $2
-shost_invassign=host przypisany do niew³a¶ciwej sekcji
-sopt_ecip=Warto¶æ dla w³asnej opcji '$1' musi byæ numerem IP
-sopt_ecval=Brakuj±ca warto¶æ dla w³asnej opcji '$1'
-sopt_edname='$1' nie jest poprawn± nazw± opcji
+shost_invassign=host przypisany do niewÅ‚aÅ›ciwej sekcji
+sopt_ecip=WartoÅ›Ä‡ dla wÅ‚asnej opcji '$1' musi byÄ‡ numerem IP
+sopt_ecval=BrakujÄ…ca wartoÅ›Ä‡ dla wÅ‚asnej opcji '$1'
+sopt_edname='$1' nie jest poprawnÄ… nazwÄ… opcji
 sopt_ednum='$1' nie jest poprawnym numerem opcji
 sopt_edtype='$1' nie jest poprawnym typem opcji
-sopt_failsave=Nie uda³o siê zachowaæ opcji stacji klienckiej
-sopt_invalidint=nie jest liczb± ca³kowit±
+sopt_failsave=Nie udaÅ‚o siÄ™ zachowaÄ‡ opcji stacji klienckiej
+sopt_invalidint=nie jest liczbÄ… caÅ‚kowitÄ…
 sopt_invalidip=nie jest poprawnym adresem IP
-sopt_invalidipp=nie jest poprawn± par± adresów IP (jak 1.2.3.4,5.6.7.8)
-sshared_faildel=Nie uda³o siê usun±æ sieci wspó³dzielonej
-sshared_failsave=Nie uda³o siê zachowaæ sieci wspó³dzielonej
-sshared_invalidsname=Nie podano lub niepoprawna nazwa sieci wspó³dzielonej.
-sshared_nosubnet=Sieæ wspó³dzielona '$1' nie zawiera ¿adnej podsieci.
-ssub_faildel=Nie uda³o siê usun±æ podsieci
-ssub_failsave=Nie uda³o siê zachowaæ podsieci
+sopt_invalidipp=nie jest poprawnÄ… parÄ… adresÃ³w IP (jak 1.2.3.4,5.6.7.8)
+sshared_faildel=Nie udaÅ‚o siÄ™ usunÄ…Ä‡ sieci wspÃ³Å‚dzielonej
+sshared_failsave=Nie udaÅ‚o siÄ™ zachowaÄ‡ sieci wspÃ³Å‚dzielonej
+sshared_invalidsname=Nie podano lub niepoprawna nazwa sieci wspÃ³Å‚dzielonej.
+sshared_nosubnet=SieÄ‡ wspÃ³Å‚dzielona '$1' nie zawiera Å¼adnej podsieci.
+ssub_faildel=Nie udaÅ‚o siÄ™ usunÄ…Ä‡ podsieci
+ssub_failsave=Nie udaÅ‚o siÄ™ zachowaÄ‡ podsieci
 ssub_invalidfopeer=nie jest poprawnym failover peer
-ssub_invalidipr=nie jest poprawnym zakresem adresów IP
-ssub_invalidnmask=nie jest poprawn± mask± sieci
+ssub_invalidipr=nie jest poprawnym zakresem adresÃ³w IP
+ssub_invalidnmask=nie jest poprawnÄ… maskÄ… sieci
 ssub_invalidsubaddr=nie jest poprawnym adresem podsieci
-ssub_nosubnet=Sieæ wspó³dzielona '$1' nie zawiera ¿adnej podsieci.
-start_failstart=Nie uda³o siê uruchomiæ dhcpd
+ssub_nosubnet=SieÄ‡ wspÃ³Å‚dzielona '$1' nie zawiera Å¼adnej podsieci.
+start_failstart=Nie udaÅ‚o siÄ™ uruchomiÄ‡ dhcpd
 stop_ekill=Nie uruchomiono!
 stop_err=Niepowodzenie zatrzymania serwera DHCP
-text_ecannot=Nie masz uprawnieñ do edycji pliku konfiguracyjnego
+text_ecannot=Nie masz uprawnieÅ„ do edycji pliku konfiguracyjnego
 text_editor=Edytor tekstowy
-text_return=g³ównego menu
+text_return=gÅ‚Ã³wnego menu
 text_title=dhcpd.conf
 text_undo=cofnij
 zone_crheader=Tworzenie strefy
 zone_desc=Opis strefy (opcjonalne)
-zone_ecannot=Nie masz uprawnieñ do edycji stref DNS
-zone_eheader=Edytuj strefê
-zone_faildel=B³±d usuwania strefy
-zone_failsave=B³±d zapisywania strefy
+zone_ecannot=Nie masz uprawnieÅ„ do edycji stref DNS
+zone_eheader=Edytuj strefÄ™
+zone_faildel=BÅ‚Ä…d usuwania strefy
+zone_failsave=BÅ‚Ä…d zapisywania strefy
 zone_key=Strefy DNS
 zone_name=Nazwa strefy
 zone_primary=IP primary NS
-zone_return=g³ównego menu
-zone_tabhdr=Szczegó³y strefy
+zone_return=gÅ‚Ã³wnego menu
+zone_tabhdr=SzczegÃ³Å‚y strefy
 zone_tsigkey=klucz TSIG

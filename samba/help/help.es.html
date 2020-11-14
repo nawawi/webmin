@@ -1,113 +1,113 @@
 <body bgcolor=#ffffff>
 <title>Gestor de Samba</title>
 <center><img src="images/samba.gif"></center><br>
-<h2><i>Esta p·gina de ayuda est· incompleta</i></h2>
+<h2><i>Esta p√°gina de ayuda est√° incompleta</i></h2>
 <hr>
-<h3>IntroducciÛn</h3>
+<h3>Introducci√≥n</h3>
 Samba es un programa de uso libre que permite que PCs ejecutando Windows
-95 y NT accedan a archivos e impresoras de tu sistema Unix como su Èste
+95 y NT accedan a archivos e impresoras de tu sistema Unix como su √©ste
 fuera un servidor de archivos/impresoras de Windows. Algunos sistemas Unix
-como Redhat Linux incluyen Samba como parte de la instalaciÛn est·ndar,
+como Redhat Linux incluyen Samba como parte de la instalaci√≥n est√°ndar,
 mientras que otros requieren que lo descargues e instales de forma separada. <p>
 
-Si no tienes Samba instalado en tu sistema, la p·gina principal de mÛdulo
-se quejar· de que no puede encontrar el archivo de configuraciÛn de Samba y
-te ser· imposible el compartir tus archivos o directorios. Si realmente
+Si no tienes Samba instalado en tu sistema, la p√°gina principal de m√≥dulo
+se quejar√° de que no puede encontrar el archivo de configuraci√≥n de Samba y
+te ser√° imposible el compartir tus archivos o directorios. Si realmente
 tienes instalado Samba pero te da este mensaje de error, revisa la
-<a href="/config.cgi?samba">configuraciÛn del mÛdulo</a> para asegurarte de
-que Webmin est· mirando en el lugar correcto para buscar el archivo de
-configuraciÛn y los programas de Samba. <p>
+<a href="/config.cgi?samba">configuraci√≥n del m√≥dulo</a> para asegurarte de
+que Webmin est√° mirando en el lugar correcto para buscar el archivo de
+configuraci√≥n y los programas de Samba. <p>
 
-Asumiendo que Samba est· instalado de forma correcta, la p·gina principal
-del mÛdulo mostrar· una lista de todas las comparticiones de archivo e
+Asumiendo que Samba est√° instalado de forma correcta, la p√°gina principal
+del m√≥dulo mostrar√° una lista de todas las comparticiones de archivo e
 impresora definidas en tu sistema. Si Webmin determina que el ervidor
-Samba no est· ejecutando, tendr·s la posibilidad de intentar arrancar el
-servidor. Esto puede ser necesario si Samba no se arrancÛ con el Sistema. <p>
+Samba no est√° ejecutando, tendr√°s la posibilidad de intentar arrancar el
+servidor. Esto puede ser necesario si Samba no se arranc√≥ con el Sistema. <p>
 
 <hr>
-<h3>Creando una ComparticiÛn Samba</h3>
-Una comparticiÛn de Samba es un directorio que los PC clientes pueden
-montar. Cada comparticiÛn tiene un nombre corto como <tt>docs</tt> o
+<h3>Creando una Compartici√≥n Samba</h3>
+Una compartici√≥n de Samba es un directorio que los PC clientes pueden
+montar. Cada compartici√≥n tiene un nombre corto como <tt>docs</tt> o
 <tt>www</tt>, asociados a determinado directorio en su sistema Unix. A
-menudo un cliente hace referencia a una comparticiÛn usando la notaciÛn
+menudo un cliente hace referencia a una compartici√≥n usando la notaci√≥n
 <tt>\\servidor\comparticion</tt>. <p>
 
-Para crear una comparticiÛn pulse el enlace <tt>Crear ComparticiÛn de
-Archivo</tt> a continuaciÛn de la lista de comparticiones existentes, en la
-p·gina principal. Esto mostrar· un formulario que le permitir· introducir
-los detalles de la nueva comparticiÛn. Aunque Samba soporta un gran n˙mero
-de par·metros para cada comparticiÛn, los m·s importantes son:<p>
+Para crear una compartici√≥n pulse el enlace <tt>Crear Compartici√≥n de
+Archivo</tt> a continuaci√≥n de la lista de comparticiones existentes, en la
+p√°gina principal. Esto mostrar√° un formulario que le permitir√° introducir
+los detalles de la nueva compartici√≥n. Aunque Samba soporta un gran n√∫mero
+de par√°metros para cada compartici√≥n, los m√°s importantes son:<p>
 <table border width=100%>
-<tr> <td><b>Nombre de la ComparticiÛn</b></td>
-<td>Cada comparticiÛn debe tener un nombre, que usar·n los clientes para
-referirse a ella. Un caso especial es la comparticiÛn <tt>Todos los
-directorios de inicio</tt>, que se explica a continuaciÛn.
+<tr> <td><b>Nombre de la Compartici√≥n</b></td>
+<td>Cada compartici√≥n debe tener un nombre, que usar√°n los clientes para
+referirse a ella. Un caso especial es la compartici√≥n <tt>Todos los
+directorios de inicio</tt>, que se explica a continuaci√≥n.
 </td> </tr>
 <tr> <td><b>Ruta</b></td>
-<td>El directorio que compartir. Los clientes que usen esta comparticiÛn
-sÛlo podr·n acceder a los ficheros en o bajo este directorio.</td> </tr>
+<td>El directorio que compartir. Los clientes que usen esta compartici√≥n
+s√≥lo podr√°n acceder a los ficheros en o bajo este directorio.</td> </tr>
 <tr> <td><b>Escribible</b></td>
 <td>Determina si los clientes pueden escribir ficheros y directorios en
-esta comparticiÛn.</td> </tr>
+esta compartici√≥n.</td> </tr>
 <tr> <td><b>Acceso invitado</b></td>
-<td>Si una comparticiÛn permite usuarios invitados, los clientes pueden
-acceder a ella sin proporcionar un nombre de usuario y contraseÒa v·lido.
-Una comparticiÛn puede, bien denegar el acceso a usuarios invitados, bien
-permitir el acceso a invitados y usuarios normales, bien sÛlo a
+<td>Si una compartici√≥n permite usuarios invitados, los clientes pueden
+acceder a ella sin proporcionar un nombre de usuario y contrase√±a v√°lido.
+Una compartici√≥n puede, bien denegar el acceso a usuarios invitados, bien
+permitir el acceso a invitados y usuarios normales, bien s√≥lo a
 invitados.</td></tr>
 </table>
-Para informaciÛn acerca de otras opciones de comparticiÛn, vea la secciÛn
+Para informaci√≥n acerca de otras opciones de compartici√≥n, vea la secci√≥n
 siguiente <b>Opciones Avanzadas</b>. <p>
 
-Cuando haya introducido los detalles de una nueva comparticiÛn y pulsado el
-botÛn <tt>Crear</tt>, quedar· inmediatamente disponible para los PC
-cliente. Asumiendo que todo en su red est· correctamente configurado, los
-usuarios ser·n capaces de usar la funciÛn de <tt>Entorno de Red</tt> de
+Cuando haya introducido los detalles de una nueva compartici√≥n y pulsado el
+bot√≥n <tt>Crear</tt>, quedar√° inmediatamente disponible para los PC
+cliente. Asumiendo que todo en su red est√° correctamente configurado, los
+usuarios ser√°n capaces de usar la funci√≥n de <tt>Entorno de Red</tt> de
 Windows para ver su servidor y todas sus comparticiones. Entonces la 
-comparticiÛn reciÈn creada se podr· mapear a una letra de unidad en los PC. <p>
+compartici√≥n reci√©n creada se podr√° mapear a una letra de unidad en los PC. <p>
 
 <hr>
-<h3>Creando una ComparticiÛn de Impresora</h3>
-Una comparticiÛn de impresora Samba es una impresora Unix local o remota
+<h3>Creando una Compartici√≥n de Impresora</h3>
+Una compartici√≥n de impresora Samba es una impresora Unix local o remota
 que desea poner disponible a los PC cliente. Al igual que las
 comparticiones de archivos, cada impresora compartida tiene un nombre corto
-(como <tt>hp5si</tt>), y se referencia usando la notaciÛn
+(como <tt>hp5si</tt>), y se referencia usando la notaci√≥n
 <tt>\\servidor\comparticion</tt>. <p>
 
-Para crear una nueva comparticiÛn de impresora, pulse el enlace <tt>Crear
-ComparticiÛn de Impresora</tt> en la p·gina principal. Esto mostrar· un
-formulario similar al de creaciÛn de comparticiones de archivo, en el cual
-puede introducir los detalles de la nueva comparticiÛn. Las opciones m·s
-importantes para una nueva comparticiÛn de impresora son: <p>
+Para crear una nueva compartici√≥n de impresora, pulse el enlace <tt>Crear
+Compartici√≥n de Impresora</tt> en la p√°gina principal. Esto mostrar√° un
+formulario similar al de creaci√≥n de comparticiones de archivo, en el cual
+puede introducir los detalles de la nueva compartici√≥n. Las opciones m√°s
+importantes para una nueva compartici√≥n de impresora son: <p>
 <table border width=100%>
-<tr> <td><b>Nombre de la comparticiÛn</b></td>
-<td>Cada comparticiÛn debe tener un nombre, que usar·n los clientes para
-referirse a ella. Un caso especial es la comparticiÛn <tt>Todas las
-impresoras</tt>, que se explica a continuaciÛn.
+<tr> <td><b>Nombre de la compartici√≥n</b></td>
+<td>Cada compartici√≥n debe tener un nombre, que usar√°n los clientes para
+referirse a ella. Un caso especial es la compartici√≥n <tt>Todas las
+impresoras</tt>, que se explica a continuaci√≥n.
 </td> </tr>
 <tr> <td><b>Impresora</b></td>
 <td>La impresora Unix que compartir. Puede ser cualquier impresora en la
 que pudiera imprimir usando el comando <tt>lpr</tt>.</td> </tr>
 <tr> <td><b>Ruta</b></td>
-<td>El directorio donde crear los ficheros temporales de impresiÛn.</td> </tr>
+<td>El directorio donde crear los ficheros temporales de impresi√≥n.</td> </tr>
 <tr> <td><b>Acceso invitado</b></td>
-<td>Si una comparticiÛn permite acceso invitado, los clientes pueden
+<td>Si una compartici√≥n permite acceso invitado, los clientes pueden
 acceder a ella sin necesidad de proporcionar nombre de usuario y
-contraseÒa v·lidos. Una comparticiÛn puede bien denegar el acceso a
-usuarios invitados, bien permitir usuarios normales e invitados, bien sÛlo
+contrase√±a v√°lidos. Una compartici√≥n puede bien denegar el acceso a
+usuarios invitados, bien permitir usuarios normales e invitados, bien s√≥lo
 invitados.</td></tr>
 <tr> <td><b>Tipo de impresora</b></td>
 <td>El nombre del controlador de la impresora que se debe usar para esta
-impresora. Si introduce un valor para esta opciÛn que coincida con un
-controlador de impresora en los PC cliente, los usuarios no tendr·n que
-elegir un controlador de impresora cuando la aÒadan a su sistema.</td> </tr>
+impresora. Si introduce un valor para esta opci√≥n que coincida con un
+controlador de impresora en los PC cliente, los usuarios no tendr√°n que
+elegir un controlador de impresora cuando la a√±adan a su sistema.</td> </tr>
 </table><p>
 
-Como en las comparticiones de ficheros, hay muchas m·s opciones disponibles
-para las impresoras compartidas. Tan pronto como se aÒada una impresora
-quedar· disponible para los clientes. En Windows 95 y NT se puede aÒadir la
-impresora usando la opciÛn <tt>AÒadir Impresora</tt> en la opciÛn
-"Impresoras" del panel de control. Una vez aÒadida el usuario podr·
+Como en las comparticiones de ficheros, hay muchas m√°s opciones disponibles
+para las impresoras compartidas. Tan pronto como se a√±ada una impresora
+quedar√° disponible para los clientes. En Windows 95 y NT se puede a√±adir la
+impresora usando la opci√≥n <tt>A√±adir Impresora</tt> en la opci√≥n
+"Impresoras" del panel de control. Una vez a√±adida el usuario podr√°
 imprimir sobre dicha impresora como sobre cualquier otra impresora local o
 de red. <p>
 <hr>
@@ -115,92 +115,92 @@ de red. <p>
 
 
 <hr>
-<h3>Editando una ComparticiÛn</h3>
-Para editar una comparticiÛn existente pulse en su nombre en la lista de
-comparticiones de la p·gina principal. Esto mostrar· el mismo formulario
-que se usÛ para crear la comparticiÛn, permitiÈndole modificar todas las
-opciones y par·metros. Para guardar sus cambios pulse el botÛn
-<tt>Aplicar</tt> en la parte inferior izquierda la la p·gina. <p>
+<h3>Editando una Compartici√≥n</h3>
+Para editar una compartici√≥n existente pulse en su nombre en la lista de
+comparticiones de la p√°gina principal. Esto mostrar√° el mismo formulario
+que se us√≥ para crear la compartici√≥n, permiti√©ndole modificar todas las
+opciones y par√°metros. Para guardar sus cambios pulse el bot√≥n
+<tt>Aplicar</tt> en la parte inferior izquierda la la p√°gina. <p>
 
-Para borrar una comparticiÛn pulse el botÛn <tt>Borrar</tt> en la parte
-inferior derecha de la p·gina. Los usuarios actuales no ser·n desconectados
-inmediatamente, pero ning˙n usuario nuevo podr· conectar a la unidad
+Para borrar una compartici√≥n pulse el bot√≥n <tt>Borrar</tt> en la parte
+inferior derecha de la p√°gina. Los usuarios actuales no ser√°n desconectados
+inmediatamente, pero ning√∫n usuario nuevo podr√° conectar a la unidad
 compartida. <p>
 
 
 <hr>
 <h3>Usuarios y Seguridad</h3>
 Para comparticiones que no permiten acceso invitado Samba espera que el
-cliente proporcione un nombre de usuario y contraseÒa. Habitualmente se
+cliente proporcione un nombre de usuario y contrase√±a. Habitualmente se
 contrastan contra la lista de usuarios Unix, que se puede actualizar
-mediante el mÛdulo <a href=/useradmin/>Usuarios y Grupos</a>. Samba tambiÈn
-puede mantener su propia lista de nombres de usuario y contraseÒas - vea la
-secciÛn <b>ContraseÒas Cifradas</b> para m·s detalles. <p>
+mediante el m√≥dulo <a href=/useradmin/>Usuarios y Grupos</a>. Samba tambi√©n
+puede mantener su propia lista de nombres de usuario y contrase√±as - vea la
+secci√≥n <b>Contrase√±as Cifradas</b> para m√°s detalles. <p>
 
 Algunas versiones de Windows no permiten que el usuario proporcione un
-nombre de usuario cuando se accede a una comparticiÛn - en su lugar se usa
-el nombre de usuario proporcionado durante el ingreso en la propia m·quina
+nombre de usuario cuando se accede a una compartici√≥n - en su lugar se usa
+el nombre de usuario proporcionado durante el ingreso en la propia m√°quina
 Windows. Si todos los usuarios ingresan en Windows usando el mismo nombre
 de usuario que usan en Unix, esto no supone un problema. De lo contrario,
 tiene dos opciones:
 <ol>
-<li>Windows 95 y NT pueden montar manualmente una comparticiÛn, bien
+<li>Windows 95 y NT pueden montar manualmente una compartici√≥n, bien
     tecleando manualmente <tt>net use <i>unidad:</i> <i>comparticion</i></tt>
-    en la lÌnea de comandos o pulsando el botÛn de mapear unidad de red en
+    en la l√≠nea de comandos o pulsando el bot√≥n de mapear unidad de red en
     una ventana del explorador de archivos e introduciendo la ruta a la
-    comparticiÛn. En ambos casos la comparticiÛn se puede expresar en el
+    compartici√≥n. En ambos casos la compartici√≥n se puede expresar en el
     formato <tt>\\servidor\comparticion%ususario</tt>, donde <i>usuario</i>
     es el nombre de usuario como el que ingresar en el servidor. <p>
-<li>Se puede configurar Samba para intentar hacer coincidir la contraseÒa
+<li>Se puede configurar Samba para intentar hacer coincidir la contrase√±a
     proporcionada contra una lista de usuarios, para encontrar el nombre de
-    usuario correcto. La opciÛn de la comparticiÛn <tt>Usuarios Unix</tt>
+    usuario correcto. La opci√≥n de la compartici√≥n <tt>Usuarios Unix</tt>
     le permite indicar los usuarios o grupos contra los que verificar.
-    Tenga en cuenta que usar esta opciÛn con un n˙mero grande de usuarios
-    no es muy seguro, puesto que dos o m·s personas podrÌan tener la misma
-    contraseÒa. <p>
+    Tenga en cuenta que usar esta opci√≥n con un n√∫mero grande de usuarios
+    no es muy seguro, puesto que dos o m√°s personas podr√≠an tener la misma
+    contrase√±a. <p>
 </ul>
 
 <hr>
-<h3>ContraseÒas Cifradas</h3>
-Lo normal es que las contraseÒas enviadas por la red entre un servidor
+<h3>Contrase√±as Cifradas</h3>
+Lo normal es que las contrase√±as enviadas por la red entre un servidor
 Samba y los PC no vayan cifradas. Esto es malo por dos motivos:
 <ol>
-<li>Cualquiera puede escuchar en la red y capturar las contraseÒas de otras
+<li>Cualquiera puede escuchar en la red y capturar las contrase√±as de otras
     personas. <br>
-<li>Las ˙ltimas versiones de Windows 9x y NT ya no envÌan las contraseÒas
+<li>Las √∫ltimas versiones de Windows 9x y NT ya no env√≠an las contrase√±as
     sin cifrar. Los usuarios que intenten acceder a Samba desde estos
-    sistemas obtendr·n mensajes de error como <tt>???</tt>. Este cambio
-    apareciÛ por primera vez en NT SP3. <br>
+    sistemas obtendr√°n mensajes de error como <tt>???</tt>. Este cambio
+    apareci√≥ por primera vez en NT SP3. <br>
 </ol><p>
 
-Afortunadamente Samba puede usar contraseÒas cifradas. Sin embargo no es
-posible contrastar las contraseÒas enviadas por los clientes contra el
-fichero de contraseÒas habitual de Unix porque ambos usan diferenes
-algoritmos de cifrado para las contraseÒas. Por dicha razÛn Samba debe
-mantener su propia lista de usuarios y contraseÒas. <p>
+Afortunadamente Samba puede usar contrase√±as cifradas. Sin embargo no es
+posible contrastar las contrase√±as enviadas por los clientes contra el
+fichero de contrase√±as habitual de Unix porque ambos usan diferenes
+algoritmos de cifrado para las contrase√±as. Por dicha raz√≥n Samba debe
+mantener su propia lista de usuarios y contrase√±as. <p>
 
-Para hacer que Samba comience a usar contraseÒas cifradas, deber·:
+Para hacer que Samba comience a usar contrase√±as cifradas, deber√°:
 <ol>
-<li>Asegurarse de que su versiÛn de Samba soporta cifrado. En la p·gina
-    <tt>Opciones de ContraseÒa</tt>, ponga a "SÌ" la opciÛn de
-    <tt>ContraseÒas Cifradas</tt>. Si este paso falla, deber· descargar o
-    compilar una versiÛn con soporte de contraseÒas cifradas. <p>
+<li>Asegurarse de que su versi√≥n de Samba soporta cifrado. En la p√°gina
+    <tt>Opciones de Contrase√±a</tt>, ponga a "S√≠" la opci√≥n de
+    <tt>Contrase√±as Cifradas</tt>. Si este paso falla, deber√° descargar o
+    compilar una versi√≥n con soporte de contrase√±as cifradas. <p>
 <li>Pulse en el enlace <tt>Convertir los usuarios Unix en usuarios
-    Samba</tt> en la parte inferior de la p·gina principal. Esto le llevar·
-    a una p·gina en la que convertir algunos o todos sus usuarios Unix
-    actuales a usuarios de Samba. Se convertir·n los nombres de usuario, 
-    nombres reales, UID e intÈrpretes de comandos - pero no las
-    contraseÒas. <p>
-<li>Para asignar contraseÒas a los usuarios use la opciÛn <tt>Editar la
-    lista de usuarios Samba</tt> en la p·gina principal. Esto mostrar· una
-    lista de todos los usuarios Samba de la que podr· seleccionar el que
-    editar. La contraseÒa para cada usuarios puede estar, bien
-    <tt>bloqueada</tt> (no se permite el ingreso), <tt>Sin contraseÒa</tt>
-    (no se necesita contraseÒa), o cualquier contraseÒa que introduzca. <p>
+    Samba</tt> en la parte inferior de la p√°gina principal. Esto le llevar√°
+    a una p√°gina en la que convertir algunos o todos sus usuarios Unix
+    actuales a usuarios de Samba. Se convertir√°n los nombres de usuario, 
+    nombres reales, UID e int√©rpretes de comandos - pero no las
+    contrase√±as. <p>
+<li>Para asignar contrase√±as a los usuarios use la opci√≥n <tt>Editar la
+    lista de usuarios Samba</tt> en la p√°gina principal. Esto mostrar√° una
+    lista de todos los usuarios Samba de la que podr√° seleccionar el que
+    editar. La contrase√±a para cada usuarios puede estar, bien
+    <tt>bloqueada</tt> (no se permite el ingreso), <tt>Sin contrase√±a</tt>
+    (no se necesita contrase√±a), o cualquier contrase√±a que introduzca. <p>
 </ul>
 
 <hr>
 <a href="/"><img alt="<-" align=middle border=0 src=/images/left.gif></a>
-&nbsp;&nbsp;<a href="">Volver a mÛdulo</a><p>
+&nbsp;&nbsp;<a href="">Volver a m√≥dulo</a><p>
  
 

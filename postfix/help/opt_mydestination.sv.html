@@ -1,21 +1,21 @@
-<header>Ta emot e-post för dessa domäner</header>
+<header>Ta emot e-post fÃ¶r dessa domÃ¤ner</header>
 
 <center><tt>mydestination</tt></center>
 <hr>
 
-Ange de domäner som denna maskin ska skicka till lokalt istället för att sända
-vidare till en annan maskin. Standard är att ta emot e-post till maskinen själv.
+Ange de domÃ¤ner som denna maskin ska skicka till lokalt istÃ¤llet fÃ¶r att sÃ¤nda
+vidare till en annan maskin. Standard Ã¤r att ta emot e-post till maskinen sjÃ¤lv.
 
 <p><b>Lokal dator</b>: <tt>$myhostname, localhost.$mydomain</tt>
-<br><b>Hela domänen</b>: <tt>$myhostname, localhost.$mydomain, $mydomain</tt>
+<br><b>Hela domÃ¤nen</b>: <tt>$myhostname, localhost.$mydomain, $mydomain</tt>
 
-<p>Man kan också ange en fullständig sökväg till en fil som innehåller namn på
-de domäner som denna maskin ska skicka e-post lokalt för.
+<p>Man kan ocksÃ¥ ange en fullstÃ¤ndig sÃ¶kvÃ¤g till en fil som innehÃ¥ller namn pÃ¥
+de domÃ¤ner som denna maskin ska skicka e-post lokalt fÃ¶r.
 
 <p>Exempel: <tt>/etc/postfix/mydestination</tt>
 
 <hr>
-<p><b><u>Varning:</u></b> för att undvika e-postloopar måste alla namn på maskinen,
-inklusive <tt>$myhostname</tt> och <tt>localhost.$mydomain</tt> räknas upp.
-<b>Räkna inte upp virtuella domäner här, utan i virtuell-filen.</b>
+<p><b><u>Varning:</u></b> fÃ¶r att undvika e-postloopar mÃ¥ste alla namn pÃ¥ maskinen,
+inklusive <tt>$myhostname</tt> och <tt>localhost.$mydomain</tt> rÃ¤knas upp.
+<b>RÃ¤kna inte upp virtuella domÃ¤ner hÃ¤r, utan i virtuell-filen.</b>
 

@@ -1,28 +1,28 @@
 index_title=TCP Wrappers
 index_return=index
-index_allowtitle=Povolenı pøístup
-index_denytitle=Zakázanı pøístup
-index_norule=Soubor '$1' neobsahuje ¾ádná pravidla.
-index_nofile=Soubor '$1' neexistuje - zkontrolujte va¹i <a href="/config.cgi?tcpwrappers">konfiguraci modulu</a>
-index_add=Pøidat pravidlo
-index_service=Démon
+index_allowtitle=PovolenÃ½ pÅ™Ã­stup
+index_denytitle=ZakÃ¡zanÃ½ pÅ™Ã­stup
+index_norule=Soubor '$1' neobsahuje Å¾Ã¡dnÃ¡ pravidla.
+index_nofile=Soubor '$1' neexistuje - zkontrolujte vaÅ¡i <a href="/config.cgi?tcpwrappers">konfiguraci modulu</a>
+index_add=PÅ™idat pravidlo
+index_service=DÃ©mon
 index_hosts=Klienti
-index_cmd=Pøíkaz
-index_delete=Smazat oznaèené
-index_none=není
+index_cmd=PÅ™Ã­kaz
+index_delete=Smazat oznaÄenÃ©
+index_none=nenÃ­
 
-edit_title1=Vytvoøit pravidlo
+edit_title1=VytvoÅ™it pravidlo
 edit_title2=Upravit pravidlo
 edit_eid=Pravidlo nebylo nalezeno
-edit_header=Nastavení pravidla
-edit_service=Démoni
+edit_header=NastavenÃ­ pravidla
+edit_service=DÃ©moni
 edit_hosts=Klienti
-edit_cmd=Pøíkazy
-edit_efound=Démon '$1' nebyl nalezen v konfiguraci xinetd.
+edit_cmd=PÅ™Ã­kazy
+edit_efound=DÃ©mon '$1' nebyl nalezen v konfiguraci xinetd.
 
-save_errtitle=Chyba pøi ukládání pravidla
-save_ehost=Klient obsahuje nepovolené znaky
-save_ecmd=Pøíkaz obsahuje nepovolené znaky
+save_errtitle=Chyba pÅ™i uklÃ¡dÃ¡nÃ­ pravidla
+save_ehost=Klient obsahuje nepovolenÃ© znaky
+save_ecmd=PÅ™Ã­kaz obsahuje nepovolenÃ© znaky
 
-del_errtitle=Chyba pøi mazání pravidla
-del_enone=Není oznaèeno ¾ádné pravidlo
+del_errtitle=Chyba pÅ™i mazÃ¡nÃ­ pravidla
+del_enone=NenÃ­ oznaÄeno Å¾Ã¡dnÃ© pravidlo

@@ -1,2 +1,2 @@
-desc_pl=Kopia plików konfiguracyjnych
-longdesc_pl=Rêczne lub zaplanowane tworzenie i przywracanie kopii zapasowych plików konfiguracyjnych modu³ów zarz±dzanych przez Webmina.
+desc_pl=Kopia plikÃ³w konfiguracyjnych
+longdesc_pl=RÃªczne lub zaplanowane tworzenie i przywracanie kopii zapasowych plikÃ³w konfiguracyjnych moduÂ³Ã³w zarzÂ±dzanych przez Webmina.

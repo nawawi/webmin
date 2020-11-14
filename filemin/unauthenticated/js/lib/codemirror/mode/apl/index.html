@@ -28,29 +28,29 @@
 <article>
 <h2>APL mode</h2>
 <form><textarea id="code" name="code">
-⍝ Conway's game of life
+â Conway's game of life
 
-⍝ This example was inspired by the impressive demo at
-⍝ http://www.youtube.com/watch?v=a9xAKttWgP4
+â This example was inspired by the impressive demo at
+â http://www.youtube.com/watch?v=a9xAKttWgP4
 
-⍝ Create a matrix:
-⍝     0 1 1
-⍝     1 1 0
-⍝     0 1 0
-creature ← (3 3 ⍴ ⍳ 9) ∈ 1 2 3 4 7   ⍝ Original creature from demo
-creature ← (3 3 ⍴ ⍳ 9) ∈ 1 3 6 7 8   ⍝ Glider
+â Create a matrix:
+â     0 1 1
+â     1 1 0
+â     0 1 0
+creature â (3 3 â´ â³ 9) â 1 2 3 4 7   â Original creature from demo
+creature â (3 3 â´ â³ 9) â 1 3 6 7 8   â Glider
 
-⍝ Place the creature on a larger board, near the centre
-board ← ¯1 ⊖ ¯2 ⌽ 5 7 ↑ creature
+â Place the creature on a larger board, near the centre
+board â Â¯1 â Â¯2 â½ 5 7 â creature
 
-⍝ A function to move from one generation to the next
-life ← {∨/ 1 ⍵ ∧ 3 4 = ⊂+/ +⌿ 1 0 ¯1 ∘.⊖ 1 0 ¯1 ⌽¨ ⊂⍵}
+â A function to move from one generation to the next
+life â {â¨/ 1 âµ â§ 3 4 = â+/ +â¿ 1 0 Â¯1 â.â 1 0 Â¯1 â½Â¨ ââµ}
 
-⍝ Compute n-th generation and format it as a
-⍝ character matrix
-gen ← {' #'[(life ⍣ ⍵) board]}
+â Compute n-th generation and format it as a
+â character matrix
+gen â {' #'[(life â£ âµ) board]}
 
-⍝ Show first three generations
+â Show first three generations
 (gen 1) (gen 2) (gen 3)
 </textarea></form>
 

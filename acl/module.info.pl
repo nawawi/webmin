@@ -1,2 +1,2 @@
-desc_pl=U¿ytkownicy Webmina
-longdesc_pl=Twórz u¿ytkowników Webmina i kontroluj, które modu³y i funkcje s± dla nich dostêpne.
+desc_pl=UÂ¿ytkownicy Webmina
+longdesc_pl=TwÃ³rz uÂ¿ytkownikÃ³w Webmina i kontroluj, ktÃ³re moduÂ³y i funkcje sÂ± dla nich dostÃªpne.

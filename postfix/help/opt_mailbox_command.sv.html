@@ -1,26 +1,26 @@
-<header>Externt kommando istället för sändning till brevlåda</header>
+<header>Externt kommando istÃ¤llet fÃ¶r sÃ¤ndning till brevlÃ¥da</header>
 
 <center><tt>mailbox_command</tt></center>
 <hr>
 
-Denna parameter anger ett externt kommando som ska köras istället
-för att e-post ska sändas till brevlådan. Kommandot körs som mottagaren med
-riktiga <tt>HOME</tt>-, <tt>SHELL</tt>- och <tt>LOGNAME</tt>-miljöinställningar.
-Ett undantag är att e-post till <tt>root</tt> körs som <tt>$default_user</tt>.
+Denna parameter anger ett externt kommando som ska kÃ¶ras istÃ¤llet
+fÃ¶r att e-post ska sÃ¤ndas till brevlÃ¥dan. Kommandot kÃ¶rs som mottagaren med
+riktiga <tt>HOME</tt>-, <tt>SHELL</tt>- och <tt>LOGNAME</tt>-miljÃ¶instÃ¤llningar.
+Ett undantag Ã¤r att e-post till <tt>root</tt> kÃ¶rs som <tt>$default_user</tt>.
 
-<p>Övriga omgivningsvariabler av intresse: <tt>USER</tt> (mottagarens användarnamn),
-<tt>EXTENSION</tt> (adressändelse), <tt>DOMAIN</tt> (domändelen av adressen),
+<p>Ã–vriga omgivningsvariabler av intresse: <tt>USER</tt> (mottagarens anvÃ¤ndarnamn),
+<tt>EXTENSION</tt> (adressÃ¤ndelse), <tt>DOMAIN</tt> (domÃ¤ndelen av adressen),
 och <tt>LOCAL</tt> (den lokala delen av adressen).
 
-<p>Till skillnad från övriga Postfix-konfigurationsparametrar påverkas inte denna
-parameter av parametersubstitutioner. Detta beteende gör det lättare att ange
+<p>Till skillnad frÃ¥n Ã¶vriga Postfix-konfigurationsparametrar pÃ¥verkas inte denna
+parameter av parametersubstitutioner. Detta beteende gÃ¶r det lÃ¤ttare att ange
 skalsyntax (se exempel nedan).
 
-<p>Undvik metatecken eftersom de kommer att tvinga Postfix att köra en tung
-skalprocess. <tt>Procmail</tt> är i sig tillräckligt tungt.
+<p>Undvik metatecken eftersom de kommer att tvinga Postfix att kÃ¶ra en tung
+skalprocess. <tt>Procmail</tt> Ã¤r i sig tillrÃ¤ckligt tungt.
 
-<p><b>Om detta används för att sända e-post över hela systemet, måste ett alias
-sättas upp som skickar vidare roots e-post till en riktig användare.</b>
+<p><b>Om detta anvÃ¤nds fÃ¶r att sÃ¤nda e-post Ã¶ver hela systemet, mÃ¥ste ett alias
+sÃ¤ttas upp som skickar vidare roots e-post till en riktig anvÃ¤ndare.</b>
 
 <p>Exempel:
 <ul>

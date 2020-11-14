@@ -1,3 +1,3 @@
-firewall_system=Tûzfal típusa,4,firewall-IPtables,ipfw-IPFW,ipfilter-IPFilter,shorewall-Shorewall,-Automatikus detektálás
-bandwidth_log=Napló fájl létrehozása a tûzfal üzeneteihez,0
-bandwidth_dir=A forgalmi adatok könyvtára,3,Általános (/etc/webmin/bandwith/hours)
+firewall_system=TÃ»zfal tÃ­pusa,4,firewall-IPtables,ipfw-IPFW,ipfilter-IPFilter,shorewall-Shorewall,-Automatikus detektÃ¡lÃ¡s
+bandwidth_log=NaplÃ³ fÃ¡jl lÃ©trehozÃ¡sa a tÃ»zfal Ã¼zeneteihez,0
+bandwidth_dir=A forgalmi adatok kÃ¶nyvtÃ¡ra,3,ÃltalÃ¡nos (/etc/webmin/bandwith/hours)

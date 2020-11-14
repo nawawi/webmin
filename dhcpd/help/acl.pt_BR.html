@@ -12,22 +12,22 @@ Subsistema ACL do DHCPD</h1></center>
 
 <h3>
 OBJETIVOS:</h3>
-&nbsp;&nbsp;&nbsp; A finalidade principal do subsistema ACL È prover um
-poderoso, flexÌvel e expansÌvel mecanismo para controle de acesso aos
-diferentes objetos na configuraÁ„o do DHCP. Estes objetos s„o redes,
+&nbsp;&nbsp;&nbsp; A finalidade principal do subsistema ACL √© prover um
+poderoso, flex√≠vel e expans√≠vel mecanismo para controle de acesso aos
+diferentes objetos na configura√ß√£o do DHCP. Estes objetos s√£o redes,
 subredes, grupos de computadores e computadores.
 
-<br>&nbsp;&nbsp;&nbsp; AlÈm disso, o subsistema acl permite a vocÍ
-controlar algumas outras caracterÌsticas, tais como: nomes ˙nicos de
-objetos, aplicar mudanÁas na configuraÁ„o, visualizar e apagar leases do
+<br>&nbsp;&nbsp;&nbsp; Al√©m disso, o subsistema acl permite a voc√™
+controlar algumas outras caracter√≠sticas, tais como: nomes √∫nicos de
+objetos, aplicar mudan√ßas na configura√ß√£o, visualizar e apagar leases do
 dhcp.
 <h3>
 CONCEITOS:</h3>
-&nbsp;&nbsp;&nbsp; O arquivo de configuraÁ„o do dhcpd nÛs podemos mostrar
-como uma estrutura em ·rvore. Cada nÛ da ·rvore representa a configuraÁ„o
+&nbsp;&nbsp;&nbsp; O arquivo de configura√ß√£o do dhcpd n√≥s podemos mostrar
+como uma estrutura em √°rvore. Cada n√≥ da √°rvore representa a configura√ß√£o
 de um diferente tipo de objeto do dhcp (fig. 0).
 
-<p>&nbsp;&nbsp;&nbsp; Subsistema ACL tem 2 nÌveis de permissıes:
+<p>&nbsp;&nbsp;&nbsp; Subsistema ACL tem 2 n√≠veis de permiss√µes:
 <ul>
 <li>
 global: ler, escrever, criar;</li>
@@ -35,30 +35,30 @@ global: ler, escrever, criar;</li>
 <li>
 por-objeto: leitura, escrita.</li>
 </ul>
-&nbsp;&nbsp;&nbsp; Permissıes globais existem para cada tipo de objeto
-(computador, grupos, subredes, redes) e operaÁıes de controle com um
+&nbsp;&nbsp;&nbsp; Permiss√µes globais existem para cada tipo de objeto
+(computador, grupos, subredes, redes) e opera√ß√µes de controle com um
 conjunto de objetos de um determinado tipo.
 <br>Global criar
 <br>Global ler
 <br>Global escrever
-<br>&nbsp;&nbsp;&nbsp; Permissıes Por-objeto permitem a vocÍ um controle
-de acesso mais flexÌvel. Elas existem para cada objeto individual. Hoje
-apenas s„o implementados acls por-objetos para computadores e subredes. 
+<br>&nbsp;&nbsp;&nbsp; Permiss√µes Por-objeto permitem a voc√™ um controle
+de acesso mais flex√≠vel. Elas existem para cada objeto individual. Hoje
+apenas s√£o implementados acls por-objetos para computadores e subredes. 
 <br>Por-objeto ler
 <br>Por-objeto escrever
-<br>&nbsp;&nbsp;&nbsp; Subsistema ACL pode operar em 4 diferentes nÌveis
-de seguranÁa (ou modos).
-<br><img SRC="ctree0.gif" ALT="·rvore de configuraÁ„o do dhcpd, nÌvel de
-seguranÁa 0, verifique permissıes da subrede X" height=229 width=314>
+<br>&nbsp;&nbsp;&nbsp; Subsistema ACL pode operar em 4 diferentes n√≠veis
+de seguran√ßa (ou modos).
+<br><img SRC="ctree0.gif" ALT="√°rvore de configura√ß√£o do dhcpd, n√≠vel de
+seguran√ßa 0, verifique permiss√µes da subrede X" height=229 width=314>
 <br>&nbsp;
-<p><img SRC="ctree1.gif" ALT="·rvore de configuraÁ„o do dhcpd, nÌvel de
-seguranÁa 1, verifique permissıes da subrede X" height=229 width=314>
-<p><img SRC="ctree2.gif" ALT="·rvore de configuraÁ„o do dhcpd, nÌvel de
-seguranÁa 2, verifique permissıes da subrede X" height=229 width=314>
-<p><img SRC="ctree3.gif" ALT="·rvore de configuraÁ„o do dhcpd, nÌvel de
-seguranÁa 3, verifique permissıes da subrede X" height=229 width=314>
+<p><img SRC="ctree1.gif" ALT="√°rvore de configura√ß√£o do dhcpd, n√≠vel de
+seguran√ßa 1, verifique permiss√µes da subrede X" height=229 width=314>
+<p><img SRC="ctree2.gif" ALT="√°rvore de configura√ß√£o do dhcpd, n√≠vel de
+seguran√ßa 2, verifique permiss√µes da subrede X" height=229 width=314>
+<p><img SRC="ctree3.gif" ALT="√°rvore de configura√ß√£o do dhcpd, n√≠vel de
+seguran√ßa 3, verifique permiss√µes da subrede X" height=229 width=314>
 <h3>
-NOTAS DOS USU¡RIOS:</h3>
+NOTAS DOS USU√ÅRIOS:</h3>
 &nbsp;
 <h3>
 NOTAS DOS DESENVOLVEDORES:</h3>

@@ -1,6 +1,6 @@
-line1=Konfigurovatelné volby,11
-refresh=Poèet sekund mezi obnovením stavu RAIDu,3,Nikdy
-line2=Konfigurace systému,11
-raidtab=Konfiguraèní soubor RAIDu,0
-mdadm=Konfiguraèní soubor MDADM,0
-mdstat=RAID stavovı soubor jádra,0
+line1=KonfigurovatelnÃ© volby,11
+refresh=PoÃ¨et sekund mezi obnovenÃ­m stavu RAIDu,3,Nikdy
+line2=Konfigurace systÃ©mu,11
+raidtab=KonfiguraÃ¨nÃ­ soubor RAIDu,0
+mdadm=KonfiguraÃ¨nÃ­ soubor MDADM,0
+mdstat=RAID stavovÃ½ soubor jÃ¡dra,0

@@ -1,8 +1,8 @@
-line2=Konfigurace systému,11
-jabber_config=Jabber XML konfiguraèní soubor,0
-jabber_dir=Jabber základní adresáø,0
-jabber_daemonCesta k programu jabber serveru,3,Pod základním adresáøem
-jabber_spool=Jabber adresáø hostù,3,Pod základním adresáøem
-jabber_lib=Adresáø Jabber sdílenıch knihoven,3,Nic
-start_cmd=Pøíkaz pro spu¹tìní jabberu,0
-stop_cmd=Pøíkaz pro ukonèení jabberu,3,Zabít proces
+line2=Konfigurace systÃ©mu,11
+jabber_config=Jabber XML konfiguraÃ¨nÃ­ soubor,0
+jabber_dir=Jabber zÃ¡kladnÃ­ adresÃ¡Ã¸,0
+jabber_daemonCesta k programu jabber serveru,3,Pod zÃ¡kladnÃ­m adresÃ¡Ã¸em
+jabber_spool=Jabber adresÃ¡Ã¸ hostÃ¹,3,Pod zÃ¡kladnÃ­m adresÃ¡Ã¸em
+jabber_lib=AdresÃ¡Ã¸ Jabber sdÃ­lenÃ½ch knihoven,3,Nic
+start_cmd=PÃ¸Ã­kaz pro spuÂ¹tÃ¬nÃ­ jabberu,0
+stop_cmd=PÃ¸Ã­kaz pro ukonÃ¨enÃ­ jabberu,3,ZabÃ­t proces

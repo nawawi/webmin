@@ -1,2 +1,2 @@
-desc_pl=Zarz±dzanie drukarkami
-longdesc_pl=Twórz i edytuj lokalne oraz zdalne drukarki. Wsparcie dla serwerów drukowania Windows i sterowników Ghostscript.
+desc_pl=ZarzÂ±dzanie drukarkami
+longdesc_pl=TwÃ³rz i edytuj lokalne oraz zdalne drukarki. Wsparcie dla serwerÃ³w drukowania Windows i sterownikÃ³w Ghostscript.

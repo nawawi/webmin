@@ -1,125 +1,125 @@
 <body bgcolor=#ffffff>
-<title>Internettjänster</title>
+<title>InternettjÃ¤nster</title>
 <center><img src="images/inetd.gif"></center><br>
-<h2><i>Denna hjälpsida är inte färdig</i></h2>
+<h2><i>Denna hjÃ¤lpsida Ã¤r inte fÃ¤rdig</i></h2>
 <hr>
 <h3>Introduktion</h3>
-Med denna modul kan du sätta upp och administrera internettjänster som
-<tt>telnet</tt>, <tt>ftp</tt> och <tt>finger</tt>. Varje internettjänst
-har ett namn, ett portnummer och ett protokoll (t ex <tt>telnet</tt> över
-<tt>tcp</tt>, port 23). Flera tjänster har också serverprogram som
-hanterar uppkopplingar till tjänsten.
+Med denna modul kan du sÃ¤tta upp och administrera internettjÃ¤nster som
+<tt>telnet</tt>, <tt>ftp</tt> och <tt>finger</tt>. Varje internettjÃ¤nst
+har ett namn, ett portnummer och ett protokoll (t ex <tt>telnet</tt> Ã¶ver
+<tt>tcp</tt>, port 23). Flera tjÃ¤nster har ocksÃ¥ serverprogram som
+hanterar uppkopplingar till tjÃ¤nsten.
 
-<p>Tjänster som har ett sådant program kontrolleras av Unix-demonen
-<tt>inetd</tt>, som lyssnar efter uppkopplingar för alla sina tjänster.
-När en uppkoppling sker startas serverprogrammet för att hantera data från
+<p>TjÃ¤nster som har ett sÃ¥dant program kontrolleras av Unix-demonen
+<tt>inetd</tt>, som lyssnar efter uppkopplingar fÃ¶r alla sina tjÃ¤nster.
+NÃ¤r en uppkoppling sker startas serverprogrammet fÃ¶r att hantera data frÃ¥n
 den nya uppkopplingen.
 
-<p>Alla internettjänster hanteras inte av denna modul. Servrar som tar
-emot många uppkopplingar, t ex HTTPD, SMB och NFS, körs separat för att
-inetd inte ska behöva starta en ny process för varje uppkoppling till dem.
-För dessa tjänster görs inställningar i respektive Webmin-modul, t ex
+<p>Alla internettjÃ¤nster hanteras inte av denna modul. Servrar som tar
+emot mÃ¥nga uppkopplingar, t ex HTTPD, SMB och NFS, kÃ¶rs separat fÃ¶r att
+inetd inte ska behÃ¶va starta en ny process fÃ¶r varje uppkoppling till dem.
+FÃ¶r dessa tjÃ¤nster gÃ¶rs instÃ¤llningar i respektive Webmin-modul, t ex
 <a href=/samba/>Samba</a> och <a href=/apache/>Apache</a>.
 
-<p>På startsidan för denna modul listas alla internet- och RPC-tjänster
-på ditt system. Tjänster som har tillhörande program visas med fetstil.
-Listan genereras från filerna <tt>/etc/services</tt>, <tt>/etc/rpc</tt>
+<p>PÃ¥ startsidan fÃ¶r denna modul listas alla internet- och RPC-tjÃ¤nster
+pÃ¥ ditt system. TjÃ¤nster som har tillhÃ¶rande program visas med fetstil.
+Listan genereras frÃ¥n filerna <tt>/etc/services</tt>, <tt>/etc/rpc</tt>
 och <tt>/etc/inetd.conf</tt>.
 
 <hr>
-<h3>Lägga till tjänst</h3>
-För att lägga till en tjänst klickar du på länken <tt>Lägga till tjänst</tt>
-nedanför listan över tjänster. Då kommer du till ett formulär där du kan
-skriva in uppgifter om den nya tjänsten.
+<h3>LÃ¤gga till tjÃ¤nst</h3>
+FÃ¶r att lÃ¤gga till en tjÃ¤nst klickar du pÃ¥ lÃ¤nken <tt>LÃ¤gga till tjÃ¤nst</tt>
+nedanfÃ¶r listan Ã¶ver tjÃ¤nster. DÃ¥ kommer du till ett formulÃ¤r dÃ¤r du kan
+skriva in uppgifter om den nya tjÃ¤nsten.
 
 	<ul>
-	<li><b>Namn på tjänsten</b>
-	    <br>Varje tjänst måste ha ett unikt par av namn och protokoll.
-	    Detta betyder att två tjänster kan heta samma sak om de använder
+	<li><b>Namn pÃ¥ tjÃ¤nsten</b>
+	    <br>Varje tjÃ¤nst mÃ¥ste ha ett unikt par av namn och protokoll.
+	    Detta betyder att tvÃ¥ tjÃ¤nster kan heta samma sak om de anvÃ¤nder
 	    olika protokoll.
 	<li><b>Protokoll</b>
-	    <br>Kommunikationsprotokollen som tjänsten använder sig av.
-	    De flesta internettjänster använder <tt>TCP</tt>-protokollet
-	    och resten använder <tt>UDP</tt>.
+	    <br>Kommunikationsprotokollen som tjÃ¤nsten anvÃ¤nder sig av.
+	    De flesta internettjÃ¤nster anvÃ¤nder <tt>TCP</tt>-protokollet
+	    och resten anvÃ¤nder <tt>UDP</tt>.
 	<li><b>Port</b>
-	    <br>Varje tjänst har ett portnummer som måste vara unikt inom
-	    protokollet som används. Portnumret måste ligga i intervallet
-	    0-65535 både för <tt>TCP</tt> och <tt>UDP</tt>.
+	    <br>Varje tjÃ¤nst har ett portnummer som mÃ¥ste vara unikt inom
+	    protokollet som anvÃ¤nds. Portnumret mÃ¥ste ligga i intervallet
+	    0-65535 bÃ¥de fÃ¶r <tt>TCP</tt> och <tt>UDP</tt>.
 	<li><b>Alias</b>
-	    <br>Här kan du skriva in fler namn som tjänsten kan anropas med.
-	    Du får inte använda namn eller alias som redan är upptagna inom
+	    <br>HÃ¤r kan du skriva in fler namn som tjÃ¤nsten kan anropas med.
+	    Du fÃ¥r inte anvÃ¤nda namn eller alias som redan Ã¤r upptagna inom
 	    protokollet.
 	</ul>
 
-<p>Du kan använda tjänstenamnet istället för datornamnet i t ex
+<p>Du kan anvÃ¤nda tjÃ¤nstenamnet istÃ¤llet fÃ¶r datornamnet i t ex
 <tt>telnet</tt>-kommandon. Du kan exempelvis skriva <tt>telnet
-foo.bar.com smtp</tt> för att koppla upp dig mot port 25 på datorn
-<tt>foo.bar.com</tt>, under förutsättning att tjänsten <tt>smtp</tt>
-har definierats på rätt sätt.
+foo.bar.com smtp</tt> fÃ¶r att koppla upp dig mot port 25 pÃ¥ datorn
+<tt>foo.bar.com</tt>, under fÃ¶rutsÃ¤ttning att tjÃ¤nsten <tt>smtp</tt>
+har definierats pÃ¥ rÃ¤tt sÃ¤tt.
 
-<p>För tjänster med tillhörande program måste du välja <tt>Använd programmet
-nedan</tt> när du skriver in uppgifterna.
+<p>FÃ¶r tjÃ¤nster med tillhÃ¶rande program mÃ¥ste du vÃ¤lja <tt>AnvÃ¤nd programmet
+nedan</tt> nÃ¤r du skriver in uppgifterna.
 	<ul>
 	<li><b>Program</b>
-	    <br>Vissa tjänster hanteras internt av <tt>inetd</tt>.
-	    Du bör dock här ange fullständig sökväg till det program som ska
-	    utföras när du lägger till en tjänst.
+	    <br>Vissa tjÃ¤nster hanteras internt av <tt>inetd</tt>.
+	    Du bÃ¶r dock hÃ¤r ange fullstÃ¤ndig sÃ¶kvÃ¤g till det program som ska
+	    utfÃ¶ras nÃ¤r du lÃ¤gger till en tjÃ¤nst.
 	<li><b>Argument</b>
 	    <br>Kommandoradsargument som ska skickas till det program du
-	    angivit ovan. Det första argumentet bör vara programnamnet och
-	    övriga argument parametrar till programmet.
-	<li><b>Vänteläge</b>
-	    <br>Här bestämmer du om <tt>inetd</tt> ska vänta tills
-	    programmet är klart innan det ska köra igång något annat.
-	    För de flesta tjänster bör du välja <tt>Vänta inte</tt>.
-	<li><b>Kör som</b>
-	    <br>Användarnamnet för den användare som serverprogrammet ska
-	    köras som. De flesta servrar måste köras som <tt>root</tt>.
+	    angivit ovan. Det fÃ¶rsta argumentet bÃ¶r vara programnamnet och
+	    Ã¶vriga argument parametrar till programmet.
+	<li><b>VÃ¤ntelÃ¤ge</b>
+	    <br>HÃ¤r bestÃ¤mmer du om <tt>inetd</tt> ska vÃ¤nta tills
+	    programmet Ã¤r klart innan det ska kÃ¶ra igÃ¥ng nÃ¥got annat.
+	    FÃ¶r de flesta tjÃ¤nster bÃ¶r du vÃ¤lja <tt>VÃ¤nta inte</tt>.
+	<li><b>KÃ¶r som</b>
+	    <br>AnvÃ¤ndarnamnet fÃ¶r den anvÃ¤ndare som serverprogrammet ska
+	    kÃ¶ras som. De flesta servrar mÃ¥ste kÃ¶ras som <tt>root</tt>.
 	</ul>
 
-<p>När du har lagt till en tjänst kommer den inte att vara tillgänglig
-direkt. Du måste trycka på knappen <tt>Starta om inetd</tt> på startsidan
-för att tjänsten ska gå att använda.
+<p>NÃ¤r du har lagt till en tjÃ¤nst kommer den inte att vara tillgÃ¤nglig
+direkt. Du mÃ¥ste trycka pÃ¥ knappen <tt>Starta om inetd</tt> pÃ¥ startsidan
+fÃ¶r att tjÃ¤nsten ska gÃ¥ att anvÃ¤nda.
 
 <hr>
-<h3>Ändra en tjänst</h3>
-För att ändra i en tjänst klickar du på tjänstenamnet i listan på
-startsidan. Du får då upp samma formulär som när du lägger till en
-tjänst, och kan ändra de uppgifter du vill. Du kan också trycka på
-<tt>Ta bort</tt>-knappen längst ned på sidan för att ta bort tjänsten.
+<h3>Ã„ndra en tjÃ¤nst</h3>
+FÃ¶r att Ã¤ndra i en tjÃ¤nst klickar du pÃ¥ tjÃ¤nstenamnet i listan pÃ¥
+startsidan. Du fÃ¥r dÃ¥ upp samma formulÃ¤r som nÃ¤r du lÃ¤gger till en
+tjÃ¤nst, och kan Ã¤ndra de uppgifter du vill. Du kan ocksÃ¥ trycka pÃ¥
+<tt>Ta bort</tt>-knappen lÃ¤ngst ned pÃ¥ sidan fÃ¶r att ta bort tjÃ¤nsten.
 
-<p>Var försiktig när du ändrar i eller tar bort systemtjänster som
-<tt>telnet</tt> och <tt>ftp</tt>. Om du ändrar i dem kan du få problem
-med inloggning (eller värre).
+<p>Var fÃ¶rsiktig nÃ¤r du Ã¤ndrar i eller tar bort systemtjÃ¤nster som
+<tt>telnet</tt> och <tt>ftp</tt>. Om du Ã¤ndrar i dem kan du fÃ¥ problem
+med inloggning (eller vÃ¤rre).
 
-<p>När du har ändrat i en tjänst kommer detta inte att tas i drift på
-en gång, utan du måste trycka på <tt>Starta om inetd</tt>-knappen för
-att ändringarna ska gå igenom.
+<p>NÃ¤r du har Ã¤ndrat i en tjÃ¤nst kommer detta inte att tas i drift pÃ¥
+en gÃ¥ng, utan du mÃ¥ste trycka pÃ¥ <tt>Starta om inetd</tt>-knappen fÃ¶r
+att Ã¤ndringarna ska gÃ¥ igenom.
 
 <hr>
-<h3>Skapa och ändra RPC-program</h3>
-Normalt kommer du inte att behöva skapa eller ändra RPC-program på
-ditt system. Om du skulle vilja göra det ändå går det till på ungefär
-samma sätt som för internettjänster.
+<h3>Skapa och Ã¤ndra RPC-program</h3>
+Normalt kommer du inte att behÃ¶va skapa eller Ã¤ndra RPC-program pÃ¥
+ditt system. Om du skulle vilja gÃ¶ra det Ã¤ndÃ¥ gÃ¥r det till pÃ¥ ungefÃ¤r
+samma sÃ¤tt som fÃ¶r internettjÃ¤nster.
 
-<p>Formuläret för RPC-program innehåller alltid åtminstone dessa fält:
+<p>FormulÃ¤ret fÃ¶r RPC-program innehÃ¥ller alltid Ã¥tminstone dessa fÃ¤lt:
 	<ul>
 	<li><b>Programnamn</b>
-	    <br>Ett unikt namn (inom protokollet) på RPC-programmet.
+	    <br>Ett unikt namn (inom protokollet) pÃ¥ RPC-programmet.
 	<li><b>Nummer</b>
-	    <br>Varje RPC-program har ett unikt programnummer som bestäms
-	    när programmet skrivs.
+	    <br>Varje RPC-program har ett unikt programnummer som bestÃ¤ms
+	    nÃ¤r programmet skrivs.
 	<li><b>Alias</b>
-	    <br>Här kan du skriva in fler namn som RPC-programmet kan
+	    <br>HÃ¤r kan du skriva in fler namn som RPC-programmet kan
 	    anropas med.
 	</ul>
 
-<p>En del operativsystem (t ex Solaris) stödjer att RPC-tjänster kan
-ha tillhörande serverprogram. Dessa program kommer att köras av <tt>inetd</tt>
-när programmet anropas.
+<p>En del operativsystem (t ex Solaris) stÃ¶djer att RPC-tjÃ¤nster kan
+ha tillhÃ¶rande serverprogram. Dessa program kommer att kÃ¶ras av <tt>inetd</tt>
+nÃ¤r programmet anropas.
 
-<p>Om ditt system stödjer RPC-serverprogram via inetd, kommer följande
-fält också att finnas:
+<p>Om ditt system stÃ¶djer RPC-serverprogram via inetd, kommer fÃ¶ljande
+fÃ¤lt ocksÃ¥ att finnas:
 	<ul>
 	<li>???
 	</ul>

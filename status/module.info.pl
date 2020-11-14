@@ -1,2 +1,2 @@
-desc_pl=Stan systemu i&nbsp;serwerów
-longdesc_pl=Wy¶wietl stan us³ug na twoim i zdalnym systemie.
+desc_pl=Stan systemu i&nbsp;serwerÃ³w
+longdesc_pl=WyÂ¶wietl stan usÂ³ug na twoim i zdalnym systemie.

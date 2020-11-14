@@ -1,324 +1,324 @@
-feedback_module=關於模組
-help_efile=無法讀取說明檔 $1
-delete_eaccess=您不被允許刪除 '$1'
-session_logout=登出成功，使用下面的欄位重新登入
-session_failed=登入失敗，請再試一次
-main_none=您沒有任何可使用的Webmin模組
-month_4=四月
-copy_eto=您不被允許拷貝到 '$1'
-smonth_3=三月
-acl_gedit=選擇可以看到的群組
-config_dir=給模組 $1
-chmod_echown=變更擁有者失敗 : $1
-edit_title=編輯 $1 中
-elock_tries=無法鎖檔案 $1在 $2 分鐘後
-feedback_desc2=此報告將會傳送給Usermin發展群，而非您的系統管理者,網路提供者,或主機公司，回饋內容請以英文撰寫。
-paste_egone=複製的檔案 $1 已經不存在
-referer_again=以後不再顯示這個訊息
-delete_efailed=無法刪除 $1 : $2
-month_11=十一月
-rename_title=變更名稱 $1
-acl_uedit_uid=使用者 UID 範圍是
-main_logout=登出
-upload_ewrite=無法寫入到 $1 : $2.
-link_eexists=$1 已經存在
-sday_2=星期二
-feedback_ecannot=您不被允許寄送回饋信件
-feedback_prog=傳送回饋信件到 $1 使用sendmail程式 $2
-main_homepage=首頁
-delete_ddesc=您確定要永久的刪除目錄 $1 與其所有內容嗎?
-acl_home=使用者家目錄
-info_perms=權限
-info_user=使用者:
-chooser_dir=$1 的目錄
-header_servers=Webmin 伺服器
-smonth_12=十二月
-info_size=大小:
-config_nochange=不改變
+feedback_module=éæ¼æ¨¡çµ
+help_efile=ç¡æ³è®åèªªææª $1
+delete_eaccess=æ¨ä¸è¢«åè¨±åªé¤ '$1'
+session_logout=ç»åºæåï¼ä½¿ç¨ä¸é¢çæ¬ä½éæ°ç»å¥
+session_failed=ç»å¥å¤±æï¼è«åè©¦ä¸æ¬¡
+main_none=æ¨æ²æä»»ä½å¯ä½¿ç¨çWebminæ¨¡çµ
+month_4=åæ
+copy_eto=æ¨ä¸è¢«åè¨±æ·è²å° '$1'
+smonth_3=ä¸æ
+acl_gedit=é¸æå¯ä»¥çå°çç¾¤çµ
+config_dir=çµ¦æ¨¡çµ $1
+chmod_echown=è®æ´ææèå¤±æ : $1
+edit_title=ç·¨è¼¯ $1 ä¸­
+elock_tries=ç¡æ³éæªæ¡ $1å¨ $2 åéå¾
+feedback_desc2=æ­¤å ±åå°æå³éçµ¦Userminç¼å±ç¾¤ï¼èéæ¨çç³»çµ±ç®¡çè,ç¶²è·¯æä¾è,æä¸»æ©å¬å¸ï¼åé¥å§å®¹è«ä»¥è±ææ°å¯«ã
+paste_egone=è¤è£½çæªæ¡ $1 å·²ç¶ä¸å­å¨
+referer_again=ä»¥å¾ä¸åé¡¯ç¤ºéåè¨æ¯
+delete_efailed=ç¡æ³åªé¤ $1 : $2
+month_11=åä¸æ
+rename_title=è®æ´åç¨± $1
+acl_uedit_uid=ä½¿ç¨è UID ç¯åæ¯
+main_logout=ç»åº
+upload_ewrite=ç¡æ³å¯«å¥å° $1 : $2.
+link_eexists=$1 å·²ç¶å­å¨
+sday_2=ææäº
+feedback_ecannot=æ¨ä¸è¢«åè¨±å¯éåé¥ä¿¡ä»¶
+feedback_prog=å³éåé¥ä¿¡ä»¶å° $1 ä½¿ç¨sendmailç¨å¼ $2
+main_homepage=é¦é 
+delete_ddesc=æ¨ç¢ºå®è¦æ°¸ä¹çåªé¤ç®é $1 èå¶ææå§å®¹å?
+acl_home=ä½¿ç¨èå®¶ç®é
+info_perms=æ¬é
+info_user=ä½¿ç¨è:
+chooser_dir=$1 çç®é
+header_servers=Webmin ä¼ºæå¨
+smonth_12=åäºæ
+info_size=å¤§å°:
+config_nochange=ä¸æ¹è®
 category_webmin=Webmin
-paste_ecopy=在您貼上要先剪下或複製
-file_type0=目錄
-groups_clear=清除
-feedback_config=在寄送郵件中包含模組組態設定?
-acl_gedit_all=所有群組
-feedback_ecannot2=您不被允許寄送包含設定組態檔案的回饋信件
-acl_uedit_all=所有使用者
-sday_3=星期三
-no=否
-session_header=登入Webmin
-acl_gedit_none=沒有群組
-paste_eself=您不能把檔案貼到本身上
-info_apply1=只有這個目錄
-config_none=無
-acl_rpc0=否
-longcategory_info=顯示您的系統資訊的模組
-mkdir_eexists=$1 已經存在
-right_user=使用者
-top_open=開啟
-sday_4=星期四
-config_title=組態設定
-acl_uedit_except=全部使用者除了
-smonth_7=七月
-acl_feedback=可以寄送回饋信件?
-header_webmin=Webmin 索引
-smonth_2=二月
-chooser_title1=選擇檔案...
-session_mesg=您必須輸入使用者名稱和密碼來登入Webmin 伺服器在 $1上。
-groups_title1=選擇群組...
-feedback_to=傳送回饋到位址
-info_setgid3=以群組權限執行
-copy_efrom=您不被允許拷貝自 '$1'
-feedback_configdesc=如果選取此項目,在回饋郵件中會附上相關的模組和模組會用到相關的所有設定檔案。例如 ,如果回饋是關於 <b><i>使用者和群組</i></b> 模組,你的 <tt>/etc/passwd</tt>和 <tt>/etc/shadow</tt>檔案會被附加上去。
-acl_feedback1=是,但不能包含組態檔案
-feedback_emodule=在信件中您選擇了包含模組組態設定,但卻沒有選取模組。
-month_1=一月
-smonth_6=六月
-users_ok=確定
-paste_ecfailed=拷貝失敗 : $1
-top_upload=上傳
-feedback_os=在寄送郵件中包含作業系統資訊?
-top_new=增加
-sday_6=星期六
-index_nojava=這個模組需要 Java 才能正確的運作, 但是您的瀏覽器似乎不支援 Java
-month_8=八月
-referer_warn_unknown=<b>警告!</b> Webmin發現程式 $2從不知名的位置連結來的，出現在 Webmin以外。並企圖嘗試在您的伺服器執行危險的指令。
-rename_eold=您不被允許改名自 '$1'
-link_to=連結到:
-yes=是
-acl_rpc2=只有 <tt>root</tt> 或 <tt>admin</tt>
-main_title=Webmin $1 在 $2 ($3)
-chooser_ok=確定
-info_own=所有權
-referer_title=安全警告
-mkdir_eaccess=您不被允許建立 '$1'
-header_config=模組組態
-category_=其他
-right_group=群組
-users_title1=選擇使用者...
-session_mesg2=您必須輸入使用者名稱和密碼來登入
-right_name=名稱
-top_refresh=重讀
-groups_sel=選擇的群組
-helpsearch=搜尋文件
-acl_umask=建立檔案的遮罩
-info_sticky=設定位元:
-help_err=無法顯示說明
-top_edit=編輯
-top_info=資訊
-top_copy=複製
-day_1=星期一
-upload_title=上傳檔案
-chooser_title2=選擇目錄...
-link_from=連結自:
-error=錯誤
-acl_rpc=可以使用RPC ?
-month_10=十月
-create=建立
-upload_file=要上傳的檔案
-feedback_text=描述問題或建議
-top_paste=貼上
-move_eto=您不被允許移動到 '$1'
-list_eaccess=您不被允許存取這個目錄
-feedback_email=您的電子郵件
-skill_medium=中等
-delete_fdesc=您確定要永久的刪除檔案 $1 嗎?
-rename_old=舊檔名:
-users_sel=選擇的使用者
-chmod_echmod=變更權限失敗 : $1
-acl_rpc1=是
-month_7=七月
-file_type7=管線
-smonth_1=一月
-default=預設
-info_type=類別:
-info_link=連結到:
-groups_cancel=取消
-category_net=網路
-day_4=星期四
-category_syslet=網管
-upload_edir=上傳的目錄不存在.
-smonth_5=五月
-header_help=說明...
-help_epath=遺失說明檔路徑
-groups_ok=確定
-category_cluster=電腦叢集
-chmod_egroup=$1 : 沒有這個群組
-rename_eexists=叫做 $1 的檔案已經存在
-modify=修改
-mkdir_dir=目錄:
-longcategory_net=網路和網路服務組態模組
-emodule=存取拒絕 : 使用者 $1 不允許使用 $2 模組
-top_view=檢視
-acl_feedback2=是
-top_cut=剪下
-header_module=模組索引
-find_eexist=$1 不存在於 $2
-referer_ok=繼續執行Webmin程式
-skill_low=新手
-sday_5=星期五
-save=儲存
-feedback_header=回饋內容
-month_9=九月
-info_efailed=無法重讀 $1 : $2
-upload_ok=上傳
-session_save=記得上次登入帳號?
-config_err=儲存組態錯誤
-longcategory_hardware=列表機,磁碟和其他硬體組態模組
-acl_dirs=只允許存取到目錄
-find_eaccess=您不被允許存取 $1
-feedback_econfig=您沒有完整的權限來選取模組
-right_date=日期
-file_type6=設備控制檔
-edit_filename=檔案名稱:
-category_info=資訊
-info_read=讀取
+paste_ecopy=å¨æ¨è²¼ä¸è¦ååªä¸æè¤è£½
+file_type0=ç®é
+groups_clear=æ¸é¤
+feedback_config=å¨å¯ééµä»¶ä¸­åå«æ¨¡çµçµæè¨­å®?
+acl_gedit_all=ææç¾¤çµ
+feedback_ecannot2=æ¨ä¸è¢«åè¨±å¯éåå«è¨­å®çµææªæ¡çåé¥ä¿¡ä»¶
+acl_uedit_all=ææä½¿ç¨è
+sday_3=ææä¸
+no=å¦
+session_header=ç»å¥Webmin
+acl_gedit_none=æ²æç¾¤çµ
+paste_eself=æ¨ä¸è½ææªæ¡è²¼å°æ¬èº«ä¸
+info_apply1=åªæéåç®é
+config_none=ç¡
+acl_rpc0=å¦
+longcategory_info=é¡¯ç¤ºæ¨çç³»çµ±è³è¨çæ¨¡çµ
+mkdir_eexists=$1 å·²ç¶å­å¨
+right_user=ä½¿ç¨è
+top_open=éå
+sday_4=ææå
+config_title=çµæè¨­å®
+acl_uedit_except=å¨é¨ä½¿ç¨èé¤äº
+smonth_7=ä¸æ
+acl_feedback=å¯ä»¥å¯éåé¥ä¿¡ä»¶?
+header_webmin=Webmin ç´¢å¼
+smonth_2=äºæ
+chooser_title1=é¸ææªæ¡...
+session_mesg=æ¨å¿é è¼¸å¥ä½¿ç¨èåç¨±åå¯ç¢¼ä¾ç»å¥Webmin ä¼ºæå¨å¨ $1ä¸ã
+groups_title1=é¸æç¾¤çµ...
+feedback_to=å³éåé¥å°ä½å
+info_setgid3=ä»¥ç¾¤çµæ¬éå·è¡
+copy_efrom=æ¨ä¸è¢«åè¨±æ·è²èª '$1'
+feedback_configdesc=å¦æé¸åæ­¤é ç®,å¨åé¥éµä»¶ä¸­æéä¸ç¸éçæ¨¡çµåæ¨¡çµæç¨å°ç¸éçææè¨­å®æªæ¡ãä¾å¦ ,å¦æåé¥æ¯éæ¼ <b><i>ä½¿ç¨èåç¾¤çµ</i></b> æ¨¡çµ,ä½ ç <tt>/etc/passwd</tt>å <tt>/etc/shadow</tt>æªæ¡æè¢«éå ä¸å»ã
+acl_feedback1=æ¯,ä½ä¸è½åå«çµææªæ¡
+feedback_emodule=å¨ä¿¡ä»¶ä¸­æ¨é¸æäºåå«æ¨¡çµçµæè¨­å®,ä½å»æ²æé¸åæ¨¡çµã
+month_1=ä¸æ
+smonth_6=å­æ
+users_ok=ç¢ºå®
+paste_ecfailed=æ·è²å¤±æ : $1
+top_upload=ä¸å³
+feedback_os=å¨å¯ééµä»¶ä¸­åå«ä½æ¥­ç³»çµ±è³è¨?
+top_new=å¢å 
+sday_6=ææå­
+index_nojava=éåæ¨¡çµéè¦ Java æè½æ­£ç¢ºçéä½, ä½æ¯æ¨ççè¦½å¨ä¼¼ä¹ä¸æ¯æ´ Java
+month_8=å«æ
+referer_warn_unknown=<b>è­¦å!</b> Webminç¼ç¾ç¨å¼ $2å¾ä¸ç¥åçä½ç½®é£çµä¾çï¼åºç¾å¨ Webminä»¥å¤ãä¸¦ä¼ååè©¦å¨æ¨çä¼ºæå¨å·è¡å±éªçæä»¤ã
+rename_eold=æ¨ä¸è¢«åè¨±æ¹åèª '$1'
+link_to=é£çµå°:
+yes=æ¯
+acl_rpc2=åªæ <tt>root</tt> æ <tt>admin</tt>
+main_title=Webmin $1 å¨ $2 ($3)
+chooser_ok=ç¢ºå®
+info_own=æææ¬
+referer_title=å®å¨è­¦å
+mkdir_eaccess=æ¨ä¸è¢«åè¨±å»ºç« '$1'
+header_config=æ¨¡çµçµæ
+category_=å¶ä»
+right_group=ç¾¤çµ
+users_title1=é¸æä½¿ç¨è...
+session_mesg2=æ¨å¿é è¼¸å¥ä½¿ç¨èåç¨±åå¯ç¢¼ä¾ç»å¥
+right_name=åç¨±
+top_refresh=éè®
+groups_sel=é¸æçç¾¤çµ
+helpsearch=æå°æä»¶
+acl_umask=å»ºç«æªæ¡çé®ç½©
+info_sticky=è¨­å®ä½å:
+help_err=ç¡æ³é¡¯ç¤ºèªªæ
+top_edit=ç·¨è¼¯
+top_info=è³è¨
+top_copy=è¤è£½
+day_1=ææä¸
+upload_title=ä¸å³æªæ¡
+chooser_title2=é¸æç®é...
+link_from=é£çµèª:
+error=é¯èª¤
+acl_rpc=å¯ä»¥ä½¿ç¨RPC ?
+month_10=åæ
+create=å»ºç«
+upload_file=è¦ä¸å³çæªæ¡
+feedback_text=æè¿°åé¡æå»ºè­°
+top_paste=è²¼ä¸
+move_eto=æ¨ä¸è¢«åè¨±ç§»åå° '$1'
+list_eaccess=æ¨ä¸è¢«åè¨±å­åéåç®é
+feedback_email=æ¨çé»å­éµä»¶
+skill_medium=ä¸­ç­
+delete_fdesc=æ¨ç¢ºå®è¦æ°¸ä¹çåªé¤æªæ¡ $1 å?
+rename_old=èæªå:
+users_sel=é¸æçä½¿ç¨è
+chmod_echmod=è®æ´æ¬éå¤±æ : $1
+acl_rpc1=æ¯
+month_7=ä¸æ
+file_type7=ç®¡ç·
+smonth_1=ä¸æ
+default=é è¨­
+info_type=é¡å¥:
+info_link=é£çµå°:
+groups_cancel=åæ¶
+category_net=ç¶²è·¯
+day_4=ææå
+category_syslet=ç¶²ç®¡
+upload_edir=ä¸å³çç®éä¸å­å¨.
+smonth_5=äºæ
+header_help=èªªæ...
+help_epath=éºå¤±èªªææªè·¯å¾
+groups_ok=ç¢ºå®
+category_cluster=é»è¦å¢é
+chmod_egroup=$1 : æ²æéåç¾¤çµ
+rename_eexists=å«å $1 çæªæ¡å·²ç¶å­å¨
+modify=ä¿®æ¹
+mkdir_dir=ç®é:
+longcategory_net=ç¶²è·¯åç¶²è·¯æåçµææ¨¡çµ
+emodule=å­åæçµ : ä½¿ç¨è $1 ä¸åè¨±ä½¿ç¨ $2 æ¨¡çµ
+top_view=æª¢è¦
+acl_feedback2=æ¯
+top_cut=åªä¸
+header_module=æ¨¡çµç´¢å¼
+find_eexist=$1 ä¸å­å¨æ¼ $2
+referer_ok=ç¹¼çºå·è¡Webminç¨å¼
+skill_low=æ°æ
+sday_5=ææäº
+save=å²å­
+feedback_header=åé¥å§å®¹
+month_9=ä¹æ
+info_efailed=ç¡æ³éè® $1 : $2
+upload_ok=ä¸å³
+session_save=è¨å¾ä¸æ¬¡ç»å¥å¸³è?
+config_err=å²å­çµæé¯èª¤
+longcategory_hardware=åè¡¨æ©,ç£ç¢åå¶ä»ç¡¬é«çµææ¨¡çµ
+acl_dirs=åªåè¨±å­åå°ç®é
+find_eaccess=æ¨ä¸è¢«åè¨±å­å $1
+feedback_econfig=æ¨æ²æå®æ´çæ¬éä¾é¸åæ¨¡çµ
+right_date=æ¥æ
+file_type6=è¨­åæ§å¶æª
+edit_filename=æªæ¡åç¨±:
+category_info=è³è¨
+info_read=è®å
 main_skill=Skill level
-main_switch=切換使用者...
-info_write=寫入
-delete=刪除
-referer_warn=<b>警告!</b> Webmin發現程式 $2從 URL $1連結來的，出現在 Webmin以外。並企圖嘗試在您的伺服器執行危險的指令。
-info_setuid2=以使用者權限執行
-config_eaccess=您不被允許存取這個模組
-mkdir_title=增加目錄
-groups_title2=選擇群組...
-ok=確定
-progress_data2=下載 $1 位元組
-link_efailed=連結失敗 : $1
-help_eexec=$1 失敗 : $2
-delete_ftitle=刪除檔案
-rename_efailed=改名失敗 : $1
-view_eopen=無法開啟n $1 : $2
-top_delete=刪除
-index=索引
-feedback_mailserver=傳送經由SMTP伺服器
-day_3=星期三
-feedback_title=回饋Webmin
-progress_size=下載中 $1 ($2 位元組) ..
-month_12=十二月
-info_group=群組:
-acl_uedit_group=使用者群組
-paste_eover=$1 無法被蓋寫
-info_apply3=這個目錄與所有的子目錄
-feedback_enoto=沒有填寫傳送回饋位址位置
+main_switch=åæä½¿ç¨è...
+info_write=å¯«å¥
+delete=åªé¤
+referer_warn=<b>è­¦å!</b> Webminç¼ç¾ç¨å¼ $2å¾ URL $1é£çµä¾çï¼åºç¾å¨ Webminä»¥å¤ãä¸¦ä¼ååè©¦å¨æ¨çä¼ºæå¨å·è¡å±éªçæä»¤ã
+info_setuid2=ä»¥ä½¿ç¨èæ¬éå·è¡
+config_eaccess=æ¨ä¸è¢«åè¨±å­åéåæ¨¡çµ
+mkdir_title=å¢å ç®é
+groups_title2=é¸æç¾¤çµ...
+ok=ç¢ºå®
+progress_data2=ä¸è¼ $1 ä½åçµ
+link_efailed=é£çµå¤±æ : $1
+help_eexec=$1 å¤±æ : $2
+delete_ftitle=åªé¤æªæ¡
+rename_efailed=æ¹åå¤±æ : $1
+view_eopen=ç¡æ³éån $1 : $2
+top_delete=åªé¤
+index=ç´¢å¼
+feedback_mailserver=å³éç¶ç±SMTPä¼ºæå¨
+day_3=ææä¸
+feedback_title=åé¥Webmin
+progress_size=ä¸è¼ä¸­ $1 ($2 ä½åçµ) ..
+month_12=åäºæ
+info_group=ç¾¤çµ:
+acl_uedit_group=ä½¿ç¨èç¾¤çµ
+paste_eover=$1 ç¡æ³è¢«èå¯«
+info_apply3=éåç®éèææçå­ç®é
+feedback_enoto=æ²æå¡«å¯«å³éåé¥ä½åä½ç½®
 main_title2=Webmin
-feedback_err=寄送回饋時發生錯誤
-top_rename=改名
-efilewrite=寫入$1失敗 : $2
-feedback_all=所有模組
-month_6=六月
+feedback_err=å¯éåé¥æç¼çé¯èª¤
+top_rename=æ¹å
+efilewrite=å¯«å¥$1å¤±æ : $2
+feedback_all=æææ¨¡çµ
+month_6=å­æ
 programname=Webmin
-copy_elink=符號連結失敗 : $1
+copy_elink=ç¬¦èé£çµå¤±æ : $1
 config_setto=Set to
-help_eheader=遺失 &lt;標頭&gt; 區段
-edit_eaccess=您不被允許儲存 '$1'
-acl_uedit_only=只有使用者
-category_system=系統
-smonth_10=十月
-longcategory_=無法分類的其他模組
-month_3=三月
-file_type1=文字檔
-delete_dtitle=刪除目錄
-day_5=星期五
-feedback_via=傳送回饋信件到 $1經由 SMTP伺服器 $2
-acl_gedit_except=所有群組除了
-acl_follow=是否跟隨符號連結?
-smonth_9=九月
-file_type4=檔案
-acl_gedit_gid=群組GID範圍是
-session_login=登入
-link_title=建立連結
-move_afrom=您不被允許移動自 '$1'
-category_servers=伺服器
-rename_ok=改名
-info_setgid=設定 GID:
-progress_done=.. 下載完成
-find_edir=$1 不是一個目錄在 $2
-upload_efile=沒有選擇要上傳的檔案.
-smonth_4=四月
-day_2=星期二
-upload_eperm=您不被允許建立 $1
-users_clear=清除
-info_other=其他:
-feedback_desc=這表單可以讓你回報錯誤(bugs)和建議Webmin發展群關於任何問題或所忽略的特色，當按下傳送按鈕後，這頁的內容將會寄到 $1。
-edit_eover=$1 無法被蓋寫
-progress_nosize=正在下載 $1 ..
-feedback_mailserver_def=本地sendmail程式
-acl_feedback0=否
-right_size=大小
-file_type2=影像檔
-longcategory_webmin=組態Webmin自己的模組
-sday_1=星期一
-info_apply=套用變更到
-users_cancel=取消
-acl_uedit=選擇可以看到的使用者
-rename_enew=您不被允許改名成 '$1'
-info_setgid2=檔案繼承群組
-file_type5=符號連結
-feedback_attach=加入要附上的檔案
-smonth_11=十一月
-link_efollow=您不被允許建立符號連結
-acl_uedit_none=沒有使用者
-main_version=版本 $1 在 $2 ($3)
-upload_dir=上傳到目錄
-session_pass=密碼
-find=找尋
-chmod_euser=$1 : 沒有這個使用者
-skill_high=專家 
-longcategory_cluster=從單一介面管理多重服務
-main_return=回到 $1
-info_exec=執行
-feedback_send=傳送回饋
-acl_gedit_only=只有群組
-longcategory_system=使用者,檔案系統,工作排程和其他系統設定
-rename_new=變更為:
-upload_efailed=開啟上傳失敗 : $1
-info_file=檔案
-month_5=五月
-chmod_elink=符號連結失敗d : $1
-acl_root=檔案選取時的根目錄
-groups_all=全部的群組
-feedback_name=您的姓名
-feedback_osdesc=如果選取此項目,會自動在回饋信件中加上您的作業系統名稱和版本。
-info_sticky2=只有擁有者才能刪除檔案
-switch_remote_euser=Unix使用者 $1 並不存在
-paste_emfailed=移動失敗 : $1
-view_enormal=只有一般的檔案可以被檢視
-config_header=給 $1 的可組態選項
-link_essl=您的系統尚未安裝 Net::SSLeay Perl模組所需要使用的HTTPS連線。
-longcategory_servers=web, email, FTP和其他服務的組態模組
-view_eaccess=您不被允許存取 $1
-mkdir_efailed=建立目錄失敗 : $1
-day_6=星期六
-info_mod=修改時間:
-session_clear=清除
-edit_title2=建立檔案中
-main_feedback=回饋...
-info_setuid=設定 UID:
-chmod_eaccess=您不被允許存取 '$1'
-help_einclude=無法引入 $1
-edit_esave=無法儲存檔案 : $1
-smonth_8=八月
-cancel=取消
-session_user=使用者名稱
-users_all=全部的使用者
-info_path=路徑:
-edit_enormal=只能編輯一般的檔案
-feedback_emodule2=選取的模組不存在
-config_ecannot=您不被允許組態這個模組
-session_timed_out=連線逾時於$1分鐘
-sday_0=星期日
-acl_user=以使用者權限存取伺服器上的檔案
-reset=重設
-progress_data=下載 $1 位元組 ($2 %)
-upload_conv=是否要改變 DOS 的換行符號?
-index_title=檔案管理者
-day_0=星期日
-help_eif=$1 失敗 : $2
-feedback_esend=使用sendmail或本地SMTP伺服器傳送回饋郵件錯誤
-info_list=列出
-users_title2=選擇使用者...
-info_apply2=這個目錄與其中的檔案
-month_2=二月
-file_type3=二進位檔
-link_efrom=您不被允許連結 '$1'
-category_hardware=硬體
+help_eheader=éºå¤± &lt;æ¨é ­&gt; åæ®µ
+edit_eaccess=æ¨ä¸è¢«åè¨±å²å­ '$1'
+acl_uedit_only=åªæä½¿ç¨è
+category_system=ç³»çµ±
+smonth_10=åæ
+longcategory_=ç¡æ³åé¡çå¶ä»æ¨¡çµ
+month_3=ä¸æ
+file_type1=æå­æª
+delete_dtitle=åªé¤ç®é
+day_5=ææäº
+feedback_via=å³éåé¥ä¿¡ä»¶å° $1ç¶ç± SMTPä¼ºæå¨ $2
+acl_gedit_except=ææç¾¤çµé¤äº
+acl_follow=æ¯å¦è·é¨ç¬¦èé£çµ?
+smonth_9=ä¹æ
+file_type4=æªæ¡
+acl_gedit_gid=ç¾¤çµGIDç¯åæ¯
+session_login=ç»å¥
+link_title=å»ºç«é£çµ
+move_afrom=æ¨ä¸è¢«åè¨±ç§»åèª '$1'
+category_servers=ä¼ºæå¨
+rename_ok=æ¹å
+info_setgid=è¨­å® GID:
+progress_done=.. ä¸è¼å®æ
+find_edir=$1 ä¸æ¯ä¸åç®éå¨ $2
+upload_efile=æ²æé¸æè¦ä¸å³çæªæ¡.
+smonth_4=åæ
+day_2=ææäº
+upload_eperm=æ¨ä¸è¢«åè¨±å»ºç« $1
+users_clear=æ¸é¤
+info_other=å¶ä»:
+feedback_desc=éè¡¨å®å¯ä»¥è®ä½ åå ±é¯èª¤(bugs)åå»ºè­°Webminç¼å±ç¾¤éæ¼ä»»ä½åé¡ææå¿½ç¥çç¹è²ï¼ç¶æä¸å³éæéå¾ï¼éé çå§å®¹å°æå¯å° $1ã
+edit_eover=$1 ç¡æ³è¢«èå¯«
+progress_nosize=æ­£å¨ä¸è¼ $1 ..
+feedback_mailserver_def=æ¬å°sendmailç¨å¼
+acl_feedback0=å¦
+right_size=å¤§å°
+file_type2=å½±åæª
+longcategory_webmin=çµæWebminèªå·±çæ¨¡çµ
+sday_1=ææä¸
+info_apply=å¥ç¨è®æ´å°
+users_cancel=åæ¶
+acl_uedit=é¸æå¯ä»¥çå°çä½¿ç¨è
+rename_enew=æ¨ä¸è¢«åè¨±æ¹åæ '$1'
+info_setgid2=æªæ¡ç¹¼æ¿ç¾¤çµ
+file_type5=ç¬¦èé£çµ
+feedback_attach=å å¥è¦éä¸çæªæ¡
+smonth_11=åä¸æ
+link_efollow=æ¨ä¸è¢«åè¨±å»ºç«ç¬¦èé£çµ
+acl_uedit_none=æ²æä½¿ç¨è
+main_version=çæ¬ $1 å¨ $2 ($3)
+upload_dir=ä¸å³å°ç®é
+session_pass=å¯ç¢¼
+find=æ¾å°
+chmod_euser=$1 : æ²æéåä½¿ç¨è
+skill_high=å°å®¶ 
+longcategory_cluster=å¾å®ä¸ä»é¢ç®¡çå¤éæå
+main_return=åå° $1
+info_exec=å·è¡
+feedback_send=å³éåé¥
+acl_gedit_only=åªæç¾¤çµ
+longcategory_system=ä½¿ç¨è,æªæ¡ç³»çµ±,å·¥ä½æç¨åå¶ä»ç³»çµ±è¨­å®
+rename_new=è®æ´çº:
+upload_efailed=éåä¸å³å¤±æ : $1
+info_file=æªæ¡
+month_5=äºæ
+chmod_elink=ç¬¦èé£çµå¤±æd : $1
+acl_root=æªæ¡é¸åæçæ ¹ç®é
+groups_all=å¨é¨çç¾¤çµ
+feedback_name=æ¨çå§å
+feedback_osdesc=å¦æé¸åæ­¤é ç®,æèªåå¨åé¥ä¿¡ä»¶ä¸­å ä¸æ¨çä½æ¥­ç³»çµ±åç¨±åçæ¬ã
+info_sticky2=åªæææèæè½åªé¤æªæ¡
+switch_remote_euser=Unixä½¿ç¨è $1 ä¸¦ä¸å­å¨
+paste_emfailed=ç§»åå¤±æ : $1
+view_enormal=åªæä¸è¬çæªæ¡å¯ä»¥è¢«æª¢è¦
+config_header=çµ¦ $1 çå¯çµæé¸é 
+link_essl=æ¨çç³»çµ±å°æªå®è£ Net::SSLeay Perlæ¨¡çµæéè¦ä½¿ç¨çHTTPSé£ç·ã
+longcategory_servers=web, email, FTPåå¶ä»æåççµææ¨¡çµ
+view_eaccess=æ¨ä¸è¢«åè¨±å­å $1
+mkdir_efailed=å»ºç«ç®éå¤±æ : $1
+day_6=ææå­
+info_mod=ä¿®æ¹æé:
+session_clear=æ¸é¤
+edit_title2=å»ºç«æªæ¡ä¸­
+main_feedback=åé¥...
+info_setuid=è¨­å® UID:
+chmod_eaccess=æ¨ä¸è¢«åè¨±å­å '$1'
+help_einclude=ç¡æ³å¼å¥ $1
+edit_esave=ç¡æ³å²å­æªæ¡ : $1
+smonth_8=å«æ
+cancel=åæ¶
+session_user=ä½¿ç¨èåç¨±
+users_all=å¨é¨çä½¿ç¨è
+info_path=è·¯å¾:
+edit_enormal=åªè½ç·¨è¼¯ä¸è¬çæªæ¡
+feedback_emodule2=é¸åçæ¨¡çµä¸å­å¨
+config_ecannot=æ¨ä¸è¢«åè¨±çµæéåæ¨¡çµ
+session_timed_out=é£ç·é¾ææ¼$1åé
+sday_0=æææ¥
+acl_user=ä»¥ä½¿ç¨èæ¬éå­åä¼ºæå¨ä¸çæªæ¡
+reset=éè¨­
+progress_data=ä¸è¼ $1 ä½åçµ ($2 %)
+upload_conv=æ¯å¦è¦æ¹è® DOS çæè¡ç¬¦è?
+index_title=æªæ¡ç®¡çè
+day_0=æææ¥
+help_eif=$1 å¤±æ : $2
+feedback_esend=ä½¿ç¨sendmailææ¬å°SMTPä¼ºæå¨å³éåé¥éµä»¶é¯èª¤
+info_list=ååº
+users_title2=é¸æä½¿ç¨è...
+info_apply2=éåç®éèå¶ä¸­çæªæ¡
+month_2=äºæ
+file_type3=äºé²ä½æª
+link_efrom=æ¨ä¸è¢«åè¨±é£çµ '$1'
+category_hardware=ç¡¬é«

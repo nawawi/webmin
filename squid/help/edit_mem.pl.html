@@ -1,69 +1,69 @@
-<header>Zu¿ycie pamiêci</header>
+<header>ZuÂ¿ycie pamiÃªci</header>
 
-<b>Limit zu¿ycia pamiêci</b>: Domy¶lnie 8&nbsp;MB. <p>
+<b>Limit zuÂ¿ycia pamiÃªci</b>: DomyÂ¶lnie 8&nbsp;MB. <p>
 
-UWAGA: Ten parametr nie okre¶la maksymalnego rozmiaru procesu. Ustawia on
-ograniczenie tylko na jeden aspekt zu¿ycia pamiêci przez Squida. Squid u¿ywa
-pamiêæ równie¿ do innych celów. Twój process zajmie prawdopodobnie dwa lub
-trzy razy tyle pamiêci, ile ustawisz w&nbsp;tej opcji. <p>
+UWAGA: Ten parametr nie okreÂ¶la maksymalnego rozmiaru procesu. Ustawia on
+ograniczenie tylko na jeden aspekt zuÂ¿ycia pamiÃªci przez Squida. Squid uÂ¿ywa
+pamiÃªÃ¦ rÃ³wnieÂ¿ do innych celÃ³w. TwÃ³j process zajmie prawdopodobnie dwa lub
+trzy razy tyle pamiÃªci, ile ustawisz w&nbsp;tej opcji. <p>
 
-Okre¶la ona idealn± ilo¶æ pamiêci zu¿ywanej na:
+OkreÂ¶la ona idealnÂ± iloÂ¶Ã¦ pamiÃªci zuÂ¿ywanej na:
 <ul>
 <li>Obiekty "w&nbsp;drodze"
-<li>Obiekty "gor±ce:
+<li>Obiekty "gorÂ±ce:
 <li>Obiekty negatywnie buforowane
 </ul>
 <p>
 
-Dane dla tych obiektów s± przechowywane w&nbsp;4&nbsp;kB blokach. Parametr
-ten okre¶la idealn± górn± granicê dla ca³kowitego rozmiaru przydzielonych
-4&nbsp;kB bloków. Obiekty "w&nbsp;drodze" maj± najwy¿szy priorytet. <p>
+Dane dla tych obiektÃ³w sÂ± przechowywane w&nbsp;4&nbsp;kB blokach. Parametr
+ten okreÂ¶la idealnÂ± gÃ³rnÂ± granicÃª dla caÂ³kowitego rozmiaru przydzielonych
+4&nbsp;kB blokÃ³w. Obiekty "w&nbsp;drodze" majÂ± najwyÂ¿szy priorytet. <p>
 
-Obiekty "w drodze" maj± priorytet wy¿szy ni¿ inne. Gdy potrzebne jest
-miejsce na przychodz±ce dane, zwalniane s± obiekty buforowane negatywnie
-oraz "gor±ce". Innymi s³owy, buforowane negatywnie oraz "gor±ce" obiekty
-zape³ni± ca³± nieu¿ywan± przestrzeñ niepotrzebn± dla obiektów
+Obiekty "w drodze" majÂ± priorytet wyÂ¿szy niÂ¿ inne. Gdy potrzebne jest
+miejsce na przychodzÂ±ce dane, zwalniane sÂ± obiekty buforowane negatywnie
+oraz "gorÂ±ce". Innymi sÂ³owy, buforowane negatywnie oraz "gorÂ±ce" obiekty
+zapeÂ³niÂ± caÂ³Â± nieuÂ¿ywanÂ± przestrzeÃ± niepotrzebnÂ± dla obiektÃ³w
 "w&nbsp;drodze". <p>
 
-Je¶li okoliczno¶ci tego wymagaj±, granica ta zostanie przekroczona.
-W&nbsp;szczególno¶ci, je¿eli ilo¶æ przychodz±cych zapytañ bêdzie wymaga³a
-wiêcej ni¿ podano pamiêci na przechowanie obiektów "w&nbsp;drodze", Squid
-przekroczy tê granicê aby zrealizowaæ nowe zapytania. Gdy obci±zenie siê
-zmniejszy, bloki bêd± zwalniane a¿ do osi±gniêcia górnego progu.
-Dalsze wolne bloki bêd± wykorzystywane do przechowywania "gor±cych"
-obiektów. <p>
+JeÂ¶li okolicznoÂ¶ci tego wymagajÂ±, granica ta zostanie przekroczona.
+W&nbsp;szczegÃ³lnoÂ¶ci, jeÂ¿eli iloÂ¶Ã¦ przychodzÂ±cych zapytaÃ± bÃªdzie wymagaÂ³a
+wiÃªcej niÂ¿ podano pamiÃªci na przechowanie obiektÃ³w "w&nbsp;drodze", Squid
+przekroczy tÃª granicÃª aby zrealizowaÃ¦ nowe zapytania. Gdy obciÂ±zenie siÃª
+zmniejszy, bloki bÃªdÂ± zwalniane aÂ¿ do osiÂ±gniÃªcia gÃ³rnego progu.
+Dalsze wolne bloki bÃªdÂ± wykorzystywane do przechowywania "gorÂ±cych"
+obiektÃ³w. <p>
 
-<b>Rozmiar bufora nazw hostów (FQDN)</b>: Domy¶lnie 1024. Maksymalna liczba
-wpisów zawieraj±cych w&nbsp;pe³ni kwalifikowane nazwy hostów (FQDN). <p>
+<b>Rozmiar bufora nazw hostÃ³w (FQDN)</b>: DomyÂ¶lnie 1024. Maksymalna liczba
+wpisÃ³w zawierajÂ±cych w&nbsp;peÂ³ni kwalifikowane nazwy hostÃ³w (FQDN). <p>
 
-<b>Górny próg dla pamiêci</b>: Domy¶lnie 95%. Gdy ten znacznik
-zostanie osi±gniêty, obiekty "gor±ce" oraz obiekty "w&nbsp;drodze" bêd±
-zwalniane aby zwolniæ pamiêæ. <p>
+<b>GÃ³rny prÃ³g dla pamiÃªci</b>: DomyÂ¶lnie 95%. Gdy ten znacznik
+zostanie osiÂ±gniÃªty, obiekty "gorÂ±ce" oraz obiekty "w&nbsp;drodze" bÃªdÂ±
+zwalniane aby zwolniÃ¦ pamiÃªÃ¦. <p>
 
-<b>Dolny próg dla pamiêci</b>: Domy¶lnie 90%. Po osi±gniêciu górnego
-progu Squid bêdzie zwalnia³ pamiêæ a¿ jej zu¿ycie spadnie poni¿ej
+<b>Dolny prÃ³g dla pamiÃªci</b>: DomyÂ¶lnie 90%. Po osiÂ±gniÃªciu gÃ³rnego
+progu Squid bÃªdzie zwalniaÂ³ pamiÃªÃ¦ aÂ¿ jej zuÂ¿ycie spadnie poniÂ¿ej
 tego znacznika. <p>
 
-<b>Górny próg dla dysku</b>: Domy¶lnie 95%. Gdy ten znacznik zostanie
-osi±gniêty, Squid bêdzie agresywnie opró¿nia³ dysk. <p>
+<b>GÃ³rny prÃ³g dla dysku</b>: DomyÂ¶lnie 95%. Gdy ten znacznik zostanie
+osiÂ±gniÃªty, Squid bÃªdzie agresywnie oprÃ³Â¿niaÂ³ dysk. <p>
 
-<b>Dolny próg dla dysku</b>: Domy¶lnie 90%. Po osi±gniêciu górnego
-progu Squid bêdzie kontynuowa³ opró¿nianie dysku a¿ jego zu¿ycie
-spadnie poni¿ej tego znacznika. <p>
+<b>Dolny prÃ³g dla dysku</b>: DomyÂ¶lnie 90%. Po osiÂ±gniÃªciu gÃ³rnego
+progu Squid bÃªdzie kontynuowaÂ³ oprÃ³Â¿nianie dysku aÂ¿ jego zuÂ¿ycie
+spadnie poniÂ¿ej tego znacznika. <p>
 
-<b>Maksymalny rozmiar buforowanego obiektu</b>: Domy¶lnie 4096&nbsp;kB. To
-ustawienie ogranicza rozmiar obiektów, które bêd± przechowywane w buforach
-cache. Nic, co przekracza ten rozmiar nie bêdzie buforowane i&nbsp;musi byæ
-za ka¿dym razem za³adowane ze ¼ród³owego serwera. <p>
+<b>Maksymalny rozmiar buforowanego obiektu</b>: DomyÂ¶lnie 4096&nbsp;kB. To
+ustawienie ogranicza rozmiar obiektÃ³w, ktÃ³re bÃªdÂ± przechowywane w buforach
+cache. Nic, co przekracza ten rozmiar nie bÃªdzie buforowane i&nbsp;musi byÃ¦
+za kaÂ¿dym razem zaÂ³adowane ze Â¼rÃ³dÂ³owego serwera. <p>
 
-<b>Rozmiar bufora adresów IP</b>: Domy¶lnie 1024. Liczba wpisów
+<b>Rozmiar bufora adresÃ³w IP</b>: DomyÂ¶lnie 1024. Liczba wpisÃ³w
 przechowywanych w&nbsp;buforze IP. <p>
 
-<b>Górny próg dla bufora IP</b>: Domy¶lnie 95%. Punkt, przy którym
-Squid zaczyna usuwaæ wpisy IP z&nbsp;bufora. <p>
+<b>GÃ³rny prÃ³g dla bufora IP</b>: DomyÂ¶lnie 95%. Punkt, przy ktÃ³rym
+Squid zaczyna usuwaÃ¦ wpisy IP z&nbsp;bufora. <p>
 
-<b>Dolny próg dla bufora IP</b>: Domy¶lnie 90%. Po rozpoczêciu
-opró¿niania bufora IP, bêdzie ono kontynuowane a¿ liczba wpisów
-w&nbsp;buforze IP spadnie poni¿ej tego odsetka. <p>
+<b>Dolny prÃ³g dla bufora IP</b>: DomyÂ¶lnie 90%. Po rozpoczÃªciu
+oprÃ³Â¿niania bufora IP, bÃªdzie ono kontynuowane aÂ¿ liczba wpisÃ³w
+w&nbsp;buforze IP spadnie poniÂ¿ej tego odsetka. <p>
 
 <hr>

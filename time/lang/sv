@@ -6,38 +6,38 @@ index_tz=Plats
 
 action_save=Spara
 action_apply=Ta i drift
-action_sync=Synkronisera systemtiden med hårdvarutid
-action_sync_s=Synkronisera hårdvarutiden med systemtid
+action_sync=Synkronisera systemtiden med hÃ¥rdvarutid
+action_sync_s=Synkronisera hÃ¥rdvarutiden med systemtid
 action_timeserver_sys=Synkronisera systemtiden
-action_timeserver_hw=Synkronisera hårdvarutiden
-action_savezone=Ändra tidszon
+action_timeserver_hw=Synkronisera hÃ¥rdvarutiden
+action_savezone=Ã„ndra tidszon
 
-acl_sys=Användaren får ändra systemtiden
-acl_hw=Användaren får ändra hårdvarutiden
+acl_sys=AnvÃ¤ndaren fÃ¥r Ã¤ndra systemtiden
+acl_hw=AnvÃ¤ndaren fÃ¥r Ã¤ndra hÃ¥rdvarutiden
 acl_yes=Ja
 acl_no=Nej
-acl_error=Du får komma åt systemtidmodulen, men du får varken ändra systemtiden eller hårdvarutiden
-acl_nosys=Du får inte ändra systemtiden
-acl_nohw=Du får inte ändra hårdvarutiden
+acl_error=Du fÃ¥r komma Ã¥t systemtidmodulen, men du fÃ¥r varken Ã¤ndra systemtiden eller hÃ¥rdvarutiden
+acl_nosys=Du fÃ¥r inte Ã¤ndra systemtiden
+acl_nohw=Du fÃ¥r inte Ã¤ndra hÃ¥rdvarutiden
 
 sys_title=Systemtid
-hw_title=Hårdvarutid
+hw_title=HÃ¥rdvarutid
 
 day=Dag
-month=Månad
+month=MÃ¥nad
 date=Datum
 hour=Timme
-year=År
+year=Ã…r
 
 error_cnf=Fel: kommando $1 finns inte
-error_hw=Det går inte att ställa hårdvarutiden: $1
-error_sync=Det går inte att synkronisera med systemtiden: $1
+error_hw=Det gÃ¥r inte att stÃ¤lla hÃ¥rdvarutiden: $1
+error_sync=Det gÃ¥r inte att synkronisera med systemtiden: $1
 
 log_set_date=Satte systemtiden till $1
-log_set_hwclock=Satte hårdvarutiden till $1
-log_remote_date=Hämtade systemtiden från $2
-log_remote_hwclock=Hämtade hårdvarutiden från $2
-log_remote_date_l=Hämtade systemtiden $1 från $2
-log_remote_hwclock_l=Hämtade hårdvarutiden $1 från $2
-log_sync=Synkroniserade systemtiden med hårdvarutiden
-log_sync_s=Synkroniserade hårdvarutiden med systemtiden
+log_set_hwclock=Satte hÃ¥rdvarutiden till $1
+log_remote_date=HÃ¤mtade systemtiden frÃ¥n $2
+log_remote_hwclock=HÃ¤mtade hÃ¥rdvarutiden frÃ¥n $2
+log_remote_date_l=HÃ¤mtade systemtiden $1 frÃ¥n $2
+log_remote_hwclock_l=HÃ¤mtade hÃ¥rdvarutiden $1 frÃ¥n $2
+log_sync=Synkroniserade systemtiden med hÃ¥rdvarutiden
+log_sync_s=Synkroniserade hÃ¥rdvarutiden med systemtiden

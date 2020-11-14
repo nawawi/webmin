@@ -1,207 +1,207 @@
-main_homepage= ホームページ
-main_feedback= フィードバック..
-main_switch= ユーザーを切り替えます。
-main_logout= ログアウト
-main_version= バージョン$2の$1($3)
-main_title= Webmin $1を$2（$3）
+main_homepage= ãã¼ã ãã¼ã¸
+main_feedback= ãã£ã¼ãããã¯..
+main_switch= ã¦ã¼ã¶ã¼ãåãæ¿ãã¾ãã
+main_logout= ã­ã°ã¢ã¦ã
+main_version= ãã¼ã¸ã§ã³$2ã®$1($3)
+main_title= Webmin $1ã$2ï¼$3ï¼
 main_title2=Webmin
 main_title3=Webmin $1 ($2)
-main_none= あなたはWebminモジュールにアクセスすることはできません。
-main_skill= スキルレベル
-main_readonly=(読み取り専用モード)
-main_return= $1に戻る
-main_unused= 未使用のモジュール
-main_refreshmods= モジュールをリフレッシュする
+main_none= ããªãã¯Webminã¢ã¸ã¥ã¼ã«ã«ã¢ã¯ã»ã¹ãããã¨ã¯ã§ãã¾ããã
+main_skill= ã¹ã­ã«ã¬ãã«
+main_readonly=(èª­ã¿åãå°ç¨ã¢ã¼ã)
+main_return= $1ã«æ»ã
+main_unused= æªä½¿ç¨ã®ã¢ã¸ã¥ã¼ã«
+main_refreshmods= ã¢ã¸ã¥ã¼ã«ããªãã¬ãã·ã¥ãã
 
-link_essl= HTTPS接続を確立するために必要なNet::SSLeay Perlモジュールは、システムにインストールされていません。
+link_essl= HTTPSæ¥ç¶ãç¢ºç«ããããã«å¿è¦ãªNet::SSLeay Perlã¢ã¸ã¥ã¼ã«ã¯ãã·ã¹ãã ã«ã¤ã³ã¹ãã¼ã«ããã¦ãã¾ããã
 
-category_servers= サーバー
-category_hardware= ハードウェア
-category_system=システム
+category_servers= ãµã¼ãã¼
+category_hardware= ãã¼ãã¦ã§ã¢
+category_system=ã·ã¹ãã 
 category_webmin=Webmin
-category_net= ネットワーキング
-category_syslet= シセレット
-category_cluster= クラスタ
-category_info= 情報
-category_= その他
+category_net= ãããã¯ã¼ã­ã³ã°
+category_syslet= ã·ã»ã¬ãã
+category_cluster= ã¯ã©ã¹ã¿
+category_info= æå ±
+category_= ãã®ä»
 
-longcategory_servers= Web、電子メール、FTP、その他のサーバの設定用のモジュール
-longcategory_hardware= プリンタ、ディスク、その他のハードウェア構成用のモジュール
-longcategory_system= ユーザー、ファイルシステム、Cronジョブ、その他のシステム設定用のモジュール
-longcategory_webmin= Webmin自身を設定するためのモジュール
-longcategory_net= ネットワークとネットワークサービスを設定するためのモジュール
-longcategory_cluster= 1つのインターフェースから複数のサーバーを管理できるモジュール
-longcategory_info= システムに関する情報を表示するモジュール
-longcategory_= 他のカテゴリに属さないモジュール
+longcategory_servers= Webãé»å­ã¡ã¼ã«ãFTPããã®ä»ã®ãµã¼ãã®è¨­å®ç¨ã®ã¢ã¸ã¥ã¼ã«
+longcategory_hardware= ããªã³ã¿ããã£ã¹ã¯ããã®ä»ã®ãã¼ãã¦ã§ã¢æ§æç¨ã®ã¢ã¸ã¥ã¼ã«
+longcategory_system= ã¦ã¼ã¶ã¼ããã¡ã¤ã«ã·ã¹ãã ãCronã¸ã§ãããã®ä»ã®ã·ã¹ãã è¨­å®ç¨ã®ã¢ã¸ã¥ã¼ã«
+longcategory_webmin= Webminèªèº«ãè¨­å®ããããã®ã¢ã¸ã¥ã¼ã«
+longcategory_net= ãããã¯ã¼ã¯ã¨ãããã¯ã¼ã¯ãµã¼ãã¹ãè¨­å®ããããã®ã¢ã¸ã¥ã¼ã«
+longcategory_cluster= 1ã¤ã®ã¤ã³ã¿ã¼ãã§ã¼ã¹ããè¤æ°ã®ãµã¼ãã¼ãç®¡çã§ããã¢ã¸ã¥ã¼ã«
+longcategory_info= ã·ã¹ãã ã«é¢ããæå ±ãè¡¨ç¤ºããã¢ã¸ã¥ã¼ã«
+longcategory_= ä»ã®ã«ãã´ãªã«å±ããªãã¢ã¸ã¥ã¼ã«
 
-header_webmin=Webmin インデックス
-header_module=Module インデックス
-header_help=ヘルプ..
-header_config=Module コンフィグ
+header_webmin=Webmin ã¤ã³ããã¯ã¹
+header_module=Module ã¤ã³ããã¯ã¹
+header_help=ãã«ã..
+header_config=Module ã³ã³ãã£ã°
 header_servers=Webmin Servers
 
-index=インデックス
-yes=はい
-no=いいえ
-save=保存
-create= 作成
-delete=削除
-find= 検索
-error=エラー
-error_previous= 前のページ
-error_stack= コールスタックトレース
-error_file= ファイル
-error_line=ライン
-error_sub= 関数
-error_stackline=ファイル$1の$2行に$3を呼び出す
-efilewrite= $1への書き込みに失敗しました：$2
-efileclose= 終了時に$1への書き込みに失敗しました：$2
-efileopen= $ 1を書くのに失敗しました：$2
-default= デフォルト
-modify= 変更
-reset= リセット
+index=ã¤ã³ããã¯ã¹
+yes=ã¯ã
+no=ããã
+save=ä¿å­
+create= ä½æ
+delete=åé¤
+find= æ¤ç´¢
+error=ã¨ã©ã¼
+error_previous= åã®ãã¼ã¸
+error_stack= ã³ã¼ã«ã¹ã¿ãã¯ãã¬ã¼ã¹
+error_file= ãã¡ã¤ã«
+error_line=ã©ã¤ã³
+error_sub= é¢æ°
+error_stackline=ãã¡ã¤ã«$1ã®$2è¡ã«$3ãå¼ã³åºã
+efilewrite= $1ã¸ã®æ¸ãè¾¼ã¿ã«å¤±æãã¾ããï¼$2
+efileclose= çµäºæã«$1ã¸ã®æ¸ãè¾¼ã¿ã«å¤±æãã¾ããï¼$2
+efileopen= $ 1ãæ¸ãã®ã«å¤±æãã¾ããï¼$2
+default= ããã©ã«ã
+modify= å¤æ´
+reset= ãªã»ãã
 ok=OK
-cancel= キャンセル
-fail= 失敗
-helpsearch= ドキュメントを検索..
-switch_remote_euser= Unixユーザ$1は存在しません。
+cancel= ã­ã£ã³ã»ã«
+fail= å¤±æ
+helpsearch= ãã­ã¥ã¡ã³ããæ¤ç´¢..
+switch_remote_euser= Unixã¦ã¼ã¶$1ã¯å­å¨ãã¾ããã
 programname=Webmin
-euserdbacl= ユーザーACLを取得できませんでした : $1
-euserdbacl2= ユーザーACLの更新に失敗しました : $1
-egroupdbacl= グループACLを取得できませんでした : $1
-egroupdbacl2= グループACLの更新に失敗しました : $1
+euserdbacl= ã¦ã¼ã¶ã¼ACLãåå¾ã§ãã¾ããã§ãã : $1
+euserdbacl2= ã¦ã¼ã¶ã¼ACLã®æ´æ°ã«å¤±æãã¾ãã : $1
+egroupdbacl= ã°ã«ã¼ãACLãåå¾ã§ãã¾ããã§ãã : $1
+egroupdbacl2= ã°ã«ã¼ãACLã®æ´æ°ã«å¤±æãã¾ãã : $1
 
-chooser_title1= ファイルを選ぶ..
-chooser_title2= ディレクトリを選択..
-chooser_dir= $1のディレクトリ
+chooser_title1= ãã¡ã¤ã«ãé¸ã¶..
+chooser_title2= ãã£ã¬ã¯ããªãé¸æ..
+chooser_dir= $1ã®ãã£ã¬ã¯ããª
 chooser_ok=OK
-chooser_date= 日付を選択
-chooser_eopen= リスティングに失敗 : $1
+chooser_date= æ¥ä»ãé¸æ
+chooser_eopen= ãªã¹ãã£ã³ã°ã«å¤±æ : $1
 
-users_title1= ユーザーを選択してください。
-users_title2= ユーザーを選択します。
-users_sel= 選択されたユーザー
-users_all= すべてのユーザー
+users_title1= ã¦ã¼ã¶ã¼ãé¸æãã¦ãã ããã
+users_title2= ã¦ã¼ã¶ã¼ãé¸æãã¾ãã
+users_sel= é¸æãããã¦ã¼ã¶ã¼
+users_all= ãã¹ã¦ã®ã¦ã¼ã¶ã¼
 users_ok=OK
-users_cancel= キャンセル
-users_clear= クリア
+users_cancel= ã­ã£ã³ã»ã«
+users_clear= ã¯ãªã¢
 
-groups_title1= グループを選択..
-groups_title2= グループを選択..
-groups_all= すべてのグループ
-groups_sel= 選択したグループ
+groups_title1= ã°ã«ã¼ããé¸æ..
+groups_title2= ã°ã«ã¼ããé¸æ..
+groups_all= ãã¹ã¦ã®ã°ã«ã¼ã
+groups_sel= é¸æããã°ã«ã¼ã
 groups_ok=OK
-groups_cancel= キャンセル
-groups_clear=クリア
+groups_cancel= ã­ã£ã³ã»ã«
+groups_clear=ã¯ãªã¢
 
-modules_title1= モジュールを選択..
-modules_title2= モジュールを選択..
-modules_sel= 選択されたモジュール
-modules_all= すべてのモジュール
+modules_title1= ã¢ã¸ã¥ã¼ã«ãé¸æ..
+modules_title2= ã¢ã¸ã¥ã¼ã«ãé¸æ..
+modules_sel= é¸æãããã¢ã¸ã¥ã¼ã«
+modules_all= ãã¹ã¦ã®ã¢ã¸ã¥ã¼ã«
 modules_ok=OK
-modules_cancel=キャンセル
-modules_clear=クリア
+modules_cancel=ã­ã£ã³ã»ã«
+modules_clear=ã¯ãªã¢
 
-config_ecannot= このモジュールを設定することはできません
-config_title= 構成
-config_dir= モジュール$1
-config_header= $1の設定可能なオプション
-config_none= なし
-config_eaccess= このモジュールにアクセスすることはできません
-config_err= 設定を保存できませんでした
-config_nochange= 変更しない
-config_setto= 設定する
-config_ewebmin= パラメータタイプ14はWebminでのみ機能します
+config_ecannot= ãã®ã¢ã¸ã¥ã¼ã«ãè¨­å®ãããã¨ã¯ã§ãã¾ãã
+config_title= æ§æ
+config_dir= ã¢ã¸ã¥ã¼ã«$1
+config_header= $1ã®è¨­å®å¯è½ãªãªãã·ã§ã³
+config_none= ãªã
+config_eaccess= ãã®ã¢ã¸ã¥ã¼ã«ã«ã¢ã¯ã»ã¹ãããã¨ã¯ã§ãã¾ãã
+config_err= è¨­å®ãä¿å­ã§ãã¾ããã§ãã
+config_nochange= å¤æ´ããªã
+config_setto= è¨­å®ãã
+config_ewebmin= ãã©ã¡ã¼ã¿ã¿ã¤ã14ã¯Webminã§ã®ã¿æ©è½ãã¾ã
 
-help_err= ヘルプの表示に失敗しました
-help_epath= ヘルプパスがないか無効です
-help_efile= ヘルプファイル$1の読み込みに失敗しました
-help_eheader= 欠落&lt;ヘッダー&gt;セクション
-help_einclude= $1を含むことができませんでした
-help_eif= $1は失敗しました : $2
-help_eexec= $1は失敗しました : $2
+help_err= ãã«ãã®è¡¨ç¤ºã«å¤±æãã¾ãã
+help_epath= ãã«ããã¹ããªããç¡å¹ã§ã
+help_efile= ãã«ããã¡ã¤ã«$1ã®èª­ã¿è¾¼ã¿ã«å¤±æãã¾ãã
+help_eheader= æ¬ è½&lt;ãããã¼&gt;ã»ã¯ã·ã§ã³
+help_einclude= $1ãå«ããã¨ãã§ãã¾ããã§ãã
+help_eif= $1ã¯å¤±æãã¾ãã : $2
+help_eexec= $1ã¯å¤±æãã¾ãã : $2
 
-referer_title= セキュリティ警告
-referer_warn= <b>警告！</b> Webminは、プログラム$2がURL $1からリンクされていることを検出しました。これはWebminサーバの外にあるようです。これは、危険なコマンドを実行するためにサーバーを騙そうとする試みかもしれません。
-referer_warn_unknown= <b>警告！</ b> Webminは、プログラム$ 1が未知のURLからリンクされていることを検出しました。これはWebminサーバの外にあるようです。これは、危険なコマンドを実行するためにサーバーを騙そうとする試みかもしれません。
-referer_fix1= <li><b> Webmin設定</b>モジュールに移動します。 <b>信頼できるウェブサイト</b>フィールドにホスト名$ 1を入力し、[<b>保存</b>]をクリックします。</ul>
-referer_fix2= または、<tt> root </tt>としてログインし、<tt> /etc /webmin /config </tt>ファイルを編集してWebminがコマンドラインからこのリンクを許可するように設定できます。 <li>最後に<tt> referers=$1</tt>行を追加するか、<tt> referers </tt>行が既に存在する場合は、<tt> $ 1 </tt>ファイルを保存します。</ul>
-referer_fix3u= Webminで確認できるように参照情報を送信するようにブラウザが設定されていることを確認してください。
-referer_fix2u= <ul> <li> <tt> root </tt>としてログインし、<tt> /etc/webmin/config </tt>ファイルを編集することで、未知のリファラーからのリンクを許可するようにWebminを設定することができます。 li> <tt> referers_none = 1 </tt>行を探し、<tt> referers_none = 0 </tt>に変更してください。<li>ファイルを保存してください。</ul> <p>反射XSS攻撃までシステムを開く効果があるので、お勧めしません！
+referer_title= ã»ã­ã¥ãªãã£è­¦å
+referer_warn= <b>è­¦åï¼</b> Webminã¯ããã­ã°ã©ã $2ãURL $1ãããªã³ã¯ããã¦ãããã¨ãæ¤åºãã¾ãããããã¯Webminãµã¼ãã®å¤ã«ããããã§ããããã¯ãå±éºãªã³ãã³ããå®è¡ããããã«ãµã¼ãã¼ãé¨ããã¨ããè©¦ã¿ããããã¾ããã
+referer_warn_unknown= <b>è­¦åï¼</ b> Webminã¯ããã­ã°ã©ã $ 1ãæªç¥ã®URLãããªã³ã¯ããã¦ãããã¨ãæ¤åºãã¾ãããããã¯Webminãµã¼ãã®å¤ã«ããããã§ããããã¯ãå±éºãªã³ãã³ããå®è¡ããããã«ãµã¼ãã¼ãé¨ããã¨ããè©¦ã¿ããããã¾ããã
+referer_fix1= <li><b> Webminè¨­å®</b>ã¢ã¸ã¥ã¼ã«ã«ç§»åãã¾ãã <b>ä¿¡é ¼ã§ããã¦ã§ããµã¤ã</b>ãã£ã¼ã«ãã«ãã¹ãå$ 1ãå¥åãã[<b>ä¿å­</b>]ãã¯ãªãã¯ãã¾ãã</ul>
+referer_fix2= ã¾ãã¯ã<tt> root </tt>ã¨ãã¦ã­ã°ã¤ã³ãã<tt> /etc /webmin /config </tt>ãã¡ã¤ã«ãç·¨éãã¦Webminãã³ãã³ãã©ã¤ã³ãããã®ãªã³ã¯ãè¨±å¯ããããã«è¨­å®ã§ãã¾ãã <li>æå¾ã«<tt> referers=$1</tt>è¡ãè¿½å ãããã<tt> referers </tt>è¡ãæ¢ã«å­å¨ããå ´åã¯ã<tt> $ 1 </tt>ãã¡ã¤ã«ãä¿å­ãã¾ãã</ul>
+referer_fix3u= Webminã§ç¢ºèªã§ããããã«åç§æå ±ãéä¿¡ããããã«ãã©ã¦ã¶ãè¨­å®ããã¦ãããã¨ãç¢ºèªãã¦ãã ããã
+referer_fix2u= <ul> <li> <tt> root </tt>ã¨ãã¦ã­ã°ã¤ã³ãã<tt> /etc/webmin/config </tt>ãã¡ã¤ã«ãç·¨éãããã¨ã§ãæªç¥ã®ãªãã¡ã©ã¼ããã®ãªã³ã¯ãè¨±å¯ããããã«Webminãè¨­å®ãããã¨ãã§ãã¾ãã li> <tt> referers_none = 1 </tt>è¡ãæ¢ãã<tt> referers_none = 0 </tt>ã«å¤æ´ãã¦ãã ããã<li>ãã¡ã¤ã«ãä¿å­ãã¦ãã ããã</ul> <p>åå°XSSæ»æã¾ã§ã·ã¹ãã ãéãå¹æãããã®ã§ããå§ããã¾ããï¼
 
-session_header= Webminにログインする
-session_mesg= $1でWebminサーバにログインするには、ユーザ名とパスワードを入力する必要があります。
-session_mesg2= ログインするには、ユーザー名とパスワードを入力する必要があります。
-session_user= ユーザー名
-session_pass= パスワード
-session_twofactor= 二要素認証
-session_login=ログイン
-session_clear=クリア
-session_failed= ログインに失敗しました。もう一度お試しください。
-session_twofailed= 二要素認証に失敗しました : $1
-session_logout= ログアウトに成功しました。以下のフォームを使用して再度ログインしてください。
-session_timed_out= $1分後にセッションがタイムアウトしました。
-session_save=ログインを保存。
+session_header= Webminã«ã­ã°ã¤ã³ãã
+session_mesg= $1ã§Webminãµã¼ãã«ã­ã°ã¤ã³ããã«ã¯ãã¦ã¼ã¶åã¨ãã¹ã¯ã¼ããå¥åããå¿è¦ãããã¾ãã
+session_mesg2= ã­ã°ã¤ã³ããã«ã¯ãã¦ã¼ã¶ã¼åã¨ãã¹ã¯ã¼ããå¥åããå¿è¦ãããã¾ãã
+session_user= ã¦ã¼ã¶ã¼å
+session_pass= ãã¹ã¯ã¼ã
+session_twofactor= äºè¦ç´ èªè¨¼
+session_login=ã­ã°ã¤ã³
+session_clear=ã¯ãªã¢
+session_failed= ã­ã°ã¤ã³ã«å¤±æãã¾ãããããä¸åº¦ãè©¦ããã ããã
+session_twofailed= äºè¦ç´ èªè¨¼ã«å¤±æãã¾ãã : $1
+session_logout= ã­ã°ã¢ã¦ãã«æåãã¾ãããä»¥ä¸ã®ãã©ã¼ã ãä½¿ç¨ãã¦ååº¦ã­ã°ã¤ã³ãã¦ãã ããã
+session_timed_out= $1åå¾ã«ã»ãã·ã§ã³ãã¿ã¤ã ã¢ã¦ããã¾ããã
+session_save=ã­ã°ã¤ã³ãä¿å­ã
 
-pam_header= Webminにログインする
-pam_mesg= $1でWebminサーバーにログインするには、以下の質問に回答する必要があります。
-pam_mesg2= ログインするには、以下の質問に回答する必要があります。
-pam_login= 持続する
-pam_restart= 再起動
+pam_header= Webminã«ã­ã°ã¤ã³ãã
+pam_mesg= $1ã§Webminãµã¼ãã¼ã«ã­ã°ã¤ã³ããã«ã¯ãä»¥ä¸ã®è³ªåã«åç­ããå¿è¦ãããã¾ãã
+pam_mesg2= ã­ã°ã¤ã³ããã«ã¯ãä»¥ä¸ã®è³ªåã«åç­ããå¿è¦ãããã¾ãã
+pam_login= æç¶ãã
+pam_restart= åèµ·å
 
-acl_root= ファイルチューザーのルートディレクトリ
-acl_otherdirs= ファイルチューザ内の他の表示可能なディレクトリ
-acl_nodot= ファイルチューザーでドットファイルを非表示にしますか？
-acl_home= ユーザーのホームディレクトリ
-acl_uedit= ユーザーの選択肢に表示されるユーザー
-acl_uedit_all= すべてのユーザー
-acl_uedit_none= ユーザーはいません
-acl_uedit_only= ユーザーのみ
-acl_uedit_except= ユーザー以外のすべて
-acl_uedit_uid= 範囲内のUIDを持つユーザー
-acl_uedit_group= グループのユーザー
-acl_gedit= グループチューザで表示できるグループ
-acl_gedit_all= すべてのグループ
-acl_gedit_none= グループはありません
-acl_gedit_only= グループのみ
-acl_gedit_except= グループを除くすべて
-acl_gedit_gid= 範囲内のGIDを持つグループ
-acl_feedback= フィードバックメールを送信できますか？
-acl_feedback2=はい
-acl_feedback1= はい、ただし設定ファイルではありません
-acl_feedback0=いいえ
-acl_feedback3= はい、設定ファイルあり
-acl_rpc= RPC呼び出しを受け入れることができますか？
-acl_rpc2= <tt> root </tt>または<tt> admin </tt>
-acl_rpc1=はい
-acl_rpc0=いいえ
-acl_readonly2= ユーザーはデモモードですか？
-acl_readonlyyes= はい（モジュールによっては利用できない場合があります）
-acl_negative= ユーザーに新しいモジュール権限を与えますか？
-acl_fileunix= Unixユーザとしてファイルを参照する
-acl_sameunix= Webminログインと同じ
-acl_webminsearch= Webminの検索フィールドを表示しますか？
+acl_root= ãã¡ã¤ã«ãã¥ã¼ã¶ã¼ã®ã«ã¼ããã£ã¬ã¯ããª
+acl_otherdirs= ãã¡ã¤ã«ãã¥ã¼ã¶åã®ä»ã®è¡¨ç¤ºå¯è½ãªãã£ã¬ã¯ããª
+acl_nodot= ãã¡ã¤ã«ãã¥ã¼ã¶ã¼ã§ããããã¡ã¤ã«ãéè¡¨ç¤ºã«ãã¾ããï¼
+acl_home= ã¦ã¼ã¶ã¼ã®ãã¼ã ãã£ã¬ã¯ããª
+acl_uedit= ã¦ã¼ã¶ã¼ã®é¸æè¢ã«è¡¨ç¤ºãããã¦ã¼ã¶ã¼
+acl_uedit_all= ãã¹ã¦ã®ã¦ã¼ã¶ã¼
+acl_uedit_none= ã¦ã¼ã¶ã¼ã¯ãã¾ãã
+acl_uedit_only= ã¦ã¼ã¶ã¼ã®ã¿
+acl_uedit_except= ã¦ã¼ã¶ã¼ä»¥å¤ã®ãã¹ã¦
+acl_uedit_uid= ç¯å²åã®UIDãæã¤ã¦ã¼ã¶ã¼
+acl_uedit_group= ã°ã«ã¼ãã®ã¦ã¼ã¶ã¼
+acl_gedit= ã°ã«ã¼ããã¥ã¼ã¶ã§è¡¨ç¤ºã§ããã°ã«ã¼ã
+acl_gedit_all= ãã¹ã¦ã®ã°ã«ã¼ã
+acl_gedit_none= ã°ã«ã¼ãã¯ããã¾ãã
+acl_gedit_only= ã°ã«ã¼ãã®ã¿
+acl_gedit_except= ã°ã«ã¼ããé¤ããã¹ã¦
+acl_gedit_gid= ç¯å²åã®GIDãæã¤ã°ã«ã¼ã
+acl_feedback= ãã£ã¼ãããã¯ã¡ã¼ã«ãéä¿¡ã§ãã¾ããï¼
+acl_feedback2=ã¯ã
+acl_feedback1= ã¯ãããã ãè¨­å®ãã¡ã¤ã«ã§ã¯ããã¾ãã
+acl_feedback0=ããã
+acl_feedback3= ã¯ããè¨­å®ãã¡ã¤ã«ãã
+acl_rpc= RPCå¼ã³åºããåãå¥ãããã¨ãã§ãã¾ããï¼
+acl_rpc2= <tt> root </tt>ã¾ãã¯<tt> admin </tt>
+acl_rpc1=ã¯ã
+acl_rpc0=ããã
+acl_readonly2= ã¦ã¼ã¶ã¼ã¯ãã¢ã¢ã¼ãã§ããï¼
+acl_readonlyyes= ã¯ãï¼ã¢ã¸ã¥ã¼ã«ã«ãã£ã¦ã¯å©ç¨ã§ããªãå ´åãããã¾ãï¼
+acl_negative= ã¦ã¼ã¶ã¼ã«æ°ããã¢ã¸ã¥ã¼ã«æ¨©éãä¸ãã¾ããï¼
+acl_fileunix= Unixã¦ã¼ã¶ã¨ãã¦ãã¡ã¤ã«ãåç§ãã
+acl_sameunix= Webminã­ã°ã¤ã³ã¨åã
+acl_webminsearch= Webminã®æ¤ç´¢ãã£ã¼ã«ããè¡¨ç¤ºãã¾ããï¼
 
-month_1= 1月
-month_2=2月
-month_3=3月
-month_4=4月
-month_5=5月
-month_6=6月
-month_7=7月
-month_8=8月
-month_9=9月
-month_10=10月
-month_11=11月
-month_12=12月
+month_1= 1æ
+month_2=2æ
+month_3=3æ
+month_4=4æ
+month_5=5æ
+month_6=6æ
+month_7=7æ
+month_8=8æ
+month_9=9æ
+month_10=10æ
+month_11=11æ
+month_12=12æ
 
-day_0= 日曜日
-day_1=月曜日
-day_2=火曜日
-day_3=水曜日
-day_4=木曜日
-day_5=金曜日
-day_6=土曜日
+day_0= æ¥ææ¥
+day_1=æææ¥
+day_2=ç«ææ¥
+day_3=æ°´ææ¥
+day_4=æ¨ææ¥
+day_5=éææ¥
+day_6=åææ¥
 
 smonth_1=1
 smonth_2=2
@@ -216,133 +216,133 @@ smonth_10=10
 smonth_11=11
 smonth_12=12
 
-sday_0=日
-sday_1=月
-sday_2=火
-sday_3=水
-sday_4=木
-sday_5=金
-sday_6=土
+sday_0=æ¥
+sday_1=æ
+sday_2=ç«
+sday_3=æ°´
+sday_4=æ¨
+sday_5=é
+sday_6=å
 
-emodule= アクセス拒否:ユーザー$1は$2モジュールを使用できません
-emodulecheck= $1モジュールはあなたのシステムで利用できません
-elock_tries2= $2分後にファイル$ 1をロックできませんでした。最後のエラーは：$3
+emodule= ã¢ã¯ã»ã¹æå¦:ã¦ã¼ã¶ã¼$1ã¯$2ã¢ã¸ã¥ã¼ã«ãä½¿ç¨ã§ãã¾ãã
+emodulecheck= $1ã¢ã¸ã¥ã¼ã«ã¯ããªãã®ã·ã¹ãã ã§å©ç¨ã§ãã¾ãã
+elock_tries2= $2åå¾ã«ãã¡ã¤ã«$ 1ãã­ãã¯ã§ãã¾ããã§ãããæå¾ã®ã¨ã©ã¼ã¯ï¼$3
 
-skill_high= 専門家
-skill_medium= 中級
-skill_low= 初心者
+skill_high= å°éå®¶
+skill_medium= ä¸­ç´
+skill_low= åå¿è
 
-feedback_title=Webmin フィードバック
-feedback_desc= このフォームを使用すると、見つかった問題や欠落している機能に関するWebmin開発者への提案のバグを報告することができます。 [送信]ボタンをクリックすると、フォームに入力された詳細が$1に電子メールで送信されます。
-feedback_desc2=このフォームはあなたのシステム管理者やISP、ホスティング会社へ送られるものではなく、Webminの開発者へ送信されます。Webminを英語以外の言語でご利用であっても英語でご送信下さい。
-feedback_header=フィードバックの詳細
-feedback_name=お名前
+feedback_title=Webmin ãã£ã¼ãããã¯
+feedback_desc= ãã®ãã©ã¼ã ãä½¿ç¨ããã¨ãè¦ã¤ãã£ãåé¡ãæ¬ è½ãã¦ããæ©è½ã«é¢ããWebminéçºèã¸ã®ææ¡ã®ãã°ãå ±åãããã¨ãã§ãã¾ãã [éä¿¡]ãã¿ã³ãã¯ãªãã¯ããã¨ããã©ã¼ã ã«å¥åãããè©³ç´°ã$1ã«é»å­ã¡ã¼ã«ã§éä¿¡ããã¾ãã
+feedback_desc2=ãã®ãã©ã¼ã ã¯ããªãã®ã·ã¹ãã ç®¡çèãISPããã¹ãã£ã³ã°ä¼ç¤¾ã¸éããããã®ã§ã¯ãªããWebminã®éçºèã¸éä¿¡ããã¾ããWebminãè±èªä»¥å¤ã®è¨èªã§ãå©ç¨ã§ãã£ã¦ãè±èªã§ãéä¿¡ä¸ããã
+feedback_header=ãã£ã¼ãããã¯ã®è©³ç´°
+feedback_name=ãåå
 feedback_email=Email
-feedback_module=対象のモジュール
-feedback_all=全てのモジュール
-feedback_text=問題又はご提案の詳細
-feedback_os=EmailにOS詳細を追加しますか？
-feedback_osdesc=この選択をするとEmailにOSの名前とバージョンが自動的に追加されます。
-feedback_config=モジュールの設定をEmailに追加しますか？
-feedback_configdesc=この選択をすると、関連モジュールの構成及び設定ファイルが送信されます。例えばフィードバックが <i>Users and Groups</i> モジュールの場合、 <tt>/etc/passwd</tt> と <tt>/etc/shadow</tt> ファイルが送信されます。
-feedback_attach=追加の添付ファイル
-feedback_send=フィードバックを送る
-feedback_mailserver=SMTPサーバ経由で送る
-feedback_mailserver_def=ローカルのsendmailプログラム
-feedback_err=フィードバックの送信に失敗しました
-feedback_emodule=モジュール設定ファイルをEmailに含む選択がありますが、モジュール名の指定がありません。
-feedback_emodule2=選択されたモジュールは存在しません。
-feedback_econfig=選択されたモジュールへのフルアクセス権限がありません。
-feedback_via=$1 へ $2 のSMTPサーバ経由でフィードバックを送信しました。
-feedback_prog=$1 へ $2 ローカルsendmailプログラムを用いてフィードバックを送信しました。
-feedback_esend=ローカルsendmailプログラムもしくはSMTPサーバ経由でのフィードバック送信に失敗しました。
-feedback_to=フィードバック送信先アドレス(複数可)
-feedback_enoto=フィードバック送信先アドレスが指定されていません。
-feedback_ecannot=フィードバック送信の許可がされていません。
-feedback_ecannot2=設定ファイルを同梱したフィードバックを送信する許可がされていません。
+feedback_module=å¯¾è±¡ã®ã¢ã¸ã¥ã¼ã«
+feedback_all=å¨ã¦ã®ã¢ã¸ã¥ã¼ã«
+feedback_text=åé¡åã¯ãææ¡ã®è©³ç´°
+feedback_os=Emailã«OSè©³ç´°ãè¿½å ãã¾ããï¼
+feedback_osdesc=ãã®é¸æãããã¨Emailã«OSã®ååã¨ãã¼ã¸ã§ã³ãèªåçã«è¿½å ããã¾ãã
+feedback_config=ã¢ã¸ã¥ã¼ã«ã®è¨­å®ãEmailã«è¿½å ãã¾ããï¼
+feedback_configdesc=ãã®é¸æãããã¨ãé¢é£ã¢ã¸ã¥ã¼ã«ã®æ§æåã³è¨­å®ãã¡ã¤ã«ãéä¿¡ããã¾ããä¾ãã°ãã£ã¼ãããã¯ã <i>Users and Groups</i> ã¢ã¸ã¥ã¼ã«ã®å ´åã <tt>/etc/passwd</tt> ã¨ <tt>/etc/shadow</tt> ãã¡ã¤ã«ãéä¿¡ããã¾ãã
+feedback_attach=è¿½å ã®æ·»ä»ãã¡ã¤ã«
+feedback_send=ãã£ã¼ãããã¯ãéã
+feedback_mailserver=SMTPãµã¼ãçµç±ã§éã
+feedback_mailserver_def=ã­ã¼ã«ã«ã®sendmailãã­ã°ã©ã 
+feedback_err=ãã£ã¼ãããã¯ã®éä¿¡ã«å¤±æãã¾ãã
+feedback_emodule=ã¢ã¸ã¥ã¼ã«è¨­å®ãã¡ã¤ã«ãEmailã«å«ãé¸æãããã¾ãããã¢ã¸ã¥ã¼ã«åã®æå®ãããã¾ããã
+feedback_emodule2=é¸æãããã¢ã¸ã¥ã¼ã«ã¯å­å¨ãã¾ããã
+feedback_econfig=é¸æãããã¢ã¸ã¥ã¼ã«ã¸ã®ãã«ã¢ã¯ã»ã¹æ¨©éãããã¾ããã
+feedback_via=$1 ã¸ $2 ã®SMTPãµã¼ãçµç±ã§ãã£ã¼ãããã¯ãéä¿¡ãã¾ããã
+feedback_prog=$1 ã¸ $2 ã­ã¼ã«ã«sendmailãã­ã°ã©ã ãç¨ãã¦ãã£ã¼ãããã¯ãéä¿¡ãã¾ããã
+feedback_esend=ã­ã¼ã«ã«sendmailãã­ã°ã©ã ãããã¯SMTPãµã¼ãçµç±ã§ã®ãã£ã¼ãããã¯éä¿¡ã«å¤±æãã¾ããã
+feedback_to=ãã£ã¼ãããã¯éä¿¡åã¢ãã¬ã¹(è¤æ°å¯)
+feedback_enoto=ãã£ã¼ãããã¯éä¿¡åã¢ãã¬ã¹ãæå®ããã¦ãã¾ããã
+feedback_ecannot=ãã£ã¼ãããã¯éä¿¡ã®è¨±å¯ãããã¦ãã¾ããã
+feedback_ecannot2=è¨­å®ãã¡ã¤ã«ãåæ¢±ãããã£ã¼ãããã¯ãéä¿¡ããè¨±å¯ãããã¦ãã¾ããã
 
-progress_size2=ダウンロード中 $1 ($2) ..
-progress_nosize=ダウンロード中 $1 ..
-progress_datan=受信済み $1 ($2 %)
-progress_data2n=受信済み $1
-progress_done=.. ダウンロード完了.
-progress_incache=$1 をキャッシュから見つけました ..
+progress_size2=ãã¦ã³ã­ã¼ãä¸­ $1 ($2) ..
+progress_nosize=ãã¦ã³ã­ã¼ãä¸­ $1 ..
+progress_datan=åä¿¡æ¸ã¿ $1 ($2 %)
+progress_data2n=åä¿¡æ¸ã¿ $1
+progress_done=.. ãã¦ã³ã­ã¼ãå®äº.
+progress_incache=$1 ãã­ã£ãã·ã¥ããè¦ã¤ãã¾ãã ..
 
-readparse_cdheader=Content-Disposition ヘッダが見つかりません。
-readparse_enc=form-data エンコードではなく、通常のエンコードが使用されています。
-readparse_max=$1 バイトの上限を超えたデータサイズです。
+readparse_cdheader=Content-Disposition ããããè¦ã¤ããã¾ããã
+readparse_enc=form-data ã¨ã³ã³ã¼ãã§ã¯ãªããéå¸¸ã®ã¨ã³ã³ã¼ããä½¿ç¨ããã¦ãã¾ãã
+readparse_max=$1 ãã¤ãã®ä¸éãè¶ãããã¼ã¿ãµã¤ãºã§ãã
 
-password_expired=パスワードは失効しています。新しいものを選択して下さい。
-password_temp=一時的なログインのために新しいパスワードを選択する必要があります。
-password_header=新しいパスワード
-password_user=ユーザネーム
-password_old=現在のパスワード
-password_new1=新しいパスワード
-password_new2=新しいパスワード（確認）
-password_ok=変更
-password_clear=クリア
-password_done=パスワードは正しく変更されました。<a href='$1'>再ログイン</a> を新しいパスワードで行って下さい。
-password_err=パスワード変更に失敗しました。
-password_euser=ログイン名がパスワードファイル内に見つかりません。
-password_eold=現在のパスワードが間違っています。
-password_enew1=新しいパスワードが入力されていません。
-password_enew2=新しいパスワード（確認）が間違っています。
-password_epam=PAM エラー : $1
-password_emodpam=インストールされていない Authen::PAM perl モジュールがパスワード変更には必要です。
-password_enewpass=新しいパスワードは許可されていません : $1
+password_expired=ãã¹ã¯ã¼ãã¯å¤±å¹ãã¦ãã¾ããæ°ãããã®ãé¸æãã¦ä¸ããã
+password_temp=ä¸æçãªã­ã°ã¤ã³ã®ããã«æ°ãããã¹ã¯ã¼ããé¸æããå¿è¦ãããã¾ãã
+password_header=æ°ãããã¹ã¯ã¼ã
+password_user=ã¦ã¼ã¶ãã¼ã 
+password_old=ç¾å¨ã®ãã¹ã¯ã¼ã
+password_new1=æ°ãããã¹ã¯ã¼ã
+password_new2=æ°ãããã¹ã¯ã¼ãï¼ç¢ºèªï¼
+password_ok=å¤æ´
+password_clear=ã¯ãªã¢
+password_done=ãã¹ã¯ã¼ãã¯æ­£ããå¤æ´ããã¾ããã<a href='$1'>åã­ã°ã¤ã³</a> ãæ°ãããã¹ã¯ã¼ãã§è¡ã£ã¦ä¸ããã
+password_err=ãã¹ã¯ã¼ãå¤æ´ã«å¤±æãã¾ããã
+password_euser=ã­ã°ã¤ã³åããã¹ã¯ã¼ããã¡ã¤ã«åã«è¦ã¤ããã¾ããã
+password_eold=ç¾å¨ã®ãã¹ã¯ã¼ããééã£ã¦ãã¾ãã
+password_enew1=æ°ãããã¹ã¯ã¼ããå¥åããã¦ãã¾ããã
+password_enew2=æ°ãããã¹ã¯ã¼ãï¼ç¢ºèªï¼ãééã£ã¦ãã¾ãã
+password_epam=PAM ã¨ã©ã¼ : $1
+password_emodpam=ã¤ã³ã¹ãã¼ã«ããã¦ããªã Authen::PAM perl ã¢ã¸ã¥ã¼ã«ããã¹ã¯ã¼ãå¤æ´ã«ã¯å¿è¦ã§ãã
+password_enewpass=æ°ãããã¹ã¯ã¼ãã¯è¨±å¯ããã¦ãã¾ãã : $1
 
-ui_mandatory=このフィールドは必須です
-ui_checkmandatory=何も選択されていません
-ui_errors=複数のエラーが見つかりました :
-ui_nothing=入力なし
-ui_searchcol=行を探す
-ui_searchfor=テキストを含む
-ui_searchok=検索
-ui_selall=全件選択
-ui_selinv=選択を反転
-ui_edate=日付を反転
-ui_etime=時刻を反転
-ui_paging=行を表示 $1 から $2 全 $3 中
-ui_rowlabel=$1 行の $2 :
-ui_filterbox=フィルタに入力..
+ui_mandatory=ãã®ãã£ã¼ã«ãã¯å¿é ã§ã
+ui_checkmandatory=ä½ãé¸æããã¦ãã¾ãã
+ui_errors=è¤æ°ã®ã¨ã©ã¼ãè¦ã¤ããã¾ãã :
+ui_nothing=å¥åãªã
+ui_searchcol=è¡ãæ¢ã
+ui_searchfor=ãã­ã¹ããå«ã
+ui_searchok=æ¤ç´¢
+ui_selall=å¨ä»¶é¸æ
+ui_selinv=é¸æãåè»¢
+ui_edate=æ¥ä»ãåè»¢
+ui_etime=æå»ãåè»¢
+ui_paging=è¡ãè¡¨ç¤º $1 ãã $2 å¨ $3 ä¸­
+ui_rowlabel=$1 è¡ã® $2 :
+ui_filterbox=ãã£ã«ã¿ã«å¥å..
 
-header_statusmsg=$1は$4で$2 $3にログインしました（$5）
+header_statusmsg=$1ã¯$4ã§$2 $3ã«ã­ã°ã¤ã³ãã¾ããï¼$5ï¼
 
-uptracker_title=ファイルアップロード中
-uptracker_file=ファイル名
-uptracker_size=サイズ
-uptracker_pc=経過
-uptracker_eid=アップロードIDが指定されていません
-uptracker_eid2=アップロードIDが無効です
-uptracker_of=$2 の $1
+uptracker_title=ãã¡ã¤ã«ã¢ããã­ã¼ãä¸­
+uptracker_file=ãã¡ã¤ã«å
+uptracker_size=ãµã¤ãº
+uptracker_pc=çµé
+uptracker_eid=ã¢ããã­ã¼ãIDãæå®ããã¦ãã¾ãã
+uptracker_eid2=ã¢ããã­ã¼ãIDãç¡å¹ã§ã
+uptracker_of=$2 ã® $1
 
-wsearch_title=$1 を検索
-wsearch_modt=モジュール
-wsearch_mtitle=モジュール名
-wsearch_what=マッチページ
-wsearch_type=マッチタイプ
-wsearch_mod=$1 モジュール
-wsearch_config_webmin=Webmin モジュール設定
-wsearch_config_usermin=Usermin 設定
-wsearch_help=ヘルプページ
-wsearch_inmod=$1 中
-wsearch_text=UIテキスト
-wsearch_esearch=検索するものが入力されていません。
-wsearch_enone=$1 に該当するWebminモジュールやページは見つかりませんでした。
+wsearch_title=$1 ãæ¤ç´¢
+wsearch_modt=ã¢ã¸ã¥ã¼ã«
+wsearch_mtitle=ã¢ã¸ã¥ã¼ã«å
+wsearch_what=ããããã¼ã¸
+wsearch_type=ãããã¿ã¤ã
+wsearch_mod=$1 ã¢ã¸ã¥ã¼ã«
+wsearch_config_webmin=Webmin ã¢ã¸ã¥ã¼ã«è¨­å®
+wsearch_config_usermin=Usermin è¨­å®
+wsearch_help=ãã«ããã¼ã¸
+wsearch_inmod=$1 ä¸­
+wsearch_text=UIãã­ã¹ã
+wsearch_esearch=æ¤ç´¢ãããã®ãå¥åããã¦ãã¾ããã
+wsearch_enone=$1 ã«è©²å½ããWebminã¢ã¸ã¥ã¼ã«ããã¼ã¸ã¯è¦ã¤ããã¾ããã§ããã
 wsearch_on=($1)
-wsearch_helpfor=<i>$1</i>のヘルプ
-wsearch_htext=マッチテキスト
-wsearch_htype=ソース
-wsearch_hcgis=出典
-wsearch_type_mod=モジュール名
-wsearch_type_config=設定
-wsearch_type_help=ヘルプページ
+wsearch_helpfor=<i>$1</i>ã®ãã«ã
+wsearch_htext=ããããã­ã¹ã
+wsearch_htype=ã½ã¼ã¹
+wsearch_hcgis=åºå¸
+wsearch_type_mod=ã¢ã¸ã¥ã¼ã«å
+wsearch_type_config=è¨­å®
+wsearch_type_help=ãã«ããã¼ã¸
 wsearch_type_text=UI
-wsearch_type_dir=モジュール URL
-wsearch_hmod=モジュール
-wsearch_moddir=URL パス /$1/
-wsearch_searching=$1 を検索中 . .
-wsearch_found=$1 の結果 :
+wsearch_type_dir=ã¢ã¸ã¥ã¼ã« URL
+wsearch_hmod=ã¢ã¸ã¥ã¼ã«
+wsearch_moddir=URL ãã¹ /$1/
+wsearch_searching=$1 ãæ¤ç´¢ä¸­ . .
+wsearch_found=$1 ã®çµæ :
 
 sql_emysqldriver=Failed to load MySQL DBI driver
 sql_emysqlconnect=Failed to connect to MySQL database : $1

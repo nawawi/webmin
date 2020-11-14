@@ -3,30 +3,30 @@
 <center><tt>notify_classes</tt></center>
 <hr>
 
-Du bör sätta upp aliaset <b>postmaster</b> som pekar på en verklig person.
-Detta alias måste finnas, så att folk kan rapportera sina e-postproblem.
+Du bÃ¶r sÃ¤tta upp aliaset <b>postmaster</b> som pekar pÃ¥ en verklig person.
+Detta alias mÃ¥ste finnas, sÃ¥ att folk kan rapportera sina e-postproblem.
 
-<p>Postfix-systemet rapporterar också problem till postmaster. Det är möjligt
-att alla sorters problemrapporter inte är intressanta och därför går denna
+<p>Postfix-systemet rapporterar ocksÃ¥ problem till postmaster. Det Ã¤r mÃ¶jligt
+att alla sorters problemrapporter inte Ã¤r intressanta och dÃ¤rfÃ¶r gÃ¥r denna
 rapportering att konfigurera. Som standard rapporteras endast allvarliga
 (resurs-, program-) problem till postmaster:
 
 <p><b>Standard:</b> <tt>resource, software</tt>
 
-<p>De olika klasserna har följande betydelse:
+<p>De olika klasserna har fÃ¶ljande betydelse:
 
 <ul>
 <li><tt>bounce:</tt> Skicka kopia till postmaster av e-post som inte kunde skickas.
 <li><tt>2bounce:</tt> Skicka dubbelstudsar till postmaster. 
-<li><tt>delay:</tt> Informera postmaster om fördröjd e-post. I detta fall skickas endast e-posthuvudena.
-<li><tt>policy:</tt> Informera postmaster om klientförfrågningar som 
-nekades på grund av (UCE-)policybegränsningar. Postmaster får ett sammandrag av hela SMTP-sessionen.
-<li><tt>protocol:</tt> Informera postmaster om protokollfel (på klient- eller serversidan) eller
-klientförsök att utföra kommandon som inte finns. Postmaster får ett sammandrag av hela
+<li><tt>delay:</tt> Informera postmaster om fÃ¶rdrÃ¶jd e-post. I detta fall skickas endast e-posthuvudena.
+<li><tt>policy:</tt> Informera postmaster om klientfÃ¶rfrÃ¥gningar som 
+nekades pÃ¥ grund av (UCE-)policybegrÃ¤nsningar. Postmaster fÃ¥r ett sammandrag av hela SMTP-sessionen.
+<li><tt>protocol:</tt> Informera postmaster om protokollfel (pÃ¥ klient- eller serversidan) eller
+klientfÃ¶rsÃ¶k att utfÃ¶ra kommandon som inte finns. Postmaster fÃ¥r ett sammandrag av hela
 SMTP-sessionen.
-<li><tt>resource:</tt> Informera postmaster om e-post som inte sänts på grund av resursproblem
-(exempelvis fel vid skrivning till köfilen).
-<li><tt>software:</tt> Informera postmaster om e-post som inte sänts på grund av programfel.
+<li><tt>resource:</tt> Informera postmaster om e-post som inte sÃ¤nts pÃ¥ grund av resursproblem
+(exempelvis fel vid skrivning till kÃ¶filen).
+<li><tt>software:</tt> Informera postmaster om e-post som inte sÃ¤nts pÃ¥ grund av programfel.
 </ul>
 
 <hr>

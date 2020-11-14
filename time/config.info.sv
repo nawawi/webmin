@@ -1,6 +1,6 @@
-lease=Accepterad fördröjning mellan systemtid och hårdvarutid (sekunder),0
+lease=Accepterad fÃ¶rdrÃ¶jning mellan systemtid och hÃ¥rdvarutid (sekunder),0
 timeserver=Standardtidserver,3,Ingen
-seconds=Systemtidsformat,1,1-MMDDTTMMÅÅÅÅ.SS,0-MMDDTTMMÅÅ
+seconds=Systemtidsformat,1,1-MMDDTTMMÃ…Ã…Ã…Ã….SS,0-MMDDTTMMÃ…Ã…
 zonelink=Tidszonfil,0
 zonetab=Fil med tidszoner,0
-zonedir=Katalog för tidszonfiler,0
+zonedir=Katalog fÃ¶r tidszonfiler,0

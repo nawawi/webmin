@@ -1,53 +1,53 @@
-TÕTOLS:
+T√çTOLS:
 index_title=Monitor de Serveis MON
-index_return=a l'Ìndex de MON
-index_edir=El directori $1 de MON no existeix. Pot ser que MON no estigui instal∑lat, o bÈ que la <a href='$2'>configuraciÛ del mÚdul</a> sigui incorrecta.
+index_return=a l'√≠ndex de MON
+index_edir=El directori $1 de MON no existeix. Pot ser que MON no estigui instal¬∑lat, o b√© que la <a href='$2'>configuraci√≥ del m√≤dul</a> sigui incorrecta.
 mon_global_title=Variables Globals
-mon_conf_title=ConfiguraciÛ B‡sica
-mon_status_title=Estat d'OperaciÛ
-hostgroups_title=ConfiguraciÛ MON-Grups de Hosts
-services_title=Grups d'ObservaciÛ-DefiniciÛ de Serveis
+mon_conf_title=Configuraci√≥ B√†sica
+mon_status_title=Estat d'Operaci√≥
+hostgroups_title=Configuraci√≥ MON-Grups de Hosts
+services_title=Grups d'Observaci√≥-Definici√≥ de Serveis
 
-CAP«ALERES:
+CAP√áALERES:
 head_hostgroups=Grups de Hosts i Serveis
 head_groups=Nom del Grup de Hosts
 head_members=Membres del Grup de Hosts
 head_services=Serveis del Grup a Observar
 head_service=Servei a Observar
-head_param=Par‡metres del Servei
+head_param=Par√†metres del Servei
 head_watch=Observa el grup
-head_monauth=Subministra AutenticaciÛ per a MONCMD
+head_monauth=Subministra Autenticaci√≥ per a MONCMD
 head_usr=Usuari
 head_pass=Contrasenya
-head_mand=(Els par‡metres de "RED COLOR" sÛn obligatoris)
+head_mand=(Els par√†metres de "RED COLOR" s√≥n obligatoris)
 
 ERRORS:
-err_nomon=El paquet 'mon' no est‡ instal∑lat al sistema
-err_nomonconf=No s'ha trobat al sistema el fitxer $1 de configuraciÛ de MON. Pot ser que MON no estigui instal∑lat, o bÈ que la <a href='$2'>configuraciÛ del mÚdul</a> sigui incorrecta.
-err_nowatch=No has seleccionat cap Grup d'ObservaciÛ. Selecciona'n almenys un per procedir.
-err_noserv=No has seleccionat cap Servei per al grup d'observaciÛ
-err_nomemb=No has seleccionat cap Host/Membre per al grup d'observaciÛ
-err_monrun=MON is no est‡ en execuciÛ a la m‡quina host. Inicia MON, si et plau.
+err_nomon=El paquet 'mon' no est√† instal¬∑lat al sistema
+err_nomonconf=No s'ha trobat al sistema el fitxer $1 de configuraci√≥ de MON. Pot ser que MON no estigui instal¬∑lat, o b√© que la <a href='$2'>configuraci√≥ del m√≤dul</a> sigui incorrecta.
+err_nowatch=No has seleccionat cap Grup d'Observaci√≥. Selecciona'n almenys un per procedir.
+err_noserv=No has seleccionat cap Servei per al grup d'observaci√≥
+err_nomemb=No has seleccionat cap Host/Membre per al grup d'observaci√≥
+err_monrun=MON is no est√† en execuci√≥ a la m√†quina host. Inicia MON, si et plau.
 stop_err=No s'ha pogut aturar MON
-stop_epid=Ja no est‡ en execuciÛ
+stop_epid=Ja no est√† en execuci√≥
 start_err=No s'ha pogut iniciar MON
 restart_err=No s'ha pogut reiniciar MON
 restart_epid=No s'ha pogut obtenir el PID
 
 ETIQUETES:
 other=Altres (separats per espais)
-next=Seg¸ent
+next=Seg√ºent
 mon_stat=Estat de MON
 mon_off=Serveis de MON no Iniciats
 mon_start=Inicia els Serveis de MON
 mon_stop=Atura els Serveis de MON
 mon_restart=Reinicia els Serveis de MON
-mon_startdesc=Fes clic sobre aquest botÛ per iniciar el servidor MON. Fins que no s'iniciÔ, no es far‡ cap de les monitoritzacions configurades.
-mon_stopdesc=Fes clic sobre aquest botÛ per aturar el servidor MON. Quan s'aturi, s'aturaran les monitoritzacions configurades.
-mon_restartdesc=Fes clic sobre aquest botÛ per aplicar la configuraciÛ actual de MON reiniciant el procÈs servidor.
-line=(un per lÌnia)
+mon_startdesc=Fes clic sobre aquest bot√≥ per iniciar el servidor MON. Fins que no s'inici√Ø, no es far√† cap de les monitoritzacions configurades.
+mon_stopdesc=Fes clic sobre aquest bot√≥ per aturar el servidor MON. Quan s'aturi, s'aturaran les monitoritzacions configurades.
+mon_restartdesc=Fes clic sobre aquest bot√≥ per aplicar la configuraci√≥ actual de MON reiniciant el proc√©s servidor.
+line=(un per l√≠nia)
 save_apply=Desa i Aplica
-watch=Grup d'ObservaciÛ
+watch=Grup d'Observaci√≥
 members=Membres
 def_perargs=ds {Dss-Dmg}
 
@@ -72,135 +72,135 @@ groups_title=Grups de Hosts
 groups_group=Nom del grup
 groups_members=Hosts membres
 
-watches_title=Llistes d'ObservaciÛ
-watches_group=Grup d'observaciÛ
+watches_title=Llistes d'Observaci√≥
+watches_group=Grup d'observaci√≥
 watches_services=Serveis observats
 watches_sadd=Afegeix servei...
-watches_add=Afegeix llista d'observaciÛ per al grup:
-watches_return=a les llistes d'observaciÛ
-watches_none=Encara no s'ha definit cap llista d'observaciÛ.
+watches_add=Afegeix llista d'observaci√≥ per al grup:
+watches_return=a les llistes d'observaci√≥
+watches_none=Encara no s'ha definit cap llista d'observaci√≥.
 
 global_title=Opcions Globals
-global_header=Opcions globals de configuraciÛ MON
-global_maxprocs=Processos de MON m‡xims
+global_header=Opcions globals de configuraci√≥ MON
+global_maxprocs=Processos de MON m√†xims
 global_histlength=Longitud de l'historial d'esdeveniments
-global_alertdir=Directori de programes d'avÌs
+global_alertdir=Directori de programes d'av√≠s
 global_mondir=Directori de programes monitors
-global_authtype=Tipus d'autenticaciÛ
+global_authtype=Tipus d'autenticaci√≥
 global_authtype_=Per defecte
 global_authtype_getpwnam=Crides de sistema
 global_authtype_userfile=Fitxer d'usuaris MON
 global_authtype_shadow=Fitxer <i>shadow</i>
 global_userfile=Fitxer d'usuaris MON
-global_emaxprocs=Hi falta el nombre de processos MON o bÈ Ès inv‡lid
-global_ehistlength=Hi falta la longitud de l'historial d'esdeveniments o bÈ Ès inv‡lid
-global_ealertdir=Hi falta el directori de programes d'avÌs o bÈ Ès inv‡lid
-global_emondir=Hi falta el directori de programes monitors o bÈ Ès inv‡lid
-global_euserfile=Hi falta el fitxer d'usuaris MON o bÈ Ès inv‡lid
+global_emaxprocs=Hi falta el nombre de processos MON o b√© √©s inv√†lid
+global_ehistlength=Hi falta la longitud de l'historial d'esdeveniments o b√© √©s inv√†lid
+global_ealertdir=Hi falta el directori de programes d'av√≠s o b√© √©s inv√†lid
+global_emondir=Hi falta el directori de programes monitors o b√© √©s inv√†lid
+global_euserfile=Hi falta el fitxer d'usuaris MON o b√© √©s inv√†lid
 
-watch_title=EdiciÛ de la Llista d'ObservaciÛ
-watch_header=Detalls d'observaciÛ del grup de hosts
+watch_title=Edici√≥ de la Llista d'Observaci√≥
+watch_header=Detalls d'observaci√≥ del grup de hosts
 watch_group=Grup de hosts a observar
 watch_services=Serveis a observar
 watch_service=Nom del servei
 watch_monitor=Monitor a utilitzar
 watch_interval=Comprova cada
-watch_periods=PerÌodes de monitoritzaciÛ
+watch_periods=Per√≠odes de monitoritzaci√≥
 
-service_title=AddiciÛ de Servei
-service_title2=EdiciÛ de Servei
+service_title=Addici√≥ de Servei
+service_title2=Edici√≥ de Servei
 service_header=Detalls del servei observat
 service_name=Nom del servei
 service_interval=Comprova cada
-service_desc=DescripciÛ
+service_desc=Descripci√≥
 service_units_s=segons
 service_units_m=minuts
 service_units_h=hores
 service_units_d=dies
 service_units_w=setmanes
-service_monitor=S'est‡ utilitzant el monitor
-service_mon1=Monitor est‡ndard
+service_monitor=S'est√† utilitzant el monitor
+service_mon1=Monitor est√†ndard
 service_mon0=Un altre monitor...
-service_args=Par‡metres del monitor
-service_period=S'est‡ monitoritzant el perÌode $1
+service_args=Par√†metres del monitor
+service_period=S'est√† monitoritzant el per√≠ode $1
 service_days=Dies a comprovar
 service_hours=Hores a comprovar
 service_all=Tots
-service_pstr=EspecificaciÛ del perÌode
-service_new=Nou perÌode de monitoritzaciÛ
-service_alerts=Avisos per perÌode
-service_alert=AvÌs
+service_pstr=Especificaci√≥ del per√≠ode
+service_new=Nou per√≠ode de monitoritzaci√≥
+service_alerts=Avisos per per√≠ode
+service_alert=Av√≠s
 service_atype=Executa en
 service_atype_alert=Tancar el servei
 service_atype_upalert=Engegar el servei
 service_atype_startupalert=Engegar MON
-service_aargs=Par‡metres addicionals
-service_every=Envia l'avÌs
+service_aargs=Par√†metres addicionals
+service_every=Envia l'av√≠s
 service_every_def=Cada cop que s'executi el monitor
 service_every_time=Cada
-service_num=Nombre m‡xim d'avisos a enviar
-service_unlimited=Il∑limitats
+service_num=Nombre m√†xim d'avisos a enviar
+service_unlimited=Il¬∑limitats
 service_after=Fallades abans d'avisar
 service_immediate=Immediatament
-service_after_num=DesprÈs de $1 fallades
+service_after_num=Despr√©s de $1 fallades
 service_aftertime=En l'interval de temps
-service_newperiod=Afegeix un nou perÌode
-service_delperiod=Suprimeix aquest perÌode
+service_newperiod=Afegeix un nou per√≠ode
+service_delperiod=Suprimeix aquest per√≠ode
 service_err=No s'ha pogut desar el servei
-service_ename=Hi falta el nom del servei o bÈ Ès inv‡lid
-service_einterval=Hi falta l'interval de comprovaciÛ o bÈ Ès inv‡lid
-service_eother=Hi falta el monitor o bÈ Ès inv‡lid
-service_ehour=Hi falta l'hora per al perÌode $1 o bÈ Ès inv‡lida (ha de ser com ara 9am o 5pm)
-service_eperiod=No has especificat dies ni hores per al perÌode $1
-service_eevery=Hi falta l'interval d'avÌs del servei o bÈ Ès inv‡lid
-service_eafter=Hi falta el nombre de fallades abans de l'avÌs o bÈ Ès inv‡lid
-service_enum=Hi falta el nombre m‡xim d'avisos a enviar o bÈ Ès inv‡lid
-service_epstr=Hi falta l'especificaciÛ del perÌode
-service_known0=Cadena <tt>Hora::PerÌode</tt>
+service_ename=Hi falta el nom del servei o b√© √©s inv√†lid
+service_einterval=Hi falta l'interval de comprovaci√≥ o b√© √©s inv√†lid
+service_eother=Hi falta el monitor o b√© √©s inv√†lid
+service_ehour=Hi falta l'hora per al per√≠ode $1 o b√© √©s inv√†lida (ha de ser com ara 9am o 5pm)
+service_eperiod=No has especificat dies ni hores per al per√≠ode $1
+service_eevery=Hi falta l'interval d'av√≠s del servei o b√© √©s inv√†lid
+service_eafter=Hi falta el nombre de fallades abans de l'av√≠s o b√© √©s inv√†lid
+service_enum=Hi falta el nombre m√†xim d'avisos a enviar o b√© √©s inv√†lid
+service_epstr=Hi falta l'especificaci√≥ del per√≠ode
+service_known0=Cadena <tt>Hora::Per√≠ode</tt>
 service_known1=Dies i hores especificats
-service_known2=PerÌode definit
+service_known2=Per√≠ode definit
 
 status_title=Estat de MON
-status_ecgi=El programa CGI $1 d'estat de MON no existeix. Pot ser que no estigui instal∑lat, o bÈ que la <a href='$2'>configuraciÛ del mÚdul</a> sigui incorrecta.
-status_eperl=El programa CGI d'estat de MON necessita el mÚdul Perl $1. <a href='$2'>Fes clic aquÌ</a> per instal∑lar-lo directament des de CPAN.
-status_esame=El programa CGI d'estat de MON $1 s'ha configurat al script <tt>mon.cgi</tt> en aquest mÚdul de Webmin, no el programa CGI que ve amb MON. Ajusteu la <a href='$2'>configuraciÛ del mÚdul</a> per utilitzar el camÌ correcte.
+status_ecgi=El programa CGI $1 d'estat de MON no existeix. Pot ser que no estigui instal¬∑lat, o b√© que la <a href='$2'>configuraci√≥ del m√≤dul</a> sigui incorrecta.
+status_eperl=El programa CGI d'estat de MON necessita el m√≤dul Perl $1. <a href='$2'>Fes clic aqu√≠</a> per instal¬∑lar-lo directament des de CPAN.
+status_esame=El programa CGI d'estat de MON $1 s'ha configurat al script <tt>mon.cgi</tt> en aquest m√≤dul de Webmin, no el programa CGI que ve amb MON. Ajusteu la <a href='$2'>configuraci√≥ del m√≤dul</a> per utilitzar el cam√≠ correcte.
 
 users_title=Usuaris de MON
-users_etype=No es pot editar la llista d'usuaris de MON perquË MON no est‡ actualment configurat per utilitzar-lo per a autenticaciÛ a la p‡gina d'<a href='$1'>opcions Globals</a>e.
+users_etype=No es pot editar la llista d'usuaris de MON perqu√® MON no est√† actualment configurat per utilitzar-lo per a autenticaci√≥ a la p√†gina d'<a href='$1'>opcions Globals</a>e.
 users_header=Usuaris MON permesos a $1
 users_nousers=No hi ha cap usuari MON definit a $1.
 users_add=Crea un nou usuari.
 users_return=a la llista d'usuaris de MON
 
-user_create=CreaciÛ d'Usuari de MON
-user_edit=EdiciÛ d'Usuari de MON
+user_create=Creaci√≥ d'Usuari de MON
+user_edit=Edici√≥ d'Usuari de MON
 user_header=Detalls de l'usuari de MON
 user_user=Usuari
 user_pass=Contrasenya
-user_leave=Deixa-ho tal com est‡
+user_leave=Deixa-ho tal com est√†
 user_err=No s'ha pogut desar l'usuari
-user_euser=Hi falta el nom de l'usuari o bÈ Ès inv‡lid
+user_euser=Hi falta el nom de l'usuari o b√© √©s inv√†lid
 user_esame=ja existeix un usuari amb aquest mateix nom
 
 auth_title=Ordres de Client
-auth_desc=Aquesta p‡gina permet controlar quines ordres de MON poden ser executades per quins usuaris quan utilitzen els programes client.
+auth_desc=Aquesta p√†gina permet controlar quines ordres de MON poden ser executades per quins usuaris quan utilitzen els programes client.
 auth_cmd=Ordres de MON
 auth_users=Usuaris permesos
-auth_none=Ning˙
+auth_none=Ning√∫
 auth_all=Tothom
-auth_sel=NomÈs els usuaris
+auth_sel=Nom√©s els usuaris
 auth_err=No s'han pogut desar les ordres dels clients
-auth_eusers=No has introduÔt cap usuari per a l'ordre $1
+auth_eusers=No has introdu√Øt cap usuari per a l'ordre $1
 
-periods_title=PerÌodes definits
-periods_period=Nom del perÌode
+periods_title=Per√≠odes definits
+periods_period=Nom del per√≠ode
 periods_times=Dies i hores
 periods_alldays=Cada dia
 periods_allhours=Cada hora
-periods_err=No s'han pogut desar els perÌodes definits
-periods_ename='$1' no Ès un nom de perÌode v‡lid
-periods_ehour=Hi falta l'hora del perÌode $1 o bÈ Ès inv‡lida (ha de ser com ara 9am o 5pm)
+periods_err=No s'han pogut desar els per√≠odes definits
+periods_ename='$1' no √©s un nom de per√≠ode v√†lid
+periods_ehour=Hi falta l'hora del per√≠ode $1 o b√© √©s inv√†lida (ha de ser com ara 9am o 5pm)
 
 show_title=Estat Operacional
-show_ecgi=L'estat del programa MON $1 no existeix. Pot ser que no estigui instal∑lat, o bÈ que la <a href='$2'>configuraciÛ del mÚdul</a> sigui incorrecta.
+show_ecgi=L'estat del programa MON $1 no existeix. Pot ser que no estigui instal¬∑lat, o b√© que la <a href='$2'>configuraci√≥ del m√≤dul</a> sigui incorrecta.
 __norefs=1

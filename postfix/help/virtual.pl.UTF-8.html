@@ -1,64 +1,64 @@
 <header>Domeny wirtualne</header>
 
-Fakultatywna tabela domen wirtualnych określa przekierowania lokalnych
-i&nbsp;zdalnych użytkowników oraz domen. Przekierowania są wykorzystywane
-przez demona cleanup(8). Przekierowania są rekurencyjne. <p>
+Fakultatywna tabela domen wirtualnych okreÅla przekierowania lokalnych
+i&nbsp;zdalnych uÅ¼ytkownikÃ³w oraz domen. Przekierowania sÄ wykorzystywane
+przez demona cleanup(8). Przekierowania sÄ rekurencyjne. <p>
 
 Przekierowanie wirtualne dotyczy jedynie adresu nadawcy na "kopercie",
-i&nbsp;nie wpływa na nagłówki. Traktuj je jak zbiór reguł <tt>S0</tt>
-Sendmaila, jeśli chcesz. W&nbsp;ogólności, do przepisywania adresów
-w&nsbsp;nagłówkach i&nbsp;na "kopercie" korzystaj
-z&nbsp;<a href=canonical>podstawień kanonicznych</a>.
+i&nbsp;nie wpÅywa na nagÅÃ³wki. Traktuj je jak zbiÃ³r reguÅ <tt>S0</tt>
+Sendmaila, jeÅli chcesz. W&nbsp;ogÃ³lnoÅci, do przepisywania adresÃ³w
+w&nsbsp;nagÅÃ³wkach i&nbsp;na "kopercie" korzystaj
+z&nbsp;<a href=canonical>podstawieÅ kanonicznych</a>.
 
-Typowa obsługa domeny wirtualnej wygląda następująco:
+Typowa obsÅuga domeny wirtualnej wyglÄda nastÄpujÄco:
 
 <ul>
 <li> <b><tt>domena.wirtualna</tt></b> podstawiane...
-<b><tt>cokolwiek</tt></b> (zawartość prawej strony nie ma znaczenia)
+<b><tt>cokolwiek</tt></b> (zawartoÅÄ prawej strony nie ma znaczenia)
 <li> <b><tt>uzytkownik1@domena.wirtualna</tt></b> podstawiany...
 <b><tt>adres1</tt></b>
 <li> <b><tt>uzytkownik2@domena.wirtualna</tt></b> podstawiany...
 <b><tt>adres2, adres3</tt></b>
 </ul>
 
-Wówczas serwer SMTP przyjmuje pocztę skierowaną do <tt>domena.wirtualna</tt>
-a&nbsp;odrzuca skierowaną do <tt>nieznany@domena.wirtualna</tt> jako
-niedoręczalną. <p>
+WÃ³wczas serwer SMTP przyjmuje pocztÄ skierowanÄ do <tt>domena.wirtualna</tt>
+a&nbsp;odrzuca skierowanÄ do <tt>nieznany@domena.wirtualna</tt> jako
+niedorÄczalnÄ. <p>
 
-Format tabeli wirtualnej jest następujący (podstawienia są wykonywane
-w&nbsp;poniższej kolejności):
+Format tabeli wirtualnej jest nastÄpujÄcy (podstawienia sÄ wykonywane
+w&nbsp;poniÅ¼szej kolejnoÅci):
 
 <ul>
 <li> <b><tt>uzytkownik@domena</tt></b> podstawiany... <b><tt>adres, adres,
 ...</tt></b>: <br>
 Poczta skierowana do <tt>uzytkownik@domena</tt> jest kierowana do
-<tt>adres</tt>. Ta postać ma najwyższy priorytet.
+<tt>adres</tt>. Ta postaÄ ma najwyÅ¼szy priorytet.
 
 <li> <b><tt>uzytkownik</tt></b> podstawiany... <b><tt>adres, adres,
 ...</tt></b>: <br>
 Poczta skierowana do <tt>uzytkownik@miejsce</tt> jest kierowana na
-<tt>adres</tt>, gdy <tt>miejsce</tt> jest tożsame z&nbsp;<tt>$myorigin</tt>,
-jest wymienione wśród <tt>$mydestination</tt> lub jest wymienione wśród
-<tt>$inet_interfaces</tt>. Ta funkcjonalność pokrywa się z funkcjonalnością
-bazy <a href=aliases>aliasów lokalnych</a>. Różnica polega na tym, że
-podstawienia wirtualne można stosować do adresów zdalnych.
+<tt>adres</tt>, gdy <tt>miejsce</tt> jest toÅ¼same z&nbsp;<tt>$myorigin</tt>,
+jest wymienione wÅrÃ³d <tt>$mydestination</tt> lub jest wymienione wÅrÃ³d
+<tt>$inet_interfaces</tt>. Ta funkcjonalnoÅÄ pokrywa siÄ z funkcjonalnoÅciÄ
+bazy <a href=aliases>aliasÃ³w lokalnych</a>. RÃ³Å¼nica polega na tym, Å¼e
+podstawienia wirtualne moÅ¼na stosowaÄ do adresÃ³w zdalnych.
 
 <li> <b><tt>@domena</tt></b> podstawiany... <b><tt>adres, adres,
 ...</tt></b>: <br>
-Poczta skierowana do dowolnego użytkownika w&nbsp;<tt>domena</tt> jest
-kierowana na <tt>adres</tt>. Ta postać ma najniższy priorytet.
+Poczta skierowana do dowolnego uÅ¼ytkownika w&nbsp;<tt>domena</tt> jest
+kierowana na <tt>adres</tt>. Ta postaÄ ma najniÅ¼szy priorytet.
 </ul>
 
-W&nbsp;powyższych podstawieniach, gdy adres ma postać <tt>@innadomena</tt>,
-wynikiem jest ten sam użytkownik w&nbsp;<tt>innadomena</tt>. Działa to
-jedynie dla pierwszego adresu w&nbsp;rozwinięciu.<p>
+W&nbsp;powyÅ¼szych podstawieniach, gdy adres ma postaÄ <tt>@innadomena</tt>,
+wynikiem jest ten sam uÅ¼ytkownik w&nbsp;<tt>innadomena</tt>. DziaÅa to
+jedynie dla pierwszego adresu w&nbsp;rozwiniÄciu.<p>
 
-ROZSZERZENIA ADRESÓW: Gdy przeszukiwanie zakończy się niepowodzeniem
-a&nbsp;lokalna część adresu zawiera fakultatywny ogranicznik odbiorcy (np.
+ROZSZERZENIA ADRESÃW: Gdy przeszukiwanie zakoÅczy siÄ niepowodzeniem
+a&nbsp;lokalna czÄÅÄ adresu zawiera fakultatywny ogranicznik odbiorcy (np.
 <tt>uzytkownik+cos@domena</tt>), przeszukiwanie jest powtarzane dla
-nierozszerzonego adresu (np. <tt>uzytkownik@domena</tt>) i&nbsp;niepasujące
-rozszerzenie jest przenoszone na wynik rozwinięcia. Kolejność dopasowywania
-jest następująca: <tt>uzytkownik+cos@domena</tt>,
+nierozszerzonego adresu (np. <tt>uzytkownik@domena</tt>) i&nbsp;niepasujÄce
+rozszerzenie jest przenoszone na wynik rozwiniÄcia. KolejnoÅÄ dopasowywania
+jest nastÄpujÄca: <tt>uzytkownik+cos@domena</tt>,
 <tt>uzytkownik@domena</tt>, <tt>uzytkownik+cos</tt>, <tt>uzytkownik</tt>
 oraz <tt>@domena</tt>.
 

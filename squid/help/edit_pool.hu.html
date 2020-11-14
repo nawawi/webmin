@@ -1,16 +1,16 @@
-<header>Késleltetési verem szerkesztése; fordította: Szakács Gergely</header>
+<header>KÃ©sleltetÃ©si verem szerkesztÃ©se; fordÃ­totta: SzakÃ¡cs Gergely</header>
 
 <p>
-<b>A vermek számozása</b><br>
+<b>A vermek szÃ¡mozÃ¡sa</b><br>
 
-Ezt az egytõl kezdõdõ számot a Webmin választja ki. A szám egyszerûen a verem azonosítására szolgál, hogy a Squid többet is tudjon kezelni belõlük.<p>
+Ezt az egytÃµl kezdÃµdÃµ szÃ¡mot a Webmin vÃ¡lasztja ki. A szÃ¡m egyszerÃ»en a verem azonosÃ­tÃ¡sÃ¡ra szolgÃ¡l, hogy a Squid tÃ¶bbet is tudjon kezelni belÃµlÃ¼k.<p>
 
-<b>A vermek osztályozása</b><br>
+<b>A vermek osztÃ¡lyozÃ¡sa</b><br>
 
-Ez a verem típusát határozza meg. A késleltetési vermek lehetnek 1-es, 2-es, vagy 3-ass osztályúak, ami az alábbiakat jelenti: "1-Összesített", "2-Összesített és Egyedi", "3-Összesített, Egyedi és Hálózati". A legegyszerûbb az 1-es osztály, amely az adott veremhez tartozó felhasználók számára meghatároz egy maximális sávszélességet. A 2-es osztály egyidejûleg meghatároz egy összesített és egy felhasználókra bontott sávszélességet, miáltal az összes felhasználó sávszélessége nem haladhatja meg az összesített sávszélességet, miközben mindannyiukat egyedi korlátozás is köti. Végül a 3-as osztály a fentiek mellett egy hálózati sávszélességet is meghatároz, amely a teljes alhálózatra vonatkozik. A 3-as osztály rendszerint nagyon kiterjedt hálózatok estében hasznos, amelyek egynél több alhálózattal rendelkeznek.<p>
+Ez a verem tÃ­pusÃ¡t hatÃ¡rozza meg. A kÃ©sleltetÃ©si vermek lehetnek 1-es, 2-es, vagy 3-ass osztÃ¡lyÃºak, ami az alÃ¡bbiakat jelenti: "1-Ã–sszesÃ­tett", "2-Ã–sszesÃ­tett Ã©s Egyedi", "3-Ã–sszesÃ­tett, Egyedi Ã©s HÃ¡lÃ³zati". A legegyszerÃ»bb az 1-es osztÃ¡ly, amely az adott veremhez tartozÃ³ felhasznÃ¡lÃ³k szÃ¡mÃ¡ra meghatÃ¡roz egy maximÃ¡lis sÃ¡vszÃ©lessÃ©get. A 2-es osztÃ¡ly egyidejÃ»leg meghatÃ¡roz egy Ã¶sszesÃ­tett Ã©s egy felhasznÃ¡lÃ³kra bontott sÃ¡vszÃ©lessÃ©get, miÃ¡ltal az Ã¶sszes felhasznÃ¡lÃ³ sÃ¡vszÃ©lessÃ©ge nem haladhatja meg az Ã¶sszesÃ­tett sÃ¡vszÃ©lessÃ©get, mikÃ¶zben mindannyiukat egyedi korlÃ¡tozÃ¡s is kÃ¶ti. VÃ©gÃ¼l a 3-as osztÃ¡ly a fentiek mellett egy hÃ¡lÃ³zati sÃ¡vszÃ©lessÃ©get is meghatÃ¡roz, amely a teljes alhÃ¡lÃ³zatra vonatkozik. A 3-as osztÃ¡ly rendszerint nagyon kiterjedt hÃ¡lÃ³zatok estÃ©ben hasznos, amelyek egynÃ©l tÃ¶bb alhÃ¡lÃ³zattal rendelkeznek.<p>
 
-A korlátozást tetszõleges egységben megadhatjuk, jóllehet ez a Squid konfigurációs fájljában byteokban fog megjelenni. Az elsõ mezõben veremnek kiosztott átlagos átvitel jelenik meg, míg a második a tároló méretét definiálja, mely nagyjából megegyezik a kihasználható maximális sávszélességgel.<p>
+A korlÃ¡tozÃ¡st tetszÃµleges egysÃ©gben megadhatjuk, jÃ³llehet ez a Squid konfigurÃ¡ciÃ³s fÃ¡jljÃ¡ban byteokban fog megjelenni. Az elsÃµ mezÃµben veremnek kiosztott Ã¡tlagos Ã¡tvitel jelenik meg, mÃ­g a mÃ¡sodik a tÃ¡rolÃ³ mÃ©retÃ©t definiÃ¡lja, mely nagyjÃ¡bÃ³l megegyezik a kihasznÃ¡lhatÃ³ maximÃ¡lis sÃ¡vszÃ©lessÃ©ggel.<p>
 
-A verem létrehozatalát követõen egy új rész fog megjelenni a lap alján, ahol beállíthatja, hogy a verem mely ACL-eknek feleljen meg. Az ACL-eket a <b>Hozzáférés-vezérlés</b> oldalon hozhatja létre, és bármely ACL felhasználható arra, hogy kiválassza, mely kapcsolatokra legyen érvényes az adott késleltetési verem. Egy ACL <b>engedélyezése</b> a megegyezõ kapcsolatoknak fogja megfeleltetni a vermet, míg egy ACL <b>elutasítása</b> következtében a megfelelõ kapcsolatok megkerülhetik a vermet. Így, hacsak nem egyetlen vermet rendelt az összes kapcsolathoz, két ACL-t kell létrehoznia. Az elsõ ACL-re fogja alkalmazni a késleltetési vermet, míg a második az <tt>összes</tt> ACL lesz, melynek eredményeként csak a kiválasztott kliensek lesznek korlátozva.<p>
+A verem lÃ©trehozatalÃ¡t kÃ¶vetÃµen egy Ãºj rÃ©sz fog megjelenni a lap aljÃ¡n, ahol beÃ¡llÃ­thatja, hogy a verem mely ACL-eknek feleljen meg. Az ACL-eket a <b>HozzÃ¡fÃ©rÃ©s-vezÃ©rlÃ©s</b> oldalon hozhatja lÃ©tre, Ã©s bÃ¡rmely ACL felhasznÃ¡lhatÃ³ arra, hogy kivÃ¡lassza, mely kapcsolatokra legyen Ã©rvÃ©nyes az adott kÃ©sleltetÃ©si verem. Egy ACL <b>engedÃ©lyezÃ©se</b> a megegyezÃµ kapcsolatoknak fogja megfeleltetni a vermet, mÃ­g egy ACL <b>elutasÃ­tÃ¡sa</b> kÃ¶vetkeztÃ©ben a megfelelÃµ kapcsolatok megkerÃ¼lhetik a vermet. Ãgy, hacsak nem egyetlen vermet rendelt az Ã¶sszes kapcsolathoz, kÃ©t ACL-t kell lÃ©trehoznia. Az elsÃµ ACL-re fogja alkalmazni a kÃ©sleltetÃ©si vermet, mÃ­g a mÃ¡sodik az <tt>Ã¶sszes</tt> ACL lesz, melynek eredmÃ©nyekÃ©nt csak a kivÃ¡lasztott kliensek lesznek korlÃ¡tozva.<p>
 
-Egy új verem létrehozatala után ne felejtse el alkalmazni a változtatásokat és hozzáadni a megfelelõ ACL-eket.
+Egy Ãºj verem lÃ©trehozatala utÃ¡n ne felejtse el alkalmazni a vÃ¡ltoztatÃ¡sokat Ã©s hozzÃ¡adni a megfelelÃµ ACL-eket.

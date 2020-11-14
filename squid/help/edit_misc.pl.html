@@ -1,114 +1,114 @@
-<header>Opcje ró¿ne</header>
+<header>Opcje rÃ³Â¿ne</header>
 
-<b>Pocz±tkowe kontrolne adresy DNS</b>: Serwery DNS, do których Squid wy¶le
-zapytania, aby sprawdziæ czy przeszukiwania DNS dzia³±j± prawid³owo. <p>
+<b>PoczÂ±tkowe kontrolne adresy DNS</b>: Serwery DNS, do ktÃ³rych Squid wyÂ¶le
+zapytania, aby sprawdziÃ¦ czy przeszukiwania DNS dziaÂ³Â±jÂ± prawidÂ³owo. <p>
 
-<b>Rotacja logu po SIGUSR1</b>: Domy¶lnie 10 lub 0, w zale¿no¶ci od systemu.
-Okre¶la liczbê rotacji logu, które bêd± wykonane, gdy wpiszesz 'squid -k
-rotate'. Warto¶ci± domy¶ln± jest 10, co spowoduje rotacjê
-z&nbsp;rozszerzeniami od 0 do 9. Ustawienie tego parametru na 0 wy³±czy
-rotacjê, ale logi bêd± nadal zamykane i&nbsp;otwierane powtórnie. Umo¿liwi
-ci to samodzieln± zmianê nazw logów chwilê przed wys³±niem sygra³u rotacji.
+<b>Rotacja logu po SIGUSR1</b>: DomyÂ¶lnie 10 lub 0, w zaleÂ¿noÂ¶ci od systemu.
+OkreÂ¶la liczbÃª rotacji logu, ktÃ³re bÃªdÂ± wykonane, gdy wpiszesz 'squid -k
+rotate'. WartoÂ¶ciÂ± domyÂ¶lnÂ± jest 10, co spowoduje rotacjÃª
+z&nbsp;rozszerzeniami od 0 do 9. Ustawienie tego parametru na 0 wyÂ³Â±czy
+rotacjÃª, ale logi bÃªdÂ± nadal zamykane i&nbsp;otwierane powtÃ³rnie. UmoÂ¿liwi
+ci to samodzielnÂ± zmianÃª nazw logÃ³w chwilÃª przed wysÂ³Â±niem sygraÂ³u rotacji.
 <p>   
 
-Zauwa¿, ¿e polecenie 'squid -k rotate' zazwyczaj wysy³a sygna³ USR1 do
-dzia³aj±cego procesu Squida. W&nbsp;pewnych sytuacjach (np. na Linuksie
-z&nbsp;asynchroniczn± obs³ug± wej¶cia/wyj¶cia) USR1 jest wykorzystywany do
-innych celów, wiêc rotacja -k korzysta z&nbsp;innego sygna³u. Lepiej mieæ
-nawyk u¿ywania 'squid -k rotate' zamiast 'kill -USR1 <pid>'. <p>
+ZauwaÂ¿, Â¿e polecenie 'squid -k rotate' zazwyczaj wysyÂ³a sygnaÂ³ USR1 do
+dziaÂ³ajÂ±cego procesu Squida. W&nbsp;pewnych sytuacjach (np. na Linuksie
+z&nbsp;asynchronicznÂ± obsÂ³ugÂ± wejÂ¶cia/wyjÂ¶cia) USR1 jest wykorzystywany do
+innych celÃ³w, wiÃªc rotacja -k korzysta z&nbsp;innego sygnaÂ³u. Lepiej mieÃ¦
+nawyk uÂ¿ywania 'squid -k rotate' zamiast 'kill -USR1 <pid>'. <p>
 
-<b>Tekst w&nbsp;komunikatach b³êdów</b>: Tekst HTML umieszczany
-w&nbsp;komunikatach b³êdów. Wpisz tu URL "mailto" na adres twojego
-administratora lub, byæ mo¿e, przekierowanie do strony WWW twojej
+<b>Tekst w&nbsp;komunikatach bÂ³ÃªdÃ³w</b>: Tekst HTML umieszczany
+w&nbsp;komunikatach bÂ³ÃªdÃ³w. Wpisz tu URL "mailto" na adres twojego
+administratora lub, byÃ¦ moÂ¿e, przekierowanie do strony WWW twojej
 organizacji. <p>  
 
-Aby umie¶ciæ to w&nbsp;twoich komunikatach o&nbsp;b³êdach, musisz
-zmodyfikowaæ wzorcowe pliki komunikatów o&nbsp;b³êdach (znajduj±ce siê
-w&nbsp;katalogu "errors"). Gdziekolwiek chcesz, aby powy¿sza linia siê
-pojawi³a, wstaw w&nbsp;pliku znacznik '%L'. <p>
+Aby umieÂ¶ciÃ¦ to w&nbsp;twoich komunikatach o&nbsp;bÂ³Ãªdach, musisz
+zmodyfikowaÃ¦ wzorcowe pliki komunikatÃ³w o&nbsp;bÂ³Ãªdach (znajdujÂ±ce siÃª
+w&nbsp;katalogu "errors"). Gdziekolwiek chcesz, aby powyÂ¿sza linia siÃª
+pojawiÂ³a, wstaw w&nbsp;pliku znacznik '%L'. <p>
 
-<b>Statystyka wg klientów</b>: Je¶li chcesz wy³±czyæ tworzenie statystyk
-dla ka¿dego klienta, wy³±cz tê opcjê. <p>
+<b>Statystyka wg klientÃ³w</b>: JeÂ¶li chcesz wyÂ³Â±czyÃ¦ tworzenie statystyk
+dla kaÂ¿dego klienta, wyÂ³Â±cz tÃª opcjÃª. <p>
 
-<b>Nag³ówek X-Forwarded-For</b>: Domy¶lnie w³±czony. Je¶li opcja ta jest
-w³±czona, Squid bêdzie do³±cza³ nazwê lub adres IP Twojego systemu do
-zapytañ, które przekazuje. Domy¶lnie wygl±da on jak w&nbsp;przekazywanym
+<b>NagÂ³Ã³wek X-Forwarded-For</b>: DomyÂ¶lnie wÂ³Â±czony. JeÂ¶li opcja ta jest
+wÂ³Â±czona, Squid bÃªdzie doÂ³Â±czaÂ³ nazwÃª lub adres IP Twojego systemu do
+zapytaÃ±, ktÃ³re przekazuje. DomyÂ¶lnie wyglÂ±da on jak w&nbsp;przekazywanym
 zapytaniu HTTP, czyli jak: <p>
 
 <center>X-Forwarded-For: 192.1.2.3</center> 
 <p>
 
-Je¶li wy³±czysz tê opcjê, bêdzie wygl±daæ jak:
+JeÂ¶li wyÂ³Â±czysz tÃª opcjÃª, bÃªdzie wyglÂ±daÃ¦ jak:
 <p>
 
 <center>X-Forwarded-For: unknown</center> <p>
 
-<b>Logowaæ zapytania ICP</b>: Domy¶lnie w³±czone. Je¶li opcja ta jest
-w³±czona, zapytania ICP s± logowane do access.log. Je¶li obci±¿enie ICP
-Twojego Squida jest BARDZO du¿e, mo¿esz chcieæ to
-wy³±czyæ, aby przyspieszyæ dzia³anie i&nbsp;upro¶ciæ analizê logu. <p>
+<b>LogowaÃ¦ zapytania ICP</b>: DomyÂ¶lnie wÂ³Â±czone. JeÂ¶li opcja ta jest
+wÂ³Â±czona, zapytania ICP sÂ± logowane do access.log. JeÂ¶li obciÂ±Â¿enie ICP
+Twojego Squida jest BARDZO duÂ¿e, moÂ¿esz chcieÃ¦ to
+wyÂ³Â±czyÃ¦, aby przyspieszyÃ¦ dziaÂ³anie i&nbsp;uproÂ¶ciÃ¦ analizÃª logu. <p>
 
-<b>Minimalna liczba bezpo¶rednich skoków</b>: Domy¶lnie 4. Je¶li
-wykorzystywane jest pingowanie ICMP, dla miejsc, które s± nie dalej ni¿
-podana liczba przeskoków bêdzie wykonywane pobieranie bezpo¶rednie
+<b>Minimalna liczba bezpoÂ¶rednich skokÃ³w</b>: DomyÂ¶lnie 4. JeÂ¶li
+wykorzystywane jest pingowanie ICMP, dla miejsc, ktÃ³re sÂ± nie dalej niÂ¿
+podana liczba przeskokÃ³w bÃªdzie wykonywane pobieranie bezpoÂ¶rednie
 pobieranie. <p>
 
-<b>Zachowaæ pamiêæ na przysz³o¶æ</b>: Domy¶lnie 'Tak'. Je¶li ta opcja jest
-w³±czona, Squid bêdzie utrzymywa³ przydzielone (ale nieu¿ywane) obszary
-pamiêci dla przysz³ego wykorzystania. Je¶li pamiêæ jest cenna w&twoim
-systemie i&nbsp;s±dzisz, ¿e twoja biblioteka zarz±dzania pamiêci± jest
-wydajniejsza ni¿ procedury Squida, wy³±cz j±.
+<b>ZachowaÃ¦ pamiÃªÃ¦ na przyszÂ³oÂ¶Ã¦</b>: DomyÂ¶lnie 'Tak'. JeÂ¶li ta opcja jest
+wÂ³Â±czona, Squid bÃªdzie utrzymywaÂ³ przydzielone (ale nieuÂ¿ywane) obszary
+pamiÃªci dla przyszÂ³ego wykorzystania. JeÂ¶li pamiÃªÃ¦ jest cenna w&twoim
+systemie i&nbsp;sÂ±dzisz, Â¿e twoja biblioteka zarzÂ±dzania pamiÃªciÂ± jest
+wydajniejsza niÂ¿ procedury Squida, wyÂ³Â±cz jÂ±.
 
-<b>Zachowywana ilo¶æ pamiêci</b>: Domy¶lnie 'Nieograniczona'. Je¶li podano
-warto¶æ niezerow±, Squid bêdzie utrzymywa³ co najmniej podan± ilo¶æ
-przydzielonej (ale nieu¿ywanej) pamiêci. Wszystkie wywo³ania free(), które
-przekrocz± tê granicê bêd± obs³ugiwane przez twoj± bibliotekê zarz±dzania
-pamiêci±. Squid nie przydziela wstêpnie ¿adnej pamiêci lecz, po prostu,
-przechowuje obiekty, które w&nbsp;przeciwnym przypadku by³yby zwolnione.
-Wobec tego, mo¿na bezpiecznie ustawiæ stosunkowo wysok± warto¶æ tej opcji
-nawet, je¶li twoja konfiguracja bêdzie wykorzystywa³a mniej pamiêci. <p>
+<b>Zachowywana iloÂ¶Ã¦ pamiÃªci</b>: DomyÂ¶lnie 'Nieograniczona'. JeÂ¶li podano
+wartoÂ¶Ã¦ niezerowÂ±, Squid bÃªdzie utrzymywaÂ³ co najmniej podanÂ± iloÂ¶Ã¦
+przydzielonej (ale nieuÂ¿ywanej) pamiÃªci. Wszystkie wywoÂ³ania free(), ktÃ³re
+przekroczÂ± tÃª granicÃª bÃªdÂ± obsÂ³ugiwane przez twojÂ± bibliotekÃª zarzÂ±dzania
+pamiÃªciÂ±. Squid nie przydziela wstÃªpnie Â¿adnej pamiÃªci lecz, po prostu,
+przechowuje obiekty, ktÃ³re w&nbsp;przeciwnym przypadku byÂ³yby zwolnione.
+Wobec tego, moÂ¿na bezpiecznie ustawiÃ¦ stosunkowo wysokÂ± wartoÂ¶Ã¦ tej opcji
+nawet, jeÂ¶li twoja konfiguracja bÃªdzie wykorzystywaÂ³a mniej pamiÃªci. <p>
 
-Je¶li warto¶æ tego parametru nie jest ustawiona (domy¶lnie) lub ustawiona na
-zero, Squid bêdzie utrzymywa³ tyle pamiêci ile zdo³a. Oznacza to, ¿e nie
-bêdzie ¿adnego ograniczenia na ³±czn± ilo¶æ pamiêci wykorzystywan± do
+JeÂ¶li wartoÂ¶Ã¦ tego parametru nie jest ustawiona (domyÂ¶lnie) lub ustawiona na
+zero, Squid bÃªdzie utrzymywaÂ³ tyle pamiÃªci ile zdoÂ³a. Oznacza to, Â¿e nie
+bÃªdzie Â¿adnego ograniczenia na Â³Â±cznÂ± iloÂ¶Ã¦ pamiÃªci wykorzystywanÂ± do
 przechowywania. <p>
 
-<b>Przepuszczanie nag³ówków</b>: Domy¶lnie 'Wszystkie nag³ówki'. Opcja ta
-zastêpuje stary parametr 'Ukrywanie to¿samo¶ci' czym¶, co jest du¿o lepiej
-konfigurowalne. Mo¿na obecnie podaæ, które dok³adnie nag³ówki powinny,
-a&nbsp;które nie powinny byæ usuniête z&nbsp;wychodz±cych zapytañ. <p>
+<b>Przepuszczanie nagÂ³Ã³wkÃ³w</b>: DomyÂ¶lnie 'Wszystkie nagÂ³Ã³wki'. Opcja ta
+zastÃªpuje stary parametr 'Ukrywanie toÂ¿samoÂ¶ci' czymÂ¶, co jest duÂ¿o lepiej
+konfigurowalne. MoÂ¿na obecnie podaÃ¦, ktÃ³re dokÂ³adnie nagÂ³Ã³wki powinny,
+a&nbsp;ktÃ³re nie powinny byÃ¦ usuniÃªte z&nbsp;wychodzÂ±cych zapytaÃ±. <p>
 
-S± dwie metody wykorzystania tej opcji. Mo¿na albo przepuszczaæ okre¶lone
-nag³ówki (blokuj±c wszystkie inne), albo blokowaæ okre¶lone nag³ówki
-(przepuszczaj±c wszystkie inne). <p>
+SÂ± dwie metody wykorzystania tej opcji. MoÂ¿na albo przepuszczaÃ¦ okreÂ¶lone
+nagÂ³Ã³wki (blokujÂ±c wszystkie inne), albo blokowaÃ¦ okreÂ¶lone nagÂ³Ã³wki
+(przepuszczajÂ±c wszystkie inne). <p>
 
-<b>Fa³szywy program u¿ytkownika</b>: Domy¶lnie 'brak'. Je¶li nag³ówek
+<b>FaÂ³szywy program uÂ¿ytkownika</b>: DomyÂ¶lnie 'brak'. JeÂ¶li nagÂ³Ã³wek
 'User-Agent' jest odfiltrowywany w&nbsp;opcji <b>Przepuszczanie
-nag³ówków</b>, mo¿e to powodowaæ odrzucanie zapytañ przez niektóre serwery
-WWW. U¿ycie tej opcji pozwala go podrobiæ. <p> 
+nagÂ³Ã³wkÃ³w</b>, moÂ¿e to powodowaÃ¦ odrzucanie zapytaÃ± przez niektÃ³re serwery
+WWW. UÂ¿ycie tej opcji pozwala go podrobiÃ¦. <p> 
 
-<b>Host akceleracji HTTP</b>: Domy¶lnie 'brak'. Je¶li Squid ma dzia³aæ jako
-akcelerator httpd, nale¿y podaæ tu adres rzeczywistego serwera HTTP. <p>
+<b>Host akceleracji HTTP</b>: DomyÂ¶lnie 'brak'. JeÂ¶li Squid ma dziaÂ³aÃ¦ jako
+akcelerator httpd, naleÂ¿y podaÃ¦ tu adres rzeczywistego serwera HTTP. <p>
 
-<b>Port akceleracji HTTP</b>: Domy¶lnie 'brak'. Dodatkowo podaj±c <b>Host
-akceleracji HTTP</b>, trzeba tu podaæ port rzeczywistego serwera, o&nbsp;ile
-Squid ma dzia³aæ jako akcelerator. <p>
+<b>Port akceleracji HTTP</b>: DomyÂ¶lnie 'brak'. Dodatkowo podajÂ±c <b>Host
+akceleracji HTTP</b>, trzeba tu podaÃ¦ port rzeczywistego serwera, o&nbsp;ile
+Squid ma dziaÂ³aÃ¦ jako akcelerator. <p>
 
-<b>Akceleracja HTTP i&nbsp;proxy</b>: Domy¶lnie wy³±czone. Opcjê tê nale¿y
-w³±czyæ, je¶li Squid ma dzia³aæ jako tradycyjne proxy a&nbsp;jednocze¶nie
-stanowiæ akcelerator HTTP. Opcja ta powinna byæ w³±czona dla przezroczystego
+<b>Akceleracja HTTP i&nbsp;proxy</b>: DomyÂ¶lnie wyÂ³Â±czone. OpcjÃª tÃª naleÂ¿y
+wÂ³Â±czyÃ¦, jeÂ¶li Squid ma dziaÂ³aÃ¦ jako tradycyjne proxy a&nbsp;jednoczeÂ¶nie
+stanowiÃ¦ akcelerator HTTP. Opcja ta powinna byÃ¦ wÂ³Â±czona dla przezroczystego
 proxy. <p> 
 
-<b>Akceleracja HTTP korzysta z&nbsp;nag³ówka Host</b>: Domy¶lnie wy³±czone.
-Zapytania HTTP/1.1 zawieraj± nag³ówek 'Host:', który zasadniczo zawiera
-nazwê hosta z&nbsp;URL-a. Squid mo¿e stanowiæ akcelerator dla ró¿nych
-serwerów HTTP spogl±daj±c na ten nag³ówek. Jednak¿e, Squid NIE sprawdza
-zawarto¶ci nag³ówka 'Host:', wiêc otwiera siê tu du¿a dziura
-w&nbsp;bezpieczeñstwie. Zaleca siê pozostawienie tej opcji wy³±czonej, chyba
-¿e jeste¶ pewien, i¿ wiesz co robisz. <p>
+<b>Akceleracja HTTP korzysta z&nbsp;nagÂ³Ã³wka Host</b>: DomyÂ¶lnie wyÂ³Â±czone.
+Zapytania HTTP/1.1 zawierajÂ± nagÂ³Ã³wek 'Host:', ktÃ³ry zasadniczo zawiera
+nazwÃª hosta z&nbsp;URL-a. Squid moÂ¿e stanowiÃ¦ akcelerator dla rÃ³Â¿nych
+serwerÃ³w HTTP spoglÂ±dajÂ±c na ten nagÂ³Ã³wek. JednakÂ¿e, Squid NIE sprawdza
+zawartoÂ¶ci nagÂ³Ã³wka 'Host:', wiÃªc otwiera siÃª tu duÂ¿a dziura
+w&nbsp;bezpieczeÃ±stwie. Zaleca siÃª pozostawienie tej opcji wyÂ³Â±czonej, chyba
+Â¿e jesteÂ¶ pewien, iÂ¿ wiesz co robisz. <p>
 
-Jednak¿e, trzeba bêdzie w³±czyæ tê opcjê, je¶li Squid ma dzia³aæ jako
-przezroczyste proxy. W&nbsp;przeciwnym przypadku, zapytania do serwerów
-wirtualnych wymagaj±cych nag³ówka 'Host:', nie bêd± prawid³owo buforowane.
+JednakÂ¿e, trzeba bÃªdzie wÂ³Â±czyÃ¦ tÃª opcjÃª, jeÂ¶li Squid ma dziaÂ³aÃ¦ jako
+przezroczyste proxy. W&nbsp;przeciwnym przypadku, zapytania do serwerÃ³w
+wirtualnych wymagajÂ±cych nagÂ³Ã³wka 'Host:', nie bÃªdÂ± prawidÂ³owo buforowane.
 
 <hr>

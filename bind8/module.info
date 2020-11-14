@@ -8,4 +8,4 @@ longdesc=Create and edit domains, DNS records, BIND options and views.
 readonly=1
 syslog=1
 desc_bg=BIND DNS Server
-longdesc_bg=Създаване и редактиране на домейни, DNS записи, опции на BIND и изгледи.
+longdesc_bg=Г‘ГєГ§Г¤Г ГўГ Г­ГҐ ГЁ Г°ГҐГ¤Г ГЄГІГЁГ°Г Г­ГҐ Г­Г  Г¤Г®Г¬ГҐГ©Г­ГЁ, DNS Г§Г ГЇГЁГ±ГЁ, Г®ГЇГ¶ГЁГЁ Г­Г  BIND ГЁ ГЁГ§ГЈГ«ГҐГ¤ГЁ.

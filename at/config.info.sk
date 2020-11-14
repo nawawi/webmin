@@ -1,5 +1,5 @@
-line2=Systémová konfigurácia,11
-at_style=Na systéme,1,linux-Linux,solaris-Solaris,freebsd-FreeBSD,irix-Irix,macos-MacOS X,openserver-OpenServer
-at_dir=V adresári úloh,0
-allow_file=Súbor so zoznamom povolenıch u¾ívateµov pre príkaz AT,3,®iadny
-deny_file=Súbor so zoznamom zakázanıch u¾ívateµov pre príkaz AT,3,®iadny
+line2=SystÃ©movÃ¡ konfigurÃ¡cia,11
+at_style=Na systÃ©me,1,linux-Linux,solaris-Solaris,freebsd-FreeBSD,irix-Irix,macos-MacOS X,openserver-OpenServer
+at_dir=V adresÃ¡ri Ãºloh,0
+allow_file=SÃºbor so zoznamom povolenÃ½ch uÅ¾Ã­vateÄ¾ov pre prÃ­kaz AT,3,Å½iadny
+deny_file=SÃºbor so zoznamom zakÃ¡zanÃ½ch uÅ¾Ã­vateÄ¾ov pre prÃ­kaz AT,3,Å½iadny

@@ -6919,7 +6919,7 @@
           txt.setAttribute("cm-text", "\t");
           builder.col += tabWidth;
         } else if (m[0] == "\r" || m[0] == "\n") {
-          var txt = content.appendChild(elt("span", m[0] == "\r" ? "␍" : "␤", "cm-invalidchar"));
+          var txt = content.appendChild(elt("span", m[0] == "\r" ? "â" : "â¤", "cm-invalidchar"));
           txt.setAttribute("cm-text", m[0]);
           builder.col += 1;
         } else {

@@ -1,54 +1,54 @@
 index_title=Webmin-servrar
-index_edit=ändra
+index_edit=Ã¤ndra
 index_none=Ingen server har registrerats.
 index_add=Registrera en ny server
-index_broad=Sök servrar via broadcast
-index_findmsg=Tryck på denna knapp för att automatiskt söka efter Webmin-servrar av version 0.75 eller högre på ditt lokala nätverk.
-index_scan=Sök servrar
-index_scanmsg=Tryck på denna knapp för att söka på varje adress på nätverket $1 efter Webmin-servrar med version 0.75 eller högre. 
+index_broad=SÃ¶k servrar via broadcast
+index_findmsg=Tryck pÃ¥ denna knapp fÃ¶r att automatiskt sÃ¶ka efter Webmin-servrar av version 0.75 eller hÃ¶gre pÃ¥ ditt lokala nÃ¤tverk.
+index_scan=SÃ¶k servrar
+index_scanmsg=Tryck pÃ¥ denna knapp fÃ¶r att sÃ¶ka pÃ¥ varje adress pÃ¥ nÃ¤tverket $1 efter Webmin-servrar med version 0.75 eller hÃ¶gre. 
 index_return=servrar
 
-edit_title=Ändra server
+edit_title=Ã„ndra server
 create_title=Registrera server
 edit_details=Uppgifter om server
 edit_host=Datornamn
 edit_port=Port
 edit_type=Servertyp
 edit_ssl=SSL-server?
-edit_link=Länktyp
-edit_mode0=Normal länkning till server
+edit_link=LÃ¤nktyp
+edit_mode0=Normal lÃ¤nkning till server
 edit_mode1=Logga in via Webmin med
-edit_user=användarnamn
-edit_pass=lösenord
-edit_ecannot=Du får inte ändra servrar
+edit_user=anvÃ¤ndarnamn
+edit_pass=lÃ¶senord
+edit_ecannot=Du fÃ¥r inte Ã¤ndra servrar
 
 save_err=Det gick inte att spara servern
-save_ehost=Datornamn saknas eller är felaktigt angivet
-save_eport=Port saknas eller är felaktigt angiven
-save_euser=Användarnamn saknas
-save_epass=Lösenord saknas
+save_ehost=Datornamn saknas eller Ã¤r felaktigt angivet
+save_eport=Port saknas eller Ã¤r felaktigt angiven
+save_euser=AnvÃ¤ndarnamn saknas
+save_epass=LÃ¶senord saknas
 
-find_title=Sök server
-find_new=Ny server hittades på $1
-find_already=Känd server hittades på $1
-find_me=Denna server hittades på $1
-find_escan=Nätverket som ska avsökas måste vara av klass C
-find_none=Inga servrar svarade på sökningen.
-find_ecannot=Du får inte söka efter servrar
+find_title=SÃ¶k server
+find_new=Ny server hittades pÃ¥ $1
+find_already=KÃ¤nd server hittades pÃ¥ $1
+find_me=Denna server hittades pÃ¥ $1
+find_escan=NÃ¤tverket som ska avsÃ¶kas mÃ¥ste vara av klass C
+find_none=Inga servrar svarade pÃ¥ sÃ¶kningen.
+find_ecannot=Du fÃ¥r inte sÃ¶ka efter servrar
 
 log_modify=Modifierade server $1
 log_create=Registrerade server $1
 log_delete=Tog bort server $1
 log_find=Hittade server $1
 
-link_elogin=Det gick inte att logga in på $1 som $2
-link_ecannot=Du får inte använda denna server
+link_elogin=Det gick inte att logga in pÃ¥ $1 som $2
+link_ecannot=Du fÃ¥r inte anvÃ¤nda denna server
 link_essl=Du har inte installerat Perl-biblioteket Net::SSLeay
 
-lib_other=Övrigt
+lib_other=Ã–vrigt
 
-acl_edit=Kunna ändra servrar
-acl_find=Kunna söka efter servrar
-acl_servers=Kunna använda servrar
+acl_edit=Kunna Ã¤ndra servrar
+acl_find=Kunna sÃ¶ka efter servrar
+acl_servers=Kunna anvÃ¤nda servrar
 acl_sall=Alla servrar
 acl_ssel=Angivna ...

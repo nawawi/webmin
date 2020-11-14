@@ -1,24 +1,24 @@
 <h3>Wprowadzenie do NFS-u</h3>
 
-NFS jest standardowym protokołem współdzielenia plików używanym przez
-systemy uniksowe. Pozwala on systemowi udostępnić ("wyeksportować") pewien
-katalog poprzez sieć dla jednego lub więcej komputerów, pozwalając
-użytkownikom i&nbsp;programom na tych komputerach uzyskać dostęp do
-udostępnionych plików tak, jakby były one lokalne. <p>
+NFS jest standardowym protokoÅem wspÃ³Ådzielenia plikÃ³w uÅ¼ywanym przez
+systemy uniksowe. Pozwala on systemowi udostÄpniÄ ("wyeksportowaÄ") pewien
+katalog poprzez sieÄ dla jednego lub wiÄcej komputerÃ³w, pozwalajÄc
+uÅ¼ytkownikom i&nbsp;programom na tych komputerach uzyskaÄ dostÄp do
+udostÄpnionych plikÃ³w tak, jakby byÅy one lokalne. <p>
 
-Serwerem NFS-u jest system, który udostępnia jeden lub więcej katalogów,
-podczas gdy klientem jest system, który montuje jeden lub więcej katalogów
-z&nbsp;serwera. Komputer może być jednocześnie serwerem oraz klientem innych
-serwerów. <p>
+Serwerem NFS-u jest system, ktÃ³ry udostÄpnia jeden lub wiÄcej katalogÃ³w,
+podczas gdy klientem jest system, ktÃ³ry montuje jeden lub wiÄcej katalogÃ³w
+z&nbsp;serwera. Komputer moÅ¼e byÄ jednoczeÅnie serwerem oraz klientem innych
+serwerÃ³w. <p>
 
-Serwer określa, którzy klienci mogą montować udostępniony katalog poprzez
-porównanie adresu IP klienta z&nbsp;listą komputerów dopuszczonych do
-żądanego katalogu. Serwer może również określić zasób jako tylko do odczytu
-lub tylko do odczytu dla pewnych klientów. <p>
+Serwer okreÅla, ktÃ³rzy klienci mogÄ montowaÄ udostÄpniony katalog poprzez
+porÃ³wnanie adresu IP klienta z&nbsp;listÄ komputerÃ³w dopuszczonych do
+Å¼Ädanego katalogu. Serwer moÅ¼e rÃ³wnieÅ¼ okreÅliÄ zasÃ³b jako tylko do odczytu
+lub tylko do odczytu dla pewnych klientÃ³w. <p>
 
-W odróżnieniu od innych sieciowych systemów plików, klient NFS-u nie musi
-się logować do serwera podczas montowania udostępnionego katalogu. Serwer
-wierzy, że klient autoryzował użytkowników i&nbsp;określił prawidłowy numer
-ID aktualnego użytkownika podczas dostępu do udostępnianych przez serwer
-plików. Wobec tego powinieneś pozwolić na montowanie udostępnianych zasobów
+W odrÃ³Å¼nieniu od innych sieciowych systemÃ³w plikÃ³w, klient NFS-u nie musi
+siÄ logowaÄ do serwera podczas montowania udostÄpnionego katalogu. Serwer
+wierzy, Å¼e klient autoryzowaÅ uÅ¼ytkownikÃ³w i&nbsp;okreÅliÅ prawidÅowy numer
+ID aktualnego uÅ¼ytkownika podczas dostÄpu do udostÄpnianych przez serwer
+plikÃ³w. Wobec tego powinieneÅ pozwoliÄ na montowanie udostÄpnianych zasobÃ³w
 jedynie zaufanym komputerom klienckim. <p>

@@ -1,2 +1,2 @@
 desc_pl=Jezyk i motyw graficzny
-longdesc_pl=Pozwala aktualnemu u¿ytkownikowi Webimina na zmianê jêzyka, motywu i has³a (o ile to mo¿liwe).
+longdesc_pl=Pozwala aktualnemu uÂ¿ytkownikowi Webimina na zmianÃª jÃªzyka, motywu i hasÂ³a (o ile to moÂ¿liwe).

@@ -1,33 +1,33 @@
 <header>Usuarios y Clases</header>
 
 El servidor WU FTP te permite clasificar a los usuarios en base a la
-direcciÛn desde donde hacen login y a su tipo de usuario. Los tres tipos
+direcci√≥n desde donde hacen login y a su tipo de usuario. Los tres tipos
 de usuario son:
 <ul>
 <li><b>Unix</b> - Los usuarios normales de tu sistema.
 <li><b>Invitado</b> - Los usuarios de Unix que han sido clasificados como
                        invitados.
-<li><b>AnÛnimo</b> - Logins mediante el usuario <tt>anÛnimo</tt> o <tt>ftp</tt>,
+<li><b>An√≥nimo</b> - Logins mediante el usuario <tt>an√≥nimo</tt> o <tt>ftp</tt>,
 		       si tu sistema lo permite.
 </ul><p>
 
-La secciÛn superior de esta p·gina te permite definir nombres de clases
+La secci√≥n superior de esta p√°gina te permite definir nombres de clases
 partiendo de la base de tipos de usario y direcciones emisoras. Cada login
 es clasificado dentro de la primera clase coincidente; por ello las clases
-deberÌan de estar ordenadas desde la m·s especÌfica hasta la menos. Las
-direcciones coincidentes para cada clase pueden ser una direcciÛn IP completa
-o parcial, redes/m·scaras de red IP, nombres de m·quina, comodines de m·quina
+deber√≠an de estar ordenadas desde la m√°s espec√≠fica hasta la menos. Las
+direcciones coincidentes para cada clase pueden ser una direcci√≥n IP completa
+o parcial, redes/m√°scaras de red IP, nombres de m√°quina, comodines de m√°quina
 (como <tt>*.foo.com</tt>) o las trayectorias absolutas a archivos que contengan
-direcciones adicionales. Cualquier tipo de direcciÛn puede ir precedido con
-un car·cter ! para negarlo.<p>
+direcciones adicionales. Cualquier tipo de direcci√≥n puede ir precedido con
+un car√°cter ! para negarlo.<p>
 
-La secciÛn de en medio de la p·gina te permite controlar quÈ usuarios Unix
+La secci√≥n de en medio de la p√°gina te permite controlar qu√© usuarios Unix
 han de ser clasificados como invitados. Un usuario invitado tiene derechos
-similares a un usuario normal de Unix pero est· restringido a un cierto
+similares a un usuario normal de Unix pero est√° restringido a un cierto
 directorio mediante <tt>chroot</tt>.<p>
 
-La secciÛn inferior de la p·gina controla a quÈ usuario Unix e invitado se le
-denegar· el acceso al servidor FTP. Puedes especificar a los usuarios por
+La secci√≥n inferior de la p√°gina controla a qu√© usuario Unix e invitado se le
+denegar√° el acceso al servidor FTP. Puedes especificar a los usuarios por
 nombre, por GID (como <tt>%3000</tt) o por rango de GID (como
 <tt>%3000-3010</tt>). <p>
 

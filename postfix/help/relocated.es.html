@@ -1,35 +1,35 @@
 <header>Mapeo Relocalizado</header>
 
 
-El fichero opcional de relocalizaciones proporciona información usada en
+El fichero opcional de relocalizaciones proporciona informaciÃ³n usada en
 los mensajes rebotados &quot;el usuario se ha mudado a una nueva
-localización&quot;.
+localizaciÃ³n&quot;.
 
 <p>
 
-Las búsquedas en la tabla no tienen en cuenta mayúsculas y minúsculas.
+Las bÃºsquedas en la tabla no tienen en cuenta mayÃºsculas y minÃºsculas.
 
 <p>
 
-El campo &quot;Mapeado a...&quot; especifica la información de contacto tal
-como dirección de correo electrónico, o quizás la dirección postal o número
-de teléfono. Es una de las siguientes:
+El campo &quot;Mapeado a...&quot; especifica la informaciÃ³n de contacto tal
+como direcciÃ³n de correo electrÃ³nico, o quizÃ¡s la direcciÃ³n postal o nÃºmero
+de telÃ©fono. Es una de las siguientes:
 <ul>
 <li><tt>usuario@dominio</tt>: Coincide con <tt>usuario@dominio</tt> . Esta
-    forma tiene precedencia sobre las demás formas.
+    forma tiene precedencia sobre las demÃ¡s formas.
 
 <li><tt>usuario</tt>: Coincide con <tt>usuario@sitio</tt> cuando el sitio
-    es <tt>$myorigin</tt>, cuando el sitio está listado en 
-    <tt>$mydestination</tt>, o cuando el sitio está listado en 
+    es <tt>$myorigin</tt>, cuando el sitio estÃ¡ listado en 
+    <tt>$mydestination</tt>, o cuando el sitio estÃ¡ listado en 
     <tt>$inet_interfaces</tt> .
 
-<li><tt>@dominio</tt>: Coincide con cada dirección del dominio. Esta forma
-     tiene la preferencia más baja.
+<li><tt>@dominio</tt>: Coincide con cada direcciÃ³n del dominio. Esta forma
+     tiene la preferencia mÃ¡s baja.
 </ul>
 
-EXTENSION DE DIRECCION: Cuando falla la búsqueda y la parte local de la
-dirección contiene el delimitador opcional de destinatario (por ejemplo
-<tt>usuario+foo@dominio</tt>), se repite la búsqueda para la dirección no
+EXTENSION DE DIRECCION: Cuando falla la bÃºsqueda y la parte local de la
+direcciÃ³n contiene el delimitador opcional de destinatario (por ejemplo
+<tt>usuario+foo@dominio</tt>), se repite la bÃºsqueda para la direcciÃ³n no
 extendida (en el ejemplo, <tt>usuario@dominio</tt>).
 
 <hr>

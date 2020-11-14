@@ -1,36 +1,36 @@
-<header>Użytkownicy i klasy</header>
+<header>UÅ¼ytkownicy i klasy</header>
 
-Serwer WU FTP pozwala na klasyfikację użytkowników w&nbsp;oparciu
-o&nbsp;adres IP, z&nbsp;którego się logują i&nbsp;typ użytkownika. Istnieją
-trzy typy użytkowników:
+Serwer WU FTP pozwala na klasyfikacjÄ uÅ¼ytkownikÃ³w w&nbsp;oparciu
+o&nbsp;adres IP, z&nbsp;ktÃ³rego siÄ logujÄ i&nbsp;typ uÅ¼ytkownika. IstniejÄ
+trzy typy uÅ¼ytkownikÃ³w:
 <ul>
-<li><b>Uniksa</b> - Normalni użytkownicy systemu Unix.
-<li><b>Goście</b> - Użytkownicy Uniksa sklasyfikowani jako goście.
-<li><b>Anonimowi</b> - Wlogowani jako użytkownik <tt>anonymous</tt> lub
-		      <tt>ftp</tt>, jeżeli system na to pozwala.
+<li><b>Uniksa</b> - Normalni uÅ¼ytkownicy systemu Unix.
+<li><b>GoÅcie</b> - UÅ¼ytkownicy Uniksa sklasyfikowani jako goÅcie.
+<li><b>Anonimowi</b> - Wlogowani jako uÅ¼ytkownik <tt>anonymous</tt> lub
+		      <tt>ftp</tt>, jeÅ¼eli system na to pozwala.
 </ul>
 <p>
 
-Pierwsza sekcja strony umożliwia zdefiniowanie nazwanych klas w&nbsp;oparciu
-o&nbsp;typ użytkownika i&nbsp;jego adres IP. Każdy login będzie
-klasyfikowany do pierwszej pasującej klasy, zatem klasy powinny być
-definiowane poczynając od najbardziej specyficznych. Adresy mogą być podane
-w&nbsp;postaci pełnego lub częściowego adresu IP, kombibacji podsieć
-IP/maska, nazw komputerów (z&nbsp;rozwijanymi znakami * i&nbsp;?, jak na
-przykład<tt>*.foo.com</tt>), oraz absolutnych ścieżek do plików
-zawierających adresy. W&nbsp;celu zanegowania każdy adres może być
+Pierwsza sekcja strony umoÅ¼liwia zdefiniowanie nazwanych klas w&nbsp;oparciu
+o&nbsp;typ uÅ¼ytkownika i&nbsp;jego adres IP. KaÅ¼dy login bÄdzie
+klasyfikowany do pierwszej pasujÄcej klasy, zatem klasy powinny byÄ
+definiowane poczynajÄc od najbardziej specyficznych. Adresy mogÄ byÄ podane
+w&nbsp;postaci peÅnego lub czÄÅciowego adresu IP, kombibacji podsieÄ
+IP/maska, nazw komputerÃ³w (z&nbsp;rozwijanymi znakami * i&nbsp;?, jak na
+przykÅad<tt>*.foo.com</tt>), oraz absolutnych ÅcieÅ¼ek do plikÃ³w
+zawierajÄcych adresy. W&nbsp;celu zanegowania kaÅ¼dy adres moÅ¼e byÄ
 poprzedzony wykrzyknikiem !. 
 <p>
 
-Następna sekcja umożliwia określenie, którzy użytkownicy Uniksa mają być
-klasyfikowani jako goście. Gość ma prawa podobne jak zwykły użytkownik
+NastÄpna sekcja umoÅ¼liwia okreÅlenie, ktÃ³rzy uÅ¼ytkownicy Uniksa majÄ byÄ
+klasyfikowani jako goÅcie. GoÅÄ ma prawa podobne jak zwykÅy uÅ¼ytkownik
 Uniksa, ale poprzez zastosowanie <tt>chroot</tt> jest ograniczony do
-określonej kartoteki.
+okreÅlonej kartoteki.
 <p>
 
-Ostatnia sekcja umożliwia określenie, którzy użytkownicy Unixa i&nbsp;goście
-nie mogą korzystać z&nbsp;serwera FTP. Można wyspecyfikować użytkowników
-poprzez nazwę, GID (jak <tt>%3000</tt>) lub zakres GID (jak
+Ostatnia sekcja umoÅ¼liwia okreÅlenie, ktÃ³rzy uÅ¼ytkownicy Unixa i&nbsp;goÅcie
+nie mogÄ korzystaÄ z&nbsp;serwera FTP. MoÅ¼na wyspecyfikowaÄ uÅ¼ytkownikÃ³w
+poprzez nazwÄ, GID (jak <tt>%3000</tt>) lub zakres GID (jak
 <tt>%3000-3010</tt>). 
 <p>
 

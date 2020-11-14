@@ -1,252 +1,252 @@
 __norefs=1
-apply_err=B³±d stosowania konfiguracji
-apply_failed=Wykryto b³±d konfiguracji
-apply_problem=B³±d stosowania konfiguracji: $1
-backup_done=.. wykonano kopiê zapasow±.
-backup_ejob=.. nie mo¿na znale¼æ zadania!
-backup_eok=.. nie mo¿na uruchomiæ zadania
-backup_failed=.. kopia zapasowa nie zosta³a wykonana. Aby uzyskaæ wiêcej informacji zajrzyj do powy¿szego komunikatu b³êdu.
-backup_header=Szczegó³y zadania kopii zapasowej
-backup_jd=$1 (Zestaw plików $2 na $3)
+apply_err=BÅ‚Ä…d stosowania konfiguracji
+apply_failed=Wykryto bÅ‚Ä…d konfiguracji
+apply_problem=BÅ‚Ä…d stosowania konfiguracji: $1
+backup_done=.. wykonano kopiÄ™ zapasowÄ….
+backup_ejob=.. nie moÅ¼na znaleÅºÄ‡ zadania!
+backup_eok=.. nie moÅ¼na uruchomiÄ‡ zadania
+backup_failed=.. kopia zapasowa nie zostaÅ‚a wykonana. Aby uzyskaÄ‡ wiÄ™cej informacji zajrzyj do powyÅ¼szego komunikatu bÅ‚Ä™du.
+backup_header=SzczegÃ³Å‚y zadania kopii zapasowej
+backup_jd=$1 (Zestaw plikÃ³w $2 na $3)
 backup_job=Zadanie do uruchomienia
-backup_ok=Uruchom kopiê
+backup_ok=Uruchom kopiÄ™
 backup_return=kopia zapasowa z
 backup_run=Uruchamianie zadania kopii zapasowej $1 ..
-backup_running=.. zadnie kopii zapasowej jest uruchomione. Gdy zostanie zakoñczone, rezultaty zostan± wy¶wietlone poni¿ej ..
-backup_running2=.. zadanie kopii zapasowej zosta³o uruchomione w tle.
+backup_running=.. zadnie kopii zapasowej jest uruchomione. Gdy zostanie zakoÅ„czone, rezultaty zostanÄ… wyÅ›wietlone poniÅ¼ej ..
+backup_running2=.. zadanie kopii zapasowej zostaÅ‚o uruchomione w tle.
 backup_title=Uruchom zadanie kopii zapasowej
-backup_wait=Czekaæ na rezultaty?
+backup_wait=CzekaÄ‡ na rezultaty?
 cancel_enone=Nie wybrano
-cancel_err=B³±d anulowania zadañ
+cancel_err=BÅ‚Ä…d anulowania zadaÅ„
 check_ebacula=Nie znaleziono komendy kontroli $1 Bacula.
-check_eclient=Ten system jest <a href='$2'>klientem Bacula</a> a nie mened¿erem.
-check_econfigs=Nie znaleziono plików konfiguracyjnych Bacula w $1
+check_eclient=Ten system jest <a href='$2'>klientem Bacula</a> a nie menedÅ¼erem.
+check_econfigs=Nie znaleziono plikÃ³w konfiguracyjnych Bacula w $1
 check_econsole=Nie znaleziono komendy konsoli $1 Bacula.
 check_edir=Nie znaleziono katalogu konfiguracyjnego Bacula $1 w systemie.
-check_edirector=Nie znaleziono pliku konfiguracyjnego $1 mened¼era Bacula.
-check_engmod=Brak zainstalowanego modu³u grupy OpenCountry Bacula
+check_edirector=Nie znaleziono pliku konfiguracyjnego $1 menedÅºera Bacula.
+check_engmod=Brak zainstalowanego moduÅ‚u grupy OpenCountry Bacula
 check_eservers=Nie zdefiniowano grup serwera Webmina
 chooser_all=Wszystkie
-chooser_days=Dni miesi±ca
-chooser_daysh=Uruchom w dniu miesi±ca
-chooser_edays=Nie wybrano dni w miesi±cu
-chooser_edaysrange=Wybrane dni w miesi±cu musz± byæ okresem ci±g³ym
-chooser_ehour=Brakuj±ca lub nieprawid³owa godzina
-chooser_eminute=Brakuj±ca lub nieprawid³owa minuta
-chooser_emonths=Nie wybrano miesiêcy
-chooser_emonthsrange=Wybrane miesi±ce musz± byæ okresem ci±g³ym
-chooser_err=B³±d wybierania harmonogramu
+chooser_days=Dni miesiÄ…ca
+chooser_daysh=Uruchom w dniu miesiÄ…ca
+chooser_edays=Nie wybrano dni w miesiÄ…cu
+chooser_edaysrange=Wybrane dni w miesiÄ…cu muszÄ… byÄ‡ okresem ciÄ…gÅ‚ym
+chooser_ehour=BrakujÄ…ca lub nieprawidÅ‚owa godzina
+chooser_eminute=BrakujÄ…ca lub nieprawidÅ‚owa minuta
+chooser_emonths=Nie wybrano miesiÄ™cy
+chooser_emonthsrange=Wybrane miesiÄ…ce muszÄ… byÄ‡ okresem ciÄ…gÅ‚ym
+chooser_err=BÅ‚Ä…d wybierania harmonogramu
 chooser_eweekdaynums=Nie wybrano dni tygodnia
-chooser_eweekdaynumsrange=Wybrane dni tygodnia musz± byæ okresem ci±g³ym
+chooser_eweekdaynumsrange=Wybrane dni tygodnia muszÄ… byÄ‡ okresem ciÄ…gÅ‚ym
 chooser_eweekdays=Nie wybrano dni tygodnia
-chooser_eweekdaysrange=Wybrane dni tygodnia musz± byæ okresem ci±g³ym
-chooser_months=Miesi±ce
-chooser_monthsh=Uruchom w miesi±cu
+chooser_eweekdaysrange=Wybrane dni tygodnia muszÄ… byÄ‡ okresem ciÄ…gÅ‚ym
+chooser_months=MiesiÄ…ce
+chooser_monthsh=Uruchom w miesiÄ…cu
 chooser_ok=OK
 chooser_sel=Wybrane ..
 chooser_time=Godzina i minuta
 chooser_timeh=Uruchom o godzinie
 chooser_title=Wybierz harmonogram
-chooser_weekdaynums=Tygodnie w miesi±cu
+chooser_weekdaynums=Tygodnie w miesiÄ…cu
 chooser_weekdays=Dni tygodnia
 chooser_weekdaysh=Uruchom w dniu tygodnia
 client_address=Nazwa hosta lub adres IP
-client_catalog=Katalog do u¿ycia
-client_eaddress=B³êdna lub nieprawid³owa nazwa hosta lub adresu
-client_echild=Nie mo¿na usun±æ tego klienta, gdy jest u¿ywany przez $1
-client_eclash=Klient z tak± sam± nazw± ju¿ istnieje
-client_efileret=Brakuj±cy lub nieprawid³owy plik okresu przechowywania
+client_catalog=Katalog do uÅ¼ycia
+client_eaddress=BÅ‚Ä™dna lub nieprawidÅ‚owa nazwa hosta lub adresu
+client_echild=Nie moÅ¼na usunÄ…Ä‡ tego klienta, gdy jest uÅ¼ywany przez $1
+client_eclash=Klient z takÄ… samÄ… nazwÄ… juÅ¼ istnieje
+client_efileret=BrakujÄ…cy lub nieprawidÅ‚owy plik okresu przechowywania
 client_egone=Klient nie istnieje!
-client_ejobret=Brakuj±ce lub nieprawid³owe zadanie okresu przechowywania
-client_ename=B³êdna lub nieprawid³owa nazwa klienta
-client_epass=Brakuj±ce has³o
-client_eport=B³êdny lub nieprawid³owy port FD
-client_err=B³±d zapisywania klienta kopii zapasowej
+client_ejobret=BrakujÄ…ce lub nieprawidÅ‚owe zadanie okresu przechowywania
+client_ename=BÅ‚Ä™dna lub nieprawidÅ‚owa nazwa klienta
+client_epass=BrakujÄ…ce hasÅ‚o
+client_eport=BÅ‚Ä™dny lub nieprawidÅ‚owy port FD
+client_err=BÅ‚Ä…d zapisywania klienta kopii zapasowej
 client_fileret=Przechowuj pliki kopii zapasowej przez
-client_header=Szczegó³y klienta do skopiowania
+client_header=SzczegÃ³Å‚y klienta do skopiowania
 client_jobret=Przechowuj zadania kopii zapasowej przez
 client_name=Nazwa klienta FD
-client_pass=Has³o FD Bacula
+client_pass=HasÅ‚o FD Bacula
 client_port=Port FD Bacula
-client_prune=Usuwaæ wygas³e zadania i pliki?
-client_status=Poka¿ status
-client_title1=Utwórz klienta kopii zapasowej
+client_prune=UsuwaÄ‡ wygasÅ‚e zadania i pliki?
+client_status=PokaÅ¼ status
+client_title1=UtwÃ³rz klienta kopii zapasowej
 client_title2=Edytuj klienta kopii zapasowej
 clients_add=Dodaj nowego klienta kopii zapasowej
 clients_address=Nazwa hosta lub adres
 clients_catalog=Katalog
-clients_delete=Usuñ wybranych klientów
-clients_derr=B³±d usuwania klientów
+clients_delete=UsuÅ„ wybranych klientÃ³w
+clients_derr=BÅ‚Ä…d usuwania klientÃ³w
 clients_name=Nazwa klienta
-clients_none=Nie zdefiniowano jeszcze ¿adnego klienta kopii zapasowej.
-clients_return=listy klientów
+clients_none=Nie zdefiniowano jeszcze Å¼adnego klienta kopii zapasowej.
+clients_return=listy klientÃ³w
 clients_title=Klienci kopii zapasowej
-clientstatus_err=B³±d pobierania statusu z $1 : $2
+clientstatus_err=BÅ‚Ä…d pobierania statusu z $1 : $2
 clientstatus_msg=Stan z $1 : $2
 clientstatus_ok=OK
 clientstatus_on=$1 (na $2)
-clientstatus_show=Poka¿ stan klienta:
+clientstatus_show=PokaÅ¼ stan klienta:
 clientstatus_title=Stan klienta
-connect_elogin=B³±d logowania do bazy danych $1 : $2.
-connect_emysql=B³±d ³adowania sterownika bazy danych DBI $1
+connect_elogin=BÅ‚Ä…d logowania do bazy danych $1 : $2.
+connect_emysql=BÅ‚Ä…d Å‚adowania sterownika bazy danych DBI $1
 connect_equery=Baza danych $1 nie zawiera tabel Bacula.
-connect_equery2=Mo¿e siê tak dziaæ, poniewa¿ zainstalowany modu³ SQLite Perl jest za nowy i nie obs³uguje starszego formatu bazy danych SQLite u¿ywanego przez Bacula.
+connect_equery2=MoÅ¼e siÄ™ tak dziaÄ‡, poniewaÅ¼ zainstalowany moduÅ‚ SQLite Perl jest za nowy i nie obsÅ‚uguje starszego formatu bazy danych SQLite uÅ¼ywanego przez Bacula.
 connect_equery3=Baza danych $1 nie zawiera tabel grupy OC Bacula.
-device_always=Zawsze dostêpne?
-device_auto=Montowaæ automatycznie?
-device_device=Urz±dzenie archiwizuj±ce lub katalog
-device_echild=Nie mo¿na usun±æ tego klienta, gdy jest u¿ywany przez $1
-device_eclash=Urz±dzenie magazynuj±ce o takiej samej nazwie ju¿ istnieje
-device_edevice=Brakuj±ce lub nieprawid³owe urz±dzenie archiwizuj±ce lub katalog
-device_egone=Urz±dzenie magazynuj±ce nie istnieje!
-device_emedia=Brakuj±ca nazwa rodzaju no¶nika
-device_ename=Brakuj±ca nazwa urz±dzenia magazynuj±cego
-device_err=B³±d zapisywania urz±dzenia magazynuj±cego
-device_header=Szczegó³y pliku urz±dzenia magazynuj±cego
-device_label=Automatyczna etykieta no¶nika?
-device_media=Nazwa rodzaju no¶nika
-device_name=Nazwa urz±dzenia magazynuj±cego
-device_random=No¶nik dostêpu losowego?
-device_removable=No¶nik wymienny?
-device_title1=Utwórz urz±dzenie magazynuj±ce
-device_title2=Edytuj urz±dzenie magazynuj±ce
-devices_add=Dodaj nowe urz±dzenie magazynuj±ce
-devices_delete=Usuñ wybrane urz±dzenia magazynuj±ce
-devices_derr=B³±d usuwania urz±dzeñ magazynuj±cych
-devices_device=Plik urz±dzenia lub katalogu
-devices_name=Nazwa urz±dzenia
-devices_none=Nie zdefiniowano jeszcze urz±dzenia magazynuj±cego.
-devices_return=listy urz±dzeñ magazynuj±cych
-devices_title=Urz±dzenia magazynuj±ce
-devices_type=Rodzaj no¶nika
+device_always=Zawsze dostÄ™pne?
+device_auto=MontowaÄ‡ automatycznie?
+device_device=UrzÄ…dzenie archiwizujÄ…ce lub katalog
+device_echild=Nie moÅ¼na usunÄ…Ä‡ tego klienta, gdy jest uÅ¼ywany przez $1
+device_eclash=UrzÄ…dzenie magazynujÄ…ce o takiej samej nazwie juÅ¼ istnieje
+device_edevice=BrakujÄ…ce lub nieprawidÅ‚owe urzÄ…dzenie archiwizujÄ…ce lub katalog
+device_egone=UrzÄ…dzenie magazynujÄ…ce nie istnieje!
+device_emedia=BrakujÄ…ca nazwa rodzaju noÅ›nika
+device_ename=BrakujÄ…ca nazwa urzÄ…dzenia magazynujÄ…cego
+device_err=BÅ‚Ä…d zapisywania urzÄ…dzenia magazynujÄ…cego
+device_header=SzczegÃ³Å‚y pliku urzÄ…dzenia magazynujÄ…cego
+device_label=Automatyczna etykieta noÅ›nika?
+device_media=Nazwa rodzaju noÅ›nika
+device_name=Nazwa urzÄ…dzenia magazynujÄ…cego
+device_random=NoÅ›nik dostÄ™pu losowego?
+device_removable=NoÅ›nik wymienny?
+device_title1=UtwÃ³rz urzÄ…dzenie magazynujÄ…ce
+device_title2=Edytuj urzÄ…dzenie magazynujÄ…ce
+devices_add=Dodaj nowe urzÄ…dzenie magazynujÄ…ce
+devices_delete=UsuÅ„ wybrane urzÄ…dzenia magazynujÄ…ce
+devices_derr=BÅ‚Ä…d usuwania urzÄ…dzeÅ„ magazynujÄ…cych
+devices_device=Plik urzÄ…dzenia lub katalogu
+devices_name=Nazwa urzÄ…dzenia
+devices_none=Nie zdefiniowano jeszcze urzÄ…dzenia magazynujÄ…cego.
+devices_return=listy urzÄ…dzeÅ„ magazynujÄ…cych
+devices_title=UrzÄ…dzenia magazynujÄ…ce
+devices_type=Rodzaj noÅ›nika
 director_dir=Katalog roboczy Bacula
-director_edir=Brakuj±cy lub nie istniej±cy katalog roboczy
-director_ejobs=Brakuj±ca lub nieprawid³owa liczba jednoczesnych zadañ
-director_ename=Brakuj±ca lub nieprawid³owa nazwa mened¿era
-director_enone=Nie znaleziono konfiguracji mened¿era!
-director_eport=Brakuj±cy lub nieprawid³owy port
-director_err=B³±d zapisywania konfiguracji mened¿era
-director_header=Globalne opcje mened¿era Bacula
-director_jobs=Maksymalna liczba jednoczesnych zadañ
-director_messages=Wyj¶cie dla komunikatów
-director_name=Nazwa mened¿era
-director_port=Nas³uchuj na porcie
-director_title=Konfiguracja mened¿era
+director_edir=BrakujÄ…cy lub nie istniejÄ…cy katalog roboczy
+director_ejobs=BrakujÄ…ca lub nieprawidÅ‚owa liczba jednoczesnych zadaÅ„
+director_ename=BrakujÄ…ca lub nieprawidÅ‚owa nazwa menedÅ¼era
+director_enone=Nie znaleziono konfiguracji menedÅ¼era!
+director_eport=BrakujÄ…cy lub nieprawidÅ‚owy port
+director_err=BÅ‚Ä…d zapisywania konfiguracji menedÅ¼era
+director_header=Globalne opcje menedÅ¼era Bacula
+director_jobs=Maksymalna liczba jednoczesnych zadaÅ„
+director_messages=WyjÅ›cie dla komunikatÃ³w
+director_name=Nazwa menedÅ¼era
+director_port=NasÅ‚uchuj na porcie
+director_title=Konfiguracja menedÅ¼era
 dirstatus_bytes=Rozmiar
 dirstatus_cancel=Anuluj wybrane zadania
 dirstatus_date=Uruchomiono
-dirstatus_date2=Rozpoczêto
+dirstatus_date2=RozpoczÄ™to
 dirstatus_done=Wykonane zadania kopii zapasowej
-dirstatus_donenone=Nie uruchomiono zadañ kopii zapasowej.
+dirstatus_donenone=Nie uruchomiono zadaÅ„ kopii zapasowej.
 dirstatus_files=Pliki
 dirstatus_id=ID uruchomienia
 dirstatus_level=Poziom
 dirstatus_name=Nazwa zadania
-dirstatus_refresh=Od¶wie¿ listê
+dirstatus_refresh=OdÅ›wieÅ¼ listÄ™
 dirstatus_run=Uruchomione zadania kopii zapasowej
-dirstatus_runnone=Brak uruchomionych zadañ.
-dirstatus_sched=Harmonogram zadañ kopii zapasowej
-dirstatus_schednone=Brak zaplanowanych zadañ kopii zapasowej.
-dirstatus_status=Bie¿±cy stan
+dirstatus_runnone=Brak uruchomionych zadaÅ„.
+dirstatus_sched=Harmonogram zadaÅ„ kopii zapasowej
+dirstatus_schednone=Brak zaplanowanych zadaÅ„ kopii zapasowej.
+dirstatus_status=BieÅ¼Ä…cy stan
 dirstatus_status2=Stan
-dirstatus_title=Stan mened¿era
+dirstatus_title=Stan menedÅ¼era
 dirstatus_type=Typ
 dirstatus_volume=Wolumen
-dvolumes_ebacula=B³±d Bacula : $1
+dvolumes_ebacula=BÅ‚Ä…d Bacula : $1
 dvolumes_enone=Nie wybrano
-dvolumes_err=B³±d usuwania wolumenów
-esql=B³±d SQL : $1
-fdirector_eclash=Mened¿er o takiej samej nazwie ju¿ istnieje
-fdirector_egone=Mened¿er nie istnieje!
-fdirector_ename=Brakuj±ca nazwa zarz±dcy
-fdirector_epass=Brakuj±ce has³o
-fdirector_err=B³±d zapisywania us³ugi mened¿era
-fdirector_header=Szczegó³y kontrolowania zdalnego mened¿era
-fdirector_monitor=Zezwoliæ tylko na monitorowane po³±czenie?
-fdirector_name=Nazwa mened¿era
-fdirector_pass=Has³o zaakceptowane
-fdirector_title1=Utwórz mened¿era us³ugi pliku
-fdirector_title2=Edytuj mened¿era us³ugi pliku
-fdirectors_add=Dodaj nowego mened¿era.
-fdirectors_delete=Usuñ wybrane katalogi
-fdirectors_derr=B³±d usuwania katalogów
-fdirectors_name=Nazwa mened¿era
-fdirectors_none=Nie zdefiniowano ¿adnych mened¿erów.
-fdirectors_pass=Has³o zaakceptowano
-fdirectors_return=listy mened¿erów
-fdirectors_title=Mened¿erowie us³ugi pliku
+dvolumes_err=BÅ‚Ä…d usuwania wolumenÃ³w
+esql=BÅ‚Ä…d SQL : $1
+fdirector_eclash=MenedÅ¼er o takiej samej nazwie juÅ¼ istnieje
+fdirector_egone=MenedÅ¼er nie istnieje!
+fdirector_ename=BrakujÄ…ca nazwa zarzÄ…dcy
+fdirector_epass=BrakujÄ…ce hasÅ‚o
+fdirector_err=BÅ‚Ä…d zapisywania usÅ‚ugi menedÅ¼era
+fdirector_header=SzczegÃ³Å‚y kontrolowania zdalnego menedÅ¼era
+fdirector_monitor=ZezwoliÄ‡ tylko na monitorowane poÅ‚Ä…czenie?
+fdirector_name=Nazwa menedÅ¼era
+fdirector_pass=HasÅ‚o zaakceptowane
+fdirector_title1=UtwÃ³rz menedÅ¼era usÅ‚ugi pliku
+fdirector_title2=Edytuj menedÅ¼era usÅ‚ugi pliku
+fdirectors_add=Dodaj nowego menedÅ¼era.
+fdirectors_delete=UsuÅ„ wybrane katalogi
+fdirectors_derr=BÅ‚Ä…d usuwania katalogÃ³w
+fdirectors_name=Nazwa menedÅ¼era
+fdirectors_none=Nie zdefiniowano Å¼adnych menedÅ¼erÃ³w.
+fdirectors_pass=HasÅ‚o zaakceptowano
+fdirectors_return=listy menedÅ¼erÃ³w
+fdirectors_title=MenedÅ¼erowie usÅ‚ugi pliku
 file_dir=Katalog roboczy Bacula
-file_edir=Brakuj±cy lub nie istniej±cy katalog roboczy
-file_ejobs=Brakuj±ca lub nieprawid³owa liczba jednoczesnych zadañ
-file_ename=Brakuj±ca lub nieprawid³owa nazwa us³ugi pliku
-file_enone=Nie znaleziono konfiguracji us³ugi pliku!
-file_eport=Brakuj±cy lub nieprawid³owy numer portu
-file_err=B³±d zapisywania konfiguracji us³ugi pliku
-file_header=Opcje us³ugi pliku Bacula
-file_jobs=Maksymalna liczba jednoczesnych zadañ
-file_name=Nazwa us³ugi pliku
-file_port=Nas³uchuj na porcie
-file_title=Konfiguracja us³ugi pliku
+file_edir=BrakujÄ…cy lub nie istniejÄ…cy katalog roboczy
+file_ejobs=BrakujÄ…ca lub nieprawidÅ‚owa liczba jednoczesnych zadaÅ„
+file_ename=BrakujÄ…ca lub nieprawidÅ‚owa nazwa usÅ‚ugi pliku
+file_enone=Nie znaleziono konfiguracji usÅ‚ugi pliku!
+file_eport=BrakujÄ…cy lub nieprawidÅ‚owy numer portu
+file_err=BÅ‚Ä…d zapisywania konfiguracji usÅ‚ugi pliku
+file_header=Opcje usÅ‚ugi pliku Bacula
+file_jobs=Maksymalna liczba jednoczesnych zadaÅ„
+file_name=Nazwa usÅ‚ugi pliku
+file_port=NasÅ‚uchuj na porcie
+file_title=Konfiguracja usÅ‚ugi pliku
 fileset_comp=typ kompresji
-fileset_echild=Nie mo¿na usun±æ tego zestawu plików, poniewa¿ jest u¿ywany przez $1
-fileset_eclash=Zestaw plików o takiej nazwie ju¿ istnieje
-fileset_egone=Zestaw plików nie istnieje!
-fileset_ename=Brakuj±ca nazwa zestawu plików
-fileset_err=B³±d zapisywania zestawu plików
-fileset_exclude=Pliki i katalogi do pominiêcia
+fileset_echild=Nie moÅ¼na usunÄ…Ä‡ tego zestawu plikÃ³w, poniewaÅ¼ jest uÅ¼ywany przez $1
+fileset_eclash=Zestaw plikÃ³w o takiej nazwie juÅ¼ istnieje
+fileset_egone=Zestaw plikÃ³w nie istnieje!
+fileset_ename=BrakujÄ…ca nazwa zestawu plikÃ³w
+fileset_err=BÅ‚Ä…d zapisywania zestawu plikÃ³w
+fileset_exclude=Pliki i katalogi do pominiÄ™cia
 fileset_gzip=Poziom Gzip $1
-fileset_gzipdef=&lt;Domy¶lny poziom kompresji&gt;
-fileset_header=Szczegó³y zestawu plików kopii zapasowej
+fileset_gzipdef=&lt;DomyÅ›lny poziom kompresji&gt;
+fileset_header=SzczegÃ³Å‚y zestawu plikÃ³w kopii zapasowej
 fileset_include=Pliki i katalogi do skopiowania
 fileset_lzo=Kompresja LZO
 fileset_md5=MD5
-fileset_name=Nazwa zestawu plików
+fileset_name=Nazwa zestawu plikÃ³w
 fileset_none=Brak
-fileset_onefs=Ograniczenie do jednej kopii zapasowej systemu plików?
+fileset_onefs=Ograniczenie do jednej kopii zapasowej systemu plikÃ³w?
 fileset_sig=Typ sygnatury pliku
-fileset_title1=Utwórz zestaw plików
-fileset_title2=Edycja zestawu plików
-filesets_add=Dodaj nowy zestaw plików
-filesets_delete=Usuñ wybrany zestaw plików
-filesets_derr=B³±d usuwania zestawu plików
+fileset_title1=UtwÃ³rz zestaw plikÃ³w
+fileset_title2=Edycja zestawu plikÃ³w
+filesets_add=Dodaj nowy zestaw plikÃ³w
+filesets_delete=UsuÅ„ wybrany zestaw plikÃ³w
+filesets_derr=BÅ‚Ä…d usuwania zestawu plikÃ³w
 filesets_ednone=Nie wybrano
 filesets_files=Zawiera pliki
-filesets_name=Nazwa zestawu plików
-filesets_none=Nie zdefiniowano jeszcze ¿adnego zestawu plików.
-filesets_return=listy zestawów plików
-filesets_title=Zestawy plików
-gbackup_header=Szczegó³y zadania kopii zapasowej grupy Bacula
-gbackup_jd=$1 (Zestaw plików $2 w grupie $3)
+filesets_name=Nazwa zestawu plikÃ³w
+filesets_none=Nie zdefiniowano jeszcze Å¼adnego zestawu plikÃ³w.
+filesets_return=listy zestawÃ³w plikÃ³w
+filesets_title=Zestawy plikÃ³w
+gbackup_header=SzczegÃ³Å‚y zadania kopii zapasowej grupy Bacula
+gbackup_jd=$1 (Zestaw plikÃ³w $2 w grupie $3)
 gbackup_on=Uruchamianie zadania kopii zapasowej na kliencie $1:
 gbackup_run=Uruchamianie zadania kopii zapasowej $1 na $2 klientach ..
 gbackup_title=Uruchom zadanie kopii zapasowej grupy Bacula
 gjob_client=Grupa Bacula do skopiowania
-gjob_header=Szczegó³y zadania kopii zapasowej grupy Bacula
-gjob_title1=Utwórz zadanie kopii zapasowej grupy Bacula
+gjob_header=SzczegÃ³Å‚y zadania kopii zapasowej grupy Bacula
+gjob_title1=UtwÃ³rz zadanie kopii zapasowej grupy Bacula
 gjob_title2=Edycja zadania kopii zapasowej grupy Bacula
 gjobs_add=Dodaj nowe zadanie kopii zapasowej grupy Bacula.
 gjobs_client=Grupa Bacula do skopiowania
-gjobs_delete=Usuñ wybrane zadania
-gjobs_derr=B³±d usuwania zadañ grupy Bacula
-gjobs_none=Nie zdefiniowano zadañ kopii zapasowej grupy Bacula.
-gjobs_return=listy zadañ grupy Bacula
+gjobs_delete=UsuÅ„ wybrane zadania
+gjobs_derr=BÅ‚Ä…d usuwania zadaÅ„ grupy Bacula
+gjobs_none=Nie zdefiniowano zadaÅ„ kopii zapasowej grupy Bacula.
+gjobs_return=listy zadaÅ„ grupy Bacula
 gjobs_title=Zadania kopii zapasowej grupy Bacula
-group_eclash=Grupa o takiej samej nazwie ju¿ istnieje
+group_eclash=Grupa o takiej samej nazwie juÅ¼ istnieje
 group_egone=Grupa nie istnieje!
 group_egone2=Grupa Bacula nie istnieje!
-group_err=B³±d zapisywania grupy Bacula
-group_header=Szczegó³y grupy Bacula do skopiowania
+group_err=BÅ‚Ä…d zapisywania grupy Bacula
+group_header=SzczegÃ³Å‚y grupy Bacula do skopiowania
 group_members=Hosty w grupie Bacula
 group_name=Nazwa grupy Bacula
 group_port=Port FD Bacula
-group_title1=Utwórz grupê Bacula
-group_title2=Edytuj grupê Bacula
-groups_add=Dodaj grupê Bacula:
-groups_already=Wszystkie grupy Bacula zosta³y dodane.
+group_title1=UtwÃ³rz grupÄ™ Bacula
+group_title2=Edytuj grupÄ™ Bacula
+groups_add=Dodaj grupÄ™ Bacula:
+groups_already=Wszystkie grupy Bacula zostaÅ‚y dodane.
 groups_catalog=Katalog
-groups_delete=Usuñ wybrane grupy Bacula
-groups_derr=B³±d usuwania grup
-groups_info=$1 ($2 cz³onków)
+groups_delete=UsuÅ„ wybrane grupy Bacula
+groups_derr=BÅ‚Ä…d usuwania grup
+groups_info=$1 ($2 czÅ‚onkÃ³w)
 groups_name=Nazwa grupy
 groups_noadd=Brak grup Bacula do skopiowania.
 groups_none=Nie wybrano grup Bacula do skopiowania.
@@ -255,34 +255,34 @@ groups_port=Port FD
 groups_return=listy grup
 groups_title=Grupy Bacula
 index_actions=Akcje kopii zapasowej i przywracania
-index_apply=Zastosuj konfiguracjê
-index_applydesc=Kliknij ten przycisk, aby aktywowaæ powy¿sz± konfiguracjê mened¿era Bacula.
+index_apply=Zastosuj konfiguracjÄ™
+index_applydesc=Kliknij ten przycisk, aby aktywowaÄ‡ powyÅ¼szÄ… konfiguracjÄ™ menedÅ¼era Bacula.
 index_boot=Uruchom przy starcie systemu
-index_bootdesc=Opcja ta umo¿liwia ustawienie czy Bacula ma byæ uruchamiana razem z systemem czy nie.
-index_dir=Konfiguracja Mened¿era
-index_down=Wy³±czona
-index_echeck=$1 mo¿e byæ nie zainstalowany lub <a href='$2'>konfiguracja modu³u</a> jest nieprawid³owa.
-index_econsole=Komenda konsoli Bacula $1 nie mo¿e po³±czyæ siê z mened¿erem Bacula. Upewnij siê, ¿e has³o w $2 jest poprawne.
-index_econsole2=Komenda konsoli Bacula $1 nie jest skonfigurowana za pomoc± poprawnego hosta mened¿era Bacula. Bie¿±co u¿ywana jest $1, która nie istnieje.
-index_edb=B³±d po³±czenia z baz± danych Bacula: $1 Mo¿liwe, ¿e baza danych nie jest ustawiona lub <a href='$2'>konfiguracja modu³u</a> jest nieprawid³owa.
-index_eng=B³±d po³±czenia z baz± danych Bacula: $1 Mo¿liwe, ¿e baza danych nie istnieje lub <a href='$2'>konfiguracja modu³u</a> jest nieprawid³owa.
-index_eversion=Twój system u¿ywa Bacula w wersji $2, a ta wersja modu³u Webmina obs³uguje wersje $1 i nowsze.
-index_fd=Konfiguracja us³ugi pliku
-index_fixaddr=Kliknij tutaj, aby naprawiæ hosta mened¿era Bacula
-index_fixpass=Kliknij tutaj, aby naprawiæ has³o konsoli
+index_bootdesc=Opcja ta umoÅ¼liwia ustawienie czy Bacula ma byÄ‡ uruchamiana razem z systemem czy nie.
+index_dir=Konfiguracja MenedÅ¼era
+index_down=WyÅ‚Ä…czona
+index_echeck=$1 moÅ¼e byÄ‡ nie zainstalowany lub <a href='$2'>konfiguracja moduÅ‚u</a> jest nieprawidÅ‚owa.
+index_econsole=Komenda konsoli Bacula $1 nie moÅ¼e poÅ‚Ä…czyÄ‡ siÄ™ z menedÅ¼erem Bacula. Upewnij siÄ™, Å¼e hasÅ‚o w $2 jest poprawne.
+index_econsole2=Komenda konsoli Bacula $1 nie jest skonfigurowana za pomocÄ… poprawnego hosta menedÅ¼era Bacula. BieÅ¼Ä…co uÅ¼ywana jest $1, ktÃ³ra nie istnieje.
+index_edb=BÅ‚Ä…d poÅ‚Ä…czenia z bazÄ… danych Bacula: $1 MoÅ¼liwe, Å¼e baza danych nie jest ustawiona lub <a href='$2'>konfiguracja moduÅ‚u</a> jest nieprawidÅ‚owa.
+index_eng=BÅ‚Ä…d poÅ‚Ä…czenia z bazÄ… danych Bacula: $1 MoÅ¼liwe, Å¼e baza danych nie istnieje lub <a href='$2'>konfiguracja moduÅ‚u</a> jest nieprawidÅ‚owa.
+index_eversion=TwÃ³j system uÅ¼ywa Bacula w wersji $2, a ta wersja moduÅ‚u Webmina obsÅ‚uguje wersje $1 i nowsze.
+index_fd=Konfiguracja usÅ‚ugi pliku
+index_fixaddr=Kliknij tutaj, aby naprawiÄ‡ hosta menedÅ¼era Bacula
+index_fixpass=Kliknij tutaj, aby naprawiÄ‡ hasÅ‚o konsoli
 index_groups=Konfiguracja grupy Bacula
-index_notrun=Nie mo¿na wykonywaæ operacji kopii zapasowej je¶li us³uga Mened¿era Bacula jest wy³±czona.
+index_notrun=Nie moÅ¼na wykonywaÄ‡ operacji kopii zapasowej jeÅ›li usÅ‚uga MenedÅ¼era Bacula jest wyÅ‚Ä…czona.
 index_ocmin=Dostarczony przez <a href=$2 target=_new>Linmin <img align=middle border=0 src='$1'></a>
 index_restart=Zrestartuj Bacula
-index_restartdesc=Kliknij ten przycisk, aby zatrzymaæ i zrestartowaæ us³ugê Bacula. Mo¿e byæ to potrzebne do aktywacji konfiguracji urz±dzenia magazynuj±cego.
-index_return=indeksu modu³u
-index_sd=Konfiguracja us³ugi magazynu
+index_restartdesc=Kliknij ten przycisk, aby zatrzymaÄ‡ i zrestartowaÄ‡ usÅ‚ugÄ™ Bacula. MoÅ¼e byÄ‡ to potrzebne do aktywacji konfiguracji urzÄ…dzenia magazynujÄ…cego.
+index_return=indeksu moduÅ‚u
+index_sd=Konfiguracja usÅ‚ugi magazynu
 index_start=Uruchom Bacula
-index_startdesc=Kliknij ten przycisk, aby uruchomiæ us³ugê Bacula.
-index_status=Status procesów:
+index_startdesc=Kliknij ten przycisk, aby uruchomiÄ‡ usÅ‚ugÄ™ Bacula.
+index_status=Status procesÃ³w:
 index_stop=Zatrzymaj Bacula
-index_stopdesc=Kliknij ten przycisk, aby zamkn±æ us³ugê Bacula.
-index_up=W³±czona
+index_stopdesc=Kliknij ten przycisk, aby zamknÄ…Ä‡ usÅ‚ugÄ™ Bacula.
+index_up=WÅ‚Ä…czona
 index_versionbacula=Bacula $1
 index_versionbareos=Bareos $1
 job_after=Komenda po wykonaniu zadania
@@ -290,330 +290,330 @@ job_before=Komenda przed wykonaniem zadania
 job_cafter=Komenda po wykonaniu zadania (na kliencie)
 job_cbefore=Komenda przed wykonaniem zadania (na kliencie)
 job_client=Klient do skopiowania
-job_def=Domy¶lny rodzaj
-job_def0=Definicja domy¶lna
+job_def=DomyÅ›lny rodzaj
+job_def0=Definicja domyÅ›lna
 job_def1=Zadanie standardowe
 job_def2=Odziedziczony z $1
-job_echild=Nie mo¿na usun±æ domy¶lnej definicji zadania, gdy jest u¿ywane przez $1
-job_eclash=Zadnie o takiej samej nazwie ju¿ istnieje
-job_enabled=W³±czyæ zadanie kopii zapasowej?
-job_ename=Brakuj±ca lub nieprawid³owa nazwa zadania
-job_epriority=Brakuj±cy lub nieprawid³owy numer priorytetu
-job_err=B³±d zapisywania zadania
-job_fileset=Zestaw plików do skopiowania
-job_header=Szczegó³y zadania kopii zapasowej
+job_echild=Nie moÅ¼na usunÄ…Ä‡ domyÅ›lnej definicji zadania, gdy jest uÅ¼ywane przez $1
+job_eclash=Zadnie o takiej samej nazwie juÅ¼ istnieje
+job_enabled=WÅ‚Ä…czyÄ‡ zadanie kopii zapasowej?
+job_ename=BrakujÄ…ca lub nieprawidÅ‚owa nazwa zadania
+job_epriority=BrakujÄ…cy lub nieprawidÅ‚owy numer priorytetu
+job_err=BÅ‚Ä…d zapisywania zadania
+job_fileset=Zestaw plikÃ³w do skopiowania
+job_header=SzczegÃ³Å‚y zadania kopii zapasowej
 job_level=Rodzaj kopii zapasowej
-job_messages=Przekazywanie komunikatów
+job_messages=Przekazywanie komunikatÃ³w
 job_name=Nazwa zadania
-job_pool=Pula wolumenów
+job_pool=Pula wolumenÃ³w
 job_prority=Priorytet kopii
 job_run=Uruchom teraz
 job_schedule=Harmonogram kopii
-job_storage=Urz±dzenie magazynuj±ce
-job_title1=Utwórz zadanie kopii zapasowej
+job_storage=UrzÄ…dzenie magazynujÄ…ce
+job_title1=UtwÃ³rz zadanie kopii zapasowej
 job_title2=Edytuj zadanie kopii zapasowej
 job_type=Rodzaj zadania
 jobs_add=Dodaj nowe zadanie kopii zapasowej
 jobs_client=Klient do skopiowania
-jobs_deftype=Domy¶lne?
-jobs_delete=Usuñ wybrane zadania
-jobs_derr=B³±d usuwania zadañ
-jobs_fileset=Zestaw plików do skopiowania
+jobs_deftype=DomyÅ›lne?
+jobs_delete=UsuÅ„ wybrane zadania
+jobs_derr=BÅ‚Ä…d usuwania zadaÅ„
+jobs_fileset=Zestaw plikÃ³w do skopiowania
 jobs_name=Nazwa zadania
-jobs_none=Nie zdefiniowano jeszcze ¿adnego zadania.
-jobs_return=listy zadañ
+jobs_none=Nie zdefiniowano jeszcze Å¼adnego zadania.
+jobs_return=listy zadaÅ„
 jobs_schedule=Harmonogram kopii zapasowej
 jobs_title=Zadania kopii zapasowej
 jobs_type=Rodzaj zadania
-label_done=.. poprawnie nadano etykietê.
-label_eexists=.. podana etykieta ju¿ istnieje.
-label_efailed=.. b³±d nadawania etykiety! Aby dowiedzieæ siê, dlaczego tak siê sta³o zajrzyj do komunikatu b³êdu.
+label_done=.. poprawnie nadano etykietÄ™.
+label_eexists=.. podana etykieta juÅ¼ istnieje.
+label_efailed=.. bÅ‚Ä…d nadawania etykiety! Aby dowiedzieÄ‡ siÄ™, dlaczego tak siÄ™ staÅ‚o zajrzyj do komunikatu bÅ‚Ä™du.
 label_elabel=Nie podano etykiety
-label_epool=.. nie mo¿na znale¼æ puli!
-label_err=B³±d nadawania etykiety
-label_estorage=.. nie znaleziono us³ugi magazynu!
-label_header=Szczegó³y wolumenu, któremu nadaæ etykietê
+label_epool=.. nie moÅ¼na znaleÅºÄ‡ puli!
+label_err=BÅ‚Ä…d nadawania etykiety
+label_estorage=.. nie znaleziono usÅ‚ugi magazynu!
+label_header=SzczegÃ³Å‚y wolumenu, ktÃ³remu nadaÄ‡ etykietÄ™
 label_label=Nazwa nowej etykiety
-label_ok=Nadaj etykietê
-label_pool=Utwórz w puli
+label_ok=Nadaj etykietÄ™
+label_pool=UtwÃ³rz w puli
 label_return=formularza etykiety
-label_run=Nadawanie etykiety wolumenowi $2 w us³udze magazynu $1 ..
-label_storage=Us³uga magazynu, której nadaæ etykietê
+label_run=Nadawanie etykiety wolumenowi $2 w usÅ‚udze magazynu $1 ..
+label_storage=UsÅ‚uga magazynu, ktÃ³rej nadaÄ‡ etykietÄ™
 label_title=Etykieta wolumenu
 log_apply=Zastosowana konfiguracja
 log_backup=Uruchomiono zadanie $1
 log_create_client=Utworzono klienta kopii zapasowej $1
-log_create_device=Utworzono urz±dzenie magazynuj±ce $1
-log_create_fdirector=Utworzono mened¿era us³ugi plikowej $1
-log_create_fileset=Utworzono zestaw plików $1
+log_create_device=Utworzono urzÄ…dzenie magazynujÄ…ce $1
+log_create_fdirector=Utworzono menedÅ¼era usÅ‚ugi plikowej $1
+log_create_fileset=Utworzono zestaw plikÃ³w $1
 log_create_gjob=Utworzono zadanie kopii zapasowej grupy Bacula $1
-log_create_group=Utworzono grupê Bacula $1
+log_create_group=Utworzono grupÄ™ Bacula $1
 log_create_job=Utworzono zadanie kopii zapasowej $1
-log_create_pool=Utworzono pulê wolumenów $1
+log_create_pool=Utworzono pulÄ™ wolumenÃ³w $1
 log_create_schedule=Utworzono harmonogram $1
-log_create_sdirector=Utworzono mened¿era us³ugi magazynu $1
-log_create_storage=Utworzono us³ugê magazynu $1
-log_delete_client=Usuniêto klienta kopii zapasowej $1
-log_delete_clients=Usuniêto $1 klientów kopii zapasowej
-log_delete_device=Usuniêto urz±dzenie magazynuj±ce $1
-log_delete_devices=Usuniêto $1 urz±dzeñ magazynuj±cych
-log_delete_fdirector=Usuniêto mened¿era us³ugi pliku $1
-log_delete_fdirectors=Usuniêto $1 mened¿era us³ugi pliku
-log_delete_fileset=Usuniêto zestaw plików $1
-log_delete_filesets=Usuniêto $1 zestawów plików
-log_delete_gjob=Usuniêto zadanie kopii zapasowej grupy Bacula $1
-log_delete_gjobs=Usuniêto $1 zadañ kopii zapasowej grupy Bacula
-log_delete_group=Usuniêto grupê Bacula $1
-log_delete_groups=Usuniêto $1 grup Bacula
-log_delete_job=Usuniêto zadanie kopii zapasowej $1
-log_delete_jobs=Usuniêto zadania kopii zapasowej $1
-log_delete_pool=Usuniêto pulê wolumenów $1
-log_delete_pools=Usuniêto $1 pul wolumenów
-log_delete_schedule=Usuniêto harmonogram kopii zapasowej $1
-log_delete_schedules=Usuniêto $1 harmonogramów kopii zapasowych
-log_delete_sdirector=Usuniêto mened¿era us³ugi magazynu $1
-log_delete_sdirectors=Usuniêto $1 mened¿erów us³ugi magazynu
-log_delete_storage=Usuniêto us³ugê magazynu $1
-log_delete_storages=Usuniêto $1 us³ug magazynu
-log_director=Zapisano globaln± konfiguracjê mened¿era Bacula
-log_file=Zapisano konfiguracjê us³ugi pliku
-log_fixpass=Naprawiono has³o programu konsoli Bacula
+log_create_sdirector=Utworzono menedÅ¼era usÅ‚ugi magazynu $1
+log_create_storage=Utworzono usÅ‚ugÄ™ magazynu $1
+log_delete_client=UsuniÄ™to klienta kopii zapasowej $1
+log_delete_clients=UsuniÄ™to $1 klientÃ³w kopii zapasowej
+log_delete_device=UsuniÄ™to urzÄ…dzenie magazynujÄ…ce $1
+log_delete_devices=UsuniÄ™to $1 urzÄ…dzeÅ„ magazynujÄ…cych
+log_delete_fdirector=UsuniÄ™to menedÅ¼era usÅ‚ugi pliku $1
+log_delete_fdirectors=UsuniÄ™to $1 menedÅ¼era usÅ‚ugi pliku
+log_delete_fileset=UsuniÄ™to zestaw plikÃ³w $1
+log_delete_filesets=UsuniÄ™to $1 zestawÃ³w plikÃ³w
+log_delete_gjob=UsuniÄ™to zadanie kopii zapasowej grupy Bacula $1
+log_delete_gjobs=UsuniÄ™to $1 zadaÅ„ kopii zapasowej grupy Bacula
+log_delete_group=UsuniÄ™to grupÄ™ Bacula $1
+log_delete_groups=UsuniÄ™to $1 grup Bacula
+log_delete_job=UsuniÄ™to zadanie kopii zapasowej $1
+log_delete_jobs=UsuniÄ™to zadania kopii zapasowej $1
+log_delete_pool=UsuniÄ™to pulÄ™ wolumenÃ³w $1
+log_delete_pools=UsuniÄ™to $1 pul wolumenÃ³w
+log_delete_schedule=UsuniÄ™to harmonogram kopii zapasowej $1
+log_delete_schedules=UsuniÄ™to $1 harmonogramÃ³w kopii zapasowych
+log_delete_sdirector=UsuniÄ™to menedÅ¼era usÅ‚ugi magazynu $1
+log_delete_sdirectors=UsuniÄ™to $1 menedÅ¼erÃ³w usÅ‚ugi magazynu
+log_delete_storage=UsuniÄ™to usÅ‚ugÄ™ magazynu $1
+log_delete_storages=UsuniÄ™to $1 usÅ‚ug magazynu
+log_director=Zapisano globalnÄ… konfiguracjÄ™ menedÅ¼era Bacula
+log_file=Zapisano konfiguracjÄ™ usÅ‚ugi pliku
+log_fixpass=Naprawiono hasÅ‚o programu konsoli Bacula
 log_gbackup=Uruchomiono zadanie kopii zapasowej Bacula $1
-log_label=Nadano etykietê us³udze magazynu $1
+log_label=Nadano etykietÄ™ usÅ‚udze magazynu $1
 log_modify_client=Zmodyfikowano klienta kopii zapasowej $1
-log_modify_device=Zmodyfikowano urz±dzenie magazynuj±ce $1
-log_modify_fdirector=Zmodyfikowano mened¿era us³ugi pliku $1
-log_modify_fileset=Zmodyfikowano zestaw plików $1
+log_modify_device=Zmodyfikowano urzÄ…dzenie magazynujÄ…ce $1
+log_modify_fdirector=Zmodyfikowano menedÅ¼era usÅ‚ugi pliku $1
+log_modify_fileset=Zmodyfikowano zestaw plikÃ³w $1
 log_modify_gjob=Zmodyfikowano zadnie kopii zapasowej grupy Bacula $1
-log_modify_group=Zmodyfikowano grupê Bacula $1
+log_modify_group=Zmodyfikowano grupÄ™ Bacula $1
 log_modify_job=Zmodyfikowano zadnie kopii zapasowej $1
-log_modify_pool=Zmodyfikowano pulê wolumenów $1
+log_modify_pool=Zmodyfikowano pulÄ™ wolumenÃ³w $1
 log_modify_schedule=Zmodyfikowano harmonogram kopii zapasowej $1
-log_modify_sdirector=Zmodyfikowano mened¿era us³ugi magazynu $1
-log_modify_storage=Zmodyfikowano us³ugê magazynu $1
-log_mount=Zamontowano urz±dzenie magazynuj±ce $1
-log_restart=Zrestartowano us³ugi Bacula
+log_modify_sdirector=Zmodyfikowano menedÅ¼era usÅ‚ugi magazynu $1
+log_modify_storage=Zmodyfikowano usÅ‚ugÄ™ magazynu $1
+log_mount=Zamontowano urzÄ…dzenie magazynujÄ…ce $1
+log_restart=Zrestartowano usÅ‚ugi Bacula
 log_start=Uruchomiono demony Bacula
-log_stop=Zatrzymano us³ugi Bacula
-log_storagec=Zapisano konfiguracjê us³ugi magazynu
-log_sync=Zapisano synchronizacjê grupy Bacula
-log_unmount=Odmontowane urz±dzenie magazynuj±ce $1
+log_stop=Zatrzymano usÅ‚ugi Bacula
+log_storagec=Zapisano konfiguracjÄ™ usÅ‚ugi magazynu
+log_sync=Zapisano synchronizacjÄ™ grupy Bacula
+log_unmount=Odmontowane urzÄ…dzenie magazynujÄ…ce $1
 mount_done=.. zamontowano poprawnie.
-mount_err=B³±d montowania urz±dzenia magazynuj±cego
-mount_eslot=Brakuj±cy lub nieprawid³owy numer slotu
-mount_failed=.. b³±d montowania. Aby dowiedzieæ siê, dlaczego tak siê sta³o zajrzyj do komunikatu b³êdu.
+mount_err=BÅ‚Ä…d montowania urzÄ…dzenia magazynujÄ…cego
+mount_eslot=BrakujÄ…cy lub nieprawidÅ‚owy numer slotu
+mount_failed=.. bÅ‚Ä…d montowania. Aby dowiedzieÄ‡ siÄ™, dlaczego tak siÄ™ staÅ‚o zajrzyj do komunikatu bÅ‚Ä™du.
 mount_header=Opcje montowania lub odmontowywania magazynu
 mount_mount=Zamontuj magazyn
 mount_noslot=Brak
 mount_return=formularza montowania
-mount_run=Montowanie wolumenu na urz±dzeniu magazynuj±cym $1 ..
-mount_slot=Slot automatycznego ³adowania
+mount_run=Montowanie wolumenu na urzÄ…dzeniu magazynujÄ…cym $1 ..
+mount_slot=Slot automatycznego Å‚adowania
 mount_slotno=Numer slotu
-mount_storage=Urz±dzenie magazynuj±ce
+mount_storage=UrzÄ…dzenie magazynujÄ…ce
 mount_title=Zamontuj lub odmontuj
 mount_unmount=Odmontuj magazyn
-pool_any=Wykonaæ kopiê na ka¿dy wolumen w puli?
-pool_auto=Oczy¶ciæ wolumeny, którym min±³ okres wa¿no¶ci?
+pool_any=WykonaÄ‡ kopiÄ™ na kaÅ¼dy wolumen w puli?
+pool_auto=OczyÅ›ciÄ‡ wolumeny, ktÃ³rym minÄ…Å‚ okres waÅ¼noÅ›ci?
 pool_autolabel=Prefix automatycznej etykiety wolumenu
-pool_echild=Nie mo¿na usun±æ klienta, kiedy jest u¿ywany przez $1
-pool_eclash=Nazwa urz±dzenia magazynuj±cego o tej samej nazwie ju¿ istnieje
-pool_egone=Pula wolumenów nie istnieje!
-pool_emax=Brakuj±ca lub nieprawid³owa liczba zadañ na wolumen
-pool_ename=Brakuj±ca nazwa urz±dzenia magazynuj±cego
-pool_ereten=Brakuj±cy lub nieprawid³owy okres przechowywania
-pool_err=B³±d zapisywania urz±dzenia magazynuj±cego
-pool_header=Szczegó³y puli wolumenów kopii zapasowej
-pool_max=Maksymalna liczba zadañ na wolumen
-pool_maxvolsize=Maksymalny rozmiar wolumenu (np. 5G dla 5 gigabajtów)
-pool_name=Nazwa puli wolumenów
-pool_recycle=Automatycznie oczyszczaæ wolumeny?
+pool_echild=Nie moÅ¼na usunÄ…Ä‡ klienta, kiedy jest uÅ¼ywany przez $1
+pool_eclash=Nazwa urzÄ…dzenia magazynujÄ…cego o tej samej nazwie juÅ¼ istnieje
+pool_egone=Pula wolumenÃ³w nie istnieje!
+pool_emax=BrakujÄ…ca lub nieprawidÅ‚owa liczba zadaÅ„ na wolumen
+pool_ename=BrakujÄ…ca nazwa urzÄ…dzenia magazynujÄ…cego
+pool_ereten=BrakujÄ…cy lub nieprawidÅ‚owy okres przechowywania
+pool_err=BÅ‚Ä…d zapisywania urzÄ…dzenia magazynujÄ…cego
+pool_header=SzczegÃ³Å‚y puli wolumenÃ³w kopii zapasowej
+pool_max=Maksymalna liczba zadaÅ„ na wolumen
+pool_maxvolsize=Maksymalny rozmiar wolumenu (np. 5G dla 5 gigabajtÃ³w)
+pool_name=Nazwa puli wolumenÃ³w
+pool_recycle=Automatycznie oczyszczaÄ‡ wolumeny?
 pool_reten=Okres przechowywania wolumeu
-pool_status=Poka¿ wolumeny
-pool_title1=Utwórz pulê wolumenów
-pool_title2=Edytuj pulê wolumenów
-pool_type=Rodzaj puli wolumenów
+pool_status=PokaÅ¼ wolumeny
+pool_title1=UtwÃ³rz pulÄ™ wolumenÃ³w
+pool_title2=Edytuj pulÄ™ wolumenÃ³w
+pool_type=Rodzaj puli wolumenÃ³w
 pool_unlimited=Nieograniczony
-pools_add=Dodaj now± pulê wolumenów
-pools_delete=Usuñ wybrane pule wolumenów
-pools_derr=B³±d usuwania puli wolumenów
+pools_add=Dodaj nowÄ… pulÄ™ wolumenÃ³w
+pools_delete=UsuÅ„ wybrane pule wolumenÃ³w
+pools_derr=BÅ‚Ä…d usuwania puli wolumenÃ³w
 pools_name=Nazwa puli
-pools_none=Nie zdefiniowano jeszcze ¿adnej puli wolumenów.
+pools_none=Nie zdefiniowano jeszcze Å¼adnej puli wolumenÃ³w.
 pools_reten=Okres przechowywania
-pools_return=listy puli wolumenów
-pools_title=Pule wolumenów
+pools_return=listy puli wolumenÃ³w
+pools_title=Pule wolumenÃ³w
 pools_type=Rodzaj puli
-poolstatus_bytes=Zapisano bajtów
-poolstatus_delete=Usuñ wybrane wolumeny
-poolstatus_first=Pierwsze u¿ycie
-poolstatus_last=Ostatnio u¿ywano
+poolstatus_bytes=Zapisano bajtÃ³w
+poolstatus_delete=UsuÅ„ wybrane wolumeny
+poolstatus_first=Pierwsze uÅ¼ycie
+poolstatus_last=Ostatnio uÅ¼ywano
 poolstatus_name=Nazwa wolumenu
 poolstatus_never=Nigdy
-poolstatus_none=Brak wolumenów w tej puli.
+poolstatus_none=Brak wolumenÃ³w w tej puli.
 poolstatus_ok=OK
-poolstatus_show=Poka¿ wolumeny w puli:
+poolstatus_show=PokaÅ¼ wolumeny w puli:
 poolstatus_status=Tryb kopii zapasowej
 poolstatus_title=Wolumeny w puli
-poolstatus_type=Rodzaj no¶nika
+poolstatus_type=Rodzaj noÅ›nika
 poolstatus_volumes=Wolumeny w wybranej puli
-proc_bacula-dir=Us³uga Mened¿era Bacula
-proc_bacula-fd=Us³uga pliku
-proc_bacula-sd=Us³uga magazynu
-proc_bareos-dir=Daemon zarz±dcy (Director) Bacula
+proc_bacula-dir=UsÅ‚uga MenedÅ¼era Bacula
+proc_bacula-fd=UsÅ‚uga pliku
+proc_bacula-sd=UsÅ‚uga magazynu
+proc_bareos-dir=Daemon zarzÄ…dcy (Director) Bacula
 proc_bareos-fd=Plik daemon
 proc_bareos-sd=Demon magazynowania Bacula
-restart_err=B³±d restartowania Bacula
+restart_err=BÅ‚Ä…d restartowania Bacula
 restore_all=--Wszyscy klienci w grupie--
-restore_client=Przywróæ na klienta lub grupê
+restore_client=PrzywrÃ³Ä‡ na klienta lub grupÄ™
 restore_clist=--Klienci--
-restore_done=.. przywracanie zakoñczone.
-restore_eall1=Podczas przywracania grupy Bacula opcja <b>Wszyscy klienci w kopii zapasowej</b> musi byæ zaznaczona dla <b>Przywróæ do klienta lub grupy</b>.
-restore_eall2=Podczas przywracania grupy Bacula opcja <b>Wszyscy klienci w kopii zapasowej</b> musi byæ zaznaczona dla <b>Przywróæ do klienta lub grupy</b>.
+restore_done=.. przywracanie zakoÅ„czone.
+restore_eall1=Podczas przywracania grupy Bacula opcja <b>Wszyscy klienci w kopii zapasowej</b> musi byÄ‡ zaznaczona dla <b>PrzywrÃ³Ä‡ do klienta lub grupy</b>.
+restore_eall2=Podczas przywracania grupy Bacula opcja <b>Wszyscy klienci w kopii zapasowej</b> musi byÄ‡ zaznaczona dla <b>PrzywrÃ³Ä‡ do klienta lub grupy</b>.
 restore_eclient=Nie wybrano klienta lub grupy Bacula
-restore_eclients=Nie znaleziono cz³onków kopii zapasowej grupy Bacula!
-restore_efiles=Nie podano plików
+restore_eclients=Nie znaleziono czÅ‚onkÃ³w kopii zapasowej grupy Bacula!
+restore_efiles=Nie podano plikÃ³w
 restore_egroup=Grupa Bacula nie istnieje
-restore_ejob=Nieprawid³owe ID zadania
-restore_ejobfiles=Brak plików dla zadania
-restore_enofiles=Brak wybranych plików w kopii zapasowej
-restore_eok=.. zadanie nie zosta³o uruchomione
-restore_err=B³±d przywracania kopii zapasowej
-restore_ewhere=Brakuj±cy katalog do przywrócenia
-restore_failed=.. przywracanie zakoñczone z b³êdem. Sprawd¼ komunikat b³êdu.
-restore_files=Piliki do przywrócenia
+restore_ejob=NieprawidÅ‚owe ID zadania
+restore_ejobfiles=Brak plikÃ³w dla zadania
+restore_enofiles=Brak wybranych plikÃ³w w kopii zapasowej
+restore_eok=.. zadanie nie zostaÅ‚o uruchomione
+restore_err=BÅ‚Ä…d przywracania kopii zapasowej
+restore_ewhere=BrakujÄ…cy katalog do przywrÃ³cenia
+restore_failed=.. przywracanie zakoÅ„czone z bÅ‚Ä™dem. SprawdÅº komunikat bÅ‚Ä™du.
+restore_files=Piliki do przywrÃ³cenia
 restore_glist=--Grupy Bacula--
 restore_header=Opcje przywracania wykonanych kopii zapasowych
 restore_jlist=--Zadania pojedynczego systemu--
-restore_job=Zadanie do przywrócenia
-restore_level_D=Ró¿nicowa
-restore_level_F=Pe³na
+restore_job=Zadanie do przywrÃ³cenia
+restore_level_D=RÃ³Å¼nicowa
+restore_level_F=PeÅ‚na
 restore_level_I=Przyrostowa
 restore_njlist=--Zadania grup Bacula--
-restore_ok=Przywróæ teraz
-restore_return=przywróæ z
+restore_ok=PrzywrÃ³Ä‡ teraz
+restore_return=przywrÃ³Ä‡ z
 restore_run=Uruchamianie przywracania zadania $1 na kliencie $1 z magazynu $3 ..
-restore_running=.. przywracanie jest uruchomione. Gdy zostanie zakoñczone rezultaty zostan±  wy¶wietlone poni¿ej ..
-restore_running2=.. przywracanie zosta³o uruchomione w tle.
-restore_storage=Przywróæ z urz±dzenia magazynuj±cego
-restore_title=Przywróæ kopiê zapasow±
-restore_title2=Przywróæ kopiê zapasow± do grupy Bacula
-restore_title3=Przywróæ kopiê zapasow± grupy Bacula
-restore_where=Przywróæ do katalogu
-restore_where2=Inny katalog g³ówny
-schedule_echild=Nie mo¿na usun±æ tego harmonogramu, gdy jest u¿ywany przez $1
-schedule_eclash=Harmonogram o takiej samej nazwie ju¿ istnieje
-schedule_ename=Brakuj±ca lub nieprawid³owa nazwa harmonogramu
-schedule_err=B³±d zapisywania harmonogramu kopii zapasowej
-schedule_etimes=Brakuj±ce okresy czasu w wierszu $1
-schedule_header=Szczegó³y harmonogramu kopii zapasowej
+restore_running=.. przywracanie jest uruchomione. Gdy zostanie zakoÅ„czone rezultaty zostanÄ…  wyÅ›wietlone poniÅ¼ej ..
+restore_running2=.. przywracanie zostaÅ‚o uruchomione w tle.
+restore_storage=PrzywrÃ³Ä‡ z urzÄ…dzenia magazynujÄ…cego
+restore_title=PrzywrÃ³Ä‡ kopiÄ™ zapasowÄ…
+restore_title2=PrzywrÃ³Ä‡ kopiÄ™ zapasowÄ… do grupy Bacula
+restore_title3=PrzywrÃ³Ä‡ kopiÄ™ zapasowÄ… grupy Bacula
+restore_where=PrzywrÃ³Ä‡ do katalogu
+restore_where2=Inny katalog gÅ‚Ã³wny
+schedule_echild=Nie moÅ¼na usunÄ…Ä‡ tego harmonogramu, gdy jest uÅ¼ywany przez $1
+schedule_eclash=Harmonogram o takiej samej nazwie juÅ¼ istnieje
+schedule_ename=BrakujÄ…ca lub nieprawidÅ‚owa nazwa harmonogramu
+schedule_err=BÅ‚Ä…d zapisywania harmonogramu kopii zapasowej
+schedule_etimes=BrakujÄ…ce okresy czasu w wierszu $1
+schedule_header=SzczegÃ³Å‚y harmonogramu kopii zapasowej
 schedule_level=Rodzaj kopii zapasowej
 schedule_name=Nazwa harmonogramu kopii zapasowej
 schedule_pool=Wolumen
 schedule_runs=Czasy i rodzaj kopii
 schedule_times=Czasy uruchomienia
-schedule_title1=Utwórz harmonogram kopii zapasowych
+schedule_title1=UtwÃ³rz harmonogram kopii zapasowych
 schedule_title2=Edycja harmonogramu kopii zapasowej
 schedules_add=Dodaj nowy harmonogram kopii zapasowej
-schedules_delete=Usuñ wybrane harmonogramy
-schedules_derr=B³±d usuwania harmonogramów
+schedules_delete=UsuÅ„ wybrane harmonogramy
+schedules_derr=BÅ‚Ä…d usuwania harmonogramÃ³w
 schedules_name=Nazwa harmonogramu
-schedules_none=Nie zdefiniowano jeszcze ¿adnego harmonogramu kopii zapasowej.
-schedules_return=listy harmonogramów
+schedules_none=Nie zdefiniowano jeszcze Å¼adnego harmonogramu kopii zapasowej.
+schedules_return=listy harmonogramÃ³w
 schedules_sched=Czas i rodzaj kopii
 schedules_title=Harmonogramy kopii zapasowej
-sdirector_eclash=Mened¿er o takiej samej nazwie ju¿ istenie
-sdirector_egone=Mened¿er nie istnieje!
-sdirector_ename=Brakuj±ca nazwa mened¿era
-sdirector_epass=Brakuj±ce has³o
-sdirector_err=B³±d zapisywania mened¿era us³ugi magazynu
-sdirector_header=Szczegó³y kontrolowania zdalnego mened¿era
-sdirector_monitor=Pozwoliæ tylko na monitorowane po³±czenie?
-sdirector_name=Nazwa mened¿era
-sdirector_pass=Zaakceptowano has³o
-sdirector_title1=Utwórz mened¿era us³ugi magazynu
-sdirector_title2=Edytuj mened¿era us³ugi magazynu
-sdirectors_add=Dodaj nowego mened¿era
-sdirectors_delete=Usuñ wybranych mened¿erów
-sdirectors_derr=B³±d usuwania mened¿erów
-sdirectors_name=Nazwa mened¿era
-sdirectors_none=Nie zdefiniowano mened¿erów.
-sdirectors_pass=Zaakceptowano has³o
-sdirectors_return=listy mened¿erów
-sdirectors_title=Mened¿erowie us³ugi magazynu
-start_einit=Nie znaleziono skryptu inicjuj±cego dla $1
-start_err=B³±d uruchamiania Bacula
-start_erun=B³±d uruchamiania $1 : $2
-stop_err=B³±d zatrzymywania Bacula
+sdirector_eclash=MenedÅ¼er o takiej samej nazwie juÅ¼ istenie
+sdirector_egone=MenedÅ¼er nie istnieje!
+sdirector_ename=BrakujÄ…ca nazwa menedÅ¼era
+sdirector_epass=BrakujÄ…ce hasÅ‚o
+sdirector_err=BÅ‚Ä…d zapisywania menedÅ¼era usÅ‚ugi magazynu
+sdirector_header=SzczegÃ³Å‚y kontrolowania zdalnego menedÅ¼era
+sdirector_monitor=PozwoliÄ‡ tylko na monitorowane poÅ‚Ä…czenie?
+sdirector_name=Nazwa menedÅ¼era
+sdirector_pass=Zaakceptowano hasÅ‚o
+sdirector_title1=UtwÃ³rz menedÅ¼era usÅ‚ugi magazynu
+sdirector_title2=Edytuj menedÅ¼era usÅ‚ugi magazynu
+sdirectors_add=Dodaj nowego menedÅ¼era
+sdirectors_delete=UsuÅ„ wybranych menedÅ¼erÃ³w
+sdirectors_derr=BÅ‚Ä…d usuwania menedÅ¼erÃ³w
+sdirectors_name=Nazwa menedÅ¼era
+sdirectors_none=Nie zdefiniowano menedÅ¼erÃ³w.
+sdirectors_pass=Zaakceptowano hasÅ‚o
+sdirectors_return=listy menedÅ¼erÃ³w
+sdirectors_title=MenedÅ¼erowie usÅ‚ugi magazynu
+start_einit=Nie znaleziono skryptu inicjujÄ…cego dla $1
+start_err=BÅ‚Ä…d uruchamiania Bacula
+start_erun=BÅ‚Ä…d uruchamiania $1 : $2
+stop_err=BÅ‚Ä…d zatrzymywania Bacula
 storage_address=Nazwa hosta lub adres IP
-storage_device=Nazwa urz±dzenia magazynuj±cego
-storage_eaddress=Brakuj±ca lub nieprawid³owa nazwa hosta lub adres
-storage_echild=Nie mo¿na usun±æ tego klienta, gdy jest u¿ywany przez $1
-storage_eclash=Us³uga magazynu o takiej nazwie ju¿ istnieje
-storage_edevice=Brakuj±ca nazwa urz±dzenia magazynuj±cego
-storage_egone=Us³uga magazynu nie istnieje!
-storage_emaxjobs=Maksymalna liczba jednoczesnych zadañ
-storage_emedia=Brakuj±ca nazwa typu no¶nika
-storage_ename=Brakuj±ca nazwa us³ugi magazynu
-storage_epass=Brakuj±ce has³o
-storage_eport=Brakuj±cy lub nieprawid³owy port SD
-storage_err=B³±d zapisywania us³ugi magazynu
-storage_header=Szczegó³y zdalnej us³ugi magazynu
-storage_maxjobs=Maksymalna liczba jednoczesnych zadañ
-storage_media=Nazwa rodzaju no¶nika
-storage_name=Nazwa us³ugi magazynu
+storage_device=Nazwa urzÄ…dzenia magazynujÄ…cego
+storage_eaddress=BrakujÄ…ca lub nieprawidÅ‚owa nazwa hosta lub adres
+storage_echild=Nie moÅ¼na usunÄ…Ä‡ tego klienta, gdy jest uÅ¼ywany przez $1
+storage_eclash=UsÅ‚uga magazynu o takiej nazwie juÅ¼ istnieje
+storage_edevice=BrakujÄ…ca nazwa urzÄ…dzenia magazynujÄ…cego
+storage_egone=UsÅ‚uga magazynu nie istnieje!
+storage_emaxjobs=Maksymalna liczba jednoczesnych zadaÅ„
+storage_emedia=BrakujÄ…ca nazwa typu noÅ›nika
+storage_ename=BrakujÄ…ca nazwa usÅ‚ugi magazynu
+storage_epass=BrakujÄ…ce hasÅ‚o
+storage_eport=BrakujÄ…cy lub nieprawidÅ‚owy port SD
+storage_err=BÅ‚Ä…d zapisywania usÅ‚ugi magazynu
+storage_header=SzczegÃ³Å‚y zdalnej usÅ‚ugi magazynu
+storage_maxjobs=Maksymalna liczba jednoczesnych zadaÅ„
+storage_media=Nazwa rodzaju noÅ›nika
+storage_name=Nazwa usÅ‚ugi magazynu
 storage_other=Inna ..
-storage_pass=Has³o Bacula SD
+storage_pass=HasÅ‚o Bacula SD
 storage_port=Port Bacula SD
-storage_status=Poka¿ stan
-storage_title1=Utwórz us³ugê magazynu
-storage_title2=Edytuj us³ugê magazynu
+storage_status=PokaÅ¼ stan
+storage_title1=UtwÃ³rz usÅ‚ugÄ™ magazynu
+storage_title2=Edytuj usÅ‚ugÄ™ magazynu
 storagec_dir=Katalog roboczy Bacula
-storagec_edir=Brakuj±cy lub nie istniej±cy katalog roboczy
-storagec_ejobs=Brakuj±ca lub nieprawid³owa liczba jednoczesnych zadañ
-storagec_ename=Brakuj±ca lub nieprawid³owa nazwa us³ugi magazynu
-storagec_enone=Nie znaleziono konfiguracji us³ugi magazynu!
-storagec_eport=Brakuj±cy lub nieprawid³owy numer portu
-storagec_err=B³±d zapisywania konfiguracji us³ugi magazynu
-storagec_header=Opcje us³ugi magazynu Bacula
-storagec_jobs=Maksymalna liczba jednoczesnych zadañ
-storagec_name=Nazwa us³ugi
-storagec_port=Nas³uchuj na porcie
-storagec_title=Konfiguracja us³ugi magazynu
-storages_add=Dodaj now± us³ugê magazynu
+storagec_edir=BrakujÄ…cy lub nie istniejÄ…cy katalog roboczy
+storagec_ejobs=BrakujÄ…ca lub nieprawidÅ‚owa liczba jednoczesnych zadaÅ„
+storagec_ename=BrakujÄ…ca lub nieprawidÅ‚owa nazwa usÅ‚ugi magazynu
+storagec_enone=Nie znaleziono konfiguracji usÅ‚ugi magazynu!
+storagec_eport=BrakujÄ…cy lub nieprawidÅ‚owy numer portu
+storagec_err=BÅ‚Ä…d zapisywania konfiguracji usÅ‚ugi magazynu
+storagec_header=Opcje usÅ‚ugi magazynu Bacula
+storagec_jobs=Maksymalna liczba jednoczesnych zadaÅ„
+storagec_name=Nazwa usÅ‚ugi
+storagec_port=NasÅ‚uchuj na porcie
+storagec_title=Konfiguracja usÅ‚ugi magazynu
+storages_add=Dodaj nowÄ… usÅ‚ugÄ™ magazynu
 storages_address=Nazwa hosta lub adres
-storages_delete=Usuñ wybrane us³ugi magazynu
-storages_derr=B³±d usuwania us³ugi magazynu
-storages_device=Urz±dzenie magazynuj±ce
+storages_delete=UsuÅ„ wybrane usÅ‚ugi magazynu
+storages_derr=BÅ‚Ä…d usuwania usÅ‚ugi magazynu
+storages_device=UrzÄ…dzenie magazynujÄ…ce
 storages_name=Nazwa magazynu
-storages_none=Nie zdefiniowano jeszcze us³ugi magazynu.
-storages_return=listy us³ug magazynu
-storages_title=Us³ugi magazynu
-storages_type=Rodzaj no¶nika
-storagestatus_err=B³±d pobierania stanu z $1: $2
+storages_none=Nie zdefiniowano jeszcze usÅ‚ugi magazynu.
+storages_return=listy usÅ‚ug magazynu
+storages_title=UsÅ‚ugi magazynu
+storages_type=Rodzaj noÅ›nika
+storagestatus_err=BÅ‚Ä…d pobierania stanu z $1: $2
 storagestatus_msg=Stan z $1: $2
 storagestatus_ok=OK
-storagestatus_show=Poka¿ stan us³ugi magazynu:
-storagestatus_title=Stan us³ugi magazynu
-sync_err=B³±d zapisywania synchronizacji grupy Bacula
+storagestatus_show=PokaÅ¼ stan usÅ‚ugi magazynu:
+storagestatus_title=Stan usÅ‚ugi magazynu
+sync_err=BÅ‚Ä…d zapisywania synchronizacji grupy Bacula
 sync_header=Opcje automatycznej synchronizacji klienta grupy Bacula
-sync_sched=Synchronizowaæ przy harmonogramie?
+sync_sched=SynchronizowaÄ‡ przy harmonogramie?
 sync_schedyes=Tak, w wybranej porze ..
 sync_title=Synchronizacja grupy Bacula
 tls_cacert=Plik autoryzacji certyfikatu TLS PEM
 tls_cert=Plik certyfikatu TLS PEM
-tls_ecacert=Brakuj±cy lub nie istniej±cy plik certyfikatu TLS CA
-tls_ecert=Brakuj±cy lub nie istniej±cy plik certyfikaty TLS
-tls_ecerts=Aby w³±czyæ TLS musisz okre¶liæ pliki klucza, certyfikatu i CA
-tls_ekey=Brakuj±cy lub nieistniej±cy plik klucza TLS
-tls_enable=W³±czyæ szyfrowanie TLS?
+tls_ecacert=BrakujÄ…cy lub nie istniejÄ…cy plik certyfikatu TLS CA
+tls_ecert=BrakujÄ…cy lub nie istniejÄ…cy plik certyfikaty TLS
+tls_ecerts=Aby wÅ‚Ä…czyÄ‡ TLS musisz okreÅ›liÄ‡ pliki klucza, certyfikatu i CA
+tls_ekey=BrakujÄ…cy lub nieistniejÄ…cy plik klucza TLS
+tls_enable=WÅ‚Ä…czyÄ‡ szyfrowanie TLS?
 tls_key=Plik klucza TLS PEM
 tls_none=Brak
-tls_require=Akceptowaæ tylko po³±czenia TLS?
-tls_verify=Weryfikowaæ klientów TLS?
+tls_require=AkceptowaÄ‡ tylko poÅ‚Ä…czenia TLS?
+tls_verify=WeryfikowaÄ‡ klientÃ³w TLS?
 unmount_done=.. odmotowano poprawnie.
-unmount_failed=.. b³±d odmontowywania! Aby dowiedzieæ siê dlaczego tak siê sta³o zobacz powy¿szy komunikat b³êdu.
-unmount_run=Odmontowywanie wolumenu z urz±dzenia magazynuj±cego $1 ..
+unmount_failed=.. bÅ‚Ä…d odmontowywania! Aby dowiedzieÄ‡ siÄ™ dlaczego tak siÄ™ staÅ‚o zobacz powyÅ¼szy komunikat bÅ‚Ä™du.
+unmount_run=Odmontowywanie wolumenu z urzÄ…dzenia magazynujÄ…cego $1 ..
 weekdaynum_1=Pierwszy
 weekdaynum_2=Drugi
 weekdaynum_3=Trzeci
 weekdaynum_4=Czwarty
-weekdaynum_5=Pi±ty
+weekdaynum_5=PiÄ…ty

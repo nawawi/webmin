@@ -1,22 +1,22 @@
-<header>Rendszergazdai beállítások; fordította: Szakács Gergely</header><p>
+<header>Rendszergazdai beÃ¡llÃ­tÃ¡sok; fordÃ­totta: SzakÃ¡cs Gergely</header><p>
 
-<b>Futtatás Unix-felhasználóként</b>: A rendszertõl függõen az alapértelmezés 'nobody' vagy 'squid'. Ha a gyorstárat root-ként futtatjuk, úgy a tényleges/valós azonosító erre az értékre módosul.<p>
+<b>FuttatÃ¡s Unix-felhasznÃ¡lÃ³kÃ©nt</b>: A rendszertÃµl fÃ¼ggÃµen az alapÃ©rtelmezÃ©s 'nobody' vagy 'squid'. Ha a gyorstÃ¡rat root-kÃ©nt futtatjuk, Ãºgy a tÃ©nyleges/valÃ³s azonosÃ­tÃ³ erre az Ã©rtÃ©kre mÃ³dosul.<p>
 
-<b>Futtatás Unix-csoportként</b>: A rendszertõl függõen az alapértelmezés 'nogroup' vagy 'squid'. Ha a gyorstárat root-ként futtatjuk, úgy a tényleges/valós csoportazonosító erre az értékre módosul.<p>
+<b>FuttatÃ¡s Unix-csoportkÃ©nt</b>: A rendszertÃµl fÃ¼ggÃµen az alapÃ©rtelmezÃ©s 'nogroup' vagy 'squid'. Ha a gyorstÃ¡rat root-kÃ©nt futtatjuk, Ãºgy a tÃ©nyleges/valÃ³s csoportazonosÃ­tÃ³ erre az Ã©rtÃ©kre mÃ³dosul.<p>
 
-<b>Proxy-hitelesítõ tartomány</b>: Meghatározza a kliensnek proxy-hitelesítés céljából eljuttatandó tartománynevet (a felhasználó által a felhasználónév/jelszó bevitelekor látható szöveg egy része).<p>
+<b>Proxy-hitelesÃ­tÃµ tartomÃ¡ny</b>: MeghatÃ¡rozza a kliensnek proxy-hitelesÃ­tÃ©s cÃ©ljÃ¡bÃ³l eljuttatandÃ³ tartomÃ¡nynevet (a felhasznÃ¡lÃ³ Ã¡ltal a felhasznÃ¡lÃ³nÃ©v/jelszÃ³ bevitelekor lÃ¡thatÃ³ szÃ¶veg egy rÃ©sze).<p>
 
-<b>A gyorstár kezelõjének email címe</b>: A rendszertõl függõen az alapértelmezés 'webmaster' vagy 'root'. Erre a címre érkezik jelentés a gyorstár meghibásodása esetén.<p>
+<b>A gyorstÃ¡r kezelÃµjÃ©nek email cÃ­me</b>: A rendszertÃµl fÃ¼ggÃµen az alapÃ©rtelmezÃ©s 'webmaster' vagy 'root'. Erre a cÃ­mre Ã©rkezik jelentÃ©s a gyorstÃ¡r meghibÃ¡sodÃ¡sa esetÃ©n.<p>
 
-<b>Látható gazdanév</b>: Erre akkor van szükség, ha a hibaüzenetekben, stb. egyedi gazdanevet akarunk megadni. Máskülönben a gethostname() értéke lesz megjelenítve. Ha több gyorstár is van egy klaszterben, és IP-továbbítási hibák jelentkeznek, úgy mindegyiknek külön nevet kell megadni ezzel a beállítással.<p>
+<b>LÃ¡thatÃ³ gazdanÃ©v</b>: Erre akkor van szÃ¼ksÃ©g, ha a hibaÃ¼zenetekben, stb. egyedi gazdanevet akarunk megadni. MÃ¡skÃ¼lÃ¶nben a gethostname() Ã©rtÃ©ke lesz megjelenÃ­tve. Ha tÃ¶bb gyorstÃ¡r is van egy klaszterben, Ã©s IP-tovÃ¡bbÃ­tÃ¡si hibÃ¡k jelentkeznek, Ãºgy mindegyiknek kÃ¼lÃ¶n nevet kell megadni ezzel a beÃ¡llÃ­tÃ¡ssal.<p>
 
-<b>Egyedi gazdanév</b>: Ha több gépet is ugyanazzal a <b>Látható gazdanévvel</b> akar ellátni, úgy minden egyes gépnek különbözõ <b>Egyedi gazdanevet</b> kell megadnia, a továbbítási hurkok kiküszöbölésére.<p>
+<b>Egyedi gazdanÃ©v</b>: Ha tÃ¶bb gÃ©pet is ugyanazzal a <b>LÃ¡thatÃ³ gazdanÃ©vvel</b> akar ellÃ¡tni, Ãºgy minden egyes gÃ©pnek kÃ¼lÃ¶nbÃ¶zÃµ <b>Egyedi gazdanevet</b> kell megadnia, a tovÃ¡bbÃ­tÃ¡si hurkok kikÃ¼szÃ¶bÃ¶lÃ©sÃ©re.<p>
 
-<b>Gyorstár gazdanév jelentés</b>: Erre a gazdanévre lesznek elküldve a különbözõ jelentések. A gyorstárak hierarchiájáról további információt <a href="http://www.squid-cache.org/Doc/FAQ/FAQ-4.html" target="Reference">The Squid FAQ</a> tartalmaz. Ha egy jelentési idõszakkal engedélyeztük a jelentéseket, úgy alapértelmezésként a 'tracker.ircache.net' jelenik meg.<p>
+<b>GyorstÃ¡r gazdanÃ©v jelentÃ©s</b>: Erre a gazdanÃ©vre lesznek elkÃ¼ldve a kÃ¼lÃ¶nbÃ¶zÃµ jelentÃ©sek. A gyorstÃ¡rak hierarchiÃ¡jÃ¡rÃ³l tovÃ¡bbi informÃ¡ciÃ³t <a href="http://www.squid-cache.org/Doc/FAQ/FAQ-4.html" target="Reference">The Squid FAQ</a> tartalmaz. Ha egy jelentÃ©si idÃµszakkal engedÃ©lyeztÃ¼k a jelentÃ©seket, Ãºgy alapÃ©rtelmezÃ©skÃ©nt a 'tracker.ircache.net' jelenik meg.<p>
 
-<b>Gyorstár port jelentés</b>: Az a gazdaport, ahova a jelentések érkeznek. A jelentések engedélyezésekor ez az érték 3131.<p>
+<b>GyorstÃ¡r port jelentÃ©s</b>: Az a gazdaport, ahova a jelentÃ©sek Ã©rkeznek. A jelentÃ©sek engedÃ©lyezÃ©sekor ez az Ã©rtÃ©k 3131.<p>
 
-<b>Jelentési idõszak</b>: A jelentések gyakorisága. Egy gyorstár hierarchiának címzett jelentéseket az '1 nap' opció kiválasztásával engedélyezheti. Az alapértelmezés itt '0', vagyis a jelentések le vannak tiltva.
+<b>JelentÃ©si idÃµszak</b>: A jelentÃ©sek gyakorisÃ¡ga. Egy gyorstÃ¡r hierarchiÃ¡nak cÃ­mzett jelentÃ©seket az '1 nap' opciÃ³ kivÃ¡lasztÃ¡sÃ¡val engedÃ©lyezheti. Az alapÃ©rtelmezÃ©s itt '0', vagyis a jelentÃ©sek le vannak tiltva.
 
 <hr>
 

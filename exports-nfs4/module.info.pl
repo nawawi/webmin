@@ -1,1 +1,1 @@
-desc_pl=Udostêpnianie po NFS
+desc_pl=UdostÃªpnianie po NFS

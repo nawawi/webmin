@@ -178,7 +178,7 @@
      "[header&header-1 # foo ][header&header-1&em *bar*]");
 
   // Setext headers - H1, H2
-  // Per documentation, "Any number of underlining =’s or -’s will work."
+  // Per documentation, "Any number of underlining =âs or -âs will work."
   // http://daringfireball.net/projects/markdown/syntax#header
   // Ideally, the text would be marked as `header` as well, but this is
   // not really feasible at the moment. So, instead, we're testing against
@@ -677,7 +677,7 @@
   MT("emInWordUnderscore",
      "foo[em _bar_]hello");
 
-  // Per documentation: "...surround an * or _ with spaces, it’ll be
+  // Per documentation: "...surround an * or _ with spaces, itâll be
   // treated as a literal asterisk or underscore."
 
   MT("emEscapedBySpaceIn",

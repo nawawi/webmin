@@ -1,42 +1,42 @@
 inittab_title=Konfiguracja inita (System V)
-inittab_new=Utwórz nowy proces inita
+inittab_new=UtwÃ³rz nowy proces inita
 inittab_id=Nazwa
 inittab_runlevels=Poziom
 inittab_action=Akcja
 inittab_process=Proces
-inittab_none=¯aden
-inittab_respawn=Odtwórz po zakoñczeniu
+inittab_none=Å»aden
+inittab_respawn=OdtwÃ³rz po zakoÅ„czeniu
 inittab_wait=Czekaj
 inittab_once=Jednorazowo na poziomie
 inittab_boot=Podczas startu
-inittab_bootwait=Podczas startu, czekaj na zakoñczenie
-inittab_off=Nic nie rób
+inittab_bootwait=Podczas startu, czekaj na zakoÅ„czenie
+inittab_off=Nic nie rÃ³b
 inittab_ondemand=Kiedykolwiek na poziomie A, B, C
-inittab_initdefault=Domy¶lny poziom
+inittab_initdefault=DomyÅ›lny poziom
 inittab_sysinit=Podczas startu systemu
 inittab_powerwait=Zanik zasilania
-inittab_powerfail=Zanik zasilania, nie czekaæ
-inittab_powerokwait=Powrót zasilania
+inittab_powerfail=Zanik zasilania, nie czekaÄ‡
+inittab_powerokwait=PowrÃ³t zasilania
 inittab_powerfailnow=Brak zasilania
 inittab_ctrlaltdel=Ctrl-Alt-Del
 inittab_kbdrequest=Specjalna kombinacja klawiszy
 inittab_return=tablicy inittaba
 
-edit_inittab_err=Nie masz uprawnieñ do zmiany procesów
-edit_inittab_title=Zmieñ proces $1
+edit_inittab_err=Nie masz uprawnieÅ„ do zmiany procesÃ³w
+edit_inittab_title=ZmieÅ„ proces $1
 edit_inittab_details=Dane procesu
-edit_inittab_del=Usuñ
+edit_inittab_del=UsuÅ„
 edit_inittab_save=Zachowaj
 
-new_inittab_err=Nie masz uprawnieñ do tworzenia nowych procesów
+new_inittab_err=Nie masz uprawnieÅ„ do tworzenia nowych procesÃ³w
 new_inittab_title=Nowy proces
 
-save_inittab_err=Nie masz uprawnieñ do zachowania procesu
-save_inittab_noid=B³±d, nie podano nazwy procesu
-save_inittab_already=B³±d, ta nazwa procesu ju¿ istnieje
+save_inittab_err=Nie masz uprawnieÅ„ do zachowania procesu
+save_inittab_noid=BÅ‚Ä…d, nie podano nazwy procesu
+save_inittab_already=BÅ‚Ä…d, ta nazwa procesu juÅ¼ istnieje
 
 log_modify=Zmieniono proces inita $1
-log_rename=Zmieniono nazwê procesu inita $1 na $2
+log_rename=Zmieniono nazwÄ™ procesu inita $1 na $2
 log_create=Utworzono proces inita $1
-log_delete=Usuniêto proces inita $1
+log_delete=UsuniÄ™to proces inita $1
 

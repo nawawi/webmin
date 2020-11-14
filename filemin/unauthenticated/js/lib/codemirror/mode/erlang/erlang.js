@@ -91,9 +91,9 @@ CodeMirror.defineMode("erlang", function(cmCfg) {
     "term_to_binary","time","throw","tl","trunc","tuple_size",
     "tuple_to_list","unlink","unregister","whereis"];
 
-// upper case: [A-Z] [Ø-Þ] [À-Ö]
-// lower case: [a-z] [ß-ö] [ø-ÿ]
-  var anumRE       = /[\w@Ø-ÞÀ-Öß-öø-ÿ]/;
+// upper case: [A-Z] [Ã-Ã] [Ã-Ã]
+// lower case: [a-z] [Ã-Ã¶] [Ã¸-Ã¿]
+  var anumRE       = /[\w@Ã-ÃÃ-ÃÃ-Ã¶Ã¸-Ã¿]/;
   var escapesRE    =
     /[0-7]{1,3}|[bdefnrstv\\"']|\^[a-zA-Z]|x[0-9a-zA-Z]{2}|x{[0-9a-zA-Z]+}/;
 
@@ -120,7 +120,7 @@ CodeMirror.defineMode("erlang", function(cmCfg) {
 
     // attributes and type specs
     if (!peekToken(state) &&
-        stream.match(/-\s*[a-zß-öø-ÿ][\wØ-ÞÀ-Öß-öø-ÿ]*/)) {
+        stream.match(/-\s*[a-zÃ-Ã¶Ã¸-Ã¿][\wÃ-ÃÃ-ÃÃ-Ã¶Ã¸-Ã¿]*/)) {
       if (is_member(stream.current(),typeWords)) {
         return rval(state,stream,"type");
       }else{
@@ -189,13 +189,13 @@ CodeMirror.defineMode("erlang", function(cmCfg) {
     }
 
     // variable
-    if (/[A-Z_Ø-ÞÀ-Ö]/.test(ch)) {
+    if (/[A-Z_Ã-ÃÃ-Ã]/.test(ch)) {
       stream.eatWhile(anumRE);
       return rval(state,stream,"variable");
     }
 
     // atom/keyword/BIF/function
-    if (/[a-z_ß-öø-ÿ]/.test(ch)) {
+    if (/[a-z_Ã-Ã¶Ã¸-Ã¿]/.test(ch)) {
       stream.eatWhile(anumRE);
 
       if (stream.match(/\s*\/\s*[0-9]/,false)) {

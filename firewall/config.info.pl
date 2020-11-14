@@ -1,15 +1,15 @@
 line0=Opcje konfiguracji,11
-view_condition=Wy∂wietlaÊ stan na li∂cie regu≥?,1,1-Tak,0-Nie
-view_comment=Wy∂wietlaÊ komentarz na li∂cie regu≥?,1,1-Tak,0-Nie
+view_condition=Wy≈õwietlaƒá stan na li≈õcie regu≈Ç?,1,1-Tak,0-Nie
+view_comment=Wy≈õwietlaƒá komentarz na li≈õcie regu≈Ç?,1,1-Tak,0-Nie
 comment_mod=Zapisuj komentarze jako,1,0-# zapis w pliku komentarzy,1-&#45;&#45;opcja komentarzy
-cluster_mode=Aktualizuj klaster serwerÛw,1,0-Zawsze&#44; gdy wprowadzono zmianÍ,1-Po zastosowaniu konfiguracji
+cluster_mode=Aktualizuj klaster serwer√≥w,1,0-Zawsze&#44; gdy wprowadzono zmianƒô,1-Po zastosowaniu konfiguracji
 force_init=Zawsze uruchamiaj firewall ze skryptem inita Debiana,1,1-Tak,0-Nie
-before_cmd=Polecenie do uruchomienia przed zmienieniem regu≥,3,Brak
-after_cmd=Polecenie do uruchomienia po zmienieniu regu≥,3,Brak
+before_cmd=Polecenie do uruchomienia przed zmienieniem regu≈Ç,3,Brak
+after_cmd=Polecenie do uruchomienia po zmienieniu regu≈Ç,3,Brak
 before_apply_cmd=Polecenie do uruchomienia przed zastosowaniem konfiguracji,3,Brak
 after_apply_cmd=Polecenie do uruchomienia po zastosowaniu konfiguracji,3,Brak
 line1=Opcje systemu,11
-direct=Bezpo∂rednio edytuj regu≥y firewalla zamiast zapisywaÊ do pliku?,1,1-Tak,0-Nie
+direct=Bezpo≈õrednio edytuj regu≈Çy firewalla zamiast zapisywaƒá do pliku?,1,1-Tak,0-Nie
 save_file=File to save/edit <tt>IPv4</tt> rules,3,Use operating system or Webmin default
 save_file6=File to save/edit <tt>IPv6</tt> rules,3,Use operating system or Webmin default
 

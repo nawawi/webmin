@@ -1,20 +1,20 @@
-index_title=Hjälp om Webmin
-index_terms=Hjälp om
-index_mods=Moduler att söka i
+index_title=HjÃ¤lp om Webmin
+index_terms=HjÃ¤lp om
+index_mods=Moduler att sÃ¶ka i
 index_all=Alla
 index_sel=Valda moduler ...
-index_search=Sök
-index_reset=Återställ
-index_header=Sök globalt i Hjälp till Webmin
-index_return=sökformulär
+index_search=SÃ¶k
+index_reset=Ã…terstÃ¤ll
+index_header=SÃ¶k globalt i HjÃ¤lp till Webmin
+index_return=sÃ¶kformulÃ¤r
 
-search_err=Sökningen misslyckades
-search_eterms=Någon sökterm saknades
-search_emods=Du har inte valt någon modul
-search_title=Sökresultat
-search_einclude=Det gick inte att lägga till $1
-search_none=Det fanns ingen hjälpfil som passade
+search_err=SÃ¶kningen misslyckades
+search_eterms=NÃ¥gon sÃ¶kterm saknades
+search_emods=Du har inte valt nÃ¥gon modul
+search_title=SÃ¶kresultat
+search_einclude=Det gick inte att lÃ¤gga till $1
+search_none=Det fanns ingen hjÃ¤lpfil som passade
 search_mod=Modul
-search_page=Hjälpsida
-search_line=Träff för
-search_results=Webmin-hjälpsidor för $1
+search_page=HjÃ¤lpsida
+search_line=TrÃ¤ff fÃ¶r
+search_results=Webmin-hjÃ¤lpsidor fÃ¶r $1

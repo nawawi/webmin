@@ -1,38 +1,38 @@
-<header>Endast läsrättigheter</header>
+<header>Endast lÃ¤srÃ¤ttigheter</header>
 
-Här anger du de datorer som endast har läsrättigheter för denna resurs.
+HÃ¤r anger du de datorer som endast har lÃ¤srÃ¤ttigheter fÃ¶r denna resurs.
 Det finns tre alternativ:
 <ul>
 <li><b>Ingen</b>
-    <br>Ingen dator har endast läsrättigheter. (Det kan fortfarande finnas de som har läs- och skrivrättigheter.)
+    <br>Ingen dator har endast lÃ¤srÃ¤ttigheter. (Det kan fortfarande finnas de som har lÃ¤s- och skrivrÃ¤ttigheter.)
 <li><b>Alla</b>
-    <br>Alla datorer får montera denna resurs med läsrättigheter. Om du
-    har Internet-uppkoppling betyder detta att alla på Internet kan läsa
+    <br>Alla datorer fÃ¥r montera denna resurs med lÃ¤srÃ¤ttigheter. Om du
+    har Internet-uppkoppling betyder detta att alla pÃ¥ Internet kan lÃ¤sa
     filerna i den exporterade katalogen.
 <li><b>Angivna datorer</b>
 <if $gconfig{'os_version'} < 7>
-    <br>Datorer (namn eller IP-adresser) listade nedan får montera denna
-    resurs med läsrättigheter.
+    <br>Datorer (namn eller IP-adresser) listade nedan fÃ¥r montera denna
+    resurs med lÃ¤srÃ¤ttigheter.
 <else>
-    <br>Datorer som stämmer överens med vad som listats nedan får montera
-    denna resurs med läsrättigheter. Du kan ange datorer på följande sätt:
+    <br>Datorer som stÃ¤mmer Ã¶verens med vad som listats nedan fÃ¥r montera
+    denna resurs med lÃ¤srÃ¤ttigheter. Du kan ange datorer pÃ¥ fÃ¶ljande sÃ¤tt:
     <p>
 	<dl>
 	<dt><b>Datornamn eller IP-adress</b> (t ex <i>ftp.foo.com</i> eller <i>1.2.3.4</i>)
 	<dd>Matchar datorer med angivet namn eller IP-nummer
-	<dt><b>Nätverksgrupp</b> (t ex <i>administration</i>)
-	<dd>Matchar alla datorer i nätverksgruppen
-	<dt><b>DNS-domän</b> (t ex <i>.foo.com</i>)
-	<dd>Matchar alla datorer i domänen
-	<dt><b>Nätverk</b> (t ex <i>@10.254.1</i>)
-	<dd>Matchar alla datorer på nätverket
-	<dt><b>Nätverk/nätmask</b> (t ex <i>@10.254.1/24</i>)
-	<dd>Matchar alla datorer på nätverket
+	<dt><b>NÃ¤tverksgrupp</b> (t ex <i>administration</i>)
+	<dd>Matchar alla datorer i nÃ¤tverksgruppen
+	<dt><b>DNS-domÃ¤n</b> (t ex <i>.foo.com</i>)
+	<dd>Matchar alla datorer i domÃ¤nen
+	<dt><b>NÃ¤tverk</b> (t ex <i>@10.254.1</i>)
+	<dd>Matchar alla datorer pÃ¥ nÃ¤tverket
+	<dt><b>NÃ¤tverk/nÃ¤tmask</b> (t ex <i>@10.254.1/24</i>)
+	<dd>Matchar alla datorer pÃ¥ nÃ¤tverket
 	</dl>
-    <p>Dessutom kan du framför varje datorbestämning som anges ovan skriva
-    ett <i>-</i>, som betyder att datorn, nätverksgruppen, domänen eller
-    nätverket <b>inte</b> får montera denna resurs. Detta är användbart
-    om du vill tillåta montering från en grupp datorer, men utesluta en
+    <p>Dessutom kan du framfÃ¶r varje datorbestÃ¤mning som anges ovan skriva
+    ett <i>-</i>, som betyder att datorn, nÃ¤tverksgruppen, domÃ¤nen eller
+    nÃ¤tverket <b>inte</b> fÃ¥r montera denna resurs. Detta Ã¤r anvÃ¤ndbart
+    om du vill tillÃ¥ta montering frÃ¥n en grupp datorer, men utesluta en
     viss dator.
 </if>
 </ul>

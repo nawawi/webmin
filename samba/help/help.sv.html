@@ -1,106 +1,106 @@
 <body bgcolor=#ffffff>
 <title>Samba-hanteraren</title>
 <center><img src="images/samba.gif"></center>
-<h2><i>Denna hjälpsida är inte färdig</i></h2>
+<h2><i>Denna hjÃ¤lpsida Ã¤r inte fÃ¤rdig</i></h2>
 <hr>
 <h3>Introduktion</h3>
-Samba är ett freeware-program som gör att PC med Windows 95 och NT ska
-kunna komma åt filer och skrivare på ett Unix-system som om den vore en
-Windows-fil/skrivarserver. I en del Unix-system, t ex RedHat Linux, följer
-Samba med i standardinstallationen, medan de flesta system kräver att man
+Samba Ã¤r ett freeware-program som gÃ¶r att PC med Windows 95 och NT ska
+kunna komma Ã¥t filer och skrivare pÃ¥ ett Unix-system som om den vore en
+Windows-fil/skrivarserver. I en del Unix-system, t ex RedHat Linux, fÃ¶ljer
+Samba med i standardinstallationen, medan de flesta system krÃ¤ver att man
 ladder ned och installerar det separat.
 
-<p>Om Samba inte finns installerat på ditt system kommer startsidan för
-denna modul att innehålla ett felmeddelande som innebär att systemet inte
-kan hitta inställningsfilen för Samba, och det kommer inte att gå att
-dela några filer och kataloger. Om Samba är installerat
-och du ändå får detta felmeddelande bör du kontrollera
-<a href="/config.cgi?samba">modulinställningarna</a> så att Webmin letar
-på rätt ställe efter inställningsfilen och Samba-program.
+<p>Om Samba inte finns installerat pÃ¥ ditt system kommer startsidan fÃ¶r
+denna modul att innehÃ¥lla ett felmeddelande som innebÃ¤r att systemet inte
+kan hitta instÃ¤llningsfilen fÃ¶r Samba, och det kommer inte att gÃ¥ att
+dela nÃ¥gra filer och kataloger. Om Samba Ã¤r installerat
+och du Ã¤ndÃ¥ fÃ¥r detta felmeddelande bÃ¶r du kontrollera
+<a href="/config.cgi?samba">modulinstÃ¤llningarna</a> sÃ¥ att Webmin letar
+pÃ¥ rÃ¤tt stÃ¤lle efter instÃ¤llningsfilen och Samba-program.
 
-<p>Om Samba är ordentligt installerat kommer startsidan att innehålla en
-lista över alla fil- och skrivarresurser på systemet. Om Webmin har
-upptäckt att Samba-servern inte är igång finns det också möjlighet att
-starta servern via startsidan. Detta kan behöva göras om Samba inte startar
+<p>Om Samba Ã¤r ordentligt installerat kommer startsidan att innehÃ¥lla en
+lista Ã¶ver alla fil- och skrivarresurser pÃ¥ systemet. Om Webmin har
+upptÃ¤ckt att Samba-servern inte Ã¤r igÃ¥ng finns det ocksÃ¥ mÃ¶jlighet att
+starta servern via startsidan. Detta kan behÃ¶va gÃ¶ras om Samba inte startar
 vid systemstart.
 
 <hr>
 <h3>Skapa en filresurs</h3>
-En filresurs i Samba är en katalog som kan monteras av klient-PC. Varje
+En filresurs i Samba Ã¤r en katalog som kan monteras av klient-PC. Varje
 resurs har ett kortnamn, t ex <tt>docs</tt> eller <tt>www</tt>, som
-motsvarar en katalog på Unix-systemet. Klienten använder normalt notationen
-<tt>\\server\resurs</tt> för att komma åt resursen.
+motsvarar en katalog pÃ¥ Unix-systemet. Klienten anvÃ¤nder normalt notationen
+<tt>\\server\resurs</tt> fÃ¶r att komma Ã¥t resursen.
 
-<p>Klicka på <tt>Skapa filresurs</tt> nedanför listan över befintliga
-resurser för att skapa en ny filresurs. Du får då upp ett formulär där
-uppgifter om den nya resursen kan skrivas in. Samba stödjer en stor
-mängd inställningar, men de viktigaste är:
+<p>Klicka pÃ¥ <tt>Skapa filresurs</tt> nedanfÃ¶r listan Ã¶ver befintliga
+resurser fÃ¶r att skapa en ny filresurs. Du fÃ¥r dÃ¥ upp ett formulÃ¤r dÃ¤r
+uppgifter om den nya resursen kan skrivas in. Samba stÃ¶djer en stor
+mÃ¤ngd instÃ¤llningar, men de viktigaste Ã¤r:
 
 <table border width=100%>
 <tr> <td><b>Resursnamn</b></td>
-<td>Varje resurs måste ha ett namn som klienterna använder för att komma
-åt den. Ett specialfall är resursen <tt>Alla hemkataloger</tt> som förklaras
+<td>Varje resurs mÃ¥ste ha ett namn som klienterna anvÃ¤nder fÃ¶r att komma
+Ã¥t den. Ett specialfall Ã¤r resursen <tt>Alla hemkataloger</tt> som fÃ¶rklaras
 senare.
 </td> </tr>
-<tr> <td><b>Sökväg</b></td>
-<td>Katalogen som utgör resursen. Klienter som använder resursen kan endast
-komma åt filer i eller under katalogen.</td> </tr>
-<tr> <td><b>Öppna för skrivning</b></td>
-<td>Här bestämmer man om klienter får skriva i filer och kataloger i denna
+<tr> <td><b>SÃ¶kvÃ¤g</b></td>
+<td>Katalogen som utgÃ¶r resursen. Klienter som anvÃ¤nder resursen kan endast
+komma Ã¥t filer i eller under katalogen.</td> </tr>
+<tr> <td><b>Ã–ppna fÃ¶r skrivning</b></td>
+<td>HÃ¤r bestÃ¤mmer man om klienter fÃ¥r skriva i filer och kataloger i denna
 resurs.</td> </tr>
-<tr> <td><b>Åtkomst för gäster</b></td>
-<td>Om man tillåter gästanvändare för en resurs kan klienterna komma åt den
-utan att ange något lösenord. Man kan välja att inte tillåta gästanvändare,
-tillåta både gäst- och vanliga användare eller att tillåta endast
-gästanvändare.</td></tr>
+<tr> <td><b>Ã…tkomst fÃ¶r gÃ¤ster</b></td>
+<td>Om man tillÃ¥ter gÃ¤stanvÃ¤ndare fÃ¶r en resurs kan klienterna komma Ã¥t den
+utan att ange nÃ¥got lÃ¶senord. Man kan vÃ¤lja att inte tillÃ¥ta gÃ¤stanvÃ¤ndare,
+tillÃ¥ta bÃ¥de gÃ¤st- och vanliga anvÃ¤ndare eller att tillÃ¥ta endast
+gÃ¤stanvÃ¤ndare.</td></tr>
 </table>
-Information om övriga resursinställningar finns i avsnittet <b>Ytterligare
-inställningar</b> nedan.
+Information om Ã¶vriga resursinstÃ¤llningar finns i avsnittet <b>Ytterligare
+instÃ¤llningar</b> nedan.
 
-<p>När man har skrivit in uppgifter om den nya resursen trycker man på
-<tt>Skapa</tt>. Resursen kommer direkt att bli tillgänglig för klienterna.
-Om allt är uppsatt ordentligt på ens nätverk kommer användarna att kunna
-använda funktionen <tt>Nätverksomgivning</tt> under Windows för att se
-servern och alla dess resurser. Den nyss skapade resurser kan då tilldelas
-en enhetsbokstav på PC:n.
+<p>NÃ¤r man har skrivit in uppgifter om den nya resursen trycker man pÃ¥
+<tt>Skapa</tt>. Resursen kommer direkt att bli tillgÃ¤nglig fÃ¶r klienterna.
+Om allt Ã¤r uppsatt ordentligt pÃ¥ ens nÃ¤tverk kommer anvÃ¤ndarna att kunna
+anvÃ¤nda funktionen <tt>NÃ¤tverksomgivning</tt> under Windows fÃ¶r att se
+servern och alla dess resurser. Den nyss skapade resurser kan dÃ¥ tilldelas
+en enhetsbokstav pÃ¥ PC:n.
 
 <hr>
 <h3>Skapa en skrivarresurs</h3>
-En skrivarresurs i Samba är en lokal eller annan Unix-skrivare som man vill
-ska vara tillgänglig även för PC-klienter. Precis som för filresurser har
+En skrivarresurs i Samba Ã¤r en lokal eller annan Unix-skrivare som man vill
+ska vara tillgÃ¤nglig Ã¤ven fÃ¶r PC-klienter. Precis som fÃ¶r filresurser har
 varje skrivarresurs ett kortnamn ( <tt>hp5si</tt>) och klienterna kommer
-åt den med hjälp av notationen <tt>\\server\resurs</tt>.
+Ã¥t den med hjÃ¤lp av notationen <tt>\\server\resurs</tt>.
 
-<p>Man klickar på länken <tt>Skapa skrivarresurs</tt> för att skapa en ny
-skrivarresurs och får då upp ett liknande formulär som när man skapar
-filresurser. Där skriver man in uppgifter om den nya resursern. De viktigaste
-inställningarna för en skrivarresurs är:
+<p>Man klickar pÃ¥ lÃ¤nken <tt>Skapa skrivarresurs</tt> fÃ¶r att skapa en ny
+skrivarresurs och fÃ¥r dÃ¥ upp ett liknande formulÃ¤r som nÃ¤r man skapar
+filresurser. DÃ¤r skriver man in uppgifter om den nya resursern. De viktigaste
+instÃ¤llningarna fÃ¶r en skrivarresurs Ã¤r:
 <table border width=100%>
 <tr> <td><b>Resursnamn</b></td>
-<td>Varje resurs måste ha ett namn som klienter använder för att komma åt den.
-Ett specialfall är resursen <tt>Alla skrivare</tt> som förklaras senare.
+<td>Varje resurs mÃ¥ste ha ett namn som klienter anvÃ¤nder fÃ¶r att komma Ã¥t den.
+Ett specialfall Ã¤r resursen <tt>Alla skrivare</tt> som fÃ¶rklaras senare.
 </td> </tr>
 <tr> <td><b>Skrivare</b></td>
-<td>Den Unix-skrivare som utgör resursen. Det kan vara vilken skrivare som
+<td>Den Unix-skrivare som utgÃ¶r resursen. Det kan vara vilken skrivare som
 helst, som man kan skriva till med kommandot <tt>lpr</tt>.</td> </tr>
-<tr> <td><b>Sökväg</b></td>
-<td>Katalog för temporära skrivarfiler.</td> </tr>
-<tr> <td><b>Gäståtkomst</b></td>
-<td>Om man tillåter gästanvändare för en resurs kan klienterna komma åt den
-utan att ange något lösenord. Man kan välja att inte tillåta gästanvändare,
-tillåta både gäst- och vanliga användare eller att tillåta endast
-gästanvändare.</td></tr>
+<tr> <td><b>SÃ¶kvÃ¤g</b></td>
+<td>Katalog fÃ¶r temporÃ¤ra skrivarfiler.</td> </tr>
+<tr> <td><b>GÃ¤stÃ¥tkomst</b></td>
+<td>Om man tillÃ¥ter gÃ¤stanvÃ¤ndare fÃ¶r en resurs kan klienterna komma Ã¥t den
+utan att ange nÃ¥got lÃ¶senord. Man kan vÃ¤lja att inte tillÃ¥ta gÃ¤stanvÃ¤ndare,
+tillÃ¥ta bÃ¥de gÃ¤st- och vanliga anvÃ¤ndare eller att tillÃ¥ta endast
+gÃ¤stanvÃ¤ndare.</td></tr>
 <tr> <td><b>Skrivartyp</b></td>
-<td>Namn på den skrivardrivrutin som ska användas. Om man skriver in ett
-namn som motsvarar en skrivardrivrutin på klienterna kommer användarna inte
-att behöva välja skrivardrivrutin när denna skrivare läggs till.</td> </tr>
+<td>Namn pÃ¥ den skrivardrivrutin som ska anvÃ¤ndas. Om man skriver in ett
+namn som motsvarar en skrivardrivrutin pÃ¥ klienterna kommer anvÃ¤ndarna inte
+att behÃ¶va vÃ¤lja skrivardrivrutin nÃ¤r denna skrivare lÃ¤ggs till.</td> </tr>
 </table>
 
-<p>Precis som för filresurser kan man göra många fler inställningar.
-Så fort en skrivarresurs skapats blir den tillgänglig för klienterna.
-Under Windows 95 och NT kan man lägga till en skrivare med inställningen
-<tt>Add Printer</tt> på skrivarkontrollpanelen. När skrivaren väl lagts till
-kan användaren skriva ut på den som på vilken annan nätverks- eller lokal
+<p>Precis som fÃ¶r filresurser kan man gÃ¶ra mÃ¥nga fler instÃ¤llningar.
+SÃ¥ fort en skrivarresurs skapats blir den tillgÃ¤nglig fÃ¶r klienterna.
+Under Windows 95 och NT kan man lÃ¤gga till en skrivare med instÃ¤llningen
+<tt>Add Printer</tt> pÃ¥ skrivarkontrollpanelen. NÃ¤r skrivaren vÃ¤l lagts till
+kan anvÃ¤ndaren skriva ut pÃ¥ den som pÃ¥ vilken annan nÃ¤tverks- eller lokal
 skrivare som helst.
 
 <hr>
@@ -108,79 +108,79 @@ skrivare som helst.
 
 
 <hr>
-<h3>Ändra resurs</h3>
-Man klickar på ett resursnamn i listan för att ändra uppgifter om den, och
-får då upp samma formulär som när resurser skapas. Man skriver in de ändringar
-man vill göra och trycker sedan på <tt>Spara</tt> längst ned till vänster.
+<h3>Ã„ndra resurs</h3>
+Man klickar pÃ¥ ett resursnamn i listan fÃ¶r att Ã¤ndra uppgifter om den, och
+fÃ¥r dÃ¥ upp samma formulÃ¤r som nÃ¤r resurser skapas. Man skriver in de Ã¤ndringar
+man vill gÃ¶ra och trycker sedan pÃ¥ <tt>Spara</tt> lÃ¤ngst ned till vÃ¤nster.
 
-<p>Man trycker på <tt>Ta bort</tt> längst ned till höger för att ta bort
-en resurs. De användare som för tillfället använder resursen kommer inte att
-kastas ut, men det går inte att göra nya uppkopplingar.
+<p>Man trycker pÃ¥ <tt>Ta bort</tt> lÃ¤ngst ned till hÃ¶ger fÃ¶r att ta bort
+en resurs. De anvÃ¤ndare som fÃ¶r tillfÃ¤llet anvÃ¤nder resursen kommer inte att
+kastas ut, men det gÃ¥r inte att gÃ¶ra nya uppkopplingar.
 
 <hr>
-<h3>Användare och säkerhet</h3>
-För resurser där gästanvändare inte tillåts kommer Samba att begära att
-klienten skickar ett användarnamn och ett lösenord. Vanligen kontrolleras
-dessa mot Unix-användarlistan, som hålls à jour med modulen
-<a href=/useradmin/>Användarhanteraren</a>. Samba kan också underhålla en
-egen lista med användarnamn och lösenord; se avsnittet <b>Krypterade
-lösenord</b> för mer information.
+<h3>AnvÃ¤ndare och sÃ¤kerhet</h3>
+FÃ¶r resurser dÃ¤r gÃ¤stanvÃ¤ndare inte tillÃ¥ts kommer Samba att begÃ¤ra att
+klienten skickar ett anvÃ¤ndarnamn och ett lÃ¶senord. Vanligen kontrolleras
+dessa mot Unix-anvÃ¤ndarlistan, som hÃ¥lls Ã  jour med modulen
+<a href=/useradmin/>AnvÃ¤ndarhanteraren</a>. Samba kan ocksÃ¥ underhÃ¥lla en
+egen lista med anvÃ¤ndarnamn och lÃ¶senord; se avsnittet <b>Krypterade
+lÃ¶senord</b> fÃ¶r mer information.
 
-<p>En del Windows-versioner tillåter inte att användaren anger ett användarnamn
-då en resurs efterfrågas, utan använder istället det namn som angavs då
-användaren "loggade in" på Windows. Om samma användarnamn används både på
-Windows och Unix är detta inte ett problem. Om så inte är fallet finns det
-två alternativ:
+<p>En del Windows-versioner tillÃ¥ter inte att anvÃ¤ndaren anger ett anvÃ¤ndarnamn
+dÃ¥ en resurs efterfrÃ¥gas, utan anvÃ¤nder istÃ¤llet det namn som angavs dÃ¥
+anvÃ¤ndaren "loggade in" pÃ¥ Windows. Om samma anvÃ¤ndarnamn anvÃ¤nds bÃ¥de pÃ¥
+Windows och Unix Ã¤r detta inte ett problem. Om sÃ¥ inte Ã¤r fallet finns det
+tvÃ¥ alternativ:
 <ol>
 <li>Windows 95 och NT kan montera resurser manuellt genom att man skriver
     <tt>net use <i>drive:</i> <i>resurs</i></tt> vid kommandoprompten eller
-    att man trycker på nätverksknappen i ett filfönster och skriver in
-    sökvägen för resursen. För båda dessa sätt gäller att resursen skrivs
-    på formen <tt>\\server\resurs%användare</tt>, där <i>användare</i> är det
-    användarnamn man vill använda för att logga in på servern.
-<li>Samba kan ställas in för att söka efter den användare som hör till det
-    lösenord som anges. Alternativet <tt>Unix-användare</tt> innebär att
-    man kan ange de användare eller grupper som ska sökas igenom. Observera
-    att detta inte är särskilt säkert om antalet användare som ska sökas
-    igenom blir stort, eftersom det då är stor risk att flera användare har
-    samma lösenord.
+    att man trycker pÃ¥ nÃ¤tverksknappen i ett filfÃ¶nster och skriver in
+    sÃ¶kvÃ¤gen fÃ¶r resursen. FÃ¶r bÃ¥da dessa sÃ¤tt gÃ¤ller att resursen skrivs
+    pÃ¥ formen <tt>\\server\resurs%anvÃ¤ndare</tt>, dÃ¤r <i>anvÃ¤ndare</i> Ã¤r det
+    anvÃ¤ndarnamn man vill anvÃ¤nda fÃ¶r att logga in pÃ¥ servern.
+<li>Samba kan stÃ¤llas in fÃ¶r att sÃ¶ka efter den anvÃ¤ndare som hÃ¶r till det
+    lÃ¶senord som anges. Alternativet <tt>Unix-anvÃ¤ndare</tt> innebÃ¤r att
+    man kan ange de anvÃ¤ndare eller grupper som ska sÃ¶kas igenom. Observera
+    att detta inte Ã¤r sÃ¤rskilt sÃ¤kert om antalet anvÃ¤ndare som ska sÃ¶kas
+    igenom blir stort, eftersom det dÃ¥ Ã¤r stor risk att flera anvÃ¤ndare har
+    samma lÃ¶senord.
 </ul>
 
 <hr>
-<h3>Krypterade lösenord</h3>
-Vanligtvis skickas lösenord okrypterade över nätverket mellan Sambaservern
-och PC-klienten. Detta är inte bra av följande anledningar:
+<h3>Krypterade lÃ¶senord</h3>
+Vanligtvis skickas lÃ¶senord okrypterade Ã¶ver nÃ¤tverket mellan Sambaservern
+och PC-klienten. Detta Ã¤r inte bra av fÃ¶ljande anledningar:
 <ol>
-<li>Vem som helst kan tjuvlyssna på nätverket och då få tillgång till 
-    andras lösenord.
-<li>De senaste versionerna av Windows 9x och NT kan inte skicka lösenord
-    okrypterade. Om en användare då försöker komma åt Sambaservern från ett
-    sådant system kommer den att få felmeddelandet <tt>???</tt>. Ändringen
-    finns från och med NT-servicepaket 3.
+<li>Vem som helst kan tjuvlyssna pÃ¥ nÃ¤tverket och dÃ¥ fÃ¥ tillgÃ¥ng till 
+    andras lÃ¶senord.
+<li>De senaste versionerna av Windows 9x och NT kan inte skicka lÃ¶senord
+    okrypterade. Om en anvÃ¤ndare dÃ¥ fÃ¶rsÃ¶ker komma Ã¥t Sambaservern frÃ¥n ett
+    sÃ¥dant system kommer den att fÃ¥ felmeddelandet <tt>???</tt>. Ã„ndringen
+    finns frÃ¥n och med NT-servicepaket 3.
 </ol>
 
-Samba stödjer kryptering av lösenord, men det går inte att kontrollera de
-lösenord som klienterna skickar mot den vanliga Unix-lösenordsfilen eftersom
-det inte är samma kryptering som används. Av denna anledning måste Samba
-ha en egen lista över användare och lösenord.
+Samba stÃ¶djer kryptering av lÃ¶senord, men det gÃ¥r inte att kontrollera de
+lÃ¶senord som klienterna skickar mot den vanliga Unix-lÃ¶senordsfilen eftersom
+det inte Ã¤r samma kryptering som anvÃ¤nds. Av denna anledning mÃ¥ste Samba
+ha en egen lista Ã¶ver anvÃ¤ndare och lÃ¶senord.
 
-<p>Så här gör man för att ställa om Samba till att acceptera krypterade
-lösenord:
+<p>SÃ¥ hÃ¤r gÃ¶r man fÃ¶r att stÃ¤lla om Samba till att acceptera krypterade
+lÃ¶senord:
 <ol>
-<li>Kontrollera att Samba-versionen stödjer lösenordskryptering. Sätt
-    inställningen <tt>Krypterade lösenord</tt> i
-    <tt>Lösenordsinställningar</tt> till Ja. Om det inte fungerar måste
-    en version med stöd för lösenordskryptering hämtas eller kompileras.
-<li>Klicka på <tt>Omvandla Unix-användare till Samba-användare</tt> längst
-    ned på startsidan. Man får då upp en sida där man kan välja att omvandla
-    alla eller bara några av Unix-användarna till Samba-användare.
-    Användarnamn, riktiga namn, UID och skal kommer att omvandlas, men inte
-    lösenord.
-<li>Använd inställningen <tt>Ändra Samba-användarlista</tt> för att skriva
-    in lösenord. Den visar en lista över alla Samba-användare, där man kan
-    välja den användare man vill lägga till lösenord för. För varje användare
-    kan man sätta lösenordet till <tt>Låst</tt> (inloggning spärrad),
-    <tt>Inget lösenord</tt> (inget lösenord behöver anges) eller det lösenord
+<li>Kontrollera att Samba-versionen stÃ¶djer lÃ¶senordskryptering. SÃ¤tt
+    instÃ¤llningen <tt>Krypterade lÃ¶senord</tt> i
+    <tt>LÃ¶senordsinstÃ¤llningar</tt> till Ja. Om det inte fungerar mÃ¥ste
+    en version med stÃ¶d fÃ¶r lÃ¶senordskryptering hÃ¤mtas eller kompileras.
+<li>Klicka pÃ¥ <tt>Omvandla Unix-anvÃ¤ndare till Samba-anvÃ¤ndare</tt> lÃ¤ngst
+    ned pÃ¥ startsidan. Man fÃ¥r dÃ¥ upp en sida dÃ¤r man kan vÃ¤lja att omvandla
+    alla eller bara nÃ¥gra av Unix-anvÃ¤ndarna till Samba-anvÃ¤ndare.
+    AnvÃ¤ndarnamn, riktiga namn, UID och skal kommer att omvandlas, men inte
+    lÃ¶senord.
+<li>AnvÃ¤nd instÃ¤llningen <tt>Ã„ndra Samba-anvÃ¤ndarlista</tt> fÃ¶r att skriva
+    in lÃ¶senord. Den visar en lista Ã¶ver alla Samba-anvÃ¤ndare, dÃ¤r man kan
+    vÃ¤lja den anvÃ¤ndare man vill lÃ¤gga till lÃ¶senord fÃ¶r. FÃ¶r varje anvÃ¤ndare
+    kan man sÃ¤tta lÃ¶senordet till <tt>LÃ¥st</tt> (inloggning spÃ¤rrad),
+    <tt>Inget lÃ¶senord</tt> (inget lÃ¶senord behÃ¶ver anges) eller det lÃ¶senord
     som ska anges vid inloggning.
 </ul>
 

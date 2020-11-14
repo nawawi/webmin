@@ -1,2 +1,2 @@
-desc_pl=Wysy³anie i pobieranie
-longdesc_pl=Wysy³anie wielu plików na serwer i pobieranie z i na serwer z URL przez harmonogram lub natychmiast.
+desc_pl=WysyÂ³anie i pobieranie
+longdesc_pl=WysyÂ³anie wielu plikÃ³w na serwer i pobieranie z i na serwer z URL przez harmonogram lub natychmiast.

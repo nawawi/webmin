@@ -1,7 +1,7 @@
-majordomo_cf=Pe³na ¶cie¿ka do pliku konfiguracyjnego majordomo,0
-program_dir=Katalog zawieraj±cy programy majordomo,0
-wrapper_path=¦cie¿ka do wrappera majordomo,3,W&nbsp;katalogu programów
-dynamic=U¿ywaæ losowych aliasów list,1,1-Tak,0-Nie
-sort_mode=Porz±dkuj listy wed³ug,1,1-Nazwy,0-Kolejno¶ci utworzenia
-smrsh_program_dir=Katalog zawieraj±cy bezpieczne programy sendmail,3,Gdziekolwiek
-aliases_file=Plik aliasów w stylu Sendmaila,10,postfix-Get from Postfix,-Get from Sendmail,Other file
+majordomo_cf=PeÅ‚na Å›cieÅ¼ka do pliku konfiguracyjnego majordomo,0
+program_dir=Katalog zawierajÄ…cy programy majordomo,0
+wrapper_path=ÅšcieÅ¼ka do wrappera majordomo,3,W&nbsp;katalogu programÃ³w
+dynamic=UÅ¼ywaÄ‡ losowych aliasÃ³w list,1,1-Tak,0-Nie
+sort_mode=PorzÄ…dkuj listy wedÅ‚ug,1,1-Nazwy,0-KolejnoÅ›ci utworzenia
+smrsh_program_dir=Katalog zawierajÄ…cy bezpieczne programy sendmail,3,Gdziekolwiek
+aliases_file=Plik aliasÃ³w w stylu Sendmaila,10,postfix-Get from Postfix,-Get from Sendmail,Other file

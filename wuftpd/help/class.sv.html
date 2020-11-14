@@ -1,31 +1,31 @@
-<header>Användare och klasser</header>
+<header>AnvÃ¤ndare och klasser</header>
 
-WU FTP-servern tillåter klassificering av användare baserat på den adress
-de loggar in från och deras användartyp. Det finns tre användaretyper:
+WU FTP-servern tillÃ¥ter klassificering av anvÃ¤ndare baserat pÃ¥ den adress
+de loggar in frÃ¥n och deras anvÃ¤ndartyp. Det finns tre anvÃ¤ndaretyper:
 <ul>
-<li><b>Unix</b> - Vanliga användare i systemet.
-<li><b>Gäst</b> - Unix-användare som har klassificerats som gäster.
-<li><b>Anonym</b> - Inloggningar av användarna <tt>anonym</tt> eller
-<tt>ftp</tt>, om detta tillåts i systemet.
+<li><b>Unix</b> - Vanliga anvÃ¤ndare i systemet.
+<li><b>GÃ¤st</b> - Unix-anvÃ¤ndare som har klassificerats som gÃ¤ster.
+<li><b>Anonym</b> - Inloggningar av anvÃ¤ndarna <tt>anonym</tt> eller
+<tt>ftp</tt>, om detta tillÃ¥ts i systemet.
 </ul><p>
 
-Högst upp på sidan kan man definiera klasser beroende på användartyp och
-uppkopplingsadress. Varje inloggning förs till den första klass som matchar,
-vilket betyder att man bör ordna klasserna från mest till minst specifik.
-Adresserna för en klass kan vara fullständiga eller partiella IP-adresser,
-IP-nätverk/nätmaskar, datornamn, datornamn med jokertecken (t ex
-<tt>*.foo.com</tt>) eller absoluta sökvägar till filer som innehåller
-adresser. Varje adressangivelse kan också negeras genom att ett !
-(utropstecken) skrivs först.
+HÃ¶gst upp pÃ¥ sidan kan man definiera klasser beroende pÃ¥ anvÃ¤ndartyp och
+uppkopplingsadress. Varje inloggning fÃ¶rs till den fÃ¶rsta klass som matchar,
+vilket betyder att man bÃ¶r ordna klasserna frÃ¥n mest till minst specifik.
+Adresserna fÃ¶r en klass kan vara fullstÃ¤ndiga eller partiella IP-adresser,
+IP-nÃ¤tverk/nÃ¤tmaskar, datornamn, datornamn med jokertecken (t ex
+<tt>*.foo.com</tt>) eller absoluta sÃ¶kvÃ¤gar till filer som innehÃ¥ller
+adresser. Varje adressangivelse kan ocksÃ¥ negeras genom att ett !
+(utropstecken) skrivs fÃ¶rst.
 
-<p>På mitten av sidan kan man ange de Unix-användare och -grupper som ska
-behandlas som gäster. En gästanvändare har ungefär samma rättigheter som en
-vanlig Unix-användare, men är begränsad till en viss katalog med hjälp av
+<p>PÃ¥ mitten av sidan kan man ange de Unix-anvÃ¤ndare och -grupper som ska
+behandlas som gÃ¤ster. En gÃ¤stanvÃ¤ndare har ungefÃ¤r samma rÃ¤ttigheter som en
+vanlig Unix-anvÃ¤ndare, men Ã¤r begrÃ¤nsad till en viss katalog med hjÃ¤lp av
 <tt>chroot</tt>.
 
-<p>Längst ned på sidan kan man ange Unix-användare och -grupper som ska nekas
-åtkomst till FTP-servern. Användare kan anges med namn, UID (t ex
+<p>LÃ¤ngst ned pÃ¥ sidan kan man ange Unix-anvÃ¤ndare och -grupper som ska nekas
+Ã¥tkomst till FTP-servern. AnvÃ¤ndare kan anges med namn, UID (t ex
 <tt>%3000</tt>) eller UID-intervall (t ex <tt>%3000-3006</tt>). Grupper kan
-anges på liknande sätt.
+anges pÃ¥ liknande sÃ¤tt.
 
 <hr>

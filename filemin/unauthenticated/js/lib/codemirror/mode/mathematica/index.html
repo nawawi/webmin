@@ -31,9 +31,9 @@
 
 <textarea id="mathematicaCode">
 (* example Mathematica code *)
-(* Dualisiert wird anhand einer Polarität an einer
-   Quadrik $x^t Q x = 0$ mit regulärer Matrix $Q$ (also
-   mit $det(Q) \neq 0$), z.B. die Identitätsmatrix.
+(* Dualisiert wird anhand einer PolaritÃ¤t an einer
+   Quadrik $x^t Q x = 0$ mit regulÃ¤rer Matrix $Q$ (also
+   mit $det(Q) \neq 0$), z.B. die IdentitÃ¤tsmatrix.
    $p$ ist eine Liste von Polynomen - ein Ideal. *)
 dualize::"singular" = "Q must be regular: found Det[Q]==0.";
 dualize[ Q_, p_ ] := Block[

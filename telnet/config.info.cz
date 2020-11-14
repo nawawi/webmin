@@ -1,8 +1,8 @@
-host=Hostname k pøípojení,3,Automatické
-port=Port k pøipojení,3,Vıchozí
-mode=Typ pøipojení,1,0-Telnet,1-Bezpeènı Shell (doporuèeno)
-sizemode=Velikost appletu,1,0-80x24 znakù (v základním fontu),1-Maximální,2-Vlastní velikost
-size=Vlastní ¹íøka x vı¹ka,0
-fontsize=Velikost fontu v bodech,3,Defaultní
-detach=Mód oddìleného okna?,1,1-ano,0-ne
+host=Hostname k pÃ¸Ã­pojenÃ­,3,AutomatickÃ©
+port=Port k pÃ¸ipojenÃ­,3,VÃ½chozÃ­
+mode=Typ pÃ¸ipojenÃ­,1,0-Telnet,1-BezpeÃ¨nÃ½ Shell (doporuÃ¨eno)
+sizemode=Velikost appletu,1,0-80x24 znakÃ¹ (v zÃ¡kladnÃ­m fontu),1-MaximÃ¡lnÃ­,2-VlastnÃ­ velikost
+size=VlastnÃ­ Â¹Ã­Ã¸ka x vÃ½Â¹ka,0
+fontsize=Velikost fontu v bodech,3,DefaultnÃ­
+detach=MÃ³d oddÃ¬lenÃ©ho okna?,1,1-ano,0-ne
 no_test=Otestovat telnet nebo SSH server?,1,0-ano,1-ne

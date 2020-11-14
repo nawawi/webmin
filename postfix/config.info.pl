@@ -1,6 +1,6 @@
-postfix_control_command=Pe≥na ∂cieøka do polecenia kontrolnego Postfiksa,0
-postfix_config_command=Pe≥na ∂cieøka do polecenia konfiguracyjnego Postfiksa,0
-postfix_config_file=Pe≥na ∂cieøka do pliku konfiguracyjnego Postfiksa,0
-postfix_aliases_table_command=Pe≥na ∂cieøka do polecenia tworz±cego aliasy Postfiksa,0
-postfix_newaliases_command=Pe≥na ∂cieøka do polecenia &quot;newaliases&quot; (zgodno∂Ê z&nbsp;Sendmailem),0
-postfix_lookup_table_command=Pe≥na ∂cieøka do polecenia zarz±dzaj±cego tablicami przeszukiwania Postfiksa (`postmap'),0
+postfix_control_command=Pe≈Çna ≈õcie≈ºka do polecenia kontrolnego Postfiksa,0
+postfix_config_command=Pe≈Çna ≈õcie≈ºka do polecenia konfiguracyjnego Postfiksa,0
+postfix_config_file=Pe≈Çna ≈õcie≈ºka do pliku konfiguracyjnego Postfiksa,0
+postfix_aliases_table_command=Pe≈Çna ≈õcie≈ºka do polecenia tworzƒÖcego aliasy Postfiksa,0
+postfix_newaliases_command=Pe≈Çna ≈õcie≈ºka do polecenia &quot;newaliases&quot; (zgodno≈õƒá z&nbsp;Sendmailem),0
+postfix_lookup_table_command=Pe≈Çna ≈õcie≈ºka do polecenia zarzƒÖdzajƒÖcego tablicami przeszukiwania Postfiksa (`postmap'),0

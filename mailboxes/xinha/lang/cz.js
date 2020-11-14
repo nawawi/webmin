@@ -1,7 +1,7 @@
 // I18N constants
 
 // LANG: "cz", ENCODING: UTF-8
-// Author: Jiri Löw, <jirilow@jirilow.com>
+// Author: Jiri LÃ¶w, <jirilow@jirilow.com>
 
 // FOR TRANSLATORS:
 //
@@ -13,38 +13,38 @@
 //       that states what encoding is necessary.)
 
 {
-  "Bold": "Tučně",
-  "Italic": "Kurzíva",
-  "Underline": "Podtržení",
-  "Strikethrough": "Přeškrtnutí",
-  "Subscript": "Dolní index",
-  "Superscript": "Horní index",
+  "Bold": "TuÄnÄ",
+  "Italic": "KurzÃ­va",
+  "Underline": "PodtrÅ¾enÃ­",
+  "Strikethrough": "PÅeÅ¡krtnutÃ­",
+  "Subscript": "DolnÃ­ index",
+  "Superscript": "HornÃ­ index",
   "Justify Left": "Zarovnat doleva",
-  "Justify Center": "Na střed",
+  "Justify Center": "Na stÅed",
   "Justify Right": "Zarovnat doprava",
   "Justify Full": "Zarovnat do stran",
   "Ordered List": "Seznam",
-  "Bulleted List": "Odrážky",
-  "Decrease Indent": "Předsadit",
+  "Bulleted List": "OdrÃ¡Å¾ky",
+  "Decrease Indent": "PÅedsadit",
   "Increase Indent": "Odsadit",
-  "Font Color": "Barva písma",
-  "Background Color": "Barva pozadí",
-  "Horizontal Rule": "Vodorovná čára",
-  "Insert Web Link": "Vložit odkaz",
-  "Insert/Modify Image": "Vložit obrázek",
-  "Insert Table": "Vložit tabulku",
-  "Toggle HTML Source": "Přepnout HTML",
-  "Enlarge Editor": "Nové okno editoru",
-  "About this editor": "O této aplikaci",
-  "Help using editor": "Nápověda aplikace",
-  "Current style": "Zvolený styl",
-  "Undoes your last action": "Vrátí poslední akci",
-  "Redoes your last action": "Opakuje poslední akci",
+  "Font Color": "Barva pÃ­sma",
+  "Background Color": "Barva pozadÃ­",
+  "Horizontal Rule": "VodorovnÃ¡ ÄÃ¡ra",
+  "Insert Web Link": "VloÅ¾it odkaz",
+  "Insert/Modify Image": "VloÅ¾it obrÃ¡zek",
+  "Insert Table": "VloÅ¾it tabulku",
+  "Toggle HTML Source": "PÅepnout HTML",
+  "Enlarge Editor": "NovÃ© okno editoru",
+  "About this editor": "O tÃ©to aplikaci",
+  "Help using editor": "NÃ¡povÄda aplikace",
+  "Current style": "ZvolenÃ½ styl",
+  "Undoes your last action": "VrÃ¡tÃ­ poslednÃ­ akci",
+  "Redoes your last action": "Opakuje poslednÃ­ akci",
   "Cut selection": "Vyjmout",
-  "Copy selection": "Kopírovat",
-  "Paste from clipboard": "Vložit",
+  "Copy selection": "KopÃ­rovat",
+  "Paste from clipboard": "VloÅ¾it",
   "OK": "OK",
-  "Cancel": "Zrušit",
+  "Cancel": "ZruÅ¡it",
   "Path": "Cesta",
-  "You are in TEXT MODE.  Use the [<>] button to switch back to WYSIWYG.": "Jste v TEXTOVÉM REŽIMU.  Použijte tlačítko [<>] pro přepnutí do WYSIWIG."
+  "You are in TEXT MODE.  Use the [<>] button to switch back to WYSIWYG.": "Jste v TEXTOVÃM REÅ½IMU.  PouÅ¾ijte tlaÄÃ­tko [<>] pro pÅepnutÃ­ do WYSIWIG."
 }

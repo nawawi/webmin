@@ -1,223 +1,223 @@
 __norefs=1
 acl_all=Wszystkie katalogi
-acl_cmds=Mo¿e edytowaæ polecenia przed i po?
+acl_cmds=MoÅ¼e edytowaÄ‡ polecenia przed i po?
 acl_dirs=Dozwolone katalogi dla kopii zapasowych
-acl_edit=Mo¿e tworzyæ i edytowaæ kopie zapasowe?
-acl_extra=Mo¿e edytowaæ dodatkowe parametry poleceñ?
+acl_edit=MoÅ¼e tworzyÄ‡ i edytowaÄ‡ kopie zapasowe?
+acl_extra=MoÅ¼e edytowaÄ‡ dodatkowe parametry poleceÅ„?
 acl_list=Tylko wymienione ..
-acl_restore=Mo¿e przywracaæ kopie zapasowe?
-backup_afterfailed=.. wykonanie polecenia po kopii zapasowej nie powiod³o siê!
-backup_beforefailed=.. wykonanie polecenia przed kopi± zapasow± nie powiod³o siê!
-backup_bg=Uruchomiono w tle proces kopii zapasowej. Mo¿esz monitorowaæ postêp w sekcji <b>Uruchomione zadania kopii</b> na g³ównej stronie modu³u. Po zakoñczeniu zostaniesz o tym poinformowany przez e-mail.
+acl_restore=MoÅ¼e przywracaÄ‡ kopie zapasowe?
+backup_afterfailed=.. wykonanie polecenia po kopii zapasowej nie powiodÅ‚o siÄ™!
+backup_beforefailed=.. wykonanie polecenia przed kopiÄ… zapasowÄ… nie powiodÅ‚o siÄ™!
+backup_bg=Uruchomiono w tle proces kopii zapasowej. MoÅ¼esz monitorowaÄ‡ postÄ™p w sekcji <b>Uruchomione zadania kopii</b> na gÅ‚Ã³wnej stronie moduÅ‚u. Po zakoÅ„czeniu zostaniesz o tym poinformowany przez e-mail.
 backup_desc=Wykonywanie kopii zapasowej z $1 do $2 ..
 backup_done=.. kopia zapasowa wykonana.
-backup_ecannot=Nie masz uprawnieñ do zarz±dzania kopi± zapasow± tego katalogu
+backup_ecannot=Nie masz uprawnieÅ„ do zarzÄ…dzania kopiÄ… zapasowÄ… tego katalogu
 backup_egone=Kopia zapasowa nie istnieje!
-backup_failed=.. wykonanie kopii zapasowej nie powiod³o siê!
-backup_notape=.. wielko¶æ kopii zapasowej przekracza pojemno¶æ pojedynczej ta¶my. Zmiana ta¶m jest wspierana tylko, je¿eli kopia jest uruchomiona jako proces w tle.
-backup_noverify=.. weryfikacja nie powiod³a siê!
+backup_failed=.. wykonanie kopii zapasowej nie powiodÅ‚o siÄ™!
+backup_notape=.. wielkoÅ›Ä‡ kopii zapasowej przekracza pojemnoÅ›Ä‡ pojedynczej taÅ›my. Zmiana taÅ›m jest wspierana tylko, jeÅ¼eli kopia jest uruchomiona jako proces w tle.
+backup_noverify=.. weryfikacja nie powiodÅ‚a siÄ™!
 backup_reverify=.. gotowe. Trwa weryfikacja kopii zapasowej
-backup_title=Utwórz kopiê zapasow±
+backup_title=UtwÃ³rz kopiÄ™ zapasowÄ…
 delete_enone=Nic nie wybrano
-delete_err=B³±d kasowania kopii zapasowych
+delete_err=BÅ‚Ä…d kasowania kopii zapasowych
 dump_after=Polecenie do uruchomienia po kopii zapasowej
-dump_aok=Pomiñ polecenie nawet je¿eli kopia zapasowa siê nie powiedzie
-dump_attribs=Do³±czyæ atrybuty pliku?
-dump_auto=Dzia³a automatycznie
-dump_bcomp=Buforowaæ skompresowane dane w blokach?
-dump_before=Polecenie do uruchomienia przed kopi± zapasow±
-dump_blocks=Rozmiar ta¶my
+dump_aok=PomiÅ„ polecenie nawet jeÅ¼eli kopia zapasowa siÄ™ nie powiedzie
+dump_attribs=DoÅ‚Ä…czyÄ‡ atrybuty pliku?
+dump_auto=DziaÅ‚a automatycznie
+dump_bcomp=BuforowaÄ‡ skompresowane dane w blokach?
+dump_before=Polecenie do uruchomienia przed kopiÄ… zapasowÄ…
+dump_blocks=Rozmiar taÅ›my
 dump_bsize=Rozmiar nagranego rekordu zrzutu
-dump_comp=Kompresowaæ dane?
+dump_comp=KompresowaÄ‡ dane?
 dump_complvl=Tak, z poziomem
 dump_dest=Kopia do
 dump_dir=Katalog kopii zapasowej
 dump_dirs=Katalogi kopii zapasowych
-dump_dumpfs=zrzut systemu plików $1
-dump_eblocks=Brakuj±cy lub nieprawid³owy rozmiar ta¶my
-dump_ebsize=Brakuj±cy lub nieprawid³owy rozmiar nagranego rekordu zrzutu
-dump_ecannot1=Nie masz uprawnieñ do tworzenia kopii zapasowych
-dump_ecannot2=Nie masz uprawnieñ do edytowania tej kopii zapasowej
-dump_ecannot3=Nie masz uprawnieñ do kopii zapasowej tego katalogu
-dump_ecomp=Brakuj±cy lub nieprawid³owy poziom kompresji
-dump_edir=Brakuj±cy lub nieprawid³owy katalog kopii
-dump_efile=Brakuj±cy plik lub urz±dzenie do kopii zapasowej do
-dump_eftpupdate=Dodanie plików do istniej±cego archiwum jest niemo¿liwe, przy u¿ywaniu FTP.
-dump_egzip=Opcja kompresji gzip nie jest kompatybilna z opcj± rozmiaru ta¶my
-dump_egzip2=Opcja kompresji gzip nie jest kompatybilna z opcj± kopii wielu plików
-dump_egzip3=Opcja kompresji gzip nie jest kompatybilna z opcj± tylko dodawania nowych plików do archiwum
-dump_ehfile=Brakuj±cy plik lub urz±dzenie na ho¶cie do kopii zapasowej do
-dump_ehost=Brakuj±cy lub b³êdny host do kopii zapasowej do
-dump_ehuser=B³êdna nazwa u¿ytkownika hosta do kopii
-dump_ehuser2=Nazwa u¿ytkownika nie mo¿e zawieraæ znaku @
-dump_elabel=B³êdna etykieta kopii zapasowej (maksymalnie 15 znaków)
-dump_elabel2=B³êdna etykieta kopii zapasowej (maksymalnie 255 znaków)
-dump_eleveldir=Tylko poziom 0 kopii zapasowych jest dozwolony dla katalogów, które nie s± punktami montowania systemu plików.
-dump_emax=Brakuj±cy lub nieprawid³owy maksymalny rozmiar pliku
-dump_emp=Katalog kopii musi byæ punktem montowania systemu plików
-dump_emulti=Kopia wielu plików nie mo¿e byæ zrobiona na urz±dzeniu ta¶mowym
-dump_emulti2=Kopia wielu plików nie mo¿e byæ zrobiona na zdalnym serwerze
-dump_erase=Usuwaæ plik / kasowaæ ta¶mê przed kopi±?
-dump_ermt=Brakuj±ca lub nieprawid³owa ¶cie¿ka do programu <tt>rmt</tt>
-dump_ersh=Brakuj±ce lub nieprawid³owe polecenie zdalnej kopii zapasowej
-dump_essh=SSH nie mo¿e byæ u¿yte do zdalnej kopii, poniewa¿ polecenie <tt>ssh</tt> nie jest zainstalowane w twoim systemie
-dump_eupdatedir=Plik <tt>/etc/dumpdates</tt> mo¿e byæ zaktualizowany tylko dla katalogów, które s± w punktach montowania systemu plików
-dump_exclude=Pliki i katalogi do pominiêcia
+dump_dumpfs=zrzut systemu plikÃ³w $1
+dump_eblocks=BrakujÄ…cy lub nieprawidÅ‚owy rozmiar taÅ›my
+dump_ebsize=BrakujÄ…cy lub nieprawidÅ‚owy rozmiar nagranego rekordu zrzutu
+dump_ecannot1=Nie masz uprawnieÅ„ do tworzenia kopii zapasowych
+dump_ecannot2=Nie masz uprawnieÅ„ do edytowania tej kopii zapasowej
+dump_ecannot3=Nie masz uprawnieÅ„ do kopii zapasowej tego katalogu
+dump_ecomp=BrakujÄ…cy lub nieprawidÅ‚owy poziom kompresji
+dump_edir=BrakujÄ…cy lub nieprawidÅ‚owy katalog kopii
+dump_efile=BrakujÄ…cy plik lub urzÄ…dzenie do kopii zapasowej do
+dump_eftpupdate=Dodanie plikÃ³w do istniejÄ…cego archiwum jest niemoÅ¼liwe, przy uÅ¼ywaniu FTP.
+dump_egzip=Opcja kompresji gzip nie jest kompatybilna z opcjÄ… rozmiaru taÅ›my
+dump_egzip2=Opcja kompresji gzip nie jest kompatybilna z opcjÄ… kopii wielu plikÃ³w
+dump_egzip3=Opcja kompresji gzip nie jest kompatybilna z opcjÄ… tylko dodawania nowych plikÃ³w do archiwum
+dump_ehfile=BrakujÄ…cy plik lub urzÄ…dzenie na hoÅ›cie do kopii zapasowej do
+dump_ehost=BrakujÄ…cy lub bÅ‚Ä™dny host do kopii zapasowej do
+dump_ehuser=BÅ‚Ä™dna nazwa uÅ¼ytkownika hosta do kopii
+dump_ehuser2=Nazwa uÅ¼ytkownika nie moÅ¼e zawieraÄ‡ znaku @
+dump_elabel=BÅ‚Ä™dna etykieta kopii zapasowej (maksymalnie 15 znakÃ³w)
+dump_elabel2=BÅ‚Ä™dna etykieta kopii zapasowej (maksymalnie 255 znakÃ³w)
+dump_eleveldir=Tylko poziom 0 kopii zapasowych jest dozwolony dla katalogÃ³w, ktÃ³re nie sÄ… punktami montowania systemu plikÃ³w.
+dump_emax=BrakujÄ…cy lub nieprawidÅ‚owy maksymalny rozmiar pliku
+dump_emp=Katalog kopii musi byÄ‡ punktem montowania systemu plikÃ³w
+dump_emulti=Kopia wielu plikÃ³w nie moÅ¼e byÄ‡ zrobiona na urzÄ…dzeniu taÅ›mowym
+dump_emulti2=Kopia wielu plikÃ³w nie moÅ¼e byÄ‡ zrobiona na zdalnym serwerze
+dump_erase=UsuwaÄ‡ plik / kasowaÄ‡ taÅ›mÄ™ przed kopiÄ…?
+dump_ermt=BrakujÄ…ca lub nieprawidÅ‚owa Å›cieÅ¼ka do programu <tt>rmt</tt>
+dump_ersh=BrakujÄ…ce lub nieprawidÅ‚owe polecenie zdalnej kopii zapasowej
+dump_essh=SSH nie moÅ¼e byÄ‡ uÅ¼yte do zdalnej kopii, poniewaÅ¼ polecenie <tt>ssh</tt> nie jest zainstalowane w twoim systemie
+dump_eupdatedir=Plik <tt>/etc/dumpdates</tt> moÅ¼e byÄ‡ zaktualizowany tylko dla katalogÃ³w, ktÃ³re sÄ… w punktach montowania systemu plikÃ³w
+dump_exclude=Pliki i katalogi do pominiÄ™cia
 dump_extra=Dodatkowe parametry linii komend
-dump_file=Plik lub napêd ta¶mowy
-dump_fok=Zatrzymaæ je¿eli polecenie nie powiedzie siê
-dump_fok2=Raportuj b³±d je¿eli polecenie siê nie powiedzie
+dump_file=Plik lub napÄ™d taÅ›mowy
+dump_fok=ZatrzymaÄ‡ jeÅ¼eli polecenie nie powiedzie siÄ™
+dump_fok2=Raportuj bÅ‚Ä…d jeÅ¼eli polecenie siÄ™ nie powiedzie
 dump_format=Format kopii zapasowej
-dump_fs=System plików
-dump_gzip=Kompresowaæ archiwum?
+dump_fs=System plikÃ³w
+dump_gzip=KompresowaÄ‡ archiwum?
 dump_gzip1=Tak, z gzip
 dump_gzip2=Tak, z bzip2
 dump_gzip3=Tak, z XZ
-dump_honour=Zawsze pomijaæ zaznaczone pliki?
-dump_host=Hosta $1 jako u¿ytkownik $2 do pliku lub urz±dzenia $3
-dump_ignoreread=Ignorowaæ b³êdy odczytu plików?
-dump_invent=Nagrywaæ kopie w inwentarzu?
+dump_honour=Zawsze pomijaÄ‡ zaznaczone pliki?
+dump_host=Hosta $1 jako uÅ¼ytkownik $2 do pliku lub urzÄ…dzenia $3
+dump_ignoreread=IgnorowaÄ‡ bÅ‚Ä™dy odczytu plikÃ³w?
+dump_invent=NagrywaÄ‡ kopie w inwentarzu?
 dump_label=Etykieta kopii zapasowej
 dump_level=Poziom zrzutu
-dump_level_0=0 (pe³na kopia zapasowa)
-dump_links=Pod±¿aæ za dowi±zaniami symbolicznymi?
-dump_max=Maksymalny rozmiar do³±czanego pliku
-dump_multi=Podzielone na wiele plików?
-dump_notape=Pytaæ o now± ta¶mê, je¿eli jest potrzebna?
-dump_offline=Wysun±æ ta¶mê po wykonaniu kopii?
-dump_over=Pytaæ przed nadpisaniem ta¶my?
-dump_overwrite=Zawsze nadpisywaæ kopie?
-dump_pass=Has³o do logowania SSH
-dump_pass2=Has³o do logowania SSH/FTP
-dump_remount=Ponownie montowaæ z opcj± <tt>noatime</tt> podczas kopii?
-dump_reverify=Testowa próba przywrócenia kopii w celu weryfikacji?
-dump_rmt=¦cie¿ka do <tt>rmt</tt> w zdalnym systemie
+dump_level_0=0 (peÅ‚na kopia zapasowa)
+dump_links=PodÄ…Å¼aÄ‡ za dowiÄ…zaniami symbolicznymi?
+dump_max=Maksymalny rozmiar doÅ‚Ä…czanego pliku
+dump_multi=Podzielone na wiele plikÃ³w?
+dump_notape=PytaÄ‡ o nowÄ… taÅ›mÄ™, jeÅ¼eli jest potrzebna?
+dump_offline=WysunÄ…Ä‡ taÅ›mÄ™ po wykonaniu kopii?
+dump_over=PytaÄ‡ przed nadpisaniem taÅ›my?
+dump_overwrite=Zawsze nadpisywaÄ‡ kopie?
+dump_pass=HasÅ‚o do logowania SSH
+dump_pass2=HasÅ‚o do logowania SSH/FTP
+dump_remount=Ponownie montowaÄ‡ z opcjÄ… <tt>noatime</tt> podczas kopii?
+dump_reverify=Testowa prÃ³ba przywrÃ³cenia kopii w celu weryfikacji?
+dump_rmt=ÅšcieÅ¼ka do <tt>rmt</tt> w zdalnym systemie
 dump_rsh=Polecenia zdalnej kopii
-dump_rsh0=Domy¶lnie (RSH)
+dump_rsh0=DomyÅ›lnie (RSH)
 dump_rsh1=SSH
 dump_rsh2=Inne polecenie ..
 dump_rsh3=FTP
 dump_sched=Zaplanowane?
 dump_tar=Unix TAR
 dump_unlimited=Nielimitowane
-dump_update=Aktualizowaæ plik <tt>/etc/dumpdates</tt>?
-dump_update2=Tylko dodaæ nowe pliki do archiwum?
-dump_verify=Weryfikowaæ dane po wykonaniu kopii zapasowej?
+dump_update=AktualizowaÄ‡ plik <tt>/etc/dumpdates</tt>?
+dump_update2=Tylko dodaÄ‡ nowe pliki do archiwum?
+dump_verify=WeryfikowaÄ‡ dane po wykonaniu kopii zapasowej?
 dump_when=W czasie
-dump_xdev=Limit kopii do jednego systemu plików?
-edit_createnow=Utwórz i wykonaj kopiê
-edit_edir=Brakuj±cy katalog kopii zapasowej
-edit_efs=Typ systemu plików $1 nie mo¿e byæ kopiowany za pomoc± tego modu³u
-edit_email=Zaplanowany e-mail z danymi wyj¶ciowymi do
-edit_enabled=W³±czony harmonogram kopii?
-edit_enabled_af=W³±czone, po:
-edit_enabled_no=Wy³±czone
-edit_enabled_yes=W³±czony w czasie wybranym poni¿ej..
-edit_err=B³±d tworzenia kopii zapasowej
-edit_header=Szczegó³y kopii zapasowej systemu plików $1
+dump_xdev=Limit kopii do jednego systemu plikÃ³w?
+edit_createnow=UtwÃ³rz i wykonaj kopiÄ™
+edit_edir=BrakujÄ…cy katalog kopii zapasowej
+edit_efs=Typ systemu plikÃ³w $1 nie moÅ¼e byÄ‡ kopiowany za pomocÄ… tego moduÅ‚u
+edit_email=Zaplanowany e-mail z danymi wyjÅ›ciowymi do
+edit_enabled=WÅ‚Ä…czony harmonogram kopii?
+edit_enabled_af=WÅ‚Ä…czone, po:
+edit_enabled_no=WyÅ‚Ä…czone
+edit_enabled_yes=WÅ‚Ä…czony w czasie wybranym poniÅ¼ej..
+edit_err=BÅ‚Ä…d tworzenia kopii zapasowej
+edit_header=SzczegÃ³Å‚y kopii zapasowej systemu plikÃ³w $1
 edit_header2=Zaplanowana kopia zapasowa
 edit_header3=Opcje kopii zapasowej
 edit_restore=Przywracanie ..
 edit_return=kopii zapasowej
-edit_savenow=Zapisz i wykonaj kopiê
+edit_savenow=Zapisz i wykonaj kopiÄ™
 edit_special=Harmonogram kopii
-edit_subject=Tytu³ wiadomo¶ci e-mail
+edit_subject=TytuÅ‚ wiadomoÅ›ci e-mail
 edit_title=Dodawanie nowej kopii zapasowej
 edit_title2=Edycja kopii zapasowej
 edit_to=$1 do $2
 edit_tolevel=$1 do $2 (poziom $3)
 edit_when=Po utworzeniu kopii
-email_already=Kopia zapasowa jest ju¿ uruchomiona z PID $1.
-email_eafter=Polecenie po kopii zapasowej nie powiod³o siê!
-email_ebefore=Polecenie przed kopi± zapasow± nie powiod³o siê!
-email_failed=Wykonanie kopii zapasowej nie powiod³o siê!
-email_ok=Kopia zapasowa zosta³a wykonana
+email_already=Kopia zapasowa jest juÅ¼ uruchomiona z PID $1.
+email_eafter=Polecenie po kopii zapasowej nie powiodÅ‚o siÄ™!
+email_ebefore=Polecenie przed kopiÄ… zapasowÄ… nie powiodÅ‚o siÄ™!
+email_failed=Wykonanie kopii zapasowej nie powiodÅ‚o siÄ™!
+email_ok=Kopia zapasowa zostaÅ‚a wykonana
 email_subject=Kopia zapasowa z $1 na $2
 email_verify=Weryfikacja kopii zapasowej ..
-index_action=Dzia³anie
-index_add=Dodaj now± kopiê zapasow± katalogu:
-index_delete=Usuñ wybrane kopie zapasowe
-index_ecommands=¯adne z poleceñ potrzebnych do kopii zapasowej (takich jak $1) nie zosta³o znalezione w twoim systemie. Mo¿liwe, ¿e nie jest zainstalowane.
+index_action=DziaÅ‚anie
+index_add=Dodaj nowÄ… kopiÄ™ zapasowÄ… katalogu:
+index_delete=UsuÅ„ wybrane kopie zapasowe
+index_ecommands=Å»adne z poleceÅ„ potrzebnych do kopii zapasowej (takich jak $1) nie zostaÅ‚o znalezione w twoim systemie. MoÅ¼liwe, Å¼e nie jest zainstalowane.
 index_follow=Po $1
 index_forcetar=w formacie TAR
 index_jobs=Zaplanowane kopie zapasowe
-index_kill=Zakoñcz
-index_newtape=Za³adowano ta¶mê
-index_noact=Brak dostêpnych
-index_none=Nie utworzono jeszcze konfiguracji kopii zapasowej systemu plików.
-index_none2=Brak konfiguracji kopii zapasowych do których masz dostêp.
-index_nostrftime=Uwaga - niektóre zadania kopii u¿ywaj± % w nazwach swoich plików, ale podmiana strftime nie jest w³±czona na stronie konfiguracji modu³u
+index_kill=ZakoÅ„cz
+index_newtape=ZaÅ‚adowano taÅ›mÄ™
+index_noact=Brak dostÄ™pnych
+index_none=Nie utworzono jeszcze konfiguracji kopii zapasowej systemu plikÃ³w.
+index_none2=Brak konfiguracji kopii zapasowych do ktÃ³rych masz dostÄ™p.
+index_nostrftime=Uwaga - niektÃ³re zadania kopii uÅ¼ywajÄ… % w nazwach swoich plikÃ³w, ale podmiana strftime nie jest wÅ‚Ä…czona na stronie konfiguracji moduÅ‚u
 index_now=Kopia zapasowa..
-index_restore=Przywracanie kopii systemu plików typu:
-index_restore2=Przywróæ kopiê zapasow± systemu plików
-index_restoremsg=Wybierz typ systemu plików i kliknij ten przycisk, aby rozpocz±æ proces wybierania kopii zapasowej do przywrócenia.
-index_restoremsg2=Kliknij ten przycisk, aby rozpocz±æ proces wybierania kopii zapasowej do przywrócenia.
+index_restore=Przywracanie kopii systemu plikÃ³w typu:
+index_restore2=PrzywrÃ³Ä‡ kopiÄ™ zapasowÄ… systemu plikÃ³w
+index_restoremsg=Wybierz typ systemu plikÃ³w i kliknij ten przycisk, aby rozpoczÄ…Ä‡ proces wybierania kopii zapasowej do przywrÃ³cenia.
+index_restoremsg2=Kliknij ten przycisk, aby rozpoczÄ…Ä‡ proces wybierania kopii zapasowej do przywrÃ³cenia.
 index_return=listy kopii zapasowych
 index_running=Uruchomione zadania kopii
 index_start=Uruchomione o
 index_status=Aktualny stan
-index_status_running=Dzia³a
-index_status_tape=Oczekiwanie na ta¶mê
-index_title=Kopia zapasowa systemu plików
-kill_ecannot=Nie masz uprawnieñ do przerwania tej kopii
-kill_egone=Nie jest ju¿ uruchomiony!
-kill_err=B³±d przerywania kopii
-log_backup=Wykonano kopiê zapasow± $1 do $2
-log_bgbackup=Uruchomiono kopiê zapasow± z $1 do $2
-log_create=Utworzono konfiguracjê zapasow± dla $1
-log_delete=Usuniêto konfiguracjê zapasow± dla $1
-log_kill=Przerwano kopiê zapasow± dla $1
-log_modify=Zmodyfikowano konfiguracjê zapasow± dla $1
-log_restore=Przywrócono kopiê zapasow± z $1
-newtape_body=Kopia $2 na $3 osi±gnê³a maksymaln± pojemno¶æ ta¶my $1. Musisz za³adowaæ now± ta¶mê i klikn±æ na 'Za³adowano ta¶mê' w module Webmina - Kopia zapasowa systemu plików, aby kontynuowaæ.
-newtape_ecannot=Nie masz uprawnieñ do zarz±dzania t± kopi± zapasow±
-newtape_egone=Kopia nie jest ju¿ uruchomiona!
-newtape_err=B³êdny sygna³ nowej ta¶my
-newtape_estatus=Kopia zapasowa ju¿ nie oczekuje nowej ta¶my
-newtape_subject=Ta¶ma zmieniona $1 dla kopii z $2 na $3
+index_status_running=DziaÅ‚a
+index_status_tape=Oczekiwanie na taÅ›mÄ™
+index_title=Kopia zapasowa systemu plikÃ³w
+kill_ecannot=Nie masz uprawnieÅ„ do przerwania tej kopii
+kill_egone=Nie jest juÅ¼ uruchomiony!
+kill_err=BÅ‚Ä…d przerywania kopii
+log_backup=Wykonano kopiÄ™ zapasowÄ… $1 do $2
+log_bgbackup=Uruchomiono kopiÄ™ zapasowÄ… z $1 do $2
+log_create=Utworzono konfiguracjÄ™ zapasowÄ… dla $1
+log_delete=UsuniÄ™to konfiguracjÄ™ zapasowÄ… dla $1
+log_kill=Przerwano kopiÄ™ zapasowÄ… dla $1
+log_modify=Zmodyfikowano konfiguracjÄ™ zapasowÄ… dla $1
+log_restore=PrzywrÃ³cono kopiÄ™ zapasowÄ… z $1
+newtape_body=Kopia $2 na $3 osiÄ…gnÄ™Å‚a maksymalnÄ… pojemnoÅ›Ä‡ taÅ›my $1. Musisz zaÅ‚adowaÄ‡ nowÄ… taÅ›mÄ™ i kliknÄ…Ä‡ na 'ZaÅ‚adowano taÅ›mÄ™' w module Webmina - Kopia zapasowa systemu plikÃ³w, aby kontynuowaÄ‡.
+newtape_ecannot=Nie masz uprawnieÅ„ do zarzÄ…dzania tÄ… kopiÄ… zapasowÄ…
+newtape_egone=Kopia nie jest juÅ¼ uruchomiona!
+newtape_err=BÅ‚Ä™dny sygnaÅ‚ nowej taÅ›my
+newtape_estatus=Kopia zapasowa juÅ¼ nie oczekuje nowej taÅ›my
+newtape_subject=TaÅ›ma zmieniona $1 dla kopii z $2 na $3
 restore_all=Wszystko w kopii zapasowej
-restore_complete=Pomy¶lnie przywrócono.
-restore_desc=Ta strona pozwala na przywrócenie poprzednich kopii zapasowych systemu plików. B±d¼ ostro¿ny przy przywracaniu, poniewa¿ wszystkie pliki zmodyfikowane od wykonania kopii zostan± nadpisane!
-restore_dir=Katalog przywrócenia
-restore_ecannot=Nie masz uprawnieñ do przywrócenia kopii zapasowych
-restore_ecommand=Polecenie $1, które jest potrzebne do przywrócenia kopii zapasowych systemu plików $2 nie zosta³o znalezione w twoim systemie. Mo¿liwe, ¿e nie jest zainstalowane.
-restore_edir=Brakuj±cy lub nieprawid³owy katalog do przywrócenia
-restore_efile=Brakuj±cy plik lub urz±dzenie do przywrócenia z
-restore_efiles=Brakuj±ce pliki do przywrócenia
-restore_ehfile=Brakuj±cy lub nieprawid³owy plik lub urz±dzenie na ho¶cie do przywrócenia z
-restore_ehost=Brakuj±cy lub nieprawid³owy host do przywrócenia z
-restore_ehuser=Nieprawid³owa nazwa u¿ytkownika hosta do przywrócenia z
-restore_emulti=Przywrócenie wielu plików nie mo¿e byæ zrobione z urz±dzenia ta¶mowego
-restore_emulti2=Przywrócenie wielu plików nie mo¿e byæ zrobione ze zdalnego serwera
+restore_complete=PomyÅ›lnie przywrÃ³cono.
+restore_desc=Ta strona pozwala na przywrÃ³cenie poprzednich kopii zapasowych systemu plikÃ³w. BÄ…dÅº ostroÅ¼ny przy przywracaniu, poniewaÅ¼ wszystkie pliki zmodyfikowane od wykonania kopii zostanÄ… nadpisane!
+restore_dir=Katalog przywrÃ³cenia
+restore_ecannot=Nie masz uprawnieÅ„ do przywrÃ³cenia kopii zapasowych
+restore_ecommand=Polecenie $1, ktÃ³re jest potrzebne do przywrÃ³cenia kopii zapasowych systemu plikÃ³w $2 nie zostaÅ‚o znalezione w twoim systemie. MoÅ¼liwe, Å¼e nie jest zainstalowane.
+restore_edir=BrakujÄ…cy lub nieprawidÅ‚owy katalog do przywrÃ³cenia
+restore_efile=BrakujÄ…cy plik lub urzÄ…dzenie do przywrÃ³cenia z
+restore_efiles=BrakujÄ…ce pliki do przywrÃ³cenia
+restore_ehfile=BrakujÄ…cy lub nieprawidÅ‚owy plik lub urzÄ…dzenie na hoÅ›cie do przywrÃ³cenia z
+restore_ehost=BrakujÄ…cy lub nieprawidÅ‚owy host do przywrÃ³cenia z
+restore_ehuser=NieprawidÅ‚owa nazwa uÅ¼ytkownika hosta do przywrÃ³cenia z
+restore_emulti=PrzywrÃ³cenie wielu plikÃ³w nie moÅ¼e byÄ‡ zrobione z urzÄ…dzenia taÅ›mowego
+restore_emulti2=PrzywrÃ³cenie wielu plikÃ³w nie moÅ¼e byÄ‡ zrobione ze zdalnego serwera
 restore_equestion=Nieznane pytanie z przywracania : $1
-restore_err=B³±d przywracania kopii zapasowej
-restore_ersh=Brakuj±ce lub nieprawid³owe polecenie zdalnego przywrócenia
-restore_essh=SSH nie mo¿e byæ u¿yte do zdalnego przywrócenia kopii, poniewa¿ polecenie <tt>ssh</tt> nie jest zainstalowane w twoim systemie
-restore_evolume=Przywracanie wielu woluminów nie jest wspierane.
-restore_extra=Opcje dodatkowych poleceñ
-restore_failed=B³±d przywracania : $1
-restore_failed2=B³±d przywracania! Sprawd¼ poni¿sze informacje.
-restore_files=Pliki do przywrócenia
-restore_gzip=Dekompresowaæ archiwum?
-restore_header=Przywracanie kopii systemu plików $1
-restore_keep=Nie nadpisywaæ plików?
-restore_label=Przywróæ tylko kopiê z etykiet±
-restore_multi=Kopia zapasowa jest podzielona na wiele plików?
-restore_noattribs=Przywróciæ atrybuty pliku?
-restore_nothing=Tylko przetestowaæ kopiê?
+restore_err=BÅ‚Ä…d przywracania kopii zapasowej
+restore_ersh=BrakujÄ…ce lub nieprawidÅ‚owe polecenie zdalnego przywrÃ³cenia
+restore_essh=SSH nie moÅ¼e byÄ‡ uÅ¼yte do zdalnego przywrÃ³cenia kopii, poniewaÅ¼ polecenie <tt>ssh</tt> nie jest zainstalowane w twoim systemie
+restore_evolume=Przywracanie wielu woluminÃ³w nie jest wspierane.
+restore_extra=Opcje dodatkowych poleceÅ„
+restore_failed=BÅ‚Ä…d przywracania : $1
+restore_failed2=BÅ‚Ä…d przywracania! SprawdÅº poniÅ¼sze informacje.
+restore_files=Pliki do przywrÃ³cenia
+restore_gzip=DekompresowaÄ‡ archiwum?
+restore_header=Przywracanie kopii systemu plikÃ³w $1
+restore_keep=Nie nadpisywaÄ‡ plikÃ³w?
+restore_label=PrzywrÃ³Ä‡ tylko kopiÄ™ z etykietÄ…
+restore_multi=Kopia zapasowa jest podzielona na wiele plikÃ³w?
+restore_noattribs=PrzywrÃ³ciÄ‡ atrybuty pliku?
+restore_nothing=Tylko przetestowaÄ‡ kopiÄ™?
 restore_now=Przywracanie kopii z poleceniem $1 ..
-restore_ok=Przywróæ kopiê zapasow±
-restore_over=Nadpisywaæ istniej±ce pliki?
+restore_ok=PrzywrÃ³Ä‡ kopiÄ™ zapasowÄ…
+restore_over=NadpisywaÄ‡ istniejÄ…ce pliki?
 restore_over0=Zawsze
-restore_over1=O ile nie nowszy ni¿ kopia zapasowa
+restore_over1=O ile nie nowszy niÅ¼ kopia zapasowa
 restore_over2=Nigdy
-restore_perms=Przywróciæ uprawnienia pliku?
-restore_rsh=Polecenie zdalnego przywrócenia
+restore_perms=PrzywrÃ³ciÄ‡ uprawnienia pliku?
+restore_rsh=Polecenie zdalnego przywrÃ³cenia
 restore_sel=Wymienione pliki ..
-restore_src=Przywróæ z pliku lub urz±dzenia
-restore_test=Tylko wy¶wietliæ pliki w kopii?
+restore_src=PrzywrÃ³Ä‡ z pliku lub urzÄ…dzenia
+restore_test=Tylko wyÅ›wietliÄ‡ pliki w kopii?
 restore_theader=Przywracanie kopii zapasowej z pliku Unix TAR
 restore_title=Przywracanie kopii zapasowej
-save_edir=Brakuj±cy lub nieprawid³owy katalog kopii zapasowej
-save_efs=Katalog kopii nie mo¿e byæ zmieniony do innego systemu plików
-save_err=B³±d zapisywania kopii zapasowej
+save_edir=BrakujÄ…cy lub nieprawidÅ‚owy katalog kopii zapasowej
+save_efs=Katalog kopii nie moÅ¼e byÄ‡ zmieniony do innego systemu plikÃ³w
+save_err=BÅ‚Ä…d zapisywania kopii zapasowej

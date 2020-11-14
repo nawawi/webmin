@@ -1,26 +1,26 @@
 <header>Unix processzek</header>
 
-A processz nem más, mint egy egyszerû, az Ön rendszerén futó program. A
-webböngészõ, az ablakkezelõ, a terminál ablak, az X kiszolgáló, mind-mind
-olyan processz, amely közvetlenül érvényesíti hatását. Számos egyéb
-processz a háttérben fut, mint pl. a webkiszolgáló és egyéb rendszerszintû
-munkák. Egy új processz jön létre minden egyes alkalommal, amikor begépel
-egy parancsot, mint amilyen az <tt>ls</tt> vagy a <tt>pwd</tt>, bár ezek
-jellegzetesen rövid életûek.<p>
+A processz nem mÃ¡s, mint egy egyszerÃ», az Ã–n rendszerÃ©n futÃ³ program. A
+webbÃ¶ngÃ©szÃµ, az ablakkezelÃµ, a terminÃ¡l ablak, az X kiszolgÃ¡lÃ³, mind-mind
+olyan processz, amely kÃ¶zvetlenÃ¼l Ã©rvÃ©nyesÃ­ti hatÃ¡sÃ¡t. SzÃ¡mos egyÃ©b
+processz a hÃ¡ttÃ©rben fut, mint pl. a webkiszolgÃ¡lÃ³ Ã©s egyÃ©b rendszerszintÃ»
+munkÃ¡k. Egy Ãºj processz jÃ¶n lÃ©tre minden egyes alkalommal, amikor begÃ©pel
+egy parancsot, mint amilyen az <tt>ls</tt> vagy a <tt>pwd</tt>, bÃ¡r ezek
+jellegzetesen rÃ¶vid Ã©letÃ»ek.<p>
 
-Minden processz rendelkezik egy egyedi azonosítóval (ID), amelyett processz
-ID-nek vagy PID-nek nevezünk. Egyidõben futó processzeknek különbözõ
-a PID-jük, de egy idõ elteltével a PID-ek újra használatba kerülhetnek.<p>
+Minden processz rendelkezik egy egyedi azonosÃ­tÃ³val (ID), amelyett processz
+ID-nek vagy PID-nek nevezÃ¼nk. EgyidÃµben futÃ³ processzeknek kÃ¼lÃ¶nbÃ¶zÃµ
+a PID-jÃ¼k, de egy idÃµ elteltÃ©vel a PID-ek Ãºjra hasznÃ¡latba kerÃ¼lhetnek.<p>
 
-A kezdeti processztõl való leválástól (amit általában <tt>init</tt>nek 
-hívnak) kezdve mindegyiknek van egy szülõ processze, amely õt létrehozta.
-Például, ha a <tt>vi</tt>-t a shell parancssorból futtatja, a <tt>vi</tt>
-szülõ processze a shell lesz. Egy processznek több gyereke lehet, de csak
-egy szülõje.<p>
+A kezdeti processztÃµl valÃ³ levÃ¡lÃ¡stÃ³l (amit Ã¡ltalÃ¡ban <tt>init</tt>nek 
+hÃ­vnak) kezdve mindegyiknek van egy szÃ¼lÃµ processze, amely Ãµt lÃ©trehozta.
+PÃ©ldÃ¡ul, ha a <tt>vi</tt>-t a shell parancssorbÃ³l futtatja, a <tt>vi</tt>
+szÃ¼lÃµ processze a shell lesz. Egy processznek tÃ¶bb gyereke lehet, de csak
+egy szÃ¼lÃµje.<p>
 
-Minden processz egy(néhány) felhasználó és csoport jogosultságaival fut,
-amely fájlok és könyvtárak hozzáférésekor használatos. A felhasználók és
-a processzek csak azokat processzeket lõhetik ki, amelyeket birtokolnak.
-Ez alól kivétel a <tt>root</tt>, aki bármit kilõhet.<p>
+Minden processz egy(nÃ©hÃ¡ny) felhasznÃ¡lÃ³ Ã©s csoport jogosultsÃ¡gaival fut,
+amely fÃ¡jlok Ã©s kÃ¶nyvtÃ¡rak hozzÃ¡fÃ©rÃ©sekor hasznÃ¡latos. A felhasznÃ¡lÃ³k Ã©s
+a processzek csak azokat processzeket lÃµhetik ki, amelyeket birtokolnak.
+Ez alÃ³l kivÃ©tel a <tt>root</tt>, aki bÃ¡rmit kilÃµhet.<p>
 
 <hr>

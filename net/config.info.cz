@@ -1,5 +1,5 @@
-hosts_file=Soubor se seznamem hostù a adres,0
-ipnodes_file=Soubor se seznamem IPv6 hostù a adres,0
-def_netmask=Vıchozí maska sítì,0
-def_broadcast=Vıchozí broadcast adresa,0
-def_mtu=Vıchozí MTU,0
+hosts_file=Soubor se seznamem hostÃ¹ a adres,0
+ipnodes_file=Soubor se seznamem IPv6 hostÃ¹ a adres,0
+def_netmask=VÃ½chozÃ­ maska sÃ­tÃ¬,0
+def_broadcast=VÃ½chozÃ­ broadcast adresa,0
+def_mtu=VÃ½chozÃ­ MTU,0

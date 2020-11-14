@@ -1,120 +1,120 @@
 __norefs=1
 acl_all=Wszystkie
-acl_mods=Mo¿e przegl±daæ logi w modu³ach
-acl_rollback=Mo¿e przywracaæ zmiany?
-acl_sel=Wybrane poni¿ej ..
-acl_users=Mo¿e przegl±daæ zdarzenia u¿ytkowników
+acl_mods=MoÅ¼e przeglÄ…daÄ‡ logi w moduÅ‚ach
+acl_rollback=MoÅ¼e przywracaÄ‡ zmiany?
+acl_sel=Wybrane poniÅ¼ej ..
+acl_users=MoÅ¼e przeglÄ…daÄ‡ zdarzenia uÅ¼ytkownikÃ³w
 index_dall=Dowolna zmiana
-index_diff=Zmiany zawieraj±ce
-index_fall=Ka¿dego pliku
+index_diff=Zmiany zawierajÄ…ce
+index_fall=KaÅ¼dego pliku
 index_file=Pliku
-index_global=&lt;W ¿adnym module&gt;
+index_global=&lt;W Å¼adnym module&gt;
 index_header=Szukaj w&nbsp;logu Webmina ..
-index_long=Pokazywaæ pe³ne opisy zdarzeñ?
+index_long=PokazywaÄ‡ peÅ‚ne opisy zdarzeÅ„?
 index_mall=W&nbsp;dowolnym module
 index_module=W&nbsp;module
-index_nolog=<b>Uwaga</b> - <a href='$1'>Logowanie w&nbsp;Webminie</a> nie jest aktualnie w³±czone, wiêc prawdopodobnie przeszukiwanie logu nie da ¿adnych wyników.
-index_nologfiles=<b>Uwaga</b> - <a href='$1'>Logowanie zmian w&nbsp;plikach</a> nie jest aktualnie w³±czone, wiêc informacje o&nbsp;zarejestrowanych zdarzeniach nie bêd± zawieraæ zmian w&nbsp;plikach ani uruchomionych poleceñ.
-index_nuser=Dowolnego u¿ytkownika oprócz
-index_ouser=U¿ytkownika nie bêd±cego u¿ytkownikiem Webmina
+index_nolog=<b>Uwaga</b> - <a href='$1'>Logowanie w&nbsp;Webminie</a> nie jest aktualnie wÅ‚Ä…czone, wiÄ™c prawdopodobnie przeszukiwanie logu nie da Å¼adnych wynikÃ³w.
+index_nologfiles=<b>Uwaga</b> - <a href='$1'>Logowanie zmian w&nbsp;plikach</a> nie jest aktualnie wÅ‚Ä…czone, wiÄ™c informacje o&nbsp;zarejestrowanych zdarzeniach nie bÄ™dÄ… zawieraÄ‡ zmian w&nbsp;plikach ani uruchomionych poleceÅ„.
+index_nuser=Dowolnego uÅ¼ytkownika oprÃ³cz
+index_ouser=UÅ¼ytkownika nie bÄ™dÄ…cego uÅ¼ytkownikiem Webmina
 index_return=formularza szukania
-index_sdesc=Opis dzia³ania zawiera
-index_sdiff=Zmian w plikach lub uruchomionych poleceñ
+index_sdesc=Opis dziaÅ‚ania zawiera
+index_sdiff=Zmian w plikach lub uruchomionych poleceÅ„
 index_search=Szukaj
-index_sfile=Zdarzeñ modyfikacji plików
-index_shost=¬ród³owy serwer Webmina
-index_smods=Zdarzeñ w module
-index_stimes=Zdarzeñ w czasie
-index_susers=Zdarzeñ u¿ytkowników Webmina
+index_sfile=ZdarzeÅ„ modyfikacji plikÃ³w
+index_shost=Å¹rÃ³dÅ‚owy serwer Webmina
+index_smods=ZdarzeÅ„ w module
+index_stimes=ZdarzeÅ„ w czasie
+index_susers=ZdarzeÅ„ uÅ¼ytkownikÃ³w Webmina
 index_tall=W&nbsp;dowolnym czasie
-index_time=Pomiêdzy $1 a&nbsp;$2
-index_title=Przegl±danie logów Webmina
+index_time=PomiÄ™dzy $1 a&nbsp;$2
+index_title=PrzeglÄ…danie logÃ³w Webmina
 index_today=Dzisiaj
-index_uall=Dowolnego u¿ytkownika
-index_user=U¿ytkownika
+index_uall=Dowolnego uÅ¼ytkownika
+index_user=UÅ¼ytkownika
 index_wall=Z dowolnego serwera Webmina
 index_week=Ostatniego tygodnia
 index_whost=Z serwera
 index_yesterday=Tylko wczoraj
-log_rollback=Przywrócono zdarzenie $1 w module $2
-rollback_changes=Zostan± wykonane nastêpuj±ce zmiany :
-rollback_clink=Zostanie utworzone dowi±zanie do $1.
-rollback_delete=Plik zostanie usuniêty.
-rollback_deleted=Usuniêto plik $1.
-rollback_enone=Nie wybrano ¿adnego pliku.
-rollback_fillfile=Zostanie utworzony plik o nastêpuj±cej zawarto¶ci :
-rollback_isdir=Katalog - nie zostan± wykonane ¿adne zmiany.
-rollback_link=Cel dowi±zania zostanie zmieniony z $2 na $1.
-rollback_madefile=Zast±piono plikiem dowi±zanie $1.
-rollback_madelink=Utworzono dowi±zanie $1 do $2.
-rollback_makefile=Dowi±zanie do $1 zostanie zast±pione przez :
-rollback_makelink=Ca³y plik zostanie zast±piony przez dowi±zanie do
-rollback_modfile=Przywrócono zawarto¶æ pliku $1.
-rollback_nochanges=Ten plik nie zosta³ zmieniony.
-rollback_nodelete=Plik nie istnia³ przed zdarzeniem i nadal nie istnieje.
-rollback_nodeleted=Pominiêto nieistniej±cy plik $1.
-rollback_nolink=Cel dowi±zania nie zosta³ zmieniony.
-rollback_none=Wszystkie pliki maj± tak± sam± zawarto¶æ jak przed tym zdarzeniem. Zmiany nie s± konieczne.
-rollback_ok=Przywróæ pliki teraz
-rollback_rusure=Czy jeste¶ pewien, ¿e chcesz przywróciæ zawarto¶æ wszystkich plików wymienionych poni¿ej do stanu sprzed zaj¶cia tego zdarzenia? Wszystkie dane, które aktualnie zawieraj± te pliki, zostan± zmienione w nastêpuj±cy sposób :
+log_rollback=PrzywrÃ³cono zdarzenie $1 w module $2
+rollback_changes=ZostanÄ… wykonane nastÄ™pujÄ…ce zmiany :
+rollback_clink=Zostanie utworzone dowiÄ…zanie do $1.
+rollback_delete=Plik zostanie usuniÄ™ty.
+rollback_deleted=UsuniÄ™to plik $1.
+rollback_enone=Nie wybrano Å¼adnego pliku.
+rollback_fillfile=Zostanie utworzony plik o nastÄ™pujÄ…cej zawartoÅ›ci :
+rollback_isdir=Katalog - nie zostanÄ… wykonane Å¼adne zmiany.
+rollback_link=Cel dowiÄ…zania zostanie zmieniony z $2 na $1.
+rollback_madefile=ZastÄ…piono plikiem dowiÄ…zanie $1.
+rollback_madelink=Utworzono dowiÄ…zanie $1 do $2.
+rollback_makefile=DowiÄ…zanie do $1 zostanie zastÄ…pione przez :
+rollback_makelink=CaÅ‚y plik zostanie zastÄ…piony przez dowiÄ…zanie do
+rollback_modfile=PrzywrÃ³cono zawartoÅ›Ä‡ pliku $1.
+rollback_nochanges=Ten plik nie zostaÅ‚ zmieniony.
+rollback_nodelete=Plik nie istniaÅ‚ przed zdarzeniem i nadal nie istnieje.
+rollback_nodeleted=PominiÄ™to nieistniejÄ…cy plik $1.
+rollback_nolink=Cel dowiÄ…zania nie zostaÅ‚ zmieniony.
+rollback_none=Wszystkie pliki majÄ… takÄ… samÄ… zawartoÅ›Ä‡ jak przed tym zdarzeniem. Zmiany nie sÄ… konieczne.
+rollback_ok=PrzywrÃ³Ä‡ pliki teraz
+rollback_rusure=Czy jesteÅ› pewien, Å¼e chcesz przywrÃ³ciÄ‡ zawartoÅ›Ä‡ wszystkich plikÃ³w wymienionych poniÅ¼ej do stanu sprzed zajÅ›cia tego zdarzenia? Wszystkie dane, ktÃ³re aktualnie zawierajÄ… te pliki, zostanÄ… zmienione w nastÄ™pujÄ…cy sposÃ³b :
 rollback_skipdir=Pomijanie katalogu $1.
 rollback_title=Zdarzenie przywracania
 search_action=Zdarzenie
-search_config=Zmieniono konfiguracjê modu³u
+search_config=Zmieniono konfiguracjÄ™ moduÅ‚u
 search_crit=Zarejestrowane zdarzenia
 search_critall=Wszystkie zarejestrowane zdarzenia
 search_critd=gdzie opis zawiera  <tt>$1</tt>
 search_critm=w&nbsp;module $1
-search_critnu=dowolnego u¿ytkownika oprócz $1
-search_critt=pomiêdzy $1 a&nbsp;$2
+search_critnu=dowolnego uÅ¼ytkownika oprÃ³cz $1
+search_critt=pomiÄ™dzy $1 a&nbsp;$2
 search_critt2=w&nbsp;dniu $1
-search_critu=u¿ytkownika $1
+search_critu=uÅ¼ytkownika $1
 search_csv=Eksportuj jako CSV.
 search_date=Data
 search_err=Nie znaleziono
-search_etime=Niepoprawny czas pocz±tkowy lub koñcowy
-search_global=¯aden
+search_etime=Niepoprawny czas poczÄ…tkowy lub koÅ„cowy
+search_global=Å»aden
 search_global_login=Zalogowano do Webmin
 search_global_logout=Wylogowano z Webmina
 search_host=Adres IP klienta
-search_module=Modu³
-search_none2=¯adne wpisy nie pasuj± do Twojego wyszukiwania
-search_return=wyników poszukiwania
-search_sid=Dzia³alno¶æ u¿ytkownika $1 podczas sesji $2
+search_module=ModuÅ‚
+search_none2=Å»adne wpisy nie pasujÄ… do Twojego wyszukiwania
+search_return=wynikÃ³w poszukiwania
+search_sid=DziaÅ‚alnoÅ›Ä‡ uÅ¼ytkownika $1 podczas sesji $2
 search_time=Czas
 search_title=Wyniki poszukiwania
-search_user=U¿ytkownik
+search_user=UÅ¼ytkownik
 search_webmin=Serwer Webmina
 view_action=Opis
 view_anno=Komentarz do zdarzenia
-view_ecannot=Nie masz uprawnieñ do ogl±dania tego logu
+view_ecannot=Nie masz uprawnieÅ„ do oglÄ…dania tego logu
 view_files=Zmienione pliki i uruchomione polecenia
-view_header=Szczegó³y zarejestrowanego zdarzenia $1
-view_host=¬ród³owy serwer Webmina
-view_input=Wej¶cie do polecenia
+view_header=SzczegÃ³Å‚y zarejestrowanego zdarzenia $1
+view_host=Å¹rÃ³dÅ‚owy serwer Webmina
+view_input=WejÅ›cie do polecenia
 view_ip=Nazwa hosta lub IP klienta
-view_module=Modu³ Webmina
-view_nofiles=Nie zarejestrowano zmian plików konfiguracyjnych podczas tego zdarzenia
-view_output=Zawarto¶æ stron Webmina
+view_module=ModuÅ‚ Webmina
+view_nofiles=Nie zarejestrowano zmian plikÃ³w konfiguracyjnych podczas tego zdarzenia
+view_output=ZawartoÅ›Ä‡ stron Webmina
 view_raw=Wszystkie dane zdarzenia
 view_rawname=Nazwa parametru
-view_rawvalue=Warto¶æ parametru
-view_return=szczegó³y zdarzenia
-view_rollback2=Przywróæ wybrane pliki
-view_script=U¿yty skrypt
+view_rawvalue=WartoÅ›Ä‡ parametru
+view_return=szczegÃ³Å‚y zdarzenia
+view_rollback2=PrzywrÃ³Ä‡ wybrane pliki
+view_script=UÅ¼yty skrypt
 view_sid=ID sesji
 view_time=Data i&nbsp;czas
 view_title=Dane zdarzenia
 view_type_create=Utworzono plik $1
 view_type_delete=Skasowano plik $1
 view_type_exec=Wykonano polecenie
-view_type_kill=Wys³ano sygna³ $1 do PID $2
+view_type_kill=WysÅ‚ano sygnaÅ‚ $1 do PID $2
 view_type_mkdir=Utworzono katalog $1
 view_type_modify=Zmieniono plik $1
-view_type_rename=Zmieniono nazwê $1 na $2
-view_type_resymlink=Zmieniono dowi±zanie symboliczne $1 -&gt; $2
+view_type_rename=Zmieniono nazwÄ™ $1 na $2
+view_type_resymlink=Zmieniono dowiÄ…zanie symboliczne $1 -&gt; $2
 view_type_rmdir=Skasowano katalog $1
 view_type_sql=Wykonano polecenie SQL w&nbsp;bazie danych $1
-view_type_symlink=Utworzono dowi±zanie symboliczne $1 -&gt; $2
-view_type_unsymlink=Skasowano dowi±zanie symboliczne $1 -&gt; $2
-view_user=U¿ytkownik Webmina
+view_type_symlink=Utworzono dowiÄ…zanie symboliczne $1 -&gt; $2
+view_type_unsymlink=Skasowano dowiÄ…zanie symboliczne $1 -&gt; $2
+view_user=UÅ¼ytkownik Webmina

@@ -1,53 +1,53 @@
 <header>Diskquota</header>
 
 <h3>Introduktion</h3>
-Quota är en metod för att styra diskanvändning för användare och grupper.
-För varje filsystem kan man begränsa det diskutrymme och antal filer som en
-användare får utnyttja. I en del Unix-system går det också att göra
-motsvarande begränsningar för en grupp.
+Quota Ã¤r en metod fÃ¶r att styra diskanvÃ¤ndning fÃ¶r anvÃ¤ndare och grupper.
+FÃ¶r varje filsystem kan man begrÃ¤nsa det diskutrymme och antal filer som en
+anvÃ¤ndare fÃ¥r utnyttja. I en del Unix-system gÃ¥r det ocksÃ¥ att gÃ¶ra
+motsvarande begrÃ¤nsningar fÃ¶r en grupp.
 
-<p>Man kan endast sätta upp quota för lokala Unix-filsystem. NFS-filsystem
-som monteras från andra system har quota-inställningar på det systemet, om
-sådana finns. Filsystem som inte är Unix (t ex MS-DOS och ISO9660) stödjer
+<p>Man kan endast sÃ¤tta upp quota fÃ¶r lokala Unix-filsystem. NFS-filsystem
+som monteras frÃ¥n andra system har quota-instÃ¤llningar pÃ¥ det systemet, om
+sÃ¥dana finns. Filsystem som inte Ã¤r Unix (t ex MS-DOS och ISO9660) stÃ¶djer
 inte alls quotasystemet.
 
-För varje användare kan följande begränsningar göras:
+FÃ¶r varje anvÃ¤ndare kan fÃ¶ljande begrÃ¤nsningar gÃ¶ras:
 <dl>
-<dt><b>Mjuk blockgräns</b>
-<dd>Antal diskblock som får användas innan ett varningsmeddelande visas.
-<dt><b>Hård blockgräns</b>
-<dd>Maximalt antal block som användarens filer får ta upp.
-<dt><b>Mjuk filgräns</b>
-<dd>Antal filer som får skapas innan ett varningsmeddelande visas.
-<dt><b>Hård filgräns</b>
-<dd>Maximalt antal filer som användaren får äga.
+<dt><b>Mjuk blockgrÃ¤ns</b>
+<dd>Antal diskblock som fÃ¥r anvÃ¤ndas innan ett varningsmeddelande visas.
+<dt><b>HÃ¥rd blockgrÃ¤ns</b>
+<dd>Maximalt antal block som anvÃ¤ndarens filer fÃ¥r ta upp.
+<dt><b>Mjuk filgrÃ¤ns</b>
+<dd>Antal filer som fÃ¥r skapas innan ett varningsmeddelande visas.
+<dt><b>HÃ¥rd filgrÃ¤ns</b>
+<dd>Maximalt antal filer som anvÃ¤ndaren fÃ¥r Ã¤ga.
 </dl>
-Diskblock är vanligen 512 eller 1024 bytes stora, beroende på operativsystem.
-Vid quotaberäkning avrundas alla filstorlekar uppåt till närmaste hela
-block, vilket gör att till och med en tom fil tar upp minst ett block.
+Diskblock Ã¤r vanligen 512 eller 1024 bytes stora, beroende pÃ¥ operativsystem.
+Vid quotaberÃ¤kning avrundas alla filstorlekar uppÃ¥t till nÃ¤rmaste hela
+block, vilket gÃ¶r att till och med en tom fil tar upp minst ett block.
 
-<p>Vid quotaberäkning räknas kataloger, diskar, symboliska länkar och
-vanliga filer in i filantalet. Tekniskt sett är filquotan helt enkelt en
-quota för <i>inoder</i>.
+<p>Vid quotaberÃ¤kning rÃ¤knas kataloger, diskar, symboliska lÃ¤nkar och
+vanliga filer in i filantalet. Tekniskt sett Ã¤r filquotan helt enkelt en
+quota fÃ¶r <i>inoder</i>.
 
 <h3>Diskquotamodulen</h3>
-Startsidan för denna modul innehåller en lista över de lokala filsystem
-som stödjer quota. Om quota används för ett filsystem går det att klicka
-på dess sökväg för att se quota för alla användare. Om quota inte används
-går det att trycka på <tt>Aktivera quota</tt>, så aktiveras quota för
+Startsidan fÃ¶r denna modul innehÃ¥ller en lista Ã¶ver de lokala filsystem
+som stÃ¶djer quota. Om quota anvÃ¤nds fÃ¶r ett filsystem gÃ¥r det att klicka
+pÃ¥ dess sÃ¶kvÃ¤g fÃ¶r att se quota fÃ¶r alla anvÃ¤ndare. Om quota inte anvÃ¤nds
+gÃ¥r det att trycka pÃ¥ <tt>Aktivera quota</tt>, sÃ¥ aktiveras quota fÃ¶r
 filsystemet.
 
 <if $gconfig{'os_type'} =~ /linux/>
-Linux tillåter inte att quota slås på om inte inställningen <tt>Använd
-quota</tt> har slagits på för filsystemet i modulen Diskar och filsystem.
-Om inget filsystem har denna inställning på kommer inte heller något att
-visas på startsidan.
+Linux tillÃ¥ter inte att quota slÃ¥s pÃ¥ om inte instÃ¤llningen <tt>AnvÃ¤nd
+quota</tt> har slagits pÃ¥ fÃ¶r filsystemet i modulen Diskar och filsystem.
+Om inget filsystem har denna instÃ¤llning pÃ¥ kommer inte heller nÃ¥got att
+visas pÃ¥ startsidan.
 </if>
 
-Nedanför filsystemslistan finns en knapp för att visa alla quota för en
-viss användare. Denna kan endast användas om minst ett filsystem använder
-quota. På samma sätt kommer det att finnas en knapp för att visa
-gruppquota om minst ett filsystem stödjer och använder detta.
+NedanfÃ¶r filsystemslistan finns en knapp fÃ¶r att visa alla quota fÃ¶r en
+viss anvÃ¤ndare. Denna kan endast anvÃ¤ndas om minst ett filsystem anvÃ¤nder
+quota. PÃ¥ samma sÃ¤tt kommer det att finnas en knapp fÃ¶r att visa
+gruppquota om minst ett filsystem stÃ¶djer och anvÃ¤nder detta.
 
 <hr>
 

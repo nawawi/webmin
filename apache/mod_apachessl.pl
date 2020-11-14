@@ -1,5 +1,5 @@
 # nodo50 v0.1 - Change 000003 - New Script. Define Editors for mod_apachessl directives (Apache-ssl not use mod_ssl)
-# nodo50 v0.1 - Change 000003 - Nuevo Script. Define edición de directivas de mod_apachessl (Apache-ssl no usa mod_ssl)
+# nodo50 v0.1 - Change 000003 - Nuevo Script. Define ediciÃ³n de directivas de mod_apachessl (Apache-ssl no usa mod_ssl)
 # mod_apachessl.pl (http://www.apache-ssl.org/)
 # Defines editors for mod_apachessl directives
 

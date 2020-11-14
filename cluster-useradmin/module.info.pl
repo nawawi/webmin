@@ -1,2 +1,2 @@
-desc_pl=Klaster - U¿ytkownicy i grupy
-longdesc_pl=Twórz, aktualizuj i usuwaj u¿ytkowników i grupy na wielu serwerach. Inaczej ni¿ w NIS, ka¿dy serwer ma w³asny plik has³a i grupy, który jest zdalnie aktualizowany przez ten modu³.
+desc_pl=Klaster - UÂ¿ytkownicy i grupy
+longdesc_pl=TwÃ³rz, aktualizuj i usuwaj uÂ¿ytkownikÃ³w i grupy na wielu serwerach. Inaczej niÂ¿ w NIS, kaÂ¿dy serwer ma wÂ³asny plik hasÂ³a i grupy, ktÃ³ry jest zdalnie aktualizowany przez ten moduÂ³.

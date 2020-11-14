@@ -2,52 +2,52 @@
 
 <h3>CELE:</h3>
 Zasadniczym celem systemu ACL-i jest zapewnienie silnego, elastycznego
-i&nbsp;rozszerzalnego mechanizmu kontroli dostêpu do ró¿nych obiektów
-w&nbsp;konfiguracji DHCPd. Obiektami tymi s± sieci wspó³dzielone, podsieci,
-grupy hostów i hosty. <p> 
+i&nbsp;rozszerzalnego mechanizmu kontroli dostÃªpu do rÃ³Â¿nych obiektÃ³w
+w&nbsp;konfiguracji DHCPd. Obiektami tymi sÂ± sieci wspÃ³Â³dzielone, podsieci,
+grupy hostÃ³w i hosty. <p> 
 
-System ACL-i pozwala równie¿ na kontrolowanie kilku innych w³a¶ciwo¶ci,
-takich jak: unikalno¶æ nazw obiektów, mo¿liwo¶æ zastosowania zmienionej
-konfiguracji, przegl±danie i&nbsp;kasowanie dzier¿aw DHCP. <p>
+System ACL-i pozwala rÃ³wnieÂ¿ na kontrolowanie kilku innych wÂ³aÂ¶ciwoÂ¶ci,
+takich jak: unikalnoÂ¶Ã¦ nazw obiektÃ³w, moÂ¿liwoÂ¶Ã¦ zastosowania zmienionej
+konfiguracji, przeglÂ±danie i&nbsp;kasowanie dzierÂ¿aw DHCP. <p>
 
 <h3>ZASADY:</h3>
-Plik konfiguracyjny DHCPd posiada strukturê drzewiast±. Ka¿dy wêze³ tego
-drzewa reprezentuje sob± konfiguracjê pojedyñczego obiektu DHCP (rys. 0).
+Plik konfiguracyjny DHCPd posiada strukturÃª drzewiastÂ±. KaÂ¿dy wÃªzeÂ³ tego
+drzewa reprezentuje sobÂ± konfiguracjÃª pojedyÃ±czego obiektu DHCP (rys. 0).
 <p>
 
-System ACL-i posiada dwa poziomy zabezpieczeñ:
+System ACL-i posiada dwa poziomy zabezpieczeÃ±:
 <ul>
-<li>poziom ogólny: odczyt, zapis, tworzenie;</li>
-<li>dla poszczególnych obiektów: odczyt, zapis.</li>
+<li>poziom ogÃ³lny: odczyt, zapis, tworzenie;</li>
+<li>dla poszczegÃ³lnych obiektÃ³w: odczyt, zapis.</li>
 </ul>
 
-Uprawnienia ogólne s± okre¶lone dla ka¿dego typu obiektów (hostów, grup,
-podsieci, sieci wspó³dzielonych) i&nbsp;dotycz± operacji na wszystkich
+Uprawnienia ogÃ³lne sÂ± okreÂ¶lone dla kaÂ¿dego typu obiektÃ³w (hostÃ³w, grup,
+podsieci, sieci wspÃ³Â³dzielonych) i&nbsp;dotyczÂ± operacji na wszystkich
 obiektach danego typu:
 <ul type=circle>
-<li>ogólne uprawnienia do tworzenia,</li>
-<li>ogólne uprawnienia do odczytu,</li>
-<li>ogólne uprawnienia do zapisu.</li>
+<li>ogÃ³lne uprawnienia do tworzenia,</li>
+<li>ogÃ³lne uprawnienia do odczytu,</li>
+<li>ogÃ³lne uprawnienia do zapisu.</li>
 </ul>
 
-Uprawnienia dla poszczególnych obiektów umo¿liwiaj± kontrolê dostêpu
-w&nbsp;bardziej elastyczny sposób. ACL-e uprawnieñ dla poszczególnych
-obiektów istniej± dla ka¿dego pojedyñczego obiektu. Obecnie ACL-e dla
-poszczególnych obiektów zaimplementowane s± jedynie dla hostów
+Uprawnienia dla poszczegÃ³lnych obiektÃ³w umoÂ¿liwiajÂ± kontrolÃª dostÃªpu
+w&nbsp;bardziej elastyczny sposÃ³b. ACL-e uprawnieÃ± dla poszczegÃ³lnych
+obiektÃ³w istniejÂ± dla kaÂ¿dego pojedyÃ±czego obiektu. Obecnie ACL-e dla
+poszczegÃ³lnych obiektÃ³w zaimplementowane sÂ± jedynie dla hostÃ³w
 i&nbsp;podsieci:
 <ul type=circle>
-<li>uprawnienia do zapisu dla poszczególnych obiektów,</li>
-<li>uprawnienia do odczytu dla poszczególnych obiektów.</li>
+<li>uprawnienia do zapisu dla poszczegÃ³lnych obiektÃ³w,</li>
+<li>uprawnienia do odczytu dla poszczegÃ³lnych obiektÃ³w.</li>
 </ul>
 
-System ACL-i mo¿e dzia³aæ przy czterech ró¿nych poziomach (trybach) zabezpieczeñ.
+System ACL-i moÂ¿e dziaÂ³aÃ¦ przy czterech rÃ³Â¿nych poziomach (trybach) zabezpieczeÃ±.
 <p>
 
-<img SRC="images/ctree0.gif" ALT="Drzewo konfiguracji DHCPd, poziom zabezpieczeñ 0, sprawdzanie uprawnieñ dla podsieci X" height=229 width=314>
+<img SRC="images/ctree0.gif" ALT="Drzewo konfiguracji DHCPd, poziom zabezpieczeÃ± 0, sprawdzanie uprawnieÃ± dla podsieci X" height=229 width=314>
 
-<img SRC="images/ctree1.gif" ALT="Drzewo konfiguracji DHCPd, poziom zabezpieczeñ 1, sprawdzanie uprawnieñ dla podsieci X" height=229 width=314>
+<img SRC="images/ctree1.gif" ALT="Drzewo konfiguracji DHCPd, poziom zabezpieczeÃ± 1, sprawdzanie uprawnieÃ± dla podsieci X" height=229 width=314>
 
-<img SRC="images/ctree2.gif" ALT="Drzewo konfiguracji DHCPd, poziom zabezpieczeñ 2, sprawdzanie uprawnieñ dla podsieci X" height=229 width=314>
+<img SRC="images/ctree2.gif" ALT="Drzewo konfiguracji DHCPd, poziom zabezpieczeÃ± 2, sprawdzanie uprawnieÃ± dla podsieci X" height=229 width=314>
 
-<img SRC="images/ctree3.gif" ALT="Drzewo konfiguracji DHCPd, poziom zabezpieczeñ 3, sprawdzanie uprawnieñ dla podsieci X" height=229 width=314>
+<img SRC="images/ctree3.gif" ALT="Drzewo konfiguracji DHCPd, poziom zabezpieczeÃ± 3, sprawdzanie uprawnieÃ± dla podsieci X" height=229 width=314>
 

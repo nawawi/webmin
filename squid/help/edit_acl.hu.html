@@ -1,23 +1,23 @@
-<header>Hozzáférés-vezérlés; fordította: Szakács Gergely</header><p>
+<header>HozzÃ¡fÃ©rÃ©s-vezÃ©rlÃ©s; fordÃ­totta: SzakÃ¡cs Gergely</header><p>
 
-<b>Hozzáférés-vezérlési listák</b>: A hozzáférés-vezérlési listák (ACL) pontos kifejezések reguláris kifejezéseivel leírható feltételeket tartalmaznak. Az ACL lehet egy fájl is, mely soronként egy elemet, vagy reguláris kifejezést tartalmaz. Az ezen az oldalon lévõ ACL-doboz több módosítható mezõt tartalmaz. Új ACL létrehozására is lehetõség van.<p>
+<b>HozzÃ¡fÃ©rÃ©s-vezÃ©rlÃ©si listÃ¡k</b>: A hozzÃ¡fÃ©rÃ©s-vezÃ©rlÃ©si listÃ¡k (ACL) pontos kifejezÃ©sek regulÃ¡ris kifejezÃ©seivel leÃ­rhatÃ³ feltÃ©teleket tartalmaznak. Az ACL lehet egy fÃ¡jl is, mely soronkÃ©nt egy elemet, vagy regulÃ¡ris kifejezÃ©st tartalmaz. Az ezen az oldalon lÃ©vÃµ ACL-doboz tÃ¶bb mÃ³dosÃ­thatÃ³ mezÃµt tartalmaz. Ãšj ACL lÃ©trehozÃ¡sÃ¡ra is lehetÃµsÃ©g van.<p>
 
-Alább a következõ mezõk láthatók:<p>
+AlÃ¡bb a kÃ¶vetkezÃµ mezÃµk lÃ¡thatÃ³k:<p>
 
-A <em>Név</em> az ACL azonosítására szolgál. Egy <b>Proxy-korlátozás</b> létrehozatalakor ezzel a névvel azonosítjuk magát a korlátozást.<p>
+A <em>NÃ©v</em> az ACL azonosÃ­tÃ¡sÃ¡ra szolgÃ¡l. Egy <b>Proxy-korlÃ¡tozÃ¡s</b> lÃ©trehozatalakor ezzel a nÃ©vvel azonosÃ­tjuk magÃ¡t a korlÃ¡tozÃ¡st.<p>
 
-A <em>Típus</em> azokat az információtípusokat tartalmazza, melyeket az ACL segítségével szûrni akarunk.<p>
+A <em>TÃ­pus</em> azokat az informÃ¡ciÃ³tÃ­pusokat tartalmazza, melyeket az ACL segÃ­tsÃ©gÃ©vel szÃ»rni akarunk.<p>
 
-Az <em>Egyezés</em> az a cím, port, URL, felhasználó, stb., amivel az ACL megegyezik.<p>
+Az <em>EgyezÃ©s</em> az a cÃ­m, port, URL, felhasznÃ¡lÃ³, stb., amivel az ACL megegyezik.<p>
 
-<b>Proxy-korlátozások</b>: A Proxy korlátozások olyan szabályok, amelyek elutasítanak, vagy engedélyeznek egy adott kérést, attól függõen, hogy annak ACL-je megegyezik-e a kérés specifikumaival. Ebben a dobozban három mezõ található.<p>
+<b>Proxy-korlÃ¡tozÃ¡sok</b>: A Proxy korlÃ¡tozÃ¡sok olyan szabÃ¡lyok, amelyek elutasÃ­tanak, vagy engedÃ©lyeznek egy adott kÃ©rÃ©st, attÃ³l fÃ¼ggÃµen, hogy annak ACL-je megegyezik-e a kÃ©rÃ©s specifikumaival. Ebben a dobozban hÃ¡rom mezÃµ talÃ¡lhatÃ³.<p>
 
-Az <em>Eljárás</em> lehet <em>engedélyezés</em> vagy <em>elutasítás</em>.<p>
+Az <em>EljÃ¡rÃ¡s</em> lehet <em>engedÃ©lyezÃ©s</em> vagy <em>elutasÃ­tÃ¡s</em>.<p>
 
-Az <em>ACL-ek</em> azon hozzáférés-vezérlési listák, amelyek tartalma meghatározza, hogy egy adott kérés engedélyezésre, avagy elutasításra kerül. Ha a lista felkiáltójellel indul, úgy az ACL érvénytelenítõdik, vagyis az ACL tagjait <em>kivéve</em> minden engedélyezve vagy elutasítva lesz.<p>
+Az <em>ACL-ek</em> azon hozzÃ¡fÃ©rÃ©s-vezÃ©rlÃ©si listÃ¡k, amelyek tartalma meghatÃ¡rozza, hogy egy adott kÃ©rÃ©s engedÃ©lyezÃ©sre, avagy elutasÃ­tÃ¡sra kerÃ¼l. Ha a lista felkiÃ¡ltÃ³jellel indul, Ãºgy az ACL Ã©rvÃ©nytelenÃ­tÃµdik, vagyis az ACL tagjait <em>kivÃ©ve</em> minden engedÃ©lyezve vagy elutasÃ­tva lesz.<p>
 
-A <em>Mozgatás</em> lehetõvé teszi a lista korlátozásainak rangsorolását. A sorrend azért fontos, mert a Squid csak addig olvassa be a listát, míg meg nem találta az elsõ egyezõ kifejezést.<p>
+A <em>MozgatÃ¡s</em> lehetÃµvÃ© teszi a lista korlÃ¡tozÃ¡sainak rangsorolÃ¡sÃ¡t. A sorrend azÃ©rt fontos, mert a Squid csak addig olvassa be a listÃ¡t, mÃ­g meg nem talÃ¡lta az elsÃµ egyezÃµ kifejezÃ©st.<p>
 
-<b>ICP-korlátozások</b>: Ez a doboz az ICP-kérések korlátozására szolgál. Az ICP-kérések más, szomszédos gyorstárak kérései. Ez a funkció ugyanúgy mûködik, mint a <b>Proxy-korlátozások</b>.
+<b>ICP-korlÃ¡tozÃ¡sok</b>: Ez a doboz az ICP-kÃ©rÃ©sek korlÃ¡tozÃ¡sÃ¡ra szolgÃ¡l. Az ICP-kÃ©rÃ©sek mÃ¡s, szomszÃ©dos gyorstÃ¡rak kÃ©rÃ©sei. Ez a funkciÃ³ ugyanÃºgy mÃ»kÃ¶dik, mint a <b>Proxy-korlÃ¡tozÃ¡sok</b>.
 
 <hr>

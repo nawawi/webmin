@@ -1,128 +1,128 @@
-index_title=Lokalne i sieciowe systemy plików
+index_title=Lokalne i sieciowe systemy plikÃ³w
 index_dir=Zamontowany w
 index_type=Typ
 index_dev=Lokalizacja
-index_use=U¿ywany?
-index_perm=Na sta³e?
+index_use=UÅ¼ywany?
+index_perm=Na staÅ‚e?
 index_add=Zamontuj nowy
 index_auto=Nieznany typ
-index_swap=Pamiêæ wirtualna
-index_return=listy systemów plików
+index_swap=PamiÄ™Ä‡ wirtualna
+index_return=listy systemÃ³w plikÃ³w
 
-edit_title=Zmieñ montowanie
+edit_title=ZmieÅ„ montowanie
 create_title=Zamontuj nowy
-edit_err=Nie uda³o sie zmieniæ montowania
-edit_egone=Ten system plików ju¿ nie jest zamontowany
+edit_err=Nie udaÅ‚o sie zmieniÄ‡ montowania
+edit_egone=Ten system plikÃ³w juÅ¼ nie jest zamontowany
 edit_header=Parametry montowania $1
 edit_dir=Zamontowany jako
-edit_swap=Pamiêæ wirtualna
+edit_swap=PamiÄ™Ä‡ wirtualna
 edit_size=Rozmiar
 edit_free=Wolne
-edit_savemount=Zachowaæ montowanie?
-edit_boot=Zachowaæ i&nbsp;montowaæ przy starcie
-edit_save=Zachowaæ
-edit_delete=Skasowaæ
-edit_dont=Nie zachowywaæ
-edit_now=Zamontowaæ teraz?
+edit_savemount=ZachowaÄ‡ montowanie?
+edit_boot=ZachowaÄ‡ i&nbsp;montowaÄ‡ przy starcie
+edit_save=ZachowaÄ‡
+edit_delete=SkasowaÄ‡
+edit_dont=Nie zachowywaÄ‡
+edit_now=ZamontowaÄ‡ teraz?
 edit_mount=Zamontuj
 edit_dont2=Nie
-edit_unmount=Odmontowaæ
-edit_order=Sprawdzaæ system plików przy starcie?
+edit_unmount=OdmontowaÄ‡
+edit_order=SprawdzaÄ‡ system plikÃ³w przy starcie?
 edit_first=Sprawdzaj jako pierwszy
 edit_second=Sprawdzaj jako drugi
 edit_adv=Zaawansowane opcje montowania
-edit_list=Poka¿ u¿ytkowników
+edit_list=PokaÅ¼ uÅ¼ytkownikÃ³w
 edit_create=Zachowaj i zamontuj
 edit_save_apply=Zachowaj i zastosuj
 edit_umount=Odmontuj
-edit_perm=Na sta³e
+edit_perm=Na staÅ‚e
 edit_del_umount=Odmontuj i skasuj
 
-save_err=Nie uda³o sie zachowaæ montowania
+save_err=Nie udaÅ‚o sie zachowaÄ‡ montowania
 save_edir='$1' nie jest katalogiem
-save_edirname='$1' nie jest poprawn± nazw± katalogu
-save_ealready='$1' jest ju¿ zamontowany
-save_ealready2='$1' jest ju¿ przeznaczony do zamontowania
-save_ealready3=Katalog '$1' jest ju¿ zamontowany
-save_ealready4=Katalog '$1' ma ju¿ przypisane montowanie
-save_emkdir=Nie uda³o siê utworzyæ katalogu $1&nbsp;: $2
-save_eumount=Odmontowanie siê nie powiod³o&nbsp;: $1
-save_emount=Montowanie siê nie powiod³o&nbsp;: $1
-save_perm=Zmiany montowania $1 nie mog± byæ wykonane, gdy¿ to montowanie jest aktualnie u¿ywane. Je¶li chcesz, ¿eby zosta³y jedynie wykonane zmiany na li¶cie montowañ sta³ych, naci¶nij przycisk poni¿ej.
-save_apply=Zastosuj do listy montowañ sta³ych
-save_eremount=Przemontowanie siê nie powiod³o&nbsp;: $1
-save_enone=Nie wybra³e¶ zachowania ani zamontowania
+save_edirname='$1' nie jest poprawnÄ… nazwÄ… katalogu
+save_ealready='$1' jest juÅ¼ zamontowany
+save_ealready2='$1' jest juÅ¼ przeznaczony do zamontowania
+save_ealready3=Katalog '$1' jest juÅ¼ zamontowany
+save_ealready4=Katalog '$1' ma juÅ¼ przypisane montowanie
+save_emkdir=Nie udaÅ‚o siÄ™ utworzyÄ‡ katalogu $1&nbsp;: $2
+save_eumount=Odmontowanie siÄ™ nie powiodÅ‚o&nbsp;: $1
+save_emount=Montowanie siÄ™ nie powiodÅ‚o&nbsp;: $1
+save_perm=Zmiany montowania $1 nie mogÄ… byÄ‡ wykonane, gdyÅ¼ to montowanie jest aktualnie uÅ¼ywane. JeÅ›li chcesz, Å¼eby zostaÅ‚y jedynie wykonane zmiany na liÅ›cie montowaÅ„ staÅ‚ych, naciÅ›nij przycisk poniÅ¼ej.
+save_apply=Zastosuj do listy montowaÅ„ staÅ‚ych
+save_eremount=Przemontowanie siÄ™ nie powiodÅ‚o&nbsp;: $1
+save_enone=Nie wybraÅ‚eÅ› zachowania ani zamontowania
 
-swap_err=Nie uda³o siê utworzyæ pliku wymiany
+swap_err=Nie udaÅ‚o siÄ™ utworzyÄ‡ pliku wymiany
 swap_esize='$1' nie jest poprawnym rozmiarem
 
 nfs_server=Wybierz serwer NFS..
-nfs_select=Wybierz serwer NFS, z&nbsp;którego montowaæ..
+nfs_select=Wybierz serwer NFS, z&nbsp;ktÃ³rego montowaÄ‡..
 nfs_ip=IP Adres
 nfs_host=Komputer
-nfs_none=Nie znaleziono ¿adnego lokanego serwera NFS
+nfs_none=Nie znaleziono Å¼adnego lokanego serwera NFS
 nfs_choose=Wybierz katalog NFS na $1
-nfs_failed=Nie uda³o siê uzyskaæ listy katalogów udostêpnianych po NFS z&nbsp;$1&nbsp;: $2 Byæ mo¿e nie dzia³a ¿aden serwer NFS.
+nfs_failed=Nie udaÅ‚o siÄ™ uzyskaÄ‡ listy katalogÃ³w udostÄ™pnianych po NFS z&nbsp;$1&nbsp;: $2 ByÄ‡ moÅ¼e nie dziaÅ‚a Å¼aden serwer NFS.
 nfs_seldir=Wybierz katoalog NFS do zamontowania..
 nfs_dir=Katalog
 nfs_clients=Klienci
 
 smb_choose=Wybierz serwer SMB..
-smb_elist=Nie uda³o sie uzyskac listy srwerów z&nbsp;$1. Mo¿liwe, ¿e serwer nie pozwala na przegl±danie
+smb_elist=Nie udaÅ‚o sie uzyskac listy srwerÃ³w z&nbsp;$1. MoÅ¼liwe, Å¼e serwer nie pozwala na przeglÄ…danie
 smb_ehost=Serwer $1 nie istnieje
-smb_edown=Serwer $1 jest wy³±czony, nieosi±galny lub nie jest serwerem plików
-smb_sel=Wybierz serwer Sieci Windows, zktórego zamontowaæ..
+smb_edown=Serwer $1 jest wyÅ‚Ä…czony, nieosiÄ…galny lub nie jest serwerem plikÃ³w
+smb_sel=Wybierz serwer Sieci Windows, zktÃ³rego zamontowaÄ‡..
 smb_name=Nazwa serwera
 smb_desc=Opis
-smb_none=Nie znaleziono ¿adnego lokalnego serwera Sieci Windows
-smb_choose2=Wybierz zasób na $1
-smb_elist2=Nie uda³o siê uzyskaæ listy zasobów z&nbsp;$1. Byæ mo¿e serwer nie pozwala na przegl±danie.
-smb_sel2=Wybierz zasób do zamontowania..
-smb_share=Zasób
+smb_none=Nie znaleziono Å¼adnego lokalnego serwera Sieci Windows
+smb_choose2=Wybierz zasÃ³b na $1
+smb_elist2=Nie udaÅ‚o siÄ™ uzyskaÄ‡ listy zasobÃ³w z&nbsp;$1. ByÄ‡ moÅ¼e serwer nie pozwala na przeglÄ…danie.
+smb_sel2=Wybierz zasÃ³b do zamontowania..
+smb_share=ZasÃ³b
 smb_comment=Opis
-smb_noshares=Brak dostêpnych zasobów plikowych na serwerze $1
+smb_noshares=Brak dostÄ™pnych zasobÃ³w plikowych na serwerze $1
 
-solaris_scsidev=Kontroler SCSI $1 urz±dzenie $2 podurz±dzenie $3 partycja $4
-solaris_mddev=Urz±dzenie RAID $1
-solaris_ecacheexists=Katalog $1 ju¿ istnieje. Skasuj go.
-solaris_ebusy=$1 jest zajêty
-solaris_ekill=Nie uda³o siê zabiæ rumby
-solaris_epid=Nie uda³o siê znale¼æ numeru pid rumby
-solaris_nsource=¬ród³o NFS
+solaris_scsidev=Kontroler SCSI $1 urzÄ…dzenie $2 podurzÄ…dzenie $3 partycja $4
+solaris_mddev=UrzÄ…dzenie RAID $1
+solaris_ecacheexists=Katalog $1 juÅ¼ istnieje. Skasuj go.
+solaris_ebusy=$1 jest zajÄ™ty
+solaris_ekill=Nie udaÅ‚o siÄ™ zabiÄ‡ rumby
+solaris_epid=Nie udaÅ‚o siÄ™ znaleÅºÄ‡ numeru pid rumby
+solaris_nsource=Å¹rÃ³dÅ‚o NFS
 solaris_nhost=Nazwa komputera NFS
 solaris_ndir=Katalog NFS
-solaris_nmult=Wiele serwerów NFS
+solaris_nmult=Wiele serwerÃ³w NFS
 solaris_webnfs=WebNFS URL
 solaris_ufs=Dysk UFS
 solaris_scsi=Dysk SCSI/IDE
 solaris_ctrlr=Kontroler
-solaris_target=Urz±dzenie
-solaris_unit=Podurz±dzenie
+solaris_target=UrzÄ…dzenie
+solaris_unit=PodurzÄ…dzenie
 solaris_part=Partycja
-solaris_raid=Urz±dzenie RAID
-solaris_otherdev=Inne urz±dzenie
+solaris_raid=UrzÄ…dzenie RAID
+solaris_otherdev=Inne urzÄ…dzenie
 solaris_swapfile=Plik wymiany
 solaris_file=Plik
 solaris_cdrom=CDROM
 solaris_dvd=DVD
 solaris_msdos=Dysk MS-DOS
 solaris_orig=Katalog oryginalny
-solaris_cache=¬ród³o cache
+solaris_cache=Å¹rÃ³dÅ‚o cache
 solaris_automap=Automounter map
-solaris_autohosts=Wszystkie zasoby udostêpniane po NFS
+solaris_autohosts=Wszystkie zasoby udostÄ™pniane po NFS
 solaris_autoxfn=Federated Naming Service
 solaris_server=Nazwa serwera
 solaris_share=Nazwa zasobu
 solaris_ro=Tylko do odcztytu?
-solaris_nosuid=Zablokowaæ programy setuid?
-solaris_grpid=Pliki dziedzicz± nr GID nadrzêdnego?
-solaris_soft=Zg³aszaæ b³êdy przy timeoutach?
-solaris_bg=Powtarzaæ próby montowania w&nbsp;tle?
-solaris_quota=Wy¶wietliæ quota?
-solaris_nointr=Pozwoliæ na przerwanie przez u¿ytkownika?
+solaris_nosuid=ZablokowaÄ‡ programy setuid?
+solaris_grpid=Pliki dziedziczÄ… nr GID nadrzÄ™dnego?
+solaris_soft=ZgÅ‚aszaÄ‡ bÅ‚Ä™dy przy timeoutach?
+solaris_bg=PowtarzaÄ‡ prÃ³by montowania w&nbsp;tle?
+solaris_quota=WyÅ›wietliÄ‡ quota?
+solaris_nointr=PozwoliÄ‡ na przerwanie przez uÅ¼ytkownika?
 solaris_nfsver=Wersja NFS
-solaris_highest=Najwy¿sza
-solaris_proto=Protokó³
+solaris_highest=NajwyÅ¼sza
+solaris_proto=ProtokÃ³Å‚
 solaris_port=Port NFS
 solaris_timeo=Timeout
 solaris_retrans=Liczba retransmisji
@@ -131,94 +131,94 @@ solaris_none=Brak
 solaris_des=DES
 solaris_krb=Kerberos
 solaris_public=Montowanie WebNFS?
-solaris_quotab=W³±czyæ quota przy starcie?
-solaris_onerror=Reakcja na b³±d
-solaris_toosoon=Opó¼nienie naprawy
+solaris_quotab=WÅ‚Ä…czyÄ‡ quota przy starcie?
+solaris_onerror=Reakcja na bÅ‚Ä…d
+solaris_toosoon=OpÃ³Åºnienie naprawy
 solaris_time_s=Sekund
 solaris_time_m=Minut
 solaris_time_h=Godzin
 solaris_time_d=Dni
 solaris_time_w=Tygodni
 solaris_time_y=Lat
-solaris_noatime=Aktualizowaæ czasy dostêpu?
+solaris_noatime=AktualizowaÄ‡ czasy dostÄ™pu?
 solaris_immed=Natychmiast
-solaris_defer=Z&nbsp;opó¼nieniem
-solaris_force=Wymusiæ bezpo¶rednie We/Wy?
-solaris_nolarge=Pozwoliæ na du¿e pliki?
-solaris_logging=W³±czone logowanie?
-solaris_nrr=Zignorowaæ atrybuty uniksowe?
-solaris_notraildot=Zignorowaæ kropkê koñcz±c±?
-solaris_nomaplcase=U¿ywaæ ma³ych liter?
-solaris_foldcase=Wymusiæ ma³e litery?
+solaris_defer=Z&nbsp;opÃ³Åºnieniem
+solaris_force=WymusiÄ‡ bezpoÅ›rednie We/Wy?
+solaris_nolarge=PozwoliÄ‡ na duÅ¼e pliki?
+solaris_logging=WÅ‚Ä…czone logowanie?
+solaris_nrr=ZignorowaÄ‡ atrybuty uniksowe?
+solaris_notraildot=ZignorowaÄ‡ kropkÄ™ koÅ„czÄ…cÄ…?
+solaris_nomaplcase=UÅ¼ywaÄ‡ maÅ‚ych liter?
+solaris_foldcase=WymusiÄ‡ maÅ‚e litery?
 solaris_noopts=Brak opcji
 solaris_size=Rozmiar
-solaris_largebsize=U¿yæ du¿ego rozmiaru bloku?
+solaris_largebsize=UÅ¼yÄ‡ duÅ¼ego rozmiaru bloku?
 solaris_max=Maksymalny
-solaris_backfs=Typ rzeczywistego systemu plików
+solaris_backfs=Typ rzeczywistego systemu plikÃ³w
 solaris_backpath=Rzeczywisty katalog montowania
 solaris_cachedir=Katalog cache
 solaris_wmode=Tryb zapisu
-solaris_con=Kontrola spójno¶ci
+solaris_con=Kontrola spÃ³jnoÅ›ci
 solaris_period=Okresowa
 solaris_never=Brak
-solaris_demand=Na ¿±danie
+solaris_demand=Na Å¼Ä…danie
 solaris_waround=Write-around
-solaris_nshared=Nie wspó³dzielony
-solaris_local=Sprawdzaæ uprawnienia w&nbsp;cache?
-solaris_nobrowse=Wolno przegl±daæ?
+solaris_nshared=Nie wspÃ³Å‚dzielony
+solaris_local=SprawdzaÄ‡ uprawnienia w&nbsp;cache?
+solaris_nobrowse=Wolno przeglÄ…daÄ‡?
 solaris_auto=Automatycznie
 solaris_mname=Nazwa serwera
 solaris_cname=Nazwa klienta
 solaris_username=Nazwa logowania
-solaris_password=Has³o logowania
-solaris_uid=W³a¶cicielem plików jest u¿ytkownik
-solaris_gid=Grup± plików jest
-solaris_fmode=Prawa do plików
-solaris_dmode=Prawa do katalogów
-solaris_readwrite=Dostêp do odczytu i&nbsp;zapisu jest bezpieczny?
-solaris_readonly=Pliki mog± byæ tylko do odczytu?
-solaris_noupper=Wysy³aj has³a wielkimi literami?
-solaris_attr=Uzywaæ poleceñ attrE?
+solaris_password=HasÅ‚o logowania
+solaris_uid=WÅ‚aÅ›cicielem plikÃ³w jest uÅ¼ytkownik
+solaris_gid=GrupÄ… plikÃ³w jest
+solaris_fmode=Prawa do plikÃ³w
+solaris_dmode=Prawa do katalogÃ³w
+solaris_readwrite=DostÄ™p do odczytu i&nbsp;zapisu jest bezpieczny?
+solaris_readonly=Pliki mogÄ… byÄ‡ tylko do odczytu?
+solaris_noupper=WysyÅ‚aj hasÅ‚a wielkimi literami?
+solaris_attr=UzywaÄ‡ poleceÅ„ attrE?
 solaris_eurl='$1' nie jest poprawnym URLem NFS
-solaris_ehost='$1' nie jest poprawn± nazw± komputera
+solaris_ehost='$1' nie jest poprawnÄ… nazwÄ… komputera
 solaris_ehost2=Komputer '$1' nie istnieje
-solaris_edown=Komputer '$1' jest wy³±czony lub nie obs³uguje NFSu
-solaris_enfs=Komputer '$1' nie obs³uguje NFSu
-solaris_enfsdir='$1' nie jest poprawn± nazw± katalogu. Dostêpnymi katalogami na $2 s±&nbsp;: $3
-solaris_enfsperm=Ten komputer nie ma prawa montowaæ katalogu $1 z&nbsp;$2
-solaris_enfsmount=B³±d NFS - $1
+solaris_edown=Komputer '$1' jest wyÅ‚Ä…czony lub nie obsÅ‚uguje NFSu
+solaris_enfs=Komputer '$1' nie obsÅ‚uguje NFSu
+solaris_enfsdir='$1' nie jest poprawnÄ… nazwÄ… katalogu. DostÄ™pnymi katalogami na $2 sÄ…&nbsp;: $3
+solaris_enfsperm=Ten komputer nie ma prawa montowaÄ‡ katalogu $1 z&nbsp;$2
+solaris_enfsmount=BÅ‚Ä…d NFS - $1
 solaris_ectrlr='$1' nie jest poprawnym kontrolerem SCSI
-solaris_etarget='$1' nie jest poprawnym SCSI numerem urz±dzenia
-solaris_eunit='$1' nie jest poprawnym SCSI numerem podurz±dzenia
+solaris_etarget='$1' nie jest poprawnym SCSI numerem urzÄ…dzenia
+solaris_eunit='$1' nie jest poprawnym SCSI numerem podurzÄ…dzenia
 solaris_epart='$1' nie jest poprawnym numerem partycji SCSI
 solaris_eraid='$1' nie jest poprawnym numerem jednostki RAID
-solaris_epath='$1' nie jest poprawn± ¶cie¿k±
+solaris_epath='$1' nie jest poprawnÄ… Å›cieÅ¼kÄ…
 solaris_eexist='$1' nie istnieje
 solaris_edir='$1' nie jest katalogiem
 solaris_eswapfile=Plik wymiany '$1' nie istnieje
-solaris_eopen=Nie uda³o sie otworzyæ $1&nbsp;: $2
+solaris_eopen=Nie udaÅ‚o sie otworzyÄ‡ $1&nbsp;: $2
 solaris_ebackfs=The back filesystem '$1' is not mounted
 solaris_ebacktype=The back filesystem is '$1' is not $2
-solaris_ecsrc='$1' nie jest poprawnym ¼ród³em cache
+solaris_ecsrc='$1' nie jest poprawnym ÅºrÃ³dÅ‚em cache
 solaris_eautomap=Brak nazwy pliku mapy automountera
 solaris_eautofile=Plik mapy '$1' nie istnieje
-solaris_etarget2=Urz±dzenie SCSI dla '$1' nie istnieje
+solaris_etarget2=UrzÄ…dzenie SCSI dla '$1' nie istnieje
 solaris_epart2=Partycja SCSI '$1' nie istnieje
-solaris_eraid2=Urz±dzenie RAID '$1' nie istnieje
+solaris_eraid2=UrzÄ…dzenie RAID '$1' nie istnieje
 solaris_enopart=Brak partycji na '$1'
-solaris_edevfile=Plik urz±dzenia '$1' nie istnieje
-solaris_edevice=Urz±dzenie '$1' nie istnieje
-solaris_efstyp=Urz±dzenie '$1' jest sformatowane jako $2
-solaris_efstyp2=Nie uda³o siê sprawdziæ rodzaju systemu plików&nbsp;: $1
+solaris_edevfile=Plik urzÄ…dzenia '$1' nie istnieje
+solaris_edevice=UrzÄ…dzenie '$1' nie istnieje
+solaris_efstyp=UrzÄ…dzenie '$1' jest sformatowane jako $2
+solaris_efstyp2=Nie udaÅ‚o siÄ™ sprawdziÄ‡ rodzaju systemu plikÃ³w&nbsp;: $1
 solaris_ecachedir='$1' nie jest poprawnym katalogiem cache
-solaris_efmode='$1' nie jest poprawnym trybem ósemkowym dla plików
-solaris_edmode='$1' nie jest poprawnym trybem ósemkowym dla katalogów
+solaris_efmode='$1' nie jest poprawnym trybem Ã³semkowym dla plikÃ³w
+solaris_edmode='$1' nie jest poprawnym trybem Ã³semkowym dla katalogÃ³w
 
-linux_eamd=AMD zawiód³
+linux_eamd=AMD zawiÃ³dÅ‚
 linux_eauto=Nieudane automatyczne montowanie: $1
-linux_esmbconn=Nie uda³o siê po³±czyæ z&nbsp;serwerem
-linux_ekillamd=Nie uda³o siê zabiæ AMD
-linux_ekillauto=Nie uda³o siê zabiæ procesu automount
+linux_esmbconn=Nie udaÅ‚o siÄ™ poÅ‚Ä…czyÄ‡ z&nbsp;serwerem
+linux_ekillamd=Nie udaÅ‚o siÄ™ zabiÄ‡ AMD
+linux_ekillauto=Nie udaÅ‚o siÄ™ zabiÄ‡ procesu automount
 linux_nfshost=Nazwa serwera NFS
 linux_nfsdir=Katalog NFS
 linux_map=Mapa automountera
@@ -226,95 +226,95 @@ linux_swapfile=Plik wymiany
 linux_disk=Dysk
 linux_smbserver=Nazwa serwera
 linux_smbshare=Nazwa zasobu
-linux_raid=Urz±dzenie RAID
-linux_rdev=Urz±dzenie RAID $1
-linux_cddev=Napêd CD-ROM
+linux_raid=UrzÄ…dzenie RAID
+linux_rdev=UrzÄ…dzenie RAID $1
+linux_cddev=NapÄ™d CD-ROM
 linux_label=Partycja oznaczona $1
 linux_lsel=Partycja oznaczona
-linux_other=Inne urz±dzenie
+linux_other=Inne urzÄ…dzenie
 linux_ro=Tylko do odczytu
-linux_sync=Zrzucaæ bufory systemu plików?
-linux_nosuid=Zablokowaæ programy setuid-owe?
-linux_user=Pozwoliæ montowaæ u¿ytkownikom?
+linux_sync=ZrzucaÄ‡ bufory systemu plikÃ³w?
+linux_nosuid=ZablokowaÄ‡ programy setuid-owe?
+linux_user=PozwoliÄ‡ montowaÄ‡ uÅ¼ytkownikom?
 linux_check=Tryb sprawdzania
-linux_normal=Zwyk³e
-linux_strict=Dok³adne
+linux_normal=ZwykÅ‚e
+linux_strict=DokÅ‚adne
 linux_none=Brak
-linux_errors=Reakcja na b³±d
+linux_errors=Reakcja na bÅ‚Ä…d
 linux_continue=Kontynuuj
 linux_remount_ro=Montuj tylko do odczytu
-linux_panic=Wpadnij w panikê
-linux_grpid=Pliki dziedzicz± nr GID nadrzêdnego?
-linux_quotas=U¿ywaæ quota?
-linux_usrquota=Tylko dla u¿ytkowników
+linux_panic=Wpadnij w panikÄ™
+linux_grpid=Pliki dziedziczÄ… nr GID nadrzÄ™dnego?
+linux_quotas=UÅ¼ywaÄ‡ quota?
+linux_usrquota=Tylko dla uÅ¼ytkownikÃ³w
 linux_grpquota=Tylko dla grup
-linux_usrgrpquota=Dla u¿ytkowników i grup
-linux_usrgrpquota2=Dla u¿ytkowników i grup (NIESTABILNE!)
-linux_resuid=Zarezerwowana przestrzeñ dla u¿ytkownika
-linux_resgid=Zarezerwowana przestrzeñ dla grupy
-linux_bg=Powtarzaæ próby montowania w&nbsp;tle?
-linux_soft=Zg³aszaæ b³êdy przy timeoutach?
+linux_usrgrpquota=Dla uÅ¼ytkownikÃ³w i grup
+linux_usrgrpquota2=Dla uÅ¼ytkownikÃ³w i grup (NIESTABILNE!)
+linux_resuid=Zarezerwowana przestrzeÅ„ dla uÅ¼ytkownika
+linux_resgid=Zarezerwowana przestrzeÅ„ dla grupy
+linux_bg=PowtarzaÄ‡ prÃ³by montowania w&nbsp;tle?
+linux_soft=ZgÅ‚aszaÄ‡ bÅ‚Ä™dy przy timeoutach?
 linux_timeo=Timeout
 linux_retrans=Liczba retransmisji
 linux_vers=Wersja NFS
-linux_high=Najwy¿sza
+linux_high=NajwyÅ¼sza
 linux_port=Port NFS
-linux_intr=Pozwoliæ na przerwanie przez u¿ytkownika?
-linux_tcp=Protokó³ RPC
-linux_uid=W³a¶cicielem plików jest u¿ytkownik
-linux_gid=Grup± plików jest
-linux_rules=Zasady nazewnictwa plików
+linux_intr=PozwoliÄ‡ na przerwanie przez uÅ¼ytkownika?
+linux_tcp=ProtokÃ³Å‚ RPC
+linux_uid=WÅ‚aÅ›cicielem plikÃ³w jest uÅ¼ytkownik
+linux_gid=GrupÄ… plikÃ³w jest
+linux_rules=Zasady nazewnictwa plikÃ³w
 linux_relaxed=Swobodne
-linux_conv=Zamiana koñców linii DOS-Unix
+linux_conv=Zamiana koÅ„cÃ³w linii DOS-Unix
 linux_allfiles=Wszystkie pliki
 linux_textfiles=Tylko pliki tekstowe
 linux_umask=Maska praw do pliku
-linux_quiet=Zg³aszaæ b³±d przy <tt>chown</tt>?
-linux_uni_xlate=T³umaczyæ znaki w&nbsp;Unikodzie?
-linux_posix=Dozwolone nazwy ró¿ni±ce siê tylko wielko¶ci± liter?
-linux_conv2=Zamiana koñców linii OS/2-Unix
-linux_rock=Ignorowaæ atrybuty uniksowe?
-linux_mode=Prawa dostêpu do plików dla nie-uniksowych CD
+linux_quiet=ZgÅ‚aszaÄ‡ bÅ‚Ä…d przy <tt>chown</tt>?
+linux_uni_xlate=TÅ‚umaczyÄ‡ znaki w&nbsp;Unikodzie?
+linux_posix=Dozwolone nazwy rÃ³Å¼niÄ…ce siÄ™ tylko wielkoÅ›ciÄ… liter?
+linux_conv2=Zamiana koÅ„cÃ³w linii OS/2-Unix
+linux_rock=IgnorowaÄ‡ atrybuty uniksowe?
+linux_mode=Prawa dostÄ™pu do plikÃ³w dla nie-uniksowych CD
 linux_noopts=Brak opcji
-linux_timeout=Czas bezczynno¶ci przed odmontowaniem
+linux_timeout=Czas bezczynnoÅ›ci przed odmontowaniem
 linux_pid_file=Zapisz nr PID do pliku
 linux_secs=sekund
-linux_smbwarn=Uwaga! System plików nie zosta³ zamontowany z&nbsp;Webmina, wiêc istniej±ce opcje s± niedostêpne
+linux_smbwarn=Uwaga! System plikÃ³w nie zostaÅ‚ zamontowany z&nbsp;Webmina, wiÄ™c istniejÄ…ce opcje sÄ… niedostÄ™pne
 linux_username=Nazwa logowania
-linux_password=Has³o logowania
+linux_password=HasÅ‚o logowania
 linux_sname=Nazwa serwera
 linux_wg=Grupa robocza
 linux_auto=Automatycznie
 linux_cname=Nazwa klienta
 linux_mname=Adres serwera
-linux_fmode=Prawa do plików
-linux_dmode=Prawa do katalogów
-linux_notail=Przehandlowaæ miejsce za szybko¶æ?
-linux_tmpsize=Maksymalny rozmiar systemu plików
+linux_fmode=Prawa do plikÃ³w
+linux_dmode=Prawa do katalogÃ³w
+linux_notail=PrzehandlowaÄ‡ miejsce za szybkoÅ›Ä‡?
+linux_tmpsize=Maksymalny rozmiar systemu plikÃ³w
 linux_unlimited=Nieograniczony
-linux_nr_blocks=Maksymalna liczba dostêpnych bloków
-linux_nr_inodes=Maksymalna liczba dostêpnych inodów
+linux_nr_blocks=Maksymalna liczba dostÄ™pnych blokÃ³w
+linux_nr_inodes=Maksymalna liczba dostÄ™pnych inodÃ³w
 linux_tmpmode=Uprawnienia punktu montowania
-linux_ehost='$1' nie jest poprawn± nazw± komputera
+linux_ehost='$1' nie jest poprawnÄ… nazwÄ… komputera
 linux_ehost2=Komputer '$1' nie istnieje
-linux_edown=Komputer '$1' jest wy³±czony
-linux_enfs=Komputer '$1' nie obs³uguje NFSu
-linux_elist=Nie uda³o siê pobraæ listy montowañ&nbsp;: $1
-linux_enfsdir='$1' nie jest poprawn± nazw± katalogu. Dostêpnymi katalogami na $2 s±&nbsp;: $3
-linux_enfsperm=Ten komputer nie ma prawa montowaæ katalogu $1 z&nbsp;$2
-linux_enfsmount=B³±d NFS - $1
+linux_edown=Komputer '$1' jest wyÅ‚Ä…czony
+linux_enfs=Komputer '$1' nie obsÅ‚uguje NFSu
+linux_elist=Nie udaÅ‚o siÄ™ pobraÄ‡ listy montowaÅ„&nbsp;: $1
+linux_enfsdir='$1' nie jest poprawnÄ… nazwÄ… katalogu. DostÄ™pnymi katalogami na $2 sÄ…&nbsp;: $3
+linux_enfsperm=Ten komputer nie ma prawa montowaÄ‡ katalogu $1 z&nbsp;$2
+linux_enfsmount=BÅ‚Ä…d NFS - $1
 linux_eautomap=Plik mapy automountera '$1' nie istnieje
-linux_edev=Nie podano urz±dzenia
-linux_edevfile=Plik urz±dzenia '$1' nie istnieje
-linux_emask='$1' nie jest poprawn± mask± ósemkow±
+linux_edev=Nie podano urzÄ…dzenia
+linux_edevfile=Plik urzÄ…dzenia '$1' nie istnieje
+linux_emask='$1' nie jest poprawnÄ… maskÄ… Ã³semkowÄ…
 linux_etimeout='$1' nie jest poprawnym timeoutem
 linux_epidfile='$1' nie jest poprawnym plikiem z&nbsp;numerem PID
-linux_efmode='$1' nie jest poprawnym trybem ósemkowym dla plików
-linux_edmode='$1' nie jest poprawnym trybem ósemkowym dla katalogów
+linux_efmode='$1' nie jest poprawnym trybem Ã³semkowym dla plikÃ³w
+linux_edmode='$1' nie jest poprawnym trybem Ã³semkowym dla katalogÃ³w
 linux_etmpsize=Nie podany lub niepoprawny rozmiar maksymalny
-linux_enr_blocks=Nie podana lub niepoprawna liczba bloków
-linux_enr_inodes=Nie podana lub niepoprawna liczba inodów
-linux_etmpmode=Nie podane lub niepoprawne ósemkowe uprawnienia punkty montowania
+linux_enr_blocks=Nie podana lub niepoprawna liczba blokÃ³w
+linux_enr_inodes=Nie podana lub niepoprawna liczba inodÃ³w
+linux_etmpmode=Nie podane lub niepoprawne Ã³semkowe uprawnienia punkty montowania
 
 
 log_mount=Zamontowano $3
@@ -327,5 +327,5 @@ log_create=Utworzono montowanie $3
 log_create_l=Utworzono montowanie $2 $1 na $3
 log_modify=Zmieniono montowanie $3
 log_modify_l=Zmieniono montowanie $2 $1 na $3
-log_delete=Usuniêto montowanie $3
-log_delete_l=Usuniêto montowanie $2 $1 na $3
+log_delete=UsuniÄ™to montowanie $3
+log_delete_l=UsuniÄ™to montowanie $2 $1 na $3

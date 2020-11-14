@@ -1,71 +1,71 @@
 <header>Programy pomocnicze</header>
 
-<b>Szerokość kolumny FTP</b>: Domyślnie 32 znaki. Określa szerokość
-listowania FTP. To ustawienie powinno odpowiadać szerokości standardowej
-przeglądarki. Ustawienie zbyt małej wartości może spowodować obcięcie
-długich nazw podczas przeglądania serwerów ftp. <p> 
+<b>SzerokoÅÄ kolumny FTP</b>: DomyÅlnie 32 znaki. OkreÅla szerokoÅÄ
+listowania FTP. To ustawienie powinno odpowiadaÄ szerokoÅci standardowej
+przeglÄdarki. Ustawienie zbyt maÅej wartoÅci moÅ¼e spowodowaÄ obciÄcie
+dÅugich nazw podczas przeglÄdania serwerÃ³w ftp. <p> 
 
-<b>Anonimowy login FTP</b>: Domyślnie 'Squid@'. Jeśli chcesz, aby hasło przy
-logowaniu się Squida jako użytkownik 'anonymous' niosło więcej informacji
-(i&nbsp;umożliwiło korzystanie ze szczególnie wybrednych serwerów ftp),
-ustaw tu coś odpowiedniego dla twojej domeny, jak wwwuser@somewhere.net. <p>
+<b>Anonimowy login FTP</b>: DomyÅlnie 'Squid@'. JeÅli chcesz, aby hasÅo przy
+logowaniu siÄ Squida jako uÅ¼ytkownik 'anonymous' niosÅo wiÄcej informacji
+(i&nbsp;umoÅ¼liwiÅo korzystanie ze szczegÃ³lnie wybrednych serwerÃ³w ftp),
+ustaw tu coÅ odpowiedniego dla twojej domeny, jak wwwuser@somewhere.net. <p>
 
-Powodem, dla którego jest to domyślnie pozbawione domeny jest, żeby
-zapytania mogły być wykonywane w&nbsp;imieniu użytkownika z&nbsp;dowolnej
-domeny, użytkownik z&nbsp;której korzysta z&nbsp;proxy. Niektóre serwery ftp
-sprawdzają również poprawność adresu pocztowego (na przykład perl.com). <p>
+Powodem, dla ktÃ³rego jest to domyÅlnie pozbawione domeny jest, Å¼eby
+zapytania mogÅy byÄ wykonywane w&nbsp;imieniu uÅ¼ytkownika z&nbsp;dowolnej
+domeny, uÅ¼ytkownik z&nbsp;ktÃ³rej korzysta z&nbsp;proxy. NiektÃ³re serwery ftp
+sprawdzajÄ rÃ³wnieÅ¼ poprawnoÅÄ adresu pocztowego (na przykÅad perl.com). <p>
 
-<b>Program DNS Squida</b>: Domyślnie 'dnsserver'. Określa położenie programu
-odpytującego DNS. Program domyślny jest buforującym serwerem DNS
-instalowanym domyślnie wraz ze Squidem. <p>
+<b>Program DNS Squida</b>: DomyÅlnie 'dnsserver'. OkreÅla poÅoÅ¼enie programu
+odpytujÄcego DNS. Program domyÅlny jest buforujÄcym serwerem DNS
+instalowanym domyÅlnie wraz ze Squidem. <p>
 
-<b>Liczba programów DNS</b>: Domyślnie 5. Liczba procesów potomnych
-obsługujących przeszukiwania DNS. Dla silnie obciążonych proxy na dużych
-serwerach prawdopodobnie powinieneś zwiększyć tę wartość do co najmniej 10.
-Wartością maksymalną jest 32. <p>
+<b>Liczba programÃ³w DNS</b>: DomyÅlnie 5. Liczba procesÃ³w potomnych
+obsÅugujÄcych przeszukiwania DNS. Dla silnie obciÄÅ¼onych proxy na duÅ¼ych
+serwerach prawdopodobnie powinieneÅ zwiÄkszyÄ tÄ wartoÅÄ do co najmniej 10.
+WartoÅciÄ maksymalnÄ jest 32. <p>
 
-<b>Dodawać domenę do zapytań</b>: Domyślnie nie. Normalnie 'dnsserver'
-wyłącza opcję RES_DEFNAMES resolvera (patrz res_init(3)). Zapobiega to
-interpretacji jednoskładnikowych nazw hostów lokalnie, przez proxy
-w&nbsp;hierarchii. Włączenie tej opcji umożliwia dnsserverowi obsługiwać
-jednoskładnikowe nazwy. <p>  
+<b>DodawaÄ domenÄ do zapytaÅ</b>: DomyÅlnie nie. Normalnie 'dnsserver'
+wyÅÄcza opcjÄ RES_DEFNAMES resolvera (patrz res_init(3)). Zapobiega to
+interpretacji jednoskÅadnikowych nazw hostÃ³w lokalnie, przez proxy
+w&nbsp;hierarchii. WÅÄczenie tej opcji umoÅ¼liwia dnsserverowi obsÅugiwaÄ
+jednoskÅadnikowe nazwy. <p>  
 
-<b>Adresy serwerów DNS</b>: Domyślne jest korzystanie z&nbsp;pliku
-resolv.conf. Opcja ta umożliwia określenie listy serwerów DNS (ich adresów
-IP), które będą wykorzystywane zamiast wymienionych w&nbsp;pliku
+<b>Adresy serwerÃ³w DNS</b>: DomyÅlne jest korzystanie z&nbsp;pliku
+resolv.conf. Opcja ta umoÅ¼liwia okreÅlenie listy serwerÃ³w DNS (ich adresÃ³w
+IP), ktÃ³re bÄdÄ wykorzystywane zamiast wymienionych w&nbsp;pliku
 /etc/resolv.conf. <p>
 
-<b>Program opróżniający bufory cache</b>: Domyślnie 'unlinkd'. Określa
-położenie programu kasującego pliki. Opcja ta może nie być potrzebna, jeżeli
-korzystasz z&nbsp;asynchronicznego wejścia/wyjścia, gdyż w&nbsp;niektórych
-wersjach jest to obsługiwane przez wątek Squida. <p>
+<b>Program oprÃ³Å¼niajÄcy bufory cache</b>: DomyÅlnie 'unlinkd'. OkreÅla
+poÅoÅ¼enie programu kasujÄcego pliki. Opcja ta moÅ¼e nie byÄ potrzebna, jeÅ¼eli
+korzystasz z&nbsp;asynchronicznego wejÅcia/wyjÅcia, gdyÅ¼ w&nbsp;niektÃ³rych
+wersjach jest to obsÅugiwane przez wÄtek Squida. <p>
 
-<b>Program ping Squida</b>: Domyślnie 'pinger'. Określa położenie programu
-pingującego. Jest użyteczna jedynie, gdy Squid został skonfigurowany
-(podczas kompilacji) z&nbsp;opcją '--enable-icmp'. <p>
+<b>Program ping Squida</b>: DomyÅlnie 'pinger'. OkreÅla poÅoÅ¼enie programu
+pingujÄcego. Jest uÅ¼yteczna jedynie, gdy Squid zostaÅ skonfigurowany
+(podczas kompilacji) z&nbsp;opcjÄ '--enable-icmp'. <p>
 
-<b>Wybrany program przekierowujący</b>: Domyślnie żaden. Określa położenie
-programu przekierowującego URL-e. Nie załączono żadnego, gdyż taki program
-może spełniać prawie dowolną funkcję. Po informacje, jak taki program
-napisać, zajrzyj do 'Release-Notes'. <p>
+<b>Wybrany program przekierowujÄcy</b>: DomyÅlnie Å¼aden. OkreÅla poÅoÅ¼enie
+programu przekierowujÄcego URL-e. Nie zaÅÄczono Å¼adnego, gdyÅ¼ taki program
+moÅ¼e speÅniaÄ prawie dowolnÄ funkcjÄ. Po informacje, jak taki program
+napisaÄ, zajrzyj do 'Release-Notes'. <p>
 
-<b>Liczba programów przekierowujących</b>: Domyślnie 5, jeśli jakis program
-przekierowujący podano. Liczba potomnych programów przekierowujących. Jeśli
-uruchomisz ich zbyt mało Squid będzie musiał czekać na wstępne przetworzenie
-przez nie URL-i, co go spowolni. Jeśli uruchomisz ich za dużo, zużyją zbyt
-dużo RAM-u i&nbsp;innych zasobów systemowych. <p>
+<b>Liczba programÃ³w przekierowujÄcych</b>: DomyÅlnie 5, jeÅli jakis program
+przekierowujÄcy podano. Liczba potomnych programÃ³w przekierowujÄcych. JeÅli
+uruchomisz ich zbyt maÅo Squid bÄdzie musiaÅ czekaÄ na wstÄpne przetworzenie
+przez nie URL-i, co go spowolni. JeÅli uruchomisz ich za duÅ¼o, zuÅ¼yjÄ zbyt
+duÅ¼o RAM-u i&nbsp;innych zasobÃ³w systemowych. <p>
 
-<b>Wybrany program autoryzujący</b>: Domyślnie żaden. Określa zewnętrzne
-polecenie autoryzujące. Taki program czyta linię postaci "nazwa_użytkownika
-hasło" i&nbsp;odpowiada w&nbsp;nieskończoność "OK" lub "ERR". Jeśli używasz
-programu autoryzującego, upewnij się, że masz jedną ACL typu proxy_auth. <p>
+<b>Wybrany program autoryzujÄcy</b>: DomyÅlnie Å¼aden. OkreÅla zewnÄtrzne
+polecenie autoryzujÄce. Taki program czyta liniÄ postaci "nazwa_uÅ¼ytkownika
+hasÅo" i&nbsp;odpowiada w&nbsp;nieskoÅczonoÅÄ "OK" lub "ERR". JeÅli uÅ¼ywasz
+programu autoryzujÄcego, upewnij siÄ, Å¼e masz jednÄ ACL typu proxy_auth. <p>
 
-Jesli chcesz używać tradycyjnej autoryzacji proxy, wpisz w&nbsp;tej linii
-coś, w&nbsp;rodzaju /usr/bin/ncsa_auth /usr/etc/passwd. Zakładając, że
-ncsa_auth został skompilowany i&nbsp;zainstalowany w&nbsp;Twoim systemie.
+Jesli chcesz uÅ¼ywaÄ tradycyjnej autoryzacji proxy, wpisz w&nbsp;tej linii
+coÅ, w&nbsp;rodzaju /usr/bin/ncsa_auth /usr/etc/passwd. ZakÅadajÄc, Å¼e
+ncsa_auth zostaÅ skompilowany i&nbsp;zainstalowany w&nbsp;Twoim systemie.
 <p>
 
-<b>Liczba programów autoryzujących</b>: Domyślnie 5, jeśli jakis program,
-autoryzujący podano.
+<b>Liczba programÃ³w autoryzujÄcych</b>: DomyÅlnie 5, jeÅli jakis program,
+autoryzujÄcy podano.
 
 <hr>

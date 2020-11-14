@@ -1,4 +1,4 @@
-﻿<?php
+ï»¿<?php
   $LocalPluginPath = dirname(dirname(dirname(__FILE__))).DIRECTORY_SEPARATOR.'plugins';
   $LocalSkinPath = dirname(dirname(dirname(__File__))).DIRECTORY_SEPARATOR.'skins';
 ?>

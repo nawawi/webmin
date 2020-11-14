@@ -1,39 +1,39 @@
 <header>Firewall Linux</header>
 
-<h3>Introdução ao Módulo</h3>
+<h3>IntroduÃ§Ã£o ao MÃ³dulo</h3>
 
-Este módulo lhe permite configurar as características do firewall IPtables encontradas na série 2.4 do kernel do Linux. Diferente de alguns outros programas para configuração de firewall, ao invés de criar um shell script para configurar o firewall, ele lê e edita um arquivo salvo no formato de leitura e escrita do <tt>ipi(6)tables-restore</tt> e <tt>ipi(6)tables-save</tt> respectivamente. <p>
+Este mÃ³dulo lhe permite configurar as caracterÃ­sticas do firewall IPtables encontradas na sÃ©rie 2.4 do kernel do Linux. Diferente de alguns outros programas para configuraÃ§Ã£o de firewall, ao invÃ©s de criar um shell script para configurar o firewall, ele lÃª e edita um arquivo salvo no formato de leitura e escrita do <tt>ipi(6)tables-restore</tt> e <tt>ipi(6)tables-save</tt> respectivamente. <p>
 
-Se você já possui um firewall em seu sistema que foi configurado manualmente ou a partir de um script, o módulo  oferecerá para convertê-lo para um arquivo salvo no formato do IPtables, e criar um script que poderá ser executado durante a inicialização para a ativação das regras contidas no arquivo. Entretanto, se você fizer isso, você não deverá editar mais o script com as regras do firewall e deverá desabilitar sua execução durante a inicialização do sistema. <p>
+Se vocÃª jÃ¡ possui um firewall em seu sistema que foi configurado manualmente ou a partir de um script, o mÃ³dulo  oferecerÃ¡ para convertÃª-lo para um arquivo salvo no formato do IPtables, e criar um script que poderÃ¡ ser executado durante a inicializaÃ§Ã£o para a ativaÃ§Ã£o das regras contidas no arquivo. Entretanto, se vocÃª fizer isso, vocÃª nÃ£o deverÃ¡ editar mais o script com as regras do firewall e deverÃ¡ desabilitar sua execuÃ§Ã£o durante a inicializaÃ§Ã£o do sistema. <p>
 
-<h3>Visão geral sobre IPtables</h3>
+<h3>VisÃ£o geral sobre IPtables</h3>
 
-Todo pacote de rede que vem para dentro, sai ou é redirecionado pelo seu sistema é checado em cada chain para determinar o que acontecerá com ele.
-Cada chain contém zero ou mais regras, que possuem condições (para determinar quais pacotes coincidem com ela) e uma ação (para controlar o que acontece com os pacotes que coincidem com ela). Cada chain possui também uma ação padrão que controla o que acontece com os pacotes que não coincidem com nenhuma regra. <p>
+Todo pacote de rede que vem para dentro, sai ou Ã© redirecionado pelo seu sistema Ã© checado em cada chain para determinar o que acontecerÃ¡ com ele.
+Cada chain contÃ©m zero ou mais regras, que possuem condiÃ§Ãµes (para determinar quais pacotes coincidem com ela) e uma aÃ§Ã£o (para controlar o que acontece com os pacotes que coincidem com ela). Cada chain possui tambÃ©m uma aÃ§Ã£o padrÃ£o que controla o que acontece com os pacotes que nÃ£o coincidem com nenhuma regra. <p>
 
-Cada chain é parte de uma tabela, que atualmente são três:
+Cada chain Ã© parte de uma tabela, que atualmente sÃ£o trÃªs:
 
 <ul>
 <li><b>Filtragem de Pacotes (<tt>filter</tt>)</b><br>
     As chains nesta tabela podem ser utilizadas para controlas os dados que entram em seu sistema a partir  
-    de outros hosts na rede, dados enviados a partir do seu sistema por usuários e processos, e dados 
-    redirecionados pelo seu sistema se sua ação é como um roteador. <p>
-<li><b>Tradução de endereço de rede (<tt>nat</tt>)</b><br>
-    Esta tabela pode ser utilizada para configurar NAT ou mascaramento, que são úteis se você quer dar acesso 
-    à internet a máquinas que estão na rede interna através de somente um IP real. <p>
-<li><b>Alteração de Pacotes (<tt>mangle</tt>)</b><br>
-    Esta chain é para modificar pacotes redirecionados ou enviados pelo seu sistema. <p>
+    de outros hosts na rede, dados enviados a partir do seu sistema por usuÃ¡rios e processos, e dados 
+    redirecionados pelo seu sistema se sua aÃ§Ã£o Ã© como um roteador. <p>
+<li><b>TraduÃ§Ã£o de endereÃ§o de rede (<tt>nat</tt>)</b><br>
+    Esta tabela pode ser utilizada para configurar NAT ou mascaramento, que sÃ£o Ãºteis se vocÃª quer dar acesso 
+    Ã  internet a mÃ¡quinas que estÃ£o na rede interna atravÃ©s de somente um IP real. <p>
+<li><b>AlteraÃ§Ã£o de Pacotes (<tt>mangle</tt>)</b><br>
+    Esta chain Ã© para modificar pacotes redirecionados ou enviados pelo seu sistema. <p>
 </ul>
 
-Em adição às chains padrão que são parte de cada tabela, você também pode criar suas próprias chains que poderão ser executadas pela regras das chains padrão. Isto pode ser útil para agrupar e compartilhar regras que poderão ser utilizadas em múltiplos lugares. <p>
+Em adiÃ§Ã£o Ã s chains padrÃ£o que sÃ£o parte de cada tabela, vocÃª tambÃ©m pode criar suas prÃ³prias chains que poderÃ£o ser executadas pela regras das chains padrÃ£o. Isto pode ser Ãºtil para agrupar e compartilhar regras que poderÃ£o ser utilizadas em mÃºltiplos lugares. <p>
 
-<h3>A página principal</h3>
+<h3>A pÃ¡gina principal</h3>
 
-A página principal deste módulo lista todas as chains e regras de uma das tabelas disponíveis, selecionada a partir da lista no topo-esquerdo. Abaixo segue uma seção para cada chain da tabela atual, com todas a regras em cada chain listada e suas respectivas descrições. Para cada chain, você pode alterar a ação padrão utilizando o combobox, se a chain é uma chain padrão, ou apagá-la com o botão Apagar Chain se ela foi definida pelo usuário. <p>
+A pÃ¡gina principal deste mÃ³dulo lista todas as chains e regras de uma das tabelas disponÃ­veis, selecionada a partir da lista no topo-esquerdo. Abaixo segue uma seÃ§Ã£o para cada chain da tabela atual, com todas a regras em cada chain listada e suas respectivas descriÃ§Ãµes. Para cada chain, vocÃª pode alterar a aÃ§Ã£o padrÃ£o utilizando o combobox, se a chain Ã© uma chain padrÃ£o, ou apagÃ¡-la com o botÃ£o Apagar Chain se ela foi definida pelo usuÃ¡rio. <p>
 
-Você pode clicar em qualquer regra em uma chain para editá-la, clicar nas setas da direita de cada linha para movê-la para cima ou para baixo, ou clicar no botão Adicionar Regra para adicionar uma nova regra.Adicionando ou editando uma regra, você será levado para uma página na qual você poderá selecionar a ação para cada regra, e as condições para as quais a ação será executada. <p>
+VocÃª pode clicar em qualquer regra em uma chain para editÃ¡-la, clicar nas setas da direita de cada linha para movÃª-la para cima ou para baixo, ou clicar no botÃ£o Adicionar Regra para adicionar uma nova regra.Adicionando ou editando uma regra, vocÃª serÃ¡ levado para uma pÃ¡gina na qual vocÃª poderÃ¡ selecionar a aÃ§Ã£o para cada regra, e as condiÃ§Ãµes para as quais a aÃ§Ã£o serÃ¡ executada. <p>
 
-Na parte de baixo da página está um botão para tornar a configuração atual do firewall ativa, carregando-a através do comando <tt>ipi(6)tables-restore</tt>. A seguir está um botão para fazer o inverso - pegar a configuração que está corrente no kernel e torná-la disponível para edição. Finalmente, se sua distribuição suportar, existe um botão para indicar se o firewall será ativado durante o boot ou não. <p>
+Na parte de baixo da pÃ¡gina estÃ¡ um botÃ£o para tornar a configuraÃ§Ã£o atual do firewall ativa, carregando-a atravÃ©s do comando <tt>ipi(6)tables-restore</tt>. A seguir estÃ¡ um botÃ£o para fazer o inverso - pegar a configuraÃ§Ã£o que estÃ¡ corrente no kernel e tornÃ¡-la disponÃ­vel para ediÃ§Ã£o. Finalmente, se sua distribuiÃ§Ã£o suportar, existe um botÃ£o para indicar se o firewall serÃ¡ ativado durante o boot ou nÃ£o. <p>
 
 
 <h3>Filtering chains</h3>

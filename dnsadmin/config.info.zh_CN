@@ -1,6 +1,6 @@
-named_boot_file=Ö÷ÅäÖÃÎÄ¼ş,0
-show_list=ÏÔÊ¾ÓòµÄĞÎÊ½,1,0-Í¼±í,1-ÁĞ±í
-soa_style=ÏµÁĞºÅ·ç¸ñ,1,0-ÔËĞĞºÅÂë,1-»ùÓÚÈÕÆÚ (YYYYMMDDnn)
-records_order=ÏÔÊ¾¼ÇÂ¼µÄË³Ğò,1,1-×ÖÄ¸,0-Ìí¼Ó
-named_pid_file=½ø³ÌºÅÎÄ¼ş,0
-named_pathname=<i>named</i>µÄÈ«Â·¾¶,0
+named_boot_file=ä¸»é…ç½®æ–‡ä»¶,0
+show_list=æ˜¾ç¤ºåŸŸçš„å½¢å¼,1,0-å›¾è¡¨,1-åˆ—è¡¨
+soa_style=ç³»åˆ—å·é£æ ¼,1,0-è¿è¡Œå·ç ,1-åŸºäºæ—¥æœŸ (YYYYMMDDnn)
+records_order=æ˜¾ç¤ºè®°å½•çš„é¡ºåº,1,1-å­—æ¯,0-æ·»åŠ 
+named_pid_file=è¿›ç¨‹å·æ–‡ä»¶,0
+named_pathname=<i>named</i>çš„å…¨è·¯å¾„,0

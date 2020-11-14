@@ -1,8 +1,8 @@
 __norefs=1
-index_hosts=Wszystkie has³a zmienione za pomoc± tego modu³u zostan± zastosowane dla wszystkich $1 hostów zarz±dzanych przez modu³ Klaster - U¿ytkownicy i grupy
-index_noservers=Brak serwerów zdefiniowanych w <a href=$1>Klaster - U¿ytkownicy i grupy</a>
-index_title=Klaster - Zmiana hase³
-passwd_err=Zmiana has³a nie powiod³a siê
-passwd_euser=U¿ytkownik nie istnieje
-passwd_on=Zmienianie has³a na $1 ..
-passwd_title=Zmiana has³a
+index_hosts=Wszystkie hasÅ‚a zmienione za pomocÄ… tego moduÅ‚u zostanÄ… zastosowane dla wszystkich $1 hostÃ³w zarzÄ…dzanych przez moduÅ‚ Klaster - UÅ¼ytkownicy i grupy
+index_noservers=Brak serwerÃ³w zdefiniowanych w <a href=$1>Klaster - UÅ¼ytkownicy i grupy</a>
+index_title=Klaster - Zmiana haseÅ‚
+passwd_err=Zmiana hasÅ‚a nie powiodÅ‚a siÄ™
+passwd_euser=UÅ¼ytkownik nie istnieje
+passwd_on=Zmienianie hasÅ‚a na $1 ..
+passwd_title=Zmiana hasÅ‚a

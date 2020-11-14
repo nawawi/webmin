@@ -1,4 +1,4 @@
-virtualmin_spam=Úplná cesta pro kontrolní program spamù u¾ivatele ve Virtualminu,3,Není nainstalován,40
-virtualmin_config=Úplná cesta pro konfiguraèní adresáø Virtualminu,3,Není nainstalován
-warn_procmail=Zobrazit varování v pøípadì&#44; ¾e není nainstalován Procmail?,1,1-Ano,0-Ne
-alias_files=Úplná cesta pro hlavní soubory s aliasy,9,40,3,\t
+virtualmin_spam=ÃšplnÃ¡ cesta pro kontrolnÃ­ program spamÃ¹ uÂ¾ivatele ve Virtualminu,3,NenÃ­ nainstalovÃ¡n,40
+virtualmin_config=ÃšplnÃ¡ cesta pro konfiguraÃ¨nÃ­ adresÃ¡Ã¸ Virtualminu,3,NenÃ­ nainstalovÃ¡n
+warn_procmail=Zobrazit varovÃ¡nÃ­ v pÃ¸Ã­padÃ¬&#44; Â¾e nenÃ­ nainstalovÃ¡n Procmail?,1,1-Ano,0-Ne
+alias_files=ÃšplnÃ¡ cesta pro hlavnÃ­ soubory s aliasy,9,40,3,\t

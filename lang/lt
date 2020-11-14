@@ -1,8 +1,8 @@
-main_return=Gráşti á $1
+main_return=GrÄ¯Å¾ti Ä¯ $1
 main_homepage=Pirmas puslapis
 main_feedback=Atsiliepimai..
 main_switch=Jungtis kitu vartotoju..
-main_logout=Iğsiregistruoti
+main_logout=IÅ¡siregistruoti
 main_version=Versija $1 sistemoje $2 ($3)
 main_title=Webmin $1 sistemoje $2 ($3)
 main_title2=Webmin
@@ -25,31 +25,31 @@ header_help=Pagalba..
 header_config=Modulio nustatymai
 header_servers=Webmin serveriai
 
-index=indeksà
+index=indeksÄ…
 yes=Taip
 no=Ne
-save=Iğsaugoti
+save=IÅ¡saugoti
 create=Sukurti
 delete=Trinti
 find=Rasti
 error=Klaida
-efilewrite=Árağymo klaida á $1 : $2
+efilewrite=Ä®raÅ¡ymo klaida Ä¯ $1 : $2
 default=Nutylint
 modify=Pakeisti
 reset=Resetas
 ok=OK
 cancel=Atsisakyti
-helpsearch=Dokumentø paieğka..
+helpsearch=DokumentÅ³ paieÅ¡ka..
 switch_remote_euser=Unix sisteminis vartotojas $1 neegzistuoja.
 programname=Webmin
 
-chooser_title1=Pasirinkite failà..
-chooser_title2=Pasirinkite katalogà..
-chooser_dir=Vienas iğ $1 katalogø
+chooser_title1=Pasirinkite failÄ…..
+chooser_title2=Pasirinkite katalogÄ…..
+chooser_dir=Vienas iÅ¡ $1 katalogÅ³
 chooser_ok=Vykdyti
 
 users_title1=Pasirinkite vartotojus..
-users_title2=Pasirinkite vartotojà..
+users_title2=Pasirinkite vartotojÄ…..
 users_sel=Pasirinkti vartotojai
 users_all=Visi Vartotojai
 users_ok=Vykdyti
@@ -57,69 +57,69 @@ users_cancel=Atsisakyti
 users_clear=Trinti
 
 groups_title1=Pasirinkti grupes..
-groups_title2=Pasirinkti grupæ..
+groups_title2=Pasirinkti grupÄ™..
 groups_all=Visas grupes
 groups_sel=Pasirinktas grupes
 groups_ok=Vykdyti
 groups_cancel=Atsisakyti
 groups_clear=Trinti
 
-config_ecannot=Jums apribotos teisës konfigûruoti ğá modulá.
+config_ecannot=Jums apribotos teisÄ—s konfigÅ«ruoti Å¡Ä¯ modulÄ¯.
 config_title=Nustatymai
 config_dir=Modulis $1
 config_header=Nustatymai moduliui $1
 config_none=Nepasirinkta
-config_eaccess=Jums neleista naudotis ğiuo moduliu.
-config_err=Konfigûracijos iğsaugojimo klaida
+config_eaccess=Jums neleista naudotis Å¡iuo moduliu.
+config_err=KonfigÅ«racijos iÅ¡saugojimo klaida
 config_nochange=Nekeisti
-config_setto=Pakeisti á
+config_setto=Pakeisti Ä¯
 
-help_err=Pagalbos iğvedimo klaida
-help_epath=Nëra arba nenurodytas kelias iki pagalbos failø
+help_err=Pagalbos iÅ¡vedimo klaida
+help_epath=NÄ—ra arba nenurodytas kelias iki pagalbos failÅ³
 help_efile=Pagalbos failo nuskaitymo klaida $1
 help_eheader=Nenustatytas &lt;header&gt; parametras
-help_einclude=Klaida áterpiant $1
+help_einclude=Klaida Ä¯terpiant $1
 help_eif=$1 suklysta : $2
 help_eexec=$1 suklysta : $2
 
-referer_title=Saugumo sistemos perspëjimas
-referer_warn=<b>Perspëjimas!</b> Webmin nustatë, kad programa $2 buvo adresuota iğ internetinio adreso $1, kuris nëra Webmin serverio adresas. Gali bûti, kad kas nors bando ásilauşti á jûsø serverá, bandydamas paleisti pavojingà komandà.
-referer_warn_unknown=<b>Perspëjimas!</b> Webmin nustatë kad programa $1 buvo adresuota iğ neşinomo internetinio adreso, kuris nëra Webmin serverio adresas. Gali bûti, kad kas nors bando ásilauşti á jûsø serverá, bandydamas paleisti pavojingà komandà.
-referer_ok=Tæsti komandà
-referer_again=Nerodyti ğio perspëjimo ateityje.
+referer_title=Saugumo sistemos perspÄ—jimas
+referer_warn=<b>PerspÄ—jimas!</b> Webmin nustatÄ—, kad programa $2 buvo adresuota iÅ¡ internetinio adreso $1, kuris nÄ—ra Webmin serverio adresas. Gali bÅ«ti, kad kas nors bando Ä¯silauÅ¾ti Ä¯ jÅ«sÅ³ serverÄ¯, bandydamas paleisti pavojingÄ… komandÄ….
+referer_warn_unknown=<b>PerspÄ—jimas!</b> Webmin nustatÄ— kad programa $1 buvo adresuota iÅ¡ neÅ¾inomo internetinio adreso, kuris nÄ—ra Webmin serverio adresas. Gali bÅ«ti, kad kas nors bando Ä¯silauÅ¾ti Ä¯ jÅ«sÅ³ serverÄ¯, bandydamas paleisti pavojingÄ… komandÄ….
+referer_ok=TÄ™sti komandÄ…
+referer_again=Nerodyti Å¡io perspÄ—jimo ateityje.
 
 session_header=Registruotis Webmin
-session_mesg=Jûs turite ávesti vartotojo vardà ir slaptaşodá, norit registruotis Webmin serveryje $1.
-session_mesg2=Registracijai reikia ávesti vardà ir slaptaşodá.
+session_mesg=JÅ«s turite Ä¯vesti vartotojo vardÄ… ir slaptaÅ¾odÄ¯, norit registruotis Webmin serveryje $1.
+session_mesg2=Registracijai reikia Ä¯vesti vardÄ… ir slaptaÅ¾odÄ¯.
 session_user=Vartotojo vardas
-session_pass=Slaptaşodis
+session_pass=SlaptaÅ¾odis
 session_login=Registruoti
 session_clear=Trinti
-session_failed=Registracijos klaida. Bandykite dar kartà.
-session_logout=Iğsiregistravote sëkmingai. Naudokite şemiau esanèià formà pakartotinai registracijai.
-session_timed_out=Registracijos sesija atmesta po $1 minuèiø pertraukos.
-session_save=Ásiminti registracijos parametrus?
+session_failed=Registracijos klaida. Bandykite dar kartÄ….
+session_logout=IÅ¡siregistravote sÄ—kmingai. Naudokite Å¾emiau esanÄiÄ… formÄ… pakartotinai registracijai.
+session_timed_out=Registracijos sesija atmesta po $1 minuÄiÅ³ pertraukos.
+session_save=Ä®siminti registracijos parametrus?
 
-acl_root=Root'o katalogas failø pasirinkimui
-acl_home=Vartotojø namø katalogai
-acl_uedit=Matomas vartotojø sàrağas
+acl_root=Root'o katalogas failÅ³ pasirinkimui
+acl_home=VartotojÅ³ namÅ³ katalogai
+acl_uedit=Matomas vartotojÅ³ sÄ…raÅ¡as
 acl_uedit_all=Visi vartotojai
-acl_uedit_none=Be vartotojø
+acl_uedit_none=Be vartotojÅ³
 acl_uedit_only=Tiktai vartotojai
-acl_uedit_except=Visi iğskyrus vartotojams
-acl_uedit_uid=Vartotojai su  UID reikğmëmis
+acl_uedit_except=Visi iÅ¡skyrus vartotojams
+acl_uedit_uid=Vartotojai su  UID reikÅ¡mÄ—mis
 acl_uedit_group=Vartotojai priklausantys grupei
-acl_gedit=Matomas grupiø sàrağas
-acl_gedit_all=Visoms grupëms
-acl_gedit_none=Grupëms ne
+acl_gedit=Matomas grupiÅ³ sÄ…raÅ¡as
+acl_gedit_all=Visoms grupÄ—ms
+acl_gedit_none=GrupÄ—ms ne
 acl_gedit_only=Tiktai grupes
-acl_gedit_except=Visi iğskyrus grupes
-acl_gedit_gid=Grupës su GID reikğmëmis
-acl_feedback=Gali siøsti atsiliepimus pağtu?
+acl_gedit_except=Visi iÅ¡skyrus grupes
+acl_gedit_gid=GrupÄ—s su GID reikÅ¡mÄ—mis
+acl_feedback=Gali siÅ³sti atsiliepimus paÅ¡tu?
 acl_feedback2=Taip
-acl_feedback1=Taip, bet be konfigûraciniø failø
+acl_feedback1=Taip, bet be konfigÅ«raciniÅ³ failÅ³
 acl_feedback0=Ne
-acl_rpc=Gali priimti RPC uşklausas?
+acl_rpc=Gali priimti RPC uÅ¾klausas?
 acl_rpc2=Tiktai <tt>root</tt> arba <tt>admin</tt>
 acl_rpc1=Taip
 acl_rpc0=Ne
@@ -128,11 +128,11 @@ month_1=Sausis
 month_2=Vasaris
 month_3=Kovas
 month_4=Balandis
-month_5=Geguşë
-month_6=Birşelis
+month_5=GeguÅ¾Ä—
+month_6=BirÅ¾elis
 month_7=Liepa
-month_8=Rugpjûtis
-month_9=Rugsëjis
+month_8=RugpjÅ«tis
+month_9=RugsÄ—jis
 month_10=Spalis
 month_11=Lapkritis
 month_12=Gruodis
@@ -140,23 +140,23 @@ month_12=Gruodis
 day_0=Sekmadienis
 day_1=Pirmadienis
 day_2=Antradienis
-day_3=Treèiadienis
+day_3=TreÄiadienis
 day_4=Ketvirtadienis
 day_5=Penktadienis
-day_6=Ğeğtadienis
+day_6=Å eÅ¡tadienis
 
 smonth_1=Sausio
 smonth_2=Vasario
 smonth_3=Kovo
-smonth_4=Balandşio
-smonth_5=Geguşës
-smonth_6=Birşelio
+smonth_4=BalandÅ¾io
+smonth_5=GeguÅ¾Ä—s
+smonth_6=BirÅ¾elio
 smonth_7=Liepos
-smonth_8=Rugpjûèio
-smonth_9=Rugsëjo
+smonth_8=RugpjÅ«Äio
+smonth_9=RugsÄ—jo
 smonth_10=Spalio
-smonth_11=Lapkrièio
-smonth_12=Gruodşio
+smonth_11=LapkriÄio
+smonth_12=GruodÅ¾io
 
 sday_0=Sek
 sday_1=Pir
@@ -164,47 +164,47 @@ sday_2=Ant
 sday_3=Tre
 sday_4=Ket
 sday_5=Pen
-sday_6=Ğeğ
+sday_6=Å eÅ¡
 
-emodule=Uşdrausta: Vartotojui $1 yra ribojamas naudojimas  $2 moduliu
-elock_tries=Nespëta uşblokuoti failo $1 per $2 minuèiø
+emodule=UÅ¾drausta: Vartotojui $1 yra ribojamas naudojimas  $2 moduliu
+elock_tries=NespÄ—ta uÅ¾blokuoti failo $1 per $2 minuÄiÅ³
 
 skill_high=Ekspertas
 skill_medium=Profesionalas
 skill_low=Naujokas
 
 feedback_title=Webmin atsiliepimai
-feedback_desc=Ği forma jums leis praneğti apie pasitaikiusià klaidà, ar pastabas webmin programuotojams atsişvelgiant á tai kokios jums iğkilo problemos ar pasigedote kokiø nors savybiø. Kai paspausite siøsti, aprağymas,  uşpildytas formoje, bus iğsiøstas adresu $1.
-feedback_desc2=Atsiliepimai bus nusiøsti  Usermin programuotojams, ne sistemos administratoriui, ne interneto ar paslaugø tiekëjui. Prağau rağyti atsiliepimus anglø kalba, net jei jûsø webmin pasirinkta kalba ne anglø.
+feedback_desc=Å i forma jums leis praneÅ¡ti apie pasitaikiusiÄ… klaidÄ…, ar pastabas webmin programuotojams atsiÅ¾velgiant Ä¯ tai kokios jums iÅ¡kilo problemos ar pasigedote kokiÅ³ nors savybiÅ³. Kai paspausite siÅ³sti, apraÅ¡ymas,  uÅ¾pildytas formoje, bus iÅ¡siÅ³stas adresu $1.
+feedback_desc2=Atsiliepimai bus nusiÅ³sti  Usermin programuotojams, ne sistemos administratoriui, ne interneto ar paslaugÅ³ tiekÄ—jui. PraÅ¡au raÅ¡yti atsiliepimus anglÅ³ kalba, net jei jÅ«sÅ³ webmin pasirinkta kalba ne anglÅ³.
 feedback_header=Atsiliepimai
-feedback_name=Jûsø vardas
-feedback_email=Jûsø e-pağtas
-feedback_module=Pasirinkite modulá
+feedback_name=JÅ«sÅ³ vardas
+feedback_email=JÅ«sÅ³ e-paÅ¡tas
+feedback_module=Pasirinkite modulÄ¯
 feedback_all=Visi moduliai
-feedback_text=Problemos aprağymas arba pasiûlymai
-feedback_os=Iğsiøsti pağtu ir aprağymà kokioje operacijø sistemoje dirbate?
-feedback_osdesc=Jei pasirinksite tai automatiğkai bus áterpta operacijø sistemos vardas bei versija.
-feedback_config=Áterpti modulio konfigûracijà?
-feedback_configdesc=Jei pasirinksite, tada prie laiğko bus prikabinti konfigûraciniai failai ir informacija apie vartotojus: vardai, grupës <tt>/etc/passwd</tt> bei <tt>/etc/shadow</tt> failai.
+feedback_text=Problemos apraÅ¡ymas arba pasiÅ«lymai
+feedback_os=IÅ¡siÅ³sti paÅ¡tu ir apraÅ¡ymÄ… kokioje operacijÅ³ sistemoje dirbate?
+feedback_osdesc=Jei pasirinksite tai automatiÅ¡kai bus Ä¯terpta operacijÅ³ sistemos vardas bei versija.
+feedback_config=Ä®terpti modulio konfigÅ«racijÄ…?
+feedback_configdesc=Jei pasirinksite, tada prie laiÅ¡ko bus prikabinti konfigÅ«raciniai failai ir informacija apie vartotojus: vardai, grupÄ—s <tt>/etc/passwd</tt> bei <tt>/etc/shadow</tt> failai.
 feedback_attach=Prikabinti papildomus failus
-feedback_send=Siøsti atsiliepimus
-feedback_mailserver=Siøsti per SMTP serverá
+feedback_send=SiÅ³sti atsiliepimus
+feedback_mailserver=SiÅ³sti per SMTP serverÄ¯
 feedback_mailserver_def=Lokaliu sendmail'u
-feedback_err=Nepavyko iğsiøsti atsiliepimø
-feedback_emodule=Jûs norite prikabinti konfigûracijos failus, bet nepasirinkote modulio.
+feedback_err=Nepavyko iÅ¡siÅ³sti atsiliepimÅ³
+feedback_emodule=JÅ«s norite prikabinti konfigÅ«racijos failus, bet nepasirinkote modulio.
 feedback_emodule2=Pasirinktas modulis neegzistuoja
 feedback_econfig=Jums neleista naudotis pasirinku moduliu.
-feedback_via=Siøsti atsiliepimus á $1 per SMTP serverá $2
-feedback_prog=Siøsti atsiliepimus per $1 naudojant pağto programà $2
-feedback_esend=Nepavyko iğsiøsti per lokalø SMTP.
-feedback_to=Siøsti atsiliepimus adresu
-feedback_enoto=Neávestas adresas kur siøsti atsiliepimus
-feedback_ecannot=Jums neleista siøsti atsiliepimø
-feedback_ecannot2=Jums neleista siøsti atsiliepimø su konfigûracija
+feedback_via=SiÅ³sti atsiliepimus Ä¯ $1 per SMTP serverÄ¯ $2
+feedback_prog=SiÅ³sti atsiliepimus per $1 naudojant paÅ¡to programÄ… $2
+feedback_esend=Nepavyko iÅ¡siÅ³sti per lokalÅ³ SMTP.
+feedback_to=SiÅ³sti atsiliepimus adresu
+feedback_enoto=NeÄ¯vestas adresas kur siÅ³sti atsiliepimus
+feedback_ecannot=Jums neleista siÅ³sti atsiliepimÅ³
+feedback_ecannot2=Jums neleista siÅ³sti atsiliepimÅ³ su konfigÅ«racija
 
-progress_size=Atsiustas(a) $1 ($2 baitø) ..
+progress_size=Atsiustas(a) $1 ($2 baitÅ³) ..
 progress_nosize=Atsiustas(a) $1 ..
-progress_data=Priimta $1 baitø ($2 %)
-progress_data2=Priimta $1 baitø
+progress_data=Priimta $1 baitÅ³ ($2 %)
+progress_data2=Priimta $1 baitÅ³
 progress_done=.. atsiuntimas baigtas.
 

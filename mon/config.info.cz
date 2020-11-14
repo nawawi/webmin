@@ -1,7 +1,7 @@
-line2=Konfigurace systému,11
-pid_file=Úplná cesta MON pid souboru,0
-cfbasedir=Úplná cesta ke v¹em ulo¾enım kongiguraèním souborùm (jako mon.cf,auth.cf apod...),0
-mon_cgi=Úplná cesta k MON cgi programu,0
-start_cmd=Pøíkaz pro spu¹tìní MON,0
-stop_cmd=Pøíkaz pro ukonèení MON,3,Zabít proces
-restart_cmd=Pøíkaz pro restartování MON,3,Poslat HUP signál
+line2=Konfigurace systÃ©mu,11
+pid_file=ÃšplnÃ¡ cesta MON pid souboru,0
+cfbasedir=ÃšplnÃ¡ cesta ke vÂ¹em uloÂ¾enÃ½m kongiguraÃ¨nÃ­m souborÃ¹m (jako mon.cf,auth.cf apod...),0
+mon_cgi=ÃšplnÃ¡ cesta k MON cgi programu,0
+start_cmd=PÃ¸Ã­kaz pro spuÂ¹tÃ¬nÃ­ MON,0
+stop_cmd=PÃ¸Ã­kaz pro ukonÃ¨enÃ­ MON,3,ZabÃ­t proces
+restart_cmd=PÃ¸Ã­kaz pro restartovÃ¡nÃ­ MON,3,Poslat HUP signÃ¡l

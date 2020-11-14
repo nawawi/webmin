@@ -1,42 +1,42 @@
 <header>Inne proxy</header>
 
-<b>Inne buforuj±ce serwery proxy</b>: Pokazane s± wszystkie (równoprawne,
-macierzyste i multicastowe) aktualnie skonfigurowane serwery proxy. Naci¶nij
-na nazwê hosta lub adres wybranego serwera, aby zmieniæ lub obejrzeæ jego
-aktualn± konfiguracjê. <p>
+<b>Inne buforujÂ±ce serwery proxy</b>: Pokazane sÂ± wszystkie (rÃ³wnoprawne,
+macierzyste i multicastowe) aktualnie skonfigurowane serwery proxy. NaciÂ¶nij
+na nazwÃª hosta lub adres wybranego serwera, aby zmieniÃ¦ lub obejrzeÃ¦ jego
+aktualnÂ± konfiguracjÃª. <p>
 
-<b>Sprowadzaæ bezpo¶rednio URL-e zawieraj±ce</b>: Domy¶lnie ".cgi"
-i&nbsp;"?". Pozwala zmusiæ Squida, aby zawsze sprowadza³ strony pewnego
-rodzaju bezpo¶rednio z&npsp;¼ród³owego serwera. Zazwyczaj opcja ta nie
-wymaga zmiany jak wiêkszo¶æ rzeczy, które s± obs³ugiwane przez Squida
+<b>SprowadzaÃ¦ bezpoÂ¶rednio URL-e zawierajÂ±ce</b>: DomyÂ¶lnie ".cgi"
+i&nbsp;"?". Pozwala zmusiÃ¦ Squida, aby zawsze sprowadzaÂ³ strony pewnego
+rodzaju bezpoÂ¶rednio z&npsp;Â¼rÃ³dÂ³owego serwera. Zazwyczaj opcja ta nie
+wymaga zmiany jak wiÃªkszoÂ¶Ã¦ rzeczy, ktÃ³re sÂ± obsÂ³ugiwane przez Squida
 automatycznie. <p>
 
-<b>Czas przeterminowania zapytania ICP</b>: Domy¶lnie ma warto¶æ
-'optymaln±'. Je¶li chcesz nadpisaæ warto¶æ ustalon± przez Squida, podaj
-warto¶æ niezerow±. W&nbsp;starych wersjach Squida warto¶ci± domy¶ln± by³o
+<b>Czas przeterminowania zapytania ICP</b>: DomyÂ¶lnie ma wartoÂ¶Ã¦
+'optymalnÂ±'. JeÂ¶li chcesz nadpisaÃ¦ wartoÂ¶Ã¦ ustalonÂ± przez Squida, podaj
+wartoÂ¶Ã¦ niezerowÂ±. W&nbsp;starych wersjach Squida wartoÂ¶ciÂ± domyÂ¶lnÂ± byÂ³o
 2000. <p>
 
-<b>Czas przeterminowania multicastu ICP</b>: Domy¶lnie 2000&nbsp;ms, czyli
-2&nbsp;sekundy. Do uczestników wymiany multicastowej Squid regularnie
-wysy³a "sondê" ICP, aby policzyæ ilu innych uczestników s³ucha na zadanym
-adresie multicastowym. Ta warto¶æ okre¶la, jak d³ugo Squid powinien czekaæ
-na odpowiedzi, aby wszystkie policzyæ. <p>
+<b>Czas przeterminowania multicastu ICP</b>: DomyÂ¶lnie 2000&nbsp;ms, czyli
+2&nbsp;sekundy. Do uczestnikÃ³w wymiany multicastowej Squid regularnie
+wysyÂ³a "sondÃª" ICP, aby policzyÃ¦ ilu innych uczestnikÃ³w sÂ³ucha na zadanym
+adresie multicastowym. Ta wartoÂ¶Ã¦ okreÂ¶la, jak dÂ³ugo Squid powinien czekaÃ¦
+na odpowiedzi, aby wszystkie policzyÃ¦. <p>
 
-<b>Czas uznania partnera za nieczynnego</b>: Domy¶lnie 10 sekund. Ta opcja
-decyduje, jak d³ugo Squid bêdzie czeka³ przed uznaniem partnera proxy za
-nieczynnego. Je¶li w&nbsp;ci±gu tego czasu nie nadejdzie odpowied¼ ICP,
-Squid uzna, ¿e partner nie dzia³a i&nbsp;nie bêdzie oczekiwa³ od niego
-¿adnych dalszych odpowiedzi ICP. Jednak¿e, bêdzie on nadal wysy³a³ zapytania
-ICP i&nbsp;zaznaczy sobie, ¿e partner dzia³a po otrzymaniu od niego
+<b>Czas uznania partnera za nieczynnego</b>: DomyÂ¶lnie 10 sekund. Ta opcja
+decyduje, jak dÂ³ugo Squid bÃªdzie czekaÂ³ przed uznaniem partnera proxy za
+nieczynnego. JeÂ¶li w&nbsp;ciÂ±gu tego czasu nie nadejdzie odpowiedÂ¼ ICP,
+Squid uzna, Â¿e partner nie dziaÂ³a i&nbsp;nie bÃªdzie oczekiwaÂ³ od niego
+Â¿adnych dalszych odpowiedzi ICP. JednakÂ¿e, bÃªdzie on nadal wysyÂ³aÂ³ zapytania
+ICP i&nbsp;zaznaczy sobie, Â¿e partner dziaÂ³a po otrzymaniu od niego
 pierwszej odpowiedzi ICP. <p>
 
-Ten okres przeterminowania ma równie¿ znaczenie, gdy Squid oczekuje na
-odpowied¼ ICP od innych proxy. Je¶li od chwili otrzymania ostatniej
-odpowiedzi ICP up³ynê³o wiêcej sekund, ni¿ podano w powy¿szej opcji, Squid
-nie bêdzie oczekiwa³ odpowiedzi ICP na swoje nastêpne zapytanie. Wobec tego,
-je¶li ustawiony przez Ciebie czas pomiêdzy wysy³anymi zapytaniami ICP jest
-wiêkszy od tego czasu przeterminowania, bêdziesz obserwowa³ mnóstwo zapytañ
-wysy³anych BEZPO¦REDNIO do ¼ród³owych serwerów zamiast do Twoich
+Ten okres przeterminowania ma rÃ³wnieÂ¿ znaczenie, gdy Squid oczekuje na
+odpowiedÂ¼ ICP od innych proxy. JeÂ¶li od chwili otrzymania ostatniej
+odpowiedzi ICP upÂ³ynÃªÂ³o wiÃªcej sekund, niÂ¿ podano w powyÂ¿szej opcji, Squid
+nie bÃªdzie oczekiwaÂ³ odpowiedzi ICP na swoje nastÃªpne zapytanie. Wobec tego,
+jeÂ¶li ustawiony przez Ciebie czas pomiÃªdzy wysyÂ³anymi zapytaniami ICP jest
+wiÃªkszy od tego czasu przeterminowania, bÃªdziesz obserwowaÂ³ mnÃ³stwo zapytaÃ±
+wysyÂ³anych BEZPOÂ¦REDNIO do Â¼rÃ³dÂ³owych serwerÃ³w zamiast do Twoich
 macierzystych proxy. <p>
 
 <hr>

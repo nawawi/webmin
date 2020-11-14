@@ -1,68 +1,68 @@
 index_title=Client ADSL
-index_eadsl= No s'ha trobat al sistema l'ordre $1 de RP-PPPoE. Pot ser que no estigui instal·lada, o bé que la <a href='$2'>configuració del mòdul</a> sigui incorrecta.
-index_econfig=No s'ha trobat al sistema el fitxer de configuració ADSL RP-PPPoE $1. Pot ser que no estigui instal·lat, o bé que la <a href='$2'>configuració del mòdul</a> sigui incorrecta.
-index_emodem=El fitxer de configuració actual és per a un mòdem en un Linux de RedHat, no una connexió ADSL. Utilitza la pàgina de <a href='$2'>configuració del mòdul</a> per especificar un dels altres fitxers <tt>ifcfg-ppp*</tt> de $1, o bé un que encara no existeixi per tal que el mòdul el creï per a tu.
+index_eadsl= No s'ha trobat al sistema l'ordre $1 de RP-PPPoE. Pot ser que no estigui instalÂ·lada, o bÃ© que la <a href='$2'>configuraciÃ³ del mÃ²dul</a> sigui incorrecta.
+index_econfig=No s'ha trobat al sistema el fitxer de configuraciÃ³ ADSL RP-PPPoE $1. Pot ser que no estigui instalÂ·lat, o bÃ© que la <a href='$2'>configuraciÃ³ del mÃ²dul</a> sigui incorrecta.
+index_emodem=El fitxer de configuraciÃ³ actual Ã©s per a un mÃ²dem en un Linux de RedHat, no una connexiÃ³ ADSL. Utilitza la pÃ gina de <a href='$2'>configuraciÃ³ del mÃ²dul</a> per especificar un dels altres fitxers <tt>ifcfg-ppp*</tt> de $1, o bÃ© un que encara no existeixi per tal que el mÃ²dul el creÃ¯ per a tu.
 index_stop=Desactiva l'ADSL
-index_stopdesc=Actualment, la teva connexió ADSL està activa amb l'adreça IP $1. Fes clic sobre aquest botó per a desactivar-la amb l'ordre $2.
+index_stopdesc=Actualment, la teva connexiÃ³ ADSL estÃ  activa amb l'adreÃ§a IP $1. Fes clic sobre aquest botÃ³ per a desactivar-la amb l'ordre $2.
 index_start=Activa l'ADSL
-index_startdesc=Actualment, la teva connexió ADSL està desactivada. Fes clic sobre aquest botó per activar-la amb l'ordre $1.
+index_startdesc=Actualment, la teva connexiÃ³ ADSL estÃ  desactivada. Fes clic sobre aquest botÃ³ per activar-la amb l'ordre $1.
 index_boot=Activa-la en engegar el sistema
-index_bootdesc=Canvia aquesta opció per controlar si la teva connexió ADSL s'ha d'activar en engegar el sistema o no.
-index_return=a l'índex de mòduls
-index_version=RP-PPPoE versió $1
-index_esetup=El fitxer de configuració ADSL $1 de Redhat no existeix. No obstant, aquest mòdul el pot crear per tu amb els valors per defecte bàsics fent clic sobre el botó de sota.
-index_setup=Crea fitxer de configuració
-index_cancel=Cancel·la la Connexió
-index_canceldesc=El client ADSL està provant d'establir una connexió. Fes clic sobre aquest botó per cancel·lar l'intent amb l'ordre $1.
-index_cdemand=Cancel·la Sota Demanda
-index_cdemanddesc=Actualment, el client ADSL està esperant una petició de connexió sota demanda. Fes clic sobre aquest botó per aturar-lo amb l'ordre $1.
+index_bootdesc=Canvia aquesta opciÃ³ per controlar si la teva connexiÃ³ ADSL s'ha d'activar en engegar el sistema o no.
+index_return=a l'Ã­ndex de mÃ²duls
+index_version=RP-PPPoE versiÃ³ $1
+index_esetup=El fitxer de configuraciÃ³ ADSL $1 de Redhat no existeix. No obstant, aquest mÃ²dul el pot crear per tu amb els valors per defecte bÃ sics fent clic sobre el botÃ³ de sota.
+index_setup=Crea fitxer de configuraciÃ³
+index_cancel=CancelÂ·la la ConnexiÃ³
+index_canceldesc=El client ADSL estÃ  provant d'establir una connexiÃ³. Fes clic sobre aquest botÃ³ per cancelÂ·lar l'intent amb l'ordre $1.
+index_cdemand=CancelÂ·la Sota Demanda
+index_cdemanddesc=Actualment, el client ADSL estÃ  esperant una peticiÃ³ de connexiÃ³ sota demanda. Fes clic sobre aquest botÃ³ per aturar-lo amb l'ordre $1.
 
-index_header=Opcions de la configuració del client ADSL
-index_desc=Els valors de sota s'apliquen a qualsevol nova connexió ADSL activada pel sistema. Si els canvies, la connexió s'ha de desactivar i reactivar per tal que les modificacions tinguin efecte.
-index_eth=Interfície Ethernet
+index_header=Opcions de la configuraciÃ³ del client ADSL
+index_desc=Els valors de sota s'apliquen a qualsevol nova connexiÃ³ ADSL activada pel sistema. Si els canvies, la connexiÃ³ s'ha de desactivar i reactivar per tal que les modificacions tinguin efecte.
+index_eth=InterfÃ­cie Ethernet
 index_other=Altres...
-index_demand=Connexió sota petició
-index_timeout=Sí, amb un temps límit de
+index_demand=ConnexiÃ³ sota peticiÃ³
+index_timeout=SÃ­, amb un temps lÃ­mit de
 index_secs=segons
 index_user=Identifica't com l'usuari
 index_sec=Identifica't amb la contrasenya
-index_dns=Pren la configuració DNS de l'ISP
-index_save=Desa la configuració
+index_dns=Pren la configuraciÃ³ DNS de l'ISP
+index_save=Desa la configuraciÃ³
 index_mss=Limita la mida dels paquets
-index_psize=Sí, a
+index_psize=SÃ­, a
 index_bytes=bytes
 index_fw=En connectar-se, activa el tallafoc
 index_fw_none=Cap
 index_fw_standalone=Per a un sol host
 index_fw_masquerade=Per al portal NAT 
-index_connect=Temps durant el qual cal intentar la connexió
+index_connect=Temps durant el qual cal intentar la connexiÃ³
 index_forever=Sempre
 
-start_err=No s'ha pogut activar la connexió ADSL
-start_title=Activació de l'ADSL
-start_ip=S'ha establert una connexió ADSL amb adreça IP $1.
-start_demand=Com que la connexió sota petició està activada, la connexió ADSL només s'activarà quan calgui.
-start_bg=La connexió ADSL no s'ha activat en 20 segons. El client ADSL seguirà provant de connectar-se en segon pla fins que reïxi.
+start_err=No s'ha pogut activar la connexiÃ³ ADSL
+start_title=ActivaciÃ³ de l'ADSL
+start_ip=S'ha establert una connexiÃ³ ADSL amb adreÃ§a IP $1.
+start_demand=Com que la connexiÃ³ sota peticiÃ³ estÃ  activada, la connexiÃ³ ADSL nomÃ©s s'activarÃ  quan calgui.
+start_bg=La connexiÃ³ ADSL no s'ha activat en 20 segons. El client ADSL seguirÃ  provant de connectar-se en segon pla fins que reÃ¯xi.
 
-save_err=No s'ha pogut desar la configuració ADSL
-save_eeth=Hi falta la interfície Ethernet o bé sembla invàlida
-save_etimeout=Hi falta el temps límit o bé és invàlid
-save_euser=Hi falta el nom de l'usuari o bé és invàlid
-save_econnect=Hi falta temps límit de connexió o bé és invàlid
-save_emss=Hi falta la mida màxima de paquet o bé és invàlida
-save_title=Desa la Configuració
-save_desc=La configuració del client ADSL ha estat desada amb èxit, però no s'utilitzarà fins que et reconnectis.
+save_err=No s'ha pogut desar la configuraciÃ³ ADSL
+save_eeth=Hi falta la interfÃ­cie Ethernet o bÃ© sembla invÃ lida
+save_etimeout=Hi falta el temps lÃ­mit o bÃ© Ã©s invÃ lid
+save_euser=Hi falta el nom de l'usuari o bÃ© Ã©s invÃ lid
+save_econnect=Hi falta temps lÃ­mit de connexiÃ³ o bÃ© Ã©s invÃ lid
+save_emss=Hi falta la mida mÃ xima de paquet o bÃ© Ã©s invÃ lida
+save_title=Desa la ConfiguraciÃ³
+save_desc=La configuraciÃ³ del client ADSL ha estat desada amb Ã¨xit, perÃ² no s'utilitzarÃ  fins que et reconnectis.
 
-stop_err=No s'ha pogut tancar la connexió ADSL
-stop_title=Desactivació de l'ADSL
-stop_ok=La connexió ADSL s'ha desactivat amb èxit.
-stop_failed=Per alguna raó. la connexió ADSL encara està activa!
+stop_err=No s'ha pogut tancar la connexiÃ³ ADSL
+stop_title=DesactivaciÃ³ de l'ADSL
+stop_ok=La connexiÃ³ ADSL s'ha desactivat amb Ã¨xit.
+stop_failed=Per alguna raÃ³. la connexiÃ³ ADSL encara estÃ  activa!
 
-log_save=S'ha desat la configuració del client
+log_save=S'ha desat la configuraciÃ³ del client
 log_stop=S'ha desactivat l'ADSL
 log_start=S'ha activat l'ADSL
 log_bootup=S'ha activat l'ADSL en engegar el sistema
 log_bootdown=S'ha desactivat l'ADSL en engegar el sistema
-log_setup=S'ha aplicat la configuració per defecte
+log_setup=S'ha aplicat la configuraciÃ³ per defecte
 
 __norefs=1

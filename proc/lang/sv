@@ -1,53 +1,53 @@
 index_title=Processhanterare
 index_display=Visa
 index_tree=PID
-index_user=Användare
+index_user=AnvÃ¤ndare
 index_size=Minne
 index_cpu=CPU
-index_search=Sök
-index_run=Utför ...
+index_search=SÃ¶k
+index_run=UtfÃ¶r ...
 index_return=processlista
 index_mem=<b>Fysiskt minne:</b> $1 kB totalt / $2 kB ledigt
 index_swap=<b>Swap-utrymme:</b> $1 kB totalt / $2 kB ledigt
-index_load=<b>Medelvärden för CPU-last:</b> $1 (5 min) , $2 (10 min) , $3 (15 min)
+index_load=<b>MedelvÃ¤rden fÃ¶r CPU-last:</b> $1 (5 min) , $2 (10 min) , $3 (15 min)
 
 pid=Process-ID
-owner=Ägare
+owner=Ã„gare
 command=Kommando
 cpu=CPU
 size=Storlek
-parent=Föräldraprocess
-runtime=Körtid
-nice=Nice-nivå
+parent=FÃ¶rÃ¤ldraprocess
+runtime=KÃ¶rtid
+nice=Nice-nivÃ¥
 
-search_user=Ägd av
-search_match=Stämmer med
-search_cpupc=Använder mer än $1 % CPU
-search_fs=Använder filsystem
-search_files=Använder fil
-search_submit=Sök
-search_none=Det fanns ingen sådan process.
+search_user=Ã„gd av
+search_match=StÃ¤mmer med
+search_cpupc=AnvÃ¤nder mer Ã¤n $1 % CPU
+search_fs=AnvÃ¤nder filsystem
+search_files=AnvÃ¤nder fil
+search_submit=SÃ¶k
+search_none=Det fanns ingen sÃ¥dan process.
 search_kill=Skicka signal
-search_ignore=Strunta i sökprocesserna
-search_return=sökformulär
+search_ignore=Strunta i sÃ¶kprocesserna
+search_return=sÃ¶kformulÃ¤r
 
-run_command=Utför kommando
-run_submit=Utför
-run_mode=Körläge
-run_bg=Kör i bakgrunden
-run_fg=Vänta tills det är färdigt
+run_command=UtfÃ¶r kommando
+run_submit=UtfÃ¶r
+run_mode=KÃ¶rlÃ¤ge
+run_bg=KÃ¶r i bakgrunden
+run_fg=VÃ¤nta tills det Ã¤r fÃ¤rdigt
 run_input=Inmatning till kommando
-run_title=Utmatning från kommando
-run_output=Utmatning från $1 ...
+run_title=Utmatning frÃ¥n kommando
+run_output=Utmatning frÃ¥n $1 ...
 run_none=Det kom ingen utmatning
 
 edit_title=Processinformation
-edit_gone=Denna process kör inte längre
+edit_gone=Denna process kÃ¶r inte lÃ¤ngre
 edit_sub=Delprocesses
 edit_kill=Skicka signal
-edit_change=Ändra
-edit_prilow=Låg prioritet
-edit_prihigh=Hög prioritet
+edit_change=Ã„ndra
+edit_prilow=LÃ¥g prioritet
+edit_prihigh=HÃ¶g prioritet
 edit_pridef=Standard
 edit_none=Ingen
 
@@ -55,63 +55,63 @@ kill_err=Det gick inte att skicka signal $1 till process $2
 kill_title=Skicka signal
 kill_sent=skickat
 
-renice_err=Det gick inte att ge process $1 ett nytt nice-värde
+renice_err=Det gick inte att ge process $1 ett nytt nice-vÃ¤rde
 
 linux_pri=Prioritet
 linux_tty=TTY
 linux_status=Status
-linux_wchan=Väntar i
+linux_wchan=VÃ¤ntar i
 linux_mem=Minne
 linux_group=Grupp
-linux_ruser=Verklig användare
+linux_ruser=Verklig anvÃ¤ndare
 linux_rgroup=Verklig grupp
 linux_pgid=Processens grupp-ID
 
-linuxstat_R=Kör
+linuxstat_R=KÃ¶r
 linuxstat_S=Vilande
 linuxstat_D=Sover djupt
 linuxstat_T=Stannad
 linuxstat_Z=Zombie
 
-freebsd_ruser=Verklig användare
+freebsd_ruser=Verklig anvÃ¤ndare
 freebsd_rgroup=Verklig grupp
 freebsd_tty=TTY
 freebsd_pgid=Process-grupp
 freebsd_lstart=Starttid
-freebsd_lim=Minnesbegränsning
+freebsd_lim=MinnesbegrÃ¤nsning
 
 hpux_pri=Prioritet
 hpux_tty=TTY
 hpux_status=Status
-hpux_wchan=Väntar på
+hpux_wchan=VÃ¤ntar pÃ¥
 
 hpuxstat_0=Obefintlig
 hpuxstat_S=Vilande
-hpuxstat_W=Väntar
-hpuxstat_R=Kör
+hpuxstat_W=VÃ¤ntar
+hpuxstat_R=KÃ¶r
 hpuxstat_I=Mellanlandar
 hpuxstat_Z=Zombie
 hpuxstat_T=Stannad
-hpuxstat_G=Växer
+hpuxstat_G=VÃ¤xer
 
 macos_tty=TTY
 
 sysv_group=Grupp
-sysv_ruser=Verklig användare
+sysv_ruser=Verklig anvÃ¤ndare
 sysv_rgroup=Verklig grupp
 sysv_pgid=Processens grupp-ID
 sysv_tty=TTY
 
-log_run=Körde kommando "$1"
+log_run=KÃ¶rde kommando "$1"
 log_kill=Skickade signal $1 till process $2
 log_kills=Skickade signal $1 till $2 processer
 log_kill_l=Skickade signal $1 till process $2
 log_kills_l=Skickade signal $1 till processerna<br>$2
 
-acl_manage=Hantera processer som användare
+acl_manage=Hantera processer som anvÃ¤ndare
 
-kill_kill=Slå ihjäl process
+kill_kill=SlÃ¥ ihjÃ¤l process
 kill_term=&nbsp;&nbsp;Avbryt&nbsp;&nbsp;&nbsp;
 kill_hup=&nbsp;Starta om&nbsp;
 kill_stop=&nbsp;&nbsp;Stanna&nbsp;&nbsp;&nbsp;
-kill_cont=&nbsp;Fortsätt&nbsp;&nbsp;
+kill_cont=&nbsp;FortsÃ¤tt&nbsp;&nbsp;

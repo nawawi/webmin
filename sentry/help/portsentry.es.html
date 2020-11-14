@@ -1,56 +1,56 @@
-<header>ConfiguraciÛn de Portsentry</header>
+<header>Configuraci√≥n de Portsentry</header>
 
-Portsentry es un programa diseÒado para detectar y responder en tiempo real
-a los escaneos de puertos contra una m·quina. Puede hacerlo de dos maneras
-- escuchando en un conjunto de puertos seleccionados (modo b·sico), o
+Portsentry es un programa dise√±ado para detectar y responder en tiempo real
+a los escaneos de puertos contra una m√°quina. Puede hacerlo de dos maneras
+- escuchando en un conjunto de puertos seleccionados (modo b√°sico), o
 monitorizando todos los puertos por debajo de uno dado. Cuando se detecta
-una conexiÛn a uno de los puertos monitorizados, Portsentry registra el
-evento en los historiales y (opcionalmente) ejecuta una acciÛn para
-bloquear en el futuro cualquier tr·fico desde la m·quina atacante. <p>
+una conexi√≥n a uno de los puertos monitorizados, Portsentry registra el
+evento en los historiales y (opcionalmente) ejecuta una acci√≥n para
+bloquear en el futuro cualquier tr√°fico desde la m√°quina atacante. <p>
 
-Las opciones de esta p·gina soLas opciones de esta p·gina son :
+Las opciones de esta p√°gina soLas opciones de esta p√°gina son :
 <ul>
 <li><b>Puertos TCP que monitorizar</b><br>
-    En modo b·sico, Portsentry escuchar· en todos los puertos TCP listados
-    en la primera lÌnea de esta opciÛn. En modo avanzado, escuchar· en
-    todos los puertos por debajo del indicado en la segunda lÌnea,
+    En modo b√°sico, Portsentry escuchar√° en todos los puertos TCP listados
+    en la primera l√≠nea de esta opci√≥n. En modo avanzado, escuchar√° en
+    todos los puertos por debajo del indicado en la segunda l√≠nea,
     excluyendo aquellos listados en el campo 'excepto'. <p>
     
 <li><b>UDP ports to monitor</b><br>
     Like the TCP ports option, but controls which UDP ports are monitored. <p>
 
 <li><b>Bloquear los sondeos TCP</b><br>
-    Esta opciÛn controla quÈ acciÛn llevar· a cabo Portsentry cuando
-    detecte una conexiÛn TCP a uno de los puertos monitorizados. Las
-    opciones son 'SÌ' (bloquear las futuras conexiones desde la m·quina),
+    Esta opci√≥n controla qu√© acci√≥n llevar√° a cabo Portsentry cuando
+    detecte una conexi√≥n TCP a uno de los puertos monitorizados. Las
+    opciones son 'S√≠' (bloquear las futuras conexiones desde la m√°quina),
     'No' (no hacer nada), o 'Ejecutar comando asesino' (ejecutar un comando
-    especificado en el fichero de configuraciÛn). En todos los casos la
-    conexiÛn se registrar· en los histÛricos del sistema. <p>
+    especificado en el fichero de configuraci√≥n). En todos los casos la
+    conexi√≥n se registrar√° en los hist√≥ricos del sistema. <p>
 
 <li><b>Bloquear sondeos UDP</b><br>
-    Como la opciÛn de bloquear los sondeos TCP, pero controla quÈ sucede
-    cuando se detecta una "conexiÛn" UDP. <p>
+    Como la opci√≥n de bloquear los sondeos TCP, pero controla qu√© sucede
+    cuando se detecta una "conexi√≥n" UDP. <p>
 
 <li><b>Mensaje para las conexiones bloqueadas</b><br>
-    Cuando Portsentry est· escuchando en un puerto, cualquier conexiÛn que
-    se establezca ser· respondida con este mensaje antes de cerrar la
-    conexiÛn. <p>
+    Cuando Portsentry est√° escuchando en un puerto, cualquier conexi√≥n que
+    se establezca ser√° respondida con este mensaje antes de cerrar la
+    conexi√≥n. <p>
 
-<li><b>N˙mero de conexiones antes de activar el bloqueo</b><br>
-    El n˙mero de conexiones 'de gracia' que una m·quina tiene permitido
+<li><b>N√∫mero de conexiones antes de activar el bloqueo</b><br>
+    El n√∫mero de conexiones 'de gracia' que una m√°quina tiene permitido
     hacer a un puerto monitorizado antes de ser bloqueada. Si se pone a
-    cero, la primera conexiÛn activar· el bloqueo de la m·quina. <p>
+    cero, la primera conexi√≥n activar√° el bloqueo de la m√°quina. <p>
 
-<li><b>M·quinas cuyo tr·fico ignorar</b><br>
-    Las direcciones IP, nombres de m·quina, o direcciÛn/m·scara de las
-    m·quinas y redes cuyo tr·fico ignorar. <p>
+<li><b>M√°quinas cuyo tr√°fico ignorar</b><br>
+    Las direcciones IP, nombres de m√°quina, o direcci√≥n/m√°scara de las
+    m√°quinas y redes cuyo tr√°fico ignorar. <p>
 
 </ul>
 
-En la parte inferior de la p·gina hay un botÛn para iniciar Portsentry (de
-no estar ejecutando) o pararlo (si est· en ejecuciÛn). Puesto que
+En la parte inferior de la p√°gina hay un bot√≥n para iniciar Portsentry (de
+no estar ejecutando) o pararlo (si est√° en ejecuci√≥n). Puesto que
 Portsentry ejecuta un par de procesos en segundo plano (demonios), si no
-est· ejecutando no se har· ninguna monitorizaciÛn de escaneos de puertos. <p>
+est√° ejecutando no se har√° ninguna monitorizaci√≥n de escaneos de puertos. <p>
 
 <hr>
 

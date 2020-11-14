@@ -1,6 +1,6 @@
-line1=Konfigurovatelné volby,11
-sort_mode=Øadit log soubory podle,1,1-jména log souboru,0-poøadí v konfiguraèním souboru
-add_file=Pøidat nové sekce pro rotaci logù do,3,Hlavní konfiguraèní soubor
-line2=Systémová konfigurace,11
-logrotate_conf=Cesta ke konfiguraènímu souboru logrotate,0
+line1=KonfigurovatelnÃ© volby,11
+sort_mode=Ã˜adit log soubory podle,1,1-jmÃ©na log souboru,0-poÃ¸adÃ­ v konfiguraÃ¨nÃ­m souboru
+add_file=PÃ¸idat novÃ© sekce pro rotaci logÃ¹ do,3,HlavnÃ­ konfiguraÃ¨nÃ­ soubor
+line2=SystÃ©movÃ¡ konfigurace,11
+logrotate_conf=Cesta ke konfiguraÃ¨nÃ­mu souboru logrotate,0
 logrotate=Cesta k programu logrotate,0

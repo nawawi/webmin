@@ -1,94 +1,94 @@
 index_title=Konfiguracja startu Linuksa
-index_addk=Okre¶l kernel startowy
-index_addp=Okre¶l partycjê startow±
-index_global=Zmieñ opcje ogólne
-index_globalmsg=Zmiany opcje ogólnych, które maj± zastosowanie do wszystkich kerneli i&nbsp;partycji. 
-index_apply=Zastosuj konfiguracjê
-index_applymsg1=Zastosowanie bie¿±cej konfiguracji do sektora BOOT na $1. 
-index_applymsg2=Zastosowanie bie¿±cej konfiguracji do sektora BOOT na bie¿±cym urz±dzeniu <tt>root</tt>.
-index_applymsg3=Upewnij siê, ¿e konfiguracja jest prawid³owa zanim zrestartujesz system!
+index_addk=OkreÅ›l kernel startowy
+index_addp=OkreÅ›l partycjÄ™ startowÄ…
+index_global=ZmieÅ„ opcje ogÃ³lne
+index_globalmsg=Zmiany opcje ogÃ³lnych, ktÃ³re majÄ… zastosowanie do wszystkich kerneli i&nbsp;partycji. 
+index_apply=Zastosuj konfiguracjÄ™
+index_applymsg1=Zastosowanie bieÅ¼Ä…cej konfiguracji do sektora BOOT na $1. 
+index_applymsg2=Zastosowanie bieÅ¼Ä…cej konfiguracji do sektora BOOT na bieÅ¼Ä…cym urzÄ…dzeniu <tt>root</tt>.
+index_applymsg3=Upewnij siÄ™, Å¼e konfiguracja jest prawidÅ‚owa zanim zrestartujesz system!
 index_return=kerneli i&nbsp;partycji
-index_earch=LILO obs³uguje jedynie systemy o&nbsp;architekturze x86.
+index_earch=LILO obsÅ‚uguje jedynie systemy o&nbsp;architekturze x86.
 
-global_title=Opcje ogólne
-global_desc=Ogólne opcje startowe
+global_title=Opcje ogÃ³lne
+global_desc=OgÃ³lne opcje startowe
 global_boot=Zapisz bootloader na
-global_root=Urz±dzeniu <tt>root</tt>
-global_default=Domy¶lny kernel/partycja
-global_first=Pierwszy na li¶cie
-global_prompt=Wy¶wietliæ zg³oszenie LILO?
-global_timeout=Czas oczekiwania po zg³oszeniu LILO
+global_root=UrzÄ…dzeniu <tt>root</tt>
+global_default=DomyÅ›lny kernel/partycja
+global_first=Pierwszy na liÅ›cie
+global_prompt=WyÅ›wietliÄ‡ zgÅ‚oszenie LILO?
+global_timeout=Czas oczekiwania po zgÅ‚oszeniu LILO
 global_forever=Nieograniczony
-global_lock=Zapamiêtaæ dodatkowe opcje dla kernela?
+global_lock=ZapamiÄ™taÄ‡ dodatkowe opcje dla kernela?
 global_delay=Czas oczekiwania przed startem
-global_imm=Nie czekaæ
-global_compact=Po³±czyæ przyleg³e odczyty?
-global_optional=Pomin±æ nieistniej±ce kernele?
-global_password=Domy¶lne has³o startowe
+global_imm=Nie czekaÄ‡
+global_compact=PoÅ‚Ä…czyÄ‡ przylegÅ‚e odczyty?
+global_optional=PominÄ…Ä‡ nieistniejÄ…ce kernele?
+global_password=DomyÅ›lne hasÅ‚o startowe
 global_none=Brak
-global_restricted=Has³o potrzebne przy
+global_restricted=HasÅ‚o potrzebne przy
 global_extra=Podawaniu opcji startowych dla kerneli
-global_any=Ka¿dym starcie
+global_any=KaÅ¼dym starcie
 global_secs=sekund
-global_lba=Umo¿liwiæ start z&nbsp;obszaru powy¿ej 1024 cylindra?
-global_err=Nie uda³o siê zachowaæ opcji ogólnych
+global_lba=UmoÅ¼liwiÄ‡ start z&nbsp;obszaru powyÅ¼ej 1024 cylindra?
+global_err=Nie udaÅ‚o siÄ™ zachowaÄ‡ opcji ogÃ³lnych
 
-apply_title=Zastosuj konfiguracjê
+apply_title=Zastosuj konfiguracjÄ™
 apply_exec=Zastosowanie konfiguracji LILO popraez wydanie polecenia $1 ..
 
-image_title1=Okre¶l kernel startowy
-image_title2=Zmieñ kernel startowy
+image_title1=OkreÅ›l kernel startowy
+image_title2=ZmieÅ„ kernel startowy
 image_options=Opcje kernela startowego
 image_name=Nazwa
 image_kernel=Kernel do wystartowania
 image_opts=Opcje kernela
-image_default=Domy¶lne
-image_add=Dodaæ opcje..
-image_replace=Zast±piæ opcje..
-image_root=Urz±dzenie <tt>root</tt>
+image_default=DomyÅ›lne
+image_add=DodaÄ‡ opcje..
+image_replace=ZastÄ…piÄ‡ opcje..
+image_root=UrzÄ…dzenie <tt>root</tt>
 image_fromkern=Z kernela
 image_rcurr=Aktualne
-image_rdev=Urz±dzenie ..
+image_rdev=UrzÄ…dzenie ..
 image_initrd=Plik inicjalnego ramdysku
 image_mode=Tryb montowania <tt>root</tt>
 image_ro=Tylko do odczytu
 image_rw=Odczyt i&nbsp;zapis
 image_vga=Tryb tekstowy VGA
-image_ask=Spytaæ u¿ytkownika
+image_ask=SpytaÄ‡ uÅ¼ytkownika
 image_other=Inny
-image_lock=Zapamiêtaæ dodatkowe opcje dla kernela?
-image_optional=Pomin±æ nieistniej±ce kernele?
-image_password=Has³o startowe
-image_restricted=Has³o potrzebne przy
+image_lock=ZapamiÄ™taÄ‡ dodatkowe opcje dla kernela?
+image_optional=PominÄ…Ä‡ nieistniejÄ…ce kernele?
+image_password=HasÅ‚o startowe
+image_restricted=HasÅ‚o potrzebne przy
 image_extra=Podawaniu opcji startowych dla kerneli
-image_any=Ka¿dym starcie
+image_any=KaÅ¼dym starcie
 image_none=Brak
 image_ename=Nie podano nazwy dla tego kernela.
 image_ekernel=Obraz kernela '$1' nie istnieje.
 image_einitrd=Plik inicjalnego ramdysku '$1' nie istnieje.
 
-other_title1=Okre¶l partycjê startow±
-other_title2=Zmieñ partycjê startow±
+other_title1=OkreÅ›l partycjÄ™ startowÄ…
+other_title2=ZmieÅ„ partycjÄ™ startowÄ…
 other_details=Dane partycji
 other_name=Nazwa
 other_part=Partycja startowa
-other_pass=Przekazaæ OS tablicê partycji?
+other_pass=PrzekazaÄ‡ OS tablicÄ™ partycji?
 other_yes=Tak, z
-other_password=Has³o startowe
+other_password=HasÅ‚o startowe
 other_none=Brak
 other_ename=Nie podano nazwy dla tej partycji startowej.
 
-log_create_image=Okre¶lono kernel startowy $1
+log_create_image=OkreÅ›lono kernel startowy $1
 log_modify_image=Zmieniono kernel startowy $1
-log_delete_image=Usuniêto kernel startowy $1
-log_create_image_l=Okre¶lono kernel startowy $1 dla $2
+log_delete_image=UsuniÄ™to kernel startowy $1
+log_create_image_l=OkreÅ›lono kernel startowy $1 dla $2
 log_modify_image_l=Zmieniono kernel startowy $1 dla $2
-log_delete_image_l=Usuniêto kernel startowy $1 dla $2
-log_create_other=Okre¶lono partycjê startow± $1
-log_modify_other=Zmieniono partycjê startow± $1
-log_delete_other=Usuniêto partycjê startow± $1
-log_create_other_l=Okre¶lono partycjê startow± $1 na $2
-log_modify_other_l=Zmieniono partycjê startow± $1 na $2
-log_delete_other_l=Usuniêto partycjê startow± $1 na $2
-log_apply=Zastosowano konfiguracjê
-log_global=Zmieniono opcje ogólne
+log_delete_image_l=UsuniÄ™to kernel startowy $1 dla $2
+log_create_other=OkreÅ›lono partycjÄ™ startowÄ… $1
+log_modify_other=Zmieniono partycjÄ™ startowÄ… $1
+log_delete_other=UsuniÄ™to partycjÄ™ startowÄ… $1
+log_create_other_l=OkreÅ›lono partycjÄ™ startowÄ… $1 na $2
+log_modify_other_l=Zmieniono partycjÄ™ startowÄ… $1 na $2
+log_delete_other_l=UsuniÄ™to partycjÄ™ startowÄ… $1 na $2
+log_apply=Zastosowano konfiguracjÄ™
+log_global=Zmieniono opcje ogÃ³lne

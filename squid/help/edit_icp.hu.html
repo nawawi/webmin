@@ -1,16 +1,16 @@
-<header>Egyéb gyorstárak; fordította: Szakács Gergely</header><p>
+<header>EgyÃ©b gyorstÃ¡rak; fordÃ­totta: SzakÃ¡cs Gergely</header><p>
 
-<b>Egyéb proxy gyorstár kiszolgálók</b>: Itt van felsorolva az összes, jelenleg konfigurált testvér, szülõ és multicast gyorstár. Kattintson a gazdanévre vagy a címre, hogy módosítsa, vagy megtekintse a teljes konfigurációt.<p>
+<b>EgyÃ©b proxy gyorstÃ¡r kiszolgÃ¡lÃ³k</b>: Itt van felsorolva az Ã¶sszes, jelenleg konfigurÃ¡lt testvÃ©r, szÃ¼lÃµ Ã©s multicast gyorstÃ¡r. Kattintson a gazdanÃ©vre vagy a cÃ­mre, hogy mÃ³dosÃ­tsa, vagy megtekintse a teljes konfigurÃ¡ciÃ³t.<p>
 
-<b>A következõket tartalmazó URL-ek közvetlen lehozatala</b>: Alapértelmezés szerint ".cgi" és "?". Ennek segítségével beállíthatja, hogy a Squid mindig a forrásszerverrõl olvasson be bizonyos tartalomtípusokat. Normális esetben ezen az opción nem szükséges változtatni, mivel a legtöbb dolgot a Squid külsõ beavatkozás nélkül is megoldja.<p>
+<b>A kÃ¶vetkezÃµket tartalmazÃ³ URL-ek kÃ¶zvetlen lehozatala</b>: AlapÃ©rtelmezÃ©s szerint ".cgi" Ã©s "?". Ennek segÃ­tsÃ©gÃ©vel beÃ¡llÃ­thatja, hogy a Squid mindig a forrÃ¡sszerverrÃµl olvasson be bizonyos tartalomtÃ­pusokat. NormÃ¡lis esetben ezen az opciÃ³n nem szÃ¼ksÃ©ges vÃ¡ltoztatni, mivel a legtÃ¶bb dolgot a Squid kÃ¼lsÃµ beavatkozÃ¡s nÃ©lkÃ¼l is megoldja.<p>
 
-<b>ICP-kérés holtideje</b>: Alapértelmezés szerint az 'optimális' érték. Ha felül akarja írni a Squid által meghatározott értéket, állítsa ezt az opciót bármely, nullától eltérõ értékre. A Squid korábbi verzióiban az alapértelmezett érték 2000 volt.<p>
+<b>ICP-kÃ©rÃ©s holtideje</b>: AlapÃ©rtelmezÃ©s szerint az 'optimÃ¡lis' Ã©rtÃ©k. Ha felÃ¼l akarja Ã­rni a Squid Ã¡ltal meghatÃ¡rozott Ã©rtÃ©ket, Ã¡llÃ­tsa ezt az opciÃ³t bÃ¡rmely, nullÃ¡tÃ³l eltÃ©rÃµ Ã©rtÃ©kre. A Squid korÃ¡bbi verziÃ³iban az alapÃ©rtelmezett Ã©rtÃ©k 2000 volt.<p>
 
-<b>Multicast ICP holtidõ</b>: Alapértelmezés szerint 2000 msec, vagy 2 másodperc. Multicast felek esetén a Squid rendszeresen ICP "szondákat" küld el annak kiderítésére, hogy hány további felhasználó kapcsolódik a megadott multicast címre. Ez az érték meghatározza, hogy a Squid mennyi ideig várjon a válaszok megszámlálásával.<p>
+<b>Multicast ICP holtidÃµ</b>: AlapÃ©rtelmezÃ©s szerint 2000 msec, vagy 2 mÃ¡sodperc. Multicast felek esetÃ©n a Squid rendszeresen ICP "szondÃ¡kat" kÃ¼ld el annak kiderÃ­tÃ©sÃ©re, hogy hÃ¡ny tovÃ¡bbi felhasznÃ¡lÃ³ kapcsolÃ³dik a megadott multicast cÃ­mre. Ez az Ã©rtÃ©k meghatÃ¡rozza, hogy a Squid mennyi ideig vÃ¡rjon a vÃ¡laszok megszÃ¡mlÃ¡lÃ¡sÃ¡val.<p>
 
-<b>Levált fél holtideje</b>: Alapértelmezés szerint 10 másodperc. Ez az opció megszabja, hogy mennyi ideig várakozzon a Squid, mielõtt egy kapcsolódó gyorstárat "halottnak" tekint. Ha az itt megadott idõn belül nem érkezik ICP-válasz, úgy a Squid leváltnak fogja tekinteni a gyorstárat és nem fog további ICP-válaszokra számítani. Ettõl függetlenül a Squid továbbra is küld ICP-kéréseket, és az elsõ érvényes visszajelzés után élõnek fogja nyilvánítani a szóban forgó felet.<p>
+<b>LevÃ¡lt fÃ©l holtideje</b>: AlapÃ©rtelmezÃ©s szerint 10 mÃ¡sodperc. Ez az opciÃ³ megszabja, hogy mennyi ideig vÃ¡rakozzon a Squid, mielÃµtt egy kapcsolÃ³dÃ³ gyorstÃ¡rat "halottnak" tekint. Ha az itt megadott idÃµn belÃ¼l nem Ã©rkezik ICP-vÃ¡lasz, Ãºgy a Squid levÃ¡ltnak fogja tekinteni a gyorstÃ¡rat Ã©s nem fog tovÃ¡bbi ICP-vÃ¡laszokra szÃ¡mÃ­tani. EttÃµl fÃ¼ggetlenÃ¼l a Squid tovÃ¡bbra is kÃ¼ld ICP-kÃ©rÃ©seket, Ã©s az elsÃµ Ã©rvÃ©nyes visszajelzÃ©s utÃ¡n Ã©lÃµnek fogja nyilvÃ¡nÃ­tani a szÃ³ban forgÃ³ felet.<p>
 
-Ez a beállítás akkor is érvényes, amikor a Squid ICP-válaszra vár a felektõl. Abban az esetben, ha több mint 'dead_peer' másodperc eltelt a legutolsó ICP-válasz beérkezése óta, a Squid a következõ kérésre már nem fog választ várni. Ennek megfelelõen, ha a kérések közti intervallum nagyobb, mint a holtidõ, úgy a kérések többsége nem a szülõkhöz, hanem KÖZVETLENÜL a forráskiszolgálókhoz fog érkezni.<p>
+Ez a beÃ¡llÃ­tÃ¡s akkor is Ã©rvÃ©nyes, amikor a Squid ICP-vÃ¡laszra vÃ¡r a felektÃµl. Abban az esetben, ha tÃ¶bb mint 'dead_peer' mÃ¡sodperc eltelt a legutolsÃ³ ICP-vÃ¡lasz beÃ©rkezÃ©se Ã³ta, a Squid a kÃ¶vetkezÃµ kÃ©rÃ©sre mÃ¡r nem fog vÃ¡laszt vÃ¡rni. Ennek megfelelÃµen, ha a kÃ©rÃ©sek kÃ¶zti intervallum nagyobb, mint a holtidÃµ, Ãºgy a kÃ©rÃ©sek tÃ¶bbsÃ©ge nem a szÃ¼lÃµkhÃ¶z, hanem KÃ–ZVETLENÃœL a forrÃ¡skiszolgÃ¡lÃ³khoz fog Ã©rkezni.<p>
 
 <hr>
 

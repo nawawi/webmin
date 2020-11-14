@@ -1,2 +1,2 @@
-desc_pl=Fail2Ban - detektor intruzów
-longdesc_pl=Fail2Ban chroni twój system przed atakami typu Brute Force przez wykrywanie i blokowanie ¼ród³owego IP.
+desc_pl=Fail2Ban - detektor intruzÃ³w
+longdesc_pl=Fail2Ban chroni twÃ³j system przed atakami typu Brute Force przez wykrywanie i blokowanie Â¼rÃ³dÂ³owego IP.

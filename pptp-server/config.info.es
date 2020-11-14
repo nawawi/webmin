@@ -1,6 +1,6 @@
-line2=Configuración del sistema,11
+line2=ConfiguraciÃ³n del sistema,11
 pptpd=Camino completo del programa demonio PPTP,0
-file=Fichero de configuración PPTP,0
+file=Fichero de configuraciÃ³n PPTP,0
 pid_file=Camino completo del fichero de PID de PPTP,0
 pap_file=Fichero de cuentas PPP,0
 ppp_options=Fichero de opciones PPP por defecto,0

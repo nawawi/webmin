@@ -1,6 +1,6 @@
 index_title=Pomoc Webmina
 index_terms=Szukaj w&nbsp;pomocy
-index_mods=Przeszukuj modu³y
+index_mods=Przeszukuj moduÅ‚y
 index_all=Wszystkie
 index_sel=Wybrane ..
 index_search=Szukaj
@@ -9,12 +9,12 @@ index_header=Globalne przeszukiwanie pomocy Webmina
 index_return=formularza pomocy
 
 search_err=Poszukiwanie nieudane
-search_eterms=Nie podano szukanych hase³
-search_emods=Nie wybrano modu³ów
+search_eterms=Nie podano szukanych haseÅ‚
+search_emods=Nie wybrano moduÅ‚Ã³w
 search_title=Wyniki poszukiwania
-search_einclude=Nie uda³o siê do³±czyæ $1
-search_none=W&nbsp;¿adnym z&nbsp;plików pomocy nie znaleziono twojego has³a
-search_mod=Modu³
+search_einclude=Nie udaÅ‚o siÄ™ doÅ‚Ä…czyÄ‡ $1
+search_none=W&nbsp;Å¼adnym z&nbsp;plikÃ³w pomocy nie znaleziono twojego hasÅ‚a
+search_mod=ModuÅ‚
 search_page=Strony pomocy
 search_line=Znaleziono
-search_results=Na nastêpuj±cych stronach pomocy Webmina znaleziono $1
+search_results=Na nastÄ™pujÄ…cych stronach pomocy Webmina znaleziono $1

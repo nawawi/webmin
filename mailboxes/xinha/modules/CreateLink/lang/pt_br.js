@@ -1,4 +1,4 @@
-﻿// I18N constants
+ï»¿// I18N constants
 //
 // LANG: "pt_br", ENCODING: UTF-8
 // Portuguese Brazilian Translation
@@ -8,11 +8,11 @@
 // Site: http://www.mpg.com.br
 //
 // Last revision: 06 september 2007
-// Please don´t remove this information
+// Please donÂ´t remove this information
 // If you modify any source, please insert a comment with your name and e-mail
 //
 // Distributed under the same terms as HTMLArea itself.
 // This notice MUST stay intact for use (see license.txt).
 {
-  "You need to select some text before creating a link": "Você precisa selecionar um texto antes de criar um link"
+  "You need to select some text before creating a link": "VocÃª precisa selecionar um texto antes de criar um link"
 }

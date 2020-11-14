@@ -1,2 +1,2 @@
 desc_pl=Zaplanowane Funkcje Webmina
-longdesc_pl=Okre¶l funkcje Webmina, które maj± byæ uruchamiane wed³ug regularnego harmonogramu przez serwer Webmin
+longdesc_pl=OkreÂ¶l funkcje Webmina, ktÃ³re majÂ± byÃ¦ uruchamiane wedÂ³ug regularnego harmonogramu przez serwer Webmin

@@ -1,22 +1,22 @@
 <h3>Introduktion till NFS</h3>
 
-NFS är standardprotokollet för fildelning i Unix-system. Med NFS kan
-ett system exportera en katalog över nätverket till en eller flera datorer,
-så att användare och program på dessa datorer kan komma åt filer som om
-de fanns på de lokala datorerna.
+NFS Ã¤r standardprotokollet fÃ¶r fildelning i Unix-system. Med NFS kan
+ett system exportera en katalog Ã¶ver nÃ¤tverket till en eller flera datorer,
+sÃ¥ att anvÃ¤ndare och program pÃ¥ dessa datorer kan komma Ã¥t filer som om
+de fanns pÃ¥ de lokala datorerna.
 
-<p>En NFS-server är ett system som exporterar en eller flera kataloger
-och en NFS-klient är ett system som monterar en eller flera kataloger
-från en server. Samma dator kan vara både NFS-server och klient.
+<p>En NFS-server Ã¤r ett system som exporterar en eller flera kataloger
+och en NFS-klient Ã¤r ett system som monterar en eller flera kataloger
+frÃ¥n en server. Samma dator kan vara bÃ¥de NFS-server och klient.
 
-<p>Servern bestämmer om en klient får montera en exporterad katalog
-genom att kontrollera IP-adressen för klienten mot en lista över
-datorer som tillåts montera katalogen i fråga. Servern kan också göra
-så att en katalog exporteras med enbart läsrättigheter, för alla klienter
+<p>Servern bestÃ¤mmer om en klient fÃ¥r montera en exporterad katalog
+genom att kontrollera IP-adressen fÃ¶r klienten mot en lista Ã¶ver
+datorer som tillÃ¥ts montera katalogen i frÃ¥ga. Servern kan ocksÃ¥ gÃ¶ra
+sÃ¥ att en katalog exporteras med enbart lÃ¤srÃ¤ttigheter, fÃ¶r alla klienter
 eller vissa, namngivna.
 
-<p>NFS-klienter behöver, till skillnad från andra filsystem över nätverk,
-inte logga in på servern då en exporterad katalog ska monteras. Servern
-litar på att klienten har kontrollerat användarens identitet och att denna
-identitet bifogas förfrågningar. Därför kan det vara dumt att tillåta
-montering från klienter som du inte fullständigt litar på.
+<p>NFS-klienter behÃ¶ver, till skillnad frÃ¥n andra filsystem Ã¶ver nÃ¤tverk,
+inte logga in pÃ¥ servern dÃ¥ en exporterad katalog ska monteras. Servern
+litar pÃ¥ att klienten har kontrollerat anvÃ¤ndarens identitet och att denna
+identitet bifogas fÃ¶rfrÃ¥gningar. DÃ¤rfÃ¶r kan det vara dumt att tillÃ¥ta
+montering frÃ¥n klienter som du inte fullstÃ¤ndigt litar pÃ¥.

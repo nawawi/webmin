@@ -1,24 +1,24 @@
-<header>Dla jakich domen odbierać pocztę</header>
+<header>Dla jakich domen odbieraÄ pocztÄ</header>
 
 <center><tt>mydestination</tt></center>
 <hr>
 
-Należy to podać się tu domeny, dla których ta maszyna będzie doręczać pocztę
-lokalnie, zamiast przekazywania jej do innej maszyny. Domyślne jest
-odbieranie poczty przez maszynę dla samej siebie. <p>
+NaleÅ¼y to podaÄ siÄ tu domeny, dla ktÃ³rych ta maszyna bÄdzie dorÄczaÄ pocztÄ
+lokalnie, zamiast przekazywania jej do innej maszyny. DomyÅlne jest
+odbieranie poczty przez maszynÄ dla samej siebie. <p>
 
 <b>Maszyna lokalna</b>: <tt>$myhostname, localhost.$mydomain</tt> <br>
-<b>Cała domena</b>: <tt>$myhostname, localhost.$mydomain, mydomain</tt> <p>
+<b>CaÅa domena</b>: <tt>$myhostname, localhost.$mydomain, mydomain</tt> <p>
 
-Można również podać pełną ścieżkę do pliku zawierającego nazwy domen, dla
-których ta maszyna będzie doręczać pocztę lokalnie. <p>
+MoÅ¼na rÃ³wnieÅ¼ podaÄ peÅnÄ ÅcieÅ¼kÄ do pliku zawierajÄcego nazwy domen, dla
+ktÃ³rych ta maszyna bÄdzie dorÄczaÄ pocztÄ lokalnie. <p>
 
-Przykład: <tt>/etc/postfix/mydestination</tt>
+PrzykÅad: <tt>/etc/postfix/mydestination</tt>
 
 <hr>
 <br>
 
-<b><u>Uwaga:</u></b> w celu uniknięcia zapętleń w&nbsp;doręczaniu poczty,
-musisz wymienić wszystkie nazwy tej maszyny, włączając w&nbsp;to
+<b><u>Uwaga:</u></b> w celu unikniÄcia zapÄtleÅ w&nbsp;dorÄczaniu poczty,
+musisz wymieniÄ wszystkie nazwy tej maszyny, wÅÄczajÄc w&nbsp;to
 <tt>$myhostname</tt> i&nbsp;<tt>localhost.$mydomain</tt>.  NIE PODAWAJ TU
 DOMEN WIRTUALNYCH. PODAJ JE ZAMIAST TEGO W&nbsp;PLIKU DOMEN WIRTUALNYCH.

@@ -1,6 +1,6 @@
-index_hosts=V¹echny zmìny hesel provedené pomocí tohoto modulu, budou provedeny na v¹ech $1 hostitelích spravovanıch pomocí modulu clustru U¾ivatelé a skupiny.
-index_noservers=V modulu <a href=$1>Cluster - U¾ivatelé a skupiny</a> nebyli definovány ¾ádné servery pro správu.
-index_title=Zmìna hesel v clustru
-passwd_err=Chyba pøi zmìnì hesla
-passwd_on=Mìním heslo na $1 ..
-passwd_title=Mìním heslo
+index_hosts=VÅ¡echny zmÄ›ny hesel provedenÃ© pomocÃ­ tohoto modulu, budou provedeny na vÅ¡ech $1 hostitelÃ­ch spravovanÃ½ch pomocÃ­ modulu clustru UÅ¾ivatelÃ© a skupiny.
+index_noservers=V modulu <a href=$1>Cluster - UÅ¾ivatelÃ© a skupiny</a> nebyli definovÃ¡ny Å¾Ã¡dnÃ© servery pro sprÃ¡vu.
+index_title=ZmÄ›na hesel v clustru
+passwd_err=Chyba pÅ™i zmÄ›nÄ› hesla
+passwd_on=MÄ›nÃ­m heslo na $1 ..
+passwd_title=MÄ›nÃ­m heslo

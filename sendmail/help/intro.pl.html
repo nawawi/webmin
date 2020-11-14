@@ -2,40 +2,40 @@
 
 <h3>Wprowadzenie do Sendmaila</h3>
 Sendmail jest standardowym uniksowym programem do przekazywania
-i&nbsp;dorêczania poczty. Kiedy który¶ z&nbsp;u¿ytkowników twojego systemu
-zechce wys³aæ wiadomo¶æ na inny komputer, sendmail pe³ni rolê programu
-dorêczaj±cego. Podobnie, kiedy kto¶ z&nbsp;innego systemu wy¶le wiadomo¶æ
-do którego¶ z&nbsp;twoich u¿ytkowników, sendmail odbierze tê wiadomo¶æ
-i&nbsp;zachowa j± w&nbsp;pliku z&nbsp;jego poczt±. <p>
+i&nbsp;dorÃªczania poczty. Kiedy ktÃ³ryÂ¶ z&nbsp;uÂ¿ytkownikÃ³w twojego systemu
+zechce wysÂ³aÃ¦ wiadomoÂ¶Ã¦ na inny komputer, sendmail peÂ³ni rolÃª programu
+dorÃªczajÂ±cego. Podobnie, kiedy ktoÂ¶ z&nbsp;innego systemu wyÂ¶le wiadomoÂ¶Ã¦
+do ktÃ³regoÂ¶ z&nbsp;twoich uÂ¿ytkownikÃ³w, sendmail odbierze tÃª wiadomoÂ¶Ã¦
+i&nbsp;zachowa jÂ± w&nbsp;pliku z&nbsp;jego pocztÂ±. <p>
 
 Sendmail jest jedynie MTA (mail transport agent - programem do transportu
-poczty), tzn. ¿e on nie zawiera ¿adnego interfejsu u¿ytkownika dla osób
-chc±cych wys³aæ wiadomó¶æ. Programy takie jak Eudora, elm czy /bin/mail,
-którymi u¿ytkownik siê bezpo¶rednio komunikuje s± nazywane MUA (mail user
-agent - program pocztowy u¿ytkownika). MUA nie dorêcza wiadomo¶ci
-samodzielnie, a&nbsp;jedynie przekazuje j± do sendmaila w&nbsp;celu
-dorêczenia. <p>
+poczty), tzn. Â¿e on nie zawiera Â¿adnego interfejsu uÂ¿ytkownika dla osÃ³b
+chcÂ±cych wysÂ³aÃ¦ wiadomÃ³Â¶Ã¦. Programy takie jak Eudora, elm czy /bin/mail,
+ktÃ³rymi uÂ¿ytkownik siÃª bezpoÂ¶rednio komunikuje sÂ± nazywane MUA (mail user
+agent - program pocztowy uÂ¿ytkownika). MUA nie dorÃªcza wiadomoÂ¶ci
+samodzielnie, a&nbsp;jedynie przekazuje jÂ± do sendmaila w&nbsp;celu
+dorÃªczenia. <p>
 
-MUA u¿ytkowników mog± byæ uruchomione zarównoo bezpo¶rednio w&nbsp;twoim
-systemie (MUA takie jak: pine, elm, czy /bin/mail), jak te¿ na osobnym
-komputerze, którym mo¿e byæ osobisty PC (w przypadku MUA takich jak: Eudora,
+MUA uÂ¿ytkownikÃ³w mogÂ± byÃ¦ uruchomione zarÃ³wnoo bezpoÂ¶rednio w&nbsp;twoim
+systemie (MUA takie jak: pine, elm, czy /bin/mail), jak teÂ¿ na osobnym
+komputerze, ktÃ³rym moÂ¿e byÃ¦ osobisty PC (w przypadku MUA takich jak: Eudora,
 Exchange, Outlook, czy Netscape Communicator). W&nbsp;pierwszym przypadku
-poczta jest wysy³ana poprzez bezpo¶rednie wywo³anie sendmaila
-i&nbsp;przekazanie mu wiadomo¶ci, za¶ odbierana poprzez odczyt z&nbsp;pliku
-poczty u¿ytkownika. W&nbsp;przypadku MUAs dzia³aj±cych na innych komputerach
-poczta jest wysy³ana poprzez po³±czenie siê z&nbsp;sendmailem na twoim
-komputerze przy u¿yciu protoko³u SMTP, a odbierana poprzez po³±czenie
+poczta jest wysyÂ³ana poprzez bezpoÂ¶rednie wywoÂ³anie sendmaila
+i&nbsp;przekazanie mu wiadomoÂ¶ci, zaÂ¶ odbierana poprzez odczyt z&nbsp;pliku
+poczty uÂ¿ytkownika. W&nbsp;przypadku MUAs dziaÂ³ajÂ±cych na innych komputerach
+poczta jest wysyÂ³ana poprzez poÂ³Â±czenie siÃª z&nbsp;sendmailem na twoim
+komputerze przy uÂ¿yciu protokoÂ³u SMTP, a odbierana poprzez poÂ³Â±czenie
 z&nbsp;osobnym serwerem POP3 lub IMAP. <p>
 
-<h3>Modu³ Sendmaila</h3>
-G³ówna strona tego modu³u pokazuje tablicê ikon, ka¿da do konfiguracji
-innego zestawu funkcji sendmaila. Jednak¿e, funkcje za niektórymi ikonami
-mog± byæ niedostêpne, je¶li nie zosta³y ustawione w twoim
-<tt>sendmail.cf</tt> podczas instalacji. W czasie instalacji mo¿na wybraæ,
-które funkcje maj± byæ dostêpne poprzez edycjê pliku <tt>.mc</tt>
-przetwarzanego pó¼niej przez program <tt>m4</tt> do postaci
+<h3>ModuÂ³ Sendmaila</h3>
+GÂ³Ã³wna strona tego moduÂ³u pokazuje tablicÃª ikon, kaÂ¿da do konfiguracji
+innego zestawu funkcji sendmaila. JednakÂ¿e, funkcje za niektÃ³rymi ikonami
+mogÂ± byÃ¦ niedostÃªpne, jeÂ¶li nie zostaÂ³y ustawione w twoim
+<tt>sendmail.cf</tt> podczas instalacji. W czasie instalacji moÂ¿na wybraÃ¦,
+ktÃ³re funkcje majÂ± byÃ¦ dostÃªpne poprzez edycjÃª pliku <tt>.mc</tt>
+przetwarzanego pÃ³Â¼niej przez program <tt>m4</tt> do postaci
 
-<tt>sendmail.cf</tt>. Wiele funkcji (takich jak: Mapowanie Adresów,
-Maskowanie Domen czy Kontrola Spamu) mo¿e byæ dostêpnych jedynie pod
-warunkiem, ¿e zosta³y w³±czone podczas instalacji. <p>
+<tt>sendmail.cf</tt>. Wiele funkcji (takich jak: Mapowanie AdresÃ³w,
+Maskowanie Domen czy Kontrola Spamu) moÂ¿e byÃ¦ dostÃªpnych jedynie pod
+warunkiem, Â¿e zostaÂ³y wÂ³Â±czone podczas instalacji. <p>
 <hr>

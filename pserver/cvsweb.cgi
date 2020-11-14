@@ -5,7 +5,7 @@
 # Written in their spare time by
 #             Bill Fenner      <fenner@FreeBSD.org>   (original work)
 # extended by Henner Zeller    <zeller@think.de>,
-#             Henrik Nordström <hno@hem.passagen.se>
+#             Henrik NordstrÃ¶m <hno@hem.passagen.se>
 #             Ken Coar         <coar@Apache.Org>
 #             Dick Balaska     <dick@buckosoft.com>
 #             Jens-Uwe Mager   <jum@helios.de>
@@ -16,7 +16,7 @@
 #
 # Copyright (c) 1996-1998 Bill Fenner
 #           (c) 1998-1999 Henner Zeller
-#	    (c) 1999      Henrik Nordström
+#	    (c) 1999      Henrik NordstrÃ¶m
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -894,9 +894,9 @@ sub htmlify($) {
 	$string =~ s/>/&gt;/g;
 
 	# get URL's as link ..
-	$string =~ s§(http|ftp|https)(://[-a-zA-Z0-9%.~:_/]+)([?&]([-a-zA-Z0-9%.~:_]+)=([-a-zA-Z0-9%.~:_])+)*§<A HREF="$1$2$3">$1$2$3</A>§;
+	$string =~ sÂ§(http|ftp|https)(://[-a-zA-Z0-9%.~:_/]+)([?&]([-a-zA-Z0-9%.~:_]+)=([-a-zA-Z0-9%.~:_])+)*Â§<A HREF="$1$2$3">$1$2$3</A>Â§;
 	# get e-mails as link
-	$string =~ s§([-a-zA-Z0-9_.]+@([-a-zA-Z0-9]+\.)+[A-Za-z]{2,4})§<A HREF="mailto:$1">$1</A>§;
+	$string =~ sÂ§([-a-zA-Z0-9_.]+@([-a-zA-Z0-9]+\.)+[A-Za-z]{2,4})Â§<A HREF="mailto:$1">$1</A>Â§;
 
 	return $string;
 }
@@ -911,25 +911,25 @@ sub spacedHtmlText($) {
 	$string =~ s/\t+/' ' x (length($&) * $tabstop - length($`) % $tabstop)/e
 	    if (defined($tabstop));
 
-	# replace <tab> and <space> (§ is to protect us from htmlify)
+	# replace <tab> and <space> (Â§ is to protect us from htmlify)
 	# gzip can make excellent use of this repeating pattern :-)
-	$string =~ s/§/§%/g; #protect our & substitute
+	$string =~ s/Â§/Â§%/g; #protect our & substitute
 	if ($hr_breakable) {
 	    # make every other space 'breakable'
-	    $string =~ s/	/ §nbsp; §nbsp; §nbsp; §nbsp;/g;    # <tab>
-	    $string =~ s/  / §nbsp;/g;                              # 2 * <space>
+	    $string =~ s/	/ Â§nbsp; Â§nbsp; Â§nbsp; Â§nbsp;/g;    # <tab>
+	    $string =~ s/  / Â§nbsp;/g;                              # 2 * <space>
 	    # leave single space as it is
 	}
 	else {
-	    $string =~ s/	/§nbsp;§nbsp;§nbsp;§nbsp;§nbsp;§nbsp;§nbsp;§nbsp;/g;
-	    $string =~ s/ /§nbsp;/g;
+	    $string =~ s/	/Â§nbsp;Â§nbsp;Â§nbsp;Â§nbsp;Â§nbsp;Â§nbsp;Â§nbsp;Â§nbsp;/g;
+	    $string =~ s/ /Â§nbsp;/g;
 	}
 
 	$string = htmlify($string);
 
 	# unescape
-	$string =~ s/§([^%])/&$1/g;
-	$string =~ s/§%/§/g;
+	$string =~ s/Â§([^%])/&$1/g;
+	$string =~ s/Â§%/Â§/g;
 
 	return $string;
 }

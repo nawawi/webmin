@@ -1,8 +1,8 @@
-line1=Mo¾nosti konfigurace,11
-resolve=Pøelo¾it nalezené adresy serverù?,1,1-ano,0-ne
-scan_time=Èasová prodleva pro scanování reakcí,0
-display_mode=Ukázat servery jako,1,1-tabulku,0-ikony
-sort_mode=Seøadit servery podle,1,4-IP adres,1-jména host,2-popisu,3-OS,5-skupiny,0-poøadí vzniku
-show_status=Ukázat stav serverù?,1,1-ano,0-ne
-line2=SKonfigurace systému,11
-groups_dir=Adresáø MSC cluster skupin,0
+line1=MoÂ¾nosti konfigurace,11
+resolve=PÃ¸eloÂ¾it nalezenÃ© adresy serverÃ¹?,1,1-ano,0-ne
+scan_time=ÃˆasovÃ¡ prodleva pro scanovÃ¡nÃ­ reakcÃ­,0
+display_mode=UkÃ¡zat servery jako,1,1-tabulku,0-ikony
+sort_mode=SeÃ¸adit servery podle,1,4-IP adres,1-jmÃ©na host,2-popisu,3-OS,5-skupiny,0-poÃ¸adÃ­ vzniku
+show_status=UkÃ¡zat stav serverÃ¹?,1,1-ano,0-ne
+line2=SKonfigurace systÃ©mu,11
+groups_dir=AdresÃ¡Ã¸ MSC cluster skupin,0

@@ -1,7 +1,7 @@
 man_cmd=Commande pour afficher la page du manuel,0
 man_cmd_sect=Commande pour afficher la page du manuel d'une section,0
 search_cmd=Commande pour chercher dans les pages,0
-man_dir=Répertoire des pages manuel,0
+man_dir=RÃ©pertoire des pages manuel,0
 
 
 line2=Configuration du systeme,11
