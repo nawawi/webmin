@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 # webmin-0.82/acl/lang/hu
 # Translated by <kissg@sztaki.hu>
 # Some Caldera/RedHat/SuSe/HPUX related strings remained untranslated due to
 # their specific nature. Further volunteers wanted.
 
+=======
+>>>>>>> upstream/master
 index_title=Nyomtatók
 index_name=Nyomtató
 index_desc=Megnevezés
@@ -19,7 +22,10 @@ index_stopmsg=Ha megnyomod ezt a gombot, megáll a nyomtatás ütemezésést vé
 index_start=Ütemező indítása
 index_startmsg=Ha megnyomod ezt a gombot, elindul a nyomtatás ütemezésést végző processz, és a helyi illetve távoli felhasználók elküldhetik a nyomtatnivalójukat.
 index_return=a nyomtatók listájához
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 edit_eedit=Nem módosíthatod ennek a nyomtatónak a beállításait
 edit_eadd=Nem vehetsz fel új nyomtatót a rendszerbe
 edit_add=Új nyomtató felvétele
@@ -34,15 +40,26 @@ edit_acl=Ki nyomtathat ide?
 edit_allow=Bárki
 edit_deny=Senki
 edit_allowu=Csak a felsoroltak
+<<<<<<< HEAD
 edit_denyu=Bárki,&nbsp;kivéve&nbsp;a&nbsp;felsoroltakat
+=======
+edit_denyu=Bárki, kivéve a felsoroltakat
+>>>>>>> upstream/master
 edit_banner=Címlap nyomtatása?
 edit_opt=Választható
 edit_default=Ez az alap-<br>nyomtató?
 edit_already=Igen, korábban már annak jelölted ki
+<<<<<<< HEAD
 edit_max=A nyomtatnivaló maximális&nbsp;mérete (kB)
 edit_dacc=Elfogadható nyomtatnivaló
 edit_dtext=Szöveg (text)
 edit_dpost=Postscrip&#116;
+=======
+edit_max=A nyomtatnivaló maximális mérete (kB)
+edit_dacc=Elfogadható nyomtatnivaló
+edit_dtext=Szöveg (text)
+edit_dpost=Postscript
+>>>>>>> upstream/master
 edit_dother=Egyéb
 edit_alt=Alternatív azonosítók
 edit_dest=Kimenet
@@ -57,11 +74,18 @@ edit_user=Felhasználó
 edit_pass=Jelszó
 edit_wgroup=Munkacsoport
 edit_hpnp=Távoli HPNP szerver
+<<<<<<< HEAD
 edit_port=Por&#116;
 edit_direct=Közvetlen TCP kapcsolat
 edit_dport=Por&#116;
 edit_driver=Meghajtó
 
+=======
+edit_port=Port
+edit_direct=Közvetlen TCP kapcsolat
+edit_dport=Port
+edit_driver=Meghajtó
+>>>>>>> upstream/master
 save_err=Nem sikerült elmenteni a konfigurációt
 save_eadd=Nincs jogod új printer felvételéhez
 save_eedit=Nincs jogod változtatni ezen a nyomtatón
@@ -78,7 +102,10 @@ save_erqueue='$1' is not a valid remote queue name
 save_eremote=Távoli unixos gépre csak driver nélkül nyomtathatsz
 save_edhost='$1' nevű gép nincs
 save_edport=Nem adtad meg a portot
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 jobs_title=Nyomtatósor
 jobs_header=Nyomtatásra váró anyagok a(z) $1 nyomtatón
 jobs_id=Azonosító
@@ -91,6 +118,7 @@ jobs_cancelview=Az azonosítóra kattintva törölheted az anyagot a sorból, a 
 jobs_none=Nincs várakozó nyomtatnivaló a(z) $1 sorában
 jobs_all=Minden várakozó anyag törlése
 jobs_bytes=byte
+<<<<<<< HEAD
 
 cancel_ecannot=Nincs jogod törölni a nyomtatósorból
 cancel_err=Nem sikerült törölni az anyagot
@@ -105,17 +133,35 @@ start_err=Nem sikerült elindítani az ütemezőt
 stop_ecannot=Nincs jogod az ütemező leállításához
 stop_err=Nem sikerült leállítani az ütemezőt
 
+=======
+cancel_ecannot=Nincs jogod törölni a nyomtatósorból
+cancel_err=Nem sikerült törölni az anyagot
+cancel_egone=A $1 jelű nyomtatnivaló már nem létezik
+view_ecannot=Nem nézheted meg a nyomtatandó file-t
+view_egone=Ez a nyomtatnivaló már nem létezik
+start_ecannot=Nincs jogod az ütemező indításához
+start_err=Nem sikerült elindítani az ütemezőt
+stop_ecannot=Nincs jogod az ütemező leállításához
+stop_err=Nem sikerült leállítani az ütemezőt
+>>>>>>> upstream/master
 webmin_none=Nem kell
 webmin_nonemsg=Postscript vagy karakteres nyomtató
 webmin_remotemsg=Távoli nyomtató
 webmin_model=Model
+<<<<<<< HEAD
 webmin_prog=Progra&#109;
+=======
+webmin_prog=Program
+>>>>>>> upstream/master
 webmin_driver=Webmin meghajtó
 webmin_uniprint=Uniprint meghajtó
 webmin_edrivers=Nem derült ki, hogy a $1 milyen nyomtatókat támogat. A <tt>ghostscript</tt>et használó meghajtókat nélkülöznöd kell.
 webmin_egs=Hiányzik a $1 program. A <tt>ghostscript</tt>et használó meghajtókat nélkülöznöd kell.
 webmin_edriver='$1' nem létezik
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 caldera_none=None
 caldera_nonemsg=Remote or raw printer
 caldera_prog=Program
@@ -129,7 +175,6 @@ caldera_uniprint=Uniprint driver
 caldera_eprog='$1' does not exist
 caldera_edriver=No printer driver selected
 caldera_eres=No resolution selected
-
 redhat_none=None
 redhat_nonemsg=Postscript or text printer
 redhat_prog=Program
@@ -147,7 +192,6 @@ redhat_edriver=No printer driver selected
 redhat_ehmargin=Missing or invalid right/left margin
 redhat_evmargin=Missing or invalid top/bottom margin
 redhat_eres=No resolution selected
-
 suse_none=None
 suse_nonemsg=Postscript or text printer
 suse_prog=Program
@@ -159,9 +203,13 @@ suse_paper=Papírméret
 suse_method=Filter method
 suse_auto=Automatic
 suse_ascii=ASCII
+<<<<<<< HEAD
 
 estop=Nem sikerült leállítani az <tt>lpd<tt>-t: $1
 
+=======
+estop=Nem sikerült leállítani az <tt>lpd<tt>-t: $1
+>>>>>>> upstream/master
 acl_printers=Mely nyomtatókat konfigurálhatja?
 acl_add=Felvehet új nyomtatókat?
 acl_cancel=Megnézheti és törölheti a nyomtatandó anyagokat?
@@ -169,7 +217,10 @@ acl_stop=Leállíthatja/elindíthatja az ütemezőt?
 acl_listed=Csak a megjelölt nyomtatókon:
 acl_pall=Mindegyiket
 acl_psel=A megjelölteket:
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 log_stop=Nyomtatódémon leállítása
 log_start=Nyomtatódémon elindítása
 log_cancel_job=A(z) $2 jelű anyag törlése a(z) $1 nyomtatósorból
@@ -180,11 +231,15 @@ log_delete=A(z) $1 nyomtató törlése
 log_create_l=A(z) $1 jelű "$3" nyomtató létrehozása
 log_modify_l=A(z) $1 jelű "$3" nyomtató módosítása
 log_delete_l=A(z) $1 jelű "$3" nyomtató törlése
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 linux_paralel=$1. párhuzamos csatoló
 linux_serial=$1. soros csatoló (COM$1)
 linux_null="Null" eszköz
 linux_usb=USB nyomtató $1
+<<<<<<< HEAD
 
 freebsd_paralel=Párhuzamos csatoló
 freebsd_serial=$1. soros csatoló (COM$1)
@@ -204,6 +259,21 @@ lprng_paralel=$1. párhuzamos csatoló
 lprng_serial=$1. soros csatoló (COM$1)
 lprng_null="Null" eszköz
 
+=======
+freebsd_paralel=Párhuzamos csatoló
+freebsd_serial=$1. soros csatoló (COM$1)
+openbsd_paralel=Párhuzamos csatoló
+openbsd_serial=$1. soros csatoló (COM$1)
+unixware_paralel=$1. párhuzamos csatoló
+unixware_serial="$1" soros csatoló (COM$1)
+unixware_null="Null" eszköz
+hpux_paralel="$1" párhuzamos csatoló
+hpux_serial="$1" soros csatoló
+hpux_null="Null" eszköz
+lprng_paralel=$1. párhuzamos csatoló
+lprng_serial=$1. soros csatoló (COM$1)
+lprng_null="Null" eszköz
+>>>>>>> upstream/master
 solaris_paralel=Párhuzamos csatoló
 solaris_uparalel=Ultra 5/10 párhuzamos csatoló
 solaris_serial="$1" soros csatoló

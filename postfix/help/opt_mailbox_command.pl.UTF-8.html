@@ -1,33 +1,33 @@
-<header>Program zewnÄtrzny uÅ¼ywany zamiast dorÄczania do skrzynki pocztowej</header>
+<header>Program zewnętrzny używany zamiast doręczania do skrzynki pocztowej</header>
 
 <center><tt>mailbox_command</tt></center>
 <hr>
 
-Ten parametr okreÅla fakultatywne zewnÄtrzne polecenie wykorzystywane
-zamiast dorÄczania do skrzynki pocztowej. Polecenie bÄdzie uruchamiane
-z&nbsp;prawami odbiorcy i&nbsp;z&nbsp;prawidÅowymi ustawieniami
-<tt>HOME</tt>, <tt>SHELL</tt> i&nbsp;<tt>LOGNAME</tt> w&nbsp;Årodowisku.
-WyjÄtek: dorÄczanie dla <tt>root</tt>-a odbywa siÄ jako
+Ten parametr określa fakultatywne zewnętrzne polecenie wykorzystywane
+zamiast doręczania do skrzynki pocztowej. Polecenie będzie uruchamiane
+z&nbsp;prawami odbiorcy i&nbsp;z&nbsp;prawidłowymi ustawieniami
+<tt>HOME</tt>, <tt>SHELL</tt> i&nbsp;<tt>LOGNAME</tt> w&nbsp;środowisku.
+Wyjątek: doręczanie dla <tt>root</tt>-a odbywa się jako
 <tt>$default_user</tt>. <p>
 
-Inne interesujÄce zmienne Årodowiska: <tt>USER</tt> (nazwa uÅ¼ytkownika
-bÄdÄcego odbiorcÄ), <tt>EXTENSION</tt> (rozszerzenie adresu),
-<tt>DOMAIN</tt> (domenowa czÄÅÄ adresu), i&nbsp;<tt>LOCAL</tt> (lokalna
-czÄÅÄ adresu). <p>
+Inne interesujące zmienne środowiska: <tt>USER</tt> (nazwa użytkownika
+będącego odbiorcą), <tt>EXTENSION</tt> (rozszerzenie adresu),
+<tt>DOMAIN</tt> (domenowa część adresu), i&nbsp;<tt>LOCAL</tt> (lokalna
+część adresu). <p>
 
-W&nbsp;odrÃ³Å¼nieniu od innych parametrÃ³w konfiguracyjnych Postfiksa, ta opcja
-nie jest poddana podstawianiu parametrÃ³w. Ma to na celu uÅatwienie podawania
-skÅadni powÅoki (patrz poniÅ¼szy przykÅad). <p>
+W&nbsp;odróżnieniu od innych parametrów konfiguracyjnych Postfiksa, ta opcja
+nie jest poddana podstawianiu parametrów. Ma to na celu ułatwienie podawania
+składni powłoki (patrz poniższy przykład). <p>
 
-Unikaj metaznakÃ³w powÅoki, gdyÅ¼ zmuszÄ one Postfiksa do uruchomienia
-kosztownego procesu powÅoki. Sam <tt>procmail</tt> jest dostatecznie
+Unikaj metaznaków powłoki, gdyż zmuszą one Postfiksa do uruchomienia
+kosztownego procesu powłoki. Sam <tt>procmail</tt> jest dostatecznie
 kosztowny. <p>
 
-JEÅLI KORZYSTASZ Z&nbsp;TEJ OPCJI DLA DORÄCZANIA POCZTY W&nbsp;CAÅYM
-SYSTEMIE, MUSISZ USTAWIÄ ALIAS PRZEKIEROWUJÄCY POCZTÄ DO ROOT-A DO ZWYKÅEGO
-UÅ»YTKOWNIKA. <p>
+JEŚLI KORZYSTASZ Z&nbsp;TEJ OPCJI DLA DORĘCZANIA POCZTY W&nbsp;CAŁYM
+SYSTEMIE, MUSISZ USTAWIĆ ALIAS PRZEKIEROWUJĄCY POCZTĘ DO ROOT-A DO ZWYKŁEGO
+UŻYTKOWNIKA. <p>
 
-PrzykÅady:
+Przykłady:
 <ul>
 <li><tt>/gdzies/tam/procmail</tt> 
 <li><tt>/gdzies/tam/procmail -a "$EXTENSION"</tt>

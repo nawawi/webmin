@@ -14,7 +14,6 @@ index_search=Mostra els serveis que coincideixin amb:
 index_sok=Cerca
 index_toomany=Hi ha massa serveis d'Internet com per mostrar-los en aquesta pàgina.
 index_none=No hi ha cap servei d'Internet que coincideixi amb la teva cerca.
-
 error_restart=No s'ha pogut reiniciar inetd
 error_saverpc=No s'ha pogut desar el programa RPC
 error_invalidprgname='$1' no és un nom de programa vàlid
@@ -25,9 +24,14 @@ error_notexist='$1' no existeix
 error_notexecutable='$1' no és executable
 error_invalidcmd='$1' no és una ordre vàlida
 error_nouser=Has de seleccionar un usuari
-error_prgexist=Ja existeix un programa RPC anomenat $1
 error_user=Hi falta l'usuari d'execució o bé és invàlid 
 error_group=Hi falta el grup d'execució o bé és invàlid
+error_prgexist=Ja existeix un programa RPC anomenat $1
+<<<<<<< HEAD
+error_user=Hi falta l'usuari d'execució o bé és invàlid 
+error_group=Hi falta el grup d'execució o bé és invàlid
+=======
+>>>>>>> upstream/master
 error_prginuse=El número de programa RPC $1 ja està en ús
 error_saveservice=No s'ha pogut desar el servei d'Internet
 error_invalidport='$1' no és un número de port vàlid
@@ -44,7 +48,10 @@ error_nameexist=Ja existeix un servei amb el nom $1 i el protocol $2
 error_inetservice=Ja existeix un servei d'Internet amb el nom $1 i el protocol $2
 error_smfservice=No s'ha pogut actualitzar el servei smf amb l'ordre '$1', codi d'error $2
 error_smf_cmdfield=Per a smf, el nom del programa '$1' ha de coincidir amb el primer argument del camp de l'ordre, això és, ha de ser '$2'
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 editrpc_title1=Creació de Programa RPC
 editrpc_title2=Edició de Programa RPC
 editrpc_detail=Detalls del Programa RPC
@@ -71,7 +78,10 @@ editrpc_execasuser=Executa com a Usuari
 editrpc_max=Màxim per Minut
 editrpc_default=Defecte
 editrpc_execasgrp=Executa com a Grup
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 editserv_title1=Creació de Servei Internet
 editserv_title2=Edició de Servei Internet
 editserv_detail=Detalls del Servei d'Internet
@@ -85,7 +95,6 @@ editserv_wrapper=Embolcall TCP
 editserv_inetd=Intern d'<tt>inetd</tt>
 editserv_qm=L'ordre pot no existir
 editserv_ename=No existeix cap servei amb aquest nom i protocol
-
 log_apply=Canvis aplicats
 log_create_serv=S'ha creat el servei $1
 log_modify_serv=S'ha modificat el servei $1
@@ -102,7 +111,6 @@ log_delete_prog_l=S'ha suprimit el servei $1 al port $2 pel programa $3
 log_create_rpc=S'ha creat l'RPC $1
 log_modify_rpc=S'ha modificat l'RPC $1
 log_delete_rpc=S'ha suprimit l'RPC $1
-
 log_create_rprog=S'ha creat l'RPC i el programa $1
 log_modify_rprog=S'ha modificat l'RPC i el programa $1
 log_delete_rprog=S'ha suprimit l'RPC i el programa $1
@@ -112,5 +120,8 @@ log_delete_rpc_l=S'ha suprimit l'RPC $1 número $2
 log_create_rprog_l=S'ha creat l'RPC $1 número $2 pel programa $3
 log_modify_rprog_l=S'ha modificat l'RPC $1 número $2 pel programa $3
 log_delete_rprog_l=S'ha suprimit l'RPC $1 número $2 pel programa $3
+<<<<<<< HEAD
 
 __norefs=1
+=======
+>>>>>>> upstream/master

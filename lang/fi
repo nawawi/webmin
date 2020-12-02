@@ -9,9 +9,13 @@ main_none=Sinulla ei ole oikeuksia mihinkään Webmin moduuliin.
 main_skill=Vaikeustaso
 main_readonly=(Vain lukuoikeus -moodi)
 main_return=Takaisin $1
+<<<<<<< HEAD
 
 link_essl=HTTPS yhteyteen tarvittavaa Net::SSLeay Perl moduulia ei ole asennettu järjestelmääsi.
 
+=======
+link_essl=HTTPS yhteyteen tarvittavaa Net::SSLeay Perl moduulia ei ole asennettu järjestelmääsi.
+>>>>>>> upstream/master
 category_servers=PalvelimetServers
 category_hardware=Laitteisto
 category_system=Systeemi
@@ -20,8 +24,11 @@ category_net=Verkkoliikenne
 category_syslet=Sysletit
 category_cluster=Klusteri
 category_info=Tiedot
+<<<<<<< HEAD
 category_=Muut
 
+=======
+>>>>>>> upstream/master
 longcategory_servers=Moduulit webin, sähköpostin, FTP ja muiden palvelimien konfigurointiin
 longcategory_hardware=Moduulit printtereiden, kiintolevyjen ja muiden laitteistojen konfigurointiin
 longcategory_system=Moduulit käyttäjien, tiedostojärjestelmien, ajastettujen komentojen ja muiden konfigurointiin
@@ -29,13 +36,15 @@ longcategory_webmin=Moduulit itse Webminin konfigurointiin
 longcategory_net=Moduulit verkkoliikenteen konfigurointiin
 longcategory_cluster=Moduulit, joilla voidaan hallita samanaikaisesti useita palvelimia
 longcategory_info=Moduulit, jotka näyttävät tietoja järjestelmästäsi
+<<<<<<< HEAD
 longcategory_=Moduulit, jotka eivät sovi muihin kategorioihin
+=======
+>>>>>>> upstream/master
 header_webmin=Webmin aloitussivu
 header_module=Moduuli aloitussivu
 header_help=Apua..
 header_config=Moduuli asetukset
 header_servers=Webmin palvelimet
-
 index=aloitussivu
 yes=Kyllä
 no=Ei
@@ -61,14 +70,16 @@ cancel=Peruuta
 helpsearch=Etsi dokumentaatio..
 switch_remote_euser=Unix käyttäjää $1 ei ole olemassa.
 programname=Webmin
-
 chooser_title1=Valiltse tiedosto..
 chooser_title2=Valitse hakemisto..
 chooser_dir=Hakemisto $1
 chooser_ok=Ok
 chooser_date=Valitse päivä
 chooser_eopen=Luettelointi epäonnistui : $1
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 users_title1=Valitse käyttäjät..
 users_title2=Valitse käyttäjä..
 users_sel=Valitut käyttäjät
@@ -76,7 +87,10 @@ users_all=Kaikki käyttäjät
 users_ok=Ok
 users_cancel=Peruuta
 users_clear=Tyhjennä
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 groups_title1=Valitse ryhmät..
 groups_title2=Valitse ryhmä..
 groups_all=Kaikki ryhmät
@@ -84,7 +98,10 @@ groups_sel=Valitut ryhmät
 groups_ok=Ok
 groups_cancel=Peruuta
 groups_clear=Tyhjennä
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 modules_title1=Valitse moduulit..
 modules_title2=Valitse moduuli..
 modules_sel=Valitut moduulit
@@ -92,7 +109,10 @@ modules_all=Kaikki moduulit
 modules_ok=Ok
 modules_cancel=Peruuta
 modules_clear=Tyhjennä
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 config_ecannot=Sinulla ei ole oikeuksia muutta tämän moduulin asetuksia
 config_title=Asetukset
 config_dir=Moduuliin $1
@@ -103,7 +123,10 @@ config_err=Asetusten tallennus epäonnistui
 config_nochange=Älä muuta
 config_setto=Aseta
 config_ewebmin=Parametri tyyppi 14 toimii vain Webminissä
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 help_err=Avun näyttäminen epäonnistui
 help_epath=Puuttuva tai virheellinen apu polku
 help_efile=Apu tiedoston $1 lukeminen epäonnistui
@@ -111,6 +134,7 @@ help_eheader=Puuttuva &lt;otsikko&gt; osio
 help_einclude=$1 liittäminen epäonnistui
 help_eif=$1 epäonnistui : $2
 help_eexec=$1 epäonnistui : $2
+<<<<<<< HEAD
 
 referer_title=Tietoturva varoitus
 referer_warn=<b>Varoitus!</b> Webmin on havainnut, että ohjelma $2 oli linkitetty osoitteesta $1, joka näyttää olevan Webmin palvelimen ulkopuolella. Tämä voi olla yritys saada palvelimesi suorittamaan haittakoodia.
@@ -120,6 +144,11 @@ referer_again=Älä näytä tätä varoitusta tulevaisuudessa
 referer_eurl=Virheellinen alkuperäinen URL!
 referer_eself=referer_save.cgi tiedostoon ei voi linkittää suoraan!
 
+=======
+referer_title=Tietoturva varoitus
+referer_warn=<b>Varoitus!</b> Webmin on havainnut, että ohjelma $2 oli linkitetty osoitteesta $1, joka näyttää olevan Webmin palvelimen ulkopuolella. Tämä voi olla yritys saada palvelimesi suorittamaan haittakoodia.
+referer_warn_unknown=<b>Varoitus!</b> Webmin on havainnut, että ohjelma $1 oli linkitetty tuntemattomasta osoitteesta, joka näyttää olevan Webmin palvelimen ulkopuolella. Tämä voi olla yritys saada palvelimesi suorittamaan haittakoodia.
+>>>>>>> upstream/master
 session_header=Webmin kirjautuminen
 session_mesg=Sinun täytyy syöttää käyttäjätunnus ja salasana kirjautuaksesi Webmin palvelimelle $1.
 session_mesg2=Sinun täytyy syöttää käyttäjätunnus ja salasana kirjautuaksesi.
@@ -131,13 +160,15 @@ session_failed=Kirjautuminen epäonnistui. Ole hyvä ja yritä uudelleen.
 session_logout=Ulos kirjautuminen onnistui. Käytä alla olevaa lomaketta kirjautuaksesi uudelleen.
 session_timed_out=Sessio aikakatkaistu sen oltua $1 minuuttia käyttämättä.
 session_save=Muista kirjautuminen aina?
-
 pam_header=Kirjaudu Webminiin
 pam_mesg=Sinun täytyy vastata alla olevaan kysymykseen kirjautuaksesi Webmin palvelimelle $1.
 pam_mesg2=Sinun täytyy vastata alla olevaan kysymykseen kirjautuaksesi.
 pam_login=Jatka
 pam_restart=Käynnistä uudelleen
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 acl_root=Tiedostovalitsimen juurihakemisto
 acl_otherdirs=Muut näkyvät hakemistot tiedostovalitsimessa
 acl_nodot=Piilota . tiedostot tiedostovalitsimessa?
@@ -164,10 +195,15 @@ acl_rpc=Voi hyväksyä RPC kutsut?
 acl_rpc2=Vain <tt>root</tt> tai <tt>admin</tt>
 acl_rpc1=Kyllä
 acl_rpc0=Ei
+<<<<<<< HEAD
 acl_readonly=Käyttäjä on demo moodissa?<br>(Jotkut moduulit eivät välttämättä ole käytettävissä)
 acl_fileunix=Katsele tiedostoja Unix käyttäjänä
 acl_sameunix=Sama kuin Webmin käyttäjätunnus
 
+=======
+acl_fileunix=Katsele tiedostoja Unix käyttäjänä
+acl_sameunix=Sama kuin Webmin käyttäjätunnus
+>>>>>>> upstream/master
 month_1=Tammikuu
 month_2=Helmikuu
 month_3=Maaliskuu
@@ -180,7 +216,6 @@ month_9=Syyskuu
 month_10=Lokakuu
 month_11=Marraskuu
 month_12=Joulukuu
-
 day_0=Sunnuntai
 day_1=Maanantai
 day_2=Tiistai
@@ -188,7 +223,6 @@ day_3=Keskiviikko
 day_4=Torstai
 day_5=Perjantai
 day_6=Lauantai
-
 smonth_1=Tam
 smonth_2=Hel
 smonth_3=Maa
@@ -201,7 +235,6 @@ smonth_9=Syy
 smonth_10=Lok
 smonth_11=Mar
 smonth_12=Jou
-
 sday_0=Su
 sday_1=Ma
 sday_2=Ti
@@ -209,15 +242,19 @@ sday_3=Ke
 sday_4=To
 sday_5=Pe
 sday_6=La
+<<<<<<< HEAD
 
 emodule=Pääsy kielletty : Käyttäjällä $1 ei ole oikeuksia käyttää moduulia $2
 emodulecheck=Moduuli $1 ei ole käytettävissä järjestelmässäsi
 elock_tries=Tiedoston $1 lukitseminen epäonnistui $2 minuutin jälkeen
 
+=======
+emodule=Pääsy kielletty : Käyttäjällä $1 ei ole oikeuksia käyttää moduulia $2
+emodulecheck=Moduuli $1 ei ole käytettävissä järjestelmässäsi
+>>>>>>> upstream/master
 skill_high=Asiantuntija
 skill_medium=Keskitason käyttäjä
 skill_low=Aloittelija
-
 feedback_title=Webmin palaute
 feedback_desc=Tällä lomakkeella voit raportoida bugeja tai tehdä ehdotuksia Webmin kehittäjille ongelmista tai puuttuvista ominaisuuksista. Painettaessa Lähetä nappia lomake lähetetään osoitteeseen $1.
 feedback_desc2=Tämä palaute lähetetään Webmin kehittäjälle, ei järjestelmäsi pääkäyttäjälle, ISP:lle tai palveluntarjoajallesi. Ole hyvä ja kirjoita palautteesi englanniksi, vaikka käyttäisitkin jotain muuta kieltä.
@@ -246,6 +283,7 @@ feedback_to=Lähetä palaute osoitteisiin
 feedback_enoto=Palautteen vastaanottjaksi ei valittu yhtään osoitetta
 feedback_ecannot=Sinulla ei ole oikeuksia lähettää palautetta
 feedback_ecannot2=Sinulla ei ole oikeuksia lähettää asetustiedostot sisältävää palautetta
+<<<<<<< HEAD
 
 progress_size=Ladataan $1 ($2 byteä) ..
 progress_nosize=Ladataan $1 ..
@@ -258,6 +296,14 @@ readparse_cdheader=Puuttuva Content-Disposition otsake
 readparse_enc=Odotettiin form-data koodausta mutta saatiin normaalia koodausta
 readparse_max=Datan määrä ylitti maksimikoon $1 byteä
 
+=======
+progress_nosize=Ladataan $1 ..
+progress_done=.. lataus valmis.
+progress_incache=Löydettiin $1 välimuistista ..
+readparse_cdheader=Puuttuva Content-Disposition otsake
+readparse_enc=Odotettiin form-data koodausta mutta saatiin normaalia koodausta
+readparse_max=Datan määrä ylitti maksimikoon $1 byteä
+>>>>>>> upstream/master
 password_expired=Salasanasi on vanhentunut ja sinun täytyy valita uusi.
 password_header=Valitse uusi salasana
 password_user=Käyttäjätunnus
@@ -274,7 +320,10 @@ password_enew1=Uutta salasanaa ei syötetty
 password_enew2=Uudet salasanasi eivät täsmää
 password_epam=PAM virhe : $1
 password_emodpam=Authen::PAM perl moodulia ei ole asennettu. Sitä tarvitaan salanan vaihtoon.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 ui_mandatory=Tämä kenttä on pakollinen
 ui_checkmandatory=Mitään ei valittu
 ui_errors=Useita virheitä löytyi :
@@ -288,9 +337,11 @@ ui_edate=Virheellinen päiväys
 ui_etime=Virheellinen aika
 ui_paging=Näytetään rivit $1 - $2 / $3
 ui_rowlabel=$2 rivillä $1 :
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 header_statusmsg=$1 kirjautui $2 $3 palvelimella $4 ($5)
-
 uptracker_title=Ladataan tiedostoa
 uptracker_file=Tiedostonimi
 uptracker_size=Koko

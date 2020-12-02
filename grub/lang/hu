@@ -8,7 +8,10 @@ index_none=Nincsenek meghatározva indítási opciók. A grub telepítése előt
 index_efile=A $1 GRUB menüfájl nem található a rendszeren. Előfordulhat, hogy a GRUB nincs telepítve, vagy a <a href='$2'>modul-konfiguráció</a> helytelen.
 index_epath=A $1 GRUB futtatható állomány nem található a rendszeren. Előfordulhat, hogy a GRUB nincs telepítve, vagy a <a href='$2'>modul-konfiguráció</a> helytelen.
 index_return=Opciók listája
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 title_add=Rendszerindítási opció hozzáadása
 title_edit=Rendszerindítási opció szerkesztése
 title_header=Rendszerindító menüpontok részletei
@@ -25,7 +28,10 @@ title_chain=Egyéb operációs rendszer
 title_chain_def=A partíció első szektorából
 title_chain_file=A lánctöltő fájlból
 title_makeactive=Aktívvá teszi a gyökérpartíciót?
+<<<<<<< HEAD
 title_none=Semelyik (nem rendszertöltő menüpont)
+=======
+>>>>>>> upstream/master
 title_err=A rendszerindító opció mentése sikertelen
 title_etitle=Hiányzó opciónév
 title_eroot=Hiányzó gyökérpartíció
@@ -34,7 +40,10 @@ title_echain=Hiányzó vagy érvénytelen lánctöltő fájl
 title_edev=Nem támogatott gyökérpartíció eszköz $1
 title_einitrd=Hiányzó kezdeti ramdiszk fájlnév
 title_lock=Zárolt jelszó?
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 global_title=Globális opciók
 global_header=Globális rendszerindítási menüpontok
 global_default=Alapértelmezett rendszerindítási opció
@@ -48,18 +57,27 @@ global_other=Egyéb
 global_password=Rendszerindítási jelszó
 global_none=Egyik sem
 global_password_file=Jelszó beírásakor a menüfájl használata:
+<<<<<<< HEAD
 global_pass
+=======
+>>>>>>> upstream/master
 global_err=A globális opciók mentése sikertelen
 global_etimeout=Hiányzó vagy érvénytelen holtidő
 global_edev=Nem támogatott telepítési lemez/partíció $1
 global_eother=Hiányzó vagy érvénytelen lemez/partíció
 global_epassword=Hiányzó vagy érvénytelen rendszerindítási jelszó
 global_epasswordfile=Hiányzó pótmenü fájlnév
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 install_title=A GRUB telepítése
 install_err=A GRUB telepítése sikertelen
 install_efind=A menüfájl nem található
 install_desc=A GRUB telepítése a(z) $1-re a(z) $2 és $3 parancsokkal ..
 install_ok=.. a telepítés kész.
 install_failed=.. a telepítés sikertelen!
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master

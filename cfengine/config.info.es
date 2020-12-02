@@ -7,4 +7,7 @@ cfd=Trayectoria a programa cfd,0
 cfd_conf=Trayectoria a archivo cfd.conf,3,Automática
 start_cmd=Comando para arrancar cfd,3,Sólo ejecutar daemon
 stop_cmd=Comando para parar cfd,3,Sólo matar proceso
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master

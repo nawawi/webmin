@@ -1,7 +1,10 @@
 index_title=Servidor de Base de Datos PostgreSQL
 index_notrun=PostgreSQL no se está ejecutando en tu sistema - la lista de bases de datos no pudo ser recuperada.
 index_start=Arrancar Servidor PostgreSQL
+<<<<<<< HEAD
 index_startmsg=Haz click en este botón para arrancar el servidor de base de datos PostgreSQL en tu sistema con el comando <br>$1<br>. Este módulo de Webmin no puede administrar la base de datos hasta que esté arrancada.
+=======
+>>>>>>> upstream/master
 index_nopass=Webmin necesita saber tu login de administración de PostgreSQL y tu clave de acceso con el fin de gestionar tu base de datos. Por favor, digita debajo tu nombre de usuario de administración y la clave de acceso.
 index_ltitle=Login a PostgreSQL
 index_login=Login
@@ -19,12 +22,18 @@ index_superuser=El programa cliente de PostgreSQL psql no se pudo ejecutar en tu
 index_eversion=La base de datos PostgreSQL de tu sistema es de la versión $1, pero Webmin sólamente soporta las versiones $2 y superiores.
 index_elibrary=El programa cliente $1 de PostgreSQL no pudo ser ejecutado porque no se pudo hallar las bibliotecas compartidas de Postgres. Revisa la <a href='$2'>configuración del módulo</a> y segúrate de que la <i>Trayectoria a las bibliotecas compartidas de PostgreSQL</i> está bién puesta.
 index_version=Versión $1 de POostgreSQL
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 login_err=Falló el login
 login_ecannot=No estás autorizado a configurar el login a la base de datos
 login_elogin=Login de administración sin poner
 login_epass=Nombre de usuario o clave de acceso de administración incorrectos
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 dbase_title=Editar Base de Datos
 dbase_noconn=Esta base de datos no está aceptando conexiones en este momento. Por ello, no se pueden realizar acciones en ella.
 dbase_tables=Tablas de Base de Datos
@@ -35,7 +44,10 @@ dbase_none=Esta base de datos no tiene tablas.
 dbase_fields=Campos:
 dbase_return=lista de tablas
 dbase_ecannot=No estás autorizado a editar esta base de datos
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 table_title=Editar Tabla
 table_title2=Crear Tabla
 table_opts=Opciones de campo
@@ -59,7 +71,10 @@ table_etype=Tipo sin poner para campo $1
 table_esize=Medida de tipo sin poner para campo $1
 table_enone=No se han digitado campos iniciales
 table_fielddrop=Borrar Campo
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 field_title1=Añadir Campo
 field_title2=Modificar Campo
 field_in=En tabla $1 en base de datos $2
@@ -72,37 +87,39 @@ field_null=¿Permito nulos?
 field_arr=¿Campo de arreglo?
 field_key=¿Clave primaria?
 field_uniq=¿Única?
+<<<<<<< HEAD
 field_err=No pude salvar campo
+=======
+>>>>>>> upstream/master
 field_esize='$1' no es una medida válida de campo
 field_eenum=No se han digitado valores enumerados
 field_efield='$1' no es un nombre válido de campo
 field_ekey=Los campos que permiten nulos no pueden formar parte de la clave primaria
-
 exec_title=Ejecutar SQL
 exec_header=Digita comando SQL a ejecutar en base de datos $1...
 exec_exec=Ejecutar
 exec_err=No pude ejecutar SQL
 exec_out=Salida del comando SQL $1...
 exec_none=No se ha devuelto dato alguno
-
 stop_err=No pude para el servidor de base de datos
 stop_epidfile=No pude abrir el archivo PID $1
 stop_ekill=No pude matar el proceso $1: $2
 stop_ecannot=No estás autorizado a para el servidor de base de datos
 start_err=No pude arrancar el servidor de base de datos
 start_ecannot=No estás autorizado a arrancar el servidor de base de datos
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 ddrop_err=No pude eliminar la base de datos
 ddrop_title=Eliminar Base de Datos
 ddrop_rusure=¿Estás seguro de querer eliminar la base de datos $1?. $2 tablas conteniendo $3 filas de datos serán borradas.
 ddrop_mysql=A causa de que ésta es la base de datos maestra, ¡eliminarla haría probáblemente que tu servidor PostgreSQL quedara inservible!
 ddrop_ok=Eliminar Base de Datos
-
 tdrop_err=No pude eliminar tabla
 tdrop_title=Eliminar Tabla
 tdrop_rusure=¿Estás seguro de querer eliminar la tabla $1 en la base de datos $2?. $3 filas de datos serán borradas.
 tdrop_ok=Eliminar Tabla
-
 view_title=Datos de Tabla
 view_pos=Filas $1 a $2 de $3
 view_none=Esta tabla no contiene dato alguno
@@ -112,7 +129,10 @@ view_delete=Borrar filas seleccionadas
 view_nokey=Los datos de esta tabla no pueden ser editados ya que no tiene clave primaria.
 view_all=Seleccionar todo
 view_invert=Invertir selección
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 newdb_title=Crear Base de Datos
 newdb_header=Nuevas opciones de Base de Datos
 newdb_db=Nombre de base de datos
@@ -121,7 +141,6 @@ newdb_err=No pude crear base de datos
 newdb_edb=Nombre de base de datos inválido o sin poner
 newdb_ecannot=No estás autorizado a crear bases de datos
 newdb_epath=Trayectoria de base de datos sin poner
-
 user_title=Usuarios de PostgreSQL
 user_ecannot=No estás autorizado a editar usuarios
 user_name=Nombre de usuario
@@ -140,7 +159,10 @@ user_none=Ninguna
 user_err=No pude salvar usuario
 user_epass=Clave de acceso inválida o sin poner
 user_ename=Nombre de usuario inválido o sin poner
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 host_ecannot=No estás autorizado a editar máquinas autorizadas
 host_title=Máquinas Autorizadas
 host_desc=Cuando un cliente se conecta a la base de datos, las máquinas listadas debajo son procesadas en orden hasta que una coincide y el cliente es autorizado o denegado.
@@ -160,7 +182,10 @@ host_crypt=Clave de acceso encriptada
 host_krb4=Kerberos V4
 host_krb5=Kerberos V5
 host_passwordarg=Usar archivo de clave de acceso
+<<<<<<< HEAD
 host_identarg=Usar mapa de usuario
+=======
+>>>>>>> upstream/master
 host_create=Crear Máquina Autorizada
 host_edit=Editar Máquina Autorizada
 host_single=Máquina única
@@ -174,7 +199,6 @@ host_enetmask=Máscara de red inválida o sin poner
 host_enetwork=Red inválida o sin poner
 host_ehost=Dirección IP de máquina inválida o sin poner
 host_move=Mover
-
 grant_title=Privilegios garantizados
 grant_tvi=Objeto
 grant_type=Tipo
@@ -198,7 +222,10 @@ grant_v=Vista
 grant_i=Índice
 grant_S=Secuencia
 grant_none=No existen tablas, vistas, secuencias o índices a los que garantizarles privilegios.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 group_title=Grupos de PostgreSQL
 group_ecannot=No estás autorizado a editar grupos
 group_name=Nombre de grupo
@@ -214,9 +241,13 @@ group_ename=Nombre de grupo inválido o sin poner
 group_egid=ID de grupo inválida o sin poner
 group_etaken=El nombre de grupo ya está en uso
 group_none=No existen actuálmente grupos de PostgreSQL
+<<<<<<< HEAD
 
 esql=SQL $1 falló: $2
 
+=======
+esql=SQL $1 falló: $2
+>>>>>>> upstream/master
 log_start=Arrancado servidor de PostgreSQL
 log_stop=parado servidor de PostgreSQL
 log_db_create=Creada base de datos $1
@@ -250,8 +281,11 @@ log_modify_hba=Modificada máquina autorizada $1
 log_delete_hba=Borrada máquina autorizada $1
 log_move_hba=Movida máquina $1 autorizada
 log_grant=Garantizados privilegios sobre $1 en base de datos $2
+<<<<<<< HEAD
 log_pgconf=Archivo $1 de configuración de ejecución modificado
 
+=======
+>>>>>>> upstream/master
 acl_dbs=Bases de datos que este usuario puede gestionar
 acl_dbscannot=Este control de acceso será efectivo tras arrancar el servidor de base de datos PostgreSQL.
 acl_dall=Todas las bases de datos
@@ -260,6 +294,7 @@ acl_create=¿Puede crear nuevas bases de datos?
 acl_delete=¿Puede eliminar bases de datos?
 acl_stop=¿Puede parar y arrancar el servidor PostgreSQL?
 acl_users=¿Puede editar usuarios, grupos y garantías?
+<<<<<<< HEAD
 acl_pgconf=¿Puede editar los parámetros de configuración de ejecución?
 
 fdrop_err=Error durante el borrado del campo
@@ -302,3 +337,6 @@ pgconfst_lock_tracing=Traza de Bloqueo
 pgconfst_etc=Otros
 
 pgconf_wal_sync_method_com=Dependencia de Plataforma.
+=======
+fdrop_err=Error durante el borrado del campo
+>>>>>>> upstream/master

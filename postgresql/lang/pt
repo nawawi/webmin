@@ -1,7 +1,10 @@
 index_title=Servidor de Base de Dados PostgreSQL
 index_notrun=O servidor PostgreSQL não está activo no sistema - Não foi possível obter a lista das base de dados.
 index_start=Iniciar Servidor de Bases de Dados PostgreSQL
+<<<<<<< HEAD
 index_startmsg=Pressione este botão para iniciar o servidor de bases de dados PostgreSQL no sistema com o comando <br>$1<br>. Este módulo do Webmin não consegue administrar as bases de dados até que o serviço esteja activo.
+=======
+>>>>>>> upstream/master
 index_nopass=O Webmin necessita saber as suas credenciais de administração do PostgreSQL de forma a poder gerir as suas bases de dados. Introduza as suas credenciais de administração em baixo.
 index_nouser=A sua conta do Webmin está configurada para se ligar ao servidor PostgreSQL com o utilizador $1, mas o acesso a esse utilizador encontra-se negado. 
 index_ltitle=Login PostgreSQL
@@ -29,12 +32,18 @@ index_nomods=Aviso: Os módulos de Perl $1 e $2 não se encontram instalados no 
 index_nodbs=Não possui acesso a quaisquer bases de dados.
 index_backup=Efectuar Cópia de segurança das Bases de Dados
 index_backupmsg=Prima este botão para configurar a cópia de segurança de todas as bases de dados PostgreSQL, quer para operação imediata ou operação agendada.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 login_err=Falha na autenticação
 login_ecannot=Não lhe é permitido configurar o identificador de acesso à base de dados
 login_elogin=Autenticação administrativa em falta
 login_epass=Falha na autenticação administrativa
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 dbase_title=Editar Base de Dados
 dbase_noconn=Esta base de dados não aceita ligações de momento. Não é possível efectuar qualquer acção sobre ela.
 dbase_tables=Tabelas da Base de Dados
@@ -45,7 +54,10 @@ dbase_none=Esta base de dados não tem tabelas.
 dbase_fields=Campos:
 dbase_return=lista de tabelas
 dbase_ecannot=Não lhe é permitida a edição desta base de dados
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 table_title=Editar Tabela
 table_title2=Criar Tabela
 table_opts=Opções dos campos
@@ -70,7 +82,10 @@ table_esize=Tamanho de tipo para o campo $1 em falta
 table_enone=Não foram introduzidos campos iniciais
 table_fielddrop=Remover campo
 table_eblob=Não é necessário especificar tamanho para o campo $1 do tipo BLOB
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 field_title1=Adicionar Campo
 field_title2=Alterar Campo
 field_in=Na tabela $1 da base de dados $2
@@ -89,7 +104,10 @@ field_esize='$1' não é um tamanho válido para um campo
 field_eenum=Não foram introduzidos valores de enumeração
 field_efield='$1' não é um nome válido para um campo
 field_ekey=Campos que permitem nulls não podem ser chaves primárias
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 exec_title=Executar SQL
 exec_header=Introduza um comando SQL para ser executado na base de dados $1 ..
 exec_exec=Executar
@@ -104,25 +122,33 @@ exec_efile=O ficheiro local não existe ou tem permissões de leitura
 exec_uploadout=Resultado dos comandos SQL carregados ..
 exec_fileout=Resultado dos comandos SQL no ficheiro $1 ..
 exec_noout=Não houve retorno de resultados
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 stop_err=Falha ao parar o servidor de base de dados
 stop_epidfile=Falha ao abrir o ficheiro de PID $1
 stop_ekill=Falha ao terminar o processo $1 : $2
 stop_ecannot=Não lhe é permitido parar o servidor da base de dados
 start_err=Falha ao iniciar o servidor da base de dados
 start_ecannot=Não lhe é permitido iniciar o servidor da base de dados
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 ddrop_err=Falha na remoção da base de dados
 ddrop_title=Remover Base de Dados
 ddrop_rusure=Tem a certeza de que quer remover a base de dados $1 ? serão também removidas $2 tabelas contendo $3 registos de dados.
 ddrop_mysql=Tratando-se da base de dados principal, ao removê-la irá provavelmente inutilizar o seu servidor de base de dados PostgreSQL!
 ddrop_ok=Remover Base de Dados
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 tdrop_err=Falha na remoção da tabela
 tdrop_title=Remover Tabela
 tdrop_rusure=Tem a certeza de que quer remover a tabela $1 da base de dados $2 ? serão também removidos $3 registos de dados.
 tdrop_ok=Remover Tabela
-
 view_title=Dados da Tabela
 view_pos=Registos $1 a $2 de $3
 view_none=Esta tabela não contém dados
@@ -149,7 +175,10 @@ view_keep=Deixar inalterado
 view_set=Configurar para os conteúdos de ficheiro..
 view_warn=Aviso - carregar ficheiros e visualisar os conteúdos de campos dos tipos <tt>text</tt> ou <tt>bytea</tt> dificilmente será possível a menos que os módulos de Perl $1 e $2 estejam instalados e configurados.
 view_adv=Pesquisa avançada
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 newdb_title=Criar Base de Dados
 newdb_header=Preferências para a nova base de dados
 newdb_db=Nome da Base de Dados
@@ -160,7 +189,6 @@ newdb_ecannot=Não lhe é permitida a criação de bases de dados
 newdb_ecannot2=Não lhe é permitida a criação de mais bases de dados
 newdb_epath=Caminho para a base de dados em falta
 newdb_user=Propriedade do utilizador
-
 user_title=Utilizadores PostgreSQL
 user_ecannot=Não lhe é permitida a edição de utilizadores
 user_name=Identificador
@@ -185,7 +213,10 @@ user_sync=As opções abaixo configuram a sincronização entre utilizadores Uni
 user_sync_create=Adicionar um novo utilizador PostgreSQL aquando da criação de um novo utilizador Unix.
 user_sync_modify=Sincronizar utilizador PostgreSQL quando a conta do utilizador correspondente é alterada.
 user_sync_delete=Remover utilizador PostgreSQL quando a conta do utilizador correspondente é apagada.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 host_ecannot=Não lhe permitida a edição do controlo de acessos de anfitriões cliente
 host_title=Anfitriões Autorizados
 host_desc=Aquando da ligação de um cliente à base de dados, a lista de anfitriões abaixo é processada pela ordem apresentada até que o cliente seja dado como autorizado ou não autorizado.
@@ -213,7 +244,10 @@ host_krb4=Kerberos V4
 host_krb5=Kerberos V5
 host_pam=PAM
 host_passwordarg=Utilizar ficheiro de passwords
+<<<<<<< HEAD
 host_identarg=Utilizar mapeamento de utilizadores
+=======
+>>>>>>> upstream/master
 host_pamarg=Usar serviço PAM
 host_create=Criar anfitrião autorizado
 host_edit=Editar anfitrião autorizado
@@ -233,7 +267,10 @@ host_edb=Não foram fornecidos nomes de bases de dados
 host_euser=Não foram fornecidos identificadores
 host_ssl=Exigir ligação SSL?
 host_viassl=Via SSL
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 grant_title=Privilégios atribuidos
 grant_tvi=Objecto
 grant_type=Tipo
@@ -257,7 +294,10 @@ grant_v=Vista
 grant_i=Índice
 grant_S=Sequência
 grant_none=Não existem quaisquer tabelas, vistas, sequências ou índices para atribuir privilégios.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 group_title=Grupos PostgreSQL
 group_ecannot=Não lhe é permitido editar grupos
 group_name=Nome do Grupo
@@ -273,9 +313,11 @@ group_ename=Nome de grupo inválido ou inexistente
 group_egid=ID de grupo inválido ou inexistente
 group_etaken=O nome de grupo escolhido já se encontra atribuido
 group_none=Não existem grupos PostgreSQL actualmente
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 esql=SQL $1 falhou com : $2
-
 log_start=Servidor PostgreSQL iniciado
 log_stop=Servidor PostgreSQL parado
 log_db_create=Base de Dados $1 criada
@@ -314,7 +356,10 @@ log_backup=Cópia de segurança da base de dados $1 efectuada
 log_backup_l=Cópia de segurança da base de dados $1 efectuada para o ficheiro $2
 log_backup_all=Cópia de segurança de todas as bases de dados efectuada
 log_backup_all_l=Cópia de segurança de todas as bases de dados efectuada para o ficheiro $2
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 acl_dbs=Bases de dados que o utilizador pode gerir
 acl_dbscannot=Este controlo de acessos tornar-se-á efectivo após re-iniciar o servidor de base de dados PostgreSQL.
 acl_dall=Todas as bases de dados
@@ -331,6 +376,7 @@ acl_user_def=Identificador do Configurador de Módulos
 acl_user=Identificador
 acl_pass=Senha
 acl_sameunix=Ligar e efectuar cópias de segurança usando o mesmo identificador do Unix?
+<<<<<<< HEAD
 
 fdrop_err=Falha na remoção do campo
 fdrop_header=Remover Este
@@ -348,6 +394,16 @@ restore_title=Repôr Bases de Dados
 restore_header=Repôr opções das bases de dados
 restore_db=Nome da Base de Dados
 restore_path=Caminho para o ficheiro de cópia de segurança
+=======
+fdrop_err=Falha na remoção do campo
+setup_err=Falha na inicialização da base de dados
+setup_ecannot=Não lhe é permitida a inicialização da base de dados
+dbase_bkup=Cópia Segurança
+dbase_rstr=Repôr Cópia Segurança
+restore_title=Repôr Bases de Dados
+restore_header=Repôr opções das bases de dados
+restore_db=Nome da Base de Dados
+>>>>>>> upstream/master
 restore_err=Falha na restauração da base de dados
 restore_edb=Nome de base de dados inválido ou inexistente
 restore_eacl=É necessário que tenha permissões para criar e remover bases de dados
@@ -360,10 +416,15 @@ restore_ecmd=O comando de reposição $1 não foi encontrado no sistema
 restore_ecannot=Não lhe é permitido repôr cópias de segurança
 restore_only=Repôr apenas dados e não tabelas?
 restore_clean=Remover tabelas antes de repôr a cópia?
+<<<<<<< HEAD
 
 backup_title=Repôr Base de Dados
 backup_title2=Efectuar cópia de seguranla de todas as bases de dados
 backup_header=Efectuar cópia de segurança das opções da base de dados
+=======
+backup_title=Repôr Base de Dados
+backup_title2=Efectuar cópia de seguranla de todas as bases de dados
+>>>>>>> upstream/master
 backup_db=Nome da Base de Dados
 backup_desc=Esta consola permite que faça uma cópia de segurança da base de dados $1 como um ficheiro de instruções SQL ou como um arquivo.
 backup_desc2=A reposição da cópia de segurança pode ser efectuada imediatamente ou agendada para execução posterior.
@@ -400,11 +461,14 @@ backup_after=Instrução a executar após a cópia de segurança
 backup_tables=Tabela a incluir na cópia de segurança
 backup_alltables=Todas as tabelas
 backup_seltables=Apenas a tabela
+<<<<<<< HEAD
 
 r_command=Instrução não suportada
 
+=======
+r_command=Instrução não suportada
+>>>>>>> upstream/master
 adv_title=Pesquisa Avançada
 adv_and=Encontrar registos que satisfaçam todos os critérios ..
 adv_or=Encontrar registos que satisfaçam qualquer dos critérios ..
 adv_ok=Pesquisar
-

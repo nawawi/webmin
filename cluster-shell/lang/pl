@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 __norefs=1
 index_all=&lt;Wszystkie hosty&gt;
 index_clear=Wyczyść historię
@@ -7,8 +8,16 @@ index_group=Użytkownicy z $1
 index_old=lub
 index_return=Indeks modułu
 index_run=Uruchom polecenie teraz
+=======
+index_title=Klaster - Polecenia powłoki (shell)
+index_cmd=Polecenie do uruchomienia
+index_old=lub
+>>>>>>> upstream/master
 index_server=Uruchom na serwerach
+index_run=Uruchom polecenie teraz
+index_return=Indeks modułu
 index_this=ten serwer
+<<<<<<< HEAD
 index_title=Klaster - Polecenia powłoki (shell)
 log_clear=Wyczyszczono historię komend
 log_run=Uruchomiono $1 na serwerach $2
@@ -19,3 +28,18 @@ run_err=Nie można uruchomić polecenia
 run_failed=Nie można uruchomić polecenia na $1 : $2
 run_success=Dane wyjściowe z $1 ..
 run_title=Uruchom polecenie
+=======
+index_all=&lt;Wszystkie hosty&gt;
+index_group=Użytkownicy z $1
+index_clear=Wyczyść historię
+index_edit=Edytuj poprzednie
+run_title=Uruchom polecenie
+run_err=Nie można uruchomić polecenia
+run_ecmd=Nie wpisano komendy
+run_failed=Nie można uruchomić polecenia na $1 : $2
+run_success=Dane wyjściowe z $1 ..
+run_enone=Nie wybrano serwerów
+log_clear=Wyczyszczono historię komend
+log_run=Uruchomiono $1 na serwerach $2
+log_run_l=Uruchomiono $1 na $2
+>>>>>>> upstream/master

@@ -3,9 +3,12 @@
 BEGIN { push(@INC, ".."); };
 use WebminCore;
 &init_config();
+
+use lib './lib';
+use POSIX;
 use Encode qw(decode encode);
 use File::Basename;
-use POSIX;
+eval "use File::MimeInfo";
 
 sub get_attr_status {
   return has_command('lsattr');
@@ -68,6 +71,8 @@ sub get_paths {
                              @allowed_paths;
         @allowed_paths = map { s/\$USER/$remote_user/g; $_ } @allowed_paths;
         @allowed_paths = &unique(@allowed_paths);
+	@allowed_paths = map { my $p = $_; $p =~ s/\/\.\//\//; $p }
+			     @allowed_paths;
         if (scalar(@allowed_paths) == 1) {
             $base = $allowed_paths[0];
         } else {
@@ -75,8 +80,12 @@ sub get_paths {
         }
     }
     @allowed_paths = map { &simplify_path($_) } &unique(@allowed_paths);
-    $path = un_urlize($in{'path'}) || '';
-    $html_escaped_path = html_escape($path);
+    if ($in{'path'} =~ /^%2F/) {
+        $path = un_urlize($in{'path'}, 1) || '';
+    } else {
+        $path = $in{'path'} || '';
+    }
+    $quote_escaped_path = quote_escape($path);
     $urlized_path = urlize($path);
     
     $cwd = &simplify_path($base.$path);
@@ -224,7 +233,7 @@ sub print_interface {
         for(my $i = 1; $i <= scalar(@breadcr)-1; $i++) {
             chomp($breadcr[$i]);
             $cp = $cp.'/'.$breadcr[$i];
-            print "<a href='index.cgi?path=$cp'>".
+            print "<a href='index.cgi?path=".&urlize($cp)."'>".
                   &html_escape($breadcr[$i])."</a> / ";
         }
         print "<br />";
@@ -298,10 +307,8 @@ sub print_interface {
         $link =~ s/^\///g;
         $vlink = html_escape($link);
         $vlink = quote_escape($vlink);
-        $vlink = decode('UTF-8', $vlink, Encode::FB_DEFAULT);
-	my $hlink = html_escape($vlink);
+        my $hlink = html_escape($vlink);
         $vpath = quote_escape($vpath);
-        $vpath = decode('UTF-8', $vpath, Encode::FB_DEFAULT);
 
         my $type = $list[$count - 1][14];
         $type =~ s/\//\-/g;
@@ -381,7 +388,7 @@ sub print_interface {
         print &ui_checked_columns_row(\@row_data, "", "name", $vlink);
     }
     print ui_columns_end();
-    print &ui_hidden("path", $urlized_path),"\n";
+    print &ui_hidden("path", $path),"\n";
     print &ui_form_end();
 }
 
@@ -427,6 +434,14 @@ foreach my $allowed_path (@allowed_paths) {
 	}
 $error && &error(&text('notallowed', '`' . &html_escape($file) . '`',
 		   '`' . &html_escape(join(" , ", @allowed_paths)) . '`.'));
+}
+
+sub clean_mimetype
+{
+my ($f) = @_;
+my $t = mimetype($f);
+eval { utf8::encode($t) if (utf8::is_utf8($t)) };
+return $t;
 }
 
 1;

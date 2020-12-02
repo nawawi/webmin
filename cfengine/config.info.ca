@@ -8,4 +8,7 @@ cfd=Camí del programa cfd,0
 cfd_conf=Camí del fitxer cfd.conf,3,Automàtic
 start_cmd=Ordre per iniciar cfd,3,Executa el dimoni
 stop_cmd=Ordre per aturar cfd,3,Mata el procés
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master

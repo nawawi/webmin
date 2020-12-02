@@ -1,7 +1,10 @@
 index_title=DHCP-server
 index_dhcpdnotfound=Det går inte att hitta DHCP-server <i>$1</i> på ditt system. Den är förmodligen inte installerad, eller också är dina <a href=\"$2">DHCP-modulinställningar</a> felaktiga.
 index_return=index
+<<<<<<< HEAD
 index_dhcpdver=DHCP-server <i>$1</i> verkar inte ha rätt version. Webmin stödjer bara ISC DHCPD version 2.
+=======
+>>>>>>> upstream/master
 index_subtitle=Delnät och delade nätverk
 index_nosubdef=Du har inte definierat några delnät eller delade nätverk.
 index_addsub=Lägg till ett delnät
@@ -42,13 +45,15 @@ index_ndisplay=Ordna nät och delnät efter:
 index_norder0=Nivå
 index_norder1=Filstruktur
 index_norder2=Namn/IP-adress
-
 butt_save=Spara
 butt_eco=Ändra klientinställningar
 butt_vco=Visa klientinställningar
 butt_del=Ta bort
 butt_create=Skapa
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 esub_crheader=Lägg till delnät
 esub_edheader=Ändra delnät
 esub_tabhdr=Uppgifter om delnät
@@ -66,7 +71,10 @@ esub_pooladd=Lägg till en adresspool
 esub_none=Ingen
 esub_return=lista över delnät
 esub_retshar=delat nätverk
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 esh_crheader=Skapa delat nätverk
 esh_eheader=Ändra delat nätverk
 esh_tabhdr=Uppgifter om delat nätverk
@@ -75,7 +83,10 @@ esh_hosts=Datorer direkt i detta delade nätverk
 esh_groups=Grupper direkt i detta delade nätverk
 esh_subn=Delnät i detta delade nätverk
 esh_return=lista över delnät
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 ehost_crheader=Lägg till dator
 ehost_eheader=Ändra dator
 ehost_tabhdr=Uppgifter om dator
@@ -95,7 +106,10 @@ ehost_return=datorlista
 ehost_retgroup=grupp
 ehost_retsubn=delnät
 ehost_retshar=delat nätverk
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 egroup_crheader=Lägg till datorgrupp
 egroup_eheader=Ändra datorgrupp
 egroup_tblhdr=Uppgifter om datorgrupp
@@ -105,11 +119,17 @@ egroup_nchoice=Använda namnet som datornamn för klienter?
 egroup_return=datorlista
 egroup_retsubn=delnät
 egroup_retshar=delat nätverk
+<<<<<<< HEAD
 
 default=Standard
 secs=s
 none=Inga
 
+=======
+default=Standard
+secs=s
+none=Inga
+>>>>>>> upstream/master
 listl_header=DHCP-lån
 listl_lfnotexist=DHCPd-lånefilen <tt>$1</tt> finns inte.
 listl_lfnotcont=DHCPd-lånefilen <tt>$1</tt> innehåller inte något $2 lån.
@@ -122,40 +142,57 @@ listl_end=Slutdatum
 listl_return=lista över nätverk och datorer
 listl_all=Visa alla aktiva och utgångna lån
 listl_delete=Klicka på en låne-IP-adress i listan ovan för att ta bort den.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 restart_errmsg1=Det gick inte att starta om dhcpd
 restart_errmsg2=Det gick inte att skicka signal till process
 start_failstart=Det gick inte att starta dhcpd
-
 sgroup_faildel=Det gick inte att ta bort grupp
 sgroup_failsave=Det gick inte att spara grupp
 sgroup_invassign=gruppen har avdelats till en ogiltig sektion
 sgroup_echanged=Innehållet i konfigurationsfilen har ändrats. Försök igen.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 shost_faildel=Det gick inte att ta bort dator
 shost_failsave=Det gick inte att spara dator
 shost_invalidhn=är inte ett giltigt datornamn
 shost_invalidhwa='$1' är inte en giltig $2-adress
 shost_invalidaddr='$1' innehåller ett ogiltigt datornamn eller ogiltig IP-adress
 shost_invassign=datorn har avdelats till en ogiltig sektion
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 sopt_failsave=Det gick inte att spara klientinställningar
 sopt_invalidip=är inte en giltig IP-adress
 sopt_invalidint=är inte ett heltal
 sopt_invalidipp=är inte ett giltigt IP-adresspar (t ex 1.2.3.4,5.6.7.8)
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 sshared_faildel=Det gick inte att ta bort det delade nätverket
 sshared_failsave=Det gick inte att spara delat nätverk
 sshared_invalidsname=Namnet på det delade nätverket saknas eller är inte ett giltigt namn.
 sshared_nosubnet=Det delade nätverket '$1' innehåller inget delnät.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 ssub_faildel=Det gick inte att ta bort delnätet
 ssub_failsave=Det gick inte att spara delnätet
 ssub_invalidsubaddr=är inte en giltig delnätsadress
 ssub_invalidnmask=är inte en giltig nätmask
 ssub_invalidipr=är inte ett giltigt IP-adressintervall
 ssub_nosubnet=Det delade nätverket '$1' innehåller inget delnät.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 plib_deflt=Standardlånetid
 plib_bfname=Boot-filnamn
 plib_maxlt=Maximal lånetid
@@ -195,7 +232,10 @@ plib_ddnsrevdom=Dynamisk DNS-bakåtuppslagningsdomän
 plib_ddnsup=Slå på dynamisk DNS?
 plib_ddnshost=Datornamn för dynamisk DNS
 plib_ddnshost_def=Från klient
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 eopt_header=Klientinställningar
 eopt_subtitle=För delnät $1
 eopt_returnsub=delnät
@@ -230,7 +270,10 @@ eopt_nbntype=NetBIOS-nodtyp
 eopt_custom=Egen inställning
 eopt_cnum=Nummer
 eopt_cval=Värde
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 log_apply=Tog ändringarna i drift
 log_start=Startade DHCP-server
 log_create_subnet=Skapade delnät $1
@@ -250,14 +293,16 @@ log_delete_group=Tog bort grupp med $1 datorer
 log_modify_group=Modifierade grupp med $1 datorer
 log_options_group=Modifierade inställningarna för grupp med $1 datorer
 log_delete_lease=Tog bort lånet för $1
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 pool_edit=Ändra adresspool
 pool_create=Skapad adresspool
 pool_header=Inställningar för adresspool
 pool_allow=Klienter som ska släppas fram
 pool_deny=Klienter som ska spärras
 pool_return=subnet
-
 cdel_header=Varning
 cdel_shared1=delat nätverk
 cdel_shared2=delat nätverk
@@ -275,7 +320,10 @@ cdel_txt=Om du tar bort $1 '$2' kommer du också att ta bort dess innehåll:
 cdel_confirm=Vill du verkligen ta bort den här $1?
 cdel_eunknown=Okänt fel
 cdel_return=dator- och nätverkslista
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 eacl_aviol=Överträdelse av åtkomsträttigheter
 eacl_np=Du får inte
 eacl_pdh=ta bort en dator
@@ -299,7 +347,10 @@ eacl_pdl=ta bort lån
 eacl_psl=se lån
 eacl_pglob=ändra globala inställningar
 eacl_papply=starta om denna tjänst
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 acl_apply=Kunna ta ändringar i drift?
 acl_r_leases=Kunna se lån?
 acl_w_leases=Kunna ta bort lån?

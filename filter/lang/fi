@@ -4,10 +4,15 @@ index_action=Suodattimen toiminto
 index_move=Siirrä
 index_none=Sinulla ei ole yhtään suodatinta määriteltynä vielä. Kaikki sähköpostisi toimitetaan normaalisti Inboxiin.
 index_none2=Mikään Procmail säännöistäsi ei ole tarpeeksi yksinkertainen tässä näytettäväksi.
+<<<<<<< HEAD
 index_none3=Sinulla ei ole yhtään suodatinta määriteltynä vielä. Kaikki sähköpostisi toimitetaan normaalisti Inboxiin roskapostisuodatuksen jälkeen.
 index_add=Lisää uusi sähköpostin suodatin.
 index_cspam=Sähköposti on roskaposti
 index_cheader=Otsake $1 täsmää $2
+=======
+index_add=Lisää uusi sähköpostin suodatin.
+index_cspam=Sähköposti on roskaposti
+>>>>>>> upstream/master
 index_cre=Otsakkeet täsmää $1
 index_cre2=Body täsmää $1
 index_calways=Aina
@@ -29,7 +34,6 @@ index_aliasme=Note - The system is also configured forward all email to :
 index_period=Automaattisten vastausten välinen minimiaika
 index_noperiod=Ei minimiä
 index_mins=minuuttia
-
 edit_title1=Luo suodatin
 edit_title2=Muokkaa suodatinta
 edit_header1=Suodattimen ehto

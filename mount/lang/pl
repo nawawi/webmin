@@ -8,7 +8,10 @@ index_add=Zamontuj nowy
 index_auto=Nieznany typ
 index_swap=Pamięć wirtualna
 index_return=listy systemów plików
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 edit_title=Zmień montowanie
 create_title=Zamontuj nowy
 edit_err=Nie udało sie zmienić montowania
@@ -19,7 +22,11 @@ edit_swap=Pamięć wirtualna
 edit_size=Rozmiar
 edit_free=Wolne
 edit_savemount=Zachować montowanie?
+<<<<<<< HEAD
 edit_boot=Zachować i&nbsp;montować przy starcie
+=======
+edit_boot=Zachować i montować przy starcie
+>>>>>>> upstream/master
 edit_save=Zachować
 edit_delete=Skasować
 edit_dont=Nie zachowywać
@@ -37,7 +44,10 @@ edit_save_apply=Zachowaj i zastosuj
 edit_umount=Odmontuj
 edit_perm=Na stałe
 edit_del_umount=Odmontuj i skasuj
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 save_err=Nie udało sie zachować montowania
 save_edir='$1' nie jest katalogiem
 save_edirname='$1' nie jest poprawną nazwą katalogu
@@ -45,6 +55,7 @@ save_ealready='$1' jest już zamontowany
 save_ealready2='$1' jest już przeznaczony do zamontowania
 save_ealready3=Katalog '$1' jest już zamontowany
 save_ealready4=Katalog '$1' ma już przypisane montowanie
+<<<<<<< HEAD
 save_emkdir=Nie udało się utworzyć katalogu $1&nbsp;: $2
 save_eumount=Odmontowanie się nie powiodło&nbsp;: $1
 save_emount=Montowanie się nie powiodło&nbsp;: $1
@@ -53,22 +64,41 @@ save_apply=Zastosuj do listy montowań stałych
 save_eremount=Przemontowanie się nie powiodło&nbsp;: $1
 save_enone=Nie wybrałeś zachowania ani zamontowania
 
+=======
+save_emkdir=Nie udało się utworzyć katalogu $1 : $2
+save_eumount=Odmontowanie się nie powiodło : $1
+save_emount=Montowanie się nie powiodło : $1
+save_perm=Zmiany montowania $1 nie mogą być wykonane, gdyż to montowanie jest aktualnie używane. Jeśli chcesz, żeby zostały jedynie wykonane zmiany na liście montowań stałych, naciśnij przycisk poniżej.
+save_apply=Zastosuj do listy montowań stałych
+save_eremount=Przemontowanie się nie powiodło : $1
+save_enone=Nie wybrałeś zachowania ani zamontowania
+>>>>>>> upstream/master
 swap_err=Nie udało się utworzyć pliku wymiany
 swap_esize='$1' nie jest poprawnym rozmiarem
-
 nfs_server=Wybierz serwer NFS..
+<<<<<<< HEAD
 nfs_select=Wybierz serwer NFS, z&nbsp;którego montować..
+=======
+nfs_select=Wybierz serwer NFS, z którego montować..
+>>>>>>> upstream/master
 nfs_ip=IP Adres
 nfs_host=Komputer
 nfs_none=Nie znaleziono żadnego lokanego serwera NFS
 nfs_choose=Wybierz katalog NFS na $1
+<<<<<<< HEAD
 nfs_failed=Nie udało się uzyskać listy katalogów udostępnianych po NFS z&nbsp;$1&nbsp;: $2 Być może nie działa żaden serwer NFS.
+=======
+nfs_failed=Nie udało się uzyskać listy katalogów udostępnianych po NFS z $1 : $2 Być może nie działa żaden serwer NFS.
+>>>>>>> upstream/master
 nfs_seldir=Wybierz katoalog NFS do zamontowania..
 nfs_dir=Katalog
 nfs_clients=Klienci
-
 smb_choose=Wybierz serwer SMB..
+<<<<<<< HEAD
 smb_elist=Nie udało sie uzyskac listy srwerów z&nbsp;$1. Możliwe, że serwer nie pozwala na przeglądanie
+=======
+smb_elist=Nie udało sie uzyskac listy srwerów z $1. Możliwe, że serwer nie pozwala na przeglądanie
+>>>>>>> upstream/master
 smb_ehost=Serwer $1 nie istnieje
 smb_edown=Serwer $1 jest wyłączony, nieosiągalny lub nie jest serwerem plików
 smb_sel=Wybierz serwer Sieci Windows, zktórego zamontować..
@@ -76,12 +106,19 @@ smb_name=Nazwa serwera
 smb_desc=Opis
 smb_none=Nie znaleziono żadnego lokalnego serwera Sieci Windows
 smb_choose2=Wybierz zasób na $1
+<<<<<<< HEAD
 smb_elist2=Nie udało się uzyskać listy zasobów z&nbsp;$1. Być może serwer nie pozwala na przeglądanie.
+=======
+smb_elist2=Nie udało się uzyskać listy zasobów z $1. Być może serwer nie pozwala na przeglądanie.
+>>>>>>> upstream/master
 smb_sel2=Wybierz zasób do zamontowania..
 smb_share=Zasób
 smb_comment=Opis
 smb_noshares=Brak dostępnych zasobów plikowych na serwerze $1
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 solaris_scsidev=Kontroler SCSI $1 urządzenie $2 podurządzenie $3 partycja $4
 solaris_mddev=Urządzenie RAID $1
 solaris_ecacheexists=Katalog $1 już istnieje. Skasuj go.
@@ -117,7 +154,11 @@ solaris_ro=Tylko do odcztytu?
 solaris_nosuid=Zablokować programy setuid?
 solaris_grpid=Pliki dziedziczą nr GID nadrzędnego?
 solaris_soft=Zgłaszać błędy przy timeoutach?
+<<<<<<< HEAD
 solaris_bg=Powtarzać próby montowania w&nbsp;tle?
+=======
+solaris_bg=Powtarzać próby montowania w tle?
+>>>>>>> upstream/master
 solaris_quota=Wyświetlić quota?
 solaris_nointr=Pozwolić na przerwanie przez użytkownika?
 solaris_nfsver=Wersja NFS
@@ -142,7 +183,11 @@ solaris_time_w=Tygodni
 solaris_time_y=Lat
 solaris_noatime=Aktualizować czasy dostępu?
 solaris_immed=Natychmiast
+<<<<<<< HEAD
 solaris_defer=Z&nbsp;opóźnieniem
+=======
+solaris_defer=Z opóźnieniem
+>>>>>>> upstream/master
 solaris_force=Wymusić bezpośrednie We/Wy?
 solaris_nolarge=Pozwolić na duże pliki?
 solaris_logging=Włączone logowanie?
@@ -164,7 +209,11 @@ solaris_never=Brak
 solaris_demand=Na żądanie
 solaris_waround=Write-around
 solaris_nshared=Nie współdzielony
+<<<<<<< HEAD
 solaris_local=Sprawdzać uprawnienia w&nbsp;cache?
+=======
+solaris_local=Sprawdzać uprawnienia w cache?
+>>>>>>> upstream/master
 solaris_nobrowse=Wolno przeglądać?
 solaris_auto=Automatycznie
 solaris_mname=Nazwa serwera
@@ -175,7 +224,11 @@ solaris_uid=Właścicielem plików jest użytkownik
 solaris_gid=Grupą plików jest
 solaris_fmode=Prawa do plików
 solaris_dmode=Prawa do katalogów
+<<<<<<< HEAD
 solaris_readwrite=Dostęp do odczytu i&nbsp;zapisu jest bezpieczny?
+=======
+solaris_readwrite=Dostęp do odczytu i zapisu jest bezpieczny?
+>>>>>>> upstream/master
 solaris_readonly=Pliki mogą być tylko do odczytu?
 solaris_noupper=Wysyłaj hasła wielkimi literami?
 solaris_attr=Uzywać poleceń attrE?
@@ -184,8 +237,13 @@ solaris_ehost='$1' nie jest poprawną nazwą komputera
 solaris_ehost2=Komputer '$1' nie istnieje
 solaris_edown=Komputer '$1' jest wyłączony lub nie obsługuje NFSu
 solaris_enfs=Komputer '$1' nie obsługuje NFSu
+<<<<<<< HEAD
 solaris_enfsdir='$1' nie jest poprawną nazwą katalogu. Dostępnymi katalogami na $2 są&nbsp;: $3
 solaris_enfsperm=Ten komputer nie ma prawa montować katalogu $1 z&nbsp;$2
+=======
+solaris_enfsdir='$1' nie jest poprawną nazwą katalogu. Dostępnymi katalogami na $2 są : $3
+solaris_enfsperm=Ten komputer nie ma prawa montować katalogu $1 z $2
+>>>>>>> upstream/master
 solaris_enfsmount=Błąd NFS - $1
 solaris_ectrlr='$1' nie jest poprawnym kontrolerem SCSI
 solaris_etarget='$1' nie jest poprawnym SCSI numerem urządzenia
@@ -196,7 +254,11 @@ solaris_epath='$1' nie jest poprawną ścieżką
 solaris_eexist='$1' nie istnieje
 solaris_edir='$1' nie jest katalogiem
 solaris_eswapfile=Plik wymiany '$1' nie istnieje
+<<<<<<< HEAD
 solaris_eopen=Nie udało sie otworzyć $1&nbsp;: $2
+=======
+solaris_eopen=Nie udało sie otworzyć $1 : $2
+>>>>>>> upstream/master
 solaris_ebackfs=The back filesystem '$1' is not mounted
 solaris_ebacktype=The back filesystem is '$1' is not $2
 solaris_ecsrc='$1' nie jest poprawnym źródłem cache
@@ -209,6 +271,7 @@ solaris_enopart=Brak partycji na '$1'
 solaris_edevfile=Plik urządzenia '$1' nie istnieje
 solaris_edevice=Urządzenie '$1' nie istnieje
 solaris_efstyp=Urządzenie '$1' jest sformatowane jako $2
+<<<<<<< HEAD
 solaris_efstyp2=Nie udało się sprawdzić rodzaju systemu plików&nbsp;: $1
 solaris_ecachedir='$1' nie jest poprawnym katalogiem cache
 solaris_efmode='$1' nie jest poprawnym trybem ósemkowym dla plików
@@ -217,6 +280,15 @@ solaris_edmode='$1' nie jest poprawnym trybem ósemkowym dla katalogów
 linux_eamd=AMD zawiódł
 linux_eauto=Nieudane automatyczne montowanie: $1
 linux_esmbconn=Nie udało się połączyć z&nbsp;serwerem
+=======
+solaris_efstyp2=Nie udało się sprawdzić rodzaju systemu plików : $1
+solaris_ecachedir='$1' nie jest poprawnym katalogiem cache
+solaris_efmode='$1' nie jest poprawnym trybem ósemkowym dla plików
+solaris_edmode='$1' nie jest poprawnym trybem ósemkowym dla katalogów
+linux_eamd=AMD zawiódł
+linux_eauto=Nieudane automatyczne montowanie: $1
+linux_esmbconn=Nie udało się połączyć z serwerem
+>>>>>>> upstream/master
 linux_ekillamd=Nie udało się zabić AMD
 linux_ekillauto=Nie udało się zabić procesu automount
 linux_nfshost=Nazwa serwera NFS
@@ -252,7 +324,11 @@ linux_usrgrpquota=Dla użytkowników i grup
 linux_usrgrpquota2=Dla użytkowników i grup (NIESTABILNE!)
 linux_resuid=Zarezerwowana przestrzeń dla użytkownika
 linux_resgid=Zarezerwowana przestrzeń dla grupy
+<<<<<<< HEAD
 linux_bg=Powtarzać próby montowania w&nbsp;tle?
+=======
+linux_bg=Powtarzać próby montowania w tle?
+>>>>>>> upstream/master
 linux_soft=Zgłaszać błędy przy timeoutach?
 linux_timeo=Timeout
 linux_retrans=Liczba retransmisji
@@ -270,7 +346,11 @@ linux_allfiles=Wszystkie pliki
 linux_textfiles=Tylko pliki tekstowe
 linux_umask=Maska praw do pliku
 linux_quiet=Zgłaszać błąd przy <tt>chown</tt>?
+<<<<<<< HEAD
 linux_uni_xlate=Tłumaczyć znaki w&nbsp;Unikodzie?
+=======
+linux_uni_xlate=Tłumaczyć znaki w Unikodzie?
+>>>>>>> upstream/master
 linux_posix=Dozwolone nazwy różniące się tylko wielkością liter?
 linux_conv2=Zamiana końców linii OS/2-Unix
 linux_rock=Ignorować atrybuty uniksowe?
@@ -279,7 +359,11 @@ linux_noopts=Brak opcji
 linux_timeout=Czas bezczynności przed odmontowaniem
 linux_pid_file=Zapisz nr PID do pliku
 linux_secs=sekund
+<<<<<<< HEAD
 linux_smbwarn=Uwaga! System plików nie został zamontowany z&nbsp;Webmina, więc istniejące opcje są niedostępne
+=======
+linux_smbwarn=Uwaga! System plików nie został zamontowany z Webmina, więc istniejące opcje są niedostępne
+>>>>>>> upstream/master
 linux_username=Nazwa logowania
 linux_password=Hasło logowania
 linux_sname=Nazwa serwera
@@ -299,24 +383,37 @@ linux_ehost='$1' nie jest poprawną nazwą komputera
 linux_ehost2=Komputer '$1' nie istnieje
 linux_edown=Komputer '$1' jest wyłączony
 linux_enfs=Komputer '$1' nie obsługuje NFSu
+<<<<<<< HEAD
 linux_elist=Nie udało się pobrać listy montowań&nbsp;: $1
 linux_enfsdir='$1' nie jest poprawną nazwą katalogu. Dostępnymi katalogami na $2 są&nbsp;: $3
 linux_enfsperm=Ten komputer nie ma prawa montować katalogu $1 z&nbsp;$2
+=======
+linux_elist=Nie udało się pobrać listy montowań : $1
+linux_enfsdir='$1' nie jest poprawną nazwą katalogu. Dostępnymi katalogami na $2 są : $3
+linux_enfsperm=Ten komputer nie ma prawa montować katalogu $1 z $2
+>>>>>>> upstream/master
 linux_enfsmount=Błąd NFS - $1
 linux_eautomap=Plik mapy automountera '$1' nie istnieje
 linux_edev=Nie podano urządzenia
 linux_edevfile=Plik urządzenia '$1' nie istnieje
 linux_emask='$1' nie jest poprawną maską ósemkową
 linux_etimeout='$1' nie jest poprawnym timeoutem
+<<<<<<< HEAD
 linux_epidfile='$1' nie jest poprawnym plikiem z&nbsp;numerem PID
+=======
+linux_epidfile='$1' nie jest poprawnym plikiem z numerem PID
+>>>>>>> upstream/master
 linux_efmode='$1' nie jest poprawnym trybem ósemkowym dla plików
 linux_edmode='$1' nie jest poprawnym trybem ósemkowym dla katalogów
 linux_etmpsize=Nie podany lub niepoprawny rozmiar maksymalny
 linux_enr_blocks=Nie podana lub niepoprawna liczba bloków
 linux_enr_inodes=Nie podana lub niepoprawna liczba inodów
 linux_etmpmode=Nie podane lub niepoprawne ósemkowe uprawnienia punkty montowania
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> upstream/master
 log_mount=Zamontowano $3
 log_mount_l=Zamontowano $2 $1 na $3
 log_umount=Odmontowano $3

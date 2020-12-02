@@ -1,7 +1,10 @@
 index_title=PostgreSQL adatbázis szerver
 index_notrun=A PostgreSQL nem fut a rendszeren - az adatbázis-lista nem található.
 index_start=A PostgreSQL szerver elindítása
+<<<<<<< HEAD
 index_startmsg=Kattintson erre a gombra a PostgreSQL adatbázis szerver <br>$1<br> paranccsal való elindításához. Ez a Webmin modul nem tudja módosítani az adatbázist, míg az be nem töltődött.
+=======
+>>>>>>> upstream/master
 index_nopass=Az adatbázisba való belépéshez a Webmin-nek szüksége van a PostgreSQL adminisztrátori felhasználónévre és jelszóra. Kérem írja be adminisztrátori felhasználónevét és jelszavát.
 index_ltitle=PostgreSQL bejelentkezés
 index_login=Bejelentkezés
@@ -22,12 +25,18 @@ index_ldpath=A megosztott állományok elérési útvonala az ön rendszerén $1
 index_version=PostgreSQL $1 verzió
 index_setup=A PostgreSQL gazda konfigurációs fájl $1 nem található a rendszeren, ami arra utal, hogy az adatbázist még nem inicializálták. Kattintson az alábbi gombra a PostgreSQL telepítéséhez a $2 paranccsal.
 index_setupok=Adatbázis inicializálása
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 login_err=Sikertelen bejelentkezés
 login_ecannot=Nem konfigurálhatja az adatbázis beléptetőjét
 login_elogin=Hiányzó adminisztrátori azonosító
 login_epass=Helytelen adminisztrátori felhasználónév, vagy jelszó
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 dbase_title=Adatbázis módosítása
 dbase_noconn=Ez az adatbázis jelenleg nem fogad kapcsolatokat, így nem módosítható
 dbase_tables=Adatbázis táblázatok
@@ -38,7 +47,10 @@ dbase_none=Az adatbázisban nincsenek táblázatok
 dbase_fields=Mezők:
 dbase_return=Táblázatok listája
 dbase_ecannot=Nem módosíthatja az adatbázist
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 table_title=Táblázat módosítása
 table_title2=Táblázat létrehozása
 table_opts=Mező beállításai
@@ -62,7 +74,10 @@ table_etype=Hiányzó szöveg a(z) $1 mezőben
 table_esize=Hiányzó szövegszélesség a(z) $1 mezőben
 table_enone=Nincs megadva kezdeti mező
 table_fielddrop=Mező eldobása
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 field_title1=Mező hozzáadása
 field_title2=Mező módosítása
 field_in=A $2 adatbázis $1 táblázatában
@@ -75,37 +90,55 @@ field_null=Nullák engedélyezése?
 field_arr=Mező sorba rendezése?
 field_key=Elsődleges kulcs?
 field_uniq=Egyedi?
+<<<<<<< HEAD
 field_err=A mezőt nem sikerült menteni
+=======
+>>>>>>> upstream/master
 field_esize=A(z) '$1' érvénytelen mezőméret
 field_eenum=Nincs beírva számozott érték
 field_efield=A(z) '$1' érvénytelen mezőnév
 field_ekey=A nullát tartalmazó mezők nem alkothatják az elsődleges kulcs részét
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 exec_title=SQL futtatása
 exec_header=SQL parancs beírása az$1 adatbázison való futtatáshoz
 exec_exec=Futtatás
 exec_err=SQL futtatása sikertelen
 exec_out=Az SQL parancs $1 eredménye
 exec_none=Nincs kijelzendő adat
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 stop_err=Az adatbázis szerver leállítása sikertelen
 stop_epidfile=A PID fájl $1 megnyitása sikertelen
 stop_ekill=A $1 : $2 folyamat leállítása sikertelen
 stop_ecannot=Nem állíthatja le az adatbázis szervert
 start_err=Az adatbázis szerver elindítása sikertelen
 start_ecannot=Nem indíthatja el az adatbázis szervert
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 ddrop_err=Az adatbázis eldobása sikertelen
 ddrop_title=Adatbázis eldobása
 ddrop_rusure=Biztos benne, hogy elhagyja a(z) $1 adatbázist ? A(z) $2 táblázatok és a(z) $3 adatsorok törlődni fognak.
 ddrop_mysql=Mivel ez a mester adatbázis, elhagyásával a PostgreSQL szerver használhatatlanná válhat!
 ddrop_ok=Adatbázis eldobása
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 tdrop_err=A táblázat eldobása sikertelen
 tdrop_title=Táblázat eldobása
 tdrop_rusure=Biztos benne, hogy elhygja a(z) $2 adatbázis $1 táblázatát ? A(z) $3 adatsorok törlődni fognak.
 tdrop_ok=Táblázat eldobása
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 view_title=Táblázat adatai
 view_pos=A(z) $1 és $2 sor adatai a $3-ból
 view_none=Ez a táblázat nem tartalmaz adatokat
@@ -115,7 +148,10 @@ view_delete=A kiválasztott sorok törlése
 view_nokey=E táblázat adatai nem módosíthatók, mivel nem rendelkezik elsődleges kulccsal
 view_all=Az összes kijelölése
 view_invert=A kijelölés megfordítása
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 newdb_title=Adatbázis létrehozása
 newdb_header=Új adatbázis beállításai
 newdb_db=Adatbázis neve
@@ -124,7 +160,10 @@ newdb_err=Az adatbázis létrehozása sikertelen
 newdb_edb=Hiányzó, vagy érvénytelen adatbázisnév
 newdb_ecannot=Nem hozht létre adatbázisokat
 newdb_epath=Hiányzó adatbázis elérési útvonal
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 user_title=PostgreSQL felhasználók
 user_ecannot=Nem módosíthatja a felhasználókat
 user_name=Felhasználónév
@@ -147,9 +186,12 @@ user_sync=Az alábbi beállításokkal a Webmin, illetve a PostgreSQL felhaszná
 user_sync_create=PostgreSQL felhasználó hozzáadása Unix felhasználó hozzáadása esetén
 user_sync_modify=PostgreSQL felhasználó frissítése, ha a hozzá tartozó Unix felhasználót módosítják
 user_sync_delete=PostgreSQL felhasználó törlése a hozzá tartozó Unix felhasználó törlésekor
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> upstream/master
 host_ecannot=Nem módosíthatja az engedélyezett gazdák listáját
 host_title=Engedélyezett gazdák
 host_desc=Amikor egy kliens csatlakozik az adatbázishoz, az alább felsorolt gazdákat sorra végigveszi a rendszer, míg egy olyat nem talál, amely megegyezik a klienssel, akit aztán vagy beenged, vagy elutasít
@@ -169,7 +211,10 @@ host_crypt=Titkosított jelszó
 host_krb4=Kerberos V4
 host_krb5=Kerberos V5
 host_passwordarg=Jelszófájl használata
+<<<<<<< HEAD
 host_identarg=Felhsználó-térkép használata
+=======
+>>>>>>> upstream/master
 host_create=Engedélyezett gazda létrahozása
 host_edit=Engedélyezett gazda módosítása
 host_single=Egyedi gazda
@@ -183,7 +228,10 @@ host_enetmask=Hiányzó, vagy érvénytelen hálózati maszk
 host_enetwork=Hiányzó, vagy érvénytelen hálózat
 host_ehost=Hiányzó, vagy érvénytelen IP cím
 host_move=Áthelyez
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 grant_title=Megadott jogosultságok
 grant_tvi=Objektum
 grant_type=Típus
@@ -207,7 +255,10 @@ grant_v=Nézet
 grant_i=Index
 grant_S=Adatsor
 grant_none=Nincs táblázat, nézet, adatsor, vagy index, amelyre jogosultság volna adható
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 group_title=PostgreSQL csoportok
 group_ecannot=Nem módosíthatja a csoportokat
 group_name=Csoportnév
@@ -223,9 +274,13 @@ group_ename=Hiányzó, vagy érvénytelen csoportnév
 group_egid=Hiányzó, vagy érvénytelen csoportazonosító
 group_etaken=Ez a csoportnév már használatban van
 group_none=Még nincsenek PostgreSQL csoportok
+<<<<<<< HEAD
 
 esql=SQL $1 sikertelen : $2
 
+=======
+esql=SQL $1 sikertelen : $2
+>>>>>>> upstream/master
 log_start=A PostgreSQL szerver elindítva
 log_stop=A PostgreSQL szerver leállítva
 log_db_create=$1 adatbázis létrehozva
@@ -260,7 +315,10 @@ log_delete_hba=$1 engedélyezett gazda törölve
 log_move_hba=$1 engedélyezett gazda áthelyezve
 log_grant=Jogosultságok megadva a(z) $1-re a(z) $2 adatbázisban
 log_setup=Adatbázis inicializálva
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 acl_dbs=Az e felhasználó által kezelhető adatbázisok
 acl_dbscannot=A hozzáfárés-vezérlés a PostgreSQL adatbázis szerver elindítása után lép életbe
 acl_dall=Minden adatbázis
@@ -269,6 +327,7 @@ acl_create=Létrehozhat új adatbázisokat?
 acl_delete=Elhagyhat adatbázisokat?
 acl_stop=Leállíthatja és elindíthatja a PostgreSQL szervert?
 acl_users=Módosíthat felhasználókat, csoportokat és jogosultságokat?
+<<<<<<< HEAD
 
 fdrop_err=Hiba a mező eldobása közben
 fdrop_header=Elhagyandó mező
@@ -279,3 +338,8 @@ fdrop_title=Mező eldobása
 setup_err=Hiba az adatbázis inicializálása során
 setup_ecannot=Nem inicializálhatja az adatbázist
 
+=======
+fdrop_err=Hiba a mező eldobása közben
+setup_err=Hiba az adatbázis inicializálása során
+setup_ecannot=Nem inicializálhatja az adatbázist
+>>>>>>> upstream/master

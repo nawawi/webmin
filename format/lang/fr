@@ -15,7 +15,10 @@ index_use=Utilisé
 index_free=Libre
 index_format=Ce disque n'est pas formatté
 index_return=liste de disques
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 edit_ecannot=Vous n'êtes pas autorisé à éditer ce disque
 edit_title=Editer la partition
 edit_header=Détails de la partition
@@ -57,7 +60,10 @@ edit_tunedesc2=Vous ne pouvez pas paramétrer le système de fichiers sur cette 
 edit_tunedesc3=Vous ne pouvez pas paramétrer le système de fichiers sur cette partition car il est actuellement monté. Utilisez le <a href=/mount/>module de systèmes de fichiers</a> pour démonter d'abord cette partition.
 edit_tunedesc4=Vous ne pouvez pas paramétrer le système de fichiers sur cette partition car il n'a pas de système de fichiers.
 edit_tunedesc5=Vous ne pouvez pas paramétrer le système de fichiers sur cette partition car seuls les systèmes de fichiers <tt>UFS</tt> peuvent être paramétrés.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 save_ecannot=Vous n'avez pas le droit d'éditer ce disque
 save_edelete=Echec de la suppression de partition
 save_esave=Echec de la sauvegarde de la partition
@@ -66,7 +72,10 @@ save_eend='$1' n'est pas un cylindre de fin valide
 save_estartmin=Le cylindre de départ doit être > 0
 save_eendmax=Le cylindre de fin doit être < $1
 save_estartend=Le cylindre de départ doit être inférieur à celui de fin
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 newfs_title=Créer un système de fichiers
 newfs_ecannot=Vous n'êtes pas autorisé à formater ce disque
 newfs_desc=Cliquer le bouton au bas de ce formulaire créera un nouveau $1 sur le périphérique $2. Toutes les données sur cette partition seront effacées de manière permanente.
@@ -92,7 +101,10 @@ newfs_err=Echec de la création du système de fichiers
 newfs_exec=Exécution de la commande $1 ...
 newfs_failed=... commande échouée !
 newfs_ok=... commande réussie.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 fsck_title=Réparer un système de fichiers
 fsck_ecannot=Vous n'êtes pas autorisé à réparer ce disque
 fsck_desc=Cliquer sur le bouton <b>Réparer</b> vérifiera et optionnellement réparera le $1 sur $2. Le niveau de vérification et de réparation est déterminé par votre choix ci-dessous.
@@ -110,7 +122,10 @@ fsck_37=processus tué durant la vérification
 fsck_39=erreurs non-corrigeables détectées !
 fsck_40=aucune erreur détectée
 fsck_unknown=erreur inconnue
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 tunefs_title=Paramétrer le système de fichiers
 tunefs_ecannot=Vous n'êtes pas autorisé à paramétrer ce disque
 tunefs_desc=Ce formulaire vous permet d'ajuster des paramètres variés du $1 sur $2. Les fichiers existant sur ce système de fichiers ne seront pas endommagés.
@@ -127,7 +142,10 @@ tunefs_err=Echec du paramétrage du système de fichiers
 tunefs_exec=Exécution de la commande $1 ...
 tunefs_failed=... commande échouée!
 tunefs_ok=... commande réussie.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 select_device=Contrôleur SCSI $1 cible $2 unité $3
 select_idedevice=Périphérique IDE $1
 select_part=Contrôleur SCSI $1 cible $2 unité $3 partition $4
@@ -137,10 +155,15 @@ esun=Les partitions peuvent être modifiées seulement sur du matériel Sun
 emounted=Le disque a des partitions montées
 elast=La dernière partition ne peut pas être enlevée
 eformat=<tt>format</tt> n'a trouvé aucun disque !
+<<<<<<< HEAD
 
 fstype_ufs=Système de fichiers Solaris
 fstype_unknown=Système de fichiers inconnu
 
+=======
+fstype_ufs=Système de fichiers Solaris
+fstype_unknown=Système de fichiers inconnu
+>>>>>>> upstream/master
 acl_disks=Disques que cet utilisateur peut partionner et formater
 acl_dall=Tous les disques
 acl_dsel=Sélectionnés ...

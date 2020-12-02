@@ -1,8 +1,8 @@
 index_title=Webmin Users
 index_user=User
 index_modules=Modules
-index_create=Create a new Webmin user.
-index_rcreate=Create a new risk-level user.
+index_create=Create a new privileged user.
+index_screate=Create a new safe user.
 index_convert=Convert Unix To Webmin Users
 index_cert=Request an SSL Certificate
 index_twofactor=Two-Factor Authentication
@@ -30,6 +30,7 @@ index_eglist=Failed to list groups : $1
 
 edit_title=Edit Webmin User
 edit_title2=Create Webmin User
+edit_title3=Create Safe Webmin User
 edit_readonly=This Webmin user should not be edited as it is managed by the $1 module. <a href='$2'>Click here</a> to bypass this warning and edit the user anyway - but beware that any manual changes may be over-written!
 edit_rights=Webmin user access rights
 edit_user=Username
@@ -111,9 +112,14 @@ edit_proto_mysql=MySQL database
 edit_proto_postgresql=PostgreSQL database
 edit_proto_ldap=LDAP server
 edit_proto_=Local files
+edit_safe=Privilege level
+edit_safe0=Unrestricted
+edit_safe1=Safe modules only
+edit_unsafe=Reset to unrestricted
 
 save_err=Failed to save user
 save_ename='$1' is not a valid username
+save_eunixname=The username '$1' is not a Unix user, and so cannot be used in safe mode
 save_enamewebmin=The username 'webmin' is reserved for internal use
 save_edup=The username '$1' is already in use
 save_eoverlay=A theme overlay cannot be selected unless a theme is

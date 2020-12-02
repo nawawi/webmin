@@ -3,14 +3,20 @@ index_list=listy usług
 index_save=Zachowaj
 index_delete=Usuń
 index_create=Utwórz
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 index_service=Usługi internetowe
 index_newservice=Utwórz nową usługę internetową
 index_rpc=Programy RPC
 index_newrpc=Utwórz nowy program RPC
 index_apply=Zastosuj zmiany
 index_applymsg=Naciśnij ten przycisk, aby zastosować bieżącą konfigurację poprzez wysłanie sygnału SIGHUP do procesu <tt>inetd</tt>
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 error_restart=Nie udało sie zrestartować Inetd
 error_saverpc=Nie udało sie zachowac programu RPC
 error_invalidprgname='$1' nie jest poprawną nazwą programu
@@ -21,22 +27,36 @@ error_notexist='$1' nie istnieje
 error_notexecutable='$1' nie jest uruchamialny
 error_invalidcmd='$1' nie jest poprawnym poleceniem
 error_nouser=Musisz wybrać użytkownika
+<<<<<<< HEAD
 error_prgexist=Program RPC o&nbsp;nazwie $1 już istnieje
+=======
+error_prgexist=Program RPC o nazwie $1 już istnieje
+>>>>>>> upstream/master
 error_prginuse=Numer programu RPC $1 jest już używany
 error_saveservice=Nie udało się zapisać usługi internetowej
 error_invalidport='$1' nie jest poprawnym numerem portu
 error_invalidservice='$1' nie jest poprawną nazwą usługi
+<<<<<<< HEAD
 error_portnum=Numer portu $1 musi być >0 i&nbsp;<65536
+=======
+error_portnum=Numer portu $1 musi być >0 i <65536
+>>>>>>> upstream/master
 error_invalidprg='$1' nie jest poprawnym programem
 error_invalidarg='$1' nie jest poprawną listą argumentów
 error_invalidwrapper='$1' nie jest poprawną usługą TCP-wrappers
 error_invalidpermin='$1' nie jest poprawną maksymalną liczbą połączeń na minutę
 error_invalidchildnum='$1' nie jest poprawną liczba procesów potomnych
 error_childnum=Jeśli podano maksymalną liczbę połączeń na minutę, musi być także podana liczba procesów potomnych
+<<<<<<< HEAD
 error_serviceexist=Usługa korzystająca z&nbsp;portu $1 po protokole $2 już istnieje
 error_nameexist=Usługa o&nbsp;nazwie $1 po protokole $2 już istnieje
 error_inetservice=Usługa internetowa o&nbsp;nazwie $1 po protokole $2 już istnieje
 
+=======
+error_serviceexist=Usługa korzystająca z portu $1 po protokole $2 już istnieje
+error_nameexist=Usługa o nazwie $1 po protokole $2 już istnieje
+error_inetservice=Usługa internetowa o nazwie $1 po protokole $2 już istnieje
+>>>>>>> upstream/master
 editrpc_title1=Utwórz program RPC
 editrpc_title2=Zmień program RPC
 editrpc_detail=Dane programu RPC
@@ -59,7 +79,10 @@ editrpc_execasuser=Uruchom jako użytkownik
 editrpc_max=Maks. na minutę
 editrpc_default=Domyślne
 editrpc_execasgrp=Uruchom jako grupa
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 editserv_title1=Utwórz usługę internetową
 editserv_title2=Zmień usługę internetową
 editserv_detail=Dane usługi internetowej
@@ -68,23 +91,33 @@ editserv_port=Numer portu
 editserv_program=Program
 editserv_args=Argumenty
 editserv_maxchild=Maks. liczba potomnych
-editserv_execlogin=Uruchom w&nbsp;klasie logowania
+editserv_execlogin=Uruchom w klasie logowania
 editserv_wrapper=TCP-Wrapper
 editserv_inetd=Wewnętrzne polecenie <tt>inetd</tt>
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 log_apply=Zastosowano zmiany
 log_create_serv=Utworzono usługę $1
 log_modify_serv=Zmieniono usługę $1
 log_delete_serv=Wyłączono usługę $1
+<<<<<<< HEAD
 log_create_prog=Utworzono usługę i&nbsp;program $1
 log_modify_prog=Zmieniono usługę i&nbsp;program $1
 log_delete_prog=Wyłączono usługę i&nbsp;program $1
+=======
+log_create_prog=Utworzono usługę i program $1
+log_modify_prog=Zmieniono usługę i program $1
+log_delete_prog=Wyłączono usługę i program $1
+>>>>>>> upstream/master
 log_create_serv_l=Utworzono usługę $1 na porcie $2
 log_modify_serv_l=Zmieniono usługę $1 na porcie $2
 log_delete_serv_l=Wyłączono usługę $1 na porcie $2
 log_create_prog_l=Utworzono usługę $1 na porcie $2 dla programu $3
 log_modify_prog_l=Zmieniono usługę $1 na porcie $2 dla programu $3
 log_delete_prog_l=Wyłączono usługę $1 na porcie $2 dla programu $3
+<<<<<<< HEAD
 
 log_create_rpc=Utworzono RPC $1
 log_modify_rpc=Zmieniono RPC $1
@@ -99,3 +132,17 @@ log_create_rprog_l=Utworzono RPC $1 o&nbsp;numerze $2 dla programu $3
 log_modify_rprog_l=Zmieniono RPC $1 o&nbsp;numerze $2 dla programu $3
 log_delete_rprog_l=Wyłączono RPC $1 o&nbsp;numerze $2 dla programu $3
 
+=======
+log_create_rpc=Utworzono RPC $1
+log_modify_rpc=Zmieniono RPC $1
+log_delete_rpc=Wyłączono RPC $1
+log_create_rprog=Utworzono RPC i program $1
+log_modify_rprog=Zmieniono RPC i program $1
+log_delete_rprog=Wyłączono RPC i program $1
+log_create_rpc_l=Utworzono RPC $1 o numerze $2
+log_modify_rpc_l=Zmieniono RPC $1 o numerze $2
+log_delete_rpc_l=Wyłączono RPC $1 o numerze $2
+log_create_rprog_l=Utworzono RPC $1 o numerze $2 dla programu $3
+log_modify_rprog_l=Zmieniono RPC $1 o numerze $2 dla programu $3
+log_delete_rprog_l=Wyłączono RPC $1 o numerze $2 dla programu $3
+>>>>>>> upstream/master

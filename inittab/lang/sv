@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 inittab_title=Startinställningar för SysV
+=======
+>>>>>>> upstream/master
 inittab_new=Skapa en ny init-process
 inittab_id=Processnamn
 inittab_runlevels=Nivå för utförande
@@ -21,20 +24,27 @@ inittab_powerfailnow=Vid UPS-svikt
 inittab_ctrlaltdel=Ctrl-Alt-Del
 inittab_kbdrequest=Speciell tangentkombination
 inittab_return=inittab-index
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 edit_inittab_err=Du får inte ändra processer
 edit_inittab_title=Ändra process $1
 edit_inittab_details=Uppgifter om process
 edit_inittab_del=Ta bort
 edit_inittab_save=Spara
+<<<<<<< HEAD
 
 new_inittab_err=Du får inte skapa en ny process
 new_inittab_title=Ny process
 
+=======
+new_inittab_err=Du får inte skapa en ny process
+new_inittab_title=Ny process
+>>>>>>> upstream/master
 save_inittab_err=Du får inte spara processer
 save_inittab_noid=Fel! Du har inte angivit något namn för processen
 save_inittab_already=Fel! Det finns redan en process med detta namn
-
 log_modify=Modifierade init-process $1
 log_rename=Bytte namn på init-process $1 till $2
 log_create=Skapadeinit-process $1

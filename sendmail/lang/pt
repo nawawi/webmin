@@ -6,7 +6,10 @@ index_stop=Parar o Sendmail
 index_stopmsg=Clique neste botão para parar o processo em curso do sendmail. Desta forma, não poderá ser distribuido correio de utilizadores locais para outros sistemas, além de impossibilitar o uso deste sistema como servidor de correio.
 index_start=Iniciar o Sendmail
 index_startmsg=Clique neste botão para iniciar o Sendmail com o comando $1. Até que isto seja feito, o correio não poderá ser distribuido de utilizadores locais para outros sistemas, além de não se poder usar este sistema como um servidor de correio.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 opts_title=Opções do Sendmail
 opts_ecannot=Você não está autorizado para editar as opções do sendmail
 opts_ds=Enviar correio de saída via anfitrião
@@ -36,7 +39,6 @@ opts_ehost='$1' não é um anfitrião ou nome de domínio válido
 opts_einvalid='$1' não é um valor válido para '$2'
 opts_blocks=blocks
 opts_bytes=bytes
-
 aliases_title=Aliases de Correio
 aliases_ecannot=Você não está autorizado para editar aliases
 aliases_addr=Enderesso
@@ -47,7 +49,6 @@ aliases_type3=Ficheiro $1
 aliases_type4=Programa $1
 aliases_none=Nenhuma
 aliases_return=lista de aliases
-
 aform_type0=Nenhuma
 aform_type1=Endereço de email
 aform_type2=Endereços no ficheiro
@@ -58,7 +59,6 @@ aform_create=Criar Alias
 aform_name=Endereço
 aform_enabled=Activado?
 aform_val=Alias para
-
 asave_err=Erro ao guardar alias
 asave_ecannot2=Você não está autorizado para editar aliases
 asave_ecannot=Você não está autorizado para editar esta alias
@@ -72,7 +72,10 @@ asave_etype2=O ficheiro de endereços $1 não existe
 asave_etype3='$1' não é um nome de ficheiro válido
 asave_etype4='$1' não é um programa ou não existe
 asave_etype4none=Não foi fornecido programa algum
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 cws_title=Domínios Locais
 cws_ecannot=Você não está autorizado para editar domínios locais
 cws_domains=Domínios manejados por este servidor
@@ -81,7 +84,10 @@ cws_desc2=Note que o facto de apenas incluir um domínio na lista não é geralm
 cws_err=Erro ao guardar domínios locais
 cws_ehost='$1' não é um anfitrião ou nome de domínio válido
 cws_eip='$1' é um endereço IP, não um domínio
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 masq_title=Domain Masquerading
 masq_ecannot=You are not allowed to configure masquerading
 masq_domain=Mascarar como domínio
@@ -92,17 +98,25 @@ masq_err=Failed to save domain masquerading
 masq_edomain='$1' não é um domínio a mascarar válido
 masq_ehost='$1' não é um anfitrião ou nome de domínio válido
 masq_eip='$1' é um endereço IP, não um domínio
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 trusts_title=Utilizadores de Confiança
 trusts_ecannot=Você não está autorizado para editar utilizadores de confiança
 trusts_users=Utilizadores locais em que o sendmail confia
 trusts_desc=Se um utilizador local tentar enviar email, o sendmail apenas permitirá que o utilizador ministre um endereço <tt>De: (From:)</tt> diferente se o utilizador estiver na lista da esquerda. Esta restrição existe para prevenir que utilizadores forgem o email com endereços <tt>De: (From:)</tt> falsos com origem no seu servidor.
 trusts_err=Erro ao guardar utilizadores de confiança
 trusts_euser='$1' não é um utilizador válido
+<<<<<<< HEAD
 
 virtusers_title=Mapeamento de Endereços
 virtusers_ecannot=Você não está autorizado para editar mapeamento de endereços
 virtusers_edirective=O ficheiro de configuração do sendmail não contém a directiva necessária para mapeamento de endereços.
+=======
+virtusers_title=Mapeamento de Endereços
+virtusers_ecannot=Você não está autorizado para editar mapeamento de endereços
+>>>>>>> upstream/master
 virtusers_efile=O ficheiro de texto $1 do qual a base de dados de mapeamento de endereços $2 é construída não existe. Talvez você necessite de modificar a <a href='$3'>configuração do módulo</a> para usar o caminho correcto.
 virtusers_desc1=Os mapeamentos de endereços são similares às <a href='$1'>aliases</a>, mas são mais adequados para um sistema que trabalha com domínios de correio multiplos. Os mapeamentos podem ser usados para redirecionar correio para um domínio completo a um só endereço, suportar utilizadores com o mesmo nome em diferentes domínio ou mapear todo o correio de um domínio para outro.
 virtusers_desc2=Note que você tem que ter um entrada na tabela de <a href='$1'>domínios locais</a> para quaisquer domínios usados para mapeamento de endereços, e deve existir um registo MX (Mail eXchange) do DNS para cada domínio apontado para o seu sistema.
@@ -112,7 +126,10 @@ virtusers_error=Erro $1
 virtusers_domain=Domínio $1
 virtusers_address=Endereço $1
 virtusers_return=lista de mapeamento de endereços
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 vform_edit=Editar Mapeamento
 vform_create=Criar Mapeamento
 vform_for=Correio para
@@ -121,7 +138,10 @@ vform_domain=Domínio
 vform_to=Enviar para
 vform_error=Devolver erro
 vform_ecannot=Você não está autorizado para editar este mapeamento de endereços
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 vsave_ecannot=Você não está autorizado para editar mapeamentos de endereços
 vsave_ecannot2=Você não está autorizado para editar este mapeamento de endereços
 vsave_emax=Você não está autorizado para criar mais do que $1 mapeamentos de endereços
@@ -136,7 +156,10 @@ vsave_eaddr='$1' não é um endereço válido
 vsave_ecannot4=Você não está autorizado para criar mapeamentos para domínios
 vsave_edomdom=Apenas um domínio pode ser mapeado para outro domínio
 vsave_ecannot5=Você não está autorizado para criar mapeamentos que devolvam um erro
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 mailers_title=Routing de Domínios
 mailers_cannot=Você não está autorizado para editar routing de domínios
 mailers_edirective=O ficheiro de configuração do sendmail não contém a directiva necessária para routing de domínios.
@@ -147,12 +170,18 @@ mailers_for=Correio para..
 mailers_delivery=Entrega
 mailers_to=Enviar para..
 mailers_return=lista de routing de domínios
+<<<<<<< HEAD
 
 mform_edit=Editar Routing
 mform_create=Criar Routing
 mform_for=Correio para
 mform_host=Anfitrião
 mform_domain=Domínio
+=======
+mform_edit=Editar Routing
+mform_create=Criar Routing
+mform_for=Correio para
+>>>>>>> upstream/master
 mform_delivery=Entrega
 mform_to=Enviar para
 mform_ignore=Ignorar MX para entrega SMTP
@@ -170,12 +199,18 @@ mform_procmail=Procmail
 mform_mail11=DECnet mail11
 mform_error=Erro
 mform_ecannot=Você não está autorizado para editar routing de domínios
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 msave_ecannot=Você não está autorizado para guardar routing de domínios
 msave_err=Erro ao guardar routing de domínios
 msave_edomain='$1' não é um anfitrião ou domínio válido
 msave_edup=Já está definido um routing de domínio para '$1'
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 generics_title=Endereços de Saída
 generics_cannot=Você não está autorizado para editar endereços de saída
 generics_econfig=O ficheiro de configuração do sendmail não contém a directiva necessária para endereços de saída.
@@ -185,20 +220,29 @@ generics_desc2=Note que você tem que ter uma entrada na tabela de <a href='$1'>
 generics_from=Correio de..
 generics_to=Alterar para..
 generics_return=lista de mapeamento de endereços
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 gform_edit=Editar Mapeamento
 gform_create=Criar Mapeamento
 gform_from=Correio de
 gform_to=Alterar para
 gform_ecannot=Você não está autorizado para editar este endereço de saída
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 gsave_ecannot=Você não está autorizado para editar endereços de saída
 gsave_ecannot2=Você não está autorizado para editar este endereço de saída
 gsave_err=Erro ao guardar endereço de saída
 gsave_efrom='$1' não é um endereço 'de' (from) válido
 gsave_ematch=O endereço 'de' (from) não coincide com '$1'
 gsave_eto='$1' não é um novo enedereço válido
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 cgs_title=Domínio de Saída
 cgs_ecannot=Você não está autorizado para editar domínios de saída
 cgs_header=Domínios de endereços de saída
@@ -206,7 +250,10 @@ cgs_desc=Fora o correio enviado por utilizadores locais, o sendmail apenas reali
 cgs_err=Erro ao guardar domínios de saída
 cgs_ehost='$1' não é um nome de anfitrião ou de domínio válido
 cgs_eip='$1' é um endereço IP, não um domínio
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 domains_title=Mapeamento de Domínio
 domains_ecannot=Você não está autorizado para editar mapeamento de domínio
 domains_econfig=O ficheiro de configuração do sendmail não contém a directiva necessária para mapeamento de domínio.
@@ -215,12 +262,16 @@ domains_desc=O mapeamento de domínio modifica o endereço <tt>Para (To:)</tt> d
 domains_from=Do domínio..
 domains_to=Para o domínio..
 domains_return=lista de mapeamento de domínios
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 dform_edit=Editar Mapeamento
 dform_create=Criar Mapeamento
 dform_from=Do domínio
 dform_to=Para o domínio
 dform_ecannot=Você não está autorizado para editar mapeamento de domínios
+<<<<<<< HEAD
 
 dsave_ecannot=Você não está autorizado para editar mapeamento de domínios
 dsave_err=Erro ao guardar mapeamento de domínio
@@ -229,13 +280,19 @@ dsave_edomain='$1' não é um nome de domínio válido
 access_title=Controle de Spam
 access_ecannot=Você não está autorizado para configurar o controle de spam
 access_econfig=O ficheiro de configuração do sendmail não contém a directiva necessária para controle de spam.
+=======
+dsave_ecannot=Você não está autorizado para editar mapeamento de domínios
+dsave_err=Erro ao guardar mapeamento de domínio
+dsave_edomain='$1' não é um nome de domínio válido
+access_title=Controle de Spam
+access_ecannot=Você não está autorizado para configurar o controle de spam
+>>>>>>> upstream/master
 access_efile=O ficheiro de texto $1 do qual a base de dados de mapeamento de endereços $2 é construída não existe. Talvez você necessite de modificar a <a href='$3'>configuração do módulo</a> para usar o caminho correcto.
 access_desc1=A característica de controle de spam do sendmail permite-lhe prevenir que o correio não desejado chegue aos seus utilizadores através da rejeição de correio de certos endereços e prevenir que spammers usem o seu sistema para enviar correio por relay. Por defeito, o sendmail aceitará correio de qualquer endereço para um utilizador local, mas previne que qualquer cliente ou servidor de correio envie correio por relay através do seu sistema. Em princípio você irá adicionar regras de controle de spam para rejeitar correio de spammers e regras para permitir que outras máquinas na sua rede que enviem correio por relay através do seu sistema.
 access_desc2=Note que o sendmail permitirá, por defeito, que clientes de correio que correm no seu sistema enviem correio via SMTP para qualquer destino. Desta forma, não é necessário adicionar a rede local <tt>127.0.0</tt> à lista dos estão autorizados para enviar correio através do seu sistema.
 access_source=Emissor..
 access_action=Acção..
 access_return=lista de controlo de spam
-
 sform_edit=Editar Regra de Controlo de Spam
 sform_create=Criar Regra de Controlo de Spam
 sform_source=Fonte de correio
@@ -251,25 +308,36 @@ sform_discard=Descartar silenciosamente
 sform_err=Código de erro
 sform_msg=Menssagem
 sform_ecannot=Você não está autorizado para configurar o controlo de spam
+<<<<<<< HEAD
 
 ssave_ecannot=Você não está autorizado para configurar o controlo de spam
+=======
+>>>>>>> upstream/master
 ssave_err=Erro ao guardar regra de controlo de spam
 ssave_etype0='$1' não é um endereço válido
 ssave_etype1='$1' não é um endereço de rede válido
 ssave_etype2='$1' não é um nome de utilizador válido
 ssave_etype3='$1' não é um domínio válido
 ssave_ecode='$1' não é um código de erro SMTP válido
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 relay_title=Domínios de Relay
 relay_ecannot=Você não está autorizado para editar domínios de relay
 relay_eversion=Apenas as versões 8.9 ou superior do sendmail suportam a característica de domínios de relay.
 relay_domains=Domínios autorizados a fazer relaying
 relay_desc1=A não ser que seja permitido pelas regras do <a href='$1'>controlo de spam</a>, o sendmail permitirá apenas o relaying aos domínios listados na caixa de texto da esquerda. As mensagens de correio que chegam que não sejam para um utilizador local ou qualquer dos domínios listados, serão rejeitados.s
 relay_desc2=If your system is serving as a gateway for several domains that are not directly accessible from outside your network (using the <a href='$1'>domain routing</a> feature), then all those domains should be listed here.
+<<<<<<< HEAD
 relay_domains=Domínios autorizados a fazer relaying
 relay_err=Erro ao guardar domínios de relay
 relay_edomain='$1' não é um nome de domínio válido
 
+=======
+relay_err=Erro ao guardar domínios de relay
+relay_edomain='$1' não é um nome de domínio válido
+>>>>>>> upstream/master
 mailq_title=Lista de espera de correio
 mailq_ecannot=Você não está autorizado para visualizar a lista de espera de correio
 mailq_id=ID do Correio
@@ -283,21 +351,29 @@ mailq_dmsg=Para ver uma mensagem da lista de correio, clique na sua ID na lista 
 mailq_force=Para forçar a entrega imediato de correio em lista de espera, <a href='$1'>clique aqui</a>.
 mailq_none=Não há mensagens de correio neste momento em lista de espera para entraga
 mailq_return=lista de espera de correio
-
 flushq_title=Limpar Lista de Espera de Correio
 flushq_desc=A forçar a tentativa de entrega de correio com o comando $1 ..
+<<<<<<< HEAD
 
 delq_err=Erro ao remover mensagem
 delq_ecannot=Você não está autorizado para retirar mensagens da lista de espera de correio
 delq_locked=Neste momento está bloqueado para ser enviado
 
+=======
+delq_err=Erro ao remover mensagem
+delq_ecannot=Você não está autorizado para retirar mensagens da lista de espera de correio
+delq_locked=Neste momento está bloqueado para ser enviado
+>>>>>>> upstream/master
 boxes_title=Caixas de Correio do Utilizador
 boxes_user=Utilizador
 boxes_size=Tamanho da caixa de correio
 boxes_none=Sem correio
 boxes_return=caixas de correio
 boxes_ecannot=Você não está autorizado para ler email
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 mail_title=Email do Utilizador
 mail_from=De
 mail_date=Data
@@ -308,7 +384,10 @@ mail_for=Em $1
 mail_compose=Compor novo correio
 mail_return=email do utilizador
 mail_ecannot=Você não está autorizado para ler o correio deste utilizador
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 view_title=Ler Correio
 view_desc=Mensagem $1 em $2
 view_qdesc=Mensagem em lista de espera $1
@@ -319,7 +398,10 @@ view_reply2=Responder a todos
 view_forward=Reenviar
 view_delete=Apagar
 view_ecannot=Você não está autorizado para ler o correio deste utilizador
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 compose_title=Compor Email
 reply_title=Responder ao Email
 forward_title=Reenviar Email
@@ -328,13 +410,19 @@ reply_attach=Anexos Reenviados
 reply_attach2=Anexos
 reply_send=Enviar
 reply_ecannot=Você não está autorizado para enviar correio como sendo este utilizador
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 send_err=Erro ao enviar correio
 send_eto=Falta o endereço do destinatário
 send_title=Correio enviado
 send_ok=O correio foi enviado com sucesso para $1
 send_ecannot=Você não está autorizado para enviar correio como sendo este utilizador
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 acl_opts=Pode editar opções de sendmail?
 acl_cws=Pode editar domínios locais?
 acl_masq=Pode configurar máscaras de domínios?

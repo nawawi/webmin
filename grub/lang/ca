@@ -8,7 +8,10 @@ index_none=No has definit cap opció d'engegada. Assegura't que n'afegeixes alme
 index_efile=No s'ha trobat el fitxer de menús del GRUB $1. Pot ser que el GRUB no estigui instal·lat, o bé que la <a href='$2'>configuració del mòdul</a> sigui incorrecta.
 index_epath=No s'ha trobat l'executable del GRUB $1. Pot ser que el GRUB no estigui instal·lat, o bé que la <a href='$2'>configuració del mòdul</a> sigui incorrecta.
 index_return=a la llista d'opcions
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 title_add=Afegeix Opció d'Engegada
 title_edit=Edita Opció d'Engegada
 title_header=Detalls de l'opció del menú d'engegada
@@ -37,7 +40,6 @@ title_echain=Hi falta el fitxer <i>chainloader</i> o bé no és vàlid
 title_edev=Dispositiu de particions arrel $1 no suportat
 title_einitrd=Hi falta el nom del fitxer ramdisk inicial
 title_lock=Contrasenya bloquejada
-
 global_title=Opcions Globals
 global_header=Opcions globals del menú d'engegada
 global_default=Opció d'engegada per defecte
@@ -52,21 +54,30 @@ global_other=Altres
 global_password=Contrasenya d'engegada
 global_none=Cap
 global_password_file=Si s'introdueix una contrasenya, utilitza el fitxer de menú:
+<<<<<<< HEAD
 global_pass
+=======
+>>>>>>> upstream/master
 global_err=No s'han pogut desar les opcions globals
 global_etimeout=Hi falta el temps límit o bé no és vàlid
 global_edev=Disc/partició d'instal·lació $1 no suportat
 global_eother=Hi falta el disc/partició o bé no és vàlid
 global_epassword=Hi falta la contrasenya d'engegada o bé no és vàlida
 global_epasswordfile=Hi falta el fitxer alternatiu de menú o bé no és vàlid
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 install_title=Instal·la el GRUB
 install_err=No s'ha pogut instal·lar el GRUB
 install_efind=No s'ha pogut trobar el fitxer de menú
 install_desc=S'està instal·lant el GRUB a $1 amb les ordres $2 i $3...
 install_ok=...instal·lació completa.
 install_failed=...la instal·lació ha fallat!
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 log_create_title=S'ha creat l'opció d'engegada $1
 log_delete_title=S'ha suprimit l'opció d'engegada $1
 log_modify_title=S'ha modificat l'opció d'engegada $1
@@ -74,4 +85,7 @@ log_up_title=S'ha desplaçat cap amunt l'opció d'engegada $1
 log_down_title=S'ha desplaçat cap avall l'opció d'engegada $1
 log_global=S'han canviat les opcions globals
 log_install=S'ha instal·lat el GRUB
+<<<<<<< HEAD
 __norefs=1
+=======
+>>>>>>> upstream/master

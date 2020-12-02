@@ -1,1 +1,4 @@
+<<<<<<< HEAD
 desc_fr=Actions de démarrage et d'arrêt
+=======
+>>>>>>> upstream/master

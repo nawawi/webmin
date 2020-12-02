@@ -21,7 +21,10 @@ index_eversion=La versió de STunnel instal·lada al sistema és la $1, però aq
 index_conf=Del fitxer de configuració $1
 index_noconf=No hi ha cap fitxer de configuració!
 index_delete=Suprimeix els Túnels Seleccionats
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 edit_title=Edició de Túnel SSL
 create_title=Creació de Túnel SSL
 edit_header1=Opcions del recurs de túnel
@@ -48,7 +51,10 @@ edit_tcpw=Nom dels embolcalls TCP
 edit_auto=Automàtic
 edit_iface=Adreça origen de sortida
 edit_type=Executa des de
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 save_err=No s'ha pogut desar el túnel SSL
 save_enclash=El nom de servei $2 ja està en ús al port $1.
 save_einetd=Ja hi ha un servei inetd anomenat $1.
@@ -63,10 +69,16 @@ save_etcpw=Hi falta el nom de l'embolcall TCP o bé és invàlid
 save_eiface=Hi falta l'adreça origen de sortida o bé és invàlida
 save_exinetd=Ja hi ha un servei xinetd anomenat $1
 save_export=El port $1 ja està en ús pel servei xinetd $2
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 log_apply=S'han aplicat els canvis
 log_create=S'ha creat el túnel SSL $1
 log_delete=S'ha suprimit el túnel SSL $1
 log_modify=S'ha modificat el túnel SSL $1
 log_delete_stunnels=S'han suprimit $1 túnels SSL
+<<<<<<< HEAD
 __norefs=1
+=======
+>>>>>>> upstream/master

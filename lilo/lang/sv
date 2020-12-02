@@ -9,7 +9,10 @@ index_applymsg2=Använd dessa inställningar på startsektorn på aktuell rotdis
 index_applymsg3=Kontrollera inställningarna innan du startar om!
 index_return=kärnor och partitioner
 index_earch=LILO stöds endast av system med x86-arkitektur
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 global_title=Globala inställningar
 global_desc=Globala startinställningar
 global_boot=Skriv boot loader till
@@ -31,10 +34,15 @@ global_extra=Startar kärnor med extrainställningar
 global_any=Startar allt
 global_secs=sekunder
 global_err=Det gick inte att spara globala inställningar
+<<<<<<< HEAD
 
 apply_title=Ta inställningarna i drift
 apply_exec=Tar LILO-inställningarna i drift med kommando $1 ...
 
+=======
+apply_title=Ta inställningarna i drift
+apply_exec=Tar LILO-inställningarna i drift med kommando $1 ...
+>>>>>>> upstream/master
 image_title1=Skapa startkärna
 image_title2=Ändra startkärna
 image_options=Inställningar för startkärna
@@ -48,6 +56,7 @@ image_root=Rotdisk
 image_fromkern=Från kärna
 image_rcurr=Aktuell root
 image_rdev=Disk ...
+<<<<<<< HEAD
 image_mode=Rootmonteringsläge
 image_ro=Endast läsbar
 image_rw=Läs- och skrivbar
@@ -55,6 +64,15 @@ image_vga=VGA-textmod
 image_ask=Fråga användare
 image_other=Övriga
 image_initrd=Initial RAM-diskfil
+=======
+image_initrd=Initial RAM-diskfil
+image_mode=Rootmonteringsläge
+image_ro=Endast läsbar
+image_rw=Läs- och skrivbar
+image_vga=VGA-textmod
+image_ask=Fråga användare
+image_other=Övriga
+>>>>>>> upstream/master
 image_lock=Spara kärninställningar för användare?
 image_optional=Hoppa över kärnor som inte finns?
 image_password=Startlösenord
@@ -65,7 +83,6 @@ image_none=Inget
 image_ename=Namn saknas för denna startkärna
 image_ekernel=Kärn-image '$1' finns inte
 image_einitrd=Initial RAM-diskfil '$1' finns inte
-
 other_title1=Skapa startpartition
 other_title2=Ändra startpartition
 other_details=Uppgifter om partition
@@ -76,7 +93,10 @@ other_yes=Ja, från
 other_password=Startlösenord
 other_none=Inget
 other_ename=Namn saknas för denna startpartition
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 log_create_image=Skapade startkärna $1
 log_modify_image=Modifierade startkärna $1
 log_delete_image=Tog bort startkärna $1

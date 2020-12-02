@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 line2=Systémová konfigurácia,11
+=======
+>>>>>>> upstream/master
 at_style=Na systéme,1,linux-Linux,solaris-Solaris,freebsd-FreeBSD,irix-Irix,macos-MacOS X,openserver-OpenServer
 at_dir=V adresári úloh,0
 allow_file=Súbor so zoznamom povolených užívateľov pre príkaz AT,3,Žiadny

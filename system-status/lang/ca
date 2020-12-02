@@ -22,7 +22,11 @@ right_disk=Espai local en disc
 right_used=$1 total, $2 utilitzat
 right_used2=$2 utilitzat, $1 garantit, $3 extra
 right_used3=$2 utilitzat, $3 en cau, $1 total
+<<<<<<< HEAD
 right_out=$1&nbsp;de&nbsp;$2
+=======
+right_out=$1 de $2
+>>>>>>> upstream/master
 right_fsfull=Atenció! El sistema de fitxers $2 muntat a $1 no té espai lliure al disc!
 right_fsnearly=Atenció! El sistema de fitxers $2 muntat a $1 només té $3 d'espai lliure as disc
 right_ifsfull=Atenció! El sistema de fitxers muntat a $1 no té cap inode lliure d'un total de $2!
@@ -44,7 +48,10 @@ right_upsec=Hi ha $1 actualitzacions de paquets disponibles, de les quals $2 só
 right_recollect=Refresca la informació del sistema
 right_vvirtualmin=Versió de Virtualmin
 right_vvm2=Versió de Cloudmin
+<<<<<<< HEAD
  
+=======
+>>>>>>> upstream/master
 acl_show=Informació del sistema a mostrar
 acl_showall=Tota
 acl_showsel=Només la seleccionada...

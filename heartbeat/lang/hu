@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 # webmin-0.90heartbeat/lang/hu
 # translated by Gabor Keve <gabor.keve@it-worx.hu>
 #
+=======
+>>>>>>> upstream/master
 index_title=Szívverés Monitor
 index_return=Szívverés monitor
 index_edir=A szívverés konfigurációs könyvtár $1 nem létezik. Talán a szívverés nincs installálva, vagy az Ön <a href='$2'>modul konfigurációja</a> hibás.
@@ -8,12 +11,18 @@ index_start=Szívverés Monitor indítása
 index_startmsg=Kattintson erre a gombra ha el szeretné indítani a szívverés monitort. Ez érvényesíti az automatikus szolgáltatás failover az Ön rendszerében az aktuális konfigurációval.
 index_apply=Modosulások elfogadása
 index_applymsg=Click this button to force the running szívverés monitor process to reload the current konfigurációuration.
+<<<<<<< HEAD
 
 conf_title=Konfigurációs beállítások
 conf_header=Szívverés konfigurációs beállítások
 conf_serial=Soros szívverés port
 conf_baud=A soros port baud sebessége
 conf_udp=Ethernet szívverés eszköz
+=======
+conf_title=Konfigurációs beállítások
+conf_header=Szívverés konfigurációs beállítások
+conf_baud=A soros port baud sebessége
+>>>>>>> upstream/master
 conf_none=Nincs
 conf_udpport=UDP szívverés port
 conf_keepalive=A szívverések közti idő
@@ -36,7 +45,10 @@ node_enone=Hibás vagy érvénytelen elsődleges csomópont
 node_eip='$1' nem valós IP cím
 node_ecidr='$1' nem valós CIDR
 node_ebroad='$1' nem valós üzenetszóró cím
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 auth_title=Hitelesítési kulcs
 auth_header=Fürt csomópont hitelesítés
 auth_mode=Hitelesítési mód
@@ -46,9 +58,15 @@ auth_md5=MD5 jelszóval
 auth_err=Nem lehet menteni a hitelesítési kulcsot
 auth_emd5=Hibás vagy érvénytelen MD5 jelszó
 auth_esha1=Hibás vagy érvénytelen SHA1 jelszó
+<<<<<<< HEAD
 
 start_err=Nem lehet indítani a szívverést
 
 apply_err=Nem lehet menteni a változásokat
 apply_epid=A folyamat már nem fut
 
+=======
+start_err=Nem lehet indítani a szívverést
+apply_err=Nem lehet menteni a változásokat
+apply_epid=A folyamat már nem fut
+>>>>>>> upstream/master

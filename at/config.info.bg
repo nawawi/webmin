@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 at_style=At ñèñòåìåí âèä,1,linux-Linux,solaris-Solaris,freebsd-FreeBSD,irix-Irix,macos-MacOS X,openserver-OpenServer
 at_dir=At äèðåêòîðèÿ ñúñ çàäà÷è,0
 allow_file=Ôàéë çà ïîçâîëåíè ïîòðåáèòåëè íà At,3,Íÿìà
 deny_file=Ôàéë çà çàáðàíåíè At ïîòðåáèòåëè,3,Íÿìà
+=======
+at_style=At системен вид,1,linux-Linux,solaris-Solaris,freebsd-FreeBSD,irix-Irix,macos-MacOS X,openserver-OpenServer
+at_dir=At директория със задачи,0
+allow_file=Файл за позволени потребители на At,3,Няма
+deny_file=Файл за забранени At потребители,3,Няма
+>>>>>>> upstream/master

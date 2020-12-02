@@ -8,7 +8,10 @@ index_add=Csatolás hozzáadása
 index_auto=Automatic
 index_swap=Virtuális memória
 index_return=a filerendszerek listájához
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 edit_title=Csatolás szerkesztése
 create_title=Csatolás készítése
 edit_err=A csatolás szerkesztése nem sikerült
@@ -32,7 +35,10 @@ edit_first=Ellenőrzés először
 edit_second=Ellenőrzés másodszor
 edit_adv=Egyéb csatolási opciók
 edit_list=Felhasználók listázása
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 save_err=A csatolás mentése nem sikerült
 save_edir='$1' nem könyvtár
 save_edirname='$1' egy helytelen könyvtárnév
@@ -47,10 +53,15 @@ save_perm=$1 csatolás változtatásai nem érvényesíthetők, mert jelenleg is
 save_apply=Hozzáadás az Állandó Listához
 save_eremount=Az újracsatolás nem sikerült : $1
 save_enone=Nem választott mentést vagy csatolást
+<<<<<<< HEAD
 
 swap_err=A swap file létrehozása nem sikerült
 swap_esize='$1' nem elfogadható méret
 
+=======
+swap_err=A swap file létrehozása nem sikerült
+swap_esize='$1' nem elfogadható méret
+>>>>>>> upstream/master
 nfs_server=Válasszon NFS kiszolgálót...
 nfs_select=Válasszon NFS kiszolgálót a csatoláshoz...
 nfs_ip=IP cím
@@ -61,7 +72,10 @@ nfs_failed=A(z) $1 kiszolgáló NFS kiajánlásainak lekérése nem sikerült : 
 nfs_seldir=Válasszon NFS-könyvtárat a csatoláshoz...
 nfs_dir=Könyvtár
 nfs_clients=Kliens
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 smb_choose=Válasszon SMB kiszolgálót...
 smb_elist=A(z) $1 kiszolgáló listájának lekérése nem sikerült. Lehetséges, hogy a kiszolgáló nem engedélyezi a böngészést.
 smb_ehost=$1 kiszolgáló nem létezik
@@ -76,7 +90,10 @@ smb_sel2=Válasszon megosztást a csatoláshoz...
 smb_share=Megosztás
 smb_comment=Megjegyzés
 smb_noshares=Nincs elérhető filemegosztás a(z) $1 kiszolgálón.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 solaris_scsidev=SCSI vezérlő $1 target $2 egység $3 partíció $4
 solaris_mddev=$1 RAID eszköz
 solaris_ecacheexists=$1 nevű könyvtár már létezik. (Törölje le)
@@ -204,7 +221,10 @@ solaris_efstyp2=Nem sikerült a filerendszer típusának ellenőrzése : $1
 solaris_ecachedir='$1' egy érvénytelen cache könyvtár.
 solaris_efmode='$1' egy érvénytelen oktális filemód.
 solaris_edmode='$1' egy érvénytelen oktális könyvtármód.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 linux_eamd=Az AMD nem sikerült
 linux_eauto=Az autocsatolás nem sikerült : $1
 linux_esmbconn=Sikertelen csatlakozás a kiszolgálóhoz

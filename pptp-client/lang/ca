@@ -18,12 +18,18 @@ index_version=PPPd versió $1
 index_boot=Connecta en engegar:
 index_noboot=&lt;No connectis&gt;
 index_bootdesc=Canvia aquesta opció per controlar si la connexió VPN PPTP s'inicia en engegar el sistema o no.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 disc_err=No s'ha pogut desconnectar el túnel
 disc_egone=Ja no està actiu
 disc_ekill=No s'ha pogut matar el procés
 disc_done=El túnel $1 s'ha desconnectat correctament.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 conn_err=No s'ha pogut connectar el túnel
 conn_egone=El túnel ja no existeix
 cone_ealready=Ja està connectat
@@ -34,7 +40,10 @@ conn_ok=...connexió activada amb èxit utilitzant la interfície $1. La teva ad
 conn_timeout=...la connexió ha fallat! Mira els missatges de registre més avall per saber-ne el perquè.
 conn_routes=S'estan afegint rutes amb ordres...
 conn_mppe=El protocol MPPE per a xifratge VPN necessita el dimoni PPP i suport del nucli. No obstant, l'error de més amunt suggereix que un dels dos o tots dos no estan disponibles al sistema. Si el servidor PPTP no exigeix MPPE, prova de desactivar totes les opcions relacionades a la pàgina d'<a href='$1'>Opcions Globals PPP</a>.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 edit_title1=Addició de Túnel PPTP
 edit_title2=Edició de Túnel PPTP
 edit_header=Opcions del túnel VPN PPTP
@@ -51,7 +60,7 @@ edit_def2=A través del portal
 edit_deldef=Suprimeix la ruta per defecte anterior
 edit_routes=Rutes a afegir després de connectar
 edit_type=Tipus
-edit_type0=&nbsp;
+edit_type0= 
 edit_type1=Xarxa
 edit_type2=Host
 edit_net=Xarxa o host
@@ -63,7 +72,10 @@ edit_file=Fitxer d'opcions PPP
 edit_none=Cap
 edit_global=Fitxer global estàndard
 edit_ofile=Un altre fitxer...
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 save_err=No s'ha pogut desar el nom del túnel
 save_ename=Hi falta el nom del túnel
 save_eserver=Hi falta el servidor a connectar o bé és invàlid
@@ -79,7 +91,10 @@ save_egw2=Portal del host invàlid a la ruta $1
 save_erename=No s'ha pogut reanomenar el fitxer del túnel
 save_eclash=Ja existeix un túnel o un <i>peer</i> PPP amb el mateix nom
 save_efile=Hi falta el fitxer d'opcions PPP o bé és invàlid
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 opts_title=Opcions Globals del PPP
 opts_desc=Els valors de sota es prenen de $1, i s'aplicaran a tots els túnels que es configurin per a utilitzar el fitxer estàndard d'opcions globals del PPP.
 opts_header=Opcions PPP per a tots els túnels
@@ -89,7 +104,6 @@ opts_err=No s'han pogut desar les opcions globals del PPP
 opts_emtu=Hi falta la mida màxima dels paquets enviats o bé és invàlida
 opts_emru=Hi falta la mida màxima dels paquets rebuts o bé és invàlida
 opts_msdesc=Les opcions de sota activen el xifratge MPPE, utilitzat pels servidors VPN de Windows. No obstant, MPPE necessita suport tant al dimoni PPP com al nucli del sistema operatiu.
-
 mppe_mppe-40=Utilitza xifratge MPPE de 40 bits
 mppe_mppe-128=Utilitza xifratge MPPE de 128 bits
 mppe_mppe-stateless=Activa el mode MPPE sense estat
@@ -101,7 +115,10 @@ mppe_d1=Permès
 mppe_mppe-stateful=Activa el mode MPPE amb estat
 mppe_old=Atenció - S'han trobat les directives MPPE d'estil antic $1 al fitxer de configuració, tot i que el dimoni PPP suporta les directives d'estil nou.
 mppe_new=Atenció - S'han trobat les directives MPPE d'estil nou $1 al fitxer de configuració, tot i que el dimoni PPP només suporta les directives d'estil antic.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 log_create=S'ha creat el túnel PPTP $1
 log_update=S'ha modificat el túnel PPTP $1
 log_delete=S'ha suprimit el túnel PPTP $1
@@ -110,5 +127,3 @@ log_conn_l=S'ha connectat el túnel $1 amb l'adreça local $2
 log_failed=No s'ha pogut connectar el túnel $1
 log_disc=S'ha desconnectat el túnel $1
 log_opts=S'han editat les opcions globals del PPP
-
-__norefs=1

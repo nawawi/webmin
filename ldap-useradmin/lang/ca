@@ -19,19 +19,27 @@ index_samba=Samba
 index_cyrus=IMAP
 index_users=Usuaris LDAP
 index_groups=Grups LDAP
+<<<<<<< HEAD
 
 conn_eldap_host=No s'ha trobat cap fitxer de configuració del client LDAP al sistema, així que el servidor LDAP s'ha de configurar a la pàgina de configuració del mòdul
 conn_elogin=No s'ha trobat cap fitxer de configuració del client LDAP al sistema, així que l'entrada a LDAP s'ha de configurar a la pàgina de configuració del mòdul
+=======
+>>>>>>> upstream/master
 imap_econn=No s'ha pogut connectar amb el servidor IMAP $1
 imap_elogin=No s'ha pogut entrar al servidor IMAP $1 com a $2: $3
-
+conn_eldap_host=No s'ha trobat cap fitxer de configuració del client LDAP al sistema, així que el servidor LDAP s'ha de configurar a la pàgina de configuració del mòdul
+conn_elogin=No s'ha trobat cap fitxer de configuració del client LDAP al sistema, així que l'entrada a LDAP s'ha de configurar a la pàgina de configuració del mòdul
 uedit_cap=Capacitats de l'usuari
 uedit_samba=Usuaris Samba
 uedit_cyrus=Entrada al servidor IMAP
 uedit_dn=DN LDAP de l'usuari
 uedit_classes=Classes d'objectes LDAP
-uedit_fields=Camps addicionals LDAP
 uedit_alias=Àlies de correu
+uedit_fields=Camps addicionals LDAP
+<<<<<<< HEAD
+uedit_alias=Àlies de correu
+=======
+>>>>>>> upstream/master
 uedit_firstname=Primer cognom
 uedit_lastname=Segon cognom
 uedit_raw=Atributs LDAP
@@ -43,7 +51,6 @@ uedit_sambapwdlastset=Darrera Actualització de Contrasenya
 uedit_sambapwdcanchange=Es pot canviar la contrasenya
 uedit_sambabadpasswordcount=Recompte incorrecte de contrasenya
 uedit_sambaacctflags=Banderins del compte
-
 usave_eadd=No s'ha pogut afegir l'usuari a la base de dades LDAP: $1
 usave_emod=No s'ha pogut modificar l'usuari de la base de dades LDAP: $1
 usave_emoddn=No s'ha pogut reanomenar l'usuari de la base de dades LDAP: $1
@@ -52,8 +59,12 @@ usave_edelete=No s'ha pogut suprimir l'usuari de la base de dades LDAP: $1
 usave_eicreate=No s'ha pogut crear l'usuari
 usave_eiacl=No s'han pogut donar drets a l'administrador
 usave_eimap=L'usuari ha estat desat amb èxit a la base de dades LDAP, però s'ha produït un error d'IMAP: $1: $2
+<<<<<<< HEAD
 usave_eiquota=No s'ha pogut establir la quota IMAP
+=======
+>>>>>>> upstream/master
 usave_eisub=No s'ha pogut subscriure l'usuari a la carpeta $1
+usave_eiquota=No s'ha pogut establir la quota IMAP
 usave_eifolder=No s'ha pogut crear la carpeta $1
 usave_eilogin=No s'ha pogut entrar amb el nou usuari
 usave_ecyruspass=Cal introduir la contrasenya normal de l'usuari o bé seleccionar l'opció "Sense contrasenya" en activar IMAP.
@@ -69,35 +80,41 @@ usave_eattrdupu=L'usuari $1 ja està utilitzant $2 $3
 usave_eattrdupg=El grup $1 ja està utilitzant $2 $3
 usave_ereal=Hi falta el nom real
 usave_equota=Hi falta la quota IMAP o bé és invàlida
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 search_err=La recerca de $1 a $2 no ha reeixit: $3
-
 gedit_dn=DN LDAP del grup
 gedit_return=als detalls del grup
 gedit_cap=Capacitats de grup
 gedit_samba=Grup Samba
-
 gsave_egone=El grup ja no existeix!
 gsave_edelete=No s'ha pogut suprimir el grup de la base de dades LDAP: $1
 gsave_eadd=No s'ha pogut afegir el grup a la base de dades LDAP: $1
 gsave_emod=No s'ha pogut modificar el grup a la base de dades LDAP: $1
 gsave_emoddn=No s'ha pogut reanomenar el grup a la base de dades LDAP: $1
+<<<<<<< HEAD
 
 gdel_group=S'està suprimint l'entrada de grup LDAP...
 
+=======
+gdel_group=S'està suprimint l'entrada de grup LDAP...
+>>>>>>> upstream/master
 udel_pass=S'està suprimint l'entrada d'usuari LDAP...
 udel_book=S'està suprimint de la llibreta d'adreces...
 udel_imap=S'està suprimint la carpeta IMAP...
 udel_warnimap=La bústia de correu existent se suprimirà en suprimir el directori arrel!
 udel_failed=...ha fallat!: $1
-
 raw_title=Atributs LDAP
 raw_name=Nom de l'atribut
 raw_value=Valors
 raw_for=De $1 
-
 batch_samba=Crea un compte Samba per als usuaris nous
 batch_imap=Crea un compte IMAP per als usuaris nous
 batch_descafter3=A les línies <b>create</b> i <b>modify</b>, hi pots afegir de forma opcional camps extra que continguin atributs LDAP en la forma <i>name</i>=<i>valor</i>, per assignar-los als usuaris nous o modificats.
 batch_eattr=Atribut LDAP invàlid a la línia $1: $2
+<<<<<<< HEAD
 __norefs=1
+=======
+>>>>>>> upstream/master

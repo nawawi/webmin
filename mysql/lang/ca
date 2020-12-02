@@ -45,15 +45,20 @@ index_showing=S'estan mostrant les bases de dades que coincideixen amb $1...
 index_emsg=El missatge d'error MySQL complet és: $1
 index_jump=O edita la base de dades:
 index_jumpok=Obre
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 login_err=La connexió ha fallat
 login_ecannot=No tens permís per configurar la connexió a la base de dades
 login_elogin=No hi ha l'usuari d'administració
 login_epass=Usuari o contrasenya incorrectes
-
 stop_err=No s'ha pogut aturar la base de dades
 start_err=No s'ha pogut engegar la base de dades
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 dbase_title=Edició de Base de Dades
 dbase_header=Taules, índexs i vistes de la base de dades
 dbase_tables=Taules de la Base de Dades
@@ -84,7 +89,6 @@ dbase_type=Tipus
 dbase_typetable=Taula ($1)
 dbase_typeindex=Índex
 dbase_typeview=Vista
-
 ddrop_err=No s'ha pogut destruir la base de dades
 ddrop_title=Destrucció de Base de Dades
 ddrop_rusure=Segur que vols destruir la base de dades $1? Es destruiran $2 taules que contenen $3 files de dades.
@@ -93,7 +97,6 @@ ddrop_mysql=Aquesta és la base de dades mestra, destruir-la farà que el servid
 ddrop_ok=Destrueix la Base de Dades
 ddrop_empty=Suprimeix Totes les Taules
 ddrop_empty2=Suprimeix Totes les Taules
-
 ddrops_err=No s'han pogut destruir les bases de dades
 ddrops_title=Destrucció de Bases de dades
 ddrops_rusure=Segur que vols destruir les $1 bases de dades seleccionades? Se suprimiran $2 taules que contenen $3 files de dades.
@@ -102,7 +105,10 @@ ddrops_mysql=Com que has seleccionat la base de dades mestra, eliminant-la segur
 ddrops_ok=Destrueix la Base de dades
 ddrops_enone=No has seleccionat cap base de dades
 ddrops_ecannotdb=No tens permís per destruir la base de dades $1
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 table_title=Edició de Taula
 table_title2=Creació de Taula
 table_header=Taula $1 de la base de dades $2
@@ -147,28 +153,37 @@ table_nkey=Clau
 table_nextra=Atribuïda extra
 table_eautokey=El camp d'autoincrement també ha de ser una clau primària
 table_eauto=Només hi pot haver un camp d'autoincrement
+<<<<<<< HEAD
 able_delete=Suprimeix els Camps Seleccionats
 
+=======
+>>>>>>> upstream/master
 tdrop_err=No s'ha pogut destruir la taula
 tdrop_title=Destrucció de Taula
 tdrop_rusure=¿Segur que vols destruir la taula $1 de la base de dades $2? Se suprimiran $3 files de dades.
 tdrop_ok=Destrueix la Taula
-
 tdrops_enone=No has seleccionat cap taula per destruir
 tdrops_err=No s'han pogut destruir les taules
 tdrops_ok=Destrueix
 tdrops_title=Destrueix les Seleccionades
 tdrops_rusure=Segur que vols destruir les $1 taules seleccionats de la base de dades $2? Se suprimiran $3 files de dades.
 tdrops_rusure2=Segur que vols destruir les $1 taules seleccionades de la base de dades $2?
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 field_title1=Addició de Columna
 field_title2=Modificació de Columna
 field_in=de la taula $1 de la base de dades $2
 field_header=Paràmetres de la columna
 field_name=Nom de la columna
 field_type=Tipus de dades
-field_size=Longitud
 field_typewarn=Atenció! Canviar el tipus pot provocar una pèrdua de dades
+field_size=Longitud
+<<<<<<< HEAD
+field_typewarn=Atenció! Canviar el tipus pot provocar una pèrdua de dades
+=======
+>>>>>>> upstream/master
 field_enum=Valors enumerats
 field_dual=Longitud i decimals
 field_opts=Opcions del tipus
@@ -194,7 +209,10 @@ field_esize='$1' no és una longitud vàlida de columna
 field_eenum=No has introduït cap valor enumerat
 field_efield='$1' no és un nom de columna vàlid
 field_ekey=Els camps que permeten nuls no poden formar part de la clau primària
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 view_title=Dades de la Taula
 view_pos=Files $1 a $2 de $3
 view_none=Aquesta taula no conté dades.
@@ -227,7 +245,6 @@ view_keep=Deixa-ho tal com està
 view_set=Estableix al contingut del fitxer...
 view_adv=Cerca Avançada
 view_sqlrun=Resultats generats per la consulta SQL: $1
-
 users_title=Permisos d'Usuari
 users_user=Usuari
 users_host=Hosts
@@ -254,7 +271,10 @@ users_ssl=Certificat
 users_dtitle=Supressió de Permisos d'Usuari
 users_drusure=Segur que vols suprimir els $1 permisos d'usuari MySQL seleccionats?
 users_dok=Suprimeix els Permisos
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 user_title1=Creació d'Usuari
 user_title2=Edició d'Usuari
 user_header=Detalls d'usuari MySQL
@@ -317,7 +337,10 @@ user_emax_user_connections=El nombre màxim d'entrades simultànies ha de ser un
 user_emax_connections=El nombre màxim de connexions per hora ha de ser un número
 user_emax_updates=El nombre màxim d'actualitzacions per hora ha de ser un número
 user_emax_questions==El nombre màxim de consultes per hora ha de ser un número
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 dbs_title=Permisos de Bases de Dades
 dbs_db=Bases de Dades
 dbs_user=Usuari
@@ -336,7 +359,10 @@ dbs_enone=No has seleccionat cap base de dades
 dbs_dtitle=Supressió de Permisos de Base de Dades
 dbs_drusure=Segur que vols suprimir els $1 permisos de base de dades MySQL seleccionats?
 dbs_dok=Suprimeix els Permisos
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 db_title1=Creació de Permisos de Bases de Dades
 db_title2=Edició de Permisos de Base de Dades
 db_header=Opcions dels permisos de bases de dades
@@ -351,7 +377,10 @@ db_err=No s'han pogut desar els permisos de bases de dades
 db_euser=Hi falta el nom d'usuari o bé no és correcte
 db_ehost=Hi falta el nom de host o bé no és correcte
 db_edb=Hi falta la base de dades o bé no és correcta
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 hosts_title=Permisos del Host
 hosts_db=Bases de Dades
 hosts_host=Hosts
@@ -367,7 +396,10 @@ hosts_dtitle=Supressió de Permisos de Host
 hosts_drusure=Segur que vols suprimir els $1 permisos de host MySQL seleccionats?
 hosts_dok=Suprimeix els Permisos
 hosts_return=als permisos del host
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 host_title1=Creació de Permisos de Host
 host_title2=Edició de Permisos de Host
 host_header=Opcions dels permisos de host
@@ -377,7 +409,10 @@ host_sel=Els seleccionats
 host_otherdb=Els que coincideixin amb el patró
 host_host=Hosts
 host_perms=Permisos
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 newdb_title=Creació de Base de Dades
 newdb_header=Opcions de la nova base de dades
 newdb_db=Nom de la base de dades
@@ -391,7 +426,10 @@ newdb_err=No s'ha pogut crear la base de dades
 newdb_edb=Hi falta la base de dades o bé no és correcta
 newdb_ecannot=No tens permís per crear bases de dades
 newdb_ecannot2=No tens permís per crear cap més base de dades
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 exec_title=Execució de SQL
 exec_header=Introdueix una ordre SQL per executar a la base de dades $1...
 exec_old=O selecciona una ordre SQL prèvia:
@@ -428,7 +466,10 @@ exec_iheader=Opcions d'importació del fitxer de text
 exec_created=S'han creat $1 taules.
 exec_inserted=S'han inserit $1 registres.
 exec_cs=Joc de caràcters de les dades
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 tprivs_title=Permisos de Taules
 tprivs_table=Taula
 tprivs_db=Base de Dades
@@ -445,9 +486,13 @@ tprivs_none=Cap
 tprivs_derr=No s'ha pogut suprimir els permisos de les taules
 tprivs_enone=No has seleccionat cap taula
 tprivs_dtitle=Supressió de Permisos de Taula
+<<<<<<< HEAD
  tprivs_drusure=Segur que vols suprimir els $1 permisos de taula MySQL seleccionats?
 tprivs_dok=Suprimeix els Permisos
 
+=======
+tprivs_dok=Suprimeix els Permisos
+>>>>>>> upstream/master
 tpriv_title1=Creació de Permisos de Taules
 tpriv_title2=Edició de Permisos de Taules
 tpriv_header=Opcions dels permisos de taules
@@ -464,7 +509,10 @@ tpriv_etable=No hi ha cap taula seleccionada
 tpriv_euser=Hi falta el nom d'usuari o bé no és correcte
 tpriv_ehost=Hi falta el nom de host o bé no és correcte
 tpriv_edb=Hi falta el nom de la base de dades o bé és invàlid
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 cprivs_title=Permisos de Columna
 cprivs_field=Columna
 cprivs_table=Taula
@@ -484,7 +532,10 @@ cprivs_enone=No has seleccionat cap camp
 cprivs_dtitle=Supressió de Permisos de Columna
 cprivs_drusure=Segur que vols suprimir els $1 permisos de taula MySQL seleccionats?
 cprivs_dok=Suprimeix els Permisos
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 cpriv_title1=Creació de Permisos de Columna
 cpriv_title2=Edició de Permisos de Columna
 cpriv_header=Opcions dels permisos de columna
@@ -501,13 +552,19 @@ cpriv_etable=No hi ha cap taula seleccionada
 cpriv_euser=No hi ha el nom de l'usuari o bé és incorrecte
 cpriv_ehost=No hi ha el nom de host o bé és incorrecte
 cpriv_edb=Hi falta el nom de la base de dades o bé és invàlid
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 esql=El SQL $1 ha fallat: $2
 eparse=Webmin no pot analitzar la sortida de l'ordre $1 degut a la natura de les dades de la base de dades. Hauries d'instal·lar els mòduls Perl $2 i $3 per resoldre aquest problema.
 edenied=No tens accés a aquesta base de dades MySQL
 perms_ecannot=No tens permís per editar els permisos
 perms_edb=Només tens permís per a editar els permisos de les teves bases de dades
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 acl_dbs=Bases de dades que aquest usuari pot administrar
 acl_dall=Totes les bases de dades
 acl_dsel=Seleccionades...
@@ -528,7 +585,6 @@ acl_bnone=Prohibeix còpies de seguretat
 acl_indexes=Pot veure i gestionar índexs
 acl_views=Pot veure i gestionar vistes
 acl_files=Pot executar SQL a partir de fitxers locals
-
 log_start=S'ha engegat el servidor MySQL
 log_stop=S'ha aturat el servidor MySQL
 log_cnf=S'ha canviat la configuració del servidor MySQL
@@ -593,7 +649,10 @@ log_importfile=S'han importat les dades del fitxer $1
 log_set=S'han canviat $1 variables MySQL
 log_root=S'ha canviat la contrasenya d'administració
 log_manual=S'ha editat manualment el fitxer de configuració
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 backup_title=Abocament de la Base de Dades
 backup_title2=Abocament de Totes les Bases de Dades
 backup_edump=No s'ha trobat al sistema el programa d'abocament $1 de MySQL. Pot ser que la configuració del mòdul <a href='$2'><a> sigui incorrecta.
@@ -623,8 +682,13 @@ backup_ok2=Desa
 backup_err=L'abocament de la base de dades ha fallat
 backup_efile=Hi falta el nom del fitxer o bé és incorrecte
 backup_efile2=Hi falta el nom del directori o bé és incorrecte
+<<<<<<< HEAD
 backup_eunder=Només es poden crear còpies sota $1
 backup_epath=El camí de l'abocament és incorrecte
+=======
+backup_epath=El camí de l'abocament és incorrecte
+backup_eunder=Només es poden crear còpies sota $1
+>>>>>>> upstream/master
 backup_ewhere=No hi ha clàusula <tt>WHERE</tt> o bé és incorrecta
 backup_echarset=Hi falta el joc de caràcters
 backup_ebackup=<tt>mysqldump</tt> ha fallat: $1
@@ -672,18 +736,27 @@ backup_bodyspace=Mida del sistema de fitxers: $1  Espai lliure: $2
 backup_bodyall=tot
 backup_edownloadall=Només es pot descarregar una còpia de seguretat d'una base de dades
 backup_edownloadsave=El mode de descàrrega no es pot utilitzar per a les còpies planificades
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 import_title=Importació de Dades
 import_uploadout=S'estan important les dades des del fitxer pujat...
 import_fileout=S'estan important les dades del fitxer $1...
 import_eupload=Hi falta el fitxer pujat d'importació
 import_efile=Hi falta el fitxer d'importació
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 adv_title=Cerca Avançada
 adv_and=Busca registres que compleixin tots els criteris...
 adv_or=Busca registres que compleixin qualsevol dels criteris...
 adv_ok=Busca Ara
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 csv_title=Exportació a Fitxer CSV
 csv_header=Opcions de l'exportació CSV
 csv_dest=Destinació de l'exportació
@@ -704,7 +777,10 @@ csv_done=L'exportació CSV a $1 s'ha completat. La mida del fitxer resultant és
 csv_headers=Inclou els noms de columnes al CSV
 csv_cols=Columnes a incloure en el CSV
 csv_ecols=No has seleccionat cap columna
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 cnf_title=Configuració del Servidor MySQL
 cnf_efile=No s'ha trobat al sistema el fitxer de configuració $1 de MySQL. Pot ser que hagis de canviar la <a href='$2'>configuració del mòdul</a> per utilitzar el camí correcte.
 cnf_header=Opcions del servidor MySQL
@@ -745,13 +821,19 @@ cnf_restart=Desa-ho i Reinicia MySQL
 cnf_fpt=Un fitxer separat per a cada taula InnoDB
 cnf_ilt=Temps límit de blocatge InnoDB (en segons)
 cnf_eilt=El temps límit de blocatge InnoDB ha de ser un enter
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 manual_title=Edició de Fitxers de  Configuració
 manual_file=Edita el fitxer de configuració:
 manual_ok=Bé
 manual_efile=Fitxer de configuració invàlid!
 manual_err=No s'ha pogut desar el fitxer de configuració
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 index_title1=Creació d'Índex
 index_header1=Opcions de l'índex
 index_name=Nom de l'índex
@@ -767,14 +849,19 @@ index_ecols=No has seleccionat cap camp
 index_title2=Edició d'Índex
 index_header=Índex $1 a la base de dades $2
 index_ecannot=No tens permís per gestionar índexs
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 syslog_desc=Missatges d'error de MySQL
 syslog_logdesc=Consultes de MySQL
-
 fdrop_err=No s'han pogut suprimir els camps
 fdrop_enone=No has seleccionat cap camp
 fdrop_eall=No pots suprimir tots els camps d'una taula!
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 view_title1=Creació de Vista
 view_title2=Edició de Vista
 view_header1=Detalls de la vista
@@ -800,7 +887,10 @@ view_cascaded=Vistes subjacents
 view_local=Només aquesta vista
 view_nocheck=Cap
 view_ecannot=No tens permís per gestionar vistes
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 procs_title=Connexions de Base de Dades
 procs_id=ID
 procs_user=Usuari
@@ -812,11 +902,13 @@ procs_query=Execució de la consulta
 procs_kill=Mata les Connexions Seleccionades
 procs_ecannot=No tens permís per veure les connexions de bases de dades
 procs_none=En aquest moment no hi ha més connexions de clients a bases de dades.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 kill_err=No s'han pogut matar les connexions a les bases de dades
 kill_ecannot=No tens permís per gestionar connexions de bases de dades
 kill_enone=No n'has seleccionat cap
-
 vars_title=Variables de Sistema MySQL
 vars_desc=Atenció - Les variables establertes en aquesta pàgina es reiniciaran als seus valors per defecte quan es reiniciï MySQL. El valors permanents s'han d'establir a la pàgina de <a href='$1'>Configuració del Servidor MySQL</a>.
 vars_ecannot=No tens permís per editar les variables de sistema
@@ -827,7 +919,6 @@ vars_search=Mostra variables que coincideixin amb:
 vars_ok=Busca
 vars_none2=La teva cerca no ha trobat cap variable de sistema.
 vars_none=No s'ha trobat cap variables de sistema!
-
 compat_ansi=ANSI
 compat_mysql323=MySQL 3.2.3
 compat_mysql40=MySQL 4.0
@@ -839,9 +930,13 @@ compat_maxdb=MaxDB
 compat_no_key_options=Opcions de claus
 compat_no_table_options=Opcions de taules
 compat_no_field_options=Opcions de camps
+<<<<<<< HEAD
 
 config_echarset=Hi falta el joc de caràcters o bé sembla invàlid
 
+=======
+config_echarset=Hi falta el joc de caràcters o bé sembla invàlid
+>>>>>>> upstream/master
 root_title=Canvi de la Contrasenya d'Administració
 root_header=Nova contrasenya d'administració
 root_user=Usuari d'administració
@@ -854,4 +949,7 @@ root_epass1=No has introduït la nova contrasenya
 root_epass2=Les contrasenyes no coincideixen
 root_none=No hi ha cap contrasenya!
 root_auto=Automàtic (típicament, <tt>root</tt>)
+<<<<<<< HEAD
 __norefs=1
+=======
+>>>>>>> upstream/master

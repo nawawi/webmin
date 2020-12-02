@@ -8,7 +8,10 @@ index_apply=Zastosuj zmiany
 index_applymsg=Naciśnij ten przycisk, aby zastosować bieżącą konfigurację udostępniania. Spowoduje to dostępność wymienionych powyżej katalogów z ustawionymi opcjami.
 index_return=udostępniania po NFS
 index_eprog=Program serwera NFS nie został znaleziony. Prawdopodobnie nie został zainstalowany.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 edit_title=Zmień udostępnianie
 create_title=Udostępnij
 edit_details=Dane udostępniania
@@ -26,7 +29,10 @@ edit_insecure=Tylko klienci na bezpiecznych portach?
 edit_security=Zabezpieczenia udostępniania
 edit_mode=Tryb dostępu
 edit_ro=Tylko do odczytu
+<<<<<<< HEAD
 edit_rw=Odczyt i&nbsp;zapis
+=======
+>>>>>>> upstream/master
 edit_noaccess=Zablokować dostęp do katalogu?
 edit_squash=Zaufani użytkownicy zdalni
 edit_everyone=Wszyscy
@@ -38,7 +44,10 @@ edit_gids=Nie ufaj GID-om
 edit_anonuid=Traktuj niewiarygodnych użytkowników jako
 edit_default=Domyślne
 edit_anongid=Traktuj niewiarygodne grupy jako
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 save_err=Nie udało sie zachować parametrów udostępniania
 save_edir=Katalog '$1' nie istnieje
 save_enetgroup=Niepoprawna lub nie istniejąca grupa sieciowa
@@ -47,6 +56,7 @@ save_enetmask='$1' nie jest poprawną maską sieci
 save_ehost='$1' nie jest poprawną nazwą komputera
 save_euids=Niewiarygodne UID-y muszą być rozdzieloną przecinkami listą liczb lub zakresów
 save_egids=Niewiarygodne GID-y muszą być rozdzieloną przecinkami listą liczb lub zakresów
+<<<<<<< HEAD
 
 exports_webnfs=Klientów&nbsp;eWebNFS
 exports_ngroup=Grupy&nbsp;sieciowej&nbsp;$1
@@ -55,6 +65,14 @@ exports_all=Wszystkich
 exports_hosts=Hostów&nbsp;$1
 exports_host=Hosta&nbsp;$1
 
+=======
+exports_webnfs=Klientów eWebNFS
+exports_ngroup=Grupy sieciowej $1
+exports_net=Sieci $1
+exports_all=Wszystkich
+exports_hosts=Hostów $1
+exports_host=Hosta $1
+>>>>>>> upstream/master
 log_modify=Zmieniono eksport NFS $1
 log_modify_l=Zmieniono eksport NFS $1 do $2
 log_delete=Zmieniono eksport NFS $1

@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 longdesc_hu=Levelek automatikus letöltése fetchmail segítségével másik szerverekrõl
+=======
+longdesc_hu=Levelek automatikus letöltése fetchmail segítségével másik szerverekről
+>>>>>>> upstream/master
 desc_hu=Levelek lekérdezése (FetchMail)

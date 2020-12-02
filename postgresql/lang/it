@@ -1,7 +1,10 @@
 index_title=Database Server PostgreSQL
 index_notrun=PostgreSQL non sta girando nel tuo server -- non può essere estratta la lista dei database.
 index_start=Fai partire il server PostgreSQL
+<<<<<<< HEAD
 index_startmsg=Usa questo bottone per far partire il database server PostgreSQL nel tuo sistema con il comando $1. Questo modulo di Webmin non può amministrare un database finchè non è partito.
+=======
+>>>>>>> upstream/master
 index_nopass=Webmin deve conoscere login e password dell'amministratore di PostgreSQL per gestire il tuo database. Per favore inserisci il nome utente e la password dell'amministratore qui sotto.
 index_nouser=Webmin è configurato per connettersi al server PostgreSQL come utente $1, ma l'accesso con questo utente è stato rifiutato.
 index_ltitle=Login PostgreSQL
@@ -27,12 +30,10 @@ index_setupok=Inizializza Database
 index_nomod=Il modulo Perl $1 non è installato nel tuo sistema, quindi Webmin non sarà in grado di accedere correttamente al tuo database PostgreSQL. <a href='$2'>Installa il modulo adesso</a>.
 index_nomods=I moduli Perl $1 e $2 non sono installati nel tuo sistema, quindi Webmin non sarà in grado di accedere correttamente al tuo database PostgreSQL. <a href='$2'>Installa i moduli adesso</a>.
 index_nodbs=Non hai accesso a nessun database PostgreSQL.
-
 login_err=Login fallito
 login_ecannot=Non sei autorizzato a configurare il login al database
 login_elogin=Login amministratore mancante
 login_epass=Nome utente amministratore o password errati
-
 dbase_title=Modifica Database
 dbase_noconn=Questo database non sta accettando connessioni, quindi non può essere eseguita nessuna azione su di esso.
 dbase_tables=Tabelle Database
@@ -43,7 +44,6 @@ dbase_none=Questo database non ha tabelle.
 dbase_fields=Campi:
 dbase_return=elenco tabelle
 dbase_ecannot=Non sei autorizzato a modificare questo database
-
 table_title=Modifica Tabella
 table_title2=Crea Tabella
 table_opts=Opzioni campi
@@ -67,7 +67,6 @@ table_etype=Tipo mancante per il campo $1
 table_esize=Dimensione mancante per il campo $1
 table_enone=Nessun campo iniziale inserito
 table_fielddrop=Cancella Campo
-
 field_title1=Aggiungi Campo
 field_title2=Modifica Campo
 field_in=Nella tabella $1 del database $2
@@ -80,12 +79,14 @@ field_null=Permetti null?
 field_arr=Campo Array?
 field_key=Chiave primaria?
 field_uniq=Unique?
+<<<<<<< HEAD
 field_err=Salvataggio campo fallito
+=======
+>>>>>>> upstream/master
 field_esize='$1' non è una dimensione campo valida
 field_eenum=Nessun valore elencato inserito
 field_efield='$1' non è un nome di campo valido
 field_ekey=Campi che possono essere null non posso essere parte della chiave primaria
-
 exec_title=Esegui SQL
 exec_header=Inserisci il comando SQL da eseguire nel database ..
 exec_exec=Esegui
@@ -100,25 +101,21 @@ exec_efile=Il file locale non esiste o non può essere letto
 exec_uploadout=Output dai comandi del file SQL trasferito ..
 exec_fileout=Output dai comandi SQL nel file $1 ..
 exec_noout=Nessun output generato
-
 stop_err=Fallimento nel fermare il database
 stop_epidfile=Apertura file PID $1 fallita
 stop_ekill=Kill processo $1 fallito : $2
 stop_ecannot=Non sei autorizzato a fermare il database server
 start_err=Fallimento nel far partire il database
 start_ecannot=Non sei autorizzato a far partire il database server
-
 ddrop_err=Cancellazione database fallita
 ddrop_title=Cancella Database
 ddrop_rusure=Sei sicuro di voler cancellare il database $1 ? $2 tabelle contenenti $3 righe di dati verranno cancellate.
 ddrop_mysql=Questo è il database master, cancellandolo probabilmente renderai il tuo MySQL server inutilizzabile!
 ddrop_ok=Cancella Database
-
 tdrop_err=Cancellazione tabella fallita
 tdrop_title=Cancella Tabella
 tdrop_rusure=Sei sicuro di voler cancellare la tabella $1 dal database $2 ? verranno cancellate $3 righe di dati.
 tdrop_ok=Cancella Tabella
-
 view_title=Contenuto Tabella
 view_pos=Righe dalla $1 alla $2 di $3
 view_none=Questa tabella non contiene dati
@@ -143,7 +140,10 @@ view_download=Download..
 view_keep=Non modificare
 view_set=Setta al contenuto del file..
 view_warn=Avviso - il trasferimento di file e la visualizzazione del contenuto di campi <tt>text</tt> o <tt>byte</tt> probabilmente non funzionerà a meno che i moduli Perl $1 e $2 non siano installati e in uso.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 newdb_title=Creazione Database
 newdb_header=Opzioni nuovo database
 newdb_db=Nome database
@@ -152,7 +152,6 @@ newdb_err=Creazione database fallita
 newdb_edb=Nome database mancante o invalido
 newdb_ecannot=Non sei autorizzato a creare database
 newdb_epath=Percorso del database mancante
-
 user_title=Utenti PostgreSQL
 user_ecannot=Non sei autorizzato a modificare gli utenti
 user_name=Nome utente
@@ -176,7 +175,10 @@ user_sync=Le opzioni qui sotto configurano la sincronizzazione tra l'utente Unix
 user_sync_create=Aggiungi un nuovo utente PostgreSQL all'aggiunta di un utente Unix.
 user_sync_modify=Aggiorna un utente PostgreSQL quando l'utente Unix corrispondente è modificato.
 user_sync_delete=Cancella un utente PostgreSQL quando l'utente Unix corrispondente è cancellato.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 host_ecannot=Non sei autorizzato a modificare gli host autorizzati
 host_title=Host Autorizzati
 host_desc=Quando un client si connette al database, gli host elencati qui sotto sono controllati in ordine fino a quando non viene trovata una riga corrisponde al client, che verrà quindi autorizzato oppure no.
@@ -204,7 +206,6 @@ host_krb4=Kerberos V4
 host_krb5=Kerberos V5
 host_pam=PAM
 host_passwordarg=Usa file con le password
-host_identarg=Usa mappa utenti
 host_pamarg=Usa servizio PAM
 host_create=Crea Host Autorizzato
 host_edit=Modifica Host Autorizzato
@@ -222,7 +223,6 @@ host_ehost=Indirizzo IP host mancante o invalido
 host_move=Muovi
 host_edb=Nessun nome di database inserito
 host_euser=Nessun nome di utente inserito
-
 grant_title=Privilegi Assegnati
 grant_tvi=Oggetto
 grant_type=Tipo
@@ -246,7 +246,6 @@ grant_v=Vista
 grant_i=Indice
 grant_S=Sequence
 grant_none=Non esiste nessuna tabella, vista, sequenza o indice a cui assegnare privilegi.
-
 group_title=Gruppi PostgreSQL
 group_ecannot=Non sei autorizzato a modificare i gruppi
 group_name=Nome gruppo
@@ -262,9 +261,7 @@ group_ename=Nome gruppo mancante o invalido
 group_egid=ID gruppo mancante o invalido
 group_etaken=Quel nome di gruppo è già in uso
 group_none=Non esiste nessun gruppo PostgreSQL
-
 esql=SQL $1 fallito : $2
-
 log_start=Fatto partire server PostgreSQL
 log_stop=Fermato server PostgreSQL
 log_db_create=Creato database $1
@@ -299,7 +296,10 @@ log_delete_hba=Cancellata autorizzazione host $1
 log_move_hba=Spostata autorizzazione host $1
 log_grant=Assegnati privilegi su $1 nel database $2
 log_setup=Database inizializzato
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 acl_dbs=Database che questo utente può gestire
 acl_dbscannot=Questo controllo d'accesso diventerà effettivo alla partenza del server PostgreSQL.
 acl_dall=Tutti i database
@@ -315,23 +315,14 @@ acl_user_def=Nome utente dal modulo di configurazione
 acl_user=Nome utente
 acl_pass=password
 acl_sameunix=Connessione e creazione backup come utente Unix corrispondente all'utente PostgreSQL?
-
 fdrop_err=Errore durante la cancellazione del campo
-fdrop_header=Cancella
-fdrop_lose_data=Seleziona per confermare che hai capito che definizioni come indici e valori di default, in tutti i campi, potrebbero essere persi.
-fdrop_perform=Cancella Campo
-fdrop_title=Cancellazione Campo
-
 setup_err=Inizializzazione database fallita
 setup_ecannot=Non sei autorizzato a inizializzare il database
-
 dbase_bkup=Backup
 dbase_rstr=Ripristino (restore)
-
 restore_title=Ripristino (Restore) Database
 restore_header=Opzioni di ripristino database
 restore_db=Nome database
-restore_path=Percorso del file di backup
 restore_err=Ripristino database fallito
 restore_edb=Nome database mancante o invalido
 restore_eacl=Devi essere autorizzato a creare e cancellare database
@@ -344,9 +335,7 @@ restore_ecmd=Il comando di ripristino $1 non è stato trovato nel tuo sistema
 restore_ecannot=Non sei autorizzato a ripristinare il backup
 restore_only=Ripristino solo i dati senza ripristinare le tabelle?
 restore_clean=Svuoto le tabelle prima di ripristinare?
-
 backup_title=Backup Database
-backup_header=Opzioni di backup database
 backup_db=Nome database
 backup_desc=Questo form permette di fare backup del database $1 su di un file con comandi SQL.
 backup_desc2=Il backup può essere effettuato immediatamente, o automaticamente con la schedulazione selezionata.
@@ -375,5 +364,8 @@ backup_ccron=Backup schedulati per i database abilitati.
 backup_dcron=Backup schedulati per i database disabilitati.
 backup_ucron=Percorso backup, opzioni e tempi per la schedulazione aggiornati.
 backup_ncron=La schedulazione dei backup è stata lasciata disabilitata.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 r_command=Comando non supportato

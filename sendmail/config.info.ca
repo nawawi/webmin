@@ -13,7 +13,10 @@ mailq_sort=Ordena la cua de correu per,1,0-ID de cua,1-Adreça 'From',2-Adreça 
 mailq_count=Mostra la mida de de la cua de correu a la pàgina principal,1,0-Sí,1-No 
 mailq_order=Ordenació en buidar la cua de correu,1,-Per defecte,priority-Prioritat,host-Nom de host,time-Data de recepció
 delete_confirm=Demana confirmació abans de suprimir,1,1-Sí,0-No
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 line2=Configuració del sistema,11
 sendmail_cf=Camí complet de sendmail.cf,8
 sendmail_features=Directori base del M4 de sendmail,7

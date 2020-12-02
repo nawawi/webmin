@@ -1,7 +1,10 @@
 index_title=Configuración de VPN IPsec
 index_eipsec=No se ha encontrado en el sistema la orden $1 de FreeSWAN o bien no es el programa correcto. Puede ser que no esté instalado, o bien que la <a href='$2'>configuración del módulo</a> sea incorrecta.
 index_out=La salida de $1 ha sido:
+<<<<<<< HEAD
 index_version=$2 versión $1
+=======
+>>>>>>> upstream/master
 index_econfig=No se ha encontrado al sistema el orden $1 de FreeSWAN o bien no es el programa correcto. Puede ser que no esté instalado, o bien que la <a href='$2'>configuració del mòdul</a> sea incorrecta.
 index_nokey=Parece que no hay ningún host listado en el fichero $1. Hay que generar uno para tu sistema antes de no poder definir ninguna conexión VPN.
 index_newkey=Genera la clave del host:
@@ -25,15 +28,20 @@ index_up=Iniciar Conexión:
 index_updesc=Seleccione una connexión de la lista de al lado del botón y presione el botón para intentar establecer la conexión inmediatamente. 
 index_nopol=No se ha encontrado ninguna política de red -puede ser que la <a href='$1'>configuración de la red</a> sea incorrecta.
 index_import=Importa la conexión del fichero.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 stop_err=No he podido detener el servidor IPsec
 start_err=No he podido iniciar el servidor IPsec
 restart_err=No he podido reiniciar el servidor IPsec
 start_elog=Se han registrado los errores siguientes: $1
-
 newkey_err=No he podido generar la clave
 newkey_ehost=Falta el nombre del host o bien es inválido
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 edit_title1=Creación de Conexión
 edit_title2=Edición de Conexión
 edit_header=Detalles de la conexión VPN IPsec
@@ -82,7 +90,10 @@ edit_rsasig=Clave RSA
 edit_secret=Clave secreta compartida
 edit_rsasigsecret=Clave RSA de secreto compartido
 edit_never=No permetir nunca la autenticación
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 config_title=Configuración del Servidor
 config_header=Valores globales del servidor VPN
 config_ifaces=Interfases de red de IPsec
@@ -99,7 +110,10 @@ config_fwd=Activa el reenviamiento IP
 config_err=No he podido salvar la configuración del servidor
 config_eri=La interfaz real '$1' esta listada más de una vez
 config_enone=No se ha especificado ninguna interfaz de red
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 showkey_title=Mostrar la Clave Pública
 showkey_desc1=Habría que copiar la clave pública RSA mostrada a bajo de la configuración de los otros sistemas que se conectan con éste, en la sección relacionada con este host. 
 showkey_desc2=Los valores mostrados a bajo se pueden utilizar para crear un registro KEY de DNS para este host, de manera que los otros sistemas que se conectan la puedan consultar. 
@@ -107,12 +121,15 @@ showkey_flags=Banderas
 showkey_proto=Protocolo
 showkey_alg=Algoritmo
 showkey_key=Datos de la clave
-
 policy_desc_block=Redes bloqueadas
 policy_desc_clear=Limpiar las redes de Tráfico
+<<<<<<< HEAD
 policy_desc_clear-or-private=Redes Oportunistas
 policy_desc_privat=Redes Cifradas
+=======
+>>>>>>> upstream/master
 policy_desc_private-or-clear=Redes Cifradas o Transparentes
+policy_desc_clear-or-private=Redes Oportunistas
 policy_desc=$1 Redes
 policy_longdesc_block=No se permitirá nunca la conexión a las redes seleccionadas a bajo.
 policy_longdesc_clear=La comunicación con las redes seleccionadas a bajo serán siempre transparentes.
@@ -128,7 +145,10 @@ policy_mask=Prefijo
 policy_err=No he podido salvar las redes
 policy_enet=Dirección IP de red inválida en la línea $1
 policy_emask=Longitud de prefijo inválido en la fila $2
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 save_err=No he podido salvar la conexión
 save_ename=Falta el nombre de la conexión o bien es inválido
 save_eleft=Falta el nombre del host o dirección del servidor local o bien es inválido
@@ -143,7 +163,10 @@ save_eleftkey=Falta la clave pública del servidor local
 save_erightkey=Falta la clave pública del servidor remoto
 save_elefthop=Falta el portal de salto siguiente del servidor local o bien es inválido
 save_erighthop=Falta el portal de salto siguiente del servidor remoto o bien es inválido
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 log_create_conn=He creado la conexión $1
 log_delete_conn=He suprimido la conexión $1
 log_modify_conn=He modificado la conexión $1
@@ -162,10 +185,15 @@ log_delete_secret=He suprimido la clave secreta de $1
 log_create_secret_nn=He creado la clave secreta de cualquier host
 log_modify_secret_nn=He modificado la clave secreta de cualquier host
 log_delete_secret_nn=He suprimido la clave secreta de cualquier host
+<<<<<<< HEAD
 
 up_title=Inicio de Conexión
 up_cmd=Iniciando la conexión con la orden $1...
 
+=======
+up_title=Inicio de Conexión
+up_cmd=Iniciando la conexión con la orden $1...
+>>>>>>> upstream/master
 export_title=Exportación de la Configuración
 export_desc=Puedes utilizar este formulario para exportar la sección de ficheros de configuración de la conexión $1, de manera que se pueda importar fácilmente al servidor.
 export_print=Muestra la configuración en el navegador
@@ -175,13 +203,19 @@ export_err=No he podido exportar la configuración
 export_efile=Falta el nombre del fichero
 export_esave=No he podido escribir en el fichero: $1
 export_done=He exportado la configuración de la conexión $1 a $2 ($3 bytes).
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 import_title=Importación de la Configuración
 import_desc=Puedes utilizar este formulario para importar la sección de ficheros de configuración de una sección, como la creada con la característica de exportación de este módulo en otro sistema.
 import_upload=Importa del fichero subido...
 import_file=Importa del fichero del servidor...
 import_ok=Importarlo ahora
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 import_err=No he podido importar la configuración
 import_eupload=No has seleccionado ningún fichero para subir
 import_efile=No has introducido ningún fichero del servidor
@@ -191,7 +225,10 @@ import_eclash=Ya existe una conexión con el nombre $1.
 import_done1=He agregado con éxito la nueva conexión IPsec $1.
 import_done2=He actualizado con éxito la conexión IPsec $1.
 import_over=Reescribo la conexión existente con el mismo nombre?
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 secrets_title=Claves Secretas
 secrets_none=No he encontrado ninguna clave secreta!
 secrets_name=Clave secreta de
@@ -205,7 +242,10 @@ secrets_mod=Módulo $1
 secrets_newpsk=Crea la nueva clave secreta compartida.
 secrets_newrsa=Crea la nueva clave RSA.
 secrets_return=la lista de claves secretas
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 secret_title1=Creación de Clave Secreta
 secret_title2=Edición de Clave Secreta
 secret_header=Detalles de la clave secreta
@@ -220,4 +260,3 @@ secret_elast=No se puede suprimir la última clave secreta
 secret_ename=Falta los hosts para los cuales se hace la clave
 secret_epass=Falta la contraseña compartida
 secret_ersa=Falta el valor de la clave RSA $1
-

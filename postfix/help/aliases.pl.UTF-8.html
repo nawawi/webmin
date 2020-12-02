@@ -1,30 +1,30 @@
 <header>Aliasy pocztowe</header>
 
-Aliasy zapewniajÄ ogÃ³lnosystemowy mechanizm przekierowywania poczty do
-lokalnych odbiorcÃ³w. <p>
+Aliasy zapewniają ogólnosystemowy mechanizm przekierowywania poczty do
+lokalnych odbiorców. <p>
 
-Pole <tt>Alias dla...</tt> zawiera jeden lub wiÄcej rozdzielonych
-przecinkami spoÅrÃ³d:
+Pole <tt>Alias dla...</tt> zawiera jeden lub więcej rozdzielonych
+przecinkami spośród:
 
-<ul><li><tt>adres</tt>: Poczta jest przekierowywana na <tt>adres</tt>, ktÃ³ry
+<ul><li><tt>adres</tt>: Poczta jest przekierowywana na <tt>adres</tt>, który
 jest zgodny ze standardem RFC 822.
 
 <li><tt>/nazwa/pliku</tt>: Poczta jest dopisywana do <tt>/nazwa/pliku</tt>.
-Zajrzyj do local(8) po szczegÃ³Åowe informacje o&nbsp;dorÄczaniu do pliku.
-DorÄczanie nie jest ograniczone do zwykÅych plikÃ³w. Na przykÅad, moÅ¼na
-rozporzÄdziÄ niechcianÄ pocztÄ poprzez jej przekierowanie do
+Zajrzyj do local(8) po szczegółowe informacje o&nbsp;doręczaniu do pliku.
+Doręczanie nie jest ograniczone do zwykłych plików. Na przykład, można
+rozporządzić niechcianą pocztą poprzez jej przekierowanie do
 <tt>/dev/null</tt>.
 
 <li><tt>|polecenie</tt>: Poczta jest przekazywana w&nbsp;potoku do programu
-<tt>polecenie</tt>. Polecenia zawierajÄce znaki specjalne, takie jak spacje,
-powinny byÄ zawarte w podwÃ³jnych apostrofach. Zajrzyj do local(8) po szczegÃ³Åowe
-informacje o&nbsp;dorÄczaniu do polecenia. Gdy wykonanie polecenia zakoÅczy
-siÄ niepowodzeniem, ograniczona czÄÅÄ wyniku polecenia jest odsyÅana do
+<tt>polecenie</tt>. Polecenia zawierające znaki specjalne, takie jak spacje,
+powinny być zawarte w podwójnych apostrofach. Zajrzyj do local(8) po szczegółowe
+informacje o&nbsp;doręczaniu do polecenia. Gdy wykonanie polecenia zakończy
+się niepowodzeniem, ograniczona część wyniku polecenia jest odsyłana do
 nadawcy.
 
-<li><tt>:include:/nazwa/pliku</tt>: Poczta jest wysyÅana do miejsc
+<li><tt>:include:/nazwa/pliku</tt>: Poczta jest wysyłana do miejsc
 przeznaczenia wymienionych w&nbsp;podanym pliku. Linie w&nbsp;plikach
-<tt>:include:</tt> majÄ takÄ samÄ skÅadniÄ, jak prawa strona wpisu aliasu.
+<tt>:include:</tt> mają taką samą składnię, jak prawa strona wpisu aliasu.
 
 </ul>
 

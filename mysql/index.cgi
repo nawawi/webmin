@@ -79,9 +79,15 @@ if (&is_mysql_local() && $config{'my_cnf'} && !-r $config{'my_cnf'}) {
 if ($r == 0) {
 	# Not running .. need to start it
 	&main_header();
-	print "<p> <b>$text{'index_notrun'}</b> <p>\n";
+	print &ui_alert_box($text{'index_notrun'}, 'danger');
 
-	print &text('index_emsg', "<tt>$rout</tt>"),"<p>\n";
+	if ($rout) {
+		print &ui_details({
+			'title' => $text{'syslog_desc2'},
+			'content' => &text('index_emsg',"<tt>$rout</tt>"),
+			'class' =>'error',
+			'html' => 1}, 1);
+	}
 
 	if ($access{'stop'} && &is_mysql_local()) {
 		print &ui_hr();
@@ -96,7 +102,16 @@ if ($r == 0) {
 elsif ($r == -1) {
 	# Running, but webmin doesn't know the root (or user's) password!
 	&main_header();
-	print "<b>$text{'index_nopass'}</b> <p>\n";
+	
+	print &ui_alert_box($text{'index_nopass'}, 'warn');
+	
+	if ($rout) {
+		print &ui_details({
+			'title' => $text{'syslog_desc2'},
+			'content' => &text('index_emsg',"<tt>$rout</tt>"),
+			'class' => 'error',
+			'html' => 1}, 1) . "<br>";
+		}
 
 	print &ui_form_start("login.cgi", "post");
 	print &ui_table_start($text{'index_ltitle'}, undef, 2);
@@ -105,12 +120,13 @@ elsif ($r == -1) {
 		&ui_textbox("login", $access{'user'} || $config{'login'}, 40));
 
 	print &ui_table_row($text{'index_pass'},
-		&ui_password("pass", undef, 40));
+		&ui_password("pass", undef, 40) . "<br>" .
+		&ui_checkbox("force", 1, $text{'mysqlpass_echange_forcepass'}));
 
 	print &ui_table_end();
 	print &ui_form_end([ [ undef, $text{'save'} ] ]);
 
-	print &text('index_emsg', "<tt>$rout</tt>"),"<p>\n";
+
 	}
 else {
 	# Check if we can re-direct to a single DB's page
@@ -124,7 +140,7 @@ else {
 		exit;
 		}
 
-	&main_header();
+	&main_header(&get_remote_mysql_variant());
 	print &ui_subheading($text{'index_dbs'}) if ($access{'perms'});
 	if ($in{'search'}) {
 		# Limit to those matching search
@@ -299,13 +315,20 @@ else {
 
 &ui_print_footer("/", "index");
 
+# main_header(ver, variant)
 sub main_header
 {
+my ($ver, $variant) = @_;
+if (!$ver) {
+	$ver = $mysql_version;
+	$variant = "mysql";
+	}
+my $vn = $variant eq "mysql" ? "MySQL" : "MariaDB";
 &ui_print_header(undef, $text{'index_title'}, "", "intro", 1, 1, 0,
 	&help_search_link("mysql", "man", "doc", "google"),
 	undef, undef,
 	$config{'host'} ?
-		&text('index_version2', $mysql_version, $config{'host'}) :
-		&text('index_version', $mysql_version));
+		&text('index_version2', $ver, $config{'host'}, $vn) :
+		&text('index_version', $ver, $vn));
 }
 

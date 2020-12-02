@@ -1,5 +1,6 @@
 <header>Podstawianie ekspedycji</header>
 
+<<<<<<< HEAD
 Fakultatywny plik ekspedycji okre¶la odwzorowanie z&nbsp;hierarchii domen
 na metody ekspedycji wiadomo¶ci i/lub hosty po¶rednicz±ce. Odwzorowanie to
 jest wykorzystywane przez demona trivial-rewrite(8). <p>
@@ -20,16 +21,46 @@ okre¶lone przez parametr <tt>mydestination</tt>. Je¶li korzystasz
 z&nbsp;fakultatywnego odwzorowania ekspedycji, bezpieczniejsze mo¿e byæ
 dodanie jawnych wpisów dla wszystkich domen podanych w&nbsp;mydestination,
 na przyk³ad:
+=======
+Fakultatywny plik ekspedycji określa odwzorowanie z&nbsp;hierarchii domen
+na metody ekspedycji wiadomości i/lub hosty pośredniczące. Odwzorowanie to
+jest wykorzystywane przez demona trivial-rewrite(8). <p>
+
+Format tabeli ekspedycji jest następujący:
+
+<ul>
+<li><b><tt>domena</tt></b> podstawiana..
+<b><tt>ekspedycja:następnyskok</tt></b>: Poczta do domeny domena jest
+doręczana metodą transport poprzez następnyskok.
+<li><b><tt>.domena</tt></b> podstawiana..
+<b><tt>ekspedycja:następnyskok</tt></b>: Poczta do dowolnej poddomeny domeny
+domena jest doręczana metodą transport poprzez następnyskok.
+</ul>
+
+Uwaga: wpisy w&nbsp;tabeli ekspedycji przejmują priorytety dla domen
+określone przez parametr <tt>mydestination</tt>. Jeśli korzystasz
+z&nbsp;fakultatywnego odwzorowania ekspedycji, bezpieczniejsze może być
+dodanie jawnych wpisów dla wszystkich domen podanych w&nbsp;mydestination,
+na przykład:
+>>>>>>> upstream/master
 
 <ul>
 <li><tt>nazwahosta.moja.domena</tt> ... <tt>local:</tt>
 <li><tt>localhost.moja.domena</tt> ... <tt>local:</tt>
 </ul>
 
+<<<<<<< HEAD
 Interpretacja pola nastêpnyskok zale¿y od rodzaju transportu.
 W&nbsp;przypadku SMTP, podaje siê <tt>host:us³uga</tt> dla niestandardowego
 portu serwera, a&nbsp;<tt>[host]</tt> lub <tt>[host:port]</tt> w&nbsp;celu
 wy³±czenia poszukiwañ rekordów MX (serwer poczty) w&nbsp;DNS-ie. Postaci
 <tt>[]</tt> mo¿na równie¿ u¿ywaæ z&nbsp;adresami IP zamiast nazw hostów.
+=======
+Interpretacja pola następnyskok zależy od rodzaju transportu.
+W&nbsp;przypadku SMTP, podaje się <tt>host:usługa</tt> dla niestandardowego
+portu serwera, a&nbsp;<tt>[host]</tt> lub <tt>[host:port]</tt> w&nbsp;celu
+wyłączenia poszukiwań rekordów MX (serwer poczty) w&nbsp;DNS-ie. Postaci
+<tt>[]</tt> można również używać z&nbsp;adresami IP zamiast nazw hostów.
+>>>>>>> upstream/master
 
 <hr>

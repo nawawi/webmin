@@ -39,9 +39,11 @@ index_thost=Nom de host
 index_tdesc=Descripció
 index_tver=Versió
 index_ttype=Tipus de SO
-
 this_server=aquest servidor
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 add_title=Addició de Servidors
 add_msg=S'està afegint $1...
 add_gmsg=S'estan afegint servidors al grup $1...
@@ -51,7 +53,10 @@ add_echeck=El servidor $1 no té el mòdul de configuració d'Usermin
 add_echeck2=El servidor $1 no té el mòdul d'Usuaris d'Usermin
 add_eversion=El servidor $1 no està executant la versió $2 d'Usermin o superior.
 add_ok=S'ha afegit $1 amb $2 mòduls i $3 temes.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 refresh_title=Refresc de les Llistes de Mòduls i Temes
 refresh_header=S'estan tornant a demanar les llistes de mòduls i temes de tots els servidors...
 refresh_header4=S'estan tornant a demanar les llistes de mòduls i temes dels membres de $2...
@@ -67,7 +72,6 @@ refresh_g2=S'han eliminat $1 grups.
 refresh_done=...fet
 refresh_del=S'ha eliminat $1 de la llista del servidor
 refresh_failed=No s'ha pogut refrescar $1: $2
-
 host_title=Servidor Gestionat
 host_header=Detalls del servidor Usermin gestionat
 host_name=Nom de host
@@ -85,7 +89,10 @@ host_header_u=Usuaris Usermin
 host_header_g=Grups Usermin
 host_return=als detalls del servidor
 host_version2=Versió
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 edit_title_mod=Edició de Mòdul
 edit_title_theme=Edició de Tema
 edit_header_mod=Detalls del mòdul Usermin de $1
@@ -108,7 +115,10 @@ edit_codes=Del test $1
 edit_acl=Edita l'ACL de
 edit_uacl=L'usuari $1 a $2
 edit_gacl=El grup $1 a $2
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 install_err=No s'ha pogut instal·lar el mòdul
 install_title=Instal·lació de Mòdul
 install_elocal=No has donat cap fitxer local
@@ -129,7 +139,10 @@ do_failed=No s'ha pogut fer la instal·lació a $1: $2
 do_success_mod=S'ha instal·lat el mòdul $2 a $1
 do_success_theme=S'ha instal·lat el tema $2 a $1
 do_done=...fet
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 delete_err=No s'ha pogut suprimir el mòdul $1
 delete_epack=El mòdul $1 no existeix
 delete_title=Supressió de Mòdul
@@ -147,7 +160,10 @@ delete_edepends=$1 mòdul(s) en depen(en).
 delete_egone=El mòdul ja no existeix
 delete_esuccess=S'ha fet l'eliminació a $1: $2
 delete_acls=L'elimino dels usuaris i reinicio la configuració de control d'accés?
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 user_title1=Creació d'Usuari Usermin
 user_header1=Detalls del nou usuari Usermin
 user_name=Usuari
@@ -206,13 +222,19 @@ user_all=&lt;tots els hosts&gt;
 user_donthave=&lt;els hosts que no el tenen&gt;
 user_have=&lt;els hosts que el tenen&gt;
 user_ofgroup=Membres de $1
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 udelete_title=Supressió d'Usuari
 udelete_doing=S'està suprimint l'usuari $1 de tots els hosts...
 udelete_success=S'ha esborrat de $1
 udelete_failed=No s'ha pogut esborrar de $1: $2
 udelete_done=...fet
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 group_title1=Creació de Grup
 group_header1=Detalls del nou grup Usermin
 group_name=Nom del grup
@@ -240,7 +262,10 @@ group_failed2=No s'ha pogut actualitzar el grup a $1: $2
 group_return=als detalls del grup
 group_nomems=Sense membres
 group_servers=Servidor(s) on s'ha de crear
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 gdelete_title=Supressió de Grup
 gdelete_desc=Segur que vols suprimir el grup $1 i els seus usuaris membres $2 de tots els hosts?
 gdelete_ok=Suprimeix el Grup
@@ -249,7 +274,10 @@ gdelete_success=S'ha suprimit de $1
 gdelete_failed=No s'ha pogut suprimir de $1: $2
 gdelete_done=...fet
 gdelete_esub=Aquest grup té els subgrups $1 i per tant no es pot suprimir.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 acl_title=Control d'Accés del Mòdul
 acl_title2=De l'usuari $1 a $2 a $3
 acl_title3=Del grup $1 a $2 a $3
@@ -268,7 +296,10 @@ acl_doing2=Configurant el control d'accés de $1 a $2...
 acl_success=Control d'accés configurat a $1
 acl_failed=No s'ha pogut configurar el control d'accés a $1: $2
 acl_done=...fet
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 sync_title=Sincronització de Servidors
 sync_desc=Aquest formulari permet crear usuaris i grups d'Usermin als servidors que actualment no els tenen, per tal de sincronitzar els comptes a través de tots els servidors del clúster.
 sync_hosts=Servidors a sincronitzar
@@ -292,7 +323,10 @@ sync_gcreate=S'està afegint el grup Usermin $1...
 sync_acl=S'estan copiant els fitxers ACL de $1...
 sync_test=Mostra només el que es faria
 sync_restart=S'està reiniciant Usermin...
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 upgrade_title=Actualització d'Usermin
 upgrade_header=S'està actualitzant Usermin a tots els hosts...
 upgrade_header2=S'està actualitzant Usermin a $1...
@@ -311,7 +345,10 @@ upgrade_failed=No s'ha pogut instal·lar a $1: $2
 upgrade_done=...fet
 upgrade_efast=Només es poden actualitzar els servidors que utilitzen mode RPC ràpid
 upgrade_ereconn=No s'ha pogut reconnectar amb Usermin després de l'actualització! : $1
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 update_title=Actualització de Mòduls
 update_header=S'estan actualitzant els mòduls a tots els hosts...
 update_header5=S'estan actualitzant els mòduls a $2...
@@ -319,5 +356,8 @@ update_header4=S'estan actualitzant els mòduls als membres de $2...
 update_onhost=Resultats de l'actualització a $1...
 update_failed=...l'actualització ha fallat a $1
 update_none=...no s'ha trobat cap actualització.
+<<<<<<< HEAD
 
 __norefs=1
+=======
+>>>>>>> upstream/master

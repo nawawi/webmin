@@ -23,5 +23,8 @@ log_delete_record=Gelöscht $1 Eintrag $2 in Zone $3
 log_create_record=Erstellt $1 Eintrag $2 in Zone $3
 log_modify_record=Bearbeitet $1 Eintrag $2 in Zone $3
 log_boot=Primäre Konfigurationsdatei erstellt
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> upstream/master

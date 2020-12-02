@@ -18,7 +18,12 @@ $letsencrypt_chain_urls = [
 
 sub get_letsencrypt_python_cmd
 {
-return &has_command("python2.7") || &has_command("python27") ||
+return &has_command("python3") || &has_command("python30") ||
+       &has_command("python3.9") || &has_command("python39") ||
+       &has_command("python3.8") || &has_command("python38") ||
+       &has_command("python3.7") || &has_command("python37") ||
+       &has_command("python3.6") || &has_command("python36") ||
+       &has_command("python2.7") || &has_command("python27") ||
        &has_command("python2.6") || &has_command("python26") ||
        &has_command("python");
 }
@@ -33,22 +38,32 @@ if (&has_command($letsencrypt_cmd)) {
 	}
 my $python = &get_letsencrypt_python_cmd();
 if (!$python || !&has_command("openssl")) {
-	return $text{'letsencrypt_ecmds'};
-	}
+        return $text{'letsencrypt_ecmds'};
+        }
 my $out = &backquote_command("$python -c 'import argparse' 2>&1");
 if ($?) {
-	return &text('letsencrypt_epythonmod', 'argparse');
-	}
+        return &text('letsencrypt_epythonmod', '<tt>argparse</tt>');
+        }
 my $ver = &backquote_command("$python --version 2>&1");
 if ($ver !~ /Python\s+([0-9\.]+)/) {
-	return &text('letsencrypt_epythonver',
-		     "<tt>".&html_escape($out)."</tt>");
-	}
+        return &text('letsencrypt_epythonver',
+                     "<tt>".&html_escape($out)."</tt>");
+        }
 $ver = $1;
 if ($ver < 2.5) {
-	return &text('letsencrypt_epythonver2', '2.5', $ver);
-	}
+        return &text('letsencrypt_epythonver2', '2.5', $ver);
+        }
 return undef;
+}
+
+# get_letsencrypt_install_message(return-link, return-title)
+# Returns a link or form to install Let's Encrypt
+sub get_letsencrypt_install_message
+{
+my ($rlink, $rmsg) = @_;
+&foreign_require("software");
+return &software::missing_install_link(
+	"certbot", $text{'letsencrypt_certbot'}, $rlink, $rmsg);
 }
 
 # request_letsencrypt_cert(domain|&domains, webroot, [email], [keysize],
@@ -84,7 +99,8 @@ if ($mode eq "web") {
 	my @st = stat($webroot);
 	my $user = getpwuid($st[4]);
 	if (!-d $challenge) {
-		my $cmd = "mkdir -p -m 755 ".quotemeta($challenge);
+		my $cmd = "mkdir -p -m 755 ".quotemeta($challenge).
+			  " && chmod 755 ".quotemeta($wellknown);
 		if ($user && $user ne "root") {
 			$cmd = &command_as_user($user, 0, $cmd);
 			}
@@ -138,8 +154,8 @@ if ($mode eq "dns") {
 			      "letsencrypt-cleanup.pl");
 	}
 
-if (($letsencrypt_cmd && -d "/etc/letsencrypt/accounts") || $wildcard) {
-	# Use the native Let's Encrypt client if possible
+if ($letsencrypt_cmd) {
+	# Call the native Let's Encrypt client
 	my $temp = &transname();
 	&open_tempfile(TEMP, ">$temp");
 	&print_tempfile(TEMP, "email = $email\n");
@@ -160,6 +176,8 @@ if (($letsencrypt_cmd && -d "/etc/letsencrypt/accounts") || $wildcard) {
 			" --duplicate".
 			" --force-renewal".
 			" --manual-public-ip-logging-ok".
+			" --non-interactive".
+			" --agree-tos".
 			" --config $temp".
 			" --rsa-key-size $size".
 			" --cert-name ".quotemeta($doms[0]).
@@ -180,6 +198,8 @@ if (($letsencrypt_cmd && -d "/etc/letsencrypt/accounts") || $wildcard) {
 			" --duplicate".
 			" --force-renewal".
 			" --manual-public-ip-logging-ok".
+			" --non-interactive".
+			" --agree-tos".
 			" --config $temp".
 			" --rsa-key-size $size".
 			" --cert-name ".quotemeta($doms[0]).
@@ -196,14 +216,15 @@ if (($letsencrypt_cmd && -d "/etc/letsencrypt/accounts") || $wildcard) {
 		return (0, "<pre>".&html_escape($out || "No output from $letsencrypt_cmd")."</pre>");
 		}
 	my ($full, $cert, $key, $chain);
-	if ($out =~ /(\/etc\/letsencrypt\/(?:live|archive)\/[a-zA-Z0-9\.\_\-\/\r\n ]*\.pem)/) {
+	if ($out =~ /(\/etc\/letsencrypt\/(?:live|archive)\/[a-zA-Z0-9\.\_\-\/\r\n\* ]*\.pem)/) {
 		# Output contained the full path
 		$full = $1;
 		$full =~ s/\s//g;
 		}
 	else {
 		# Try searching common paths
-		my @fulls = glob("/etc/letsencrypt/live/$doms[0]-*/cert.pem");
+		my @fulls = (glob("/etc/letsencrypt/live/$doms[0]-*/cert.pem"),
+			     glob("/usr/local/etc/letsencrypt/live/$doms[0]-*/cert.pem"));
 		if (@fulls) {
 			my %stats = map { $_, [ stat($_) ] } @fulls;
 			@fulls = sort { $stats{$a}->[9] <=> $stats{$b}->[9] }
@@ -227,19 +248,20 @@ if (($letsencrypt_cmd && -d "/etc/letsencrypt/accounts") || $wildcard) {
 	&set_ownership_permissions(undef, undef, 0600, $key);
 	&set_ownership_permissions(undef, undef, 0600, $chain);
 	&cleanup_wellknown($wellknown_new, $challenge_new);
+
+	# Attempt to update the contact email on file with let's encrypt
+	&system_logged("$letsencrypt_cmd register --update-registration".
+	       " --email ".quotemeta($email)." >/dev/null 2>&1 </dev/null");
+
 	return (1, $cert, $key, $chain);
+	}
+elsif ($mode eq "dns") {
+	# Python client doesn't support DNS
+	return (0, $text{'letsencrypt_eacmedns'});
 	}
 else {
 	# Fall back to local Python client
 	$size ||= 4096;
-
-	# But first check if the native Let's Encrypt client was used previously
-	# for this system - if so, it must be used in future due to the account
-	# key.
-	if (-d "/etc/letsencrypt/accounts") {
-		&cleanup_wellknown($wellknown_new, $challenge_new);
-		return (0, &text('letsencrypt_enative', '/etc/letsencrypt'));
-		}
 
 	# Generate the account key if missing
 	if (!-r $account_key) {
@@ -284,7 +306,7 @@ else {
 				: "--dns-hook $dns_hook ".
 				  "--cleanup-hook $cleanup_hook ").
 		($staging ? "--ca https://acme-staging.api.letsencrypt.org "
-			  : "").
+			  : "--disable-check ").
 		"--quiet ".
 		"2>&1 >".quotemeta($cert));
 	&reset_environment();
@@ -331,7 +353,7 @@ else {
 	# Copy the per-domain files
 	my $certfinal = "$module_config_directory/$doms[0].cert";
 	my $keyfinal = "$module_config_directory/$doms[0].key";
-	my $chainfinal = "$module_config_directory/$doms[0].chain";
+	my $chainfinal = "$module_config_directory/$doms[0].ca";
 	&copy_source_dest($cert, $certfinal, 1);
 	&copy_source_dest($key, $keyfinal, 1);
 	&copy_source_dest($chain, $chainfinal, 1);
@@ -366,7 +388,7 @@ my ($d) = @_;
 my $bd = $d;
 while ($bd =~ /\./) {
 	my $z = &bind8::get_zone_name($bd, "any");
-	if ($z) {
+	if ($z && $z->{'file'} && $z->{'type'} eq 'master') {
 		return ($z, $bd);
 		}
 	$bd =~ s/^[^\.]+\.//;

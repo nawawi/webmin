@@ -3,14 +3,16 @@ index_list=lista de sercicios
 index_save=Salvar
 index_delete=Borrar
 index_create=Crear
-
 index_service=Servicios de Internet
 index_newservice=Crear un nuevo servicio de internet
 index_rpc=Programas RPC
 index_newrpc=Crear un nuevo programa RPC
 index_apply=Aplicar Cambios
 index_applymsg=Haz click en este botón para aplicar la configuración en curso mediante en envío de una señal SIGHUP al proceso <tt>inetd</tt> en ejecución
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 error_restart=No pude rearrancar Inetd
 error_saverpc=No pude salvar programa RPC
 error_invalidprgname='$1' no es un nombre de programa válido
@@ -38,7 +40,6 @@ error_childnum=Si se digita un máximo por minuto, se debe de hacer lo mismo con
 error_serviceexist=Ya existe un servicio que usa el puerto $1 y protocolo $2
 error_nameexist=Ya existe un servicio llamado $1 y protocolo $2
 error_inetservice=Ya existe un servicio de internet llamado $1 con protocolo $2
-
 editrpc_title1=Crear Programa RPC
 editrpc_title2=Editar Programa RPC
 editrpc_detail=Detalles de Programa RPC
@@ -61,7 +62,6 @@ editrpc_execasuser=Ejecutar Como Usuario
 editrpc_max=Máx. por Minuto
 editrpc_default=Por defecto
 editrpc_execasgrp=Ejecutar como Grupo
-
 editserv_title1=Crar Servicio de Internet
 editserv_title2=Editar Servicio de Internet
 editserv_detail=Detalles de Servicio de Internet
@@ -73,7 +73,6 @@ editserv_maxchild=Máx. Procesos Hijo
 editserv_execlogin=Ejecutar Como Clase de Login
 editserv_wrapper=Arropador-TCP
 editserv_inetd=Interno a <tt>inetd</tt>
-
 log_apply=Cambios aplicados
 log_create_serv=Creado servicio $1
 log_modify_serv=Modificado servicio $1
@@ -87,7 +86,6 @@ log_delete_serv_l=Borrado servicio $1 en puerto $2
 log_create_prog_l=Creado servicio $1 en puerto $2 para programa $3
 log_modify_prog_l=Modificado servicio $1 en puerto $2 para programa $3
 log_delete_prog_l=Borrado servicio $1 en puerto $2 para programa $3
-
 log_create_rpc=Creado RPC $1
 log_modify_rpc=Modificado RPC $1
 log_delete_rpc=Borrado RPC $1
@@ -100,4 +98,7 @@ log_delete_rpc_l=Borrado RPC $1 número $2
 log_create_rprog_l=Creado RPC $1 número $2 para programa $3
 log_modify_rprog_l=Modificad RPC $1 número $2 para programa $3
 log_delete_rprog_l=Borrado RPC $1 número $2 para programa $3
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master

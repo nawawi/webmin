@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 line1=Yapılandırılabilir seçenekler,11
+=======
+>>>>>>> upstream/master
 index_status=Listede gösterilecek durum,1,1-Mevcut durum,0-Son zamanlandırılmış kontroldeki
 pager_cmd=Çağrı cihazına mesaj gönderme komutu,3,Yok
 refresh=Sayfa yenilemeleri arası süre,3,Yenileme

@@ -1,47 +1,47 @@
 <header>Opcje administracyjne</header>
 
-<b>Uruchom jako uÅ¼ytkownik Uniksa</b>: DomyÅlnie jest 'nobody' lub 'squid'
-w&nbsp;zaleÅ¼noÅci od systemu. JeÅli proxy jest uruchomione jako root, zmieni
-ono swÃ³j efektywny/rzeczywisty UID na tÄ wartoÅÄ. <p>
+<b>Uruchom jako użytkownik Uniksa</b>: Domyślnie jest 'nobody' lub 'squid'
+w&nbsp;zależności od systemu. Jeśli proxy jest uruchomione jako root, zmieni
+ono swój efektywny/rzeczywisty UID na tę wartość. <p>
 
-<b>Uruchom jako grupa Uniksa</b>: DomyÅlnie jest 'nogroup' lub 'squid'
-w&nbsp;zaleÅ¼noÅci od systemu. JeÅli proxy jest uruchomione jako root, zmieni
-ono swÃ³j efektywny/rzeczywisty ID grupy na tÄ wartoÅÄ. <p>
+<b>Uruchom jako grupa Uniksa</b>: Domyślnie jest 'nogroup' lub 'squid'
+w&nbsp;zależności od systemu. Jeśli proxy jest uruchomione jako root, zmieni
+ono swój efektywny/rzeczywisty ID grupy na tę wartość. <p>
 
-<b>Dziedzina autoryzacji proxy</b>: OkreÅla nazwÄ dziedziny, ktÃ³ra bÄdzie
-zakomunikowana klientowi dla autoryzacji proxy (czÄÅÄ tekstu, ktÃ³rÄ
-uÅ¼ytkownik zobaczy, gdy zostanie poproszony o&nbsp;nazwÄ uÅ¼ytkownika
-i&nbsp;hasÅo). <p>
+<b>Dziedzina autoryzacji proxy</b>: Określa nazwę dziedziny, która będzie
+zakomunikowana klientowi dla autoryzacji proxy (część tekstu, którą
+użytkownik zobaczy, gdy zostanie poproszony o&nbsp;nazwę użytkownika
+i&nbsp;hasło). <p>
 
-<b>Adres e-mail zarzÄdcy proxy</b>: DomyÅlnie jest 'webmaster' or 'root'
-w&nbsp;zaleÅ¼noÅci od systemu. Adres e-mail lokalnego zarzÄdcy proxy, ktÃ³ry
-bÄdzie otrzymywaÅ wiadomoÅÄ w&nbsp;padu proxy. <p>
+<b>Adres e-mail zarządcy proxy</b>: Domyślnie jest 'webmaster' or 'root'
+w&nbsp;zależności od systemu. Adres e-mail lokalnego zarządcy proxy, który
+będzie otrzymywał wiadomość w&nbsp;padu proxy. <p>
 
-<b>Widoczna nazwa hosta</b>: JeÅli chcesz przedstawiÄ okreÅlonÄ nazwÄ hosta
-w&nbsp;komunikatach o&nbsp;bÅÄdach itp., to podaj jÄ tu. W przeciwnym razie
-bÄdzie uÅ¼yta wartoÅÄ zwracana przez gethostname(). JeÅli posiadasz wiele
-proxy w&nbsp;klastrze i&nbsp;otrzymujesz bÅÄdy dotyczÄce przekazywania IP,
-musisz nadaÄ im indywidualne nazwy za pomocÄ tego ustawienia. <p>
+<b>Widoczna nazwa hosta</b>: Jeśli chcesz przedstawić określoną nazwę hosta
+w&nbsp;komunikatach o&nbsp;błędach itp., to podaj ją tu. W przeciwnym razie
+będzie użyta wartość zwracana przez gethostname(). Jeśli posiadasz wiele
+proxy w&nbsp;klastrze i&nbsp;otrzymujesz błędy dotyczące przekazywania IP,
+musisz nadać im indywidualne nazwy za pomocą tego ustawienia. <p>
 
-<b>Unikalna nazwa hosta</b>: JeÅli chcesz mieÄ wiele maszyn z&nbsp;tÄ samÄ
-<b>WidocznÄ nazwÄ hosta</b> to musisz nadaÄ kaÅ¼dej z&nbsp;nich innÄ
-<b>UnikalnÄ nazwÄ hosta</b> tak, aby zapÄtlanie podczas przekazywania mogÅo
-zostaÄ wykryte. <p>
+<b>Unikalna nazwa hosta</b>: Jeśli chcesz mieć wiele maszyn z&nbsp;tą samą
+<b>Widoczną nazwą hosta</b> to musisz nadać każdej z&nbsp;nich inną
+<b>Unikalną nazwę hosta</b> tak, aby zapętlanie podczas przekazywania mogło
+zostać wykryte. <p>
 
-<b>Host rozgÅaszania cache</b>: Nazwa hosta, do ktÃ³rego bÄdÄ wysyÅane
-komunikaty rozgÅoszeniowe. WiÄcej na temat hierarchii proxy znajdziesz
+<b>Host rozgłaszania cache</b>: Nazwa hosta, do którego będą wysyłane
+komunikaty rozgłoszeniowe. Więcej na temat hierarchii proxy znajdziesz
 w&nbsp;<a href="http://www.squid-cache.org/Doc/FAQ/FAQ-4.html"
-target="Reference">FAQ-u Squida</a>. DomyÅlnie jest to
-'tracker.ircache.net', jeÅli rozgÅaszanie zostaÅo wÅÄczone poprzez podanie
-okresu rozgÅaszania. <p>
+target="Reference">FAQ-u Squida</a>. Domyślnie jest to
+'tracker.ircache.net', jeśli rozgłaszanie zostało włączone poprzez podanie
+okresu rozgłaszania. <p>
 
-<b>Port rozgÅaszania cache</b>: Port hosta, na ktÃ³ry komunikaty
-rozgÅoszeniowe bÄdÄ wysyÅane. DomyÅlnie jest to 3131, gdy rozgÅaszanie jest
-wÅÄczone. <p>
+<b>Port rozgłaszania cache</b>: Port hosta, na który komunikaty
+rozgłoszeniowe będą wysyłane. Domyślnie jest to 3131, gdy rozgłaszanie jest
+włączone. <p>
 
-<b>CzÄstotliwoÅÄ rozgÅaszania</b>: CzÄstotliwoÅÄ rozgÅoszeÅ. WÅÄcz
-rozgÅaszanie do hierarchii proxy poprzez ustawienia jej na '1 dzieÅ'.
-DomyÅlnie jest '0', co wyÅÄcza rozgÅaszanie.
+<b>Częstotliwość rozgłaszania</b>: Częstotliwość rozgłoszeń. Włącz
+rozgłaszanie do hierarchii proxy poprzez ustawienia jej na '1 dzień'.
+Domyślnie jest '0', co wyłącza rozgłaszanie.
 
 <hr>
 

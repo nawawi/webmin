@@ -14,7 +14,10 @@ index_ro_rw=do odczytu dla wszystkich hostów, do zapisu dla wybranych hostów
 index_sel_rw=do zapisu dla wybranych hostów
 index_all_rw=do zapisu dla wszystkich hostów
 index_sel_root=prawa <tt>root</tt>-a dla wybranych hostów
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 edit_title=Zmień udostępnianie
 create_title=Udostępnij
 edit_details=Dane udostępniania
@@ -32,7 +35,11 @@ edit_relative=Względne dowiazania symboliczne?
 edit_insecure=Tylko klienci na bezpiecznych portach?
 edit_mode=Tryb dostępu
 edit_ro=Tylko do odczytu
+<<<<<<< HEAD
 edit_rw=Odczyt i&nbsp;zapis
+=======
+edit_rw=Odczyt i zapis
+>>>>>>> upstream/master
 edit_noaccess=Zablokować dostęp do katalogu?
 edit_squash=Zaufani użytkownicy zdalni
 edit_everyone=Wszyscy
@@ -57,7 +64,10 @@ edit_anon_access=Użytkownik anonimowy
 edit_anon_notset=Nie ustawiono
 edit_anon_noaccess=Brak dostępu
 edit_async=Asynchroniczny zapis
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 save_err=Nie udało sie zachować parametrów udostępniania
 save_edir=Katalog '$1' nie istnieje
 save_enetgroup=Niepoprawna lub nie podana grupa sieciowa
@@ -67,7 +77,10 @@ save_ehost='$2' - '$1' nie jest poprawną nazwą hosta
 save_enohost='$1' - Nie podano żadnego hosta
 save_euids=Niewiarygodne UID-y muszą być rozdzieloną przecinkami listą liczb lub zakresów
 save_egids=Niewiarygodne GID-y muszą być rozdzieloną przecinkami listą liczb lub zakresów
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 log_modify=Zmieniono eksport NFS $1
 log_modify_l=Zmieniono eksport NFS $1 do $2
 log_delete=Zmieniono eksport NFS $1

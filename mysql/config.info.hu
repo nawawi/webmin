@@ -1,10 +1,17 @@
 line1=Konfigurációs beállítások,11
 login=Adminisztrátori felhasználói név,0
 pass=Adminisztrátori jelszó,0
+<<<<<<< HEAD
 perpage=A megjelenítendõ sorok száma oldalanként,0
 style=Mutassam az adatbázisokat és táblákat mint,1,1-Listaként,0-Ikonként
 add_mode=Vertikális sor szerkesztési kinézet,1,1-Igen,0-Nem
 blob_mode=Jelenítse meg a blob és szöveges mezõt mint,1,0-Adatként a táblában,1-Linkként letöltésre
+=======
+perpage=A megjelenítendő sorok száma oldalanként,0
+style=Mutassam az adatbázisokat és táblákat mint,1,1-Listaként,0-Ikonként
+add_mode=Vertikális sor szerkesztési kinézet,1,1-Igen,0-Nem
+blob_mode=Jelenítse meg a blob és szöveges mezőt mint,1,0-Adatként a táblában,1-Linkként letöltésre
+>>>>>>> upstream/master
 nodbi=Használjam a DBI -t csatlakozásra ha létezik?,1,0-Igen,1-Nem
 date_subs=Csináljon <tt>strftime</tt> cserélt a másolati célon?1,1-Igen,0-Nem
 passwd_mode=Jelszó kódolási mód,1,1-Régi,0-Általános

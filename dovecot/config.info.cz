@@ -1,4 +1,4 @@
 dovecot=Program Dovecot serveru,0
-dovecot_config=ÃšplnÃ¡ cesta ke konfiguraÃ¨nÃ­mu souboru Dovecot,0
-init_script=NÃ¡zev skiptu Dovecot inicializace,3,Â®Ã¡dnÃ½ neexistuje
+dovecot_config=Úplná cesta ke konfiguraènímu souboru Dovecot,0
+init_script=Název skiptu Dovecot inicializace,3,®ádný neexistuje
 pid_file=PID soubor Dovecot serveru,0

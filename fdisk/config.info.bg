@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 mode=Êîìàíäà çà óïðàâëåíèå íà äÿëîâå,1,fdisk-Fdisk,parted-Parted,-Àâòîìàòè÷åí èçáîð
 format=Ïîäðàçáèðàù ñå ôîðìàò çà òàáëèöà çà äÿëîâå,1,msdos-MSDOS,gpt-GPT
+=======
+mode=Команда за управление на дялове,1,fdisk-Fdisk,parted-Parted,-Автоматичен избор
+format=Подразбиращ се формат за таблица за дялове,1,msdos-MSDOS,gpt-GPT
+>>>>>>> upstream/master

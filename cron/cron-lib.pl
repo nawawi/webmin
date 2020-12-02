@@ -109,7 +109,9 @@ if ($config{'system_crontab'}) {
 
 # read package-specific cron files
 opendir(DIR, &translate_filename($config{'cronfiles_dir'}));
-while($f = readdir(DIR)) {
+my @files = sort { $a cmp $b } readdir(DIR);
+closedir(DIR);
+foreach my $f (@files) {
 	next if ($f =~ /^\./);
 	$lnum = 0;
 	&open_readfile(TAB, "$config{'cronfiles_dir'}/$f");
@@ -141,7 +143,6 @@ while($f = readdir(DIR)) {
 		}
 	close(TAB);
 	}
-closedir(DIR);
 
 # Read a single user's crontab file
 if ($config{'single_file'}) {
@@ -700,7 +701,7 @@ sub save_envs
 {
 local($i, @tab, $line);
 @tab = &read_crontab($_[0]);
-open(TAB, ">$cron_temp_file");
+open(TAB, ">".$cron_temp_file);
 for($i=1; $i<@_; $i+=2) {
 	print TAB "$_[$i]=$_[$i+1]\n";
 	}
@@ -942,7 +943,7 @@ return &theme_show_times_input(@_) if (defined(&theme_show_times_input));
 local $job = $_[0];
 if ($config{'vixie_cron'} && (!$_[1] || $_[0]->{'special'})) {
 	# Allow selection of special @ times
-	print "<tr $cb> <td colspan=6>\n";
+	print "<tr data-schedule-tr $cb> <td colspan=6>\n";
 	printf "<input type=radio name=special_def value=1 %s> %s\n",
 		$job->{'special'} ? "checked" : "", $text{'edit_special1'};
 	print "<select name=special onChange='change_special_mode(form, 1)'>\n";
@@ -1230,7 +1231,7 @@ local $perl_path = &get_perl_path();
 &open_tempfile(CMD, ">$_[0]");
 &print_tempfile(CMD, <<EOF
 #!$perl_path
-open(CONF, "$config_directory/miniserv.conf") || die "Failed to open $config_directory/miniserv.conf : \$!";
+open(CONF, "<$config_directory/miniserv.conf") || die "Failed to open $config_directory/miniserv.conf : \$!";
 while(<CONF>) {
         \$root = \$1 if (/^root=(.*)/);
         }

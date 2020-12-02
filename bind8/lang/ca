@@ -1,6 +1,9 @@
 index_title=Servidor DNS BIND
 index_enamed=No s'ha trobat al sistema el servidor DNS BIND $1. Pot ser que no estigui instal·lat, o bé que la <a href='$2'>configuració del mòdul BIND</a> sigui incorrecta.
+<<<<<<< HEAD
 index_eversion=No sembla que l'executable servidor $1 sigui un BIND 8 o 9. Pot ser que hagis d'utilitzar el <a href='$2'>mòdul BIND 4</a> en lloc d'aquest. La resposta de l'ordre $3 ha estat: $4
+=======
+>>>>>>> upstream/master
 index_eempty=El fitxer de configuració primària $1 de BIND no existeix, o bé no és vàlid. El creo?
 index_local=Configura el servidor de noms només per a ús intern (no Internet)
 index_download=Configura com a servidor de noms Internet i descarrega la informació del servidor arrel
@@ -66,7 +69,10 @@ index_checkconfig=Assegura't que el directori <i>chroot</i> està configurat cor
 index_eexpired=Atenció: Les zones següents tenen signatures DNSSEC caducades: $1
 index_eexpired_conf=Caldria reactiva la signatura automàtica a la pàgina $1.
 index_eexpired_mod=Fes servi el mòdul $1 per desactivar DNSSEC per a aquest dominis, o bé comprova perquè està fallant la signatura.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 master_title=Edició de Zona Mestra
 master_ecannot=No tens permís per editar aquesta zona
 master_egone=La zona $1 no existeix a cap vista
@@ -147,17 +153,24 @@ master_defttl=Temps de vida per defecte dels registres
 master_edefttl='$1' no és un temps de vida per defecte dels registres
 master_esoagone=No s'ha trobat cap registre SOA!
 master_einclude=El fitxer addicional de plantilla no existeix
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 delete_title=Supressió de Zona
 delete_mesg=Segur que vols suprimir la zona $1? S'esborrarà la zona i tots els seus registres.
 delete_mesg2=Segur que vols suprimir la zona arrel? Pot ser que el teu servidor DNS no pugui consultar més adreces d'Internet.
 delete_mesg3=Segur que vols suprimir la zona $1?
 delete_rev=Suprimeix els registres inversos d'altres zones
 delete_fwd=Suprimeix els registres de reemissió d'altres zones
+<<<<<<< HEAD
 delete_slave=Suprimeix-los també dels servidors esclaus
 delete_err2=La zona mestra s'ha suprimit correctament, però s'han produït els següents errors als esclaus: $1
 delete_ezone=No s'ha trobat la zona al servidor esclau
 
+=======
+delete_ezone=No s'ha trobat la zona al servidor esclau
+>>>>>>> upstream/master
 mcreate_title=Creació de Zona Mestra
 mcreate_ecannot=No pots crear zones mestres
 mcreate_opts=Opcions de la nova zona mestra
@@ -172,7 +185,10 @@ mcreate_auto=Automàtic
 mcreate_err=No s'ha pogut crear la zona mestra
 mcreate_ednssecsize=No s'ha pogut calcular la mida de la clau: $1
 mcreate_ednssec=La creació del registre ha reeixit, però DNSSEC ha fallat: $1
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 slave_title=Edició de Zona Esclava
 stub_title=Edició de Zona Stub
 slave_ecannot=No tens permís per editar aquesta zona
@@ -204,7 +220,10 @@ slave_applymsg2=Fes clic sobre aquest botó per forçar una retransferència de 
 slave_last=Darrera transferència: $1
 slave_never=Mai
 slave_xfer=Prova la Transferència de Zona
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 screate_title1=Creació de Zona Esclava
 screate_title2=Creació de Zona Stub
 screate_ecannot1=No tens permís per crear noves zones esclaves
@@ -217,7 +236,10 @@ screate_rev=Inversa (Adreces a Noms)
 screate_dom=Nom de domini / Xarxa
 screate_err1=No s'ha pogut crear la zona esclava
 screate_err2=No s'ha pogut crear la zona stub
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 recs_ecannot=No tens permís per editar registres d'aquesta zona
 recs_ecannottype=No tens permís per editar registres d'aquest tipus
 recs_title=Registre $1
@@ -235,7 +257,10 @@ recs_drev=Elimina també els inversos
 recs_none=El domini encara no té cap registre $1.
 recs_nosearch=No hi ha cap registre que coincideixi amb la teva cerca.
 recs_needsearch=Introdueix una cerca per trobar registres coincidents.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 edit_title=Edició de $1
 edit_header=de $1
 edit_edit=Edita un Registre $1
@@ -289,13 +314,22 @@ edit_eflags='$1' no és un número decimal ni hexadecimal de banderes de clau v�
 edit_eproto='$1' no és un número de protocol vàlid
 edit_ealg='$1' no és un número d'algorisme de clau vàlid
 edit_ekey=Hi falten les dades de la clau codificada en base-64 o bé són invàlides
+<<<<<<< HEAD
+=======
+edit_ealg2='$1' no és un número d'algoritme de certificat vàlid
+edit_efp='$1' no és un tipus d'empremta digital de certificat vàlid
+edit_esshfp=Hi falten les dades de la clau pública codificades en base 64 o bé no són vàlides
+>>>>>>> upstream/master
 edit_dtitle=Suprimeix el Registre
 edit_rusure=Segur que vols suprimir el registre $1 del domini $2, i possiblement qualsevol registre invers o de reenviament que hi coincideixi?
 edit_dok=Sí, Suprimeix-lo
 edit_eptr='$1' no és un nom de host de registre d'adreça inversa vàlid
+<<<<<<< HEAD
 edit_ealg2='$1' no és un número d'algoritme de certificat vàlid
 edit_efp='$1' no és un tipus d'empremta digital de certificat vàlid
 edit_esshfp=Hi falten les dades de la clau pública codificades en base 64 o bé no són vàlides
+=======
+>>>>>>> upstream/master
 edit_espfa='$1' no és un host destinació vàlid
 edit_espfa2='$1' ha de ser un nom de host, no una adreça IP
 edit_espfmx='$1' no és un nom de domini destinació vàlid
@@ -310,17 +344,25 @@ edit_ensec3value3=Hi falta la sal no base64 o bé és incorrecta
 edit_edmarcpct=El percentatge de missatges ha de ser un enter entre 0 i 100
 edit_edmarcrua=Hi falta l'adreça de la informació agregada
 edit_edmarcruf=Hi falta l'adreça de la informació forense
+<<<<<<< HEAD
 
 text_title=Edició del Fitxer de Registres
 text_title2=Visualització del Fitxer de Registres
 text_desc=Aquest formulari permet editar manualment el fitxer de registres DNS $1. Webmin no farà cap comprovació de sintaxi.
+=======
+text_title=Edició del Fitxer de Registres
+text_title2=Visualització del Fitxer de Registres
+>>>>>>> upstream/master
 text_desc2=Aquesta pàgina mostra el fitxer de registres DNS $1, creat per BIND quan la zona va ser transferida des del servidor mestre.
 text_undo=Desfés
 text_ecannot=No tens permís per editar fitxers de registres
 text_none=No obstant, el fitxer està actualment buit, probablement perquè la zona encara no ha estat transferida des del servidor mestre.
 text_soa=Incrementa automàticament el número de sèrie
 text_rawformat=Aquesta zona està en format binari pelat, així que no es pot mostrar com a text.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 restart_err=No s'ha pogut aplicar els canvis
 restart_ecannot=No tens permís per reiniciar BIND
 restart_epidfile=No s'ha pogut trobar el PID de BIND a $1
@@ -329,12 +371,18 @@ restart_erunning2=Sembla que BIND no s'està executant al servidor esclau $1
 restart_endc=L'ordre NDC ha fallat: $1
 restart_ecmd=L'ordre de reinici ha fallat: $1
 restart_eversion=El servidor esclau $1 no està executant la versió de Webmin $2 o superior.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 start_ecannot=No tens permís per iniciar BIND
 start_error=No s'ha pogut iniciar BIND: $1 
 stop_epid=BIND no està en execució
 stop_ecannot=No tens permís per aturar BIND
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 fwd_title=Edició de Zona de Reemissió
 fwd_ecannot=No tens permís per editar aquesta zona
 fwd_opts=Opcions de la Zona
@@ -343,14 +391,20 @@ fwd_forward=Prova altres servidors
 fwd_check=Comprova els noms
 fwd_err=No s'ha pogut desar les opcions
 fwd_delmsg=Fes clic sobre aquest botó per suprimir aquesta zona del servidor DNS. Llavors, els seus registres es consultaran utilitzant el procés normal de resolució.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 delegation_title=Edició de Zona de Delegació
 delegation_ecannot=No tens permís per editar aquesta zona
 delegation_opts=Opcions de la Zona
 delegation_err=No s'ha pogut desar les opcions
 delegation_noopts=Les zones de delegació no tenen cap opció configurable.
 delegation_delmsg=Fes clic sobre aquest botó per suprimir aquesta zona del servidor DNA. Llavors, els tipus de registre diferents de NS seran reconeguts per BIND.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 fcreate_title=Creació de Zona de Reemissió
 fcreate_ecannot=No tens permís per crear zones
 fcreate_opts=Opcions de la nova zona de reemissió
@@ -360,12 +414,18 @@ fcreate_rev=Inversa (Adreces a Noms)
 fcreate_dom=Nom de domini / Xarxa
 fcreate_masters=Servidors Mestres
 fcreate_err=No s'ha pogut crear la zona de reemissió
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 dcreate_title=Creació de Zona Només Delegació
 dcreate_ecannot=No tens permís per crear zones de delegació
 dcreate_opts=Opcions de la nova zona de delegació
 dcreate_err=No s'ha pogut crear la zona de delegació
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 create_enet='$1' no és una xarxa vàlida
 create_edom='$1' no és un nom de domini vàlid
 create_edom2='$1' ha de ser un domini, no una xarxa
@@ -375,11 +435,17 @@ create_efile3=No s'ha pogut crear '$1': $2
 create_efile4=El fitxer $1 ja existeix
 create_emaster='$1' no és una adreça de servidor mestre vàlida
 create_enone=Has d'introduir almenys un servidor mestre
+<<<<<<< HEAD
 
 boot_err=La descàrrega ha fallat
 boot_egzip=La zona arrel està comprimida, però l'ordre <tt>gzip</tt> no està instal·lada al sistema!
 boot_egzip2=La descompressió de la zona arrel ha fallat: $1
 
+=======
+boot_err=La descàrrega ha fallat
+boot_egzip=La zona arrel està comprimida, però l'ordre <tt>gzip</tt> no està instal·lada al sistema!
+boot_egzip2=La descompressió de la zona arrel ha fallat: $1
+>>>>>>> upstream/master
 type_A=Adreça
 type_AAAA=Adreça IPv6
 type_NS=Servidor de Noms
@@ -399,7 +465,10 @@ type_LOC=Ubicació
 type_SRV=Adreça del Servei
 type_ALL=Tots els Tipus de Registre
 type_KEY=Clau Pública
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 edit_A=Adreça
 edit_AAAA=Adreça IPv6
 edit_NS=Servidor de Noms
@@ -416,13 +485,21 @@ edit_LOC=Ubicació
 edit_SRV=Adreça del Servei
 edit_KEY=Clau Pública
 edit_NSEC3PARAM=Paràmetres DNSSEC
+<<<<<<< HEAD
 
+=======
+edit_TLSA=Certificat SSL
+edit_SSHFP=Clau Pública SSH
+>>>>>>> upstream/master
 recs_defttl=TTL per defecte
 recs_A=Adreça
 recs_AAAA=Adreça IPv6
 recs_NS=Servidor de Noms
+<<<<<<< HEAD
 edit_TLSA=Certificat SSL
 edit_SSHFP=Clau Pública SSH
+=======
+>>>>>>> upstream/master
 recs_CNAME=Àlies del Nom
 recs_MX=Servidor de Correu
 recs_HINFO=Informació del Host
@@ -437,6 +514,7 @@ recs_SRV=Adreça de Servei
 recs_ALL=Tot
 recs_KEY=Clau Pública
 recs_NSEC3PARAM=Paràmetres DNSSEC
+<<<<<<< HEAD
 recs_delete=Suprimeix els Seleccionats
 
 value_A1=Adreça
@@ -444,6 +522,14 @@ value_AAAA1=Adreça IPv6
 value_NS1=Servidor de Noms
 recs_TLSA=Certificat SSL
 recs_SSHFP=Clau Pública SSH
+=======
+recs_TLSA=Certificat SSL
+recs_SSHFP=Clau Pública SSH
+recs_delete=Suprimeix els Seleccionats
+value_A1=Adreça
+value_AAAA1=Adreça IPv6
+value_NS1=Servidor de Noms
+>>>>>>> upstream/master
 value_CNAME1=Nom Real
 value_MX1=Prioritat
 value_MX2=Servidor de Correu
@@ -478,7 +564,6 @@ value_NSEC3PARAM1=Algoritme de hash
 value_NSEC3PARAM2=Banderes NSEC3
 value_NSEC3PARAM3=Nombre d'iteracions del hash
 value_NSEC3PARAM4=Llargada de la sal
-value_NSEC3PARAM5=Cadena de sal
 value_delegated=Zona delegada
 value_notdelegated=Una altra zona
 value_other=Valors (un per línia)
@@ -512,7 +597,10 @@ value_dmarcnop=Igual que aquest domini
 value_dmarcaspf=Requereix alineació SPF estricta
 value_dmarcadkim=Requereix alineació DKIM estricta
 value_dmarcnor=No ho enviïs
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 tlsa_usage0=Autoritat certificadora
 tlsa_usage1=Acaba l'entitat
 tlsa_usage2=Ancora de confiança
@@ -522,14 +610,12 @@ tlsa_selector1=Info de la clau pública
 tlsa_match0=Contingut sense hash
 tlsa_match1=amb hash SHA-256
 tlsa_match2=amb hash SHA-512
-
 sshfp_alg1=RSA
 sshfp_alg2=DSA
 sshfp_alg3=ECDSA
 sshfp_alg4=Ed25519
 sshfp_fp1=SHA-1
 sshfp_fp2=SHA-256
-
 warn=Avisa
 fail=Falla
 ignore=Ignora
@@ -543,13 +629,16 @@ listed=Llista...
 eip='$1' no és una adreça IP vàlida
 eport='$1' no és un número de port vàlid
 eipacl='$1' no és una adreça IP ni un nom ACL vàlid
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 acl_zones=Dominis que aquest usuari pot editar
 acl_zall=Totes les zones
 acl_zsel=Zones seleccionades...
+acl_znsel=Totes excepte les zones seleccionades...
 acl_inviews=Vistes sobre les quals aquest usuari pot editar dominis
 acl_toplevel=Fora de qualsevol vista
-acl_znsel=Totes excepte les zones seleccionades...
 acl_master=Pot crear zones mestres
 acl_slave=Pot crear zones esclaves/stub
 acl_forward=Pot crear zones de reemissió
@@ -588,7 +677,6 @@ acl_ztypes_master=Mestre
 acl_ztypes_slave=Esclau/stub
 acl_ztypes_delegation=Delegació
 acl_ztypes_forward=Reenviament
-
 servers_title=Altres Servidors DNS
 servers_ip=Adreça IP
 servers_bogus=Ignora el servidor bogus
@@ -596,11 +684,18 @@ servers_format=Format de transferència de zona
 servers_trans=Transferències màximes
 servers_one=Una per una
 servers_many=Moltes
+<<<<<<< HEAD
 servers_err=No s'ha pogut desar els altres servidors DNS
 servers_eip='$1' no és una adreça IP vàlida
 servers_keys=Utilitza claus DNS
 servers_etrans='$1' no és un nombre màxim de transferències vàlid
 
+=======
+servers_keys=Utilitza claus DNS
+servers_err=No s'ha pogut desar els altres servidors DNS
+servers_eip='$1' no és una adreça IP vàlida
+servers_etrans='$1' no és un nombre màxim de transferències vàlid
+>>>>>>> upstream/master
 logging_title=Errors i Registre
 logging_ecannot=No tens permís per configurar el registre
 logging_header=Opcions globals d'errors i registre
@@ -639,7 +734,10 @@ logging_efile=Hi falta el nom del fitxer de registre
 logging_efile2=El nom del fitxer de registre ha de ser un camí absolut
 logging_ever='$1' no és un nombre de versions vàlid
 logging_esize='$1' no és una mida de registre vàlida
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 acls_title=Llistes de Control d'Accés
 acls_ecannot=No tens permís per editar les ACLs globals
 acls_name=Nom de l'ACL
@@ -647,7 +745,10 @@ acls_values=Adreces, xarxes i ACLs que coincideixen
 acls_err=No s'ha pogut desar les llistes de control d'accés
 acls_ename='$1' no és un nom d'ACL vàlid
 acls_eline=Cada adreça IP s'ha d'introduir en una línia separada per a l'ACL '$1'
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 files_title=Fitxers i Directoris
 files_ecannot=No tens permís per configurar els fitxers
 files_header=Opcions globals dels fitxers i directoris
@@ -657,7 +758,10 @@ files_pid=Fitxer d'ID del procés
 files_xfer=Camí del programa de transferència de zones
 files_err=No s'ha pogut desar les opcions dels fitxers i directoris
 files_efile=Hi falta el nom del fitxer o bé no és vàlid
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 forwarding_title=Reemissió i Transferències
 forwarding_ecannot=No tens permís per editar les opcions de transferència i reemissió
 forwarding_header=Opcions globals de transferència de zona i reemissió
@@ -676,7 +780,6 @@ forwarding_etrans=Hi falta el nombre màxim de transferències concurrents o bé
 forwarding_minutes=minuts
 forwarding_ip=Adreça IP
 forwarding_port=Port
-
 net_title=Adreces i Topologia
 net_ecannot=No tens permís per editar les opcions d'adreces i topologia
 net_header=Opcions globals d'adreces i topologia
@@ -702,7 +805,10 @@ net_taddrdef=IP més pròxima
 net_etport=No es pot especificar un port origen de transferència sense una adreça
 net_eaddr='$1' no és una adreça IPV4 vàlida
 net_eaddr6='$1' no és una adreça IPV6 vàlida
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 controls_title=Opcions de Control d'Interfície
 controls_ecannot=No tens permís per editar les opcions de control
 controls_header=Opcions de control
@@ -724,7 +830,10 @@ controls_eunixpath=Hi falta el camí del fitxer FIFO o bé és invàlid
 controls_eunixperm=Hi falten els permisos octals del fitxer o bé són invàlids
 controls_eunixowner=Hi falta l'usuari propietari del fitxer o bé és invàlid
 controls_eunixgroup=Hi falta el grup propietari del fitxer o bé és invàlid
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 controls_inet=Accés al port d'Internet
 controls_unix=Accés FIFO Unix
 controls_port=port
@@ -738,7 +847,10 @@ controls_efile=Hi falta el nom FIFO o bé és invàlid
 controls_eperms=Hi falten els permisos FIFO o bé són invàlids
 controls_eowner=Hi falta el UID de FIFO o bé és invàlid
 controls_egroup=Hi falta el GID de FIFO o bé és invàlid
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 keys_title=Claus DNS
 keys_id=ID de clau
 keys_alg=Algoritme
@@ -747,7 +859,10 @@ keys_ecannot=No tens permís per editar les claus DNS
 keys_err=No s'ha pogut desar les claus DNS
 keys_ekey='$1' no és un ID de clau vàlid
 keys_esecret=Hi falta la cadena secreta codificada en base-64 de la clau $1 o bé és invàlida
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 misc_title=Opcions Miscel·lànies
 misc_ecannot=No tens permís per editar les opcions miscel·lànies
 misc_header=Opcions globals miscel·lànies
@@ -767,7 +882,6 @@ misc_esize='$1' no és una mida vàlida
 misc_efiles='$1' no és un nombre de fitxers oberts vàlid
 misc_emins='$1' no és un nombre de minuts vàlid
 misc_mins=mins
-
 zonedef_title=Valors de Zona per Defecte
 zonedef_msg=Valors per defecte de noves zones mestres
 zonedef_err=No s'ha pogut desar els valors de zona per defecte
@@ -791,6 +905,7 @@ zonedef_size=Mida de la clau inicial
 zonedef_single=Nombre de claus a crear
 zonedef_two=Clau de la zona i clau de signatura
 zonedef_one=Només clau de la zona
+<<<<<<< HEAD
 
 find_title=Recerca de Zones
 find_match=Zones que coincideixin amb $1...
@@ -798,6 +913,12 @@ find_none=No s'ha trobat cap zona.
 
 efirst=Directiva inicial errònia a la línia $1 de $2
 
+=======
+find_title=Recerca de Zones
+find_match=Zones que coincideixin amb $1...
+find_none=No s'ha trobat cap zona.
+efirst=Directiva inicial errònia a la línia $1 de $2
+>>>>>>> upstream/master
 findfree_title=Recerca d'IPs Lliures
 findfree_desc=Busca IPs Lliures
 findfree_nofind=No pots buscar IPs lliures
@@ -805,6 +926,7 @@ findfree_header=A $1
 findfree_sopt=Opcions de recerca
 findfree_fromip=Des de l'adreça
 findfree_toip=A l'adreça IP
+<<<<<<< HEAD
 findfree_cf=Considero els noms de host <em>`freeXXX'</em> com a IPs lliures?
 findfree_search=Busca
 findfree_msg=S'han trobat $1 adreces IP lliures
@@ -813,6 +935,14 @@ findfree_msg2=(de les quals $1 són de la forma <i>freeXXX</i> i $2 de la forma 
 free_title=Adreces IP Lliures
 free_ip=Adreça IP
 
+=======
+findfree_cf=Considero els noms de host <em>freeXXX</em> com a IPs lliures?
+findfree_search=Busca
+findfree_msg=S'han trobat $1 adreces IP lliures
+findfree_msg2=(de les quals $1 són de la forma <i>freeXXX</i> i $2 de la forma <i>freemac</i>)
+free_title=Adreces IP Lliures
+free_ip=Adreça IP
+>>>>>>> upstream/master
 log_servers=S'han canviat els altres servidors DNS
 log_logging=S'han canviat els errors i el registre
 log_acls=S'han canviat les llistes de control d'accés
@@ -820,12 +950,17 @@ log_files=S'han canviat els fitxers i directoris
 log_forwarding=S'han canviat les reemissions i les transferències
 log_net=S'han canviat les adreces i la topologia
 log_misc=S'han canviat les opcions miscel·lànies
+<<<<<<< HEAD
 log_zonedef=S'han canviat els valors de zona per defecte
 log_manual=S'ha editat manualment el fitxer de configuració $1
-log_apply=S'han aplicat els canvis
+=======
 log_keys=S'han canviat les claus DNS
-log_start=S'ha iniciat el servidor DNS
+log_manual=S'ha editat manualment el fitxer de configuració $1
+log_zonedef=S'han canviat els valors de zona per defecte
+>>>>>>> upstream/master
+log_apply=S'han aplicat els canvis
 log_apply2=S'han aplicat els canvis a $1
+log_start=S'ha iniciat el servidor DNS
 log_stop=S'ha aturat el servidor DNS
 log_master=S'ha creat la zona mestra $1
 log_slave=S'ha creat la zona esclava $1
@@ -869,17 +1004,22 @@ log_sign=S'han actualitzat les signatures DNSSEC de la zona $1
 log_resign=S'ha re-signat la clau DNSSEC de la zona $1
 log_trusted=S'ha canviat la verificació DNSSEC
 log_dnssec=S'ha canviat la re-signatura de la clau
-
 convert_err=No s'ha pogut convertir la zona
 convert_efile=Cal especificar un fitxer de registres abans de poder convertir una zona esclava a una de mestra.
 convert_efilesize=El fitxer de registres $1 no existeix o bé està buit
 convert_ebinary=L'ordre necessària per convertir una zona esclava binària a format text mestre no està instal·lada
 convert_ecompile=La conversió de format binari a text ha fallat: $1
+<<<<<<< HEAD
 
 whois_title=Informació WHOIS
 whois_header=Resultat de l'ordre $1...
 whois_ecannot=No tens permís per consultar la informació WHOIS
 
+=======
+whois_title=Informació WHOIS
+whois_header=Resultat de l'ordre $1...
+whois_ecannot=No tens permís per consultar la informació WHOIS
+>>>>>>> upstream/master
 view_title=Edició de Vista Client
 view_opts=Detalls de la vista client
 view_opts2=Opcions de les zones de la vista
@@ -890,7 +1030,10 @@ view_recursion=Fes consultes recursives completes pels clients
 view_ecannot=No tens permís per editar aquesta vista
 view_delete=Suprimeix la Vista
 view_deletemsg=Fes clic sobre aquest botó per suprimir la vista. Podràs triar de desplaçar les zones que conté a una altra vista, o bé suprimir-les també.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 vcreate_title=Creació de Vista de Client
 vcreate_match_all=Tots els clients
 vcreate_match_sel=Adreces, xarxes i ACLs llistades
@@ -899,7 +1042,10 @@ vcreate_ename=Hi falta el nom de la vista o bé és invàlid
 vcreate_etaken=El nom de la vista ja existeix
 vcreate_eclass=Hi falta el nom de la classe o bé és invàlid
 vcreate_ecannot=No tens permís per crear vistes
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 hint_title=Edició de Zona Arrel
 hint_desc=El servidor DNS utilitza la zona arrel per contactar amb els servidors arrel d'Internet, de manera que pugui resoldre els noms dels dominis no gestionats per ell mateix, com ara <tt>.com</tt> o <tt>.net.au</tt>. A menys que el teu servidor DNS sigui per utilitzar en una xarxa interna o estiguis reenviant totes les peticions a un altre servidor, no has de suprimir aquesta zona arrel.
 hint_move=Desplaça-la a la vista:
@@ -908,7 +1054,10 @@ hint_refetch=Redescarrega els Servidors de Noms Arrel
 hint_refetchdesc=Fes clic sobre aquest botó per fer que Webmin redescarregui el fitxer de la zona arrel del seu origen al servidor FTP d'Internic.
 hint_delete=Suprimeix la Zona Arrel
 hint_deletedesc=Fes clic sobre aquest botó per eliminar aquesta zona arrel. Sense ella, el teu servidor de noms no podrà resoldre cap altre domini d'Internet tret d'aquells per als quals és un servidor secundari.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 hcreate_title=Creació de Zona Arrel
 hcreate_desc=El servidor DNS utilitza la zona arrel per contactar amb els servidors arrel d'Internet, de manera que pugui resoldre els noms dels dominis no gestionats per ell mateix, com ara <tt>.com</tt> o <tt>.net.au</tt>. Si estàs utilitzant més d'una vista, potser hauràs de tenir zones arrel separades per cada vista, de manera que tots els clients puguin resoldre adequadament els dominis d'Internet.
 hcreate_header=Detalls de la zona arrel
@@ -922,7 +1071,10 @@ hcreate_efile='$1' no és un fitxer arrel permissible
 hcreate_efile2=Hi falta el fitxer arrel o bé és invàlid
 mcreate_erecs=No és un fitxer de zona arrel vàlid
 hcreate_err=No s'ha pogut crear la zona arrel
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 vdelete_title=Supressió de Vista
 vdelete_mesg=Segur que vols suprimir la vista client $1? Totes les zones d'aquesta vista seran esborrades  (juntament amb tots els seus fitxers de zona) o desplaçats a una altra vista depenent de la selecció inferior.
 vdelete_mesg2=Segur que vols  suprimir la vista client $1?
@@ -930,7 +1082,10 @@ vdelete_newview=Zones d'aquesta vista
 vdelete_root=Treu-les de les vistes
 vdelete_delete=Suprimeix-les totalment
 vdelete_move=Desplaça-les a la vista
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 gen_title=Generadors de Registres
 gen_desc=Aquesta pàgina permet definir generadors, cadascun dels quals crearà múltiples registres en aquesta zona utilitzant un comptador incremental. Això pot ser útil per a delegar parts de la zona inversa a un altre servidor.
 gen_range=Abast
@@ -950,9 +1105,13 @@ gen_evalue=Hi falta el patró de nom de host del generador $1 o bé és invàlid
 gen_title2=Registres Generats
 gen_raw=Línia del fitxer de configuració
 gen_ecannot=NO tens permís per editar els generadors de registres
+<<<<<<< HEAD
 
 refetch_err=No s'ha pogut redescarregar la zona arrel
 
+=======
+refetch_err=No s'ha pogut redescarregar la zona arrel
+>>>>>>> upstream/master
 slaves_title=Servidors Esclaus del Clúster
 slaves_none=Encara no s'ha afegit cap servidor al clúster DNS.
 slaves_host=Nom de host
@@ -980,7 +1139,10 @@ slaves_sec=Crea secundari a l'esclau en crear localment
 slaves_name=Nom del registre NS
 slaves_same=El mateix que el nom de host
 slaves_header=Opcions del servidor esclau del clúster
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 add_title=Addició de Servidors
 add_msg=S'està afegint $1...
 add_gmsg=S'estan afegint servidors al grup $1...
@@ -998,7 +1160,10 @@ add_createok=S'ha configurat $1 amb $2 noves zones esclaves.
 add_ename=Hi falta el nom de registre NS o bé és invàlid
 add_egname=No es pot especificar un registre NS quan s'afegeix un grup
 add_emyip=No s'ha pogut trobar l'adreça IP d'aquest sistema. Hauries d'establir la IP del <b>Servidor mestre per defecte de les zones esclaves</b> remotes a la pàgina de Configuració del mòdul.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 mass_title=Creació de Zones a Partir de Fitxer Batch
 mass_desc=Aquesta pàgina permet crear múltiples zones de cop a partir d'un fitxer de text pujat o en el servidor. Cada línia del fitxer ha de tenir el format següent:<p><tt><i>nom_domini</i>:<i>tipus</i>:<i>nom_fitxer</i>:<i>IPs_mestres</i></tt><p>El <i>tipus</i> ha de ser un de <tt>master</tt>, <tt>slave</tt>, <tt>stub</tt> o <tt>forward</tt>. El <i>nom_fitxer</i> és opcional, i es determinarà automàticament si no hi és. Les <i>IPs_mestres</i> només són necessàries per a les zones esclaves.
 mass_local=Fitxer batch local
@@ -1030,7 +1195,10 @@ mass_emips=Hi falten les adreces IP mestres
 mass_addedslaves=S'ha afegit $1 als servidors esclaus correctament.
 mass_eonslave=S'han produït errors en crear les zones als servidors esclaus: $1
 mass_eviewcannot=No tens permís per afegir zones a aquesta vista
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 massdelete_title=Supressió de Zones
 massdelete_rusure=Segur que vols suprimir les $1 zones seleccionades? ($2)
 massdelete_ok=Suprimeix-les Ara
@@ -1038,7 +1206,10 @@ massdelete_zone=S'està suprimint la zona $1...
 massdelete_done=...fet.
 massdelete_slaves=S'està suprimint la zona $1 dels servidors esclaus...
 massdelete_failed=...alguns esclaus han fallat:
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 rndc_title=Configuració de RNDC
 rndc_desc=Aquest pàgina es pot utilitzar per configurar BIND per controlar el programa RNDC, de manera que les zones individuals es puguin refrescar sense necessitat de fer un reinici complet de BIND.
 rndc_desc2=Sembla que RNDC ja està correctament configurat, així que segurament no et cal utilitzar aquest formulari.
@@ -1049,13 +1220,15 @@ rndc_ok=Sí, configura RNDC
 rndc_err=No s'ha pogut configurar RNDC
 rndc_ekey=No s'ha trobat la clau a rndc.conf
 rndc_esecret=No s'ha trobat el secret a rndc.conf
-
 drecs_err=No s'han pogut suprimir els registres
 drecs_enone=No has seleccionat res
 drecs_title=Supressió de Registres
 drecs_rusure=Segur que vols suprimir els $1 registres seleccionats de $2?
 drecs_ok=Suprimeix-los Ara
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 manual_title=Edició del Fitxer de Configuració
 manual_ecannot=No tens permís per editar el fitxer de configuració de BIND
 manual_ok=Edita
@@ -1063,9 +1236,11 @@ manual_efile=El fitxer seleccionat no forma part de la configuració de BIND
 manual_file=Edita el fitxer de configuració:
 manual_edata=No has introduït res!
 manual_err=No s'ha pogut desar el fitxer de configuració
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 syslog_desc=Missatges del servidor DNS BIND
-
 umass_err=No s'han pogut actualitzar les zones
 umass_enone=No n'has seleccionat cap
 umass_title=Actualitza els Registres de les Zones
@@ -1084,7 +1259,10 @@ umass_done=...s'han actualitzat $1 registres que coincideixen d'entre $2.
 umass_none=...no s'ha trobat cap registre coincident per actualitzar d'entre $1.
 umass_egone=La zona no existeix
 emass_emx='$1' no és un número de prioritat del servidor de correu seguit per un nom de host vàlid
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 rdmass_err=No s'han pogut suprimir els registres de les zones
 rdmass_enone=No n'has seleccionat cap
 rdmass_title=Supressió de Registres de Zones
@@ -1101,7 +1279,6 @@ rdmass_done=...s'han suprimit $1 registres coincidents de $2.
 rdmass_none=...no s'ha trobat cap registre coincident de $2.
 rdmass_ok=Suprimeix els Registres
 rdmass_sel=Registres anomenats
-
 rmass_err=No s'han pogut afegir els registres
 rmass_enone=No n'has seleccionat cap
 rmass_title=Afegeix el Registre a les Zones
@@ -1121,22 +1298,30 @@ rmass_esign=.. fet, però la signatura ha fallat: $1
 rmass_eclash=...ja existeix un registre amb el mateix nom i valor $1.
 rmass_eclash2=...ja existeix un registre amb el mateix nom i el mateix valor $1.
 rmass_clash=Crea'l encara que ja existeixi un registre
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 check_title=Comprovació de Registres
 check_ecannot=No tens permís per comprovar registres
 check_errs=S'han trobat els errors següents en el fitxer de registres $1...
 check_allok=No s'ha trobat cap error al fitxer de registres $1.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 ncheck_title=Comprovació de la Configuració de BIND
 ncheck_ecannot=No tens permís per canviar la configuració de BIND
 ncheck_errs=S'han trobat els errors següents al fitxer de configuració $1 de BIND o als fitxers de zones referenciades...
 ncheck_allok=No s'ha trobat cap error al fitxer de configuració $1 de BIND ni als fitxers de zones referenciades.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 links_restart=Aplica la Configuració
 links_stop=Atura BIND
 links_start=Inicia BIND
 links_apply=Aplica la Zona
-
 dnssec_title=Re-signatura de la clau DNSSEC
 dnssec_ecannot=No tens permís per configurar DNSSEC
 dnssec_header=Opcions de re-signatura de la clau
@@ -1147,7 +1332,10 @@ dnssec_secs=segons
 dnssec_desc=Les zones signades amb DNSSEC tenen típicament dues claus - una clau de zona que s'ha de regenerar i signar regularment, i una clau de signatura que roman constant. Aquesta pàgina permet configurar Webmin per dur a terme aquesta re-signatura automàticament.
 dnssec_err=No s'ha pogut desar la re-signatura de la clau DNSSEC
 dnssec_eperiod=Hi falta el nombre de dies entre re-signatures o bé és invàlid
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 dnssectools_title=Automatització de DNSSEC-Tools
 dt_conf_title=Automatització de DNSSEC-Tools
 dt_enable_title=Automatització de DNSSEC-Tools
@@ -1212,7 +1400,10 @@ dt_status_inKSKroll=En Rodament KSK
 dt_status_inZSKroll=En Rodament ZSK
 dt_status_signed=Signada
 dt_status_unsigned=No signada
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 zonekey_title=Configuració de la Clau DNSSEC
 zonekey_desc=Aquesta zona encara no té una signatura DNSSEC. Pots utilitzar aquest formulari per fer que Webmin en creï una, de manera que els clients que resolguin aquesta zona estiguin protegits contra atacs de <i>spoof</i> DNS.
 zonekey_header=Opcions de la nova clau DNSSEC
@@ -1224,7 +1415,10 @@ zonekey_other=Una altra mida (en bits)
 zonekey_enable=Crea i Afegeix la Clau
 zonekey_err=No s'ha pogut crear la clau DNSSEC
 zonekey_esize=La mida de la clau ha de ser un nombre de bits entre $1 i $2
+<<<<<<< HEAD
 zonekey_efactor=La mida de la clau ha de ser un múltiple de $1
+=======
+>>>>>>> upstream/master
 zonekey_creating=S'està creant la clau DNSSEC per a $1...
 zonekey_ecreate=... la creació ha fallat: $1
 zonekey_done=... fet
@@ -1247,12 +1441,15 @@ zonekey_sign=Signa la Zona
 zonekey_signdesc=Re-signa immediatament aquesta zona, de manera que els canvis manuals fets als registres s'incloguin en els registres signants.
 zonekey_resign=Re-Signa la Zona
 zonekey_resigndesc=Genera una nova clau signant de zona, signa-la amb la clau mestra de la zona i re-signa tots els registres.
-
 sign_err=No s'ha pogut signar la zona
 sign_emsg=La signatura DNSSEC després dels canvis de registres ha fallat: $1
+<<<<<<< HEAD
 
 resign_err=No s'ha pogut re-signar la zona
 
+=======
+resign_err=No s'ha pogut re-signar la zona
+>>>>>>> upstream/master
 trusted_title=Verificació de DNSSEC
 trusted_ecannot=No tens permís per configurar la verificació de DNSSEC
 trusted_esupport=La teva versió de BIND no suporta verificació de DNSSEC
@@ -1285,14 +1482,21 @@ trusted_ealg=Hi falta el número d'algoritme a la fila $1 o bé és invàlid
 trusted_ekey=Hi falta la clau de zona fiable codificada en base-64 a la fila $1 o bé és invàlida
 trusted_setup=Per tal que DNSSEC sigui útil per a verificar la majoria de zones signades a Internet, s'ha de configurar BIND per a utilitzar un servidor DLV. Webmin pot configurar-ho per tu, utilitzant el servidor DLV ICS DLV a $1.
 trusted_ok=Configura DLV i Activa la Verificació de DNSSEC
+<<<<<<< HEAD
 > trusted_warning=Atenció! La configuració del teu client DNSSEC de BIND conté claus caducades que deixaran de funcionar l'octubre de 2017. Fes servir la <a href='$1'>pàgina de Verificació de DNSSEC de BIND</a> o bé corregeix la configuració, o bé fes clic al botó de sota.
 trusted_fix=Arregla la configuració DNSSEC
 
+=======
+trusted_fix=Arregla la configuració DNSSEC
+>>>>>>> upstream/master
 xfer_title=Prova de Transferència de Zona
 xfer_doing=Provant la transferència de la zona esclava des de $1...
 xfer_failed=...des de $1: Ha fallat: $2
 xfer_done=...des de $1: Completat correctament
 xfer_count=La prova de transferència ha obtingut correctament $1 registres des d'almenys un servidor de noms. Les transferències reals per part de BIND haurien de reeixir.
 xfer_none=Sembla que la prova de transferència ha reeixit, però de fet no ha obtingut cap registre!
+<<<<<<< HEAD
 
 __norefs=1
+=======
+>>>>>>> upstream/master

@@ -25,7 +25,10 @@ index_resetdesc=Fes clic sobre aquest botó per eliminar totes les regles existe
 index_cluster=Servidors del Clúster
 index_clusterdesc=fes clic sobre aquest botó per configurar servidors Webmin addicionals als qual es copiarà automàticament la configuració del tallafoc.
 index_return=a les regles del tallafoc
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 index_num=Núm
 index_action=Acció
 index_desc=Condició
@@ -38,7 +41,10 @@ index_delete=Suprimeix les Seleccionades
 index_existing=Webmin ha detectat $1 regles del tallafoc IPFW actualment en ús que no estan enregistrades al fitxer $2. Probablement, aquestes regles s'han configurat des d'un script que aquest mòdul no sap llegir ni editar.<p>Si vols utilitzar aquest mòdul per gestionar el tallafoc IPFW, fes clic sobre el botó de sota per convertir les regles existents a un fitxer desat, i llavors desactivar el script del tallafoc.
 index_saveex=Desa les Regles del Tallafoc
 index_headerex=Configuració del tallafoc existent
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 action_allow=<font color=#00aa00>Permet</font>
 action_deny=<font color=#ff0000>Elimina</font>
 action_reject=<font color=#ff4400>Rebutja</font>
@@ -57,7 +63,10 @@ laction_deny=<font color=#ff0000>Elimina el paquet</font>
 laction_reject=<font color=#ff4400>Retorna un rebuig ICMP</font>
 laction_reset=<font color=#ff4400>Reinicia la connexió TCP</font>
 laction_skipto=Salta a la regla
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 edit_title1=Creació de Regla
 edit_title2=Edició de la Regla $1
 edit_header1=Acció de la regla
@@ -117,7 +126,10 @@ edit_src-addr=Des de l'adreça d'origen...
 edit_src-port=Des del port d'origen...
 edit_dst-addr=A l'adreça de destinació...
 edit_dst-port=Al port de destinació...
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 save_err=No s'ha pogut desar la regla
 save_enum=Hi falta el número de regla o bé és invàlid
 save_eskipto=Hi falta el número de regla per saltar-hi o bé és invàlid
@@ -148,9 +160,13 @@ save_etcpflags=Les banderes TCP només es poden especificar si el protocol és T
 save_elimit=Hi falta el límit màxim o bé és invàlid
 save_edstport=Hi falta el port de destinació o bé és invàlid
 save_esrcport=Hi falta el port d'origen o bé és invàlid
+<<<<<<< HEAD
 
 apply_err=No s'ha pogut aplicar la configuració
 
+=======
+apply_err=No s'ha pogut aplicar la configuració
+>>>>>>> upstream/master
 desc_if=Si $1
 desc_and=i
 desc_always=Sempre
@@ -184,9 +200,15 @@ desc_mac1=la MAC origen és $1
 desc_mac2=la MAC destí és $1
 desc_uid=s'ha enviat amb UID $1
 desc_gid=s'ha enviat amb GID $1
+<<<<<<< HEAD
 desc_icmptypes=el tipus ICMP és $1
 desc_dstport=els ports opcionals de destinació són $1
 desc_srcport=els ports opcionals d'origen són $1
+=======
+desc_dstport=els ports opcionals de destinació són $1
+desc_srcport=els ports opcionals d'origen són $1
+desc_icmptypes=el tipus ICMP és $1
+>>>>>>> upstream/master
 desc_tcpflags=s'han activat les banderes TCP $1
 desc_src-port=el port d'origen
 desc_src-addr=l'adreça d'origen
@@ -197,7 +219,10 @@ desc_where=on $1
 desc_all=per a tots els paquets
 desc_in=el paquet és d'entrada
 desc_out=el paquet és de sortida
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 log_create_rule=S'ha creat la regla $1
 log_delete_rule=S'ha suprimit la regla $1
 log_modify_rule=S'ha modificat la regla $1
@@ -213,7 +238,10 @@ log_convert=S'han convertit les regles actives del tallafoc
 log_setup=S'ha dut a terme la configuració inicial del tallafoc
 log_unapply=S'ha revertit la configuració del tallafoc
 log_delsel=S'han suprimit $1 regles
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 cluster_title=Servidors del Tallafoc del Clúster
 cluster_none=Encara no s'ha afegit cap servidor al clúster del tallafoc.
 cluster_host=Nom de host
@@ -224,7 +252,10 @@ cluster_gadd=Afegeix servidors al grup
 cluster_need=Has d'afegir servidors amb usuari i contrasenya al mòdul d'índex de Servidors Webmin abans de poder-los gestionar aquí.
 cluster_return=als servidors del clúster
 cluster_delete=Elimina els Seleccionats
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 add_title=Addició de Servidors
 add_msg=S'està afegint $1...
 add_gmsg=S'estan afegint servidors al grup $1...
@@ -233,6 +264,3 @@ add_gerr=No s'ha pogut afegir el grup
 add_echeck=El servidor $1 no té el mòdul de Tallafoc IPFW
 add_emissing=EL servidor $1 no té la configuració del tallafoc IPFW
 add_ok=S'ha afegit $1, amb $2 regles del tallafoc actives.
-
-
-__norefs=1

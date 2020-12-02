@@ -1,39 +1,39 @@
-<header>DostÄp tylko do odczytu</header>
+<header>Dostęp tylko do odczytu</header>
 
-OkreÅla, ktÃ³re hosty majÄ uzyskiwaÄ dostÄp do tego zasobu w&nbsp;trybie
-tylko do odczytu. MoÅ¼liwe sÄ trzy ustawienia dla tej opcji&nbsp;: 
+Określa, które hosty mają uzyskiwać dostęp do tego zasobu w&nbsp;trybie
+tylko do odczytu. Możliwe są trzy ustawienia dla tej opcji&nbsp;: 
 <ul>
-<li><b>Å»aden</b><br>
-    Å»aden host nie ma dostÄpu w&nbsp;trybie tylko do odczytu.
+<li><b>Żaden</b><br>
+    Żaden host nie ma dostępu w&nbsp;trybie tylko do odczytu.
 <li><b>Wszystkie hosty</b><br>
-    Dowolny host moÅ¼e zamontowaÄ ten zasÃ³b w&nbsp;trybie tylko do odczytu
-    JeÅli jesteÅ podÅÄczony do Internetu, oznacza to, Å¼e ktokolwiek
-    z&nbsp;dowolnego miejsca na Åwiecie moÅ¼e czytaÄ pliki 
-    w&nbsp;udostÄpnionym katalogu.
+    Dowolny host może zamontować ten zasób w&nbsp;trybie tylko do odczytu
+    Jeśli jesteś podłączony do Internetu, oznacza to, że ktokolwiek
+    z&nbsp;dowolnego miejsca na świecie może czytać pliki 
+    w&nbsp;udostępnionym katalogu.
 <li><b>Wymienione hosty</b><br>
 <if $gconfig{'os_version'} < 7>
-    Z&nbsp;wymienionych poniÅ¼ej hostÃ³w i&nbsp;adresÃ³w IP moÅ¼na zamontowaÄ
-    ten zasÃ³b w&nbsp;trybie tylko do odczytu.
+    Z&nbsp;wymienionych poniżej hostów i&nbsp;adresów IP można zamontować
+    ten zasób w&nbsp;trybie tylko do odczytu.
 <else>
-    Hosty speÅniajÄce poniÅ¼sze warunki mogÄ montowaÄ ten zasÃ³b
-    w&nbsp;trybie tylko do odczytu. MoÅ¼na je podaÄ w&nbsp;postaci&nbsp;: <p>
+    Hosty spełniające poniższe warunki mogą montować ten zasób
+    w&nbsp;trybie tylko do odczytu. Można je podać w&nbsp;postaci&nbsp;: <p>
 	<dl>
 	<dt><b>Nazwy hosta lub adresu IP</b> (np. <i>ftp.foo.com</i> lub 
             <i>1.2.3.4</i>)
-	<dd>SpeÅnia go host o&nbsp;podanej nazwie lub adresie IP
+	<dd>Spełnia go host o&nbsp;podanej nazwie lub adresie IP
 	<dt><b>Grupy sieciowej</b> (np. <i>inzynieria</i>)
-	<dd>SpeÅnia go dowolny host bÄdÄcy czÅonkiem grupy sieciowej
+	<dd>Spełnia go dowolny host będący członkiem grupy sieciowej
 	<dt><b>Domeny DNS-u</b> (np. <i>.foo.com</i>)
-	<dd>SpeÅnia go dowolny host w&nbsp;domenie
+	<dd>Spełnia go dowolny host w&nbsp;domenie
 	<dt><b>Sieci</b> (np. <i>@10.254.1</i>)
-	<dd>SpeÅnia go dowolny host w&nbsp;sieci
-	<dt><b>Sieci z&nbsp;maskÄ</b> (np. <i>@10.254.1/24</i>)
-	<dd>SpeÅnia go dowolny host w&nbsp;sieci
+	<dd>Spełnia go dowolny host w&nbsp;sieci
+	<dt><b>Sieci z&nbsp;maską</b> (np. <i>@10.254.1/24</i>)
+	<dd>Spełnia go dowolny host w&nbsp;sieci
 	</dl><p>
-    Dodatkowo, dowolnÄ z&nbsp;powyÅ¼szych notacji moÅ¼na poprzedziÄ <i>-</i>,
-    co oznacza Å¼e host, grupa sieciowa, domena lub sieÄ <b>nie</b> moÅ¼e
-    montowaÄ tego zasobu. MoÅ¼e to byÄ przydatne do umoÅ¼liwienia dostÄpu dla
-    zbioru hostÃ³w z&nbsp;wyÅÄczeniem jednego jego czÅonka.
+    Dodatkowo, dowolną z&nbsp;powyższych notacji można poprzedzić <i>-</i>,
+    co oznacza że host, grupa sieciowa, domena lub sieć <b>nie</b> może
+    montować tego zasobu. Może to być przydatne do umożliwienia dostępu dla
+    zbioru hostów z&nbsp;wyłączeniem jednego jego członka.
 </if>
 </ul>
 <hr>

@@ -1,5 +1,6 @@
-index_title=Webalizer Log Dosyas&#305; Analizi
+index_title=Webalizer Log Dosyası Analizi
 index_version=Webalizer verssiyon $1
+<<<<<<< HEAD
 index_ewebalizer=Sisteminizde webalizer komutu bulunamad&#305;.Kurulmam&#305;&#351; &#351; veya , <a href='$2'>module configuration</a> hatal&#305; olabilir.
 index_econf=Webalizer konfigürasyon dosyas&#305; bulunamad&#305;.Kurulmam&#305;&#351; &#351; veya , <a href='$2'>module configuration</a> hatal&#305; olabilir.
 index_add=Analiz için yeni bir log dosyas&#305; ekle.
@@ -9,19 +10,38 @@ index_size=Boyut
 index_latest=Son de&#287;i&#351;tirme 
 index_nologs=Hehangi bir log dosyas&#305; bulunamad&#305; veya analiz için henüz eklenmemi&#351;.
 index_empty=Bo&#351;
+=======
+index_ewebalizer=Sisteminizde webalizer komutu bulunamadı.Kurulmamış ş veya , <a href='$2'>module configuration</a> hatalı olabilir.
+index_econf=Webalizer konfigürasyon dosyası bulunamadı.Kurulmamış ş veya , <a href='$2'>module configuration</a> hatalı olabilir.
+index_add=Analiz için yeni bir log dosyası ekle.
+index_path=Log dosyası
+index_type=Tür
+index_size=Boyut
+index_latest=Son değiştirme 
+index_nologs=Hehangi bir log dosyası bulunamadı veya analiz için henüz eklenmemiş.
+index_empty=Boş
+>>>>>>> upstream/master
 index_type1=Apache
 index_type2=Squid
 index_type3=FTP
-index_sched=Planl&#305;?
+index_sched=Planlı?
 index_rep=Rapor
+<<<<<<< HEAD
 index_view=&#304;ncele..
 index_return=log dosyalar&#305; listesi
 index_global=Global Seçenekleri Düzenle
 index_globaldesc=Global seçenekleri düzenlemek için bu dü&#287;meye t&#305;klay&#305;n&#305;z.
+=======
+index_view=İncele..
+index_return=log dosyaları listesi
+index_global=Global Seçenekleri Düzenle
+index_globaldesc=Global seçenekleri düzenlemek için bu düğmeye tıklayınız.
+>>>>>>> upstream/master
 index_eversion=Sisteminizdeki Webalizer komutu $1 versiyonu $2, fakat bu modül version $3 veya üstünü destekliyor.
 index_egetversion=Webalizer veriyonu belirlenemedi $1 : $2
 index_when=Evet, $1
 index_webalizer=Webalizer
+<<<<<<< HEAD
 index_enable=Seçili Olan&#305; Planla
 index_disable=Seçili Olan&#305;da Plan&#305; Kald&#305;r
 
@@ -98,11 +118,85 @@ global_HourlyGraph=Saatlik kullan&#305;m
 global_HourlyStats=Saatlik kullan&#305;m istatistik
 global_GraphLegend=Grafik bilgileri
 global_tables=Tablo detaylar&#305; ve görünürlük
+=======
+index_enable=Seçili Olanı Planla
+index_disable=Seçili Olanıda Planı Kaldır
+edit_title1=Log Dosyası Ekle
+edit_title2=Log Dosyası Düzenle
+edit_header=Log dosyası rapor seçenekleri
+edit_file=Log dosyayolu
+edit_files=All logfiles in report
+edit_dir=Raporun saklanacağı klasör 
+edit_user=Webalizer'in yürütüleceği kullanıcı 
+edit_view=Rapor İncele
+edit_run=Şimdi raporla
+edit_sched=Rapor zaman planına uygun üretilsin mi?
+edit_sched0=Hayır
+edit_sched1=Evet, aşağıda seçili zamanlarda .. 
+edit_type=Log dosyası biçimi 
+edit_global=Düzenleme seçenekleri
+edit_return=log detayları
+edit_over=Herzaman log dosyalarını yeniden işle?
+edit_ecannot=Bu log dosyasını düzenleme yetkiniz yok
+edit_efilecannot=Log dosyası sizin kullanımızda olan bir dosyada değil
+edit_conf=Rapor seçenekleri
+edit_cmode0=Global seçenekleri kullan
+edit_cmode1=Özgün seçenekler
+edit_cmode2=Diğer konfigürasyon dosyası ..
+edit_clear=Planlı raporlama sonrası log dosyalarını sil?
+gen_title=Rapor Oluşturma
+gen_header=$1 raporunu oluşturmak için Webalizer çalıştırılıyor..
+gen_done=.. tamamlandı
+gen_failed=.. Webalizer başarısız! Detay için yukarıdaki açıklamaya bakınız.
+gen_nothing=.. Webalizer görevi tamamlandı, ama herhangi bir rapor oluşturalamadı.Detay için yukarıdaki açıklamaya bakınız.
+gen_view=Tamamlanmış raporu inceleyin.
+save_err=Log dosyası kayıt edilemedi
+save_efile=Herhangi bir log dosyası belirlenmedi veya mevcut değil
+save_ecfile=Eksik diğer configürasyon dosyası
+save_edir=Herhangi bir raporlama dosyası belirlenmedi veya mevcut değil
+save_euser=Eksik veya geçersiz Webalizer kullanıcısı
+save_ewuser=$1 diye bir unix kullanıcısı yok
+save_ehost=Eksik veya geçersiz websitesi makinismi
+save_etitle=Eksik rapor başlığı
+save_ecannot= Yalnızca $1 klasörü altındaki log dosyaları için rapor düzenleyebilirisiniz
+view_epath=Geçersiz PATH_INFO
+view_efile=Geçersiz rapor dosyaismi
+view_elog=Geçersiz log dosyası
+view_ecannot=Bu raporu inceleme yetkiniz yok
+view_eopen=Rapor dosyası açılamadı
+view_title=Rapor İncele
+global_title=Global Webalizer Seçenekleri
+global_title2=Webalizer Rapor Seçenekleri
+global_for=$1 log dosyası için
+global_first=Bu rapor için global seçenekler kullanılacak.
+global_header=Tüm raporlar için Webalizer seçenekleri
+global_host=Website makina ismi
+global_report=Rapor başlık öneki
+global_page=Raporlama dosya türleri
+global_gmt=GMT göre raporlama zamanı?
+global_fold=log giriş hatalarını düzelt?
+global_visit=Ziyaret süresi
+global_secs=saniye
+global_dns=DNS isimbakma işlem adeti
+global_none=Hiç
+global_history=Webalizer geçmiş dosyası
+global_current=Webalizer dosyası
+global_cache=Webalizer DNS biriktirme dosyası
+global_display=Oluşturulacak grafik ve tablolar
+global_CountryGraph=Ülke dağılım
+global_DailyGraph=Günlük kullanım
+global_DailyStats=Günlük kullanım istatistik
+global_HourlyGraph=Saatlik kullanım
+global_HourlyStats=Saatlik kullanım istatistik
+global_GraphLegend=Grafik bilgileri
+global_tables=Tablo detayları ve görünürlük
+>>>>>>> upstream/master
 global_TopSites=Ziyaretçiler
 global_TopKSites=kB olarak ziyaretçiler
 global_TopURLs=URL
 global_TopKURLs=kB olarak URL
 global_TopReferrers=Yönlendiriciler
+<<<<<<< HEAD
 global_TopAgents=Taray&#305;c&#305;lar
 global_TopCountries=Ülkeler
 global_TopEntry=Ba&#351;lang&#305;ç sayfalar&#305;
@@ -110,17 +204,33 @@ global_TopExit=C&#305;k&#305;&#351; sayfalar&#305;
 global_TopSearch=Arama motorlar&#305;
 global_TopUsers=Kullan&#305;c&#305;lar
 global_index=Klasör indeks sayfalar&#305;
+=======
+global_TopAgents=Tarayıcılar
+global_TopCountries=Ülkeler
+global_TopEntry=Başlangıç sayfaları
+global_TopExit=Cıkış sayfaları
+global_TopSearch=Arama motorları
+global_TopUsers=Kullanıcılar
+global_index=Klasör indeks sayfaları
+>>>>>>> upstream/master
 global_all=Generate pages listing all
 global_AllSites=Ziyaretçiler
 global_AllURLs=URL
 global_AllReferrers=Yönlendiriciler
+<<<<<<< HEAD
 global_AllAgents=Taray&#305;c&#305;lar
 global_AllSearchStr=Arama motorlar&#305;
 global_AllUsers=Kullan&#305;c&#305;lar
+=======
+global_AllAgents=Tarayıcılar
+global_AllSearchStr=Arama motorları
+global_AllUsers=Kullanıcılar
+>>>>>>> upstream/master
 global_delete=Sil ve global konfigürasyon kullan
 global_hideurl=URL tablolarda gösterme
 global_hidesite=Ziyaretçileri tabloda gösterme
 global_hidereferrer=Yönlendiricileri tabloda gösterme
+<<<<<<< HEAD
 global_hideuser=Kullan&#305;c&#305;lar&#305; tabloda gösterme
 global_hideagent=Taray&#305;c&#305;lar&#305; tabloda gösterme
 global_ignoreurl=URL yoksay
@@ -162,3 +272,41 @@ acl_any=Herhangibir kullan&#305;c&#305;
 acl_add=Analiz için log dosyas&#305; ekleyebilir?
 
 
+=======
+global_hideuser=Kullanıcıları tabloda gösterme
+global_hideagent=Tarayıcıları tabloda gösterme
+global_ignoreurl=URL yoksay
+global_ignoresite=Kullanıcıları yoksay
+global_ignorereferrer=Yönlendiricileri yoksay
+global_ignoreuser=Kullanıcıları yoksay
+global_ignoreagent=Tarayıcıları yoksay
+global_includeurl=URL yoksayma
+global_includesite=Ziyaretçileri yoksayma
+global_includereferrer=Yönlendiricileri yoksayma
+global_includeuser=Kullanıcıları yoksayma
+global_includeagent=Tarayıcıları yoksayma
+global_err=Webalizer seçenekleri kayıt edilemedi
+global_ereport=Eksik rapor başlık öneki
+global_ehost=Eksik veya geçersiz makina ismi
+global_evisit=Eksik veya geçersiz ziyaret süresi
+global_edns=Eksik veya geçersiz DNS isimbakma işlemi adeti
+global_etable=Eksik veya geçersiz '$1' tablo boyutu
+global_ehistory=Eksik veya geçersiz geçmiş dosyası ismi
+global_ecurrent=Eksik veya geçersiz Webalizer dosyası
+global_ecache=Eksik veya geçersiz DNS biriktirme dosyası
+log_create_log=$1	için rapor yaratıdı
+log_modify_log=$1 için rapor güncellendi
+log_delete_log=$1 için rapor silindi
+log_generate_log=$1 için rapor oluşturuldu
+log_global=Güncellenmiş global Webalizer seçenekleri
+log_global2=$1 için güncellenmiş Webalizer secenekleri
+log_enable_logs=$1 logları için planlı raporlama aktif
+log_disable_logs=$1 logları için planlı raporlama pasif
+acl_view=Yalnızca mevcut raporları inceleyebilir?
+acl_global=Webalizer seçeneklerini düzenleyebilir?
+acl_dir=Bu dosya altındaki log dosyalarını inceleyebilir ve düzenleyebilir
+acl_user=Webalizer'in yürütüleceği kullanıcı 
+acl_this=Şuanki webmin kullanıcısı
+acl_any=Herhangibir kullanıcı
+acl_add=Analiz için log dosyası ekleyebilir?
+>>>>>>> upstream/master

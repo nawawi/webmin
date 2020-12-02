@@ -1,6 +1,7 @@
 <header>Podstawianie przeniesionych</header>
 
 Fakultatywny plik podstawiania przeniesionych dostarcza informacje
+<<<<<<< HEAD
 wykorzystywan± w&nbsp;komunikatach &quot;user has moved to
 new_location&quot; przy odrzucaniu wiadomo¶ci. <p>
 
@@ -9,10 +10,21 @@ Przeszukiwania tabeli s± niewra¿liwe na wielko¶æ liter. <p>
 Pole &quot;Podstawienie...&quot; zawiera informacjê kontaktow±, tak± jak
 adres e-mail lub adres miejski i&nbsp;numer telefonu. Jest ono jednym
 z&nbsp;poni¿szych:
+=======
+wykorzystywaną w&nbsp;komunikatach &quot;user has moved to
+new_location&quot; przy odrzucaniu wiadomości. <p>
+
+Przeszukiwania tabeli są niewrażliwe na wielkość liter. <p>
+
+Pole &quot;Podstawienie...&quot; zawiera informację kontaktową, taką jak
+adres e-mail lub adres miejski i&nbsp;numer telefonu. Jest ono jednym
+z&nbsp;poniższych:
+>>>>>>> upstream/master
 
 <ul>
 
 <li><tt>uzytkownik@domena</tt>: Pasuje do <tt>uzytkownik@domena</tt>. 
+<<<<<<< HEAD
 Ta postaæ ma wy¿szy priorytet ani¿eli wszystkie inne.
 
 <li><tt>uzytkownik</tt>: Pasuje do <tt>uzytkownik@miejsce</tt>, gdy
@@ -27,6 +39,22 @@ w¶ród <tt>$mydestination</tt> lub gdy jest wymienione w¶ród
 
 ROZSZERZENIA ADRESÓW: Gdy przeszukiwanie zakoñczy siê niepowodzeniem
 a&nbsp;lokalna czê¶æ adresu zawiera fakultatywny ogranicznik odbiorcy (np.
+=======
+Ta postać ma wyższy priorytet aniżeli wszystkie inne.
+
+<li><tt>uzytkownik</tt>: Pasuje do <tt>uzytkownik@miejsce</tt>, gdy
+<tt>miejsce</tt> jest toższme z&nbsp;<tt>$myorigin</tt>, gdy jest wymienione
+wśród <tt>$mydestination</tt> lub gdy jest wymienione wśród
+<tt>$inet_interfaces</tt>.
+
+<li><tt>@domena</tt>: Pasuje do dowolnego adresu w&nbsp;domenie
+<tt>domena</tt>. Ta postać ma najniższy priorytet.
+
+</ul>
+
+ROZSZERZENIA ADRESÓW: Gdy przeszukiwanie zakończy się niepowodzeniem
+a&nbsp;lokalna część adresu zawiera fakultatywny ogranicznik odbiorcy (np.
+>>>>>>> upstream/master
 <tt>uzytkownik+cos@domena</tt>), przeszukiwanie jest powtarzane dla
 nierozszerzonego adresu (np. <tt>uzytkownik@domena</tt>).
 

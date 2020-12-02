@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 mysqlshow=Sökväg till mysqlshow-kommando,0
 mysqladmin=Sökväg till mysqladmin-kommando,0
 mysql=Sökväg till mysqlkommando,0
@@ -5,10 +6,22 @@ mysqldump=Sökväg till mysqldump-kommando,0
 start_cmd=Kommando för att starta mysql-server,0
 stop_cmd=Kommando för att stanna mysql-server,3,Automatiskt
 mysql_libs=Sökväg till katalog för delade mysql-lib,3,Ingen
+=======
+>>>>>>> upstream/master
 login=Administratörens inloggningsnamn,0
 pass=Administratörens lösenord,0
 perpage=Antal rader som ska visas på en sida,0
 style=Visa databaser och tabeller som,1,1-Lista,0-Ikoner
 add_mode=Använd vertikalt gränssnitt med radtillägg,1,1-Ja,0-Nej
+<<<<<<< HEAD
+=======
+mysqlshow=Sökväg till mysqlshow-kommando,0
+mysqladmin=Sökväg till mysqladmin-kommando,0
+mysql=Sökväg till mysqlkommando,0
+mysqldump=Sökväg till mysqldump-kommando,0
+start_cmd=Kommando för att starta mysql-server,0
+stop_cmd=Kommando för att stanna mysql-server,3,Automatiskt
+mysql_libs=Sökväg till katalog för delade mysql-lib,3,Ingen
+>>>>>>> upstream/master
 host=MySQL-dator att koppla upp mot,3,Localhost
 sock=MySQL-socketfil,3,Standard

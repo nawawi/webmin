@@ -1,15 +1,25 @@
+mailq_refresh=Segundos a esperar antes de refrescar la cola de correo,3,No refrescar
+perpage=Mensajes de correo a mostrar por página,0
+wrap_width=Ancho en el que continuar en otra línea los mensajes de correo,0
+sort_mode=Clasificar tablas por,1,0-Orden en archivo,1-Nombre
+send_mode=Enviar correo a través de la conexión a,3,Ejecutable Sendmail
+max_records=Número máximo de registros a mostrar en las tablas,0,6
+mailq_show=Cabeceras a mostrar en cola de correo,2,Date-Fecha,From-De,To-A,Subject-Asunto,Cc-Cc,Size-Medida,Status-Estado
 sendmail_cf=Trayectoria completa a sendmail.cf,0
 sendmail_features=Directorio base M4 de Sendmail,7
 sendmail_mc=Trayectoria completa al archivo de configuración M4,8
 sendmail_pid=Trayectoria completa a archivo de pid de sendmail,0
 sendmail_command=Comando para arrancar sendmail en modo servidor,0
 sendmail_stop_command=Comando para parar sendmail,3,Matar proceso
+<<<<<<< HEAD
 mailq_refresh=Segundos a esperar antes de refrescar la cola de correo,3,No refrescar
 perpage=Mensajes de correo a mostrar por página,0
 wrap_width=Ancho en el que continuar en otra línea los mensajes de correo,0
 sort_mode=Clasificar tablas por,1,0-Orden en archivo,1-Nombre
 send_mode=Enviar correo a través de la conexión a,3,Ejecutable Sendmail
 order_mail=Al leer correo comenzar por el,1,0-Último,1-Más viejo
+=======
+>>>>>>> upstream/master
 makemap_path=Comando Makemap,0
 sendmail_path=Comando Sendmail,0
 alias_file=Trayectoria completa a archivo de alias de sendmail,3,Automática
@@ -22,9 +32,12 @@ mail_dir=Directorio de archivo de usuario de correo,3,$HOME/mbox
 mail_file=Archivo de correo en directorio de inicio,0
 mail_style=Estilo de directorio del archvivo de correo,4,0-mail/nombre_de_usuario,1-mail/u/nombre_de_usuario,2-mail/u/us/nombre_de_usuario,3-mail/u/s/nombre_de_usuario
 smrsh_dir=Directorio SMRSH,3,Ninguno
+<<<<<<< HEAD
 wrap_mode=Modo de salto de línea en área de texto de correo,1,-Por defecto,salto=activado-On,salto=desactivado-Off,salto=automático-Auto
 track_read=Mantener la pista de correos leídos/no leídos,1,1-Sí,0-No
 show_to=¿Muestro dirección Para: en buzones?,1,1-Sí,0-No
 max_records=Número máximo de registros a mostrar en las tablas,0,6
 top_buttons=Mostrar botones en la parte superior para,1,2-Buzones y correos,1-Sólo buzones,0-Nunca
 mailq_show=Cabeceras a mostrar en cola de correo,2,Date-Fecha,From-De,To-A,Subject-Asunto,Cc-Cc,Size-Medida,Status-Estado
+=======
+>>>>>>> upstream/master

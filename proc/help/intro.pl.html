@@ -1,5 +1,6 @@
 <header>Procesy uniksowe</header>
 
+<<<<<<< HEAD
 Proces jest to po prostu dzia³aj±cy w&nbsp;Twoim systemie program. Twoja
 przegl±darka, zarz±dca okienek, okienko terminala czy X serwer - wszystkie
 s± procesami, z&nbsp;którymi siê bezpo¶rednio komunikujesz. Wiele innych
@@ -22,6 +23,30 @@ Ka¿dy proces dzia³a z&nbsp;prawami pewnego u¿ytkownika i&nbsp;pewnej grupy,
 które maj± zastosowanie przy dostêpie przez niego do plików. U¿ytkownicy
 i&nbsp;procesy mog± zabijaæ jedynie inne procesy, których s± w³a¶cicielami,
 za wyj±tkiem <tt>root</tt>a, który mo¿e zabiæ wszystko. <p>
+=======
+Proces jest to po prostu działający w&nbsp;Twoim systemie program. Twoja
+przeglądarka, zarządca okienek, okienko terminala czy X serwer - wszystkie
+są procesami, z&nbsp;którymi się bezpośrednio komunikujesz. Wiele innych
+procesów, jak serwery WWW czy inne zadania systemowe, działa w&nbsp;tle.
+Za każdym razem, gdy wydasz polecenie takie, jak <tt>ls</tt> czy
+<tt>pwd</tt> tworzony jest nowy proces, jednakże takie procesy są zazwyczaj
+krótkożyjące. <p>
+
+Każdy proces posiada swój unikalny numer ID, zwany numerem ID procesu lub
+PID-em. Każdy działający w&nbsp;danej chwili proces ma inny numer ID, lecz
+PID-u procesów, które zakończyły działanie mogą być później użyte ponownie.
+<p>
+
+Oprócz procesu inicjującego (zazwyczaj zwanego <tt>init</tt>), każdy ma
+swojego rodzica, który go utworzył. Na przykład, jeżeli uruchomisz
+<tt>vi</tt> z&nbsp;linii poleceń, rodzicem <tt>vi</tt> będzie twoja powłoka.
+Proces może mieć dowolna liczbę potomków, ale tylko jednego rodzica. <p>
+
+Każdy proces działa z&nbsp;prawami pewnego użytkownika i&nbsp;pewnej grupy,
+które mają zastosowanie przy dostępie przez niego do plików. Użytkownicy
+i&nbsp;procesy mogą zabijać jedynie inne procesy, których są właścicielami,
+za wyjątkiem <tt>root</tt>a, który może zabić wszystko. <p>
+>>>>>>> upstream/master
 
 <hr>
 

@@ -7,7 +7,10 @@ named_group=Grup sota el qual s'executa BIND,3,Defecte
 zones_file=Afegeix les zones noves al fitxer,3,named.conf
 relative_paths=Utilitza camins relatius de fitxer de zona a <tt>named.conf</tt>,1,1-Sí,0-No
 keys_dir=Directoris de claus DNSSEC,3,El mateix que els fitxers de zones
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 line1=Opcions de presentació,11
 show_list=Mostra els dominis com a,1,0-Icones,1-Llista,2-Jerarquia
 by_view=Categoritza les zones per vista,1,1-Sí,0-No
@@ -24,7 +27,6 @@ extra_forward=Tipus de registres extra de les zones de reenviament,0
 extra_reverse=Tipus de registres extra de les zones inverses,0
 largezones=Mostra els registres de les zones,1,0-Sí,1-No (per a zones grans)
 default_view=Vista per defecte de les zones noves,3,La primera de la llista
-
 line2=Opcions de fitxer de zona,11
 soa_style=Estil del número sèrie,1,0-Número incremental,1-Basat en la data (AAAAMMDDnn),2-Hora Unix
 soa_start=Número inicial del SOA basat en data,0,3
@@ -45,12 +47,18 @@ confirm_rec=Confirmació abans de suprimir registres,1,1-Sí,0-No
 free_nets=Xarxes IP per a adreces lliures,3,Automàtic
 force_random=Font d'entropia per a les claus DNSSEC,1,1-/dev/random (Segur però lent),0-/dev/urandom (Possiblement insegur però ràpid)
 spf_record=Tipus real de registre per al Remitent Permès Des de,1,1-SPF,0-TXT
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 line2.5=Servidors esclaus del <i>cluster,</i>11
 this_ip=IP del servidor mestre per defecte per a les zones esclaves remotes,3,Adreça IP o nom de host
 other_slaves=Afegeix altres adreces IP esclaves a la llista dels mestres als esclaus,1,1-Sí,0-No
 extra_slaves=Adreces IP mestres addicionals per a les zones esclaves,3,Cap
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 line3=Configuració del sistema,11
 named_conf=Camí complet del fitxer named.conf,0
 named_path=Camí complet de l'executable named,0
@@ -72,4 +80,7 @@ dnssectools_conf=Camí complet del fitxer dnssec-tools.conf,0
 dnssectools_rollmgr_pidfile=Camí complet del fitxer de pid rollmgr de dnssec-tools,0
 dnssectools_rollrec=Camí complet del fitxer dnssec-tools rollrec,0
 dnssectools_keydir=Camí complet del directori de claus de dnssec-tools,0
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master

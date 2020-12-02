@@ -8,4 +8,7 @@ cfd=Chemin d'accès au programme cfd,0
 cfd_conf=Chemin d'accès au fichier cfd.conf,3,Automatique
 start_cmd=Commande pour démarrer cfd,3,Juste exécuter le démon
 stop_cmd=Commande pour arrêter cfd,3,Juste tuer le processus
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master

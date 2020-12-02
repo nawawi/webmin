@@ -85,6 +85,8 @@ our $first_install_file = "$config_directory/first-install";
 
 our $hidden_announce_file = "$module_config_directory/announce-hidden";
 
+our $postpone_reboot_required = "$module_var_directory/postpone-reboot-required";
+
 =head2 setup_ca
 
 Internal function to create all the configuration files needed for the Webmin
@@ -150,7 +152,7 @@ my $install_root_directory = $gconfig{'install_root'} || $root_directory;
 
 # Uncompress the module file if needed
 my $two;
-open(MFILE, $file);
+open(MFILE, "<".$file);
 read(MFILE, $two, 2);
 close(MFILE);
 if ($two eq "\037\235") {
@@ -209,7 +211,7 @@ elsif ($two eq "BZ") {
 # Check if this is an RPM webmin module or theme
 my ($type, $redirect_to);
 $type = "";
-if (open(TYPE, "$root_directory/install-type")) {
+if (open(TYPE, "<$root_directory/install-type")) {
 	chop($type = <TYPE>);
 	close(TYPE);
 	}
@@ -537,7 +539,7 @@ else {
 		}
 
 	my $type = '';
-	if (open(TYPE, "$mdir/install-type")) {
+	if (open(TYPE, "<$mdir/install-type")) {
 		chop($type = <TYPE>);
 		close(TYPE);
 		}
@@ -653,8 +655,9 @@ return (0) if (!-r $path);
 # Check if we already have the key
 my @keys = &list_keys();
 foreach my $k (@keys) {
+	my $fp = &key_fingerprint($k);
 	return ( 0 ) if ($k->{'email'}->[0] =~ /^$email$/ &&
-		         &key_fingerprint($k) eq $finger);
+		         $fp && $fp eq $finger);
 	}
 
 # Import it if not
@@ -689,7 +692,7 @@ else {
 &http_download($host, $port, $page, $temp, \$error, undef, $ssl);
 return $error if ($error);
 my @rv;
-open(TEMP, $temp);
+open(TEMP, "<".$temp);
 while(<TEMP>) {
 	s/\r|\n//g;
 	my @l = split(/\t+/, $_);
@@ -734,7 +737,7 @@ else {
 &http_download($host, $port, $page, $temp, \$error, undef, $ssl);
 return $error if ($error);
 my @rv;
-open(TEMP, $temp);
+open(TEMP, "<".$temp);
 while(<TEMP>) {
 	s/\r|\n//g;
 	my @l = split(/\t+/, $_);
@@ -790,7 +793,7 @@ or undef if the admin hasn't chosen any yet.
 =cut
 sub get_newmodule_users
 {
-if (open(NEWMODS, $newmodule_users_file)) {
+if (open(NEWMODS, "<".$newmodule_users_file)) {
 	my @rv;
 	while(<NEWMODS>) {
 		s/\r|\n//g;
@@ -914,7 +917,7 @@ if (!$ec && $sigmode) {
 	}
 
 my @updates;
-open(UPDATES, $temp);
+open(UPDATES, "<".$temp);
 while(<UPDATES>) {
 	if (/^([^\t]+)\t+([^\t]+)\t+([^\t]+)\t+([^\t]+)\t+(.*)/) {
 		push(@updates, [ $1, $2, $3, $4, $5 ]);
@@ -1017,7 +1020,7 @@ sub save_ipkeys
 {
 my $k;
 foreach $k (keys %{$_[0]}) {
-	if ($k =~ /^(ipkey_|ipcert_)/) {
+	if ($k =~ /^(ipkey_|ipcert_|ipextracas_)/) {
 		delete($_[0]->{$k});
 		}
 	}
@@ -1134,22 +1137,14 @@ if (($realos{'os_version'} ne $gconfig{'os_version'} ||
      $realos{'os_type'} ne $gconfig{'os_type'}) &&
     $realos{'os_version'} && $realos{'os_type'} &&
     &foreign_available("webmin")) {
-	my ($realminor) = split(/\./, $realos{'os_version'});
-	my ($minor) = split(/\./, $gconfig{'os_version'});
-	if ($realos{'os_type'} eq $gconfig{'os_type'} &&
-	    $realminor == $minor) {
-		# Only the minor version number changed - no need to apply
-		&apply_new_os_version(\%realos);
-		}
-	else {
-		# Large enough change to tell the user
-		push(@notifs,
-		    &ui_form_start("$gconfig{'webprefix'}/webmin/fix_os.cgi").
-		    &text('os_incorrect', $realos{'real_os_type'},
-		    		          $realos{'real_os_version'})."<p>\n".
-		    &ui_form_end([ [ undef, $text{'os_fix'} ] ])
-		    );
-		}
+
+	# Tell the user that OS version was updated
+	push(@notifs,
+	    &ui_form_start("$gconfig{'webprefix'}/webmin/fix_os.cgi").
+	    &text('os_incorrect', $realos{'real_os_type'},
+                              $realos{'real_os_version'})."<p>\n".
+	    &ui_form_end([ [ undef, $text{'os_fix'} ] ])
+	    );
 	}
 
 # Password close to expiry
@@ -1317,12 +1312,23 @@ if (&foreign_available($module_name) && !$noupdates &&
 # Reboot needed
 if (&foreign_check("package-updates") && &foreign_available("init")) {
 	&foreign_require("package-updates");
-	if (&package_updates::check_reboot_required()) {
+	my $allow_reboot_required = 1;
+	if (-r $postpone_reboot_required) {
+		my $uptime = &get_system_uptime();
+		my $lastreboot = $uptime ? time()-$uptime : undef;
+		if ($lastreboot) {
+			my @prr = stat($postpone_reboot_required);
+			if ($lastreboot < $prr[9]) {
+				$allow_reboot_required = 0;
+				}
+			}
+		}
+	if (&package_updates::check_reboot_required() && $allow_reboot_required) {
 		push(@notifs,
-		     &ui_form_start("$gconfig{'webprefix'}/init/reboot.cgi",
-				    "form-data").
-		     $text{'notif_reboot'}."<p>\n".
-		     &ui_form_end([ [ undef, $text{'notif_rebootok'} ] ]));
+			&ui_form_start("$gconfig{'webprefix'}/init/reboot.cgi").
+			$text{'notif_reboot'}."<p>\n".
+			&ui_form_end([ [ undef, $text{'notif_rebootok'} ],
+					[ 'removenotify', $text{'alert_hide'} ] ]));
 		}
 	}
 
@@ -1337,7 +1343,7 @@ Returns the number of seconds the system has been up, or undef if un-available.
 sub get_system_uptime
 {
 # Try Linux /proc/uptime first
-if (open(UPTIME, "/proc/uptime")) {
+if (open(UPTIME, "</proc/uptime")) {
 	my $line = <UPTIME>;
 	close(UPTIME);
 	my ($uptime, $dummy) = split(/\s+/, $line);
@@ -1385,7 +1391,7 @@ sub list_operating_systems
 {
 my $file = $_[0] || "$root_directory/os_list.txt";
 my @rv;
-open(OSLIST, $file);
+open(OSLIST, "<".$file);
 while(<OSLIST>) {
 	if (/^([^\t]+)\t+([^\t]+)\t+([^\t]+)\t+([^\t]+)\t+(.*)/) {
 		push(@rv, { 'realtype' => $1,
@@ -1604,7 +1610,7 @@ sub prefix_to_mask
 {
 return $_[0] >= 24 ? "255.255.255.".(256-(2 ** (32-$_[0]))) :
        $_[0] >= 16 ? "255.255.".(256-(2 ** (24-$_[0]))).".0" :
-       $_[0] >= 16 ? "255.".(256-(2 ** (16-$_[0]))).".0.0" :
+       $_[0] >= 8 ? "255.".(256-(2 ** (16-$_[0]))).".0.0" :
                      (256-(2 ** (8-$_[0]))).".0.0.0";
 }
 
@@ -1742,7 +1748,7 @@ sub get_module_install_type
 {
 my ($mod) = @_;
 my $it = &module_root_directory($mod)."/install-type";
-open(TYPE, $it) || return undef;
+open(TYPE, "<".$it) || return undef;
 my $type = <TYPE>;
 chop($type);
 close(TYPE);
@@ -1758,7 +1764,7 @@ or undef for tar.gz).
 sub get_install_type
 {
 my $mode;
-if (open(MODE, "$root_directory/install-type")) {
+if (open(MODE, "<$root_directory/install-type")) {
 	chop($mode = <MODE>);
 	close(MODE);
 	}
@@ -1865,8 +1871,10 @@ while(<OUT>) {
 		}
 	}
 close(OUT);
-$rv{'type'} = $rv{'o'} eq $rv{'issuer_o'} ? $text{'ssl_typeself'}
-					  : $text{'ssl_typereal'};
+if ($rv{'o'} && $rv{'issuer_o'}) {
+	$rv{'type'} = $rv{'o'} eq $rv{'issuer_o'} ? $text{'ssl_typeself'}
+						  : $text{'ssl_typereal'};
+	}
 return \%rv;
 }
 
@@ -2307,20 +2315,22 @@ Returns 1 and the latest version of Webmin available on www.webmin.com, or
 sub get_latest_webmin_version
 {
 my $file = &transname();
-my ($error, $version);
+my ($error, $version, $release);
 &http_download($primary_host, $primary_port, '/', $file, \$error, undef, 0,
 	       undef, undef, 5);
 return (0, $error) if ($error);
-open(FILE, $file);
+open(FILE, "<".$file);
 while(<FILE>) {
-	if (/webmin-([0-9\.]+)\.tar\.gz/) {
+	if (/webmin-([0-9\.]+)-(\d+)\.tar\.gz/ ||
+	    /webmin-([0-9\.]+)\.tar\.gz/) {
 		$version = $1;
+		$release = $2;
 		last;
 		}
 	}
 close(FILE);
 unlink($file);
-return $version ? (1, $version)
+return $version ? (1, $version, $release)
 		: (0, "No version number found at $primary_host");
 }
 
@@ -2652,9 +2662,10 @@ return undef;
 sub message_twofactor_totp
 {
 my ($user) = @_;
+my $name = &urlize(&get_display_hostname() . " (" . $user->{'name'} . ")");
 my $url = "https://chart.googleapis.com/chart".
 	  "?chs=200x200&chld=M|0&cht=qr&chl=otpauth://totp/".
-	  $user->{'name'}."%3Fsecret%3D".$user->{'twofactor_id'};
+	  $name."%3Fsecret%3D".$user->{'twofactor_id'};
 my $rv;
 $rv .= &text('twofactor_qrcode', "<tt>$user->{'twofactor_id'}</tt>")."<p>\n";
 $rv .= "<img src='$url' border=0><p>\n";

@@ -373,7 +373,7 @@ sub get_inittab_runlevel
 local %iconfig = &foreign_config("inittab");
 local @rv;
 local $id = $config{'inittab_id'};
-if (open(TAB, $iconfig{'inittab_file'})) {
+if (open(TAB, "<".$iconfig{'inittab_file'})) {
 	# Read the inittab file
 	while(<TAB>) {
 		if (/^$id:(\d+):/ && $1) { @rv = ( $1 ); }
@@ -419,7 +419,7 @@ in with supported parameters to the action, like 'start' and 'stop'.
 sub init_description
 {
 # Read contents of script, extract start/stop commands
-open(FILE, $_[0]);
+open(FILE, "<".$_[0]);
 local @lines = <FILE>;
 close(FILE);
 local $data = join("", @lines);
@@ -495,7 +495,7 @@ sub chkconfig_info
 {
 local @rv;
 local $desc;
-open(FILE, $_[0]);
+open(FILE, "<".$_[0]);
 while(<FILE>) {
 	if (/^#\s*chkconfig:\s+(\S+)\s+(\d+)\s+(\d+)/) {
 		@rv = ( $1 eq '-' ? [ ] : [ split(//, $1) ], $2, $3 );
@@ -525,7 +525,7 @@ if ($init_mode eq "upstart") {
 					quotemeta($name)." 2>&1");
 	if (!$?) {
 		my $cfile = "/etc/init/$name.conf";
-		open(CONF, $cfile);
+		open(CONF, "<".$cfile);
 		while(<CONF>) {
 			if (/^(#*)\s*start/) {
 				return $1 ? 1 : 2;
@@ -572,7 +572,7 @@ elsif ($init_mode eq "local") {
 	# Look for entry in rc.local
 	local $fn = "$module_config_directory/$name.sh";
 	local $cmd = "$fn start";
-	open(LOCAL, $config{'local_script'});
+	open(LOCAL, "<".$config{'local_script'});
 	while(<LOCAL>) {
 		s/\r|\n//g;
 		$found++ if ($_ eq $cmd);
@@ -1207,7 +1207,7 @@ elsif ($mode eq "rc") {
 	}
 elsif ($mode eq "osx") {
 	# Delete OSX hostconfig entry
-	open(LOCAL, $config{'hostconfig'});
+	open(LOCAL, "<".$config{'hostconfig'});
 	my @local = <LOCAL>;
 	close(LOCAL);
 	my $start = $name."=-";
@@ -1342,6 +1342,33 @@ else {
 	&stop_action($name);
 	return &start_action($name);
 	}
+}
+
+=head2 reload_action(action)
+
+Does a config reload for some action.
+
+=cut
+sub reload_action
+{
+local ($name) = @_;
+local $action_mode = &get_action_mode($name);
+if ($action_mode eq "upstart") {
+	return &reload_upstart_service($name);
+	}
+elsif ($action_mode eq "systemd") {
+	return &reload_systemd_service($name);
+	}
+elsif ($action_mode eq "init") {
+	local $file = &action_filename($name);
+	local $hasarg = &get_action_args($file);
+	if ($hasarg->{'reload'}) {
+		local $cmd = $file." reload";
+		local $out = &backquote_logged("$cmd 2>&1 </dev/null");
+		return $? ? (0, $out) : (1, undef);
+		}
+	}
+return (0, "Not implemented");
 }
 
 =head2 status_action(name)
@@ -1885,7 +1912,7 @@ foreach my $l (split(/\r?\n/, $out)) {
 		if ($l =~ /process\s+(\d+)/) {
 			$s->{'pid'} = $1;
 			}
-		open(CONF, "/etc/init/$s->{'name'}.conf");
+		open(CONF, "</etc/init/$s->{'name'}.conf");
 		while(<CONF>) {
 			if (/^description\s+"([^"]+)"/ && !$s->{'desc'}) {
 				$s->{'desc'} = $1;
@@ -1966,6 +1993,19 @@ sub restart_upstart_service
 my ($name) = @_;
 my $out = &backquote_logged(
 	"service ".quotemeta($name)." restart 2>&1 </dev/null");
+return (!$?, $out);
+}
+
+=head2 reload_upstart_service(name)
+
+Reload the upstart service with some name, and return an OK flag and output
+
+=cut
+sub reload_upstart_service
+{
+my ($name) = @_;
+my $out = &backquote_logged(
+	"service ".quotemeta($name)." reload 2>&1 </dev/null");
 return (!$?, $out);
 }
 
@@ -2192,6 +2232,19 @@ my $out = &backquote_logged(
 return (!$?, $out);
 }
 
+=head2 reload_systemd_service(name)
+
+Reload the systemd service with some name, and return an OK flag and output
+
+=cut
+sub reload_systemd_service
+{
+my ($name) = @_;
+my $out = &backquote_logged(
+	"systemctl reload ".quotemeta($name)." 2>&1 </dev/null");
+return (!$?, $out);
+}
+
 =head2 create_systemd_service(name, description, start-script, stop-script,
 			      restart-script, [forks], [pidfile])
 
@@ -2271,9 +2324,13 @@ Returns the base directory for systemd unit config files
 sub get_systemd_root
 {
 my ($name) = @_;
-if ($name && (-r "/etc/systemd/system/$name.service" ||
-	      -r "/etc/systemd/system/$name")) {
-	return "/etc/systemd/system";
+if ($name) {
+	foreach my $p ("/etc/systemd/system", "/usr/lib/systemd/system",
+		       "/lib/systemd/system") {
+		if (-r "$p/$name.service" || -r "$p/$name") {
+			return $p;
+			}
+		}
 	}
 if (-d "/usr/lib/systemd/system") {
 	return "/usr/lib/systemd/system";
@@ -2325,7 +2382,7 @@ sub get_action_args
 {
 my ($file) = @_;
 my %hasarg;
-open(FILE, $file);
+open(FILE, "<".$file);
 while(<FILE>) {
 	if (/^\s*(['"]?)([a-z]+)\1\)/i) {
 		$hasarg{$2}++;

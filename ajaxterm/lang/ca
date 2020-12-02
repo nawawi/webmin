@@ -3,4 +3,3 @@ index_epython=Ajaxterm necessita Python per executar-se, però no s'ha trobat l'
 index_estart=Ajaxterm no ha començat a acceptar connexions al port $2 passats $1 segons.
 index_popup=Obre en una finestra nova...
 index_credits=Utilitza codi d'<a href='$1' target=_new>Ajaxterm</a> d'Antony Lesuisse.
-__norefs=1

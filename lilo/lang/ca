@@ -10,7 +10,10 @@ index_applymsg3=Assegura't que la configuració és correcta abans de reengegar!
 index_return=a les particions i nuclis
 index_earch=LILO només està suportat en sistemes d'arquitectura x86
 index_econf=El fitxer de configuració LILO $1 no existeix. Pot ser que el sistema estigui utilitzant un altre gestor d'engegada.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 global_title=Opcions Globals
 global_desc=Opcions Globals d'Engegada
 global_boot=Escriu el gestor d'engegada a
@@ -33,10 +36,15 @@ global_any=Qualsevol
 global_secs=segons
 global_lba=Permet l'engegada per sobre dels 1024 cilindres
 global_err=No s'han pogut desar les opcions globals
+<<<<<<< HEAD
 
 apply_title=Aplica la Configuració
 apply_exec=S'està aplicant la configuració del LILO amb l'ordre $1...
 
+=======
+apply_title=Aplica la Configuració
+apply_exec=S'està aplicant la configuració del LILO amb l'ordre $1...
+>>>>>>> upstream/master
 image_title1=Creació de Nucli
 image_title2=Edició de Nucli
 image_options=Opcions del Nucli
@@ -67,7 +75,10 @@ image_none=Cap
 image_ename=Falta el nom d'aquest nucli
 image_ekernel=La imatge '$1' del nucli no existeix
 image_einitrd=El fitxer ramdisk inicial '$1' no existeix
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 other_title1=Creació de Partició
 other_title2=Edició de Partició
 other_details=Detalls de la Partició
@@ -78,7 +89,10 @@ other_yes=Sí, des de
 other_password=Contrasenya d'engegada
 other_none=Cap
 other_ename=Falta el nom d'aquesta partició
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 log_create_image=S'ha creat el nucli $1
 log_modify_image=S'ha modificat el nucli $1
 log_delete_image=S'ha suprimit el nucli $1
@@ -93,6 +107,3 @@ log_modify_other_l=S'ha modificat la partició d'engegada $1 de $2
 log_delete_other_l=S'ha suprimit la partició d'engegada $1 de $2
 log_apply=S'ha aplicat la configuració
 log_global=S'han canviat les opcions globals
-
-
-__norefs=1

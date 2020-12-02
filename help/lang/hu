@@ -4,10 +4,15 @@ index_mods=Keresés a modulokban
 index_all=Mindben
 index_sel=Kiválasztott modulok...
 index_search=Keresés
+<<<<<<< HEAD
 index_reset=Radír
 index_header=Általános keresés a Webmin súgójában
 index_return=a kereső űrlapra
 
+=======
+index_header=Általános keresés a Webmin súgójában
+index_return=a kereső űrlapra
+>>>>>>> upstream/master
 search_err=Sikertelen keresés
 search_eterms=A keresett szöveg megadása nem történt meg.
 search_emods=Nem lett modul kiválasztva

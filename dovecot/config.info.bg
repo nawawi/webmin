@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 dovecot=Ñúðâúðåí ñîôòóåð Dovecot,0
 dovecot_config=Ïúëåí ïúò êúì êîíôèãóðàöèîííèÿ ôàéë íà Dovecot,0
 init_script=Èìå íà èíèöèàëèçàöèîííèÿ ñêðèïò íà Dovecot,3,Íÿìà òàêúâ
 pid_file=PID ôàéë íà Dovecot ñúðâúðà,0
+=======
+dovecot=Сървърен софтуер Dovecot,0
+dovecot_config=Пълен път към конфигурационния файл на Dovecot,0
+init_script=Име на инициализационния скрипт на Dovecot,3,Няма такъв
+pid_file=PID файл на Dovecot сървъра,0
+>>>>>>> upstream/master

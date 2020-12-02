@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 log_servers=Autres serveurs DNS modifiés
 log_logging=Journalisation et erreurs modifiées
 log_acls=Liste de contrôle d'accès modifiées
@@ -24,4 +27,7 @@ log_delete_record=$1 enregistrements $2 dans la zone $3 supprimés
 log_create_record=$1 enregistrements $2 dans la zone $3 créés
 log_modify_record=$1 enregistrements $2 dans la zone $3 modifiés
 log_boot=Fichier de configuration primaire créé
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master

@@ -23,9 +23,13 @@ index_eip=&lt;Ismeretlen&gt;
 index_global=Globális konfiguráció
 index_create=Virtuális kiszolgáló létrehozatala
 index_version=ProFTPd $1 verzió
+<<<<<<< HEAD
 
 efailed=A(z) $1 mentése sikertelen
 
+=======
+efailed=A(z) $1 mentése sikertelen
+>>>>>>> upstream/master
 type_0=Hálózatkezelési opciók
 type_1=Naplózási opciók
 type_2=Fájlok és könyvtárak
@@ -33,7 +37,10 @@ type_3=Hozzáférés-vezérlés
 type_4=Vegyes
 type_5=Felhasználó és csoport
 type_6=Hitelesítés
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 virt_title=Virtuális kiszolgáló beállításai
 virt_header1=$1-nek
 virt_header2=Az alapértelmezett kiszolgálónak
@@ -49,7 +56,10 @@ virt_cmds=FTP-parancsok
 virt_return=Virtuális kiszolgáló
 virt_virt=Virtuális kiszolgáló konfigurációja
 virt_edit=Irányelvek szerkesztése
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 vserv_title=Virtuális kiszolgáló konfigurációja
 vserv_addr=Cím
 vserv_name=Kiszolgálónév
@@ -58,7 +68,10 @@ vserv_delete=Virtuális kiszolgáló törlése
 vserv_eaddr=Hiányzó vagy érvénytelen cím
 vserv_eport=Hiányzó vagy érvénytelen portszám
 vserv_ename=Hiányzó kiszolgálónév
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 anon_title=Névtelen FTP opciók
 anon_header1=A(z) $1 virtuális kiszolgálóban
 anon_header2=Az alapértelmezett kiszolgálóban
@@ -66,7 +79,10 @@ anon_anon=Névtelen FTP konfigurációja
 anon_return=Névtelen FTP opciók
 anon_header3=A virtuális kiszolgálóban lévő $1 névtelen FTP-hez
 anon_header4=Az alapértelmezett kiszolgálóban lévő névtelen FTP-hez
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 aserv_title=Névtelen FTP konfigurációja
 aserv_create=Névtelen FTP telepítése
 aserv_root=Korlátozás könyvtárra
@@ -77,7 +93,10 @@ aserv_eroot=Hiányzó vagy érvénytelen chroot könyvtár
 aserv_euser=Hiányzó vagy érvénytelen Unix felhasználó
 aserv_egroup=Hiányzó vagy érvénytelen Unix csoport
 aserv_desc=Ehhez a virtuális kiszolgálóhoz még nem lett telepítve névtelen FTP. Használja ezt az űrlapot a kezdeti konfiguráció beállításához.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 dir_title=Könyvtárankénti opciók
 dir_header2=Az alapértelmezett kiszolgálóban lévő $1 könyvtárhoz
 dir_header1=A(z) $2 virtuális kiszolgálóban lévő $1 könyvtárhoz
@@ -88,14 +107,20 @@ dir_header=Parancsonkénti opciók
 dir_dir=Könyvtár konfigurációja
 dir_header4=A névtelen kiszolgálóban lévő $1 könyvtárhoz
 dir_header5=Globálisan a(z) $1 könyvtárhoz
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 manual_title=Irányelvek szerkesztése
 manual_header=A ProFTPD $1 irányelveinek manuális szerkesztéséhez használja az alábbi szövegdobozt. A módosítások erre a virtuális kiszolgálóra, könyvtárra vagy parancsokra vonatkoznak.
 manual_configs=Konfigurációs fájlok szerkesztése
 manual_ecannot=Nem szerkesztheti manuálisan az irányelveket
 manual_file=Irányelvek szerkesztése a következő fájlban:
 manual_efile=Érvénytelen ProFTPd konfigurációs fájl
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 limit_title=Parancsonkénti opciók
 limit_header4=A(z) $2 könyvtár $1 parancsaihoz
 limit_header2=Az alapértelmezett kiszolgáló $1 parancsaihoz
@@ -107,19 +132,28 @@ limit_return=Parancsonkénti opciók
 limit_header5=A névtelen FTP $1 parancsaihoz
 limit_header6=A(z) $2 fájl $1 parancsaihoz
 limit_header7=Globálisan a(z) $1 parancsokhoz
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 lserv_title=Parancsok konfigurációja
 lserv_cmd=FTP-parancsok
 lserv_delete=A parancsok konfigurációjának törlése
 lserv_err=A parancsok mentése sikertelen
 lserv_ecmd=Nem választott ki parancsot
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 dserv_title=A könyvtár konfigurációja
 dserv_dir=A könyvtár elérési útvonala
 dserv_err=A könyvtár mentése sikertelen
 dserv_edir=Hiányzik a könyvtár elérési útvonala
 dserv_delete=A könyvtár konfigurációjának törlése
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 mod_core_type=Kiszolgálótípus
 mod_core_inetd=Futtatás Inetd-ből
 mod_core_stand=Önálló daemon
@@ -304,7 +338,10 @@ mod_core_duser=Felhasználók elutasítása
 mod_core_eip=A(z) '$1' érvénytelen IP-cím
 mod_core_enet=A(z) '$1' érvénytelen hálózati cím
 mod_core_ehost=A(z) '$1' érvénytelen gazdanév
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 mod_ls_fakegroup=Hamisít csoportot a könyvtárlistákban?
 mod_ls_fakeuser=Hamisít felhasználó a könyvtárlistákban?
 mod_ls_fakemode=Hamis engedélyek a könyvtárlistákban
@@ -319,7 +356,10 @@ mod_ls_fakeasgroup=Igen, a következő csoportként ..
 mod_ls_fakesamegroup=Kapcsolódott csoport
 mod_ls_efakeuser=Hiányzó vagy érvénytelen hamis felhasználó
 mod_ls_efakegroup=Hiányzó vagy érvénytelen hamis csoport
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 mod_auth_chdir=Kezdeti bejelentkezési könyvtár
 mod_auth_echdir=Hiányzó vagy érvénytelen kezdeti bejelentkezési könyvtár
 mod_auth_chroot=Felhasználók korlátozása könyvtárakra
@@ -333,9 +373,13 @@ mod_auth_egroups=Nincs felvéve Unix csoport a chroot-hoz
 mod_auth_echroot=Hiányzó vagy érvénytelen chroot könyvtár
 mod_auth_login=Bejelentkezés elutasítása esetén nem kér jelszót?
 mod_auth_root=Engedélyezi a root bejelentkezését?
+<<<<<<< HEAD
 
 mod_site_chmod=Engedélyezi a chmod parancsot?
 
+=======
+mod_site_chmod=Engedélyezi a chmod parancsot?
+>>>>>>> upstream/master
 mod_unixpw_ufile=Helyettes Unix jelszófájl
 mod_unixpw_eufile=Hiányzó vagy érvénytelen helyettes Unix jelszófájl
 mod_unixpw_gfile=Helyettes Unix csoportfájl
@@ -343,7 +387,10 @@ mod_unixpw_egfile=Hiányzó vagy érvénytelen helyettes Unix csoportfájl
 mod_unixpw_none=Semelyik
 mod_unixpw_pam=A PAM mindig felsőbbrendű?
 mod_unixpw_persist=Állandóan nyitva tartja a jelszófájlt?
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 mod_log_syslog=Hibák naplózása fájlba
 mod_log_sysdef=Rendszernapló
 mod_log_esyslog=Hiányzó vagy érvénytelen naplófájl
@@ -360,6 +407,7 @@ mod_log_fmt=Formátumlánc
 mod_log_format=Egyéni naplóformátumok
 mod_log_enickname=Hiányzó vagy érvénytelen formátumnév
 mod_log_efmt=Hiányzó formátumlánc
+<<<<<<< HEAD
 
 mod_pam_pam=Használja a PAM-ot a hitelesítéshez?
 mod_pam_config=Hitelesítés a PAM-szolgáltatás használatával
@@ -372,6 +420,16 @@ mod_readme_edisplay=Hiányzó readme fájlminta
 start_err=Az FTP-kiszolgáló elindítása sikertelen
 start_einetd=Inedt-módban nem indíthatja el a kiszolgáló daemont
 
+=======
+mod_pam_pam=Használja a PAM-ot a hitelesítéshez?
+mod_pam_config=Hitelesítés a PAM-szolgáltatás használatával
+mod_pam_econfig=Hiányzó vagy érvénytelen PAM-szolgáltatás
+mod_readme_display=Felhasználó értesítése a readme fájlok egyezéséről
+mod_readme_none=Semelyik
+mod_readme_edisplay=Hiányzó readme fájlminta
+start_err=Az FTP-kiszolgáló elindítása sikertelen
+start_einetd=Inedt-módban nem indíthatja el a kiszolgáló daemont
+>>>>>>> upstream/master
 ftpaccess_title=Könyvtárankénti opciófájlok
 ftpaccess_desc=További könyvtárankénti opciók adhatók meg egy (általában <tt>.ftpaccess</tt> nevű) fájlban minden egyes könyvtárban. A kiválasztott opciók az adott könyvtárban és annak alkönyvtáraiban lévő összes fájlra vonatkoznak, hacsak nem írja felül őket egy másik opciófájl.
 ftpaccess_create=Opciófájl létrehozatala
@@ -379,10 +437,15 @@ ftpaccess_find=Opciófájlok keresése
 ftpaccess_auto=Névtelen alatt
 ftpaccess_from=Könyvtárból
 ftpaccess_return=Opciófájl-lista
+<<<<<<< HEAD
 
 ftpusers_title=Elutasított FTP-felhasználók
 ftpusers_desc=Ha a <tt>Hitelesítés</tt> ikon alatt engedélyezi, az alább a(z) $1 fájlból felsorolt felhasználók nem férhetnek hozzá az FTP-kiszolgálóhoz.
 
+=======
+ftpusers_title=Elutasított FTP-felhasználók
+ftpusers_desc=Ha a <tt>Hitelesítés</tt> ikon alatt engedélyezi, az alább a(z) $1 fájlból felsorolt felhasználók nem férhetnek hozzá az FTP-kiszolgálóhoz.
+>>>>>>> upstream/master
 ftpindex_title=Könyvtárankénti opciófájl
 ftpindex_delete=Fájl törlése
 ftpindex_opts=Könyvtárankénti opciók
@@ -392,10 +455,15 @@ ftpindex_addlimit=Parancsonkénti opciók hozzáadása a következőhöz ..
 ftpindex_header2=$1 a(z) $2-ben
 ftpindex_return=Könyvtárankénti opciófájl
 ftpindex_header=$1-hez
+<<<<<<< HEAD
 
 find_err=Nem találhatók opciófájlok
 find_eanon=Egy virtuális kiszolgálóhoz sincs telepítve névtelen FTP-kiszolgáló
 
+=======
+find_err=Nem találhatók opciófájlok
+find_eanon=Egy virtuális kiszolgálóhoz sincs telepítve névtelen FTP-kiszolgáló
+>>>>>>> upstream/master
 log_global=A(z) $1 globális opciók megváltoztatva
 log_ftpusers=Elutasított FTP-felhasználók megváltoztatva
 log_virtc=A(z) $1 kiszolgáló létrehozva
@@ -424,4 +492,7 @@ log_ftpaccessm=A(z) $1 opciófájl manuálisan szerkesztve
 log_ftpaccess=A(z) $1 módosítva a(z) $2 opciófájlban
 log_start=Proftpd elindítva
 log_apply=Módosítások alkalmazva
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master

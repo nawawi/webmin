@@ -9,7 +9,10 @@ index_startmsg=Fes clic sobre aquest botó per iniciar el servidor FTP amb la co
 index_startmsg2=Fes clic sobre aquest botó per iniciar el servidor FTP amb la configuració actual. També pots configurar el servidor per que s'engegui automàticament quan calgui amb inetd o algun altre programa equivalent.
 index_return=a les opcions del servidor FTP
 index_version=Versió WU-FTPd $1
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 class_title=Usuaris i Classes
 class_header=Classes d'usuaris i opcions d'usuari
 class_class=Classes d'usuaris
@@ -32,7 +35,10 @@ class_err=No s'han pogut desar les classes d'usuaris
 class_eclass='$1' no és un nom de classe vàlid
 class_etypes=No has triat cap tipus per a la classe '$1'
 class_eaddrs=No has introduït cap adreça per a la classe '$1'
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 message_title=Missatges i Banderes
 message_header=Missatges, banderes i fitxers README
 message_message=Fitxers de missatge
@@ -61,7 +67,10 @@ message_eclass=La classe '$1' no existeix
 message_ebanner='$1' no és un fitxer de bandera vàlid
 message_ehostname=Hi falta el nom de host o bé no és vàlid
 message_eemail=Hi falta l'adreça de correu o bé no és vàlida
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 acl_title=Límits i Control d'Accés
 acl_header=Opcions de límits i control d'accés
 acl_deny=Denega l'accés des de
@@ -108,7 +117,10 @@ acl_elmsg='$1' no és un fitxer de missatge d'error vàlid
 acl_efbcount='$1' no és un nombre de fitxers o bytes vàlid
 acl_elimit='$1' no és un límit de temps vàlid
 acl_efails='$1' no és un nombre vàlid d'intents fallits de connexió
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 net_title=Xarxa
 net_header=Opcions de xarxa
 net_tcp=Mides de finestra TCP
@@ -126,7 +138,10 @@ net_eip='$1' no és una adreça IP vàlida
 net_enet='$1' no és un adreça de xarxa vàlida
 net_ecidr='$1' no és un nombre de bits de xarxa vàlid
 net_eport='$1' no és número de port vàlid
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 log_title=Registres
 log_header=Opcions de registre
 log_commands=Registra totes les ordres de
@@ -144,7 +159,10 @@ log_syslog=El registre del sistema
 log_xferlog=Fitxer de registre XFER
 log_sysxfer=Ambdues destinacions
 log_err=No s'han pogut desar les opcions de registre
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 alias_title=Àlies i Camins
 alias_header=Opcions d'àlies i camins
 alias_alias=Àlies de directoris de CD
@@ -155,7 +173,10 @@ alias_err=No s'han pogut desar els àlies i els camins
 alias_efrom='$1' no és un nom d'àlies vàlid
 alias_eto='$1' no és un directori d'àlies vàlid
 alias_ecdpath='$1' no és un directori de recerca de CD vàlid
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 anon_title=FTP Anònim
 anon_eftp=Atenció - el sistema no té cap usuari <tt>ftp</tt>, així que pot ser que el FTP anònim no estigui configurat.
 anon_header=Opcions de FTP anònim
@@ -178,7 +199,10 @@ anon_uids=Per als usuaris Unix
 anon_err=No s'han pogut desar les opcions de FTP anònim
 anon_edir='$1' no és un directori vàlid
 anon_egroup='$1' no és un grup vàlid
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 perm_title=Permisos
 perm_header=Opcions dels permisos
 perm_perms=Restriccions d'ordres
@@ -200,9 +224,13 @@ perm_err=No s'han pogut desar els permisos
 perm_echar='$1' no és una expressió regular de joc de caràcters vàlida
 perm_etypes=No has seleccionat cap tipus d'usuari
 perm_emesg='$1' no és un fitxer de missatge d'error vàlid
+<<<<<<< HEAD
 
 host_title=Control d'Accés al Host
 
+=======
+host_title=Control d'Accés al Host
+>>>>>>> upstream/master
 misc_title=Opcions Miscel·lànies
 misc_header=Opcions Miscel·lànies
 misc_lslong=Ordre de llistat detallat
@@ -221,9 +249,13 @@ misc_elslong=Hi falta l'ordre de llistat detallat
 misc_elsshort=Hi falta l'ordre de llistat curt
 misc_elsplain=Hi falta l'ordre de llistat normal
 misc_eshutdown=Hi falta el fitxer de notificació de tancament
+<<<<<<< HEAD
 misc_ence='$1' no és un nivell <i>nice</i> vàlid
 misc_eumask='$1' no és una <i>umask</i> vàlida
 
+=======
+misc_eumask='$1' no és una <i>umask</i> vàlida
+>>>>>>> upstream/master
 log_class=S'han canviat els usuaris i les  classes
 log_message=S'han canviat els missatges i les banderes
 log_acl=S'han canviat els límits i el control d'accés
@@ -235,5 +267,3 @@ log_perm=S'han canviat les opcions dels permisos
 log_misc=S'han canviat les opcions miscel·lànies
 log_restart=S'han aplicat els canvis
 log_start=S'ha iniciat el servidor FTP
-
-__norefs=1

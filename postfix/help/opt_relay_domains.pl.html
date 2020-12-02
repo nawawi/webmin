@@ -1,15 +1,26 @@
+<<<<<<< HEAD
 <header>Ograniczyæ przekazywanie poczty</header>
+=======
+<header>Ograniczyć przekazywanie poczty</header>
+>>>>>>> upstream/master
 
 <center><tt>relay_domains</tt></center>
 <hr>
 
+<<<<<<< HEAD
 Ten parametr okre¶la od klientów z&nbsp;hostów z&nbsp;jakich domen (lub ich
 poddomen), a tak¿e do jakich domen docelowych (i&nbsp;ich poddomen)
 niniejszy system poczty bêdzie przekazywa³ pocztê. <p>
+=======
+Ten parametr określa od klientów z&nbsp;hostów z&nbsp;jakich domen (lub ich
+poddomen), a także do jakich domen docelowych (i&nbsp;ich poddomen)
+niniejszy system poczty będzie przekazywał pocztę. <p>
+>>>>>>> upstream/master
 
 <include relay_rules>
 <p>
 
+<<<<<<< HEAD
 Podaj rozdzielon± przecinkami lub bia³ymi znakami listê hostów lub domen,
 wzorców <tt>/nazwa/pliku</tt> lub tabel przeszukiwañ <tt>rodzaj:nazwa</tt>.
 Nazwa pliku zostanie zast±piona jego zawarto¶ci±; dopasowanie do tabeli
@@ -19,6 +30,17 @@ przeszukiwania. <p>
 UWAGA: Postfix postfiks nie bêdzie automatycznie przekazywaæ poczty dla
 domen, dla których ten system jest wymieniony jako ich podstawowy lub
 zapasowy host MX. Patrz te¿ ograniczenie <tt>permit_mx_backup</tt>
+=======
+Podaj rozdzieloną przecinkami lub białymi znakami listę hostów lub domen,
+wzorców <tt>/nazwa/pliku</tt> lub tabel przeszukiwań <tt>rodzaj:nazwa</tt>.
+Nazwa pliku zostanie zastąpiona jego zawartością; dopasowanie do tabeli
+<tt>rodzaj:nazwa</tt> następuje, gdy (nadrzędna) domena występuje jako kluch
+przeszukiwania. <p>
+
+UWAGA: Postfix postfiks nie będzie automatycznie przekazywać poczty dla
+domen, dla których ten system jest wymieniony jako ich podstawowy lub
+zapasowy host MX. Patrz też ograniczenie <tt>permit_mx_backup</tt>
+>>>>>>> upstream/master
 w&nbsp;opisie parametru <a href=opt_smtpd_recipient_restrictions>
 <tt>smtpd_recipient_restrictions</tt></a>.
 

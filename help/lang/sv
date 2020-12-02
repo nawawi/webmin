@@ -4,10 +4,15 @@ index_mods=Moduler att söka i
 index_all=Alla
 index_sel=Valda moduler ...
 index_search=Sök
+<<<<<<< HEAD
 index_reset=Återställ
 index_header=Sök globalt i Hjälp till Webmin
 index_return=sökformulär
 
+=======
+index_header=Sök globalt i Hjälp till Webmin
+index_return=sökformulär
+>>>>>>> upstream/master
 search_err=Sökningen misslyckades
 search_eterms=Någon sökterm saknades
 search_emods=Du har inte valt någon modul

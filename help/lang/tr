@@ -4,10 +4,15 @@ index_mods=Arama Modülleri
 index_all=Hepsi
 index_sel=Seçilen Modüller ..
 index_search=Ara
+<<<<<<< HEAD
 index_reset=Temizle
 index_header=Genel Webmin yardım araması
 index_return=Ara formu
 
+=======
+index_header=Genel Webmin yardım araması
+index_return=Ara formu
+>>>>>>> upstream/master
 search_err=Arama işleminde hata oluştu
 search_eterms=Kayıp arama terimleri
 search_emods=Modül seçilmedi

@@ -7,7 +7,11 @@ list_cmd=Polecenie zwracające scieżkę do pliku strony podręcznika,0
 list_cmd_sect=Polecenie zwracające scieżkę do pliku strony podręcznika z&nbsp;rozdziału,0
 man2html_path=Ścieżka do <tt>man2html</tt>,3,Nie korzystaj z&nbsp;<tt>man2html</tt>
 doc_dir=Katalog dokumentacji pakietów,3,Brak
+<<<<<<< HEAD
 howto_dir=Katalog dokumentów &quot;HOWTO&quot;,3,Brak
+=======
+howto_dir=Katalog dokumentów "HOWTO",3,Brak
+>>>>>>> upstream/master
 kernel_dir=Katalog dokumentacji kernela,3,Brak
 kde_dir=Katalog dokumentacji KDE,3,Brak
 custom_dir=Katalog własnej dokumentacji,3,Brak

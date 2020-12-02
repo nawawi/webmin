@@ -4,10 +4,12 @@ index_mods=Rechercher dans les modules
 index_all=Tous
 index_sel=Modules sélectionnés ...
 index_search=Rechercher
-index_reset=Recommencer
 index_header=Recherche globale dans l'aide de Webmin
 index_return=formulaire de recherce
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 search_err=Recherche ratée
 search_eterms=Terme de recherche manquant
 search_emods=Aucun module séléctionné

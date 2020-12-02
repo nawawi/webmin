@@ -1,16 +1,28 @@
 index_header=Serwer proxy Squid
+<<<<<<< HEAD
 index_msgnoconfig=Plik konfiguracyjny Squida <tt>$1</tt> nie istnieje. Jeśli Squid jest zainstalowany, dostosuj swoją <a href=/config.cgi?$2 >konfigurację modułu</a>, aby korzystała z&nbsp;prawidłowych ścieżek.
 index_msgnoexe=Program Squida <tt>$1</tt> nie istnieje. Jeśli Squid jest zainstalowany, dostosuj swoją <a href=/config.cgi?$2 >konfigurację modułu</a>, aby korzystała z&nbsp;prawidłowej ścieżki.
 index_msgnosupported=Webmin nie obsługuje Twojej wersji Squida. Jedynie wersje <tt>1.1</tt>, <tt>2.0</tt>, <tt>2.1</tt>, <tt>2.2</tt>, <tt>2.3</tt> i&nbsp;<tt>2.4</tt> są obsługiwane przez ten moduł.
+=======
+index_msgnoconfig=Plik konfiguracyjny Squida <tt>$1</tt> nie istnieje. Jeśli Squid jest zainstalowany, dostosuj swoją <a href=/config.cgi?$2 >konfigurację modułu</a>, aby korzystała z prawidłowych ścieżek.
+index_msgnoexe=Program Squida <tt>$1</tt> nie istnieje. Jeśli Squid jest zainstalowany, dostosuj swoją <a href=/config.cgi?$2 >konfigurację modułu</a>, aby korzystała z prawidłowej ścieżki.
+>>>>>>> upstream/master
 index_msgnodir1=Twoje katalogi buforów Squida <tt>$1</tt> nie zostały zainicjalizowane. 
 index_msgnodir2=Twój katalog buforów Squida <tt>$1</tt> nie został zainicjalizowany. 
 index_msgnodir3=Dopiero jak to uczynisz, będzie można uruchomić Squida.
 index_buttinit=Inicjalizuj bufory cache
 index_asuser=jako użytkownik Uniksa
+<<<<<<< HEAD
 index_portsnets=Porty i&nbsp;sieć
 index_othercaches=Inne proxy
 index_musage=Wykorzystanie pamięci
 index_mdusage=Wykorzystanie pamięci i&nbsp;dysku
+=======
+index_portsnets=Porty i sieć
+index_othercaches=Inne proxy
+index_musage=Wykorzystanie pamięci
+index_mdusage=Wykorzystanie pamięci i dysku
+>>>>>>> upstream/master
 index_logging=Logowanie
 index_copts=Opcje buforowania
 index_hprogs=Programy pomocnicze
@@ -19,11 +31,18 @@ index_admopts=Opcje administracyjne
 index_proxyauth=Autoryzacja proxy
 index_miscopt=Opcje różne
 index_cms=Statystyki zarządcy buforów cache
+<<<<<<< HEAD
 index_rebuild=Wyczyść i&nbsp;przebuduj bufory cache
 index_calamaris=Analizator logów Calamaris
 index_return=indeksu
 index_squidver=Polecenie <tt>$1</tt> zwróciło&nbsp;:
 
+=======
+index_rebuild=Wyczyść i przebuduj bufory cache
+index_calamaris=Analizator logów Calamaris
+index_return=indeksu
+index_squidver=Polecenie <tt>$1</tt> zwróciło :
+>>>>>>> upstream/master
 buttsave=Zachowaj
 buttdel=Usuń
 buttcreat=Utwórz
@@ -33,11 +52,14 @@ default=Domyślne
 none=Brak
 on=Włączone
 off=Wyłączone
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 acl_header1=Utwórz ACL
 acl_header2=Zmień ACL
 acl_name=Nazwa ACL
-acl_fromip=Z&nbsp;IP
+acl_fromip=Z IP
 acl_toip=Do IP
 acl_nmask=Maska sieci
 acl_ipaddr=Adresy IP
@@ -61,7 +83,11 @@ acl_reqmethods=Metody zapytań
 acl_bregexp=Wyrażenie regularne dla przeglądarki
 acl_pusers=Użytkownicy proxy
 acl_eusers=Zewnętrzni autoryzowani użytkownicy
+<<<<<<< HEAD
 acl_case=Utożsamiać wielkie i&nbsp;małe litery?
+=======
+acl_case=Utożsamiać wielkie i małe litery?
+>>>>>>> upstream/master
 acl_eusersre=Wyrażenie regularne dla zewnętrznych autoryzowanych użytkowników
 acl_asnum=Numery AS
 acl_rtime=Czas odświeżania
@@ -75,13 +101,20 @@ acl_failurl=URL błędu
 acl_buttsave=Zachowaj
 acl_buttdel=Usuń
 acl_return=listy ACL
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 aclsave_failsave=Nie udało się zachować ACL
 aclsave_faildel=Nie udało się usunąć ACL
 aclsave_epr=Ta ACL jest używana przez ograniczenie proxy
 aclsave_eicpr=Ta ACL jest używana przez ograniczenie ICP
 aclsave_ename=Niepoprawna nazwa ACL
+<<<<<<< HEAD
 aclsave_eexists=ACL o&nbsp;nazwie '$1' już istnieje
+=======
+aclsave_eexists=ACL o nazwie '$1' już istnieje
+>>>>>>> upstream/master
 aclsave_efrom='$1' nie jest poprawnym źródłowym (<tt>From</tt>) adresem IP
 aclsave_eto='$1' nie jest poprawnym docelowym (<tt>To</tt>) adresem IP
 aclsave_enmask='$1' nie jest poprawną maską sieci
@@ -93,12 +126,19 @@ aclsave_eehour=Niepoprawna godzina zakończenia
 aclsave_esmin=Niepoprawna minuta rozpoczęcia
 aclsave_eemin=Niepoprawna minuta zakończenia
 aclsave_efile=Nie masz praw zapisu do pliku ACL '$1'
+<<<<<<< HEAD
 
 cach_ecannot=Nie masz praw dostępu do statystyk zarządcy cache
 cach_err=Błąd
 cach_nfound=Nie znaleziono programu zarządcy buforów cache Squida <tt>$1</tt> w&nbsp;Twoim systemie. Być może Twoja <a href=/config.cgi?$2 >konfiguracja modułu</a> jest nieprawidłowa.
 cach_return=indeksu squida
 
+=======
+cach_ecannot=Nie masz praw dostępu do statystyk zarządcy cache
+cach_err=Błąd
+cach_nfound=Nie znaleziono programu zarządcy buforów cache Squida <tt>$1</tt> w Twoim systemie. Być może Twoja <a href=/config.cgi?$2 >konfiguracja modułu</a> jest nieprawidłowa.
+cach_return=indeksu squida
+>>>>>>> upstream/master
 chown_header=Zmień właściciela
 chown_stop=Zatrzymywanie Squida ...
 chown_done=.. Zakończone
@@ -106,6 +146,7 @@ chown_chown=Zmiana właściciela ...
 chown_restart=Restart Squida ...
 chown_failrestart=Nie udało sie zrestartować Squida ..
 chown_return=indeksu squida
+<<<<<<< HEAD
 
 clear_ecannot=Nie masz uprawnień do czyszczenia i&nbsp;przebudowywania cache
 clear_header=Wyczyść i przebuduj cache
@@ -119,6 +160,19 @@ clear_init=Inicjalizacja buforów Squida poleceniem <tt>$1</tt> ..
 clear_failrestart=Nie udało się zrestartować Squida ..
 clear_return=indeksu squida
 
+=======
+clear_ecannot=Nie masz uprawnień do czyszczenia i przebudowywania cache
+clear_header=Wyczyść i przebuduj cache
+clear_msgclear=Czy jesteś pewien, że chcesz wyczyścić i przebudować bufory cache Twojego Squida? Spowoduje to usunięcie <b>wszystkich</b> plików, z buforów cache oraz restart serwera Squid.
+clear_msgclear2=Powinieneś się upewnić, że nie używasz tego proxy do komunikacji z serwerem Webmina lub zostaniesz rozłączony w chwili wyłączenia proxy.
+clear_buttclear=Wyczyść i przebuduj bufory cache
+clear_stop=Zatrzymywanie Squida ...
+clear_done=.. Zakończone
+clear_del=Usuwanie starych plików z buforów ..
+clear_init=Inicjalizacja buforów Squida poleceniem <tt>$1</tt> ..
+clear_failrestart=Nie udało się zrestartować Squida ..
+clear_return=indeksu squida
+>>>>>>> upstream/master
 eacl_ecannot=Nie masz uprawnień do zmainy kontroli dostępu
 eacl_header=Kontrola dostępu
 eacl_acls=Listy kontroli dostępu (ACL)
@@ -139,10 +193,16 @@ eacl_addicpr=Dodaj ograniczenie ICP
 eacl_return=indeksu squida
 eacl_allow=pozwól
 eacl_deny=zabroń
+<<<<<<< HEAD
 
 eadm_ecannot=Nie masz uprawnień do zmiany opcji administracyjnych
 eadm_header=Opcje administracyjne
 eadm_aao=Opcje administracyjne i&nbsp;rozgłoszeniowe
+=======
+eadm_ecannot=Nie masz uprawnień do zmiany opcji administracyjnych
+eadm_header=Opcje administracyjne
+eadm_aao=Opcje administracyjne i rozgłoszeniowe
+>>>>>>> upstream/master
 eadm_runasuu=Uruchom jako użytkownik Uniksa
 eadm_nochange=Bez zmian
 eadm_user=Użytkownik
@@ -166,7 +226,10 @@ eadm_caf=Plik rozgłaszania cache
 eadm_annp=Częstotliwość rozgłaszania
 eadm_buttsave=Zachowaj
 eadm_return=indeksu squida
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 eauth_ecannot=Nie masz uprawnień do zmiany autoryzacji proxy
 eauth_header=Autoryzacja proxy
 eauth_aopt=Opcje autoryzacji
@@ -174,16 +237,27 @@ eauth_puf=Plik użytkowników proxy
 eauth_none=Brak
 eauth_nologin=Nie wymagane logowanie dla domeny
 eauth_buttsave=Zachowaj
+<<<<<<< HEAD
 eauth_msgaccess=Dostęp do Twojego serwera proxy jest ograniczony do poniżej wymienionych użytkowników. Po dodaniu, usunięciu lub skasowaniu uzytkownika trzeba zatrzymać i&nbsp;ponownie uruchomić Squida, aby zmiany zostały zastosowane.
 eauth_nmsgaccess=Dostęp do Twojego serwera proxy jest ograniczony do poniżej wymienionych użytkowników, pobranych z&nbsp;pliku $1.
+=======
+eauth_msgaccess=Dostęp do Twojego serwera proxy jest ograniczony do poniżej wymienionych użytkowników. Po dodaniu, usunięciu lub skasowaniu uzytkownika trzeba zatrzymać i ponownie uruchomić Squida, aby zmiany zostały zastosowane.
+eauth_nmsgaccess=Dostęp do Twojego serwera proxy jest ograniczony do poniżej wymienionych użytkowników, pobranych z pliku $1.
+>>>>>>> upstream/master
 eauth_pusers=Użytkownicy proxy
 eauth_nopusers=Nie jest obecnie zdefiniowany żaden użytkownik proxy.
 eauth_addpuser=Dodaj nowy serwer proxy
 eauth_return=indeksu squida
+<<<<<<< HEAD
 
 ec_ecannot=Nie masz uprawnień do zmiany opcji buforowania
 ec_header=Opcje buforowania
 ec_cro=Opcje buforowania i&nbsp;zapytań
+=======
+ec_ecannot=Nie masz uprawnień do zmiany opcji buforowania
+ec_header=Opcje buforowania
+ec_cro=Opcje buforowania i zapytań
+>>>>>>> upstream/master
 ec_cdirs=Katalogi buforów
 ec_default=Domyślne
 ec_listed=Wymienione..
@@ -202,7 +276,11 @@ ec_aos=Średni rozmiar obiektu
 ec_kb=kB
 ec_mins=min.
 ec_secs=sek.
+<<<<<<< HEAD
 ec_opb=Obiektów w&nbsp;porcji
+=======
+ec_opb=Obiektów w porcji
+>>>>>>> upstream/master
 ec_ncuc=Nie buforuj URL-i zawierających
 ec_ncum=Nie buforuj URL-i wg wzorca
 ec_ncua=Nie buforuj URL-i dla ACL
@@ -216,7 +294,11 @@ ec_dlct=Czas buforowania przeszukiwań DNS
 ec_fdct=Czas buforowania błędow DNS
 ec_ct=Czas przeterminowania połączenia
 ec_rt=Czas przeterminowania odczytu
+<<<<<<< HEAD
 ec_mcct=Maks. czas połączenia z&nbsp;klientem
+=======
+ec_mcct=Maks. czas połączenia z klientem
+>>>>>>> upstream/master
 ec_mst=Maks. czas wyłączania
 ec_sst=Czas przeterminowania wyboru miejsca
 ec_crt=Czas przeterminowania zapytania klienta
@@ -230,7 +312,6 @@ ec_wrh=Host przekazywania WAIS
 ec_wrp=Port przekazywania WAIS
 ec_buttsave=Zachowaj
 ec_return=indeksu squida
-
 ech_header=Nowy host proxy
 ech_header1=Zmień host proxy
 ech_cho=Opcje hosta proxy
@@ -244,7 +325,10 @@ ech_ip=Port ICP
 ech_po=Tylko proxy?
 ech_y=Tak
 ech_n=Nie
+<<<<<<< HEAD
 ech_siq=Wysyłać zapytania ICP?
+=======
+>>>>>>> upstream/master
 ech_dc=Jest domyślnym proxy?
 ech_rrc=Proxy cykliczny?
 ech_ittl=Czas życia ICP
@@ -264,15 +348,23 @@ ech_dqfd=Nie pytać dla domen
 ech_buttsave=Zachowaj
 ech_buttdel=Usuń
 ech_return=listy proxy
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 eicp_ecannot=Nie masz uprawnień do zmiany innych proxy
 eicp_header=Inne proxy
 eicp_opcs=Inne buforujące serwery proxy
 eicp_nocd=Nie zdefiniowano innych proxy
 eicp_aac=Dodaj nowy proxy
 eicp_cso=Opcje wyboru proxy
+<<<<<<< HEAD
 eicp_fdfd=Sprowadzać bezpośrednio z&nbsp;domen
 eicp_fdfi=Sprowadzać bezpośrednio z&nbsp;IP
+=======
+eicp_fdfd=Sprowadzać bezpośrednio z domen
+eicp_fdfi=Sprowadzać bezpośrednio z IP
+>>>>>>> upstream/master
 eicp_dif=Domeny za firewallem
 eicp_iif=IP za firewallem
 eicp_dfuc=Sprowadzać bezpośrednio URL-e zawierające
@@ -281,7 +373,11 @@ eicp_bpfsp=Pomijać pinga dla pojedyńczego macierzystego?
 eicp_y=Tak
 eicp_n=Nie
 eicp_secs=sek.
+<<<<<<< HEAD
 eicp_ssip=Wyzyłać źródło w&nbsp;pingu?
+=======
+eicp_ssip=Wyzyłać źródło w pingu?
+>>>>>>> upstream/master
 eicp_crt=Czas przeterminowania odpowiedzi proxy
 eicp_iqt=Czas przeterminowania zapytania ICP
 eicp_mit=Czas przeterminowania multicastu ICP
@@ -297,10 +393,16 @@ eicp_addalways=Dodaj ACL-e dla sprowadzania bezpośredniego
 eicp_never=ACL-e dla niesprowadzania bezpośredniego
 eicp_nonever=Brak ACL-i dla niesprowadzania bezpośredniego
 eicp_addnever=Dodaj ACL-e dla niesprowadzania bezpośredniego
+<<<<<<< HEAD
 
 elogs_ecannot=Nie masz uprawnień do zmiany logowania
 elogs_header=Logowanie
 elogs_lalo=Logowanie i&nbsp;opcje logów
+=======
+elogs_ecannot=Nie masz uprawnień do zmiany logowania
+elogs_header=Logowanie
+elogs_lalo=Logowanie i opcje logów
+>>>>>>> upstream/master
 elogs_alf=Log dostępu
 elogs_dlf=Log pracy proxy
 elogs_slf=Log buforów
@@ -308,7 +410,11 @@ elogs_cmf=Plik metadanych dla buforów
 elogs_uhlf=Używać formatu logów HTTPD?
 elogs_lmh=Logować nagłówki MIME?
 elogs_ualf=Log programów użytkownika
+<<<<<<< HEAD
 elogs_pf=Plik z&nbsp;numerem PID
+=======
+elogs_pf=Plik z numerem PID
+>>>>>>> upstream/master
 elogs_prilfa=Wykonywać identyfikację RFC931 dla ACL
 elogs_rit=Czas przeterminowania identyfikacji wg RFC931
 elogs_dril=Wykonywać identyfikację wg RFC931?
@@ -317,11 +423,18 @@ elogs_ln=Maska logowania
 elogs_do=Opcje śledzenia
 elogs_mht=Tablica nagłówków MIME
 elogs_return=indeksu squida
+<<<<<<< HEAD
 
 emem_ecannot=Nie masz uprawnień do zmiany wykorzystania pamięci
 emem_dheader=Wykorzystanie pamięci i dysku
 emem_header=Wykorzystanie pamięci
 emem_maduo=Opcje wykorzystania pamięci i&nbsp;dysku
+=======
+emem_ecannot=Nie masz uprawnień do zmiany wykorzystania pamięci
+emem_dheader=Wykorzystanie pamięci i dysku
+emem_header=Wykorzystanie pamięci
+emem_maduo=Opcje wykorzystania pamięci i dysku
+>>>>>>> upstream/master
 emem_mul=Limit wykorzystania pamięci
 emem_dul=Limit wykorzystania dysku
 emem_fcs=Rozmiar bufora nazw hostów (FQDN)
@@ -343,7 +456,10 @@ emem_lfuda=Dynamika najrzadziej używanych
 emem_hlru=Gromadzić najrzadziej używanych
 emem_return=indeksu squida
 emem_mrp=Taktyka zastępowania pamięci
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 emisc_ecannot=Nie masz uprawnień do zmiany opcji różnych
 emisc_header=Opcje różne
 emisc_mo=Opcje różne
@@ -352,7 +468,11 @@ emisc_slr=Rotacja logu po SIGUSR1
 emisc_dd=Domyślna domena
 emisc_sp=Proxy dla SSL
 emisc_nghp=Buforować zapytania HTTP nie-GET
+<<<<<<< HEAD
 emisc_emt=Tekst w&nbsp;komunikatach błędów
+=======
+emisc_emt=Tekst w komunikatach błędów
+>>>>>>> upstream/master
 emisc_pcs=Statystyka wg klientów?
 emisc_xffh=Nagłówek X-Forwarded-For?
 emisc_liq=Logować zapytania ICP?
@@ -370,6 +490,7 @@ emisc_std=Standardowe
 emisc_par=Dokładne
 emisc_fua=Fałszywy program użytkownika
 emisc_return=indeksu squida
+<<<<<<< HEAD
 emisc_hauhh=Akceleracja HTTP korzysta z&nbsp;nagłówka Host
 emisc_hah=Host akceleracji HTTP
 emisc_hap=Port akceleracji HTTP
@@ -379,6 +500,16 @@ eports_ecannot=Nie masz uprawnień do zmiany portów i&nbsp;sieci
 eports_header=Porty i sieć
 eports_pano=Opcje portów i&nbsp;sieci
 eports_paap=Adresy i&nbsp;porty proxy
+=======
+emisc_hauhh=Akceleracja HTTP korzysta z nagłówka Host
+emisc_hah=Host akceleracji HTTP
+emisc_hap=Port akceleracji HTTP
+emisc_hawp=Akceleracja HTTP i proxy
+eports_ecannot=Nie masz uprawnień do zmiany portów i sieci
+eports_header=Porty i sieć
+eports_pano=Opcje portów i sieci
+eports_paap=Adresy i porty proxy
+>>>>>>> upstream/master
 eports_p=Port
 eports_hia=Nazwa hosta/Adres IP
 eports_pp=Port proxy
@@ -392,7 +523,10 @@ eports_mg=Grupa multicastowa
 eports_trb=Bufor odbiorczy TCP
 eports_od=Domyślny OS
 eports_return=indeksu squida
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 eprogs_ecannot=Nie masz uprawnień do zmiany programów pomocniczych
 eprogs_header=Programy pomocnicze
 eprogs_chpo=Opcje programu obsługi cache
@@ -405,7 +539,11 @@ eprogs_sdp=Program DNS Squida
 eprogs_nodp=Liczba programów DNS
 eprogs_adtr=Dodawać domenę do zapytań
 eprogs_dsa=Adresy serwerów DNS
+<<<<<<< HEAD
 eprogs_fr=Z&nbsp;resolv.conf
+=======
+eprogs_fr=Z resolv.conf
+>>>>>>> upstream/master
 eprogs_ccp=Program opróżniający bufory cache
 eprogs_spp=Program ping Squida
 eprogs_crp=Wybrany program przekierowujący
@@ -413,7 +551,10 @@ eprogs_norp=Liczba programów przekierowujących
 eprogs_cap=Wybrany program autoryzujący
 eprogs_noap=Liczba programów autoryzujących
 eprogs_return=indeksu squida
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 euser_header=Utwórz użytkownika proxy
 euser_header1=Zmień użytkownika proxy
 euser_pud=Dane użytkownika proxy
@@ -421,7 +562,10 @@ euser_u=Nazwa użytkownika
 euser_p=Hasło
 euser_u1=Nie zmienione
 euser_return=listy użytkowników
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 ahttp_header=Utwórz ograniczenie proxy
 ahttp_header1=Zmień ograniczenie proxy
 ahttp_pr=Ograniczenie proxy
@@ -431,9 +575,13 @@ ahttp_d=Zabroń
 ahttp_ma=Dopasuj do ACL
 ahttp_dma=Nie dopasowuj do ACL
 ahttp_return=listy ACL
+<<<<<<< HEAD
 
 sahttp_ftspr=Nie udało się zachować ograniczenia proxy
 
+=======
+sahttp_ftspr=Nie udało się zachować ograniczenia proxy
+>>>>>>> upstream/master
 aicp_header=Utwórz ograniczenie ICP
 aicp_header1=Zmień ograniczenie ICP
 aicp_ir=Ograniczenie ICP
@@ -443,6 +591,7 @@ aicp_d=Zabroń
 aicp_ma=Dopasuj do ACL
 aicp_dma=Nie dopasowuj do ACL
 aicp_return=listy ACL
+<<<<<<< HEAD
 
 saicp_ftsir=Nie udało się zachować ograniczenia ICP
 
@@ -458,18 +607,37 @@ restart_ftrs=Nie udało się przekonfigurować Squida
 sadmin_ftsao=Nie udało się zachować opcji administracyjnych
 sadmin_header=Zmień właściciela
 sadmin_msg1=Zmieniłeś użytkownika lub grupę, z&nbsp;uprawnieniami której Squid działa. Aby zmiana odniosła skutek, muszą zostać zmienione prawa do logów oraz wykonany restart Squida.
+=======
+saicp_ftsir=Nie udało się zachować ograniczenia ICP
+icache_ecannot=Nie masz uprawnień do inicjalizacji buforów cache
+icache_ftic=Nie udało się zainicjalizować buforów cache
+icache_ymcautrsa=Musisz wybrać użytkownika, z uprawnieniami który Squid będzie działać
+icache_itscwtc=Inicjalizacja buforów cache Squida poleceniem <tt>$1</tt> ..
+icache_return=indeksu squida
+icache_title=Zanicjalizuj bufory cache
+restart_ftrs=Nie udało się przekonfigurować Squida
+sadmin_ftsao=Nie udało się zachować opcji administracyjnych
+sadmin_header=Zmień właściciela
+sadmin_msg1=Zmieniłeś użytkownika lub grupę, z uprawnieniami której Squid działa. Aby zmiana odniosła skutek, muszą zostać zmienione prawa do logów oraz wykonany restart Squida.
+>>>>>>> upstream/master
 sadmin_buttco=Zmień właściciela
 sadmin_return=indeksu squida
 sadmin_inavea='$1' nie jest poprawnym adresem e-mail
 sadmin_inavh='$1' nie jest poprawną nazwą hosta
 sadmin_inavap='$1' nie jest poprawnym okresem rozgłoszenia
 sadmin_inavp='$1' nie jest poprawnym portem
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 sauth_ftsao=Nie udało sie zachowac opcji autoryzacji
 sauth_iomuf=Niepoprawny lub brakujący plik użytkowników
 sauth_iomd=Niepoprawna lub brakująca domena
 sauth_msg1=Twoja wersja Squida została skompilowana bez obsługi autoryzacji proxy
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 scache_ftsco=Nie udało sie zachować opcji buforowania
 scache_emsg0=Musisz podać co najmniej jeden katalog buforów cache
 scache_emsg1=Katalog buforów '$1' nie istnieje
@@ -479,48 +647,72 @@ scache_emsg4='$1' nie jest poprawnym czasem buforowania DNS
 scache_emsg5='$1' nie jest poprawnym czasem przeterminowania
 scache_emsg6='$1' nie jest poprawnym czasem
 scache_emsg7='$1' nie jest poprawną liczbą katalogów
+<<<<<<< HEAD
 scache_emsg8=Liczba katalogów musi być >=&nbsp;1
+=======
+scache_emsg8=Liczba katalogów musi być >= 1
+>>>>>>> upstream/master
 scache_emsg9=Liczba katalogów musi być <= 256
 scache_emsg10='$1' nie jest poprawnym rozmiarem obiektu
 scache_emsg11='$1' nie jest poprawną liczbą obiektów
 scache_emsg12='$1' nie jest poprawnym rozmiarem katalogu
 scache_emsg13='$1' nie jest poprawnym hostem
 scache_emsg14='$1' nie jest poprawnym portem
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 schost_ftsc=Nie udało sie zachować proxy
 schost_emsg1='$1' nie jest poprawną nazwą hosta proxy
 schost_emsg2='$1' nie jest poprawnym portem proxy
 schost_emsg3='$1' nie jest poprawnym portem ICP
 schost_emsg4='$1' nie jest poprawnym czasem życia
 schost_emsg5='$1' nie jest poprawną wagą
+<<<<<<< HEAD
 
 sicp_ftsco=Nie udało sie zachować opcji buforów cache
 sicp_emsg1='$1' nie jest poprawnym czasem przeterminowania
 
+=======
+sicp_ftsco=Nie udało sie zachować opcji buforów cache
+sicp_emsg1='$1' nie jest poprawnym czasem przeterminowania
+>>>>>>> upstream/master
 slogs_ftslo=Nie udało sie zachować opcji logowania
 slogs_emsg1='$1' nie jest poprawną bezwzględną nazwą pliku
 slogs_emsg2='$1' nie jest poprawną nazwą pliku
 slogs_emsg3=Katalog '$1' nie istnieje
 slogs_emsg4='$1' nie jest poprawną maską sieci
 slogs_emsg5='$1' nie jest poprawną listą opcji śledzenia
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 smem_ftsmo=Nie udało sie zachować opcji pamięci
 smem_emsg1='$1' nie jest poprawnym rozmiarem buforów
 smem_emsg2='$1' nie jest poprawnym górnym progiem
 smem_emsg3='$1' nie jest poprawnym dolnym progiem
 smem_emsg4='$1' nie jest poprawnym rozmiarem obiektu
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 smisc_ftso=Nie udało sie zachować opcji
 smisc_emsg1='$1' nie jest poprawną liczbą rotacji
 smisc_emsg2='$1' nie jest poprawną domeną
 smisc_emsg3='$1' nie jest poprawnym proxy
 smisc_emsg4='$1' nie jest poprawną liczbą przeskoków
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 sport_ftspo=Nie udało sie zachować opcji portu
 sport_emsg1='$1' nie jest poprawnym numerem portu
 sport_emsg2='$1' nie jest poprawnym adresem
 sport_emsg3='$1' nie jest poprawnym rozmiarem buforu
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 sprog_ftshpo=Nie udało się zachować opcji programów pomocniczych
 sprog_emsg1=Brak opcji FTP
 sprog_emsg2='$1' nie jest poprawnym programem
@@ -530,23 +722,31 @@ sprog_emsg5='$1' nie jest poprawną liczbą programów
 sprog_emsg6='$1' nie jest poprawną liczbą kolumn
 sprog_emsg7=Nie podano serwerów DNS
 sprog_emsg8='$1' nie jest poprawnym adresem IP
+<<<<<<< HEAD
 
 suser_ftsu=Nie udało sie zachować użytkownika
 suser_emsg1=Niepoprawna lub brakująca nazwa użytkownika
 suser_etaken=Ta nazwa użytkownika już jest używana
 
+=======
+suser_ftsu=Nie udało sie zachować użytkownika
+suser_emsg1=Niepoprawna lub brakująca nazwa użytkownika
+suser_etaken=Ta nazwa użytkownika już jest używana
+>>>>>>> upstream/master
 start_ftsq=Nie udało się uruchomić Squida
 start_ecannot=Nie masz uprawnień do uruchamiania Squida
 stop_ftsq=Nie udało się zatrzymać Squida
 stop_ecannot=Nie masz uprawnień do zatrzymywania Squida
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 calamaris_ecannot=Nie masz prawa dostępu do analizy logów przez Calamarisa
 calamaris_title=Analizator logów Calamaris
 calamaris_last=Ogranieczenie analizy do ostatnich $1 linii logów ..
 calamaris_eprog=Nie znaleziono programu Calamaris $1. Być może nie został on zainstalowany lub Twoja <a href='$2'>konfiguracja modułu</a> jest nieprawidłowa.
 calamaris_elogs=Katalog logów $1 nie zawiera plików <tt>access.log</tt>. Być może nie uruchamiano jeszcze Squida lub Twoja <a href='$2'>konfiguracja modułu</a> jest nieprawidłowa.
 calamaris_gen=Raport wygenerowany $1
-
 lib_emsg1='$1' nie jest poprawnym adresem IP
 lib_seconds=sekund
 lib_minutes=minut
@@ -566,7 +766,11 @@ lib_aclca=Adres klienta
 lib_aclwsa=Adres serwera WWW
 lib_aclch=Nazwa hosta klienta
 lib_aclwsh=Nazwa hosta serwera WWW
+<<<<<<< HEAD
 lib_acldat=Data i&nbsp;czas
+=======
+lib_acldat=Data i czas
+>>>>>>> upstream/master
 lib_aclur=Wyrażenie regularne dla URL-a
 lib_aclupr=Wyrażenie regularne dla ścieżki URL-a
 lib_aclup=Port URL-a
@@ -590,8 +794,12 @@ lib_aclear=Wyr. regularne dla zewnętrznej autoryzacji
 lib_buttac=Zastosuj zmiany
 lib_buttss=Zatrzymaj Squida
 lib_buttss1=Uruchom Squida
+<<<<<<< HEAD
 
 log_ports=Zmieniono opcje portów i&nbsp sieci
+=======
+log_ports=Zmieniono opcje portów i  sieci
+>>>>>>> upstream/master
 log_icp=Zmieniono opcje innych proxy
 log_mem=Zmieniono opcje zużycia pamięci
 log_logs=Zmieniono opcje logowania
@@ -599,7 +807,11 @@ log_cache=Zmieniono pcje buforowania
 log_progs=Zmieniono opcje programów pomocniczych
 log_admin=Zmieniono opcje administracyjne
 log_misc=Zmieniono opcje różne
+<<<<<<< HEAD
 log_clear=Opróżniono i&nbsp;przebudowano bufory cache
+=======
+log_clear=Opróżniono i przebudowano bufory cache
+>>>>>>> upstream/master
 log_acl_create=Utworzono ACL $1
 log_acl_modify=Zmieniono ACL $1
 log_acl_delete=Usunięto ACL $1
@@ -629,6 +841,7 @@ log_never_create=Utworzono ACL-e niebezpośredniego pobierania
 log_never_modify=Zmieniono ACL-e niebezpośredniego pobierania
 log_never_delete=Usunięto ACL-e niebezpośredniego pobierania
 log_never_move=Przeniesiono ACL-e niebezpośredniego pobierania
+<<<<<<< HEAD
 
 acl_root=Katalog główny dla plików z&nbsp;ACL
 acl_sections=Dozwolone strony konfiguracji
@@ -638,6 +851,14 @@ always_create=Utwórz pobieranie bezpośrednie
 always_edit=Zmień pobieranie bezpośrednie
 always_header=Pobierać bezpośrednio dla zapytań pasujących do ACL
 
+=======
+acl_root=Katalog główny dla plików z ACL
+acl_sections=Dozwolone strony konfiguracji
+acl_start=Może uruchamiać i zatrzymywać Squida?
+always_create=Utwórz pobieranie bezpośrednie
+always_edit=Zmień pobieranie bezpośrednie
+always_header=Pobierać bezpośrednio dla zapytań pasujących do ACL
+>>>>>>> upstream/master
 never_create=Utwórz pobieranie niebezpośrednie
 never_edit=Zmień pobieranie niebezpośrednie
 never_header=Nigdy nie pobierać bezpośrednio dla zapytań pasujących do ACL

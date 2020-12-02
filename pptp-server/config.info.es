@@ -7,4 +7,3 @@ ppp_options=Fichero de opciones PPP por defecto,0
 pptp_ppp_options=Fichero de opciones PPP de PPTP,3,Defecto (/etc/ppp/options.pptp)
 start_cmd=Comando para iniciar el demonio PPTP,3,Ejecuta el programa
 stop_cmd=Comando para detener el demonio PPTP,3,Mata el programa
-

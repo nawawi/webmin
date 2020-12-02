@@ -2,7 +2,6 @@ index_title=Usuaris de Webmin
 index_user=Usuari
 index_modules=Mòduls
 index_create=Crea un nou usuari Webmin.
-index_rcreate=Crea un nou usuari de nivell de risc.
 index_convert=Converteix els Usuaris Unix a Usuaris Webmin
 index_cert=Demana un Certificat SSL
 index_twofactor=Autenticació de Dos Factors
@@ -27,7 +26,10 @@ index_delete=Suprimeix els Seleccionats
 index_joingroup=Afegeix al Grup:
 index_eulist=No s'han pogut llistar els usuaris: $1
 index_eglist=No s'han pogut llistar els grups: $1
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 edit_title=Edició d'Usuari Webmin
 edit_title2=Creació d'Usuari Webmin
 edit_readonly=Aquest usuari Webmin no s'hauria d'editar, per tal com es troba gestionat pel mòdul $1. <a href='$2'>Fes clic aquí</a> per ignorar aquest avís i editar l'usuari - però tingues en compte que els canvis manuals poden ser reescrits!
@@ -111,7 +113,6 @@ edit_proto_mysql=Base de dades MySQL
 edit_proto_postgresql=Base de dades PostgreSQL
 edit_proto_ldap=Servidor LDAP
 edit_proto_=Fitxers locals
-
 save_err=No s'ha pogut desar l'usuari
 save_ename='$1' no és un nom d'usuari vàlid
 save_enamewebmin=El nom d'usuari 'webmin' està reservat per a ús intern
@@ -128,8 +129,13 @@ save_ecolon=Les contrasenyes no poden contenir el caràcter :
 save_epass=La contrasenya no és vàlida: $1
 save_eself=La teva adreça IP actual ($1) quedaria denegada
 save_epam=L'autenticació PAM no està disponible, ja que el mòdul <tt>Authen::PAM</tt> de Perl no està instal·lat o no funciona adequadament.
+<<<<<<< HEAD
 save_egroup=No tens permís per assignar a aquest grup
 save_epam2=Pots utilitzar el mòdul Webmin de Mòduls per <a href='$1'>descarregar i instal·lar ara Authen::PAM</a>.
+=======
+save_epam2=Pots utilitzar el mòdul Webmin de Mòduls per <a href='$1'>descarregar i instal·lar ara Authen::PAM</a>.
+save_egroup=No tens permís per assignar a aquest grup
+>>>>>>> upstream/master
 save_enone=No has introduït cap adreça
 save_enet='$1' no és una adreça de xarxa vàlida
 save_emask='$1' no és una màscara de subxarxa vàlida
@@ -141,13 +147,19 @@ save_edays=No has seleccionat cap dia permès
 save_ehours=Hi falten les hores permeses o bé són invàlides
 save_ehours2=L'hora permesa inicial ha de ser anterior a la final
 save_etemp=L'opció de forçar el canvi de contrasenya a la pròxima entrada no es pot utilitzar si no actives la <a href='$1'>petició als usuaris de nova contrasenya</a>
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 delete_err=No s'ha pogut suprimir l'usuari
 delete_eself=No et pots esborrar a tu mateix
 delete_ecannot=No tens permís per suprimir usuaris
 delete_euser=No tens permís per suprimir aquest usuari
 delete_eanonuser=Aquest usuari s'està utilitzant per a l'accés del mòdul anònim
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 cert_title=Petició de Certificat
 cert_issue=Emissió de Certificat
 cert_header=Detalls del nou certificat
@@ -167,7 +179,10 @@ cert_ekey=No s'ha tramès la nova clau SSL al teu navegador - pot ser que no sup
 cert_eca=No s'ha pogut establir l'autoritat certificadora: $1
 cert_already=Atenció - ja estàs utilitzant el certificat $1.
 cert_etempdir=El fitxer de certificat és invàlid
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 acl_title=Control d'Accés al Mòdul
 acl_title2=Per a $1 de $2
 acl_title3=Per al grup $1 de $2
@@ -176,6 +191,7 @@ acl_config=Pot editar la configuració del mòdul
 acl_reset=Reinicia a Accés Total
 acl_rbac=Obtingues la configuració de control d'accés de RBAC
 acl_rbacyes=Sí (ignora la configuració de sota)
+<<<<<<< HEAD
 
 acl_uall=Tots els usuaris
 acl_uthis=Aquest usuari
@@ -184,6 +200,15 @@ acl_users=Usuaris que poden ser editats
 acl_mods=Pot concedir accés a
 acl_all=Tots els mòduls
 acl_gr=Membres de $1
+=======
+acl_uall=Tots els usuaris
+acl_uthis=Aquest usuari
+acl_usel=Usuaris seleccionats. ..
+acl_gr=Membres de $1
+acl_users=Usuaris que poden ser editats
+acl_mods=Pot concedir accés a
+acl_all=Tots els mòduls
+>>>>>>> upstream/master
 acl_own=Només els seus propis mòduls
 acl_sel=Mòduls seleccionats...
 acl_create=Pot crear usuaris nous
@@ -216,7 +241,6 @@ acl_switch=Pot canviar a altres usuaris
 acl_times=Pot canviar les hores d'entrada permeses
 acl_pass=Pot canviar les restriccions de contrasenyes
 acl_sql=Pot configurar la base de dades d'usuaris i grups
-
 log_modify=S'ha modificat l'usuari Webmin $1
 log_rename=S'ha renomenat l'usuari Webmin $1 a $2
 log_create=S'ha creat l'usuari Webmin $1
@@ -239,7 +263,10 @@ log_sync=S'ha canviat la sincronització d'usuari Unix
 log_sql=S'ha canviat la base de dades d'usuaris i grups
 log_twofactor=S'ha assignat l'usuari $1 amb el proveïdor de dos factors $2
 log_onefactor=S'ha desassignat l'usuari $1 de l'autenticació de dos factors
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 gedit_ecannot=No tens permís per editar grups
 gedit_title=Edició de Grups Webmin
 gedit_title2=Creació de Grup Webmin
@@ -249,7 +276,6 @@ gedit_modules=Mòduls dels membres
 gedit_members=Usuaris membres i grups
 gedit_desc=Descripció del grup
 gedit_egone=El grup seleccionat ja no existeix!
-
 gdelete_err=No s'ha pogut suprimir el grup
 gdelete_ecannot=No tens permís per suprimir grups
 gdelete_euser=No pots suprimir el teu propi grup
@@ -257,13 +283,15 @@ gdelete_esub=Els grups amb subgrups no es poden suprimir
 gdelete_title=Suprimeix el Grup
 gdelete_desc=Segur que vols suprimir el grup $1 el usuaris membres $2?
 gdelete_ok=Suprimeix el Grup
-
 gsave_err=No s'ha pogut desar el grup
 gsave_ename=Hi falta el nom del grup o no és vàlid
 gsave_enamewebmin=El nom de grup 'webmin' està reservat per a ús intern
 gsave_edup=El nom del grup ja està en ús
 gsave_edesc=Descripció invàlida - el caràcter : no està permès
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 convert_title=Conversió d'Usuaris
 convert_ecannot=No tens permís per convertir l'usuari Unix
 convert_nogroups=No hi ha cap grup Webmin definit. Cal crear almenys un grup per tal de definir els permisos dels usuaris convertits.
@@ -292,7 +320,10 @@ convert_user=Usuari Unix
 convert_action=Acció presa
 convert_done=S'han convertit $1 usuaris, se n'han trobat $2 d'invàlids, $3 ja existeixen, $4 s'han exclòs.
 convert_users=Usuaris a convertir
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 sync_title=Sincronització d'Usuari Unix
 sync_desc=Aquest formulari permet configurar la sincronització automàtica dels usuaris Unix creats a través de Webmin i els usuaris d'aquest mòdul.
 sync_nogroups=No hi ha cap grup Webmin definit al sistema. Hi ha d'haver almenys un grup creat per establir l'accés dels usuaris creats.
@@ -301,9 +332,14 @@ sync_create=Crea un usuari Webmin quan es creï un usuari Unix.
 sync_update=Quan s'actualitza un usuari Unix, actualitza l'usuari Webmin que hi coincideixi.
 sync_delete=Quan se suprimeixi un usuari Unix, suprimeix l'usuari Webmin que hi coincideixi.
 sync_group=Assigna nous usuaris al grup Webmin
+<<<<<<< HEAD
 sync_ecannot=No tens permís per configurar la sincronització.
 sync_unix=Estableix la contrasenya dels usuaris nous a l'autenticació Unix.
 
+=======
+sync_unix=Estableix la contrasenya dels usuaris nous a l'autenticació Unix.
+sync_ecannot=No tens permís per configurar la sincronització.
+>>>>>>> upstream/master
 unix_title=Autenticació d'Usuaris Unix
 unix_err=No s'ha pogut desar l'autenticació Unix
 unix_desc=Aquesta pàgina permet configurar Webmin per validar els intents de connexió contra la llista d'usuaris del sistema i PAM. Això pot ser útil si tens un gran nombre d'usuaris Unix als quals vols donar accés a Webmin.
@@ -336,7 +372,6 @@ unix_esudo=L'ordre $1 no està instal·lada
 unix_esudomod=El mòdul Perl $1 necessari per a l'autenticació <tt>sudo</tt> no està instal·lat
 unix_header=Paràmetres d'autenticació d'usuari Unix
 unix_utable=Usuaris Unix permesos
-
 sessions_title=Sessions d'Entrada Actuals
 sessions_id=ID de sessió
 sessions_user=Usuari Webmin
@@ -350,26 +385,36 @@ sessions_this=Aquesta entrada
 sessions_in=Connectat
 sessions_out=Desconnectat
 sessions_kill=Desconnecta...
-
 logins_title=Entrades recents a Webmin
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 hide_title=Amaga els Mòduls No Utilitzats
 hide_desc=Els mòduls següents es trauran de la llista d'accés de mòduls de $1, ja que els seus corresponents servidors no estan instal·lats al sistema...
 hide_ok=Amaga els Mòduls Ara
 hide_none=No hi ha res per amagar - $1 no té accés a cap mòdul el servidor del qual no estigui instal·lat al sistema.
 hide_desc2=Tingues en compte que aquests mòduls no reapareixeran automàticament si s'instal·len els servidors corresponents. Hauràs de concedir l'accés manualment utilitzant aquest mòdul.
 hide_clone=(Clona $1)
+<<<<<<< HEAD
 
 switch_euser=No tens permís per canviar a aquest usuari
 switch_eold=No s'ha trobat la sessió existent!
 
+=======
+switch_euser=No tens permís per canviar a aquest usuari
+switch_eold=No s'ha trobat la sessió existent!
+>>>>>>> upstream/master
 rbac_title=Configuració de RBAC
 rbac_desc=La integració de Webmin amb RBAC proporciona una forma de determinar els permisos d'ACL i mòduls d'usuari des d'una base de dades RBAC (Role Based Access Control), en lloc d'utilitzar els fitxers propis de configuració de Webmin. Un cop s'ha activat el suport RBAC, tot usuari per al qual s'hagi seleccionat l'opció <b>RBAC controla totes les ACLs i mòduls</b> tindrà les seves capacitats determinades per RBAC en lloc de la configuració de control d'accés de Webmin.
 rbac_esolaris=De moment, RBAC només està suportat per Solaris, així que no es pot utilitzar en aquest sistema $1.
 rbac_eperl=El mòdul Perl $1 necessari per a la integració amb RBAC no està instal·lat. Fes clic <a href='$2'>aquí</a> per instal·lar-lo ara.
 rbac_ecpan=No tens accés a la pàgina de Mòduls Perl de Webmin per tal d'instal·lar el mòdul $1 necessari per a la integració amb RBAC.
 rbac_ok=La integració amb RBAC està disponible en aquest sistema, i es pot activar en base a cada usuari a la pàgina d'Edició d'Usuaris Webmin.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 udeletes_err=No s'han pogut suprimir els usuaris
 udeletes_jerr=No s'han pogut afegir els usuaris al grup
 udeletes_enone=No n'has seleccionat cap
@@ -378,13 +423,15 @@ udeletes_rusure=Segur que vols suprimir els $1 usuaris seleccionats? Es perdran 
 udeletes_users=Usuaris seleccionats: $1
 udeletes_ok=Suprimeix els Usuaris
 udeletes_ereadonly=Un dels usuaris seleccionats està marcat com a no editable
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 gdeletes_err=No s'han pogut suprimir els grups
 gdeletes_title=Supressió de Grups
 gdeletes_rusure=Segur que vols suprimir els $1 grups seleccionats i els $2 usuaris que contenen? Es perdran totes les seves configuracions de control d'accés i tots els detalls dels usuaris.
 gdeletes_users=Grups seleccionats: $1
 gdeletes_ok=Suprimeix els Grups
-
 pass_title=Restriccions de Contrasenyes
 pass_ecannot=No tens permís per editar les restriccions de contrasenyes
 pass_header=Opcions de reforç de contrasenyes de Webmin
@@ -407,7 +454,10 @@ pass_eminsize=Hi falta la llargada mínima de la contrasenya o bé és invàlida
 pass_emaxdays=Hi falta el nombre de dies abans del canvi de contrasenya o bé és invàlid
 pass_elockdays=Hi falta el nombre de dies abans del bloqueig de compte o bé és invàlid
 pass_eoldblock=Hi falta el nombre de contrasenyes antigues a rebutjar o bé és invàlid
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 cpass_minsize=Ha de tenir almenys $1 lletres de llarg
 cpass_notre=Coincideix amb un patró rebutjat
 cpass_re=No coincideix amb el patró demanat
@@ -415,7 +465,6 @@ cpass_name=Conté el nom d'usuari
 cpass_dict=És una paraula de diccionari
 cpass_spellcmd=No es troben instal·lades ni l'ordre $1 ni la $2 que calen per comprovar paraules de diccionari
 cpass_old=Les contrasenyes antigues no es poden reutilitzar
-
 sql_title=Base de Dades d'Usuaris i Grups
 sql_ecannot=No tens permís per configurar la base de dades d'usuaris i grups
 sql_header=Opcions de tipus de base de dades d'usuaris i grups
@@ -458,25 +507,37 @@ sql_dnerr=Els paràmetres de la base de dades d'usuaris i grups són vàlids, pe
 sql_dnerr2=Fes clic al botó <b>Crea el DN</b> de sota per fer que es creï automàticament, o bé afegeix-lo manualment al servidor LDAP.
 sql_makedn=Crea el DN
 sql_schema=Descarrega l'Esquema LDAP
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 make_title=Creació de les Taules d'Usuaris i Grups
 make_err=No s'han pogut crear les taules d'usuaris i grups
 make_exec=S'està executant el SQL $1...
 make_failed=...la creació ha fallat: $1
 make_done=.. .fet
 make_still=S'han trobat alguns problemes, tot i haver-se creat les taules: $1
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 makedn_title=Creació del DN LDAP
 makedn_eoc=No s'ha trobat cap classe d'objecte estructural!
 makedn_exec=S'està creant el DN pare $1...
 makedn_failed=...la creació ha fallat: $1
 makedn_done=...fet
 makedn_still=S'han trobat alguns problemes, tot i que s'ha creat el DN: $1
+<<<<<<< HEAD
 
 schema_title=Descàrrega de l'Esquema LDAP
 schema_desc=Abans que Webmin pugui utilitzar un servidor LDAP per a emmagatzemar usuaris i grups, cal configurar-lo per a utilitzar l'esquema de sota. Habitualment, això es pot fer desant la definició de l'esquema a <tt>/etc/ldap/schema</tt> o <tt>/etc/openldap/schema</tt> com a <tt>webmin.schema</tt>, i configurant llavors el servidor per a utilitzar aquest fitxer d'esquema.
 schema_download=Descarrega el fitxer d'esquema: <a href=$1>$1</a>
 
+=======
+schema_title=Descàrrega de l'Esquema LDAP
+schema_desc=Abans que Webmin pugui utilitzar un servidor LDAP per a emmagatzemar usuaris i grups, cal configurar-lo per a utilitzar l'esquema de sota. Habitualment, això es pot fer desant la definició de l'esquema a <tt>/etc/ldap/schema</tt> o <tt>/etc/openldap/schema</tt> com a <tt>webmin.schema</tt>, i configurant llavors el servidor per a utilitzar aquest fitxer d'esquema.
+schema_download=Descarrega el fitxer d'esquema: <a href=$1>$1</a>
+>>>>>>> upstream/master
 twofactor_err=La configuració de l'autenticació de dos factors ha fallat
 twofactor_euser=No s'ha trobat el teu usuari Webmin!
 twofactor_title=Autenticació de Dos Factors
@@ -492,5 +553,8 @@ twofactor_failed=...l'assignació ha fallat: $1
 twofactor_done=...completa. El teu ID amb aquest proveïdor és <tt>$1</tt>.
 twofactor_setup=L'autenticació de dos factors encara no s'ha activat al sistema, però es pot activar utilitzant el mòdul de <a href='$1'>Configuració de Webmin</a>.
 twofactor_ebutton=No has fet clic a cap botó!
+<<<<<<< HEAD
 
 __norefs=1
+=======
+>>>>>>> upstream/master

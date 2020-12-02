@@ -1,13 +1,23 @@
+<<<<<<< HEAD
 sendmail_cf=Pełna ścieżka do sendmail.cf,8
 sendmail_pid=Pełna ścieżka do pliku z PID sendmaila,8
 sendmail_command=Polecenie uruchamiające sendmaila jako server,0
 sendmail_stop_command=Polecenie zatrzymujące sendmaila,3,Zabij proces
+=======
+>>>>>>> upstream/master
 mailq_refresh=Przed odświeżeniem kolejki czekaj sekund,3,Nie odświeżaj
 perpage=Liczba wiadomości na stronie,0
 wrap_width=Łam linie wiadomości w kolumnie,0
 sort_mode=Wyświetlaj tabele wg,1,0-Porządku w zbiorze,1-Nazwy
 send_mode=Wysyłaj pocztę łącząc się z,3,Programem sendmail
+<<<<<<< HEAD
 order_mail=Czytając pocztę zacznij od,1,0-Najnowszej,1-Najstarszej
+=======
+sendmail_cf=Pełna ścieżka do sendmail.cf,8
+sendmail_pid=Pełna ścieżka do pliku z PID sendmaila,8
+sendmail_command=Polecenie uruchamiające sendmaila jako server,0
+sendmail_stop_command=Polecenie zatrzymujące sendmaila,3,Zabij proces
+>>>>>>> upstream/master
 makemap_path=Polecenie <tt>makemap</tt>,0
 sendmail_path=Polecenie <tt>sendmail</tt>,0
 alias_file=Pełna ścieżka do pliku aliasów sendmaila,3,Automatycznie
@@ -18,6 +28,9 @@ access_file=Plik źródłowy bazy danych <tt>access</tt>,3,Ten sam co DBM
 domains_file=Plik źródłowy bazy danych <tt>domains</tt>,3,Ten sam co DBM
 mail_dir=Skrzynki pocztowe użytkowników,3
 smrsh_dir=Katalog SMRSH,3,Brak
+<<<<<<< HEAD
 wrap_mode=Tryb zawijania w&nbsp;polach tekstowym poczty,1,-Domyślne,wrap=on-Włączone,wrap=off-Wyłączone,wrap=auto-Automatycznie 
 track_read=Śledzenie przeczytanych/nieprzeczytanych wiadomości,1,1-Tak,0-Nie
 show_to=Pokazywać adresy To: w&nbsp;skrzynkach pocztowych?,1,1-Tak,0-Nie
+=======
+>>>>>>> upstream/master

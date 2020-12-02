@@ -7,8 +7,11 @@ before_cmd=Príkaz&#44; ktorý sa má spustiť pred zmenou pravidiel,3,Žiadny
 after_cmd=Príkaz&#44; ktorý sa má spustiť po zmene pravidiel,3,Žiadny
 before_apply_cmd=Príkaz&#44; ktorý sa má spustiť pred aplikovaním konfigurácie,3,Žiadny
 after_apply_cmd=Príkaz&#44; ktorý sa má spustiť po zmene konfigurácie,3,Žiadny
+<<<<<<< HEAD
 line1=Konfigurácia systému,11
 direct=Meniť pravidlá firewallu priamo&#44; namiesto ukladania do súboru?,1,1-Áno,0-Nie
+=======
+>>>>>>> upstream/master
 save_file=File to save/edit <tt>IPv4</tt> rules,3,Use operating system or Webmin default
+direct=Meniť pravidlá firewallu priamo&#44; namiesto ukladania do súboru?,1,1-Áno,0-Nie
 save_file6=File to save/edit <tt>IPv6</tt> rules,3,Use operating system or Webmin default
-

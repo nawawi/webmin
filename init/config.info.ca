@@ -26,4 +26,3 @@ startup_dirs=Directoris StartupItems Darwin,0
 darwin_setup=Directoris StartupItems Personalitzats,0
 hostconfig=Fitxer de configuració de host Darwin,0
 plist=Nom de plist d'un directori StartupItems,0
-

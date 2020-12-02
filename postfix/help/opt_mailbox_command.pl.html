@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 <header>Program zewnêtrzny u¿ywany zamiast dorêczania do skrzynki pocztowej</header>
+=======
+<header>Program zewnętrzny używany zamiast doręczania do skrzynki pocztowej</header>
+>>>>>>> upstream/master
 
 <center><tt>mailbox_command</tt></center>
 <hr>
 
+<<<<<<< HEAD
 Ten parametr okre¶la fakultatywne zewnêtrzne polecenie wykorzystywane
 zamiast dorêczania do skrzynki pocztowej. Polecenie bêdzie uruchamiane
 z&nbsp;prawami odbiorcy i&nbsp;z&nbsp;prawid³owymi ustawieniami
@@ -28,6 +33,33 @@ SYSTEMIE, MUSISZ USTAWIÆ ALIAS PRZEKIEROWUJ¡CY POCZTÊ DO ROOT-A DO ZWYK£EGO
 U¯YTKOWNIKA. <p>
 
 Przyk³ady:
+=======
+Ten parametr określa fakultatywne zewnętrzne polecenie wykorzystywane
+zamiast doręczania do skrzynki pocztowej. Polecenie będzie uruchamiane
+z&nbsp;prawami odbiorcy i&nbsp;z&nbsp;prawidłowymi ustawieniami
+<tt>HOME</tt>, <tt>SHELL</tt> i&nbsp;<tt>LOGNAME</tt> w&nbsp;środowisku.
+Wyjątek: doręczanie dla <tt>root</tt>-a odbywa się jako
+<tt>$default_user</tt>. <p>
+
+Inne interesujące zmienne środowiska: <tt>USER</tt> (nazwa użytkownika
+będącego odbiorcą), <tt>EXTENSION</tt> (rozszerzenie adresu),
+<tt>DOMAIN</tt> (domenowa część adresu), i&nbsp;<tt>LOCAL</tt> (lokalna
+część adresu). <p>
+
+W&nbsp;odróżnieniu od innych parametrów konfiguracyjnych Postfiksa, ta opcja
+nie jest poddana podstawianiu parametrów. Ma to na celu ułatwienie podawania
+składni powłoki (patrz poniższy przykład). <p>
+
+Unikaj metaznaków powłoki, gdyż zmuszą one Postfiksa do uruchomienia
+kosztownego procesu powłoki. Sam <tt>procmail</tt> jest dostatecznie
+kosztowny. <p>
+
+JEŚLI KORZYSTASZ Z&nbsp;TEJ OPCJI DLA DORĘCZANIA POCZTY W&nbsp;CAŁYM
+SYSTEMIE, MUSISZ USTAWIĆ ALIAS PRZEKIEROWUJĄCY POCZTĘ DO ROOT-A DO ZWYKŁEGO
+UŻYTKOWNIKA. <p>
+
+Przykłady:
+>>>>>>> upstream/master
 <ul>
 <li><tt>/gdzies/tam/procmail</tt> 
 <li><tt>/gdzies/tam/procmail -a "$EXTENSION"</tt>

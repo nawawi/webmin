@@ -7,6 +7,7 @@ left_search_usermin=Procurar no Usermin:
 left_search=Procurar:
 left_logs=Ver Registros do Módulos
 left_others=Outros
+<<<<<<< HEAD
 right_header0=Informações do Sistema
 right_host=Nome de host do sistema
 right_os=Sistema operacional
@@ -32,3 +33,5 @@ right_uphours=$1 horas, $2 minutos
 right_upmins=$1 minutos
 right_kernel=Kernel e CPU
 right_kernelon=$1 $2 em $3
+=======
+>>>>>>> upstream/master

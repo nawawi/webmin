@@ -44,7 +44,10 @@ white_tabham=Adreces permeses
 white_tabspam=Adreces denegades
 white_tabsome=Adreces de destinació
 white_tabimport=Importa adreces
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 score_title=Classificació de Spam
 score_desc=SpamAssassin assigna una puntuació a cada missatge basant-se en el seu contingut i les seves capçaleres. Les opcions d'aquesta pàgina determinen la puntuació per sobre de la qual un missatge es considera spam, i alguns dels mètodes mitjançant els quals es calcula aquesta puntuació.
 score_header=Opcions de classificació de missatges spam
@@ -78,7 +81,10 @@ score_emxdelay=Hi falten els segons d'espera entre comprovacions MX o bé són i
 score_etimeout=Hi falten els segons d'espera entre consultes RBL o bé són invàlids
 score_ereceived=Hi falten les capçaleres Received: a comprovar amb RBL o bé són invàlides
 score_bayes=Utilitza el classificador d'aprenentatge Bayesià
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 report_title=Modificació de Missatges
 report_desc=Les opcions d'aquesta pàgina controlen les modificacions que SpamAssassin fa a les capçaleres i el cos de tots els missatges que analitza, les modificacions que fa en aquells classificats com a spam.
 report_header=Opcions de modificació dels missatges analitzats i els missatges spam
@@ -111,7 +117,10 @@ report_addspam=Spam
 report_addham=Ham
 report_addall=Tot
 report_eaddheader=La capçalera addicional $1 per afegir és invàlida
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 user_title=Opcions Miscel·lànies d'Usuari
 user_desc=Les opcions d'aquesta pàgina estan majoritàriament relacionades amb els camins i els valors que SpamAssassin utilitza per a paquets externs d'identificació de spam Razor, DCC i Pyzor. També podeu dir a SpamAssassin si podrà dur a terme consultes DNS o no.
 user_header=Opcions miscel·lànies a nivell d'usuari
@@ -134,7 +143,10 @@ user_err=No s'han pogut desar les opcions d'usuari
 user_etimeout='$1' no és un temps límit vàlid
 user_epath='$1' no és un camí de programa client vàlid
 user_emax='$1' no és una suma de control vàlida
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 header_title=Comprovacions de Capçalera i Cos
 header_desc=Aquesta pàgina permet definir tests addicionals que SpamAssassin aplicarà al correu, basant-se en capçaleres de missatges, contingut del cos, URLs trobats dins del cos o combinacions d'altres tests. El nom assignat a cada test és cosa teva, però normalment és alguna cosa com CONTE_BAH. La puntuació que SpamAssassin afegeix als missatges que coincideixen amb un test es pot establir introduint els noms dels teus propis tests a les taules del peu de la pàgina.
 header_switch=Canvia a mode simple...
@@ -168,7 +180,10 @@ header_eeval='$1' no és una funció d'avaluació vàlida
 header_eheader='$1' no és una capçalera de correu vàlida
 header_eregexp='$1' no és una expressió regular vàlida (s'ha d'escriure com /expressió/)
 header_emeta=Hi falta l'expressió de test al test '$1'
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 priv_title=Opcions Miscel·lànies Privilegiades
 priv_desc=Aquestes opcions només es poden establir globalment, més que no pas en fitxers de configuració d'usuaris individuals. Controlen els camins a diversos fitxers de configuració i registre.
 priv_header=Valors miscel·lanis a nivell privilegiat
@@ -188,10 +203,15 @@ priv_eargs='$1' no és una llista vàlida d'arguments
 priv_emscore='$1' no és una puntuació màxima de frase vàlida
 priv_ephrase='$1' no és una frase de spam de dues paraules vàlida
 priv_escore=Hi falta la puntuació de la frase spam '$1' o bé no és vàlida
+<<<<<<< HEAD
 
 usually=Normalment $1
 ecannot=No tens permís per utilitzar aquesta pàgina
 
+=======
+usually=Normalment $1
+ecannot=No tens permís per utilitzar aquesta pàgina
+>>>>>>> upstream/master
 setup_title=Configuració de Procmail Per A SpamAssassin
 setup_desc_webmin=Aquest formulari es pot utilitzar per configurar Procmail a $1 de manera que executi SpamAssassin sobre tots els missatges de correu rebuts pel sistema. No obstant, això només tindrà efecte si el servidor de correu està configurat per utilitzar Procmail per al lliurament local, o per a usuaris tals que els fitxers <tt>.forward</tt> estiguin configurats per executar Procmail.
 setup_desc_usermin=Aquest formulari es pot utilitzar per configurar Procmail a $1 de manera que executi SpamAssassin sobre tots els missatges de correu enviats al teu compte. No obstant, això només tindrà efecte si el servidor de correu està configurat per utilitzar Procmail per al lliurament local, o si els teus fitxers <tt>.forward</tt> estan configurats per passar tot el correu a Procmail.
@@ -209,13 +229,19 @@ setup_drop1=Destinatari usuari Unix
 setup_drop0=Usuari <tt>root</tt>
 setup_ok=Configura Procmail per a SpamAssassin
 setup_email=Reenvia a l'adreça de correu
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 setup_err=No s'ha pogut configurar SpamAssassin
 setup_efile=Hi falta el fitxer en format mbox o bé és invàlid
 setup_emaildir=Hi falta el directori de correu Qmail o bé és invàlid
 setup_emhdir=Hi falta el directori de correu MH o bé és invàlid
 setup_eemail=Hi falta l'adreça de correu o bé és invàlida
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 log_white=S'han modificat les adreces permeses i denegades
 log_score=S'ha modificat la classificació del spam
 log_report=S'ha modificat la modificació del missatge
@@ -226,14 +252,20 @@ log_setup=S'ha configurat Procmail per a SpamAssassin
 log_procmail=S'ha canviat la configuració de Procmail
 log_import=S'han importat $1 adreces permeses
 log_manual=Fitxer de configuració editat manualment
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 import_title=Importació d'Adreces
 import_err=No s'han pogut importar les adreces
 import_efile=No hi ha cap fitxer a importar a la selecció
 import_enone=No s'ha trobat cap adreça de correu al fitxer
 import_ok1=S'han trobat $2 adreces de correu al fitxer, de les quals $1 eren noves i s'han afegit a la llista d'adreces permeses.
 import_ok2=S'han trobat $1 adreces de correu al fitxer, però ja eren totes a la llista d'adreces permeses.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 mail_title=Correu Spam
 mail_desc=Aquesta pàgina llista els missatges que s'han classificat com a spam i estan esperant alguna acció. Els missatges que s'han identificat incorrectament es poden desplaçar a la teva carpeta d'entrada,mentre que aquells que són realment spam es poden suprimir.
 mail_level=Puntuació
@@ -251,13 +283,18 @@ mail_will=Refresc automàtic en $1 minuts
 mail_wills=Refresc automàtic en $1 segons
 mail_delall=Suprimeix Tot el Spam
 mail_search3=Busca la puntuació anterior:
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 process_eclean=S'ha produït un error en eliminar les capçaleres SpamAssassin d'aquest correu
 process_ereport=No s'ha pogut informar SpamAssassin d'aquest correu: $1
-
 apply_err=No s'han pogut aplicar els canvis
 apply_none=No s'ha trobat cap procés dimoni SpamAssassin!
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 acl_avail=Icones a disposició de l'usuari
 acl_file=Fitxer de configuració de SpamAssassin a editar
 acl_filedef=Fitxer de configuració global
@@ -265,10 +302,15 @@ acl_awl=Usuaris amb permís per editar la llista blanca automàtica
 acl_awl0=Tots els usuaris
 acl_awl1=Només els usuaris llistats $1
 acl_awl2=Només els membres dels grups $1
+<<<<<<< HEAD
 
 search_escore=Hi falta la puntuació de spam o bé és invàlida
 search_results5=$1 missatges de correu amb puntuació de spam igual o superior a $2...
 
+=======
+search_escore=Hi falta la puntuació de spam o bé és invàlida
+search_results5=$1 missatges de correu amb puntuació de spam igual o superior a $2...
+>>>>>>> upstream/master
 razor_title=Configura el Detector de Spam Razor
 razor_desc=El Razor de Vipul és un sistema col·laboratiu de detecció i informació de spam que pot millorar la classificació del spam enviat a la teva adreça. No obstant, abans de poder-lo utilitzar t'has de registrar amb un compte de Razor, utilitzant el formulari de sota.
 razor_user=Usuari Razor
@@ -283,7 +325,6 @@ razor_epass=Hi falta la contrasenya
 razor_doing=S'està intentant registrar i configurar Razor...
 razor_done=...fet.
 razor_failed=...ha fallat! Mira el missatge d'error de sobre per saber-ne el motiu.
-
 amavisd_title=Lliurament de Spam Amavisd
 amavisd_desc=Pots fer servir el formulari per canviar la configuració d'Amavisd que determina què passa quan els missatges es classifiquen com a spam.
 amavis_ok=Canvia el Lliurament d'Amavisd
@@ -321,11 +362,13 @@ amavis_quarantine_today=Correus Spam en Quarantena avui (24h)
 amavis_quarantine_week=Correus Spam en Quarantena aquesta setmana (7 dies)
 amavis_quarantine_month=Correus Spam en Quarantena aquest mes (30 dies)
 amavis_quarantine_total=Nombre total de correus Spam en Quarantena
-
 procmail_title=Lliurament de Spam Procmail
 procmail_ok=Canvia el Lliurament Procmail
 procmail_desc=El formulari es pot utilitzar per canviar la configuració de Procmail que determina què passa als missatges classificats com a spam.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 simple_title=Comprovacions de Capçalera i Cos
 simple_desc=Aquesta pàgina permet definir tests addicionals que SpamAssassin aplicarà al correu, basant-se en les capçaleres dels missatges, el contingut del cos, els URLs trobats al cos. El nom assignat a cada test és cosa teva, però normalment és una cosa com ara CONTE_FOO.
 simple_switch=Canvia a mode avançat...
@@ -336,10 +379,12 @@ simple_regexp=Coincideix amb l'expressió
 simple_score=Puntuació a aplicar
 simple_describe=Descripció
 simple_err=No s'han pogut desar els tests de missatges
-
 before_ecmd=L'ordre d'abans de desar ha fallat: $1
 after_ecmd=L'ordre de després de desar ha fallat: $1
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 connect_emysql=No s'ha pogut carregar el controlador $1 de la base de dades
 connect_elogin=No s'ha pogut entrar a la base de dades $1: $2.
 connect_equery=La base de dades $1 no conté la taula de preferències $2
@@ -347,11 +392,13 @@ connect_eldapmod=El mòdul Perl $1 necessari per comunicar-se amb LDAP no està 
 connect_eldap=No s'ha pogut connectar amb el servidor LDAP $1 al port $2
 connect_eldaplogin=No s'ha pogut entrar al servidor LDAP com a $2: $3
 connect_ebase=El DN base LDAP $1 no és vàlid: $2
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 eldap=L'operació LDAP ha fallat: $1
 esql=El SQL ha fallat: $1
 ldap_euser=No s'ha pogut trobar l'objecte d'usuari LDAP per a $1
-
 db_title=Bases de dades SQL i LDAP
 db_header=Opcions de configuració de la base de dades d'emmagatzematge
 db_dsn=Emmagatzema les configuracions d'usuari
@@ -387,7 +434,10 @@ db_eldapport=Hi falta el número de port del servidor LDAP o bé és invàlid
 db_eldapdn=Hi falta el DN base o bé és invàlid - no es permeten espais
 db_eldapattr=Hi falta l'atribut de SpamAssassin o bé és invàlid
 db_eldapuid=Hi falta l'atribut d'usuaris o bé és invàlid
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 awl_title=Gestiona les Llistes Blanques Automàtiques
 awl_search=Busca a les llistes blanques:
 awl_ok=Busca
@@ -413,7 +463,10 @@ awl_deleteone=Neteja la Llista Blanca Automàtica
 awl_deleteonedesc=Elimina totes les entrades de la llista blanca automàtica de l'usuari $1.
 awl_deleteall=Neteja Totes les Llistes Blanques Automàtiques
 awl_deletealldesc=Elimina totes les entrades de totes les llistes blanques automàtiques de tots els usuaris del sistema.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 dawl_err=No s'ha pogut suprimir de la llista blanca automàtica
 dawl_eopen=No s'ha pogut obrir la llista blanca
 dawl_enone=No has seleccionat cap adreça per suprimir
@@ -421,11 +474,17 @@ dawl_ecannot=No tens permès de gestionar la llista blanca automàtica d'aquest 
 dawl_doing=S'estan suprimint les llistes blanques automàtiques de tots els usuaris...
 dawl_done=...s'han suprimit $2 entrades de $1 usuaris.
 dawl_title=Suprimeix Totes les Llistes Blanques Automàtiques
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 manual_title=Edició de Fitxers de Configuració
 manual_file=Edita el fitxer de configuració:
 manual_ok=Bé
 manual_efile=Fitxer de configuració invàlid!
 manual_err=No s'ha pogut desar el fitxer de configuració
+<<<<<<< HEAD
 
 __norefs=1
+=======
+>>>>>>> upstream/master

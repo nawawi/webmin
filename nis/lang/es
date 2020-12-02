@@ -1,7 +1,10 @@
 index_title=Cliente y Servidor NIS
 index_return=menú NIS
 index_enis=Tu máquina no parece tener instalado el soporte NIS de cliente o servidor.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 client_title=Cliente NIS
 client_header=Configuración de cliente NIS
 client_domain=Dominio NIS
@@ -16,6 +19,7 @@ client_edomain=Nombre de dominio falta o es inválido
 client_eserver='$1' no es un nombre válido de servidor
 client_eypwhich=no pude cambiar a dominio NIS
 client_ehosts='$1' no está en el archivo de máquinas
+<<<<<<< HEAD
 
 switch_title=Servicios de Cliente
 switch_service=Servicio
@@ -24,17 +28,21 @@ switch_err=No pude salvar servicios de cliente
 switch_eorder=Falta clasificación para $1
 
 order_=&nbsp;
+=======
+switch_title=Servicios de Cliente
+switch_service=Servicio
+order_= 
+>>>>>>> upstream/master
 order_nisplus=NIS+
 order_nis=NIS
 order_dns=DNS
 order_files=Archivos
 order_db=Archivos DB
-order_compat=NIS &amp; Archivos
+order_compat=NIS & Archivos
 order_hesiod=Hesiod
 order_ldap=LDAP
 order_user=Impresoras de usuarios
 order_xfn=XFN
-
 server_title=Servidor NIS
 server_header=Opciones de servidor NIS
 server_boot=¿Activo servidor NIS?
@@ -66,9 +74,13 @@ server_already=Servidor NIS ya activado
 server_ebootdom=Este servidor NIS no puede ser activado a menos que se ponga un dominio.
 server_solaris=Nota - en Solaris los dominios NIS de cliente y servidor son siempre los mismos y el servidor no puede operar a menos que se ponga un dominio.
 server_edir=Directorio de archivos fuentes inválido
+<<<<<<< HEAD
 server_epwddir=Directorio de archivos fuentes de claves de acceso inválido
 server_enis=Tu máquina no parece tener instalado soporte de servidor NIS.
 
+=======
+server_enis=Tu máquina no parece tener instalado soporte de servidor NIS.
+>>>>>>> upstream/master
 tables_title=Tablas NIS
 tables_switch=Editar tabla NIS:
 tables_header=tabla de NIS $1 desde $2
@@ -85,7 +97,10 @@ tables_search=Buscar
 tables_nomatch=No hay registros que coincidan con tu búsqueda
 tables_build=Reconstruir tablas NIS
 tables_buildmsg=Haz click en este botón para reconstruir la base de datos NIS desde los datos de tabla. Si has realizado algún cambio, necesitarás hacer esto para que estén disponibles para los clientes NIS.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 desc_aliases=Aliases de Sendmail
 desc_mail=Aliases de Sendmail
 desc_hosts=Direcciones de máquina
@@ -96,6 +111,7 @@ desc_amd.home=Directorio inicial de Automounter
 desc_amd.master=Mapas de Automounter
 desc_auto_home=Directorio inicial de Automounter
 desc_auto_master=Mapas de Automounter
+desc_auto_local=Valor local de Automounter
 desc_automount=Mapas de Automounter
 desc_netgroup=Grupos de Red
 desc_netgrp=Grupos de Red
@@ -117,8 +133,11 @@ desc_printers=Impresoras
 desc_ipnodes=Nodos IP
 desc_timezone=Zonas Horarias
 desc_locale=Locales
+<<<<<<< HEAD
 desc_auto_local=Valor local de Automounter
 
+=======
+>>>>>>> upstream/master
 hosts_title=Dirección de Máquina
 hosts_ip=Direcciones IP
 hosts_name=Nombre de máquina
@@ -127,7 +146,6 @@ hosts_err=No pude salvar máquina
 hosts_eip=Dirección IP falta o es inválida
 hosts_ename=Nombre de máquina falta o es inválido
 hosts_aliases=Aliases
-
 group_name=Nombre de grupo
 group_gid=ID de grupo
 group_members=Miembros de grupo
@@ -138,7 +156,6 @@ group_none=No es necesaria clave de acceso
 group_encrypted=Clave de acceso pre-encriptada
 group_clear=Clave de acceso normal
 group_err=No pude salvar grupo
-
 passwd_name=Nombre de usuario
 passwd_uid=ID de Usuario
 passwd_real=Nombre real
@@ -176,7 +193,10 @@ passwd_emax=Máximo número de días inválido
 passwd_emin=Mínimo número de días inválido
 passwd_einactive=Número de días inactivos inválido
 passwd_eexpiry=Fecha de expiración inválida
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 services_name=Nombre de servicio
 services_proto=Protocolo
 services_port=Puerto
@@ -185,7 +205,10 @@ services_header=Opciones de servicio de red Inetd
 services_err=No pude salvar servicio
 services_ename=Nombre de servicio falta o es inválido
 services_eport=Puerto falta o es inválido
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 protocols_name=Nombre de protocolo
 protocols_number=Número
 protocols_aliases=Aliases
@@ -194,7 +217,10 @@ protocols_header=Opciones de protocolo de red
 protocols_err=No pude salvar protocolo
 protocols_ename=Nombre falta o es inválido
 protocols_enumber=Número falta o es inválido
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 netgroup_name=Nombre de grupo de red
 netgroup_members=Miembros
 netgroup_title=Grupo de Red
@@ -209,7 +235,10 @@ netgroup_ename=Nombre de grupo de red falta o es inválido
 netgroup_ehost=Máquina en fila $1 falta o es inválida
 netgroup_euser=Usuario en fila $1 falta o es inválido
 netgroup_edom=Dominio NIS en fila $1 falta o es inválido
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 ethers_mac=Dirección Ethernet
 ethers_ip=Dirección IP
 ethers_title=Dirección Ethernet
@@ -217,7 +246,10 @@ ethers_header=Opciones de mapeo de Ethernet
 ethers_err=No pude salvar dirección de ethernet
 ethers_emac=Dirección de ethernet inválida
 ethers_eip=Dirección IP inválida
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 rpc_name=Nombre de programa
 rpc_number=Número
 rpc_aliases=Aliases
@@ -226,7 +258,10 @@ rpc_header=Detalle de programa RPC
 rpc_err=No pude salvar programa RPC
 rpc_ename=Nombre de programa falta o es inválido
 rpc_enumber=Número falta o es inválido
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 networks_title=Dirección de Red
 networks_ip=Dirección IP
 networks_name=Nombre de red
@@ -235,7 +270,10 @@ networks_err=No pude salvar la red
 networks_eip=Dirección IP falta o es inválida
 networks_ename=Nombre falta o es inválido
 networks_aliases=Aliases
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 netmasks_net=Dirección de red
 netmasks_mask=Máscara de red
 netmasks_title=Máscara de red
@@ -243,7 +281,10 @@ netmasks_header=Detalles de máscara de red
 netmasks_err=No pude salvar máscara de red
 netmasks_enet=Dirección de red falta o es inválida
 netmasks_emask=Máscara de red falta o es inválida
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 aliases_from=Dirección
 aliases_to=Alias de
 aliases_title=Alias de Sendmail
@@ -251,7 +292,6 @@ aliases_header=Detalles de alias de Sendmail
 aliases_err=No pude salvar alias
 aliases_efrom=Dirección falta o es inválida
 aliases_eto=Faltan direcciones para
-
 security_title=Seguridad del Servidor
 security_header=Opciones de serguridad del servidor NIS
 security_ok=Salvar y Aplicar
@@ -260,6 +300,10 @@ security_nets=Clientes autorizados
 security_net=Dirección de Red/máquina
 security_mask=Máscara de red
 security_single=Máquina única
+<<<<<<< HEAD
+=======
+security_none=Ninguno
+>>>>>>> upstream/master
 security_any=Cualquier máquina
 security_err=No pude salvar seguridad del servidor
 security_enet='$1' no es una dirección válida de red
@@ -270,7 +314,6 @@ security_hosts=Máquinas
 security_map=Tablas NIS
 security_sec=Restricción
 security_mangle=Campo estropeado
-security_none=Ninguno
 security_tall=Todos
 security_sec_none=Ninguno
 security_sec_port=Puerto fiable
@@ -279,4 +322,7 @@ security_sec_des=Requerir DES
 security_ehost='$1' no es un nombre válido de máquina
 security_emap='$1' no es una tabla de NIS válida
 security_efield='$1' no es un número válido de campo
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master

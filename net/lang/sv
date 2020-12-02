@@ -1,6 +1,9 @@
 index_title=Nätverksinställningar
 index_return=nätverksinställningar
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 ifcs_title=Nätverksinterface
 ifcs_now=Aktiva interface
 ifcs_name=Namn
@@ -23,7 +26,10 @@ ifcs_virts=Virtuella interface
 ifcs_addvirt=Lägg till virtuellt interface
 ifcs_return=nätverksinterface
 ifcs_unknown=Okänt
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 aifc_create=Lägg till aktivt interface
 aifc_edit=Ändra aktivt interface
 aifc_desc1=Parametrar för aktivt interface
@@ -42,7 +48,10 @@ aifc_ebroad='$1' är inte en giltig broadcast-adress
 aifc_emtu='$1' är inte en giltig MTU
 aifc_ehard='$1' är inte en giltig hårdvaruadress
 aifc_eexist=Interface '$1' finns inte
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 bifc_create=Lägg till start-interface
 bifc_edit=Ändra start-interface
 bifc_desc1=Parametrar för start-interface
@@ -59,7 +68,6 @@ bifc_emask='$1' är inte en giltig nätmask
 bifc_ebroad='$1' är inte en giltig broadcast-adress
 bifc_emtu='$1' är inte en giltig MTU
 bifc_err3=Det gick inte att aktivera interface
-
 routes_title=Routing och routrar
 routes_boot=Routing-inställningar som aktiveras vid <i>start</i>
 routes_default=Standardrouter
@@ -82,7 +90,6 @@ routes_defaults=Standardroutrar
 routes_possible=Om möjligt
 routes_local=Lokal routing
 routes_err=Det gick inte att spara routing
-
 dns_title=DNS-klient
 dns_options=Inställningar för DNS-klient
 dns_hostname=Datornamn
@@ -92,7 +99,10 @@ dns_search=Domäner att leta igenom
 dns_none=Inga
 dns_listed=Angivna ...
 dns_eorder=Du har inte angivit någon uppslagsordning
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 hosts_title=Datoradresser
 hosts_ip=IP-adress
 hosts_host=Datornamn
@@ -101,7 +111,10 @@ hosts_edit=Ändra datoradress
 hosts_create=Lägg till datoradress
 hosts_detail=Dator och adresser
 hosts_return=lista över datoradresser
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 log_create_host=Lade till datoradress $1
 log_delete_host=Tog bort datoradress $1
 log_modify_host=Modifierade datoradress $1

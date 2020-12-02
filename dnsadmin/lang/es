@@ -1,4 +1,3 @@
-
 log_servers=Cambiados otros servidores DNS
 log_logging=Cambiados diarios y errores
 log_acls=Cmabiadas listas de control de acceso
@@ -24,4 +23,7 @@ log_delete_record=Borrado $1 registro $2 en zona $3
 log_create_record=Creado $1 registro $2 en zona $3
 log_modify_record=Modificado $1 registro $2 en zona $3
 log_boot=Creado archivo de configuración primario
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master

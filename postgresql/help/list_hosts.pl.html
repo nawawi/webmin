@@ -1,5 +1,6 @@
 <header>Dozwolone hosty</header>
 
+<<<<<<< HEAD
 Na tej stronie mo¿esz okre¶liæ, z&nbsp;których hostów bêdzie mo¿liwy dostêp
 do Twojego serwera baz danych oraz jaki rodzaj autoryzacji musi byæ
 zapewniony. Ka¿da z&nbsp;regu³ kontroli dostêpu mo¿e dotyczyæ pojedyñczego
@@ -22,6 +23,30 @@ mo¿liwo¶ci&nbsp;:
 <dd>Nie pozwala w&nbsp;ogóle na po³±czenia z&nbsp;tego hosta. Jest to
     przydatne do zablokowania dostêpu z&nbsp;wybranych hostów, podczas gdy
     zapewniony jest dostêp z&nbsp;ca³ej sieci.
+=======
+Na tej stronie możesz określić, z&nbsp;których hostów będzie możliwy dostęp
+do Twojego serwera baz danych oraz jaki rodzaj autoryzacji musi być
+zapewniony. Każda z&nbsp;reguł kontroli dostępu może dotyczyć pojedyńczego
+hosta, całej sieci, wszystkich hostów w&nbsp;sieci lub wyłącznie
+użytkowników lokalnych. Dodatkowo, każda z&nbsp;reguł może dotyczyć jednej
+wybranej bazy danych lub wszystkich baz danych na serwerze. <p>
+
+Przy wyborze trybu autoryzacji dla dozwolonych hostów dostępne są następujące
+możliwości&nbsp;:
+<dl>
+<dt><b>Hasło otwartym tekstem</b>
+<dd>Użytkownik musi podać hasło, które zgadza się z&nbsp;ustawionym na stronie
+    <tt>Użytkownicy PostgreSQLa</tt>. <p>
+<dt><b>Encrypted password</b>
+<dd>Użytkownik musi podać hasło, które po zaszyfrowaniu zgadza się
+    z&nbsp;ustawionym w&nbsp;<tt>Użytkownicy PostgreSQLa</tt>. <p>
+<dt><b>Autoryzacja nie wymagana</b>
+<dd>Nie ma w&nbsp;ogóle potrzeby podawania hasła. <p>
+<dt><b>Odrzuć połączenie</b>
+<dd>Nie pozwala w&nbsp;ogóle na połączenia z&nbsp;tego hosta. Jest to
+    przydatne do zablokowania dostępu z&nbsp;wybranych hostów, podczas gdy
+    zapewniony jest dostęp z&nbsp;całej sieci.
+>>>>>>> upstream/master
     <p>
 </dl>
 

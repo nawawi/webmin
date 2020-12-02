@@ -15,7 +15,10 @@ index_use=Korzysta
 index_free=Wolne
 index_format=Ten dysk jest niesformatowany
 index_return=listy dysków
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 edit_ecannot=Nie masz uprawnień do zmian tego dysku
 edit_title=Zmień partycję
 edit_header=Dane partycji
@@ -29,9 +32,15 @@ edit_extent=Umiejscowienie
 edit_stat=Stan
 edit_meta=Część MetaDysku
 edit_metadb=Część bazy danych MetaDysku
+<<<<<<< HEAD
 edit_mount=Zamontowana w&nbsp;$1 jako $2
 edit_mountvm=Zamontowana jako pamięć wirtualna
 edit_umount=Do zamontowania w&nbsp;$1 jako $2
+=======
+edit_mount=Zamontowana w $1 jako $2
+edit_mountvm=Zamontowana jako pamięć wirtualna
+edit_umount=Do zamontowania w $1 jako $2
+>>>>>>> upstream/master
 edit_umountvm=Do zamontowania jako pamięć wirtualna
 edit_nouse=Nie używana
 edit_fs=System plików
@@ -42,22 +51,36 @@ edit_tasks=Zadania dla pzrtycji
 edit_newfs=Nowy system plików
 edit_newdesc1=Tworzy nowy system plików na tej partycji, nieodwracalnie usuwając wszelkie istniejące pliki. Musisz to uczynić po utworzeniu nowej partycji lub zmianie istniejącej.
 edit_newdesc2=Nie możesz utworzyć nowego systemu plików na tej partycji, gdyż nie została ona jeszcze skonfigurowana.
+<<<<<<< HEAD
 edit_newdesc3=Nie możesz utworzyć nowego systemu plików na tej partycji, gdyż jest ona aktualnie zamontowana. Odmontuj ją najpierw za pomocą modułu <a href=/mount/>Lokalne i&nbsp;sieciowe systemy plików</a>.
+=======
+edit_newdesc3=Nie możesz utworzyć nowego systemu plików na tej partycji, gdyż jest ona aktualnie zamontowana. Odmontuj ją najpierw za pomocą modułu <a href=/mount/>Lokalne i sieciowe systemy plików</a>.
+>>>>>>> upstream/master
 edit_fsckfs=Napraw system plików
 edit_fsck=Napraw
 edit_fsckdesc1=Wywołuje program <tt>fsck</tt>, aby naprawić system plików tak, aby mógł on być zamontowany. Może to być konieczne, jeśli system nie został prawidłowo zamknięty.
 edit_fsckdesc2=Nie możesz sprawdzić systemu plików na tej partycji, gdyż nie została ona jeszcze skonfigurowana.
+<<<<<<< HEAD
 edit_fsckdesc3=Nie możesz sprawdzić systemu plików na tej partycji, gdyż jest ona aktualnie zamontowana. Odmontuj ją najpierw za pomocą modułu <a href=/mount/>Lokalne i&nbsp;sieciowe systemy plików</a>.
+=======
+edit_fsckdesc3=Nie możesz sprawdzić systemu plików na tej partycji, gdyż jest ona aktualnie zamontowana. Odmontuj ją najpierw za pomocą modułu <a href=/mount/>Lokalne i sieciowe systemy plików</a>.
+>>>>>>> upstream/master
 edit_fsckdesc4=Nie możesz sprawdzić systemu plików na tej partycji, gdyż nie zawiera ona systemu plików.
 edit_fsckdesc5=Nie możesz sprawdzić systemu plików na tej partycji, gdyż sprawdzić można tylko systemy plików <tt>UFS</tt>.
 edit_tunefs=Dostrój system plików
 edit_tune=Dostrój
 edit_tunedesc1=Pozwala zmienić różne parametry istniejącego systemu plków
 edit_tunedesc2=Nie możesz dostrajać systemu plików na tej partycji, gdyż nie została ona jeszcze skonfigurowana.
+<<<<<<< HEAD
 edit_tunedesc3=Nie możesz dostrajać systemu plików na tej partycji, gdyż jest ona aktualnie zamontowana. Odmontuj ją najpierw za pomocą modułu <a href=/mount/>Lokalne i&nbsp;sieciowe systemy plików</a>.
 edit_tunedesc4=Nie możesz dostrajać systemu plików na tej partycji, gdyż nie zawiera ona systemu plików.
 edit_tunedesc5=Nie możesz dostrajać systemu plików na tej partycji, gdyż można dostrajać jedynie systemy plików <tt>UFS</tt>.
 
+=======
+edit_tunedesc3=Nie możesz dostrajać systemu plików na tej partycji, gdyż jest ona aktualnie zamontowana. Odmontuj ją najpierw za pomocą modułu <a href=/mount/>Lokalne i sieciowe systemy plików</a>.
+edit_tunedesc4=Nie możesz dostrajać systemu plików na tej partycji, gdyż nie zawiera ona systemu plików.
+edit_tunedesc5=Nie możesz dostrajać systemu plików na tej partycji, gdyż można dostrajać jedynie systemy plików <tt>UFS</tt>.
+>>>>>>> upstream/master
 save_ecannot=Nie masz upranień do zmian tego dysku
 save_edelete=Nie udało się skasować partycji
 save_esave=Nie udało się zachować partycji
@@ -66,11 +89,18 @@ save_eend='$1' nie jest poprawnym numerem końcowego cylindra
 save_estartmin=Numer początkowego cylindra musi być > 0
 save_eendmax=Numer końcowego cylindra musi być < $1
 save_estartend=Numer początkowego cylindra musi być mniejszy niź numer końcowego cylindra
+<<<<<<< HEAD
 
 newfs_title=Utwórz system plików
 newfs_ecannot=Nie masz uprawnień do formatowania tego dysku
 newfs_desc=Naciskając przycisk u&nbsp;dołu tego formularza utworzysz nowy $1 na urządzeniu $2. Wszystkie dane z&nbsp;tej partycji zostaną nieodwracalnie usunięte.
 newfs_warn=Ta partycja jest zamontowa na w&nbsp;$1. Utworzenie nowego systemu plików usunie wszystkie pliki, które były uprzednio dostępne w&nbsp;tym katalogu.
+=======
+newfs_title=Utwórz system plików
+newfs_ecannot=Nie masz uprawnień do formatowania tego dysku
+newfs_desc=Naciskając przycisk u dołu tego formularza utworzysz nowy $1 na urządzeniu $2. Wszystkie dane z tej partycji zostaną nieodwracalnie usunięte.
+newfs_warn=Ta partycja jest zamontowa na w $1. Utworzenie nowego systemu plików usunie wszystkie pliki, które były uprzednio dostępne w tym katalogu.
+>>>>>>> upstream/master
 newfs_header=Opcje systemu plików
 ufs_a=Zapasowe bloki / cylinder
 ufs_b=Rozmiar bloku logicznego
@@ -92,6 +122,7 @@ newfs_err=Nie udało się utworzyć systemu plików
 newfs_exec=Wykonywanie polecenia $1 ..
 newfs_failed=.. polecenie zakończyło się niepowodzeniem!
 newfs_ok=.. zakończone.
+<<<<<<< HEAD
 
 fsck_title=Napraw system plików
 fsck_ecannot=Nie masz uprawnień do naprawy tego dysku
@@ -99,6 +130,14 @@ fsck_desc=Naciskajęc przycisk <b>Napraw</b> sprawdzisz i&nbsp;ewentualnie napra
 fsck_mode0=Tylko podaj stan systemu plików.
 fsck_mode1=Sprawdź cały system plików pod kątem błędów, ale nic nie naprawiaj.
 fsck_mode2=Sprawdź i&nbsp;napraw wszystkie znalezione w&nbsp;tym systemie plików błędy.
+=======
+fsck_title=Napraw system plików
+fsck_ecannot=Nie masz uprawnień do naprawy tego dysku
+fsck_desc=Naciskajęc przycisk <b>Napraw</b> sprawdzisz i ewentualnie naprawisz $1 na $2. Poziom sprawdzania i naprawy zależy od Twojego wyboru poniżej.
+fsck_mode0=Tylko podaj stan systemu plików.
+fsck_mode1=Sprawdź cały system plików pod kątem błędów, ale nic nie naprawiaj.
+fsck_mode2=Sprawdź i napraw wszystkie znalezione w tym systemie plików błędy.
+>>>>>>> upstream/master
 fsck_repair=Napraw
 fsck_exec=Wykonuję polecenie $1 ..
 fsck_0=nie znaleziono błędów
@@ -110,7 +149,10 @@ fsck_37=proces został zabity podczas sprawdzania
 fsck_39=znaleziono nienaprawialne błędy!
 fsck_40=nie znaleziono błędów
 fsck_unknown=nieznany błąd
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 tunefs_title=Dostrój system plików
 tunefs_ecannot=Nie masz uprawnień do dostrajania systemów plików na tym dysku
 tunefs_desc=Za pomocą tego formularza możesz dostroić różne parametry $1 na $2. Istniejącym na tym systemie plików plikom nic się nie stanie.
@@ -121,13 +163,20 @@ tunefs_time=Czasu
 tunefs_tune=Dostrój system plików
 tunefs_a=Maks. ciągłych bloków
 tunefs_d=Opóźnienie obrotu
+<<<<<<< HEAD
 tunefs_e=Maks. bloków pliku w&nbsp;grupie cylindrów
+=======
+tunefs_e=Maks. bloków pliku w grupie cylindrów
+>>>>>>> upstream/master
 tunefs_m=Przestrzeń zarezerwowana
 tunefs_err=Nie udało się dostroić systemu plików
 tunefs_exec=Wykonywanie polecenia $1 ..
 tunefs_failed=.. polecenie zakończyło się niepowodzeniem!
 tunefs_ok=.. zakończone.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 select_device=Kontroler SCSI $1 urządzenie $2 podurządzenie $3
 select_idedevice=Urządzenie IDE $1
 select_part=Kontroler SCSI $1 urządzenie $2 podurządzenie $3 partycja $4
@@ -137,10 +186,16 @@ esun=Partycje można zmieniać tylko na sprzęcie Sun-a
 emounted=Dysk zawiera podmontowane partycje
 elast=Nie można usunąć ostatniej partycji
 eformat=<tt>format</tt> nie znalazł żadnego dysku!
+<<<<<<< HEAD
 
 fstype_ufs=Uniksowy system plików Solarisa
 fstype_unknown=Nieznany system plików
 
 acl_disks=Dyski, które ten użytkownik może partycjonować i&nbsp;formatować
+=======
+fstype_ufs=Uniksowy system plików Solarisa
+fstype_unknown=Nieznany system plików
+acl_disks=Dyski, które ten użytkownik może partycjonować i formatować
+>>>>>>> upstream/master
 acl_dall=Wszystkie dyski
 acl_dsel=Wybrane..

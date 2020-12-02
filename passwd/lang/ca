@@ -5,7 +5,10 @@ index_user=Canvia la contrasenya de l'usuari:
 index_euseradmin=Aquest mòdul no es pot utilitzar perquè el mòdul d'Usuaris i Grups no està instal·lat o no està suportat pel sistema.
 index_toomany=Hi ha massa usuaris al sistema com per mostrar-los. Introdueix a sota el nom de l'usuari la contrasenya del qual vols canviar...
 index_none=No tens accés a cap usuari per canviar-ne la contrasenya.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 passwd_title=Canvi de Contrasenya
 passwd_header=Canvi de la contrasenya de l'usuari Unix
 passwd_for=Canvi de la contrasenya de
@@ -24,9 +27,7 @@ passwd_erepeat=Les contrasenyes noves no són iguals
 passwd_ecmd=$1 ha fallat: $2
 passwd_ok=S'ha canviat amb èxit la contrasenya de l'usuari $1. Si aquest és el teu usuari de Webmin, t'hauràs de tornar a connectar un altre cop.
 passwd_ok2=La contrasenya de l'usuari $1 s'ha canviat correctament.
-
 log_passwd=S'ha canviat la contrasenya de l'usuari $1
-
 acl_repeat=Ha de tornar a introduir la contrasenya altre cop
 acl_self=Permet sempre de canviar la pròpia contrasenya
 acl_old=Ha d'introduir la contrasenya anterior
@@ -44,4 +45,3 @@ acl_mode6=Usuaris que coincideixen amb
 acl_expire=Pot forçar els usuaris a canviar la contrasenya a la pròxima entrada
 acl_sec=Inclou els grups secundaris
 acl_notusers=Excepte els usuaris
-__norefs=1

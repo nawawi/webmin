@@ -1278,9 +1278,24 @@ same as ui_textbox.
 =cut
 sub ui_user_textbox
 {
+my ($name, $value, $form, $dis, $tags) = @_;
 return &theme_ui_user_textbox(@_) if (defined(&theme_ui_user_textbox));
-return &ui_textbox($_[0], $_[1], 13, $_[3], undef, $_[4])." ".
-       &user_chooser_button($_[0], 0, $_[2]);
+return &ui_textbox($name, $value, 13, $dis, undef, $tags)." ".
+       &user_chooser_button($name, 0, $form);
+}
+
+=head2 ui_users_textbox(name, value, [form], [disabled?], [tags])
+
+Returns HTML for an input for selecting multiple Unix users. Parameters are the
+same as ui_textbox.
+
+=cut
+sub ui_users_textbox
+{
+my ($name, $value, $form, $dis, $tags) = @_;
+return &theme_ui_users_textbox(@_) if (defined(&theme_ui_users_textbox));
+return &ui_textbox($name, $value, 60, $dis, undef, $tags)." ".
+       &user_chooser_button($name, 1, $form);
 }
 
 =head2 ui_group_textbox(name, value, [form], [disabled?], [tags])
@@ -1291,9 +1306,24 @@ same as ui_textbox.
 =cut
 sub ui_group_textbox
 {
+my ($name, $value, $form, $dis, $tags) = @_;
 return &theme_ui_group_textbox(@_) if (defined(&theme_ui_group_textbox));
-return &ui_textbox($_[0], $_[1], 13, $_[3], undef, $_[4])." ".
-       &group_chooser_button($_[0], 0, $_[2]);
+return &ui_textbox($name, $value, 13, $dis, undef, $tags)." ".
+       &group_chooser_button($name, 0, $form);
+}
+
+=head2 ui_groups_textbox(name, value, [form], [disabled?], [tags])
+
+Returns HTML for an input for selecting Unix groups. Parameters are the
+same as ui_textbox.
+
+=cut
+sub ui_groups_textbox
+{
+my ($name, $value, $form, $dis, $tags) = @_;
+return &theme_ui_groups_textbox(@_) if (defined(&theme_ui_groups_textbox));
+return &ui_textbox($name, $value, 60, $dis, undef, $tags)." ".
+       &group_chooser_button($name, 1, $form);
 }
 
 =head2 ui_opt_textbox(name, value, size, option1, [option2], [disabled?], [&extra-fields], [max])
@@ -2418,7 +2448,7 @@ $rv .= "</center>\n";
 return $rv;
 }
 
-=head2 ui_text_type(text, type)
+=head2 ui_text_color(text, type)
 
 Returns HTML for a text string, with its color determined by $type.
 
@@ -2428,13 +2458,13 @@ Returns HTML for a text string, with its color determined by $type.
 
 =cut
 
-sub ui_text_type
+sub ui_text_color
 {
-my ($text, $type) = @_;
+my ($text, $type, $class) = @_;
 my ($rv, $color);
 
-if (defined (&theme_ui_text_type)) {
-    return &theme_ui_text_type(@_);
+if (defined (&theme_ui_text_color)) {
+    return &theme_ui_text_color(@_);
     }
 
 if ($type eq "success") { $color = "3c763d"; }
@@ -2442,7 +2472,14 @@ elsif ($type eq "info") { $color = "31708f"; }
 elsif ($type eq "warn") { $color = "8a6d3b"; }
 elsif ($type eq "danger") { $color = "a94442"; }
 
-$rv .= "<span class='ui_text_type text_type_$type' style='color: #$color'>$text</span>\n";
+my $style;
+$style = " style=\"color: #$color\"" if (!$class);
+if ($class) {
+	my $c = $class == 1 ? 'text' : $class;
+	$class = "$c-$type";
+}
+
+$rv .= "<span class='ui_text_color text_type_$type $class'$style>$text</span>\n";
 
 return $rv;
 }
@@ -2670,6 +2707,46 @@ if ($mod) {
 if ($page) {
 	$rv .= "/$page";
 	}
+return $rv;
+}
+
+=head2 ui_line_break_double()
+
+Create double line break, with accessible second break
+
+=cut
+sub ui_line_break_double
+{
+if (defined(&theme_ui_line_break_double)) {
+	return &theme_ui_line_break_double(@_);
+	}
+return "<br><br data-x-br>\n";
+}
+
+=head2 ui_details(Config, Opened)
+
+Creates a disclosure widget in which information is visible only when
+the widget is toggled into an "open" state.
+
+=cut
+sub ui_details
+{
+my ($c, $o) = @_;
+if (defined(&theme_ui_details)) {
+	return &theme_ui_details(@_);
+	}
+
+my $rv;
+if (!$c->{'html'}) {
+	$c->{'title'} = &html_escape($c->{'title'});
+	$c->{'content'} = &html_escape($c->{'content'});
+	}
+$c->{'class'} = " class=\"@{[&quote_escape($c->{'class'})]}\"" if($c->{'class'});
+$o = ' open' if ($o);
+$rv = "<details$c->{'class'}$o>";
+$rv .= "<summary>$c->{'title'}</summary>";
+$rv .= "<span>$c->{'content'}</span>";
+$rv .= "</details>";
 return $rv;
 }
 

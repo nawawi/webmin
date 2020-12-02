@@ -4,10 +4,15 @@ index_mods=Módulos donde buscar
 index_all=Todos
 index_sel=Módulos seleccionados...
 index_search=Buscar
+<<<<<<< HEAD
 index_reset=Limpiar
 index_header=Búsqueda Global de ayuda de Webmin
 index_return=formulario de búsqueda
 
+=======
+index_header=Búsqueda Global de ayuda de Webmin
+index_return=formulario de búsqueda
+>>>>>>> upstream/master
 search_err=Falló la búsqueda
 search_eterms=No se han puesto criterios de búsqueda
 search_emods=No se han seleccionado módulos

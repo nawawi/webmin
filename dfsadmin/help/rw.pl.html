@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <header>Dostêp do odczytu i&nbsp;zapisu</header>
 
 Okre¶la, które hosty maj± uzyskiwaæ dostêp do tego zasobu w&nbsp;trybie
@@ -18,10 +19,33 @@ do odczytu i&nbsp;zapisu. Mo¿liwe s± trzy ustawienia dla tej opcji&nbsp;:
 <else>
     Hosty spe³niaj±ce poni¿sze warunki mog± montowaæ ten zasób
     w&nbsp;trybie do odczytu i&nbsp;zapisu. Mo¿na je podaæ
+=======
+<header>Dostęp do odczytu i&nbsp;zapisu</header>
+
+Określa, które hosty mają uzyskiwać dostęp do tego zasobu w&nbsp;trybie
+do odczytu i&nbsp;zapisu. Możliwe są trzy ustawienia dla tej opcji&nbsp;:
+<ul>
+<li><b>Żaden</b><br>
+    Żaden host nie ma dostępu w&nbsp;trybie do odczytu i&nbsp;zapisu.
+<li><b>Wszystkie hosty</b><br>
+    Dowolny host może zamontować ten zasób w&nbsp;trybie do odczytu 
+    i&nbsp;zapisu. Jeśli jesteś podłączony do Internetu, oznacza to, że
+    ktokolwiek z&nbsp;dowolnego miejsca na świecie może czytać, zapisywać
+    i&nbsp;kasować pliki w&nbsp;udostępnionym katalogu. Korzystaj z tej opcji
+    z&nbsp;ostrożnością.
+<li><b>Wymienione hosty</b><br>
+<if $gconfig{'os_version'} < 7>
+    Z&nbsp;wymienionych poniżej hostów i&nbsp;adresów IP można zamontować
+    ten zasób w&nbsp;trybie do odczytu i&nbsp;zapisu.
+<else>
+    Hosty spełniające poniższe warunki mogą montować ten zasób
+    w&nbsp;trybie do odczytu i&nbsp;zapisu. Można je podać
+>>>>>>> upstream/master
     w&nbsp;postaci&nbsp;: <p>
 	<dl>
 	<dt><b>Nazwy hosta lub adresu IP</b> (np. <i>ftp.foo.com</i> lub 
             <i>1.2.3.4</i>)
+<<<<<<< HEAD
 	<dd>Spe³nia go host o&nbsp;podanej nazwie lub adresie IP
 	<dt><b>Grupy sieciowej</b> (np. <i>inzynieria</i>)
 	<dd>Spe³nia go dowolny host bêd±cy cz³onkiem grupy sieciowej
@@ -36,6 +60,22 @@ do odczytu i&nbsp;zapisu. Mo¿liwe s± trzy ustawienia dla tej opcji&nbsp;:
     co oznacza ¿e host, grupa sieciowa, domena lub sieæ <b>nie</b> mo¿e
     montowaæ tego zasobu. Mo¿e to byæ przydatne do umo¿liwienia dostêpu dla
     zbioru hostów z&nbsp;wy³±czeniem jednego jego cz³onka.
+=======
+	<dd>Spełnia go host o&nbsp;podanej nazwie lub adresie IP
+	<dt><b>Grupy sieciowej</b> (np. <i>inzynieria</i>)
+	<dd>Spełnia go dowolny host będący członkiem grupy sieciowej
+	<dt><b>Domeny DNS-u</b> (np. <i>.foo.com</i>)
+	<dd>Spełnia go dowolny host w&nbsp;domenie
+	<dt><b>Sieci</b> (np. <i>@10.254.1</i>)
+	<dd>Spełnia go dowolny host w&nbsp;sieci
+	<dt><b>Sieci z&nbsp;maską</b> (np. <i>@10.254.1/24</i>)
+	<dd>Spełnia go dowolny host w&nbsp;sieci
+	</dl><p>
+    Dodatkowo, dowolną z&nbsp;powyższych notacji można poprzedzić <i>-</i>,
+    co oznacza że host, grupa sieciowa, domena lub sieć <b>nie</b> może
+    montować tego zasobu. Może to być przydatne do umożliwienia dostępu dla
+    zbioru hostów z&nbsp;wyłączeniem jednego jego członka.
+>>>>>>> upstream/master
 </if>
 </ul>
 <hr>

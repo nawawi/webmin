@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 firewall_system=Tûzfal típusa,4,firewall-IPtables,ipfw-IPFW,ipfilter-IPFilter,shorewall-Shorewall,-Automatikus detektálás
 bandwidth_log=Napló fájl létrehozása a tûzfal üzeneteihez,0
+=======
+firewall_system=Tűzfal típusa,4,firewall-IPtables,ipfw-IPFW,ipfilter-IPFilter,shorewall-Shorewall,-Automatikus detektálás
+bandwidth_log=Napló fájl létrehozása a tűzfal üzeneteihez,0
+>>>>>>> upstream/master
 bandwidth_dir=A forgalmi adatok könyvtára,3,Általános (/etc/webmin/bandwith/hours)

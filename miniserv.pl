@@ -50,9 +50,10 @@ if ($config{'ssl'}) {
 	}
 
 # Check if IPv6 is enabled and available
+eval "use Socket6";
+$socket6err = $@;
 if ($config{'ipv6'}) {
-	eval "use Socket6";
-	if (!$@) {
+	if (!$socket6err) {
 		push(@startup_msg, "IPv6 support enabled");
 		$use_ipv6 = 1;
 		}
@@ -117,6 +118,16 @@ if (-l $perl_path) {
 # Check vital config options
 &update_vital_config();
 
+# Check if already running via the PID file
+if (open(PIDFILE, $config{'pidfile'})) {
+	my $already = <PIDFILE>;
+	close(PIDFILE);
+	chop($already);
+	if ($already && $already != $$ && kill(0, $already)) {
+		die "Webmin is already running with PID $already\n";
+		}
+	}
+
 $sidname = $config{'sidname'};
 die "Session authentication cannot be used in inetd mode"
 	if ($config{'inetd'} && $config{'session'});
@@ -159,16 +170,11 @@ elsif (!$config{'no_pam'}) {
 			     "PAM initialization of Authen::PAM failed");
 			}
 		}
-	else {
-		push(@startup_msg,
-		     "Perl module Authen::PAM needed for PAM is ".
-		     "not installed : $@");
-		}
 	}
 if ($config{'pam_only'} && !$use_pam) {
 	foreach $msg (@startup_msg) {
-	     print STDERR $msg,"\n";
-	}
+		print STDERR $msg,"\n";
+		}
 	print STDERR "PAM use is mandatory, but could not be enabled!\n";
 	print STDERR "no_pam and pam_only both are set!\n" if ($config{no_pam});
 	exit(1);
@@ -209,8 +215,8 @@ if ($@) {
 	}
 
 # Check if /dev/urandom really generates random IDs, by calling it twice
-local $rand1 = &generate_random_id("foo", 1);
-local $rand2 = &generate_random_id("foo", 2);
+local $rand1 = &generate_random_id(1);
+local $rand2 = &generate_random_id(1);
 if ($rand1 eq $rand2) {
 	$bad_urandom = 1;
 	push(@startup_msg,
@@ -278,8 +284,10 @@ if ($use_ssl) {
 	foreach $ipkey (@ipkeys) {
 		$ctx = &create_ssl_context($ipkey->{'key'}, $ipkey->{'cert'},
 				   $ipkey->{'extracas'} || $config{'extracas'});
-		foreach $ip (@{$ipkey->{'ips'}}) {
-			$ssl_contexts{$ip} = $ctx;
+		if ($ctx) {
+			foreach $ip (@{$ipkey->{'ips'}}) {
+				$ssl_contexts{$ip} = $ctx;
+				}
 			}
 		}
 
@@ -378,9 +386,6 @@ if (!$config{'inetd'}) {
 		if ($@) {
 			print STDERR "Failed to pre-load $lib in $pkg : $@\n";
 			}
-		else {
-			print STDERR "Pre-loaded $lib in $pkg\n";
-			}
 		}
 	foreach $pl (split(/\s+/, $config{'premodules'})) {
 		if ($pl =~ /\//) {
@@ -415,6 +420,11 @@ if ($config{'debuglog'}) {
 
 # Pre-cache lang files
 &precache_files();
+
+# Clear any flag files to prevent restart loops
+unlink($config{'restartflag'}) if ($config{'restartflag'});
+unlink($config{'reloadflag'}) if ($config{'reloadflag'});
+unlink($config{'stopflag'}) if ($config{'stopflag'});
 
 if ($config{'inetd'}) {
 	# We are being run from inetd - go direct to handling the request
@@ -482,6 +492,7 @@ if ($config{'inetd'}) {
 	}
 
 # Build list of sockets to listen on
+@listening_on_ports = ();
 $config{'bind'} = '' if ($config{'bind'} eq '*');
 if ($config{'bind'}) {
 	# Listening on a specific IP
@@ -596,6 +607,7 @@ for($i=0; $i<@sockets; $i++) {
 	else {
 		listen($fh, &get_somaxconn());
 		push(@socketfhs, $fh);
+		push(@listening_on_ports, $sockets[$i]->[1]);
 		$ipv6fhs{$fh} = $sockets[$i]->[2] eq PF_INET() ? 0 : 1;
 		}
 	}
@@ -731,17 +743,20 @@ while(1) {
 	vec($rmask, fileno(LISTEN), 1) = 1 if ($config{'listen'});
 
 	# Wait for a connection
-	local $sel = select($rmask, undef, undef, 10);
+	local $sel = select($rmask, undef, undef, 2);
 
 	# Check the flag files
 	if ($config{'restartflag'} && -r $config{'restartflag'}) {
-		print STDERR "restart flag file detected\n";
 		unlink($config{'restartflag'});
 		$need_restart = 1;
 		}
 	if ($config{'reloadflag'} && -r $config{'reloadflag'}) {
 		unlink($config{'reloadflag'});
 		$need_reload = 1;
+		}
+	if ($config{'stopflag'} && -r $config{'stopflag'}) {
+		unlink($config{'stopflag'});
+		$need_stop = 1;
 		}
 
 	if ($need_restart) {
@@ -753,6 +768,10 @@ while(1) {
 		$need_reload = 0;
 		&reload_config_file();
 		}
+	if ($need_stop) {
+		# Stop flag file created
+		&term_handler();
+		}
 	local $time_now = time();
 
 	# Clean up finished processes
@@ -760,9 +779,10 @@ while(1) {
 	do {	$pid = waitpid(-1, WNOHANG);
 		@childpids = grep { $_ != $pid } @childpids;
 		} while($pid != 0 && $pid != -1);
+	@childpids = grep { kill(0, $_) } @childpids;
 
 	# run the unblocking procedure to check if enough time has passed to
-	# unblock hosts that heve been blocked because of password failures
+	# unblock hosts that never been blocked because of password failures
 	$unblocked = 0;
 	if ($config{'blockhost_failures'}) {
 		$i = 0;
@@ -850,8 +870,9 @@ while(1) {
 		if (vec($rmask, fileno($s), 1)) {
 			# got new connection
 			$acptaddr = accept(SOCK, $s);
+			print DEBUG "accept returned ",length($acptaddr),"\n";
 			if (!$acptaddr) { next; }
-			binmode(SOCK);	# turn off any Perl IO stuff
+			binmode(SOCK);
 
 			# create pipes
 			local ($PASSINr, $PASSINw, $PASSOUTr, $PASSOUTw);
@@ -863,9 +884,11 @@ while(1) {
 			# Work out IP and port of client
 			local ($peerb, $peera, $peerp) =
 				&get_address_ip($acptaddr, $ipv6fhs{$s});
+			print DEBUG "peera=$peera peerp=$peerp\n";
 
 			# Work out the local IP
 			(undef, $locala) = &get_socket_ip(SOCK, $ipv6fhs{$s});
+			print DEBUG "locala=$locala\n";
 
 			# Check username of connecting user
 			$localauth_user = undef;
@@ -914,6 +937,7 @@ while(1) {
 			local $handpid;
 			if (!($handpid = fork())) {
 				# setup signal handlers
+				print DEBUG "in subprocess\n";
 				$SIG{'TERM'} = 'DEFAULT';
 				$SIG{'PIPE'} = 'DEFAULT';
 				#$SIG{'CHLD'} = 'IGNORE';
@@ -935,6 +959,7 @@ while(1) {
 				if ($use_ssl) {
 					$ssl_con = &ssl_connection_for_ip(
 							SOCK, $ipv6fhs{$s});
+					print DEBUG "ssl_con returned $ssl_con\n";
 					$ssl_con || exit;
 					}
 
@@ -995,6 +1020,12 @@ while(1) {
 			else {
 				print DEBUG "main: inline EOF\n";
 				}
+
+			# Search for two-factor authentication flag
+			# being passed, to mark the call as safe
+			$inline =~ /^delay\s+(\S+)\s+(\S+)\s+(\d+)\s+(nolog)/;
+			local $nolog = $4;
+
 			if ($inline =~ /^delay\s+(\S+)\s+(\S+)\s+(\d+)/) {
 				# Got a delay request from a subprocess.. for
 				# valid logins, there is no delay (to prevent
@@ -1013,12 +1044,12 @@ while(1) {
 						}
 					}
 				else {
-					# login failed..
-					$hostfail{$2}++;
-					$userfail{$1}++;
+					# Login failed..
+					$hostfail{$2}++ if(!$nolog);
+					$userfail{$1}++ if(!$nolog);
 					$blocked = 0;
 
-					# add the host to the block list,
+					# Add the host to the block list,
 					# if configured
  					if ($config{'blockhost_failures'} &&
 					    $hostfail{$2} >=
@@ -1033,7 +1064,7 @@ while(1) {
 							}
 						}
 
-					# add the user to the user block list,
+					# Add the user to the user block list,
 					# if configured
  					if ($config{'blockuser_failures'} &&
 					    $userfail{$1} >=
@@ -1334,7 +1365,15 @@ elsif ($reqline !~ /^(\S+)\s+(.*)\s+HTTP\/1\..$/) {
 		$use_ssl = 0;
 		local $urlhost = $config{'musthost'} || $host;
 		$urlhost = "[".$urlhost."]" if (&check_ip6address($urlhost));
-		local $url = "https://$urlhost:$port/";
+		local $wantport = $port;
+		if ($wantport == 80 &&
+		    &indexof(443, @listening_on_ports) >= 0) {
+			# Connection was to port 80, but since we are also
+			# accepting on port 443, redirect to that
+			$wantport = 443;
+			}
+		local $url = $wantport == 443 ? "https://$urlhost/"
+					      : "https://$urlhost:$wantport/";
 		if ($config{'ssl_redirect'}) {
 			# Just re-direct to the correct URL
 			sleep(1);	# Give browser a change to finish
@@ -1351,12 +1390,11 @@ elsif ($reqline !~ /^(\S+)\s+(.*)\s+HTTP\/1\..$/) {
 			&http_error(200, "Document follows",
 				"This web server is running in SSL mode. ".
 				"Try the URL <a href='$url'>$url</a> ".
-				"instead.<br>");
+				"instead.", 0, 1);
 		} else {
 			# Throw an error
 			&http_error(404, "Page not found",
-				"The requested URL was not found on this server ".
-				"try <a href='/'>visiting the home page</a> of this site to see what you can find <br>");
+			    "The requested URL was not found on this server.")
 		}
 	} elsif (ord(substr($reqline, 0, 1)) == 128 && !$use_ssl) {
 		# This could be an https request when it should be http ..
@@ -1407,12 +1445,10 @@ elsif ($reqline !~ /^(\S+)\s+(.*)\s+HTTP\/1\..$/) {
 				return 0;
 			} elsif ($config{'hide_admin_url'} != 1) {
 				# Tell user the correct URL
-				&http_error(200, "Bad Request", "This web server is not running in SSL mode. Try the URL <a href='$url'>$url</a> instead.<br>");
+				&http_error(200, "Bad Request", "This web server is not running in SSL mode. Try the URL <a href='$url'>$url</a> instead.", 0, 1);
 			} else {
 				&http_error(404, "Page not found",
-					"The requested URL was not found on this server ".
-					"try <a href='/'>visiting the home page</a> of this site to see what you can find <br>"
-					);
+				    "The requested URL was not found on this server.");
 			}
 EOF
 		if ($@) {
@@ -1502,10 +1538,23 @@ if (defined($header{'host'})) {
 		&http_error(400, "Invalid HTTP hostname");
 		}
 	}
-$portstr = $port == 80 && !$ssl ? "" :
-	   $port == 443 && $ssl ? "" : ":$port";
-$hostport = &check_ip6address($host) ? "[".$host."]".$portstr
-				     : $host.$portstr;
+
+# Create strings for use in redirects
+$ssl = $config{'redirect_ssl'} ne '' ? $config{'redirect_ssl'} :
+	$use_ssl || $config{'inetd_ssl'};
+$redirport = $config{'redirect_port'} || $port;
+$portstr = $redirport == 80 && !$ssl ? "" :
+	   $redirport == 443 && $ssl ? "" : ":".$redirport;
+$redirhost = $config{'redirect_host'} || $host;
+$hostport = &check_ip6address($redirhost) ? "[".$redirhost."]".$portstr
+				          : $redirhost.$portstr;
+
+# If the redirect_prefix exists change redirect base to include the prefix #1271
+if ($config{'redirect_prefix'}) {
+	$hostport .= $config{'redirect_prefix'}
+	}
+$prot = $ssl ? "https" : "http";
+
 undef(%in);
 if ($page =~ /^([^\?]+)\?(.*)$/) {
 	# There is some query string information
@@ -1628,8 +1677,6 @@ if (defined($redir)) {
 	&write_data("HTTP/1.0 302 Moved Temporarily\r\n");
 	&write_data("Date: $datestr\r\n");
 	&write_data("Server: $config{'server'}\r\n");
-	local $ssl = $use_ssl || $config{'inetd_ssl'};
-	$prot = $ssl ? "https" : "http";
 	&write_data("Location: $prot://$hostport$redir\r\n");
 	&write_keep_alive(0);
 	&write_data("\r\n");
@@ -1762,6 +1809,10 @@ if ($config{'userfile'}) {
 				}
 			}
 		else {
+			# Trim username to remove leading and trailing spaces to 
+			# be able to login, if username copy/paste from somewhere
+			$in{'user'} =~ s/^\s+|\s+$//g;
+
 			# Validate the user
 			if ($in{'user'} =~ /\r|\n|\s/) {
 				&run_failed_script($in{'user'}, 'baduser',
@@ -1790,6 +1841,7 @@ if ($config{'userfile'}) {
 							$vu, 'twofactor',
 							$loghost, $localip);
 						$twofactor_msg = $err;
+						$twofactor_nolog = 'nolog' if (!$in{'twofactor'});
 						$vu = undef;
 						}
 					}
@@ -1797,7 +1849,7 @@ if ($config{'userfile'}) {
 			local $hrv = &handle_login(
 					$vu || $in{'user'}, $vu ? 1 : 0,
 				      	$expired, $nonexist, $in{'pass'},
-					$in{'notestingcookie'});
+					$in{'notestingcookie'}, $twofactor_nolog);
 			return $hrv if (defined($hrv));
 			}
 		}
@@ -1816,7 +1868,7 @@ if ($config{'userfile'}) {
 
 		if (!$in{'cid'}) {
 			# Start of a new conversation - answer must be username
-			$cid = &generate_random_id($in{'answer'});
+			$cid = &generate_random_id();
 			print $PASSINw "pamstart $cid $host $in{'answer'}\n";
 			}
 		else {
@@ -2007,10 +2059,14 @@ if ($config{'userfile'}) {
 					$querystring = "page=".&urlize($rpage);
 					}
 				$method = "GET";
-				$querystring .= "&failed=$failed_user"
+				$querystring .= "&failed=".&urlize($failed_user)
 					if ($failed_user);
-				$querystring .= "&twofactor_msg=".&urlize($twofactor_msg)
-					if ($twofactor_msg);
+				if ($twofactor_msg) {
+					$querystring .= "&failed_save=".&urlize($failed_save);
+					$querystring .= "&failed_pass=".&urlize($failed_pass);
+					$querystring .= "&failed_twofactor_attempt=".&urlize($failed_twofactor_attempt);
+					$querystring .= "&twofactor_msg=".&urlize($twofactor_msg);
+					}
 				$querystring .= "&timed_out=$timed_out"
 					if ($timed_out);
 				$queryargs = "";
@@ -2026,12 +2082,12 @@ if ($config{'userfile'}) {
 				&write_data("WWW-authenticate: Basic ".
 					   "realm=\"$config{'realm'}\"\r\n");
 				&write_keep_alive(0);
-				&write_data("Content-type: text/html; Charset=iso-8859-1\r\n");
+				&write_data("Content-type: text/html; Charset=utf-8\r\n");
 				&write_data("\r\n");
 				&reset_byte_count();
 				&write_data("<html>\n");
 				&write_data("<head><title>Unauthorized</title></head>\n");
-				&write_data("<body><h1>Unauthorized</h1>\n");
+				&write_data("<body><h2 style='color: #de0000; margin-bottom: -8px;'>Unauthorized</h2>\n");
 				&write_data("A password is required to access this\n");
 				&write_data("web server. Please try again. <p>\n");
 				&write_data("</body></html>\n");
@@ -2251,12 +2307,8 @@ if (-d _) {
 	if ($page !~ /\/$/) {
 		# It doesn't.. redirect
 		&write_data("HTTP/1.0 302 Moved Temporarily\r\n");
-		$ssl = $use_ssl || $config{'inetd_ssl'};
-		$portstr = $port == 80 && !$ssl ? "" :
-			   $port == 443 && $ssl ? "" : ":$port";
 		&write_data("Date: $datestr\r\n");
 		&write_data("Server: $config{server}\r\n");
-		$prot = $ssl ? "https" : "http";
 		&write_data("Location: $prot://$hostport$page/\r\n");
 		&write_keep_alive(0);
 		&write_data("\r\n");
@@ -2288,12 +2340,12 @@ if (-d _) {
 	local $resp = "HTTP/1.0 $ok_code $ok_message\r\n".
 		      "Date: $datestr\r\n".
 		      "Server: $config{server}\r\n".
-		      "Content-type: text/html; Charset=iso-8859-1\r\n";
+		      "Content-type: text/html; Charset=utf-8\r\n";
 	&write_data($resp);
 	&write_keep_alive(0);
 	&write_data("\r\n");
 	&reset_byte_count();
-	&write_data("<h1>Index of $simple</h1>\n");
+	&write_data("<h2 style='color: #de0000; margin-bottom: -8px;'>Index of $simple</h2>\n");
 	&write_data("<pre>\n");
 	&write_data(sprintf "%-35.35s %-20.20s %-10.10s\n",
 			"Name", "Last Modified", "Size");
@@ -2462,7 +2514,7 @@ if (&get_type($full) eq "internal/cgi" && $validated != 4) {
 		if ($@) {
 			# Error in perl!
 			&http_error(500, "Perl execution failed",
-				    $config{'noshowstderr'} ? undef : $@);
+				    $config{'noshowstderr'} ? undef : "$@");
 			}
 		elsif (!$doneheaders && !$nph_script) {
 			&http_error(500, "Missing Headers");
@@ -2681,42 +2733,44 @@ else {
 return $rv;
 }
 
-# http_error(code, message, body, [dontexit])
+# http_error(code, message, body, [dontexit], [dontstderr])
+# Output an error message to the browser, and log it to the error log
 sub http_error
 {
+my ($code, $msg, $body, $noexit, $noerr) = @_;
 local $eh = $error_handler_recurse ? undef :
-	    $config{"error_handler_$_[0]"} ? $config{"error_handler_$_[0]"} :
+	    $config{"error_handler_".$code} ? $config{"error_handler_".$code} :
 	    $config{'error_handler'} ? $config{'error_handler'} : undef;
-print DEBUG "http_error code=$_[0] message=$_[1] body=$_[2]\n";
+print DEBUG "http_error code=$code message=$msg body=$body\n";
 if ($eh) {
 	# Call a CGI program for the error
 	$page = "/$eh";
-	$querystring = "code=$_[0]&message=".&urlize($_[1]).
-		       "&body=".&urlize($_[2]);
+	$querystring = "code=$_[0]&message=".&urlize($msg).
+		       "&body=".&urlize($body);
 	$error_handler_recurse++;
-	$ok_code = $_[0];
-	$ok_message = $_[1];
+	$ok_code = $code;
+	$ok_message = $msg;
 	goto rerun;
 	}
 else {
 	# Use the standard error message display
-	&write_data("HTTP/1.0 $_[0] $_[1]\r\n");
+	&write_data("HTTP/1.0 $code $msg\r\n");
 	&write_data("Server: $config{server}\r\n");
 	&write_data("Date: $datestr\r\n");
-	&write_data("Content-type: text/html; Charset=iso-8859-1\r\n");
+	&write_data("Content-type: text/html; Charset=utf-8\r\n");
 	&write_keep_alive(0);
 	&write_data("\r\n");
 	&reset_byte_count();
-	&write_data("<h1>Error - $_[1]</h1>\n");
-	if ($_[2]) {
-		&write_data("<p>$_[2]</p>\n");
+	&write_data("<h2 style='color: #de0000; margin-bottom: -8px;'>Error - $msg</h2>\n");
+	if ($body) {
+		&write_data("<p>$body</p>\n");
 		}
 	}
-&log_request($loghost, $authuser, $reqline, $_[0], &byte_count())
+&log_request($loghost, $authuser, $reqline, $code, &byte_count())
 	if ($reqline);
-&log_error($_[1], $_[2] ? " : $_[2]" : "");
+&log_error($msg, $body ? " : $body" : "") if (!$noerr);
 shutdown(SOCK, 1);
-exit if (!$_[3]);
+exit if (!$noexit);
 }
 
 sub get_type
@@ -2923,7 +2977,6 @@ return 0;
 # by exec()ing perl with the same command line as was originally used
 sub restart_miniserv
 {
-print STDERR "restarting miniserv\n";
 &log_error("Restarting");
 close(SOCK);
 &close_all_sockets();
@@ -3121,11 +3174,19 @@ if ($use_ssl) {
 	Net::SSLeay::write($ssl_con, $str);
 	}
 else {
-	syswrite(SOCK, $str, length($str));
+	eval { syswrite(SOCK, $str, length($str)); };
+	if ($@ =~ /wide\s+character/i) {
+		eval { utf8::encode($str);
+		       syswrite(SOCK, $str, length($str)); };
+		}
+	if ($@) {
+		# Somehow a string come through that contains invalid chars
+		print STDERR $@,"\n";
+		for(my $i=0; my @stack = caller($i); $i++) {
+			print STDERR join(" ", @stack),"\n";
+			}
+		}
 	}
-# Intentionally introduce a small delay to avoid problems where IE reports
-# the page as empty / DNS failed when it get a large response too quickly!
-select(undef, undef, undef, .01) if ($write_data_count%10 == 0);
 $write_data_count += length($str);
 }
 
@@ -3141,9 +3202,15 @@ sub log_request
 {
 local ($host, $user, $request, $code, $bytes) = @_;
 local $headers;
+my $request_nolog = $request;
+
+# Process full request string like `POST /index.cgi?param=1 HTTP/1.1` as well
+if ($request =~ /^(POST|GET)\s+/) {
+	$request_nolog =~ s/(.*?)(\/.*?)\s+(.*)/$2/g;
+	}
 if ($config{'nolog'}) {
 	foreach my $nolog (split(/\s+/, $config{'nolog'})) {
-		return if ($request =~ /^$nolog$/);
+		return if ($request_nolog =~ /^$nolog$/);
 		}
 	}
 if ($config{'log'}) {
@@ -4010,7 +4077,7 @@ return 1;
 # Returns a random session ID number
 sub generate_random_id
 {
-local ($pass, $force_urandom) = @_;
+my ($force_urandom) = @_;
 local $sid;
 if (!$bad_urandom) {
 	# First try /dev/urandom, unless we have marked it as bad
@@ -4020,27 +4087,28 @@ if (!$bad_urandom) {
 		my $tmpsid;
 		if (read(RANDOM, $tmpsid, 16) == 16) {
 			$sid = lc(unpack('h*',$tmpsid));
+			if ($sid !~ /^[0-9a-fA-F]{32}$/) {
+				$sid = 'bad';
+				}
 			}
 		close(RANDOM);
 		}
 	alarm(0);
 	}
 if (!$sid && !$force_urandom) {
-	$sid = time();
-	local $mul = 1;
-	foreach $c (split(//, &unix_crypt($pass, substr($$, -2)))) {
-		$sid += ord($c) * $mul;
-		$mul *= 3;
-		}
+	my $offset = int(rand(2048));
+	my @charset = ('0' ..'9', 'a' .. 'f');
+	$sid = join('', map { $charset[rand(@charset)] } 1 .. 4096);
+	$sid = substr($sid, $offset, 32);
 	}
 return $sid;
 }
 
-# handle_login(username, ok, expired, not-exists, password, [no-test-cookie])
+# handle_login(username, ok, expired, not-exists, password, [no-test-cookie], [no-log])
 # Called from handle_session to either mark a user as logged in, or not
 sub handle_login
 {
-local ($vu, $ok, $expired, $nonexist, $pass, $notest) = @_;
+local ($vu, $ok, $expired, $nonexist, $pass, $notest, $nolog) = @_;
 $authuser = $vu if ($ok);
 
 # check if the test cookie is set
@@ -4055,7 +4123,7 @@ if ($header{'cookie'} !~ /testing=1/ && $vu &&
 # check with main process for delay
 if ($config{'passdelay'} && $vu) {
 	print DEBUG "handle_login: requesting delay vu=$vu acptip=$acptip ok=$ok\n";
-	print $PASSINw "delay $vu $acptip $ok\n";
+	print $PASSINw "delay $vu $acptip $ok $nolog\n";
 	<$PASSOUTr> =~ /(\d+) (\d+)/;
 	$blocked = $2;
 	sleep($1);
@@ -4066,7 +4134,7 @@ if ($ok && (!$expired ||
 	    $config{'passwd_mode'} == 1)) {
 	# Logged in OK! Tell the main process about
 	# the new SID
-	local $sid = &generate_random_id($pass);
+	local $sid = &generate_random_id();
 	print DEBUG "handle_login: sid=$sid\n";
 	print $PASSINw "new $sid $authuser $acptip\n";
 
@@ -4092,10 +4160,6 @@ if ($ok && (!$expired ||
 		&write_data("HTTP/1.0 302 Moved Temporarily\r\n");
 		&write_data("Date: $datestr\r\n");
 		&write_data("Server: $config{'server'}\r\n");
-		local $ssl = $use_ssl || $config{'inetd_ssl'};
-		$portstr = $port == 80 && !$ssl ? "" :
-			   $port == 443 && $ssl ? "" : ":$port";
-		$prot = $ssl ? "https" : "http";
 		local $sec = $ssl ? "; secure" : "";
 		if (!$config{'no_httponly'}) {
 			$sec .= "; httpOnly";
@@ -4149,15 +4213,26 @@ else {
 				$expired ? 'expiredpass' : 'wrongpass',
 			   $loghost, $localip);
 	$failed_user = $vu;
+	$failed_pass = $pass;
+	$failed_save = $in{'save'};
+	$failed_twofactor_attempt = $in{'failed_twofactor_attempt'} || 0;
+	$failed_twofactor_attempt++;
 	$request_uri = $in{'page'};
 	$already_session_id = undef;
 	$method = "GET";
 	$authuser = $baseauthuser = undef;
+	
+	# If login page is simply reloaded, with `session_login.cgi` in URL,
+	# without having any parameters sent (user set to empty), don't log 
+	# false positive attempt with `Invalid login as  from IP` to syslog
+	$nolog = 1 if (!$vu);
+
+	# Send to log if allowed
 	syslog("crit", "%s",
 		($nonexist ? "Non-existent" :
 		 $expired ? "Expired" : "Invalid").
 		" login as $vu from $loghost")
-		if ($use_syslog);
+		if ($use_syslog && !$nolog);
 	}
 return undef;
 }
@@ -4381,6 +4456,23 @@ local $ssl_ctx;
 eval { $ssl_ctx = Net::SSLeay::new_x_ctx() };
 $ssl_ctx ||= Net::SSLeay::CTX_new();
 $ssl_ctx || die "Failed to create SSL context : $!";
+my @extracas = $extracas && $extracas ne "none" ? split(/\s+/, $extracas) : ();
+
+# Validate cert files
+if (!-r $keyfile) {
+	print STDERR "SSL key file $keyfile does not exist\n";
+	return undef;
+	}
+if ($certfile && !-r $certfile) {
+	print STDERR "SSL cert file $certfile does not exist\n";
+	return undef;
+	}
+foreach my $p (@extracas) {
+	if (!-r $p) {
+		print STDERR "SSL CA file $p does not exist\n";
+		return undef;
+		}
+	}
 
 # Setup PFS, if ciphers are in use
 if (-r $config{'dhparams_file'}) {
@@ -4411,11 +4503,8 @@ if ($client_certs) {
 			$ssl_ctx, &Net::SSLeay::VERIFY_PEER, \&verify_client);
 		}
 	}
-if ($extracas && $extracas ne "none") {
-	foreach my $p (split(/\s+/, $extracas)) {
-		Net::SSLeay::CTX_load_verify_locations(
-			$ssl_ctx, $p, "");
-		}
+foreach my $p (@extracas) {
+	Net::SSLeay::CTX_load_verify_locations($ssl_ctx, $p, "");
 	}
 
 Net::SSLeay::CTX_use_PrivateKey_file(
@@ -4481,7 +4570,6 @@ if ($config{'ssl_cipher_list'}) {
 	}
 Net::SSLeay::set_fd($ssl_con, fileno($sock));
 if (!Net::SSLeay::accept($ssl_con)) {
-	print STDERR "Failed to initialize SSL connection\n";
 	return undef;
 	}
 return $ssl_con;
@@ -4574,25 +4662,25 @@ foreach my $v (keys %vital) {
 		$config{$v} = $vital{$v};
 		}
 	}
+$config_file =~ /^(.*)\/[^\/]+$/;
+my $config_dir = $1;
+$config{'pidfile'} =~ /^(.*)\/[^\/]+$/;
+my $var_dir = $1;
 if (!$config{'sessiondb'}) {
-	$config{'pidfile'} =~ /^(.*)\/[^\/]+$/;
-	$config{'sessiondb'} = "$1/sessiondb";
+	$config{'sessiondb'} = "$var_dir/sessiondb";
 	}
 if (!$config{'errorlog'}) {
 	$config{'logfile'} =~ /^(.*)\/[^\/]+$/;
 	$config{'errorlog'} = "$1/miniserv.error";
 	}
 if (!$config{'tempbase'}) {
-	$config{'pidfile'} =~ /^(.*)\/[^\/]+$/;
-	$config{'tempbase'} = "$1/cgitemp";
+	$config{'tempbase'} = "$var_dir/cgitemp";
 	}
 if (!$config{'blockedfile'}) {
-	$config{'pidfile'} =~ /^(.*)\/[^\/]+$/;
-	$config{'blockedfile'} = "$1/blocked";
+	$config{'blockedfile'} = "$var_dir/blocked";
 	}
 if (!$config{'webmincron_dir'}) {
-	$config_file =~ /^(.*)\/[^\/]+$/;
-	$config{'webmincron_dir'} = "$1/webmincron/crons";
+	$config{'webmincron_dir'} = "$config_dir/webmincron/crons";
 	}
 if (!$config{'webmincron_last'}) {
 	$config{'logfile'} =~ /^(.*)\/[^\/]+$/;
@@ -4605,6 +4693,9 @@ if (!$config{'webmincron_wrapper'}) {
 if (!$config{'twofactor_wrapper'}) {
 	$config{'twofactor_wrapper'} = $config{'root'}."/acl/twofactor.pl";
 	}
+$config{'restartflag'} ||= $var_dir."/restart-flag";
+$config{'reloadflag'} ||= $var_dir."/reload-flag";
+$config{'stopflag'} ||= $var_dir."/stop-flag";
 }
 
 # read_users_file()

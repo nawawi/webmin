@@ -1,14 +1,21 @@
+<<<<<<< HEAD
 main_return=Grįžti į $1
 main_homepage=Pirmas puslapis
 main_feedback=Atsiliepimai..
 main_switch=Jungtis kitu vartotoju..
 main_logout=Išsiregistruoti
+=======
+main_homepage=Pirmas puslapis
+main_feedback=Atsiliepimai..
+main_switch=Jungtis kitu vartotoju..
+main_logout=Iðsiregistruoti
+>>>>>>> upstream/master
 main_version=Versija $1 sistemoje $2 ($3)
 main_title=Webmin $1 sistemoje $2 ($3)
 main_title2=Webmin
 main_none=Jums neleista naudotis Webmin moduliais.
 main_skill=Lygis
-
+main_return=Gráþti á $1
 category_servers=Servisai
 category_hardware=Hardware
 category_system=Sistema
@@ -17,28 +24,38 @@ category_net=Tinklas
 category_syslet=Syslets
 category_cluster=Klasteris
 category_info=Info
-category_=Kita
-
 header_webmin=Webmin indeksas
 header_module=Modulio indeksas
 header_help=Pagalba..
 header_config=Modulio nustatymai
 header_servers=Webmin serveriai
+<<<<<<< HEAD
 
 index=indeksą
 yes=Taip
 no=Ne
 save=Išsaugoti
+=======
+index=indeksà
+yes=Taip
+no=Ne
+save=Iðsaugoti
+>>>>>>> upstream/master
 create=Sukurti
 delete=Trinti
 find=Rasti
 error=Klaida
+<<<<<<< HEAD
 efilewrite=Įrašymo klaida į $1 : $2
+=======
+efilewrite=Áraðymo klaida á $1 : $2
+>>>>>>> upstream/master
 default=Nutylint
 modify=Pakeisti
 reset=Resetas
 ok=OK
 cancel=Atsisakyti
+<<<<<<< HEAD
 helpsearch=Dokumentų paieška..
 switch_remote_euser=Unix sisteminis vartotojas $1 neegzistuoja.
 programname=Webmin
@@ -46,29 +63,48 @@ programname=Webmin
 chooser_title1=Pasirinkite failą..
 chooser_title2=Pasirinkite katalogą..
 chooser_dir=Vienas iš $1 katalogų
+=======
+helpsearch=Dokumentø paieðka..
+switch_remote_euser=Unix sisteminis vartotojas $1 neegzistuoja.
+programname=Webmin
+chooser_title1=Pasirinkite failà..
+chooser_title2=Pasirinkite katalogà..
+chooser_dir=Vienas ið $1 katalogø
+>>>>>>> upstream/master
 chooser_ok=Vykdyti
-
 users_title1=Pasirinkite vartotojus..
+<<<<<<< HEAD
 users_title2=Pasirinkite vartotoją..
+=======
+users_title2=Pasirinkite vartotojà..
+>>>>>>> upstream/master
 users_sel=Pasirinkti vartotojai
 users_all=Visi Vartotojai
 users_ok=Vykdyti
 users_cancel=Atsisakyti
 users_clear=Trinti
-
 groups_title1=Pasirinkti grupes..
+<<<<<<< HEAD
 groups_title2=Pasirinkti grupę..
+=======
+groups_title2=Pasirinkti grupæ..
+>>>>>>> upstream/master
 groups_all=Visas grupes
 groups_sel=Pasirinktas grupes
 groups_ok=Vykdyti
 groups_cancel=Atsisakyti
 groups_clear=Trinti
+<<<<<<< HEAD
 
 config_ecannot=Jums apribotos teisės konfigūruoti šį modulį.
+=======
+config_ecannot=Jums apribotos teisës konfigûruoti ðá modulá.
+>>>>>>> upstream/master
 config_title=Nustatymai
 config_dir=Modulis $1
 config_header=Nustatymai moduliui $1
 config_none=Nepasirinkta
+<<<<<<< HEAD
 config_eaccess=Jums neleista naudotis šiuo moduliu.
 config_err=Konfigūracijos išsaugojimo klaida
 config_nochange=Nekeisti
@@ -120,26 +156,80 @@ acl_feedback2=Taip
 acl_feedback1=Taip, bet be konfigūracinių failų
 acl_feedback0=Ne
 acl_rpc=Gali priimti RPC užklausas?
+=======
+config_eaccess=Jums neleista naudotis ðiuo moduliu.
+config_err=Konfigûracijos iðsaugojimo klaida
+config_nochange=Nekeisti
+config_setto=Pakeisti á
+help_err=Pagalbos iðvedimo klaida
+help_epath=Nëra arba nenurodytas kelias iki pagalbos failø
+help_efile=Pagalbos failo nuskaitymo klaida $1
+help_eheader=Nenustatytas &lt;header&gt; parametras
+help_einclude=Klaida áterpiant $1
+help_eif=$1 suklysta : $2
+help_eexec=$1 suklysta : $2
+referer_title=Saugumo sistemos perspëjimas
+referer_warn=<b>Perspëjimas!</b> Webmin nustatë, kad programa $2 buvo adresuota ið internetinio adreso $1, kuris nëra Webmin serverio adresas. Gali bûti, kad kas nors bando ásilauþti á jûsø serverá, bandydamas paleisti pavojingà komandà.
+referer_warn_unknown=<b>Perspëjimas!</b> Webmin nustatë kad programa $1 buvo adresuota ið neþinomo internetinio adreso, kuris nëra Webmin serverio adresas. Gali bûti, kad kas nors bando ásilauþti á jûsø serverá, bandydamas paleisti pavojingà komandà.
+session_header=Registruotis Webmin
+session_mesg=Jûs turite ávesti vartotojo vardà ir slaptaþodá, norit registruotis Webmin serveryje $1.
+session_mesg2=Registracijai reikia ávesti vardà ir slaptaþodá.
+session_user=Vartotojo vardas
+session_pass=Slaptaþodis
+session_login=Registruoti
+session_clear=Trinti
+session_failed=Registracijos klaida. Bandykite dar kartà.
+session_logout=Iðsiregistravote sëkmingai. Naudokite þemiau esanèià formà pakartotinai registracijai.
+session_timed_out=Registracijos sesija atmesta po $1 minuèiø pertraukos.
+session_save=Ásiminti registracijos parametrus?
+acl_root=Root'o katalogas failø pasirinkimui
+acl_home=Vartotojø namø katalogai
+acl_uedit=Matomas vartotojø sàraðas
+acl_uedit_all=Visi vartotojai
+acl_uedit_none=Be vartotojø
+acl_uedit_only=Tiktai vartotojai
+acl_uedit_except=Visi iðskyrus vartotojams
+acl_uedit_uid=Vartotojai su  UID reikðmëmis
+acl_uedit_group=Vartotojai priklausantys grupei
+acl_gedit=Matomas grupiø sàraðas
+acl_gedit_all=Visoms grupëms
+acl_gedit_none=Grupëms ne
+acl_gedit_only=Tiktai grupes
+acl_gedit_except=Visi iðskyrus grupes
+acl_gedit_gid=Grupës su GID reikðmëmis
+acl_feedback=Gali siøsti atsiliepimus paðtu?
+acl_feedback2=Taip
+acl_feedback1=Taip, bet be konfigûraciniø failø
+acl_feedback0=Ne
+acl_rpc=Gali priimti RPC uþklausas?
+>>>>>>> upstream/master
 acl_rpc2=Tiktai <tt>root</tt> arba <tt>admin</tt>
 acl_rpc1=Taip
 acl_rpc0=Ne
-
 month_1=Sausis
 month_2=Vasaris
 month_3=Kovas
 month_4=Balandis
+<<<<<<< HEAD
 month_5=Gegužė
 month_6=Birželis
 month_7=Liepa
 month_8=Rugpjūtis
 month_9=Rugsėjis
+=======
+month_5=Geguþë
+month_6=Birþelis
+month_7=Liepa
+month_8=Rugpjûtis
+month_9=Rugsëjis
+>>>>>>> upstream/master
 month_10=Spalis
 month_11=Lapkritis
 month_12=Gruodis
-
 day_0=Sekmadienis
 day_1=Pirmadienis
 day_2=Antradienis
+<<<<<<< HEAD
 day_3=Trečiadienis
 day_4=Ketvirtadienis
 day_5=Penktadienis
@@ -158,22 +248,45 @@ smonth_10=Spalio
 smonth_11=Lapkričio
 smonth_12=Gruodžio
 
+=======
+day_3=Treèiadienis
+day_4=Ketvirtadienis
+day_5=Penktadienis
+day_6=Ðeðtadienis
+smonth_1=Sausio
+smonth_2=Vasario
+smonth_3=Kovo
+smonth_4=Balandþio
+smonth_5=Geguþës
+smonth_6=Birþelio
+smonth_7=Liepos
+smonth_8=Rugpjûèio
+smonth_9=Rugsëjo
+smonth_10=Spalio
+smonth_11=Lapkrièio
+smonth_12=Gruodþio
+>>>>>>> upstream/master
 sday_0=Sek
 sday_1=Pir
 sday_2=Ant
 sday_3=Tre
 sday_4=Ket
 sday_5=Pen
+<<<<<<< HEAD
 sday_6=Šeš
 
 emodule=Uždrausta: Vartotojui $1 yra ribojamas naudojimas  $2 moduliu
 elock_tries=Nespėta užblokuoti failo $1 per $2 minučių
 
+=======
+sday_6=Ðeð
+emodule=Uþdrausta: Vartotojui $1 yra ribojamas naudojimas  $2 moduliu
+>>>>>>> upstream/master
 skill_high=Ekspertas
 skill_medium=Profesionalas
 skill_low=Naujokas
-
 feedback_title=Webmin atsiliepimai
+<<<<<<< HEAD
 feedback_desc=Ši forma jums leis pranešti apie pasitaikiusią klaidą, ar pastabas webmin programuotojams atsižvelgiant į tai kokios jums iškilo problemos ar pasigedote kokių nors savybių. Kai paspausite siųsti, aprašymas,  užpildytas formoje, bus išsiųstas adresu $1.
 feedback_desc2=Atsiliepimai bus nusiųsti  Usermin programuotojams, ne sistemos administratoriui, ne interneto ar paslaugų tiekėjui. Prašau rašyti atsiliepimus anglų kalba, net jei jūsų webmin pasirinkta kalba ne anglų.
 feedback_header=Atsiliepimai
@@ -206,5 +319,34 @@ progress_size=Atsiustas(a) $1 ($2 baitų) ..
 progress_nosize=Atsiustas(a) $1 ..
 progress_data=Priimta $1 baitų ($2 %)
 progress_data2=Priimta $1 baitų
+=======
+feedback_desc=Ði forma jums leis praneðti apie pasitaikiusià klaidà, ar pastabas webmin programuotojams atsiþvelgiant á tai kokios jums iðkilo problemos ar pasigedote kokiø nors savybiø. Kai paspausite siøsti, apraðymas,  uþpildytas formoje, bus iðsiøstas adresu $1.
+feedback_desc2=Atsiliepimai bus nusiøsti  Usermin programuotojams, ne sistemos administratoriui, ne interneto ar paslaugø tiekëjui. Praðau raðyti atsiliepimus anglø kalba, net jei jûsø webmin pasirinkta kalba ne anglø.
+feedback_header=Atsiliepimai
+feedback_name=Jûsø vardas
+feedback_email=Jûsø e-paðtas
+feedback_module=Pasirinkite modulá
+feedback_all=Visi moduliai
+feedback_text=Problemos apraðymas arba pasiûlymai
+feedback_os=Iðsiøsti paðtu ir apraðymà kokioje operacijø sistemoje dirbate?
+feedback_osdesc=Jei pasirinksite tai automatiðkai bus áterpta operacijø sistemos vardas bei versija.
+feedback_config=Áterpti modulio konfigûracijà?
+feedback_configdesc=Jei pasirinksite, tada prie laiðko bus prikabinti konfigûraciniai failai ir informacija apie vartotojus: vardai, grupës <tt>/etc/passwd</tt> bei <tt>/etc/shadow</tt> failai.
+feedback_attach=Prikabinti papildomus failus
+feedback_send=Siøsti atsiliepimus
+feedback_mailserver=Siøsti per SMTP serverá
+feedback_mailserver_def=Lokaliu sendmail'u
+feedback_err=Nepavyko iðsiøsti atsiliepimø
+feedback_emodule=Jûs norite prikabinti konfigûracijos failus, bet nepasirinkote modulio.
+feedback_emodule2=Pasirinktas modulis neegzistuoja
+feedback_econfig=Jums neleista naudotis pasirinku moduliu.
+feedback_via=Siøsti atsiliepimus á $1 per SMTP serverá $2
+feedback_prog=Siøsti atsiliepimus per $1 naudojant paðto programà $2
+feedback_esend=Nepavyko iðsiøsti per lokalø SMTP.
+feedback_to=Siøsti atsiliepimus adresu
+feedback_enoto=Neávestas adresas kur siøsti atsiliepimus
+feedback_ecannot=Jums neleista siøsti atsiliepimø
+feedback_ecannot2=Jums neleista siøsti atsiliepimø su konfigûracija
+progress_nosize=Atsiustas(a) $1 ..
+>>>>>>> upstream/master
 progress_done=.. atsiuntimas baigtas.
-

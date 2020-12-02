@@ -23,4 +23,7 @@ log_delete_record=Tog borg $1 post $2 i zon $3
 log_create_record=Lade till $1 post $2 i zon $3
 log_modify_record=Modifierade $1 post $2 i zon $3
 log_boot=Skapade fil för primära inställningar
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master

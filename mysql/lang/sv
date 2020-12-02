@@ -19,15 +19,19 @@ index_ever=Du verkar ha fel version av klientprogrammet $1 för MySQL. Webmin st
 index_nouser=Ditt Webmin-konto är inställt för att koppla upp sig mot MySQL-server som användare $1, men denna användare får inte komma åt servern.
 index_db=Databasnamn
 index_tables=Tabeller
-
 login_err=Det gick inte att logga in
 login_ecannot=Du får inte ändra inställningarna för inloggning på databasen
 login_elogin=Administratörskontot finns inte
 login_epass=Namnet eller lösenordet för administratören var felaktigt.
+<<<<<<< HEAD
 
 stop_err=Det gick inte att stanna databasen
 start_err=Det gick inte att starta databasen
 
+=======
+stop_err=Det gick inte att stanna databasen
+start_err=Det gick inte att starta databasen
+>>>>>>> upstream/master
 dbase_title=Ändra databas
 dbase_tables=Databastabell
 dbase_add=Skapa ny tabell
@@ -38,16 +42,24 @@ dbase_none=Denna databas har inga tabeller
 dbase_fields=Fält:
 dbase_return=tabellista
 dbase_ecannot=Du får inte ändra denna databas
+<<<<<<< HEAD
 dbase_table=Tabellnamn
 dbase_rows=Rader
 dbase_cols=Fält
 
+=======
+dbase_rows=Rader
+dbase_cols=Fält
+>>>>>>> upstream/master
 ddrop_err=Det gick inte att ta bort databasen
 ddrop_title=Ta bort databas
 ddrop_rusure=Vill du verkligen ta bort databas $1? $2 tabeller med $3 rader kommer att raderas.
 ddrop_mysql=Detta är master-databasen. Om du tar bort den kommer din MySQL-server förmodligen inte att gå att använda.
 ddrop_ok=Ta bort databasen
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 table_title=Ändra tabell
 table_title2=Skapa ny tabell
 table_header=Tabell $1 i databas $2
@@ -76,12 +88,18 @@ table_efield='$1' är inte ett giltigt fältnamn
 table_etype=Du har inte angivit någon typ för fält $1
 table_esize=Du har inte angivit någon typstorlek för fält $1
 table_enone=Du har inte angivit något startfält
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 tdrop_err=Det gick inte att ta bort tabellen
 tdrop_title=Ta bort tabellen
 tdrop_rusure=Vill du verkligen ta bort tabell $1 i databas $2? $3 datarader kommer att raderas.
 tdrop_ok=Ta bort tabellen
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 field_title1=Lägg till fält
 field_title2=Ändra fält
 field_in=I tabell $1 i databas $2
@@ -92,10 +110,17 @@ field_size=Typlängd
 field_enum=Numeriska värden
 field_dual=Längd och decimaler
 field_opts=Tillval för typ
+<<<<<<< HEAD
 field_none=Inga
 field_unsigned=Utan tecken
 field_zerofill=Fyll med nollor
 field_auto=Räkna upp automatiskt?
+=======
+field_auto=Räkna upp automatiskt?
+field_none=Inga
+field_unsigned=Utan tecken
+field_zerofill=Fyll med nollor
+>>>>>>> upstream/master
 field_ascii=Versal/gemen tolkas lika
 field_binary=Versal/gemen tolkas olika
 field_null=Tomt fält tillåtet?
@@ -106,29 +131,42 @@ field_esize='$1' är inte en giltig fältstorlek
 field_eenum=Du har inte angivit något numrerat värde
 field_efield='$1' är inte ett giltigt fältnamn
 field_ekey=Fält som tillåts vara tomma kan inte vara en del av primär nyckel 
+<<<<<<< HEAD
 
 view_title=Tabellinformation
 view_none=Denna tabell innehåller inga data
 view_pos=Raderna $1 - $2 ur $3
+=======
+view_title=Tabellinformation
+view_pos=Raderna $1 - $2 ur $3
+view_none=Denna tabell innehåller inga data
+>>>>>>> upstream/master
 view_edit=Ändra markerade rader
 view_new=Lägg till rad
 view_delete=Ta bort markerade rader
 view_nokey=Data i den här tabellen kan inte ändras eftersom den inte har någon primär nyckel
 view_all=Visa alla
 view_invert=Visa uteslutna
+<<<<<<< HEAD
 view_search=Visa rader där fält $2 matchar $1
+=======
+>>>>>>> upstream/master
 view_searchok=Sök
 view_searchhead=Sökresultat för $1 i fält $2 ...
 view_searchreset=Återställ sökningen
 view_field=Fältnamn
 view_data=Nya data
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 users_title=Användarrättigheter
 users_user=Användare
 users_host=Dator
 users_pass=Krypterat lösenord
 users_perms=Rättigheter
 users_add=Lägg till användare
+<<<<<<< HEAD
 users_priv3=Välj
 users_priv4=Lägg in
 users_priv5=Uppdatera
@@ -143,11 +181,16 @@ users_priv13=Tillåt
 users_priv14=Referenser
 users_priv15=Index
 users_priv16=Ändra
+=======
+>>>>>>> upstream/master
 users_all=Alla
 users_anon=Anonym
 users_none=Ingen
 users_return=användarlista
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 user_title1=Lägg till användare
 user_title2=Ändra användare
 user_header=Uppgifter om MySQL-användare
@@ -160,6 +203,7 @@ user_any=Vad som helst
 user_set=Sätt till ...
 user_host=Datorer
 user_perms=Rättigheter
+<<<<<<< HEAD
 user_priv3=Välj tabelldata
 user_priv4=Lägg in tabelldata
 user_priv5=Uppdatera tabelldata
@@ -178,6 +222,11 @@ user_err=Det gick inte att spara användare
 user_euser=Användarnamn saknas eller är felaktigt
 user_ehost=Tillåtna datorer saknas eller är felaktigt angivna
 
+=======
+user_err=Det gick inte att spara användare
+user_euser=Användarnamn saknas eller är felaktigt
+user_ehost=Tillåtna datorer saknas eller är felaktigt angivna
+>>>>>>> upstream/master
 dbs_title=Databasrättigheter
 dbs_db=Databaser
 dbs_user=Användare
@@ -188,6 +237,7 @@ dbs_any=Vem som helst
 dbs_empty=Du har inte definierat några databasrättigheter
 dbs_hosts=Rättigheter från dator
 dbs_add=Lägg till databasrättigheter
+<<<<<<< HEAD
 dbs_priv3=Välj
 dbs_priv4=Lägg in
 dbs_priv5=Uppdatera
@@ -202,6 +252,11 @@ dbs_all=Alla
 dbs_none=Ingen
 dbs_return=databasrättigheter
 
+=======
+dbs_all=Alla
+dbs_none=Ingen
+dbs_return=databasrättigheter
+>>>>>>> upstream/master
 db_title1=Lägg till databasrättigheter
 db_title2=Ändra databasrättigheter
 db_header=Inställningar för databasrättigheter
@@ -212,6 +267,7 @@ db_host=Datorer
 db_hosts=Rättigheter från dator
 db_any=Vilken som helst
 db_perms=Rättigheter
+<<<<<<< HEAD
 db_priv3=Välj tabelldata
 db_priv4=Lägg in tabelldata
 db_priv5=Uppdatera tabelldata
@@ -222,17 +278,23 @@ db_priv9=Dela ut rättigheter
 db_priv10=Referensoperationer
 db_priv11=Hantera index
 db_priv12=Ändra tabeller
+=======
+>>>>>>> upstream/master
 db_err=Det gick inte att spara databasrättigheter
 db_euser=Användarnamn saknas eller är felaktigt angivet
 db_ehost=Datornamn saknas eller är felaktigt angivet
 db_edb=Databasnamn saknas eller är felaktigt angivet
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 hosts_title=Datorrättigheter
 hosts_db=Databaser
 hosts_host=Datorer
 hosts_perms=Rättigheter
 hosts_any=Vilken som helst
 hosts_all=Alla
+<<<<<<< HEAD
 hosts_priv2=Välj
 hosts_priv3=Lägg till
 hosts_priv4=Uppdatera
@@ -247,11 +309,17 @@ hosts_none=Ingen
 hosts_add=Lägg till datorrättigheter
 hosts_empty=Du har inte definierat några datorrättigheter
 
+=======
+hosts_none=Ingen
+hosts_add=Lägg till datorrättigheter
+hosts_empty=Du har inte definierat några datorrättigheter
+>>>>>>> upstream/master
 host_title1=Lägg till datorrättigheter
 host_title2=Ändra datorrättigheter
 host_header=Inställningar för datorrättigheter
 host_db=Databaser
 host_any=Vilken som helst
+<<<<<<< HEAD
 host_priv2=Ange tabelldata
 host_priv3=Lägg till tabelldata
 host_priv4=Uppdatera tabelldata
@@ -265,16 +333,26 @@ host_priv11=Ändra tabeller
 host_host=Datorer
 host_perms=Rättigheter
 
+=======
+host_host=Datorer
+host_perms=Rättigheter
+>>>>>>> upstream/master
 newdb_title=Skapa databas
 newdb_header=Inställningar för ny databas
 newdb_db=Databasnamn
 newdb_table=Starttabell
 newdb_none=Ingen
+<<<<<<< HEAD
 newdb_struct=Struktur för starttabell
 newdb_err=Det gick inte att skapa databasen
 newdb_edb=Databasnamn saknas eller är felaktigt angivet
 newdb_ecannot=Du får inte lägga till databaser
 
+=======
+newdb_err=Det gick inte att skapa databasen
+newdb_edb=Databasnamn saknas eller är felaktigt angivet
+newdb_ecannot=Du får inte lägga till databaser
+>>>>>>> upstream/master
 exec_title=Utför SQL
 exec_header=Ange SQL-kommando som ska utföras på databas $1 ...
 exec_exec=Utför
@@ -289,7 +367,10 @@ exec_efile=Det finns ingen sådan lokal fil
 exec_uploadout=Utmatning från nedladdade SQL-kommandon ...
 exec_fileout=Utmatning från SQL-kommandon i filen $1 ..
 exec_noout=Det blev ingen utmatning.
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 tprivs_title=Tabellrättigheter
 tprivs_table=Tabell
 tprivs_db=Databas
@@ -303,7 +384,10 @@ tprivs_add=Lägg till rättigheter i databas:
 tprivs_norows=Du har inte definierat några tabellrättigheter
 tprivs_return=tabellrättigheter
 tprivs_none=Inga
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 tpriv_title1=Lägg till tabellrättigheter
 tpriv_title2=Ändra tabellrättigheter
 tpriv_header=Inställningar för tabellrättigheter
@@ -319,7 +403,10 @@ tpriv_err=Det gick inte att spara tabellrättigheterna
 tpriv_etable=Du har inte angivit någon tabell
 tpriv_euser=Användarnamn saknas eller är felaktigt angivet
 tpriv_ehost=Datornamn saknas eller är felaktigt angivet
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 cprivs_title=Fälträttigheter
 cprivs_field=Fält
 cprivs_table=Tabell
@@ -333,7 +420,10 @@ cprivs_add=Lägg till rättigheter i databas och tabell:
 cprivs_norows=Du har inte definierat några fälträttigheter
 cprivs_return=fälträttigheter
 cprivs_none=Inga
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 cpriv_title1=Lägg till fälträttigheter
 cpriv_title2=Ändra fälträttigheter
 cpriv_header=Inställningar för fälträttigheter
@@ -349,16 +439,25 @@ cpriv_err=Det gick inte att spara fälträttigheterna
 cpriv_etable=Du har inte angivit något fält
 cpriv_euser=Användarnamn saknas eller är felaktigt angivet
 cpriv_ehost=Datornamn saknas eller är felaktigt angivet
+<<<<<<< HEAD
 
 esql=SQL $1 misslyckades: $2
 perms_ecannot=Du får inte ändra rättigheter
 perms_edb=Du får bara ändra rättigheter för dina egna databaser
 
+=======
+esql=SQL $1 misslyckades: $2
+perms_ecannot=Du får inte ändra rättigheter
+perms_edb=Du får bara ändra rättigheter för dina egna databaser
+>>>>>>> upstream/master
 acl_dbs=Databaser som denna användare får hantera
 acl_dall=Alla databaser
 acl_dsel=Angivna ...
 acl_create=Kunna skapa nya databaser?
+<<<<<<< HEAD
 acl_backup=Kunna säkerhetskopiera databaser?
+=======
+>>>>>>> upstream/master
 acl_delete=Kunna ta bort databaser?
 acl_stop=Kunna stanna och starta MySQL-servern?
 acl_perms=Kunna ändra rättigheter?
@@ -367,7 +466,10 @@ acl_login=Logga in på MySQL som
 acl_user_def=Användarnamn från modulinställningarna
 acl_user=Användarnamn
 acl_pass=lösenord
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/master
 log_start=Startade MySQL-server
 log_stop=Stannade MySQL-server
 log_db_create=Lade till databas $1
@@ -409,12 +511,18 @@ log_backup=Säkerhetskopierade databas $1
 log_backup_l=Säkerhetskopierade databas $1 till fil $2
 log_execupload=Utförde SQL-kommandon från nedladdad fil
 log_execfile=Utförde SQL-kommandon från fil $1
+<<<<<<< HEAD
 
 backup_title=Säkerhetskopiering av databas
 backup_ecannot=Du får inte säkerhetskopiera databaser
 backup_edump=MySQL-backupprogrammet $1 går inte att hitta på systemet. Dina <a href='$2'>modulinställningar</a> kanske är felaktiga.
 backup_desc=Med hjälp av detta formulär kan du göra en säkerhetskopia av databasen $1 i form av en fil med SQL-uttryck. Använd formuläret Utför SQL för att köra kommandona i filen om du vill läsa tillbaka data från säkerhetskopian.
 backup_header=Inställningar för databaskopia
+=======
+backup_title=Säkerhetskopiering av databas
+backup_edump=MySQL-backupprogrammet $1 går inte att hitta på systemet. Dina <a href='$2'>modulinställningar</a> kanske är felaktiga.
+backup_desc=Med hjälp av detta formulär kan du göra en säkerhetskopia av databasen $1 i form av en fil med SQL-uttryck. Använd formuläret Utför SQL för att köra kommandona i filen om du vill läsa tillbaka data från säkerhetskopian.
+>>>>>>> upstream/master
 backup_file=Gör säkerhetskopia till fil
 backup_where=Säkerhetskopiera endast rader som matchar <tt>where</tt>-villkoret
 backup_none=Alla rader
