@@ -278,9 +278,11 @@ if ($use_ssl) {
 		$Net::SSLeay::ssl_version = $config{'ssl_version'};
 		}
 	$client_certs = 0 if (!-r $config{'ca'} || !%certs);
-	$ssl_contexts{"*"} = &create_ssl_context($config{'keyfile'},
-						 $config{'certfile'},
-						 $config{'extracas'});
+	$ctx = &create_ssl_context($config{'keyfile'},
+				   $config{'certfile'},
+				   $config{'extracas'});
+	$ctx || die "Failed to create default SSL context";
+	$ssl_contexts{"*"} = $ctx;
 	foreach $ipkey (@ipkeys) {
 		$ctx = &create_ssl_context($ipkey->{'key'}, $ipkey->{'cert'},
 				   $ipkey->{'extracas'} || $config{'extracas'});
@@ -2415,6 +2417,9 @@ if (&get_type($full) eq "internal/cgi" && $validated != 4) {
 	$ENV{"SSL_USER"} = $peername if ($validated == 2);
 	$ENV{"ANONYMOUS_USER"} = "1" if ($validated == 3 || $validated == 4);
 	$ENV{"DOCUMENT_ROOT"} = $roots[0];
+	$ENV{"THEME_ROOT"} = "$roots[0]/" .
+	                     ($config{"preroot_$authuser"} ||
+	                      $config{"preroot"});
 	$ENV{"DOCUMENT_REALROOT"} = $realroot;
 	$ENV{"GATEWAY_INTERFACE"} = "CGI/1.1";
 	$ENV{"SERVER_PROTOCOL"} = "HTTP/1.0";
@@ -4507,12 +4512,16 @@ foreach my $p (@extracas) {
 	Net::SSLeay::CTX_load_verify_locations($ssl_ctx, $p, "");
 	}
 
-Net::SSLeay::CTX_use_PrivateKey_file(
-	$ssl_ctx, $keyfile,
-	&Net::SSLeay::FILETYPE_PEM) || die "Failed to open SSL key $keyfile";
-Net::SSLeay::CTX_use_certificate_file(
-	$ssl_ctx, $certfile || $keyfile,
-	&Net::SSLeay::FILETYPE_PEM) || die "Failed to open SSL cert $certfile";
+if (!Net::SSLeay::CTX_use_PrivateKey_file($ssl_ctx, $keyfile,
+					  &Net::SSLeay::FILETYPE_PEM)) {
+	print STDERR "Failed to open SSL key $keyfile\n";
+	return undef;
+	}
+if (!Net::SSLeay::CTX_use_certificate_file($ssl_ctx, $certfile || $keyfile,
+					   &Net::SSLeay::FILETYPE_PEM)) {
+	print STDERR "Failed to open SSL cert ".($certfile || $keyfile)."\n";
+	return undef;
+	}
 
 if ($config{'no_ssl2'}) {
 	eval 'Net::SSLeay::CTX_set_options($ssl_ctx,
@@ -6295,6 +6304,9 @@ if (!$pid) {
 	$ENV{"SERVER_PORT"} = $config{'port'};
 	$ENV{"WEBMIN_CRON"} = 1;
 	$ENV{"DOCUMENT_ROOT"} = $root0;
+	$ENV{"THEME_ROOT"} = "$root0/" .
+	                     ($config{"preroot_$ENV{'REMOTE_USER'}"} ||
+	                      $config{"preroot"});
 	$ENV{"DOCUMENT_REALROOT"} = $root0;
 	$ENV{"MINISERV_CONFIG"} = $config_file;
 	$ENV{"HTTPS"} = "ON" if ($use_ssl);
@@ -6404,4 +6416,10 @@ while(1) {
 	last if ($buf eq "\n");
 	}
 return $line;
+}
+
+sub getenv
+{
+    my ($key) = @_;
+    return $ENV{ uc($key) } || $ENV{ lc($key) };
 }

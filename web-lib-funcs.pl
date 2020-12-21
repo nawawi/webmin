@@ -1348,8 +1348,10 @@ sub load_theme_library
 return if (!$current_theme || $loaded_theme_library++);
 for(my $i=0; $i<@theme_root_directories; $i++) {
 	if ($theme_configs[$i]->{'functions'}) {
-		do $theme_root_directories[$i]."/".
-		   $theme_configs[$i]->{'functions'};
+		my @theme_funcs = split(/\s+/, $theme_configs[$i]->{'functions'});
+		foreach my $theme_func (@theme_funcs) {
+			do "$theme_root_directories[$i]/$theme_func";
+			}
 		}
 	}
 }
@@ -3677,6 +3679,7 @@ my @OLDINC = @INC;
 my $mdir = &module_root_directory($mod);
 $mdir =~ /^(.*)$/; # untaint, part 1
 $mdir = $1; 	   # untaint, part 2
+$mdir && -d $mdir || &error("Module $mod does not exist");
 @INC = &unique($mdir, @INC);
 -d $mdir || &error("Module $mod does not exist");
 if (!&get_module_name() && $mod) {
@@ -8017,12 +8020,14 @@ if ($_[0] == 2) {
 	if ($_[1]) {
 		$progress_size = $_[1];
 		$progress_step = int($_[1] / 10);
-		print &text('progress_size2', $progress_callback_url,
+		print &text('progress_size2',
+			    &html_escape($progress_callback_url),
 			    &nice_size($progress_size)),"<br>\n";
 		}
 	else {
 		$progress_size = undef;
-		print &text('progress_nosize', $progress_callback_url),"<br>\n";
+		print &text('progress_nosize',
+			    &html_escape($progress_callback_url)),"<br>\n";
 		}
 	$last_progress_time = $last_progress_size = undef;
 	}
@@ -8062,7 +8067,8 @@ elsif ($_[0] == 5) {
 elsif ($_[0] == 6) {
 	# URL is in cache
 	$progress_callback_url = $_[1];
-	print &text('progress_incache', $progress_callback_url),"<br>\n";
+	print &text('progress_incache',
+		    &html_escape($progress_callback_url)),"<br>\n";
 	}
 }
 
@@ -10097,7 +10103,8 @@ if ($uinfo[8] ne "/bin/sh" && $uinfo[8] !~ /\/bash$/ && $env < 2) {
 		$shellarg = " -m";
 		}
 	}
-my $rv = "su".($env == 1 || $env == 3 ? " -" : "").$shellarg.
+my $su = &has_command("su") || "su";
+my $rv = $su.($env == 1 || $env == 3 ? " -" : "").$shellarg.
 	 " ".quotemeta($user)." -c ".quotemeta(join(" ", @args));
 return $rv;
 }
@@ -10246,6 +10253,117 @@ my ($file, $data) = @_;
 &open_tempfile(FILE, ">$file");
 &print_tempfile(FILE, $data);
 &close_tempfile(FILE);
+}
+
+=head2 read_file_contents_limit(file, limit, [opts])
+
+Given a filename, returns its partial content with limit in bytes,
+by default collected from both beginning and end of the file.
+Effective for reading super large files partially.
+
+* Options is a hash reference with
+  - [head]    : Head the file only and just return beginning bytes
+  - [tail]    : Tail the file only and just return ending bytes
+  - [reverse] : Reverse line output
+
+* Returns a hash reference with :
+  - 'error'   : error message if file cannot be read
+  - 'size'    : requested file size
+  - 'limit'   : limit to read
+  - 'chomped' : truncated data size in bytes if any
+  - 'head'    : fetched head data
+  - 'tail'    : fetched tail data
+
+* Example of usage :
+  - my %webmin_log_last =
+  		read_file_contents_limit('/var/webmin/miniserv.log', 1000, {'reverse', 1, 'tail', 1});
+
+=cut
+sub read_file_contents_limit
+{
+my ($file, $limit, $opts) = @_;
+my %return;
+my $reverse = sub {
+    return join("\n", reverse split("\n", $_[0]));
+    };
+
+# Store initial fetch limit
+$limit = int($limit);
+$return{'limit'} = $limit;
+
+# Open file
+open(my $fh, "<", $file) ||
+    ($return{'error'} = $!, return \%return);
+
+# Reading beginning of file
+my $get_head = sub {
+    my ($limit) = @_;
+    my $head;
+    read($fh, $head, $limit);
+    $head = &$reverse($head)
+      if ($opts->{'reverse'});
+    $return{'head'} = $head;
+    };
+
+# Reading end of a file
+my $get_tail = sub {
+    my ($limit) = @_;
+    my $tail;
+    seek($fh, -$limit, 2);
+    read($fh, $tail, $limit);
+    $tail = &$reverse($tail)
+      if ($opts->{'reverse'});
+    $return{'tail'} = $tail;
+    };
+
+# Get file size
+my $fsize = -s $file;
+$return{'size'} = $fsize;
+
+# Return full file if requested limit fits the size
+if ($fsize <= $limit || !$limit) {
+    my $full;
+    read($fh, $full, $fsize);
+    $full = &$reverse($full)
+      if ($opts->{'reverse'});
+    $return{'head'} = $full;
+    return \%return;
+    }
+
+# Starting and ending number of bytes to read
+my $split = !$opts->{'head'} && !$opts->{'tail'};
+
+# Make it a half of a limit, to 
+# grab both head and tail eaquly
+$limit = $limit / 2 if ($split);
+
+# Create chomped message
+my $chomped = $fsize - $limit;
+$chomped -= $limit if ($split);
+$return{'chomped'} = $chomped;
+
+# Read head
+&$get_head($limit)
+    if (!$opts->{'tail'} ||
+        ($opts->{'tail'} && $opts->{'head'}));
+
+# Return head only if requested
+if ($opts->{'head'} &&
+    !$opts->{'tail'}) {
+    return \%return;
+    }
+
+# Read tail
+&$get_tail($limit)
+    if(!$opts->{'head'} ||
+       ($opts->{'head'} && $opts->{'tail'}));
+
+# Return tail only if requested
+if ($opts->{'tail'} &&
+    !$opts->{'head'}) {
+    return \%return;
+    }
+return \%return;
 }
 
 =head2 unix_crypt(password, salt)
@@ -11092,6 +11210,45 @@ $prefix = '/' if(!$prefix);
 $referer =~ s/http.*:\/\/.*?$prefix/\//;
 $referer =~ s/\/\//\//g;
 return $referer;
+}
+
+=head2 get_webmin_email_url([module], [cgi], [force-default], [force-host])
+
+Returns the base URL for accessing this Webmin system, for use in URLs. 
+
+=cut
+sub get_webmin_email_url
+{
+my ($mod, $cgi, $def, $forcehost) = @_;
+
+# Work out the base URL
+my $url;
+if (!$def && $gconfig{'webmin_email_url'}) {
+	$url = $gconfig{'webmin_email_url'};
+	}
+else {
+	my %miniserv;
+	&get_miniserv_config(\%miniserv);
+	my $proto = $miniserv{'ssl'} ? 'https' : 'http';
+	my $port = $miniserv{'port'};
+	my $host = $forcehost || &get_system_hostname();
+	my $defport = $proto eq 'https' ? 443 : 80;
+	$url = $proto."://".$host.($port == $defport ? "" : ":".$port);
+	$url .= $gconfig{'webprefix'} if ($gconfig{'webprefix'});
+	}
+
+# Append module if needed
+$url =~ s/\/$//;
+if ($mod && $cgi) {
+	$url .= "/".$mod."/".$cgi;
+	}
+elsif ($mod) {
+	$url .= "/".$mod."/";
+	}
+elsif ($cgi) {
+	$url .= "/".$cgi;
+	}
+return $url;
 }
 
 $done_web_lib_funcs = 1;
