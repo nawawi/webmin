@@ -24,8 +24,12 @@ index_other_kernel=Kärnans dokumentation
 index_other_howto=HOWTO-dokument
 index_other_perl=Perl-moduldokumentation
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 search_efor=Det fanns ingen manualsida för detta
 search_title=Sökresultat
@@ -41,10 +45,14 @@ search_perl=Perl-modul
 search_help=Webmin-hjälp
 search_none=Det fanns ingen dokumentation som passade $1.
 search_for=efter $1
+
 howto_title=HOWTO-dokument
 howto_header=HOWTO-dokumentfil $1
 howto_epath=Ogiltig sökväg till HOWTO-dokument
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 doc_title=Paketdokumentation
 doc_header=Paketdokumentfil $1
@@ -62,6 +70,7 @@ kde_title=KDE-dokumentation
 kde_header=KDE-dokumentfil $1
 kde_epath=Ogiltig sökväg till KDE-dokumentation
 
+<<<<<<< HEAD
 =======
 doc_title=Paketdokumentation
 doc_header=Paketdokumentfil $1
@@ -75,6 +84,8 @@ kernel_epath=Ogiltig sökväg till kärnans dokumentation
 kde_title=KDE-dokumentation
 kde_header=KDE-dokumentfil $1
 kde_epath=Ogiltig sökväg till KDE-dokumentation
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 perl_title=Perl-modul
 perl_header=Dokumentation för Perl-modul $1

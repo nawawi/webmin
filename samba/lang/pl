@@ -268,6 +268,7 @@ index_printershare=drukarki sieciowej
 index_shareconf=konfiguracji zasobu
 index_version=Wersja Samba $1
 index_samba=Samba
+
 index_sharename=Nazwa zasobu
 index_path=Ścieżka
 index_security=Bezpieczeństwo
@@ -386,12 +387,14 @@ misc_clienttime=Różnica czasu klienta
 misc_debug=Poziom logowania
 =======
 index_delete=Usuń wybrane udziały
+
 config_mins=min.
 config_secs=sek.
 config_bytes=bajtów
 config_never=Nigdy
 config_all=Wszystkie
 config_neither=Żaden
+
 global_title=Konfiguracja ogólna
 global_unixnetwork=Sieć Uniksa
 global_winnetwork=Sieć Windows
@@ -404,6 +407,7 @@ global_password=Hasła zaszyfrowane
 global_users=Użytkownicy Samba
 global_group=Grupy Samba
 global_bind=Opcje Winbind
+
 error_nosamba=Nie znaleziono programu serwera Samby <tt>$1</tt>. Samba nie jest zainstalowana w Twoim systemie lub Twoja <a href="$2">konfiguracja modułu</a> jest nieprawidłowa.
 error_version=Webminowi nie udało się uzyskać wersji Twojego programu serwera Samby <tt>$1</tt>. Sprawdż swoją <a href="$2">konfigurację modułu</a>, aby się upewnić, że ścieżka jest prawidłowa.
 error_config=Nie znaleziono pliku konfiguracyjnego $1. Najprawdopodobniej w Twoim systemie nie zainstalowano Samby lub Twoja <a href="$2">konfiguracja modułu</a> jest nieprawidłowa.
@@ -411,6 +415,7 @@ error_include=Webmin nie obsługuje plików konfiguracyjnych Samby, które korzy
 error_delshare=Nie udało sie usunąć zasobu
 error_delcopy=Zasób '$1' jest kopią tego zasobu
 error_savename=Nie udało się zachować nazewnictwa plików
+
 convert_title=Przetwórz użytkowników
 convert_msg=Za pomocą tego formularza możesz zsynchronizować listy użytkowników Uniksa i Samby. Gdy Samba korzysta z <a href=$1>zaszyfrowanych haseł</a>, zamiast systemowej listy użytkowników używana jest osobna lista użytkowników i haseł.
 convert_noconv=Nie konwertuj ani nie usuwaj następujących użytkowników:
@@ -426,6 +431,7 @@ convert_cannot=Użytkownicy Unix nie mogą zostać skonwertowani do użytkownik�
 convert_who=Użytkownicy Unix do konwersji
 convert_who0=Tylko wymienieni użytkownicy lub zakres UID
 convert_who1=Wszyscy za wyjątkiem wymienionych użytkowników i zakresu UID
+
 misc_title=Opcje różne
 misc_debug=Poziom logowania
 misc_cachecall=Buforować wywołania <tt>getwd()</tt>?
@@ -492,6 +498,7 @@ misc_chroot=Katalog <tt>chroot()</tt>
 misc_smbrun=Ścieżka do <tt>smbrun</tt>
 misc_clienttime=Różnica czasu klienta
 misc_readprediction=Przewidywanie odczytów?
+
 net_title=Opcje sieci Uniksa
 net_idle=Czas bezczynności przed rozłączeniem
 net_trustlist=Plik zaufanych hostów/użytkowników
@@ -507,6 +514,7 @@ net_maxpacket=Maksymalny rozmiar pakietu
 net_listen=Nasłuchuj na adresach
 net_ip=Adres IP
 net_socket=Opcje gniazda
+
 passwd_title=Opcje haseł
 passwd_encrypt=Używać haseł zaszyfrowanych?
 passwd_allownull=Pozwalać na puste hasła?
@@ -520,11 +528,13 @@ passwd_send=Wyślij
 passwd_map=Podstawianie nazw użytkowników
 passwd_unixuser=Użytkownicy Uniksa
 passwd_winuser=Użytkownicy Windows
+
 print_title=Opcje drukowania
 print_style=Rodzaj drukowania uniksowego
 print_show=Pokazywać wszyskie drukarki?
 print_printcap=Plik opisu drukarek (printcap)
 print_cachetime=Czas buforowania stanu drukarki
+
 smb_title=Opcje sieci Windows
 smb_workgroup=Grupa robocza
 smb_wins=Tryb WINS
@@ -554,14 +564,17 @@ smb_nowhere=Nigdzie
 smb_fromlist=Z listy...
 smb_ip=Adresom IP
 smb_asworkgroup=<b>Jako grupa robocza</b> (opcjonalnie)
+
 create_title=Utwórz kopię
 create_msg=Skopiowany zasób odziedziczy wszystkie domyślne ustawienia z wybranego przez Ciebie zasobu. Jeśli zmieniony zostanie zasób źródłowy, to kopia również.
 create_from=Skopiować zasób z:
 create_name=Nazwa nowego zasobu:
+
 smbuser_title=Użytkownicy Samby
 smbuser_list=Lista użytkowników Samby
 smbuser_nouser=Nie zdefiniowano użytkowników Samby
 smbuser_cannot=Nie można wymienić użytkowników Samba
+
 euser_title=Zmień użytkownika Samby
 euser_name=Nazwa użytkownika
 euser_uid=Numer UID w Uniksie
@@ -580,6 +593,7 @@ euser_locked=Konto jest zablokowane
 euser_nopwrequired=Hasło nie wymagane
 euser_disable=Konto zablokowane
 euser_trust=Konto zaufane dla stacji roboczej
+
 fmisc_title=Różne ustawienia domyślne dla plików
 fmisc_for=Dla zasobu <tt>$1</tt>
 fmisc_lockfile=Blokowanie plików?
@@ -597,6 +611,7 @@ fmisc_conncmd=Polecenie wykonywane przy połączeniu
 fmisc_disconncmd=Polecenie wykonywane przy rozłączeniu
 fmisc_rootconn=Polecenie wykonywane przy połączeniu <i>jako root</i>
 fmisc_rootdisconn=Polecenie wykonywane przy rozłączeniu <i>jako root</i>
+
 fname_title1=Domyślne ustawienia nazw plików
 fname_title2=Zmień nazewnictwo plików
 fname_option=Opcje nazewnictwa plików
@@ -611,6 +626,7 @@ fname_hide=Ukryć pliki zaczynające się od kropki?
 fname_archive=Zachowywać atrybut DOS-a "archiwalny"?
 fname_hidden=Zachowywać atrybut DOS-a "ukryty"?
 fname_system=Zachowywać atrybut DOS-a "systemowy"?
+
 fperm_title1=Domyślne prawa do plików
 fperm_title2=Zmień prawa do plików
 fperm_option=Opcje praw do plików
@@ -623,6 +639,7 @@ fperm_link=Pozwalać na dowiązania symboliczne poza zasób?
 fperm_delro=Pozwolić usuwać pliki "tylko do odczytu"?
 fperm_forcefile=Wymuszać atrybuty uniksowe dla plików
 fperm_forcedir=Wymuszać atrybuty uniksowe dla katalogów
+
 share_title1=Domyślne ustawienia zasobów dyskowych
 share_title2=Zmień zasób dyskowy
 share_title3=Utwórz zasób dyskowy
@@ -644,6 +661,7 @@ share_security=Bezpieczeństwo i kontrola dostępu
 share_permission=Prawa do plików
 share_naming=Nazewnictwo plików
 share_misc=Opcje różne
+
 print_title1=Domyślne ustawienia opcji drukarek
 print_title2=Zmień opcje drukarek
 >>>>>>> upstream/master
@@ -681,6 +699,7 @@ savecopy_global=Nie można nadać zasobowi nazwy 'global'
 =======
 print_unresume=Polecenie wznowienia zadania
 print_driver=Sterownik drukarki
+
 pshare_title1=Domyślne ustawienia drukarek sieciowych
 pshare_title2=Zmień drukarkę sieciową
 pshare_title3=Utwórz drukarkę sieciową
@@ -689,6 +708,7 @@ pshare_name=Nazwa drukarki
 pshare_all=Zasób wszystkich drukarek
 pshare_unixprn=Drukarka uniksowa
 pshare_spool=Katalog kolejki
+
 sec_index1=Domyślne ustawienia bezpieczeństwa
 sec_index2=Zmień bezpieczeństwo
 sec_writable=Prawo zapisu?
@@ -711,6 +731,7 @@ sec_rouser=Użytkownicy "tylko do odczytu"
 sec_rogroup=Grupy "tylko do odczytu"
 sec_rwuser=Użytkownicy z prawami odczytu/zapisu
 sec_rwgroup=Grupy z prawami odczytu/zapisu
+
 esync_title=Synchronizacja użytkowników
 esync_msg=Webmina można skonfigurować tak, aby zmiany listy użytkowników Uniksa miały automatycznie zastosowanie do listy użytkowników Samby. Będzie to działać jedynie, gdy użytkownicy są dodawani, usuwani, zmieniani przy pomocy modułu Webmina <tt>Użytkownicy i grupy</tt>.
 esync_add=Dodawaj użytkownika Samby, gdy dodawany jest użytkownik Uniksa
@@ -720,6 +741,7 @@ esync_gid=Grupa SID lub RID dla nowych użytkowników
 esync_apply=Zastosuj
 esync_cannot=Synchronizacja użytkownika nie może być skonfigurowana
 esync_egid=Brakujący SID lub RID grupy
+
 mkpass_title=Przetwórz użytkowników
 mkpass_convfail=Nie udało się przetworzyć użytkowników
 mkpass_msg=Przetwarzanie użytkowników Uniksa...
@@ -732,21 +754,29 @@ mkpass_passfail=Nie udało się ustawić hasła
 mkpass_user=Nazwa użytkownika
 mkpass_action=Podjęte działanie
 mkpass_skipcount=$1 użytkowników zostało pominiętych przy konwertowaniu.
+
 savecopy_fail=Nie udało się utworzyć kopii
 savecopy_global=Nie można nadać zasobowi nazwy 'global'
 savecopy_exist=Zasób o nazwie '$1' już istnieje
 savecopy_ename=Nie wpisano nazwy udziału
+
 saveuser_fail=Nie udało się zachować użytkownika
 saveuser_uid='$1' nie jest poprawnym numerem UID Uniksa
 saveuser_colon=Rzeczywista nazwa nie może zawierać znaku :
 saveuser_home=Katalog domowy '$1' nie istnieje
 saveuser_shell=$1 nie jest poprawną powłoką
 saveuser_pass=Nie udało się zmienić hasła przy pomocy <tt>smbpasswd</tt>: $1
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 savefmisc_fail=Nie udało się zachować opcji różnych
 savefmisc_number='$1' nie jest poprawną liczbą połączeń
+
 savefperm_fail=Nie udało się zachować praw do plików
 savefperm_mode='$1' nie jest poprawnym uniksowym trybem pliku
+<<<<<<< HEAD
 <<<<<<< HEAD
 savefshare_exist=Zasób o&nbsp;nazwie '$1' już istnieje
 savefshare_fail=Nie udało się zachować zasobu
@@ -758,6 +788,9 @@ savefshare_owner=Brakujący lub nieprawidłowy właściciel dla nowego katalogu
 savefshare_perms=Brakujące lub nieprawidłowe uprawnienia dla nowego katalogu
 savemisc_chroot=Katalog chroot '$1' nie istnieje
 =======
+=======
+
+>>>>>>> upstream/master
 savefshare_fail=Nie udało się zachować zasobu
 savefshare_nopath=Nie podano ścieżki
 savefshare_exist=Zasób o nazwie '$1' już istnieje
@@ -766,6 +799,10 @@ savefshare_global=Nie można nadać zasobowi nazwy 'global'
 savefshare_owner=Brakujący lub nieprawidłowy właściciel dla nowego katalogu
 savefshare_group=Brakująca lub nieprawidłowa grupa dla nowego katalogu
 savefshare_perms=Brakujące lub nieprawidłowe uprawnienia dla nowego katalogu
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 savemisc_fail=Nie udało się zachować opcji"
 savemisc_lockdir=The directory containing the lock directory does not exist
@@ -775,6 +812,7 @@ savemisc_overlap='$1' is not a valid overlapping read size
 savemisc_chroot=Katalog chroot '$1' nie istnieje
 savemisc_smbrun=Program smbrun '$1' nie istnieje lub nie jest wykonywalny
 savemisc_time='$1' nie jest poprawną różnicą czasu
+
 savenet_fail=Nie udało się zachować opcji
 <<<<<<< HEAD
 savenet_ip='$1' nie jest poprawnym bajtem IP
@@ -920,32 +958,42 @@ savenet_timeout='$1' nie jest poprawnym czasem rozłączenia
 savenet_ip='$1' nie jest poprawnym bajtem IP
 savenet_keep='$1' nie jest poprawnym okresem podtrzymania
 savenet_maxxmit='$1' nie jest poprawnym maksymalnym rozmiarem pakietu
+
 savepass_fail=Nie udało się zachować opcji
 savepass_nopass=Twoja wersja Samby nie obsługuje szyfrowanych haseł
 savepass_passwd=Nie podano programu zmiany hasła
 savepass_level='$1' nie jest poprawnym poziomem różnicowania wielkości liter
 savepass_chat=Konwersacja zmiany hasła (chat) jest pusta
+
 savepopts_fail=Nie udało się zachować opcji drukarek
 savepopts_number=Minimalna ilość wolnego miejsca musi być liczbą
+
 saveprint_fail=Nie udało się zachować opcji
 saveprint_printcap=Plik opisu drukarek (printcap) '$1' nie istnieje
 saveprint_cache='$1' nie jest poprawnym czasem bufurowania
+
 savepshare_fail=Nie udało się zachować drukarki sieciowej
 savepshare_exist=Zasób o nazwie '$1' już istnieje
 savepshare_name='$1' nie jest poprawną nazwą zasobu
 savepshare_global=Nie można nadać zasobowi nazwy 'global'
+
 savesec_fail=Nie udało się zachować bezpieczeństwa
+
 savesmb_fail=Nie udało się zachować opcji
 savesmb_size='$1' nie jest poprawnym rozmiarem dysku
 savesmb_oslevel='$1' nie jest poprawnym priorytetem nadrzędnego <tt>browsera</tt>
 savesmb_server=Musisz podać serwer autoryzacji
+
 start_err=Nie udało się uruchomić serwerów Samby
 start_fail=$1 nie został uruchomiony
 start_err_wb=Błąd uruchamiania serwerów Winbind
+
 restart_err=Niepowodzenie restartu serwerów Samba
 restart_err_wb=Niepowodzenie restartu serwerów Winbind
+
 swats_fail=Nie udało się zachować nazwy użytkownika
 swats_user=Nie podano nazwy użytkownika dla SWAT-a
+
 viewu_index=Bieżący użytkownicy
 viewu_list=Bieżący użytkownicy $1
 viewu_share=Zasób
@@ -961,6 +1009,7 @@ viewu_none=Brak
 viewu_kill=Rozłącz wybranych użytkowników
 viewu_enone=Nie wybrano użytkowników
 viewu_refresh=Odśwież stronę
+
 log_apply=Zrestartowano serwery Samby
 log_apply_wb=Zrestartowano serwery Winbind
 log_stop=Zatrzymano serwery Samba
@@ -1002,6 +1051,7 @@ log_modify_group=Zmodyfikowano grupę Samba $1
 log_delete_group=Usunięto grupę Samba $1
 log_gsync=Skonfigurowano synchronizację grupy Unix
 log_manual=Ręcznie zedytowano plik konfiguracyjny $1
+
 swat_title=Logowanie do SWAT-a
 swat_list=Logowanie do SWAT-a
 swat_msg1=Twoja bieżąca nazwa użytkownika SWAT-a i hasło są nieprawidłowe. Zaloguj się ponownie przy pomocy poniższego formularza.
@@ -1013,6 +1063,7 @@ swat_password=Hasło
 swat_login=Zaloguj się
 swat_clear=Wyczyść
 swat_logout=Wyloguj się ze SWATa
+
 eacl_aviol=Naruszenie kontroli dostępu
 eacl_np=Nie masz uprawnień do
 eacl_papply=restartoania tej usługi
@@ -1048,6 +1099,7 @@ eacl_pafs=dostępu do tego zasobu plikowego
 eacl_paps=dostępu do tej drukarki współdzielonej
 eacl_pcps=tworzenia drukarek współdzielonych
 eacl_pcfs=tworzenia zasobów plikowych
+
 acl_apply=Może zastosować zmian?
 acl_view_all_con=Może przeglądać wszystkie połączenia?
 acl_kill_con=Może przerywać połączenia?
@@ -1093,6 +1145,7 @@ acl_group_opts=Opcje grupy samba
 acl_maint_groups=Może wyświetlać, edytować i dodawać grupy?
 acl_maint_gsync=Może utrzymywać automatyczną synchronizację gryp UNIX do SAMBA?
 acl_winbind=Może podpiąć do domen?
+
 groups_title=Grupy Samba
 groups_name=Nazwa grupy
 groups_unix=Grupa Unix
@@ -1107,6 +1160,7 @@ groups_return=listy grup
 groups_add=Dodaj nową grupę Samba.
 groups_ecannot=Nie masz uprawnień do wyświetlania i edycji grup Samba
 groups_cannot=Nie można wymienić grup Samba
+
 gedit_title2=Edycja grupy Samba
 gedit_title1=Tworzenie grupy Samba
 gedit_header=Szczegóły grupy Samba
@@ -1119,11 +1173,13 @@ gedit_unix=Grupa Unix
 gedit_unixgr=Grupa ..
 gedit_none=Brak
 gedit_set=Wymienione
+
 gsave_err=Błąd zapisywania grupy
 gsave_eunix=Brakująca lub nieprawidłowa nazwa grupy Unix lub GID
 gsave_ename=Brakująca nazwa grupy
 gsave_epriv=Brakujące uprawnienia grupy
 gsave_elocal=Uprawnienia mogą zostać ustawione tylko dla lokalnych grup
+
 gsync_title=Synchronizacja grup
 gsync_add=Dodaj grupę Samba, gdy dodawana jest grupa Unix
 gsync_chg=Zmień grupy Samba, podczas zmiany grup Unix
@@ -1133,12 +1189,15 @@ gsync_type=Typ nowej grupy
 gsync_priv=Uprawnienia dla nowych grup (jeżeli lokalne)
 gsync_ecannot=Nie masz uprawnień do konfiguracji synchronizacji grupy
 gsync_cannot=Nie można skonfigurować synchronizacji grupy
+
 check_user1=$1 : Szyfrowane hasła nie są włączone na stronie <a href='$2'>Autoryzacji</a>.
 check_group1=$1 : Grupy są wspierane tylko w Samba w wersji 3.
+
 winbind_euser=Brakująca nazwa użytkonika
 winbind_edom=Brakująca nazwa domeny
 >>>>>>> upstream/master
 winbind_ok=.. gotowe.
+
 bind_title=Opcje Winbind
 bind_ecannot=Nie masz uprawnień do edycji opcji winbind
 bind_local=Włączyć Winbind dla lokalnych kont?
@@ -1154,9 +1213,11 @@ bind_erealm=Nieprawidłowy Kerberos realm
 bind_ecache=Brakujący lub nieprawidłowy czas pamięci podręcznej
 bind_euid=Nieprawidłowy zakres UID - powinno być np. 20000-30000
 bind_egid=Nieprawidłowy zakres GID - powinno być np. 20000-30000
+
 manual_title=Edycja pliku konfiguracyjnego
 manual_desc=Zedytowano plik konfiguracyjny Samba $1 ..
 manual_err=Błąd zapisywania pliku konfiguracyjnego
 manual_edata=Nic nie wpisano!
+
 delete_err=Błąd usuwania udziałów
 delete_enone=Nic nie wybrano

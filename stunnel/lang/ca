@@ -22,8 +22,12 @@ index_conf=Del fitxer de configuració $1
 index_noconf=No hi ha cap fitxer de configuració!
 index_delete=Suprimeix els Túnels Seleccionats
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_title=Edició de Túnel SSL
 create_title=Creació de Túnel SSL
@@ -52,8 +56,12 @@ edit_auto=Automàtic
 edit_iface=Adreça origen de sortida
 edit_type=Executa des de
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 save_err=No s'ha pogut desar el túnel SSL
 save_enclash=El nom de servei $2 ja està en ús al port $1.
@@ -70,8 +78,12 @@ save_eiface=Hi falta l'adreça origen de sortida o bé és invàlida
 save_exinetd=Ja hi ha un servei xinetd anomenat $1
 save_export=El port $1 ja està en ús pel servei xinetd $2
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_apply=S'han aplicat els canvis
 log_create=S'ha creat el túnel SSL $1

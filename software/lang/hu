@@ -14,8 +14,12 @@ index_identmsg=Adja meg a parancs nevét vagy a fájl elérési útvonalát a(z)
 index_identok=Keresés:
 index_return=a csomagok listájához
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 search_title=Csomag keresése
 search_nomatch=Nincs $1 karakterláncot tartalmazó csomag
@@ -25,8 +29,12 @@ search_class=Osztály
 search_pack=Csomag
 search_match=A(z) $1 karakterláncot tartalmazó csomagok
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_title=Csomag szerkesztése
 edit_details=Csomag részletei
@@ -42,8 +50,12 @@ edit_list=Fájlok listázása
 edit_uninst=Törlés
 edit_return=a csomag részleteihez
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 list_title=Csomag fájljai
 list_files=A(z) $1 csomag fájljai
@@ -54,8 +66,12 @@ list_type=Típus
 list_size=Méret
 list_status=Állapot
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 delete_err=A(z) $1 csomag törlése nem sikerült
 delete_epack=A(z) $1 csomag nem létezik
@@ -63,8 +79,12 @@ delete_title=Csomag törlése
 delete_rusure=Biztosan törölni akarja a(z) $1 csomagot? $2 darab fájl ($3) örökre le lesz törölve.
 delete_ok=Töröl
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 file_title=Fájl információk
 file_notfound=A(z) $1 fájlról információ nem érhető el
@@ -80,8 +100,12 @@ file_class=Osztály
 file_desc=Leírás
 file_none=Nincs
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 install_err=A csomag telepítése nem sikerült
 install_elocal=Helyi fájl megadása nem történt meg
@@ -96,8 +120,12 @@ install_header=Csomag telepítése
 install_packs=A csomag(ok) telepítése megtörtént
 install_ok=Telepít
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 do_err=A(z) $1 csomag telepítése nem sikerült
 do_title=Csomag telepítése
@@ -116,15 +144,21 @@ do_inst=Telepített
 do_none=Nincs
 do_files=Csomag fájljai
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 pkgadd_root=Gyökérkönyvtár
 pkgadd_eroot=A(z) '$1' gyökérkönyvtár nem létezik
 pkgadd_unknown=Ismeretlen
 
+<<<<<<< HEAD
 =======
 pkgadd_root=Gyökérkönyvtár
 pkgadd_eroot=A(z) '$1' gyökérkönyvtár nem létezik
 pkgadd_unknown=Ismeretlen
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 rpm_upgrade=Csomag frissítése?
 rpm_replacepkgs=Csomag felülírása?
@@ -136,6 +170,7 @@ rpm_replacefiles=Fájlok felülírása?
 rpm_root=Gyökérkönyvtár
 rpm_eroot=A(z) '$1' gyökérkönyvtár nem létezik
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 bsd_unknown=Ismeretlen
 bsd_scripts=Az 'elő' és 'utó' telepítőszkriptek végrehajtása?
@@ -146,14 +181,25 @@ bsd_unknown=Ismeretlen
 bsd_scripts=Az 'elő' és 'utó' telepítőszkriptek végrehajtása?
 bsd_force=Telepítés hiányzó előfeltételek esetén is?
 >>>>>>> upstream/master
+=======
+
+bsd_unknown=Ismeretlen
+bsd_scripts=Az 'elő' és 'utó' telepítőszkriptek végrehajtása?
+bsd_force=Telepítés hiányzó előfeltételek esetén is?
+
+>>>>>>> upstream/master
 slack_unclass=Egyéb
 slack_unknown=Ismeretlen
 slack_missing=Hiányzó
 slack_root=Gyökérkönyvtár
 slack_eroot=Hiányzó vagy érvénytelen gyökérkönyvtár
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 debian_unknown=Hiányzó
 debian_depends=A függőségi problémák mellőzése?

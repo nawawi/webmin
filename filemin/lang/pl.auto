@@ -124,7 +124,7 @@ http_downloading=Ściąganie
 http_done=Pobrano $1 do $2.
 uploading=Wgrywanie... Proszę Czekać. ..
 acl_allowed_paths=Zezwalaj na dostęp do katalogów
-acl_allowed_paths2=(Dla użytkowników innych niż root)
+acl_allowed_paths_explain=Dla użytkownika z uprawnieniami roota, jeśli dozwolony katalog jest ustawiony tylko na $HOME, będzie to równoważne / (pełny dostęp do dysku)
 acl_allowed_for_edit=Mimetypes dozwolone do edycji przez wbudowany edytor
 acl_work_as=Uzyskaj dostęp do plików jako użytkownik systemu Unix
 acl_root=Root (udzielaj ostrożnie niezaufanym użytkownikom!)
@@ -155,8 +155,13 @@ menu_bookmarks=Zakładki
 notallowed=Nie masz dostępu do $1. Dozwolonymi katalogami są : $2 
 error_upload_emax=Przesłany plik jest większy niż limit $1 
 extract_etype=Nieobsługiwany typ pliku archiwum
+
 info_total1=Łącznie: plik $1 i katalog $2 
 info_total2=Łącznie: $1 plików i katalog $2 
 info_total3=Łącznie: $1 plik i $2 katalogi
 info_total4=Łącznie: $1 plików i $2 katalogów
+
 ownership=Właściciel
+acls=Lista kontroli dostępu
+file_detect_encoding=Automatycznie wykrywaj kodowanie plików
+index_return=lista plików

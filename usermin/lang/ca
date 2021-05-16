@@ -17,6 +17,9 @@ index_eroot=El directori de configuració $1 d'Usermin existeix, però el direct
 index_restart=Reinicia Usermin
 index_restartmsg=Fes clic sobre aquest botó per reiniciar el procés servidor d'Usermin. Això pot ser necessari si has actualitzat Perl fa poc. 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 access_title=Control d'Accés IP
 access_desc=Amb aquest formulari, el servidor Usermin pot configurar-se per a permetre o denegar l'accés només des de certes adreces IP. Es poden introduir també noms de host (com ara foo.bar.com) i xarxes IP (com 10.254.3.0 o 10.254.1.0/255.255.255.128 o 10.254.1.0/25 o 10.254.1.5-10.254.97.127). Hauries de limitar l'accés al servidor a les adreces fiables, sobretot si és accessible des d'Internet. Altrament, algú que endevini la teva contrasenya tindrà el control complet del sistema.
@@ -25,12 +28,15 @@ bind_title=Ports i Adreces
 bind_desc2=Aquest formulari es pot utilitzar per canviar el número de port que Usermin escolta, o fer que escolti només una sola adreça IP del sistema. També el podeu configurar per acceptar connexions a múltiples ports, o escoltar diferents adreces IP. Nota - pot ser que el navegador et demani d'identificar-te cada vegada que canviïs el port o l'adreça.
 bind_erestart=S'ha produït un error en inicia Usermin amb els nous valors de port i adreça: $1
 
+<<<<<<< HEAD
 =======
 access_title=Control d'Accés IP
 access_desc=Amb aquest formulari, el servidor Usermin pot configurar-se per a permetre o denegar l'accés només des de certes adreces IP. Es poden introduir també noms de host (com ara foo.bar.com) i xarxes IP (com 10.254.3.0 o 10.254.1.0/255.255.255.128 o 10.254.1.0/25 o 10.254.1.5-10.254.97.127). Hauries de limitar l'accés al servidor a les adreces fiables, sobretot si és accessible des d'Internet. Altrament, algú que endevini la teva contrasenya tindrà el control complet del sistema.
 bind_title=Ports i Adreces
 bind_desc2=Aquest formulari es pot utilitzar per canviar el número de port que Usermin escolta, o fer que escolti només una sola adreça IP del sistema. També el podeu configurar per acceptar connexions a múltiples ports, o escoltar diferents adreces IP. Nota - pot ser que el navegador et demani d'identificar-te cada vegada que canviïs el port o l'adreça.
 bind_erestart=S'ha produït un error en inicia Usermin amb els nous valors de port i adreça: $1
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 mods_title=Mòduls Usermin
 umods_title=Mòduls Usermin
@@ -53,8 +59,12 @@ mods_delete=Suprimeix Mòduls
 mods_deleteok=Suprimeix els Mòduls Seleccionats
 mods_desc4=Els mòduls instal·lats es poden exportar com un fitxer wbm.gz utilitzant el formulari de sota. Llavors, es pot instal·lar el fitxer de mòdul en un altre sistema que utilitzi Usermin.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 os_title=Sistema Operatiu i Entorn
 os_desc3=Aquesta pàgina mostra el sistema operatiu detectat per Usermin a l'hora d'instal·lar-lo, i el sistema detectat actualment. Si són diferents, pots triar d'actualitzar la informació del SO d'Usermin, cosa que pot ser necessària si has fet una actualització recentment.
@@ -62,12 +72,17 @@ os_desc2=També pots canviar el camí de recerca que utilitza Webmin quan execut
 os_usermin=Sistema operatiu d'acord amb Usermin
 os_iusermin=Codi intern de SO utilitzat per Usermin
 os_update=Actualitza l'Usermin per utilitzar el SO detectat
+
 lang_title=Idioma
 lang_title2=Idioma d'Usermin
 lang_intro=Aquesta pàgina permet canviar amb quin idioma Usermin mostrarà els títols, prompts i missatges
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 session_title=Autenticació
 session_desc1=Quan està activat, el límit de temps de contrasenya protegeix el servidor Usermin dels atacs de saqueig de contrasenyes per la força bruta afegint un interval creixent entre cada intent fallit de connexió per al mateix usuari.
@@ -99,6 +114,10 @@ session_blank=Demana als usuaris amb contrasenya buida que en triïn una a la pr
 session_homedir=Crea els directoris arrels que falten després d'entrar al sistema
 session_homedir_perms=Permisos del nou directori
 session_ehomedir_perms=Hi falten els permisos del directori o el valor octal és incorrecte
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 themes_title=Temes d'Usermin
 themes_desc=Els temes controlen l'aparença de la interfície d'usuari d'Usermin, incloent-hi les icones, colors, fons, i possiblement la disposició de les pàgines. Es pot utilitzar la caixa de selecció de sota per triar un dels temes instal·lats al sistema que sigui el tema per defecte dels usuaris d'Usermin.
@@ -129,11 +148,17 @@ themes_ok=El tema s'ha canviat amb èxit... s'està redireccionant a la pàgina 
 themes_delete=Pots utilitzar aquest formulari per suprimir un dels temes instal·lats al sistema que actualment no s'utilitzi.
 themes_delok=Tema a suprimir:
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 themes_desc4=Els temes instal·lats es poden exportar com un fitxer wbt.gz utilitzant el formulari de sota. Llavors, el fitxer de tema es pot instal·lar en un altre sistema que executi Usermin.
 
 =======
 themes_desc4=Els temes instal·lats es poden exportar com un fitxer wbt.gz utilitzant el formulari de sota. Llavors, el fitxer de tema es pot instal·lar en un altre sistema que executi Usermin.
+>>>>>>> upstream/master
+=======
+
+themes_desc4=Els temes instal·lats es poden exportar com un fitxer wbt.gz utilitzant el formulari de sota. Llavors, el fitxer de tema es pot instal·lar en un altre sistema que executi Usermin.
+
 >>>>>>> upstream/master
 configs_ecannot=No tens permís per configurar aquest mòdul
 configs_title=Configuració dels Mòduls d'Usermin
@@ -149,6 +174,7 @@ configs_globaldesc=Els valors d'aquest formulari s'apliquen a tots els usuaris d
 configs_user=Preferències per defecte de l'usuari
 configs_userdesc=Els valors d'aquest formulari defineixen els valors per defecte de les preferències editables per l'usuari en aquest mòdul. A menys que especifiquis el contrari, aquests poden ser obviats pels usuaris individuals.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 acl_title=Mòduls Disponibles
 acl_desc=Utilitza aquesta pàgina per seleccionar quins mòduls instal·lats d'Usermin poden veure els usuaris.
@@ -156,6 +182,12 @@ acl_desc=Utilitza aquesta pàgina per seleccionar quins mòduls instal·lats d'U
 =======
 acl_title=Mòduls Disponibles
 acl_desc=Utilitza aquesta pàgina per seleccionar quins mòduls instal·lats d'Usermin poden veure els usuaris.
+>>>>>>> upstream/master
+=======
+
+acl_title=Mòduls Disponibles
+acl_desc=Utilitza aquesta pàgina per seleccionar quins mòduls instal·lats d'Usermin poden veure els usuaris.
+
 >>>>>>> upstream/master
 ssl_title=Xifratge SSL
 ssl_desc1=No sembla que el host on s'està executant Usermin tingui instal·lat el mòdul perl SSLeay. Amb això, Usermin suporta comunicació xifrada SSL entre el navegador i el servidor. Si els usuaris accedeixen al servidor Usermin a través d'Internet, llavors has de considerar seriosament utilitzar SSL per evitar que un atacant els prengui les contrasenyes.
@@ -166,8 +198,12 @@ ssl_savekey=Aquest formulari permet carregar un certificat i una clau privada SS
 ssl_copycert=Copia el Certificat de Webmin
 ssl_copycertdesc=Copia el Certificat SSL, clau privada, certificat CA i altres paràmetres que estigui utilitzant Webmin.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 ca_email=Adreça de correu
 ca_ou=Departament
@@ -175,16 +211,23 @@ ca_o=Organització
 ca_sp=Estat
 ca_c=Codi de país
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 newkey_ok=La següent clau SSL d'Usermin s'ha generat amb èxit.
 
 =======
 newkey_ok=La següent clau SSL d'Usermin s'ha generat amb èxit.
 >>>>>>> upstream/master
+=======
+
+newkey_ok=La següent clau SSL d'Usermin s'ha generat amb èxit.
+
+>>>>>>> upstream/master
 stop_err=No s'ha pogut aturar Usermin
 stop_ekill=No s'ha pogut matar el procés: $1
 stop_efile=Ja està aturat
 stop_ecannot=No tens permís per aturar Usermin
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 start_err=No s'ha pogut iniciar Usermin
@@ -193,6 +236,12 @@ start_ecannot=No tens permís per iniciar Usermin
 =======
 start_err=No s'ha pogut iniciar Usermin
 start_ecannot=No tens permís per iniciar Usermin
+>>>>>>> upstream/master
+=======
+
+start_err=No s'ha pogut iniciar Usermin
+start_ecannot=No tens permís per iniciar Usermin
+
 >>>>>>> upstream/master
 users_title=Usuaris i Grups Permesos
 users_desc=Amb aquest formulari es pot configurar Usermin per limitar quins usuaris i grups Unix tenen l'entrada permesa. Per especificar tots els membres primaris d'un grup Unix, introdueix <tt>@nomdelgrup</tt> a la llista.
@@ -208,16 +257,24 @@ users_egroup='$1' no és un nom de grup vàlid
 users_shells=Denega els usuaris la shell dels quals no sigui al fitxer
 users_eshells=Hi falta el fitxer de shells o bé no existeix
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 defacl_title=Opcions de Control d'Accés
 defacl_desc=Aquesta pàgina permet configurar diverses opcions de control d'accés que s'apliquen als mòduls i usuaris d'Usermin. Aquestes opcions són semblants a les d'ACLs globals per a cada usuari del mòdul d'usuaris de Webmin.
 defacl_header=Opcions de control d'accés del usuaris Usermin
 defacl_err=No s'han pogut desar les opcions de control d'accés
 <<<<<<< HEAD
+<<<<<<< HEAD
  
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 install_err1=No s'ha pogut instal·lar el mòdul de $1
 install_efile=El fitxer no existeix
@@ -246,8 +303,12 @@ install_eirpm=La instal·lació RPM ha fallat: $1
 install_cat=De la categoria $1.
 install_eneither=El RPM no conté cap mòdul ni cap tema Usermin
 <<<<<<< HEAD
+<<<<<<< HEAD
  
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 delete_err=No s'han pogut suprimir els mòduls
 delete_edep=El mòdul $1 no es pot suprimir perquè el mòdul $2 en depèn
@@ -259,8 +320,12 @@ delete_rusure=Segur que vols suprimir el(s) mòdul(s) $2? S'esborraran per sempr
 delete_rusure2=Segur que vols suprimir el tema $2? S'esborraran per sempre $1 Kb de fitxers.
 delete_enone=No has seleccionat cap mòdul
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 ui_title=Interfície d'Usuari
 ui_desc=Aquest formulari permet editar les opcions de la interfície d'usuari utilitzades per tots els mòduls d'Usermin.
@@ -304,8 +369,12 @@ ui_hnm2=Nom de domini a partir de l'URL
 ui_hnm3=Un altre nom...
 ui_tabs=Categoritza els mòduls
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 upgrade_title=Actualització d'Usermin
 upgrade_title2=Instal·lació d'Usermin
@@ -341,8 +410,12 @@ upgrade_failed=...l'actualització ha fallat!
 upgrade_updates=Hi ha $1 actualitzacions per a aquesta nova versió d'Usermin. Fes clic <a href='$2'>aquí</a> per descarregar-les i instal·lar-les automàticament ara.
 upgrade_eupdates=No s'ha pogut descarregar la llista d'actualitzacions: $1
 <<<<<<< HEAD
+<<<<<<< HEAD
  
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 update_desc1=Aquest formulari et permet d'actualitzar mòduls Usermin que tenen errors o forats de seguretat des de la pàgina d'<a href=http://www.usermin.com/uupdates.html>Actualitzacions d'Usermin</a> o des d'una altra font. Això compararà els mòduls instal·lats actualment amb aquells disponibles per actualitzar, i opcionalment descarregarà i instal·larà qualsevol mòdul desfasat.
 update_header1=Actualitza els mòduls ara
@@ -361,16 +434,24 @@ update_none=No hi ha cap actualització d'Usermin per aquesta versió.
 update_failed=No s'ha pogut instal·lar el mòdul: $1
 update_desc2=Aquest formulari és per planificar l'actualització automàtica dels mòduls d'Usermin que continguin errors o forats de seguretat des de la pàgina d'<a href=http://www.usermin.com/updates.html>Actualitzacions d'Usermin</a>  des d'una altra font. Tot i que aquest servei és útil, cal anar amb compte, ja que això pot permetre els atacants de prendre el teu sistema si el servidor queda compromès.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 assignment_title=Reassignació de Mòduls
 assignment_header=Assignacions de categories de mòduls
 assignment_ok=Canvia les Categories
 assignment_desc=Aquest formulari permet configurar sota quina categoria es mostra cada mòdul a la pàgina d'índex d'Usermin.
 <<<<<<< HEAD
+<<<<<<< HEAD
  
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 categories_title=Edició de Categories
 categories_header=ID de Categoria i descripcions
@@ -382,8 +463,12 @@ categories_ecat=L'ID de categoria $1 ja està agafat
 categories_code=ID
 categories_name=Descripció mostrada
 <<<<<<< HEAD
+<<<<<<< HEAD
  
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_access=S'ha canviat el control d'accés IP
 log_bind=S'ha canviat el port i l'adreça
@@ -420,6 +505,7 @@ log_restrict_create=S'ha creat la restricció per a $1
 log_restrict_modify=S'ha modificat la restricció per a $1
 log_restrict_delete=S'ha suprimit la restricció per a $1
 log_restrict_move=S'ha desplaçat la restricció per a $1
+
 log_all=tots els usuaris
 log_group=grup $1
 log_switch=S'ha canviat a l'usuari Usermin $1
@@ -428,8 +514,12 @@ log_dav=S'ha canviat la configuració del servidor DAV
 log_advanced=S'han canviat les opcions avançades
 log_mobile=S'han canviat les opcions del dispositiu mòbil
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 update_err=No s'han pogut actualitzar els mòduls
 update_eurl=Hi falta l'URL d'actualització o bé és invàlid
@@ -450,8 +540,12 @@ update_eemail=Has d'introduir la teva adreça de correu electrònic només si vo
 update_subject=Informe d'actualització de mòduls Usermin
 update_version=Hi ha una nova versió d'Usermin (versió $1) disponible per a descarregar. Les pròximes actualitzacions només estaran disponibles per a la darrera versió.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 restrict_title=Restriccions dels Mòduls
 restrict_desc=Aquesta pàgina permet controlar quins mòduls d'Usermin estan disponibles per a diferents usuaris i grups. S'apliquen totes les addicions i subtraccions de la llista, no només la primera que coincideixi amb cada usuari.<br>Els mòduls que no estiguin seleccionats a la pàgina de <a href='$1'>mòduls disponibles</a> no estaran mai disponibles pels usuaris, encara que aquí estiguin seleccionats.
@@ -490,6 +584,10 @@ bootup_ecannot=No tens permís per configurar l'engegada
 
 =======
 bootup_ecannot=No tens permís per configurar l'engegada
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 acl_icons=Pàgines de configuració permeses
 acl_mods=Pot configurar els mòduls
@@ -499,16 +597,24 @@ acl_stop=Pot aturar i iniciar Usermin
 acl_bootup=Pot configurar l'inici en engegar el sistema
 acl_ecannot=No tens permís per utilitzar aquesta pàgina
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 clone_err=No s'ha pogut clonar el mòdul
 clone_elink=l'enllaç simbòlic ha fallat: $1
 clone_ecopy=no s'ha pogut copiar la configuració: $1
 clone_desc=Clonació de $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 sessions_title=Sessions Actuals
 sessions_desc=A sota es llisten les sessions actuals a Usermin. Per cancel·lar una sessió existent i forçar l'usuari a tornar a entrar, fes clic sobre l'ID de la seva sessió.
@@ -519,19 +625,28 @@ sessions_login=Sessió a
 sessions_none=Actualment no hi ha cap usuari connectar a Usermin.
 sessions_switch=Canvia a l'usuari Usermin:
 sessions_ok=Canvia
+
 referers_title=Referenciadors Fiables
 referers_desc=Aquesta pàgina permet configurar el suport de comprovació de referenciadors d'Usermin, que s'utilitza per evitar enllaços malintencionats des d'altres llocs web que intenten induir els navegadors dels teus usuaris a cometre coses perilloses amb Usermin. No obstant, si tens enllaços a Usermin des dels teus propis llocs web per als quals no vols que se t'avisi, has d'afegir aquests llocs a la llista de sota.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 anon_title=Accés Anònim a Mòduls
 anon_desc=Aquesta pàgina permet concedir accés a mòduls i camins seleccionats d'Usermin sense que els clients s'identifiquin. Per a cada camí de mòdul que introdueixis aquí sota (com ara /commands o /changepass) també has d'introduir el nom d'un Usuari Unix els permisos del qual s'utilitzaran en l'accés al mòdul.
 anon_user=Usuari Unix
 anon_euser=Hi falta l'usuari Unix per al camí de l'URL '$1' o bé és invàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 logout_title=Temps de Desconnexió Automàtica
 logout_desc=Aquesta pàgina es pot utilitzar per configurar diversos temps de desconnexió per inactivitat per a diferents usuaris d'Usermin. El temps límit s'ha d'introduir en minuts, i un temps límit de zero vol dir que les sessions dels usuaris no es desconnectaran mai automàticament.
@@ -548,8 +663,12 @@ logout_efile=Hi falta el fitxer o bé no existeix a la fila $1
 logout_etime=Hi falta el temps límit o bé és invàlid a la fila $1
 logout_ecannot=No tens permís per configurar els temps de sortida
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 dav_title=Servidor DAV
 dav_header=Opcions del servidor DAV
@@ -572,6 +691,9 @@ dav_users1=Tots els usuaris
 dav_users0=Els usuaris i grups llistats a sota...
 dav_eusers=No has introduït cap usuari
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 syslog_errorlog=Registres d'error d'Usermin
 
@@ -581,6 +703,7 @@ descs_info=Aquesta pàgina permet especificar títols alternatius per als mòdul
 advanced_title=Opcions Avançades
 advanced_pass=Posa la contrasenya a disposició dels programes d'Usermin<br><font size=-1>(No funciona quan l'autenticació de sessió està activada)</font>
 
+<<<<<<< HEAD
 =======
 syslog_errorlog=Registres d'error d'Usermin
 descs_title=Títols dels Mòduls
@@ -588,16 +711,24 @@ descs_info=Aquesta pàgina permet especificar títols alternatius per als mòdul
 advanced_title=Opcions Avançades
 advanced_pass=Posa la contrasenya a disposició dels programes d'Usermin<br><font size=-1>(No funciona quan l'autenticació de sessió està activada)</font>
 >>>>>>> upstream/master
+=======
+>>>>>>> upstream/master
 blocked_title=Hosts i Usuaris Bloquejats
 blocked_none=Actualment, no hi ha cap host ni usuari bloquejat per Usermin.
 blocked_user=Usuari Usermin
 blocked_cleardesc=Fes clic sobre aquest botó per esborrar tot els bloqueigs actuals de hosts i usuaris reiniciant el procés servidor d'Usermin.
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 mobile_title=Opcions del Dispositiu Mòbil
 
 =======
 mobile_title=Opcions del Dispositiu Mòbil
+>>>>>>> upstream/master
+=======
+
+mobile_title=Opcions del Dispositiu Mòbil
+
 >>>>>>> upstream/master
 copycert_err=No s'han pogut copiar els paràmetres SSL de Webmin
 copycert_essl=SSL no està activat

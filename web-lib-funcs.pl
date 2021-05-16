@@ -127,57 +127,114 @@ $main::read_file_cache_time{$realfile} = $st[9];
 return $rv;
 }
 
-=head2 write_file(file, &hash, [join-char], [sort])
+=head2 write_file(file, &data-hash, [join-char], [sort], [sorted-by], [sorted-by-preserved])
 
 Write out the contents of a hash as name=value lines. The parameters are :
 
 =item file - Full path to write to
 
-=item hash - A hash reference containing names and values to output
+=item data-hash - A hash reference containing names and values to output
 
 =item join-char - If given, names and values are separated by this instead of =
 
 =item sort - If given, passed hash reference will be sorted by its keys
 
-=item sortedby - If given, hash reference that is being saved will be sorted by the keys of sortby hashref
+=item sorted-by - If given, hash reference that is being saved will be sorted by the keys of sorted-by hashref
+
+=item sorted-by-sectioning-preserved - If sorted-by is used, then preserve the sectioning (line-breaks), and section comment as in hash reference
 
 =cut
 sub write_file
 {
+my ($file, 
+    $data_hash,
+    $join_char,
+    $sort,
+    $sorted_by,
+    $sorted_by_sectioning_preserved) = @_;
 my (%old, @order);
-my $join = defined($_[2]) ? $_[2] : "=";
-my $realfile = &translate_filename($_[0]);
-&read_file($_[4] || $_[0], \%old, \@order);
-&open_tempfile(ARFILE, ">$_[0]");
-if ($_[3] || $gconfig{'sortconfigs'}) {
-	foreach $k (sort keys %{$_[1]}) {
-		(print ARFILE $k,$join,$_[1]->{$k},"\n") ||
-			&error(&text("efilewrite", $realfile, $!));
-		
-	    }
-	}
+my $join = defined($join_char) ? $join_char : "=";
+my $realfile = &translate_filename($file);
+&read_file($sorted_by || $file, \%old, \@order);
+&open_tempfile(ARFILE, ">$file");
+if ($sort || $gconfig{'sortconfigs'}) {
+    foreach $k (sort keys %{$data_hash}) {
+        (print ARFILE $k,$join,$data_hash->{$k},"\n") ||
+            &error(&text("efilewrite", $realfile, $!));
+        
+        }
+    }
 else {
-	my %done;
-	foreach $k (@order) {
-		if (exists($_[1]->{$k}) && !$done{$k}++) {
-			(print ARFILE $k,$join,$_[1]->{$k},"\n") ||
-				&error(&text("efilewrite", $realfile, $!));
-			}
-		}
-	foreach $k (keys %{$_[1]}) {
-		if (!exists($old{$k}) && !$done{$k}++) {
-			(print ARFILE $k,$join,$_[1]->{$k},"\n") ||
-				&error(&text("efilewrite", $realfile, $!));
-			}
-	    }
-	}
+    my %done;
+    foreach $k (@order) {
+        if (exists($data_hash->{$k}) && !$done{$k}++) {
+            (print ARFILE $k,$join,$data_hash->{$k},"\n") ||
+                &error(&text("efilewrite", $realfile, $!));
+            }
+        }
+    foreach $k (keys %{$data_hash}) {
+        if (!exists($old{$k}) && !$done{$k}++) {
+            (print ARFILE $k,$join,$data_hash->{$k},"\n") ||
+                &error(&text("efilewrite", $realfile, $!));
+            }
+        }
+    }
 &close_tempfile(ARFILE);
 if (defined($main::read_file_cache{$realfile})) {
-	%{$main::read_file_cache{$realfile}} = %{$_[1]};
-	}
+    %{$main::read_file_cache{$realfile}} = %{$data_hash};
+    }
 if (defined($main::read_file_missing{$realfile})) {
-	$main::read_file_missing{$realfile} = 0;
-	}
+    $main::read_file_missing{$realfile} = 0;
+    }
+
+if ($sorted_by && $sorted_by_sectioning_preserved) {
+    my $target = read_file_contents($file);
+    my $model = read_file_contents($sorted_by);
+
+    # Extract version related comments for a block, e.g. #1.962
+    my %comments = reverse ($model =~ m/(#\s*[\d\.]+)[\n\s]+(.*?)=/gm);
+
+    # Build blocks of line's key separated with a new line break
+    my @lines = (($model =~ m/(.*?)$join|(^\s*$)/gm), undef, undef);
+    my @blocks;
+    my @block;
+    for (my $line = 0; $line < scalar(@lines) - 1; $line += 2) {
+        if ($lines[$line] =~ /\S+/) {
+            push(@block, $lines[$line]);
+            }
+        else {
+            push(@blocks, [@block]);
+            @block = ();
+            }
+        }
+    for (my $block = 0; $block <= scalar(@blocks) - 1; $block++) {
+        foreach my $line (@{$blocks[$block]}) {
+            # Add a comment to the first block element
+            if ($target =~ /(\Q$line\E)=(.*)/) {
+                foreach my $comment (keys %comments) {
+                    if (grep(/^\Q$comment\E$/, @{$blocks[$block]})) {
+                        $target =~ s/(\Q$line\E)=(.*)/$comments{$comment}\n$1=$2/;
+                        last;
+                        }
+                    }
+                last;
+                }
+            }
+        foreach my $line (reverse @{$blocks[$block]}) {
+            if (
+                # Go to another block immediately
+                # if new line already exists
+                $target =~ /(\Q$line\E)$join.*?(\r?\n|\r\n?)+$/m ||
+
+                # Add new line to the last element of
+                # the block and go to another block
+                $target =~ s/(\Q$line\E)$join(.*)/$1=$2\n/) {
+                last;
+                }
+            }
+        }
+    write_file_contents($file, $target);
+    }
 }
 
 =head2 html_escape(string)
@@ -578,7 +635,8 @@ my ($in, $out) = @_;
 $in = &callers_package($in);
 $out = &callers_package($out);
 my $buf;
-while(read($in, $buf, 32768) > 0) {
+my $bs = &get_buffer_size();
+while(read($in, $buf, $bs) > 0) {
 	(print $out $buf) || return 0;
 	}
 return 1;
@@ -899,10 +957,19 @@ if ($gconfig{'extra_headers'}) {
 if (!$gconfig{'no_frame_options'}) {
 	print "X-Frame-Options: SAMEORIGIN\n";
 	}
-if (!$gconfig{'no_content_security_policy'}) {
-	print "Content-Security-Policy: script-src 'self' 'unsafe-inline' 'unsafe-eval'; frame-src 'self'; child-src 'self'\n";
+if (!$gconfig{'no_content_security_policy'} &&
+	 $gconfig{'extra_headers'} !~ /Content-Security-Policy:/) {
+	if ($tconfig{'csp_headers'}) {
+		print "Content-Security-Policy: $tconfig{'csp_headers'}\n";
+		} 
+	else {
+		print "Content-Security-Policy: script-src 'self' 'unsafe-inline' 'unsafe-eval'; frame-src 'self'; child-src 'self'\n";
+		}
 	}
 print "X-Content-Type-Options: nosniff\n";
+if ($tconfig{'nolinks'}) {
+	print "X-no-links: 1\n";
+	}
 if (defined($cs)) {
 	print "Content-type: $mt; Charset=$cs\n\n";
 	}
@@ -970,11 +1037,11 @@ if (@_ > 0) {
 	}
 print "$tconfig{'headhtml'}\n" if ($tconfig{'headhtml'});
 if ($tconfig{'headinclude'}) {
-  my ($theme, $overlay) = split(' ', $gconfig{'theme'});
-  my $file_contents = read_file_contents("$root_directory/$overlay/$tconfig{'headinclude'}");;
-  $file_contents = replace_meta($file_contents);
-  print $file_contents;
-  }
+	my ($theme, $overlay) = split(' ', $gconfig{'theme'});
+	my $file_contents = read_file_contents("$root_directory/$overlay/$tconfig{'headinclude'}");;
+	$file_contents = replace_meta($file_contents);
+	print $file_contents;
+	}
 print "</head>\n";
 my $bgcolor = defined($tconfig{'cs_page'}) ? $tconfig{'cs_page'} :
 		 defined($gconfig{'cs_page'}) ? $gconfig{'cs_page'} : "ffffff";
@@ -996,13 +1063,13 @@ my $prebody = $tconfig{'prebody'};
 if ($prebody) {
 	$prebody = replace_meta($prebody);
 	print "$prebody\n";
+}
+if ($tconfig{'prebodyinclude'}) {
+	my ($theme, $overlay) = split(' ', $gconfig{'theme'});
+	my $file_contents = read_file_contents("$root_directory/$overlay/$tconfig{'prebodyinclude'}");
+	$file_contents = replace_meta($file_contents);
+	print $file_contents;
 	}
-	if ($tconfig{'prebodyinclude'}) {
-    my ($theme, $overlay) = split(' ', $gconfig{'theme'});
-    my $file_contents = read_file_contents("$root_directory/$overlay/$tconfig{'prebodyinclude'}");
-    $file_contents = replace_meta($file_contents);
-    print $file_contents;
-		}
 if (@_ > 1) {
 	print $tconfig{'preheader'};
 	my %this_module_info = &get_module_info(&get_module_name());
@@ -1337,6 +1404,51 @@ if (!$_[0]) {
 print "</html>\n";
 }
 
+=head2 load_module_preferences(module, &config)
+
+Check if user preferences can be loaded for given
+module based on module's prefs.info special file.
+
+=cut
+sub load_module_preferences
+{
+my ($module, $curr_config) = @_;
+my $module_prefs_acls = &get_module_preferences_acl($module, 'allowed');
+my $current_user_prefs = "$config_directory/$module/prefs.$remote_user";
+if ($module_prefs_acls && -r $current_user_prefs) {
+	if ($module_prefs_acls eq "*") {
+		&read_file($current_user_prefs, \%$curr_config);
+		}
+	else {
+		my %newconfigtmp;
+		&read_file($current_user_prefs, \%newconfigtmp);
+		foreach my $key (keys %newconfigtmp) {
+		if (grep(/^$key$/, split(",", $module_prefs_acls))) {
+				$curr_config->{$key} = $newconfigtmp{$key};
+				}
+			}
+		}
+	}
+}
+
+=head2 get_module_preferences_acl(module, type)
+
+Return one of module's prefs params (if described by module in prefs.info).
+
+=cut
+sub get_module_preferences_acl
+{
+my ($module, $type) = @_;
+my $module_dir = &module_root_directory($module);
+my $module_prefs_conf_file = "$module_dir/prefs.info";
+if (-r $module_prefs_conf_file) {
+	my %module_prefs_conf;
+	&read_file($module_prefs_conf_file, \%module_prefs_conf);
+	return $module_prefs_conf{$type};
+	}
+return undef;
+}
+
 =head2 load_theme_library
 
 Immediately loads the current theme's theme.pl file. Not generally useful for
@@ -1557,26 +1669,48 @@ elsif ($ENV{'REQUEST_URI'} =~ /json-error=1/) {
 	}
 else {
 	&header($text{'error'}, "");
-	print "<hr>\n";
-	print "<h3 data-fatal-error-text>",($main::whatfailed ? "$main::whatfailed : " : ""),
-		     @_,"</h3>\n";
+	my $hh = $miniserv::page_capture ? " captured" : "";
+	my $err_style = &read_file_contents("$root_directory/unauthenticated/errors.css");
+	if ($err_style) {
+		$err_style =~ s/[\n\r]//g;
+		$err_style =~ s/\s+/ /g;
+		$err_style = "<style data-err type=\"text/css\">$err_style</style>";
+		print "\n$err_style\n";
+		}
+	print "<hr>\n" if ($hh);
+	if ($hh) {
+		print "<h3 data-fatal-error-text>",($main::whatfailed ? "$main::whatfailed : " : ""),
+			     @_,"</h3>\n";
+		}
+	else {
+		my $error_what = ($main::whatfailed ? "$main::whatfailed: " : "");
+		my $error_html = join(",", @_);
+		my $error_text;
+		if ($error_html !~ /<pre.*?>/) {
+			$error_text = " &mdash; $error_html";
+			$error_html = undef;
+			}
+		print "<title>$text{'error'}</title><h3 class=\"err-head\" data-fatal-error-text>$text{'error'}$error_text</h3>$error_html<br>\n";
+		}
 	if ($gconfig{'error_stack'}) {
 		# Show call stack
-		print "<h3>$text{'error_stack'}</h3>\n";
-		print "<table>\n";
-		print "<tr> <td><b>$text{'error_file'}</b></td> ",
-		      "<td><b>$text{'error_line'}</b></td> ",
-		      "<td><b>$text{'error_sub'}</b></td> </tr>\n";
+		my $cls_err_caption = " class=\"err-head$hh\"";
+		my $cls_err_td = $hh ? " class=\"@{[&trim($hh)]}\"" : "";
+		print "<hr>\n" if ($hh);
+		print "<table class=\"err-stack$hh\"><caption$cls_err_caption>$text{'error_stack'}</caption>\n";
+		print "<tr> <td$cls_err_td><b>$text{'error_file'}</b></td> ",
+		      "<td$cls_err_td><b>$text{'error_line'}</b></td> ",
+		      "<td$cls_err_td><b>$text{'error_sub'}</b></td> </tr>\n";
 		for($i=0; my @stack = caller($i); $i++) {
 			print "<tr>\n";
-			print "<td>$stack[1]</td>\n";
-			print "<td>$stack[2]</td>\n";
-			print "<td>$stack[3]</td>\n";
+			print "<td$cls_err_td>$stack[1]</td>\n";
+			print "<td$cls_err_td>$stack[2]</td>\n";
+			print "<td$cls_err_td>$stack[3]</td>\n";
 			print "</tr>\n";
 			}
 		print "</table>\n";
 		}
-	print "<hr>\n";
+	print "<hr>\n" if ($hh);
 	if ($ENV{'HTTP_REFERER'} && $main::completed_referers_check) {
 		&footer("javascript:history.back()", $text{'error_previous'});
 		}
@@ -2452,6 +2586,7 @@ my $h = &make_http_connection($host, $port, $ssl, "GET", $page, \@headers);
 alarm(0) if ($timeout);
 $h = $main::download_timed_out if ($main::download_timed_out);
 if (!ref($h)) {
+	$h ||= "Unknown error";
 	if ($error) { $$error = $h; return; }
 	else { &error(&html_escape($h)); }
 	}
@@ -2480,6 +2615,7 @@ $timeout = 60 if (!defined($timeout));
 alarm($timeout) if ($timeout);
 ($line = &read_http_connection($h)) =~ tr/\r\n//d;
 if ($line !~ /^HTTP\/1\..\s+(200|30[0-9]|400)(\s+|$)/) {
+	$line ||= "Failed to read HTTP response line";
 	alarm(0) if ($timeout);
 	&close_http_connection($h);
 	if ($error) { ${$error} = $line; return; }
@@ -3042,53 +3178,59 @@ if ($gconfig{'debug_what_net'}) {
 	&webmin_debug_log('TCP', "host=$host port=$port");
 	}
 
-# Lookup IP address for the host. Try v4 first, and failing that v6
-my $ip;
+# Lookup all IPv4 and v6 addresses for the host
+my @ips = &to_ipaddress($host);
+push(@ips, &to_ip6address($host));
+if (!@ips) {
+	my $msg = "Failed to lookup IP address for $host";
+	if ($err) { $$err = $msg; return 0; }
+	else { &error($msg); }
+	}
+
+# Try each of the resolved IPs
+my $msg;
 my $proto = getprotobyname("tcp");
-if ($ip = &to_ipaddress($host)) {
-	# Create IPv4 socket and connection
-	if (!socket($fh, PF_INET(), SOCK_STREAM, $proto)) {
-		my $msg = "Failed to create socket : $!";
-		if ($err) { $$err = $msg; return 0; }
-		else { &error($msg); }
-		}
-	my $addr = inet_aton($ip);
-	if ($gconfig{'bind_proxy'}) {
-		# BIND to outgoing IP
-		if (!bind($fh, pack_sockaddr_in(0, inet_aton($bindip)))) {
-			my $msg = "Failed to bind to source address : $!";
-			if ($err) { $$err = $msg; return 0; }
-			else { &error($msg); }
+foreach my $ip (@ips) {
+	$msg = undef;
+	if (&check_ipaddress($ip)) {
+		# Create IPv4 socket and connection
+		if (!socket($fh, PF_INET(), SOCK_STREAM, $proto)) {
+			$msg = "Failed to create socket : $!";
+			next;
+			}
+		my $addr = inet_aton($ip);
+		if ($gconfig{'bind_proxy'}) {
+			# BIND to outgoing IP
+			if (!bind($fh, pack_sockaddr_in(0, inet_aton($bindip)))) {
+				$msg = "Failed to bind to source address : $!";
+				next;
+				}
+			}
+		if (!connect($fh, pack_sockaddr_in($port, $addr))) {
+			$msg = "Failed to connect to $host:$port : $!";
+			next;
 			}
 		}
-	if (!connect($fh, pack_sockaddr_in($port, $addr))) {
-		my $msg = "Failed to connect to $host:$port : $!";
-		if ($err) { $$err = $msg; return 0; }
-		else { &error($msg); }
+	else {
+		# Create IPv6 socket and connection
+		if (!&supports_ipv6()) {
+			$msg = "IPv6 connections are not supported";
+			next;
+			}
+		if (!socket($fh, PF_INET6(), SOCK_STREAM, $proto)) {
+			$msg = "Failed to create IPv6 socket : $!";
+			next;
+			}
+		my $addr = inet_pton(AF_INET6(), $ip);
+		if (!connect($fh, pack_sockaddr_in6($port, $addr))) {
+			$msg = "Failed to IPv6 connect to $host:$port : $!";
+			next;
+			}
 		}
+	last;	# If we got this far, it worked
 	}
-elsif ($ip = &to_ip6address($host)) {
-	# Create IPv6 socket and connection
-	if (!&supports_ipv6()) {
-		$msg = "IPv6 connections are not supported";
-		if ($err) { $$err = $msg; return 0; }
-		else { &error($msg); }
-		}
-	if (!socket($fh, PF_INET6(), SOCK_STREAM, $proto)) {
-		my $msg = "Failed to create IPv6 socket : $!";
-		if ($err) { $$err = $msg; return 0; }
-		else { &error($msg); }
-		}
-	my $addr = inet_pton(AF_INET6(), $ip);
-	if (!connect($fh, pack_sockaddr_in6($port, $addr))) {
-		my $msg = "Failed to IPv6 connect to $host:$port : $!";
-		if ($err) { $$err = $msg; return 0; }
-		else { &error($msg); }
-		}
-	}
-else {
-	# Resolution failed
-	my $msg = "Failed to lookup IP address for $host";
+if ($msg) {
+	# Last attempt failed
 	if ($err) { $$err = $msg; return 0; }
 	else { &error($msg); }
 	}
@@ -3175,18 +3317,22 @@ it cannot be resolved.
 =cut
 sub to_ipaddress
 {
-if (&check_ipaddress($_[0])) {
-	return $_[0];	# Already in v4 format
+my ($host) = @_;
+my @rv;
+if (&check_ipaddress($host)) {
+	@rv = ( $host );	# Already in v4 format
 	}
-elsif (&check_ip6address($_[0])) {
-	return undef;	# A v6 address cannot be converted to v4
+elsif (&check_ip6address($host)) {
+	@rv = ( );		# A v6 address cannot be converted to v4
 	}
 else {
-	my $hn = gethostbyname($_[0]);
-	return undef if (!$hn);
-	local @ip = unpack("CCCC", $hn);
-	return join("." , @ip);
+	my @hns = gethostbyname($host);
+	foreach my $hn (@hns[4..$#hns]) {
+		my @ip = unpack("CCCC", $hn);
+		push(@rv, join("." , @ip));
+		}
 	}
+return wantarray ? @rv : $rv[0];
 }
 
 =head2 to_ip6address(hostname)
@@ -3196,25 +3342,34 @@ Converts a hostname to IPv6 address, or returns undef if it cannot be resolved.
 =cut
 sub to_ip6address
 {
-if (&check_ip6address($_[0])) {
-	return $_[0];	# Already in v6 format
+my ($host) = @_;
+my @rv;
+if (&check_ip6address($host)) {
+	@rv = ( $host );	# Already in v6 format
 	}
-elsif (&check_ipaddress($_[0])) {
-	return undef;	# A v4 address cannot be v6
+elsif (&check_ipaddress($host)) {
+	@rv = ( );		# A v4 address cannot be v6
 	}
 elsif (!&supports_ipv6()) {
-	return undef;	# Cannot lookup
+	@rv = ( );		# v6 lookups not supported
 	}
 else {
 	# Perform IPv6 DNS lookup
-	my $inaddr;
-	(undef, undef, undef, $inaddr) =
-	    getaddrinfo($_[0], undef, AF_INET6(), SOCK_STREAM);
-	return undef if (!$inaddr);
-	my $addr;
-	(undef, $addr) = unpack_sockaddr_in6($inaddr);
-	return inet_ntop(AF_INET6(), $addr);
+	eval {
+		my @ai = getaddrinfo($host, undef, AF_INET6(), SOCK_STREAM);
+		while(@ai) {
+			my ($inaddr, @newai);
+			(undef, undef, undef, $inaddr, undef, @newai) = @ai;
+			if ($inaddr) {
+				my $addr;
+				(undef, $addr) = unpack_sockaddr_in6($inaddr);
+				push(@rv, inet_ntop(AF_INET6(), $addr));
+				}
+			@ai = @newai;
+			}
+		};
 	}
+return wantarray ? @rv : $rv[0];
 }
 
 =head2 to_hostname(ipv4|ipv6-address)
@@ -3681,7 +3836,6 @@ $mdir =~ /^(.*)$/; # untaint, part 1
 $mdir = $1; 	   # untaint, part 2
 $mdir && -d $mdir || &error("Module $mod does not exist");
 @INC = &unique($mdir, @INC);
--d $mdir || &error("Module $mod does not exist");
 if (!&get_module_name() && $mod) {
 	chdir($mdir);
 	}
@@ -3707,7 +3861,7 @@ else {
 	delete($ENV{'FOREIGN_ROOT_DIRECTORY'});
 	}
 @INC = @OLDINC;
-if ($@) { &error("Require $mod/$files[0] failed : <pre>$@</pre>"); }
+if ($@) { &error("<pre class=\"err-content\">Require $mod/$files[0] failed : $@</pre>"); }
 return 1;
 }
 
@@ -3869,7 +4023,8 @@ if (!$main::get_system_hostname[$m]) {
 		if ($fromfile && $fromfile !~ /\./) {
 			my $lref = &read_file_lines("/etc/resolv.conf", 1);
 			foreach my $l (@$lref) {
-				if ($l =~ /^(search|domain)\s+(\S+)/) {
+				if ($l =~ /^(search|domain)\s+(\S+)/ &&
+				    $2 ne "invalid") {
 					$dname = $2;
 					last;
 					}
@@ -4098,6 +4253,12 @@ if ($tconfig{'preload_functions'}) {
 if (defined(&theme_get_module_acl)) {
 	%rv = &theme_get_module_acl($u, $m, \%rv);
 	}
+
+# In case module's config expected to be user-based
+# only, we must not consider `noconfig` option at all.
+if (&get_module_preferences_acl($m, 'allowed') eq "*") {
+	$rv{'noconfig'} = 0;
+	}
 return %rv;
 }
 
@@ -4127,8 +4288,10 @@ if ($userdb) {
 		# Find the group in the SQL DB
 		my $cmd = $dbh->prepare(
 			"select id from webmin_group where name = ?");
-		$cmd && $cmd->execute($g) ||
+		if (!$cmd || !$cmd->execute($g)) {
+			&disconnect_userdb($userdb, $dbh);
 			&error(&text('egroupdbacl', $dbh->errstr));
+			}
 		my ($id) = $cmd->fetchrow();
 		$foundindb = 1 if (defined($id));
 		$cmd->finish();
@@ -4138,8 +4301,10 @@ if ($userdb) {
 			my $cmd = $dbh->prepare(
 			    "select attr,value from webmin_group_acl ".
 			    "where id = ? and module = ?");
-			$cmd && $cmd->execute($id, $m) ||
-			    &error(&text('egroupdbacl', $dbh->errstr));
+			if (!$cmd || !$cmd->execute($id, $m)) {
+				&disconnect_userdb($userdb, $dbh);
+				&error(&text('egroupdbacl', $dbh->errstr));
+				}
 			while(my ($a, $v) = $cmd->fetchrow()) {
 				$rv{$a} = $v;
 				}
@@ -4154,6 +4319,7 @@ if ($userdb) {
                                   $args->{'groupclass'}.'))',
 			scope => 'sub');
 		if (!$rv || $rv->code) {
+			&disconnect_userdb($userdb, $dbh);
 			&error(&text('egroupdbacl',
 				     $rv ? $rv->error : "Unknown error"));
 			}
@@ -4167,6 +4333,7 @@ if ($userdb) {
 				filter => '(cn='.$ldapm.')',
 				scope => 'one');
 			if (!$rv || $rv->code) {
+				&disconnect_userdb($userdb, $dbh);
 				&error(&text('egroupdbacl',
 				     $rv ? $rv->error : "Unknown error"));
 				}
@@ -4237,8 +4404,10 @@ if ($userdb && ($u ne $base_remote_user || $remote_user_proto)) {
 		# Find the user in the SQL DB
 		my $cmd = $dbh->prepare(
 			"select id from webmin_user where name = ?");
-		$cmd && $cmd->execute($u) ||
+		if (!$cmd || !$cmd->execute($u)) {
+			&disconnect_userdb($userdb, $dbh);
 			&error(&text('euserdbacl2', $dbh->errstr));
+			}
 		my ($id) = $cmd->fetchrow();
 		$foundindb = 1 if (defined($id));
 		$cmd->finish();
@@ -4247,8 +4416,10 @@ if ($userdb && ($u ne $base_remote_user || $remote_user_proto)) {
 		if ($foundindb) {
 			my $cmd = $dbh->prepare("delete from webmin_user_acl ".
 						"where id = ? and module = ?");
-			$cmd && $cmd->execute($id, $m) ||
-			    &error(&text('euserdbacl', $dbh->errstr));
+			if (!$cmd || !$cmd->execute($id, $m)) {
+				&disconnect_userdb($userdb, $dbh);
+				&error(&text('euserdbacl', $dbh->errstr));
+				}
 			$cmd->finish();
 			if ($_[0]) {
 				my $cmd = $dbh->prepare(
@@ -4257,9 +4428,13 @@ if ($userdb && ($u ne $base_remote_user || $remote_user_proto)) {
 				$cmd || &error(&text('euserdbacl2',
 						     $dbh->errstr));
 				foreach my $a (keys %{$_[0]}) {
-					$cmd->execute($id,$m,$a,$_[0]->{$a}) ||
-					    &error(&text('euserdbacl2',
-							 $dbh->errstr));
+					if (!$cmd->execute($id,$m,$a,
+							   $_[0]->{$a})) {
+						&disconnect_userdb(
+							$userdb, $dbh);
+						&error(&text('euserdbacl2',
+							     $dbh->errstr));
+						}
 					$cmd->finish();
 					}
 				}
@@ -4273,6 +4448,7 @@ if ($userdb && ($u ne $base_remote_user || $remote_user_proto)) {
                                   $args->{'userclass'}.'))',
 			scope => 'sub');
 		if (!$rv || $rv->code) {
+			&disconnect_userdb($userdb, $dbh);
 			&error(&text('euserdbacl',
 				     $rv ? $rv->error : "Unknown error"));
 			}
@@ -4287,6 +4463,7 @@ if ($userdb && ($u ne $base_remote_user || $remote_user_proto)) {
 				filter => '(cn='.$ldapm.')',
 				scope => 'one');
 			if (!$rv || $rv->code) {
+				&disconnect_userdb($userdb, $dbh);
 				&error(&text('euserdbacl',
 				     $rv ? $rv->error : "Unknown error"));
 				}
@@ -4310,6 +4487,7 @@ if ($userdb && ($u ne $base_remote_user || $remote_user_proto)) {
 						attr => \@attrs);
 				}
 			if (!$rv || $rv->code) {
+				&disconnect_userdb($userdb, $dbh);
 				&error(&text('euserdbacl2',
 				     $rv ? $rv->error : "Unknown error"));
 				}
@@ -4376,8 +4554,10 @@ if ($userdb) {
 		# Find the group in the SQL DB
 		my $cmd = $dbh->prepare(
 			"select id from webmin_group where name = ?");
-		$cmd && $cmd->execute($g) ||
+		if (!$cmd || !$cmd->execute($g)) {
+			&disconnect_userdb($userdb, $dbh);
 			&error(&text('egroupdbacl2', $dbh->errstr));
+			}
 		my ($id) = $cmd->fetchrow();
 		$foundindb = 1 if (defined($id));
 		$cmd->finish();
@@ -4386,19 +4566,28 @@ if ($userdb) {
 		if ($foundindb) {
 			my $cmd = $dbh->prepare("delete from webmin_group_acl ".
 						"where id = ? and module = ?");
-			$cmd && $cmd->execute($id, $m) ||
-			    &error(&text('egroupdbacl', $dbh->errstr));
+			if (!$cmd || !$cmd->execute($id, $m)) {
+				&disconnect_userdb($userdb, $dbh);
+				&error(&text('egroupdbacl', $dbh->errstr));
+				}
 			$cmd->finish();
 			if ($_[0]) {
 				my $cmd = $dbh->prepare(
 				    "insert into webmin_group_acl ".
 				    "(id,module,attr,value) values (?,?,?,?)");
-				$cmd || &error(&text('egroupdbacl2',
+				if (!$cmd) {
+					&disconnect_userdb($userdb, $dbh);
+					&error(&text('egroupdbacl2',
 						     $dbh->errstr));
+					}
 				foreach my $a (keys %{$_[0]}) {
-					$cmd->execute($id,$m,$a,$_[0]->{$a}) ||
-					    &error(&text('egroupdbacl2',
-							 $dbh->errstr));
+					if (!$cmd->execute($id,$m,$a,
+							   $_[0]->{$a})) {
+						&disconnect_userdb(
+							$userdb, $dbh);
+						&error(&text('egroupdbacl2',
+							     $dbh->errstr));
+						}
 					$cmd->finish();
 					}
 				}
@@ -4412,6 +4601,7 @@ if ($userdb) {
                                   $args->{'groupclass'}.'))',
 			scope => 'sub');
 		if (!$rv || $rv->code) {
+			&disconnect_userdb($userdb, $dbh);
 			&error(&text('egroupdbacl',
 				     $rv ? $rv->error : "Unknown error"));
 			}
@@ -4426,6 +4616,7 @@ if ($userdb) {
 				filter => '(cn='.$ldapm.')',
 				scope => 'one');
 			if (!$rv || $rv->code) {
+				&disconnect_userdb($userdb, $dbh);
 				&error(&text('egroupdbacl',
 				     $rv ? $rv->error : "Unknown error"));
 				}
@@ -4449,6 +4640,7 @@ if ($userdb) {
 						attr => \@attrs);
 				}
 			if (!$rv || $rv->code) {
+				&disconnect_userdb($userdb, $dbh);
 				&error(&text('egroupdbacl2',
 				     $rv ? $rv->error : "Unknown error"));
 				}
@@ -4615,6 +4807,8 @@ if ($gconfig{'path'}) {
 		# Include OS too
 		$ENV{'PATH'} = $gconfig{'path'}.$path_separator.$ENV{'PATH'};
 		}
+	$ENV{'PATH'} = join($path_separator,
+			&unique(split($path_separator, $ENV{'PATH'})));
 	}
 $ENV{$gconfig{'ld_env'}} = $gconfig{'ld_path'} if ($gconfig{'ld_env'});
 
@@ -4773,6 +4967,7 @@ if ($module_name) {
 		}
 	%config = ( );
 	&read_file_cached($module_config_file, \%config);
+	&load_module_preferences($module_name, \%config);
 
 	# Create a module-specific var directory
 	my $var_base = "$var_directory/modules";
@@ -4798,7 +4993,8 @@ $main::initial_module_name ||= $module_name;
 
 # Set some useful variables
 my $current_themes;
-$current_themes = $ENV{'MOBILE_DEVICE'} && defined($gconfig{'mobile_theme'}) ?
+$current_themes = defined($ENV{'THEME_DIRS'}) ? $ENV{'THEME_DIRS'} :
+		  $ENV{'MOBILE_DEVICE'} && defined($gconfig{'mobile_theme'}) ?
 		    $gconfig{'mobile_theme'} :
 		  defined($remote_user_attrs{'theme'}) ?
 		    $remote_user_attrs{'theme'} :
@@ -5418,12 +5614,39 @@ if ($rv{'longdesc'}) {
 	$rv{'index_link'} = 'index.cgi';
 	}
 
+# Apply module overrides
+&get_module_overrides($_[0], \%rv);
+
 # Call theme-specific override function
 if (defined(&theme_get_module_info)) {
 	%rv = &theme_get_module_info(\%rv, $_[0], $_[1], $_[2]);
 	}
 
 return %rv;
+}
+
+=head2 get_module_overrides($mod, \data)
+
+Checks for module specific overrides if exist in
+module.overrides file and executes defined subs
+
+=cut
+sub get_module_overrides
+{
+my ($mod, $data) = @_;
+return if (!$mod);
+
+my $mdir = &module_root_directory($mod);
+
+# Call module specific overrides
+my $call = 'module_overrides';
+if (-r "$mdir/$call.pl") {
+	eval {
+		local $main::error_must_die = 1;
+		&foreign_require($mod, "$call.pl");
+		&foreign_call($mod, $call, $data);
+		};
+	}
 }
 
 =head2 get_all_module_infos(cachemode)
@@ -6783,6 +7006,29 @@ else {
 return wantarray ? ($ok, $err) : $ok;
 }
 
+=head2 move_source_dest(source, dest)
+
+Move some file or directory to a new location. Returns 1 on success, or 0
+on failure - also sets $! on failure.
+
+=cut
+sub move_source_dest
+{
+my ($ok, $err);
+eval "use File::Copy";
+if (!$@) {
+	my ($src, $dst) = @_;
+	$ok = move($src, $dst);
+	if (!$ok && $!) {
+		$err = $!;
+		}
+	return wantarray ? ($ok, $err) : $ok;
+	}
+else {
+	error("The File::Copy Perl module is not available on your system : $@");
+	}
+}
+
 =head2 remote_session_name(host|&server)
 
 Generates a session ID for some server. For this server, this will always
@@ -6913,7 +7159,8 @@ return &$main::remote_error_handler("Failed to transfer file : $error")
 	if ($error);
 open(FILE, "<".$localfile) ||
 	return &$main::remote_error_handler("Failed to open $localfile : $!");
-while(read(FILE, $got, 1024) > 0) {
+my $bs = &get_buffer_size();
+while(read(FILE, $got, $bs) > 0) {
 	print TWRITE $got;
 	}
 close(FILE);
@@ -6951,7 +7198,8 @@ return &$main::remote_error_handler("Failed to transfer file : $error")
 my $got;
 open(FILE, ">$localfile") ||
 	return &$main::remote_error_handler("Failed to open $localfile : $!");
-while(read(TREAD, $got, 1024) > 0) {
+my $bs = &get_buffer_size();
+while(read(TREAD, $got, $bs) > 0) {
 	print FILE $got;
 	}
 close(FILE);
@@ -7001,6 +7249,7 @@ sub remote_rpc_call
 {
 my $serv;
 my $sn = &remote_session_name($_[0]);	# Will be undef for local connection
+my $tostr = &serialise_variable($_[1]);
 if (ref($_[0])) {
 	# Server structure was given
 	$serv = $_[0];
@@ -7166,7 +7415,6 @@ if ($serv->{'fast'} || !$sn) {
 		}
 	# Got a connection .. send off the request
 	my $fh = $fast_fh_cache{$sn};
-	my $tostr = &serialise_variable($_[1]);
 	print $fh length($tostr)," $fh\n";
 	print $fh $tostr;
 	my $rstr = <$fh>;
@@ -7217,7 +7465,6 @@ if ($serv->{'fast'} || !$sn) {
 	}
 else {
 	# Call rpc.cgi on remote server
-	my $tostr = &serialise_variable($_[1]);
 	my $error = 0;
 	my $con = &make_http_connection($ip, $serv->{'port'},
 					$serv->{'ssl'}, "POST", "/rpc.cgi");
@@ -7607,7 +7854,8 @@ else {
 	}
 }
 
-=head2 make_http_connection(host, port, ssl, method, page, [&headers])
+=head2 make_http_connection(host, port, ssl, method, page, [&headers],
+			    [&certreqs])
 
 Opens a connection to some HTTP server, maybe through a proxy, and returns
 a handle object. The handle can then be used to send additional headers
@@ -10669,11 +10917,26 @@ sub connect_userdb
 {
 my ($str) = @_;
 my @rv;
-if ($main::connect_userdb_cache{$str}) {
+
+# Is there a cached connection already we can re-use?
+my %miniserv;
+&get_miniserv_config(\%miniserv);
+if (!$miniserv{'userdb_nocache'} && $main::connect_userdb_cache{$str}) {
+	my $timeout = defined($miniserv{'userdb_cache_timeout'}) ?
+				$miniserv{'userdb_cache_timeout'} : 60;
 	@rv = @{$main::connect_userdb_cache{$str}};
-	$main::connect_userdb_cache_time{$str} = time();
-	return wantarray ? @rv : $rv[0];
+	if (time() - $main::connect_userdb_cache_time{$str} > $timeout) {
+		# Yes, but it's already timed out. Force close it, and make a new
+		# connection
+		&disconnect_userdb($str, $rv[0], 1);
+		}
+	else {
+		# Use the cache
+		$main::connect_userdb_cache_time{$str} = time();
+		return wantarray ? @rv : $rv[0];
+		}
 	}
+
 my ($proto, $user, $pass, $host, $prefix, $args) = &split_userdb_string($str);
 if ($proto eq "mysql") {
 	# Connect to MySQL with DBI
@@ -10741,8 +11004,10 @@ elsif ($proto eq "ldap") {
 else {
 	return "Unknown protocol $proto";
 	}
-$main::connect_userdb_cache{$str} = \@rv;
-$main::connect_userdb_cache_time{$str} = time();
+if (!$miniserv{'userdb_nocache'}) {
+	$main::connect_userdb_cache{$str} = \@rv;
+	$main::connect_userdb_cache_time{$str} = time();
+	}
 return wantarray ? @rv : $rv[0];
 }
 
@@ -10754,9 +11019,13 @@ Closes a handle opened by connect_userdb
 sub disconnect_userdb
 {
 my ($str, $h, $force) = @_;
+my %miniserv;
+&get_miniserv_config(\%miniserv);
+my $timeout = defined($miniserv{'userdb_cache_timeout'}) ?
+			$miniserv{'userdb_cache_timeout'} : 60;
 if ($force ||
     !$main::connect_userdb_cache{$str} ||
-    time() - $main::connect_userdb_cache_time{$str} > 60) {
+    time() - $main::connect_userdb_cache_time{$str} > $timeout) {
 	if ($str =~ /^(mysql|postgresql):/) {
 		# DBI disconnnect
 		if (!$h->{'AutoCommit'}) {
@@ -10806,7 +11075,7 @@ foreach my $e (@_) {
 return @rv;
 }
 
-=head2 list_combined_webmin_menu(&data, &in)
+=head2 list_combined_webmin_menu(&data, &in, [$mod])
 
 Returns an array of objects, each representing a menu item that a theme should
 render such as on a left menu. Each object is a hash ref with the following
@@ -10850,16 +11119,18 @@ possible keys :
 
 The &data parameter is a hash ref of additional information that the theme
 supplies to all modules. The &in param is the CGI inputs from the menu, for
-use where the menu has a form that submits to itself.
+use where the menu has a form that submits to itself, and [$mod] param binds
+a function return to a given module call
 
 =cut
 sub list_combined_webmin_menu
 {
-my ($data, $in) = @_;
+my ($data, $in, $mod) = @_;
 foreach my $m (&get_available_module_infos()) {
 	my $dir = &module_root_directory($m->{'dir'});
 	my $mfile = "$dir/webmin_menu.pl";
 	next if (!-r $mfile);
+	next if (defined($mod) && $mod ne $m->{'dir'});
 	eval {
 		local $main::error_must_die = 1;
 		&foreign_require($m->{'dir'}, "webmin_menu.pl");
@@ -11249,6 +11520,60 @@ elsif ($cgi) {
 	$url .= "/".$cgi;
 	}
 return $url;
+}
+
+=head2 trim(string, left_right_only)
+
+Trims the string
+
+=item string parameter is a string
+=item left_right_only parameter, if defined to 1 will only trim the beginning of the string, defined to -1 will trim only the end
+
+=cut
+sub trim
+{
+my ($str, $lr) = @_;
+if (!$lr) {
+	$str =~ s/^\s+//;
+	$str =~ s/\s+$//;
+	}
+elsif ($lr == -1) {
+	$str =~ s/\s+$//;
+	}
+elsif ($lr == 1) {
+	$str =~ s/^\s+//;
+	}
+return $str;
+}
+
+=head2 get_python_cmd
+
+Returns the full path to the python command, preferring higher versions if
+available.
+
+=cut
+sub get_python_cmd
+{
+return &has_command("python3") || &has_command("python30") ||
+       &has_command("python3.9") || &has_command("python39") ||
+       &has_command("python3.8") || &has_command("python38") ||
+       &has_command("python3.7") || &has_command("python37") ||
+       &has_command("python3.6") || &has_command("python36") ||
+       &has_command("python2.7") || &has_command("python27") ||
+       &has_command("python2.6") || &has_command("python26") ||
+       &has_command("python");
+}
+
+=head2 get_buffer_size
+
+Returns the buffer size for read/write operations
+
+=cut
+sub get_buffer_size
+{
+my %miniserv;
+&get_miniserv_config(\%miniserv);
+return $miniserv{'bufsize'} || 32768;
 }
 
 $done_web_lib_funcs = 1;

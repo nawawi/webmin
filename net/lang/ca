@@ -8,8 +8,12 @@ index_delete3=Suprimeix i Aplica les Interfícies Seleccionades
 index_apply2=Aplica les Interfícies Seleccionades
 index_vmin=Virtualmin
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 ifcs_title=Interfícies de Xarxa
 ifcs_now=Actives Actualment
@@ -63,8 +67,12 @@ ifcs_linkno=Desconnectat
 ifcs_speed=Velocitat de la interfície
 ifcs_duplex=, $1 dúplex
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 aifc_create=Creació d'Interfície Activa
 aifc_edit=Edició d'Interfície Activa
@@ -91,8 +99,12 @@ aifc_enetmask6=La màscara de subxarxa IPv6 de la fila $1 ha de ser un enter ent
 aifc_eclash6=L'adreça IPv6 de la fila $1 ja està en ús a la interfície $2
 aifc_eaddresses6=No has introduït cap adreça IPv6
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 bifc_create=Creació d'Interfície d'Engegada
 bifc_act=Activa-la en engegar el sistema
@@ -126,8 +138,12 @@ bifc_bridgefd=Retard de Reenviament
 bifc_bridgewait=Retard per esdevenir disponible
 bifc_ebond=La interfície d'enllaç ha de ser un número
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 bonding_add=Afegeix una nova interfície d'enllaç.
 bonding_create=Crea una Interfície d'Enllaç
@@ -141,19 +157,29 @@ bonding_miimondesc=(deixa-ho en blanc per desactivar la monitorització d'enlla�
 bonding_updelay=Retard superior
 bonding_downdelay=Retard inferior
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 vlan_add=Afegeix una Interfície amb Tags Vlan
 vlan_physical=Dispositiu Físic
 vlan_id=ID Vlan
 vlan_create=Crea una interfície VLAN
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 bridge_create=Crea una Interfície Pont
 
 =======
 bridge_create=Crea una Interfície Pont
+>>>>>>> upstream/master
+=======
+
+bridge_create=Crea una Interfície Pont
+
 >>>>>>> upstream/master
 routes_title=Encaminament i Portals
 routes_boot=Configuració de l'encaminament activada <i>en engegar</i>
@@ -224,8 +250,12 @@ routes_tabactive=Configuració activa
 routes_descactive=Aquesta secció llista les rutes que el sistema té actualment configurades, i permet afegir o eliminar rutes actives en alguns sistemes. Compte a l'hora de fer això, ja que els canvis incorrecte podrien deixar el sistema que està executant Webmin incomunicat amb la resta de la xarxa.
 routes_descboot=Aquesta secció permet configurar les rutes que s'activen quan s'engega el sistema. o quan s'aplica completament la configuració de xarxa.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 dns_title=Nom de Host i Client DNS
 dns_options=Opcions de Client DNS
@@ -245,8 +275,12 @@ dns_esearch=No has donat cap domini per buscar
 dns_hoststoo=Actualitza el nom de host a les adreces del host si es canvia
 dns_dhcp=El nom de host és establert pel servidor DHCP
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 hosts_title=Adreces de Hosts
 hosts_ip=Adreça IP
@@ -258,6 +292,7 @@ hosts_detail=Host i Adreces
 hosts_return=a la llista d'adreces de hosts
 hosts_ecannot=No tens permís per editar les adreces dels hosts
 hosts_delete=Suprimeix les Adreces de Host Seleccionades
+
 ipnodes_title=Adreces de Host IPv6
 ipnodes_ip=Adreça IPv6
 ipnodes_host=Noms de host
@@ -270,8 +305,12 @@ ipnodes_ecannot=No tens permís per editar adreces de host IPv6
 ipnodes_none=Encara no s'ha definit cap adreça de host IPv6.
 ipnodes_delete=Suprimeix les Adreces de Host IPv6 Seleccionades
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_create_host=S'ha creat l'adreça de host $1
 log_delete_host=S'ha suprimit l'adreça de host $1
@@ -297,8 +336,12 @@ log_create_route=S'ha creat la ruta activa de $1
 log_create_defroute=S'ha creat la ruta activa per defecte
 log_delete_routes=S'han suprimit $1 rutes actives
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 acl_ifcs=Pot editar interfícies de xarxa
 acl_routes=Pot editar l'encaminament i els portals
@@ -317,8 +360,12 @@ acl_virt=Pot afegir interfícies virtuals
 acl_delete=Pot suprimir interfícies
 acl_hide=Amaga les interfícies no editables
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 interfaces_title1=Tria les interfícies...
 interfaces_all=Totes les Interfícies...
@@ -328,11 +375,17 @@ interfaces_cancel=Cancel·la
 interfaces_clear=Neteja
 interfaces_title2=Selecciona l'Usuari...
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 apply_ecannot=No tens permís per aplicar la configuració
 
 =======
 apply_ecannot=No tens permís per aplicar la configuració
+>>>>>>> upstream/master
+=======
+
+apply_ecannot=No tens permís per aplicar la configuració
+
 >>>>>>> upstream/master
 mod_egone=La interfície ja no està activa!
 mod_title=Interfície Activa
@@ -345,6 +398,7 @@ mod_pptpc=la connexió PPTP $1
 mod_zones=una interfície virtual per a la zona <tt>$1</tt>
 mod_virtualmin=al servidor Virtualmin <tt>$1</tt>
 mod_reseller=el revenedor de Virtualmin <tt>$1</tt>
+
 range_edit=Edita el Rang d'Adreces
 range_create=Crea un Rang d'Adreces
 range_header=Opcions del rang d'adreces de la interfície
@@ -361,6 +415,7 @@ range_enum=Hi falta el número de la primera interfície virtual o bé no és nu
 range_eclass=Les adreces inicial i final han d'estar dins de la mateixa xarxa de classe C
 range_ebefore=L'adreça final ha de ser més gran que l'adreça inicial
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 chooser_any=&lt;Qualsevol&gt;
 chooser_other=Altres...
@@ -373,13 +428,22 @@ dbifcs_err=No s'han pogut suprimir les interfícies
 dbifcs_err2=No s'han pogut activar les interfícies
 
 =======
+=======
+
+>>>>>>> upstream/master
 chooser_any=&lt;Qualsevol&gt;
 chooser_other=Altres...
+
 dafics_err=No s'han pogut desactivar les interfícies
 daifcs_enone=No has seleccionat cap interfície
 daifcs_egone=La interfície ja no existeix!
+
 dbifcs_err=No s'han pogut suprimir les interfícies
 dbifcs_err2=No s'han pogut activar les interfícies
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 hdelete_err=No s'han pogut suprimir les adreces de host
 hdelete_enone=No n'has seleccionat cap

@@ -210,11 +210,8 @@ elsif ($two eq "BZ") {
 
 # Check if this is an RPM webmin module or theme
 my ($type, $redirect_to);
-$type = "";
-if (open(TYPE, "<$root_directory/install-type")) {
-	chop($type = <TYPE>);
-	close(TYPE);
-	}
+$type = &read_file_contents("$root_directory/install-type");
+chop($type) if ($type);
 my $out;
 if ($type eq 'rpm' && $file =~ /\.rpm$/i &&
     ($out = &backquote_command("rpm -qp $file 2>/dev/null"))) {
@@ -1134,6 +1131,7 @@ my %miniserv;
 # Need OS upgrade
 my %realos = &detect_operating_system(undef, 1);
 if (($realos{'os_version'} ne $gconfig{'os_version'} ||
+     $realos{'real_os_version'} ne $gconfig{'real_os_version'} ||
      $realos{'os_type'} ne $gconfig{'os_type'}) &&
     $realos{'os_version'} && $realos{'os_type'} &&
     &foreign_available("webmin")) {
@@ -1839,22 +1837,22 @@ local $_;
 open(OUT, "openssl x509 -in ".quotemeta($_[0])." -issuer -subject -enddate -text |");
 while(<OUT>) {
 	s/\r|\n//g;
-	if (/subject=.*CN\s*=\s*([^\/]+)/) {
+	if (/subject=.*CN\s*=\s*([^\/,]+)/) {
 		$rv{'cn'} = $1;
 		}
-	if (/subject=.*O\s*=\s*([^\/]+)/) {
+	if (/subject=.*O\s*=\s*([^\/,]+)/) {
 		$rv{'o'} = $1;
 		}
-	if (/subject=.*Email\s*=\s*([^\/]+)/) {
+	if (/subject=.*Email\s*=\s*([^\/,]+)/) {
 		$rv{'email'} = $1;
 		}
-	if (/issuer=.*CN\s*=\s*([^\/]+)/) {
+	if (/issuer=.*CN\s*=\s*([^\/,]+)/) {
 		$rv{'issuer_cn'} = $1;
 		}
-	if (/issuer=.*O\s*=\s*([^\/]+)/) {
+	if (/issuer=.*O\s*=\s*([^\/,]+)/) {
 		$rv{'issuer_o'} = $1;
 		}
-	if (/issuer=.*Email\s*=\s*([^\/]+)/) {
+	if (/issuer=.*Email\s*=\s*([^\/,]+)/) {
 		$rv{'issuer_email'} = $1;
 		}
 	if (/notAfter\s*=\s*(.*)/) {
@@ -2753,9 +2751,8 @@ my @rv;
 my %done;
 foreach my $theme (&list_themes()) {
 	my $iscurr = $curr && $theme->{'dir'} eq $curr;
-	next if (-l $root_directory."/".$theme->{'dir'} &&
-		 $theme->{'dir'} =~ /\d+$/ &&
-		 !$iscurr);
+	my $lnk = readlink($root_directory."/".$theme->{'dir'});
+	next if ($lnk && $lnk !~ /^\// && $lnk !~ /^\.\.\// && !$iscurr);
 	next if ($done{$theme->{'desc'}}++ && !$iscurr);
 	push(@rv, $theme);
 	}

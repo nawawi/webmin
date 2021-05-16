@@ -9,8 +9,12 @@ index_startmsg=Kattintson erre a gombra, hogy az FTP szerver az aktuális konfig
 index_startmsg2=Kattintson erre a gombra to start the FTP szerver with the current configuration. You can also configure the szerver to be started automatically when needed using inetd or some equivalent program.
 index_return=FTP szerver beállítása
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 class_title=Felhasználók és Osztályok
 class_header=Felhasználói osztályok és felhasználói beállítások
@@ -35,8 +39,12 @@ class_eclass='$1' nem valós osztálynév
 class_etypes=Nincs típus kiválasztva a '$1' osztályhoz
 class_eaddrs=Nincs cím megadva a '$1' osztályhoz
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 message_title=Üzenetek és Címfeliratok
 message_header=Üzenetek, Címfeliratok és README file-ok
@@ -67,8 +75,12 @@ message_ebanner='$1' nem valós belépő címfelirat file
 message_ehostname=Hibás vagy érvénytelen hosztnév
 message_eemail=Hibás vagy érvénytelen email cím
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 acl_title=Limit és hozzáférési szabályozás
 acl_header=Limit és hozzáférési szabályozás beállítása
@@ -117,8 +129,12 @@ acl_efbcount='$1' nem valós száma a file-oknak vagy byte -oknak
 acl_elimit='$1' nem valós időlimit
 acl_efails='$1' nem valós érvénytelen belépési szám
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 net_title=Hálózat
 net_header=Hálózati beállítások
@@ -138,8 +154,12 @@ net_enet='$1' nem valós hálózati cím
 net_ecidr='$1' nem valós háklózati bit szám
 net_eport='$1' nem valós port number
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_title=Naplózás
 log_header=Naplózási beállítások
@@ -158,8 +178,12 @@ log_syslog=Rendszer naplózás
 log_xferlog=XFER naplózás file-ba
 log_err=Nem lehet menteni a naplózási beállításokat
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 alias_title=Álnevek és útvonalak
 alias_header=Álnevek és útvonalak beállításai
@@ -172,8 +196,12 @@ alias_efrom='$1' nem valós álnáv név
 alias_eto='$1' nem valós álnév könyvtár
 alias_ecdpath='$1' nem valós CD keresési könyvtár
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 anon_title=Névtelen FTP
 anon_eftp=Figyelem  - az Ön rendszere nem rendelkezik <tt>ftp</tt> felhasználóval, és ezért lehetséges, hogy nem lehet beállítani névtelen FTP bejelentkezést.
@@ -198,8 +226,12 @@ anon_err=Nem lehet menteni a névtelen FTP beállításait
 anon_edir='$1' nem valós könyvtár
 anon_egroup='$1' nem valós csoport
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 perm_title=Jogosultság
 perm_header=Jogosultság beállítása
@@ -223,11 +255,17 @@ perm_echar='$1' nem valós karakter a szabályos kiterjesztésben
 perm_etypes=Nincs felhasználói típus kiválasztva
 perm_emesg='$1' nem valós hibaüzenet file
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 host_title=Hoszt hozzáférési szabályozás
 
 =======
 host_title=Hoszt hozzáférési szabályozás
+>>>>>>> upstream/master
+=======
+
+host_title=Hoszt hozzáférési szabályozás
+
 >>>>>>> upstream/master
 misc_title=Vegyes beállítások
 misc_header=Vegyes beállítások
@@ -250,8 +288,12 @@ misc_eshutdown=Hibás leállítási értesítő file
 misc_enice='$1' nem valós nice szint
 misc_eumask='$1' nem valós umask
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_class=Módosult felhasználók és osztályok
 log_message=Módosult üzenetek és címfelirat

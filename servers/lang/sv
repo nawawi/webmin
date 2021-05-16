@@ -14,6 +14,10 @@ index_return=servrar
 
 =======
 index_none=Ingen server har registrerats.
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_title=Ändra server
 create_title=Registrera server
@@ -29,8 +33,12 @@ edit_user=användarnamn
 edit_pass=lösenord
 edit_ecannot=Du får inte ändra servrar
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 save_err=Det gick inte att spara servern
 save_ehost=Datornamn saknas eller är felaktigt angivet
@@ -38,8 +46,12 @@ save_eport=Port saknas eller är felaktigt angiven
 save_euser=Användarnamn saknas
 save_epass=Lösenord saknas
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 find_title=Sök server
 find_new=Ny server hittades på $1
@@ -49,13 +61,18 @@ find_escan=Nätverket som ska avsökas måste vara av klass C
 find_none=Inga servrar svarade på sökningen.
 find_ecannot=Du får inte söka efter servrar
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_modify=Modifierade server $1
 log_create=Registrerade server $1
 log_delete=Tog bort server $1
 log_find=Hittade server $1
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 link_elogin=Det gick inte att logga in på $1 som $2
@@ -65,10 +82,18 @@ link_essl=Du har inte installerat Perl-biblioteket Net::SSLeay
 lib_other=Övrigt
 
 =======
+=======
+
+>>>>>>> upstream/master
 link_elogin=Det gick inte att logga in på $1 som $2
 link_ecannot=Du får inte använda denna server
 link_essl=Du har inte installerat Perl-biblioteket Net::SSLeay
+
 lib_other=Övrigt
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 acl_edit=Kunna ändra servrar
 acl_find=Kunna söka efter servrar

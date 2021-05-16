@@ -2,8 +2,12 @@ index_elink=Encara no s'ha configurat cap URL per fer el túnel.
 index_url=Introdueix l'URL a obrir:
 index_open=Obre
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 link_eurl=URL de túnel invàlid: $1
 link_elogin=No s'ha pogut entrar a $1 com $2.
@@ -12,8 +16,12 @@ link_enouser=Cal un usuari i una contrasenya per entrar a $1,  però no n'has co
 link_ebadurl=No tens permís per accedir l'URL $1
 link_mconfig=Fes servir la pàgina de <a href='$1'>configuració del mòdul</a> per canviar l'entrada.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 login_title=Entrada al Lloc Web
 login_desc=Has de proporcionar un nom d'usuari i una contrasenya per entrar a $1.
@@ -22,6 +30,7 @@ login_user=Usuari
 login_pass=Contrasenya
 login_login=Entra
 login_clear=Neteja
+
 seturl_err=No s'ha pogut obrir l'URL
 seturl_eurl=Has introduït un URL invàlid
 <<<<<<< HEAD

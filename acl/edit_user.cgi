@@ -211,14 +211,14 @@ if ($access{'cats'}) {
 			    [ 0, $text{'default'} ] ]));
 	}
 
-my @all = &webmin::list_themes();
+my @all = &webmin::list_visible_themes($user{'theme'});
 my @themes = grep { !$_->{'overlay'} } @all;
 my @overlays = grep { $_->{'overlay'} } @all;
 
 if ($access{'theme'}) {
 	# Current theme
 	my @topts = ( );
-	push(@topts, [ "", $text{'edit_themedef'} ]);
+	push(@topts, !$user{'theme'} ? [ '', $text{'edit_themedef'} ] : ());
 	foreach my $t (@themes) {
 		push(@topts, [ $t->{'dir'}, $t->{'desc'} ]);
 		}

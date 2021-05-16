@@ -124,7 +124,7 @@ http_downloading=İndirilmesi
 http_done=$1 - $2 arasında indirildi.
 uploading=Yükleniyor... Lütfen Bekleyin. ..
 acl_allowed_paths=Dizinlere erişime izin ver
-acl_allowed_paths2=(Kök olmayan kullanıcılar için)
+acl_allowed_paths_explain=Kök yetenekli kullanıcı için, izin verilen dizin yalnızca $HOME olarak ayarlanmışsa, / (tam disk erişimi) ile eşdeğer olacaktır.
 acl_allowed_for_edit=Yerleşik düzenleyici tarafından düzenlemeye izin verilen mime türleri
 acl_work_as=Dosyalara Unix kullanıcısı olarak erişin
 acl_root=Kök (güvenilir olmayan kullanıcılara özenle verin!)
@@ -155,8 +155,13 @@ menu_bookmarks=Yer imleri
 notallowed=$1 erişimine izin verilmiyor. İzin verilen dizinler : $2 
 error_upload_emax=Yüklenen dosya $1 sınırını aşıyor
 extract_etype=Desteklenmeyen arşiv dosyası türü
+
 info_total1=Toplam: $1 dosya ve $2 dizin
 info_total2=Toplam: $1 dosya ve $2 dizin
 info_total3=Toplam: $1 dosya ve $2 dizin
 info_total4=Toplam: $1 dosya ve $2 dizin
+
 ownership=Sahip
+acls=Erişim kontrol Listesi
+file_detect_encoding=Dosya kodlamasını otomatik olarak algıla
+index_return=dosya listesi

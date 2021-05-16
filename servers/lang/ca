@@ -23,8 +23,12 @@ index_automsg=Fes clic sobre aquest botó per configurar el descobriment periòd
 index_search=Mostra els servidors que coincideixin amb:
 index_ok=Busca
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_title=Edició de Servidor
 create_title=Registre de Servidors
@@ -62,8 +66,12 @@ edit_invalid=L'usuari no pot fer RPCs
 edit_version=S'està executant Webmin $1
 edit_same=Només disponible quan no s'està en mode d'autenticació de sessió, i quan la contrasenya s'ha posat a disposició dels programes de Webmin.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 save_err=No s'ha pogut desar el servidor
 save_ehost=Hi falta el nom del host o bé no és correcte
@@ -76,8 +84,12 @@ save_egroup=Hi falta el nom del grup
 save_elogin=Usuari o contrasenya invàlids
 save_egroup2=Nom del nou grup invàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 find_title=Recerca de Servidors
 find_new=S'ha trobat un servidor nou a $1
@@ -94,23 +106,33 @@ find_scanning=S'estan rastrejant servidors a la xarxa...
 find_broading=S'està retransmetent als servidors de les adreces...
 find_eport=Hi falta el número de port o bé és invàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_modify=S'ha modificat el servidor $1
 log_create=S'ha registrat el servidor $1
 log_delete=S'ha suprimit el servidor $1
 log_find=S'ha trobat el servidor $1
 log_deletes=S'han suprimit $1 servidors
+
 link_elogin=No s'ha pogut connectar a $1 com a $2
 link_ecannot=No tens permís per utilitzar aquest servidor
 link_essl=No tens instal·lada la llibreria Perl Net::SSLeay
 link_eautologin=Usuari o contrasenya errònia per a $1. <a href='$2'>Fes clic aquí</a> per provar-ho altre cop.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> upstream/master
+=======
+
+>>>>>>> upstream/master
 lib_other=Altres
+
 acl_edit=Pot editar servidors
 acl_find=Pot buscar servidors
 acl_servers=Pot utilitzar servidors
@@ -122,6 +144,7 @@ acl_forcefast=Força el mode RPC ràpid al valor per defecte
 acl_forcetype=Força el tipus de SO al valor per defecte
 acl_forcelink=Força el tipus d'entrada al valor per defecte
 acl_links=Es pot connectar als servidors
+
 login_title=Entrada al servidor
 login_desc=Has de donar un nom d'usuari i una contrasenya per entrar al servidor Webmin $1.
 login_header=Autenticació Webmin
@@ -133,7 +156,9 @@ login_esame=L'opció d'utilitzar la mateixa entrada que aquest servidor només e
 >>>>>>> upstream/master
 login_login=Entra
 login_esame=L'opció d'utilitzar la mateixa entrada que aquest servidor només es pot utilitzar quan no s'està en mode d'autenticació de sessió i quan la contrasenya s'ha posat a disposició dels programes de Webmin.
+
 this_server=aquest servidor
+
 delete_err=No s'han pogut suprimir els servidors
 delete_enone=No n'has seleccionat cap
 delete_ecannot=No tens permís per suprimir servidors
@@ -141,8 +166,12 @@ delete_title=Supressió de Servidors
 delete_rusure=Segur que vols eliminar els $1 servidors seleccionats?
 delete_confirm=Suprimeix-los Ara
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 auto_title=Cerca Automàtica de Servidors
 auto_header=Opcions de registre automàtic de servidor
@@ -173,6 +202,7 @@ auto_self=Aquest sistema
 auto_esmtp=Hi falta el servidor SMTP o bé és invàlid
 auto_findself=Registra també aquest sistema
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 config_deftype=Tipus de sistema per defecte
 config_typeauto=Automàtic
@@ -180,6 +210,12 @@ config_typeauto=Automàtic
 =======
 config_deftype=Tipus de sistema per defecte
 config_typeauto=Automàtic
+>>>>>>> upstream/master
+=======
+
+config_deftype=Tipus de sistema per defecte
+config_typeauto=Automàtic
+
 >>>>>>> upstream/master
 email_regsubject=Sistema $1 registrat
 email_reg=El sistema $1 ha estat registrat automàticament.

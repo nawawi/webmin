@@ -46,6 +46,21 @@ my ($href, $text, $class, $tags) = @_;
 return ("<a class='ui_link".($class ? " ".$class : "")."' href='$href'".($tags ? " ".$tags : "").">$text</a>");
 }
 
+=head2 ui_help(title)
+
+Returns HTML for help tooltip bubble
+
+=item title - help tooltip title
+
+=cut
+
+sub ui_help
+{
+return &theme_ui_help(@_) if (defined(&theme_ui_help));
+my ($title) = @_;
+return ("<sup class=\"ui_help\" aria-label=\"$title\" data-tooltip><samp>?</samp></sup>");
+}
+
 =head2 ui_img(src, alt, title, [class], [tags])
 
 Returns HTML for an <img src>.
@@ -2460,28 +2475,17 @@ Returns HTML for a text string, with its color determined by $type.
 
 sub ui_text_color
 {
-my ($text, $type, $class) = @_;
-my ($rv, $color);
+my ($text, $type) = @_;
+my ($color);
 
 if (defined (&theme_ui_text_color)) {
     return &theme_ui_text_color(@_);
     }
-
-if ($type eq "success") { $color = "3c763d"; }
-elsif ($type eq "info") { $color = "31708f"; }
-elsif ($type eq "warn") { $color = "8a6d3b"; }
-elsif ($type eq "danger") { $color = "a94442"; }
-
-my $style;
-$style = " style=\"color: #$color\"" if (!$class);
-if ($class) {
-	my $c = $class == 1 ? 'text' : $class;
-	$class = "$c-$type";
-}
-
-$rv .= "<span class='ui_text_color text_type_$type $class'$style>$text</span>\n";
-
-return $rv;
+if ($type eq "success") { $color = "#3c763d"; }
+elsif ($type eq "info") { $color = "#31708f"; }
+elsif ($type eq "warn") { $color = "#8a6d3b"; }
+elsif ($type eq "danger") { $color = "#a94442"; }
+return "<span class=\"ui_text_color text_type_$type\" style=\"color: $color\">$text</span>\n";
 }
 
 =head2 ui_alert_box(msg, type)

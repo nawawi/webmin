@@ -24,6 +24,7 @@ index_style=Sistema d'impressió: $1
 index_cluster=Servidors de Clúster
 index_clusterdesc=Fes clic sobre aquest botó per configurar servidors Webmin addicionals en els quals es crearan, actualitzaran i suprimiran impressores.
 index_delete=Suprimeix les Impressores Seleccionades
+
 style_solaris=Solaris
 style_linux=LPR de Linux
 style_freebsd=LPR de FreeBSD
@@ -34,8 +35,12 @@ style_cups=CUPS
 style_irix=IRIX
 style_aix=AIX
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_eedit=No tens permís per editar aquesta impressora
 edit_eadd=No tens permís per crear impressores
@@ -80,7 +85,9 @@ edit_direct=Connexió directa TCP
 edit_dport=Port
 edit_driver=Controlador d'impressió
 edit_check=Comprova si el servidor remot funciona
+
 blocks=blocs
+
 save_err=No s'ha pogut desar la impressora
 save_eadd=No tens permís per afegir impressores
 save_eedit=No tens permís per editar aquesta impressora
@@ -103,8 +110,12 @@ save_errslave=La impressora s'ha creat bé en aquest sistema, però s'han produ�
 save_egone=No s'ha trobat cap impressora anomenada '$1'
 save_errdelslave=La impressora s'ha suprimit bé en aquest sistema, però s'han produït els errors següents als sistemes del clúster: $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 jobs_title=Treballs d'Impressió
 jobs_header=Treballs d'impressió de $1
@@ -123,6 +134,9 @@ jobs_cancelsel=Cancel·la els Treballs Seleccionats
 jobs_on=A la impressora $1
 jobs_return=a la llista de treballs d'impressió
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 cancel_ecannot=No tens permís per cancel·lar treballs d'impressió
 cancel_err=No s'ha pogut cancel·lar el treball d'impressió
@@ -140,6 +154,7 @@ stop_err=No s'ha pogut aturar el gestor d'impressió
 restart_ecannot==No tens permís per reiniciar el gestor d'impressió
 restart_err=No s'ha pogut reiniciar el gestor d'impressió
 
+<<<<<<< HEAD
 =======
 cancel_ecannot=No tens permís per cancel·lar treballs d'impressió
 cancel_err=No s'ha pogut cancel·lar el treball d'impressió
@@ -153,6 +168,8 @@ stop_err=No s'ha pogut aturar el gestor d'impressió
 restart_ecannot==No tens permís per reiniciar el gestor d'impressió
 restart_err=No s'ha pogut reiniciar el gestor d'impressió
 >>>>>>> upstream/master
+=======
+>>>>>>> upstream/master
 webmin_none=Cap
 webmin_nonemsg=Impressora PostScript o text
 webmin_remotemsg=Impressora remota
@@ -163,6 +180,7 @@ webmin_uniprint=Controlador Uniprint
 webmin_edrivers=No s'han pogut obtenir els controladors de $1. Els controladors de Webmin que utilitzen ghostscript no estan disponibles
 webmin_egs=No s'ha trobat l'ordre $1. Els controladors de Webmin que utilitzen ghostscript no estan disponibles
 webmin_edriver='$1' no existeix
+
 caldera_none=Cap
 caldera_nonemsg=Impressora transparent o remota
 caldera_prog=Programa
@@ -177,8 +195,12 @@ caldera_eprog='$1' no existeix
 caldera_edriver=No has seleccionat cap controlador d'impressió
 caldera_eres=No has seleccionat cap resolució
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 redhat_none=Cap
 redhat_nonemsg=Impressora PostScript o text
@@ -198,6 +220,7 @@ redhat_ehmargin=Hi falta el marge esquerre/dret o bé és invàlid
 redhat_evmargin=Hi falta el marge superior/inferior o bé és invàlid
 redhat_eres=No has seleccionat cap resolució
 redhat_printer2=Model i controlador de la impressora
+
 suse_none=Cap
 suse_nonemsg=Impressora PostScript o text
 suse_prog=Programa
@@ -215,10 +238,15 @@ suse_yast2=Controlador YAST2
 suse_edriver=No has seleccionat cap tipus d'impressora
 suse_eres=No has seleccionat cap resolució
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> upstream/master
+=======
+
+>>>>>>> upstream/master
 estop=No s'ha pogut aturar lpd: $1
+
 acl_printers=Impressores que aquest usuari pot configurar
 acl_add=Pot crear impressores
 acl_cancel=Pot cancel·lar treballs d'impressió
@@ -235,8 +263,12 @@ acl_user_this=L'usuari Webmin actual
 acl_delete=Pot suprimir impressores
 acl_cluster=Pot gestionar el clúster d'impressores
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_stop=S'ha aturat el servidor d'impressió
 log_start=S'ha iniciat el servidor d'impressió
@@ -251,8 +283,12 @@ log_create_l=S'ha creat la impressora $3 $1 a $2
 log_modify_l=S'ha modificat la impressora $3 $1 a $2
 log_delete_l=S'ha suprimit la impressora $3 $1 a $2
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 linux_paralel=Port Paral·lel $1
 linux_serial=Port Sèrie $1 (COM$1)
@@ -261,29 +297,43 @@ linux_usb=Impressora USB $1
 linux_ecmd=No s'ha trobat al sistema l'ordre $1, cosa que indica que el sistema d'impressió de Linux no s'ha instal·lat.
 linux_espool=El directori de spool $1 no existeix, cosa que indica que el sistema d'impressió de Linux no està instal·lat.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 freebsd_paralel=Port Paral·lel
 freebsd_serial=Port Sèrie $1 (COM$1)
 freebsd_ecmd=No s'ha trobat al sistema l'ordre $1, cosa que indica que el sistema d'impressió de FreeBSD no s'ha instal·lat.
 freebsd_espool=El directori de spool $1 no existeix, cosa que indica que el sistema d'impressió de FreeBSD no està instal·lat.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 openbsd_paralel=Port Paral·lel
 openbsd_serial=Port Sèrie $1 (COM$1)
 
+<<<<<<< HEAD
 =======
 openbsd_paralel=Port Paral·lel
 openbsd_serial=Port Sèrie $1 (COM$1)
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 unixware_paralel=Port Paral·lel $1
 unixware_serial=Port Sèrie $1
 unixware_null=Dispositiu Nul
 unixware_ecmd=No s'ha trobat al sistema l'ordre $1, cosa que indica que el sistema d'impressió de Unixware no s'ha instal·lat.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 hpux_paralel=Paral·lel $1
 hpux_serial=Sèrie $1
@@ -291,14 +341,19 @@ hpux_null=Dispositiu Nul
 hpux_ecmd=No s'ha trobat al sistema l'ordre $1, cosa que indica que el sistema d'impressió de HPUX no s'ha instal·lat.
 hpux_eiface=El directori de scripts d'interfície $1 no existeix, cosa que indica que el sistema d'impressió de HPUX no està instal·lat.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 lprng_paralel=Port Paral·lel $1
 lprng_serial=Port Sèrie $1 (COM$1)
 lprng_null=Dispositiu Nul
 lprng_ecmd=No s'ha trobat al sistema l'ordre $1, cosa que indica que el sistema d'impressió LPRng no s'ha instal·lat.
 lprng_espool=El directori de spool $1 no existeix, cosa que indica que el sistema d'impressió LPRng no està instal·lat.
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 solaris_paralel=Port Paral·lel
@@ -308,11 +363,18 @@ solaris_serial=Port Sèrie $1
 solaris_null=Dispositiu Nul
 
 =======
+=======
+
+>>>>>>> upstream/master
 solaris_paralel=Port Paral·lel
 solaris_uparalel=Port Paral·lel Ultra 5/10
 solaris_serial=Port Sèrie $1
 solaris_null=Dispositiu Nul
 solaris_ecmd=No s'ha trobat al sistema l'ordre $1, cosa que indica que el sistema d'impressió de Solaris no s'ha instal·lat.
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 test_title=Pàgina de Prova
 test_ecannot=No tens permís per imprimir pàgines de prova
@@ -325,6 +387,7 @@ test_print=Imprimeix la pàgina
 test_exec=S'està imprimint la pàgina de prova amb l'ordre $1...
 test_failed=...l'ordre ha fallat!
 test_ok=...s'ha completat l'ordre.
+
 cups_none=Cap
 cups_nonemsg=Impressora transparent o remota
 cups_prog=Programa
@@ -332,6 +395,7 @@ cups_driver=Controlador CUPS
 cups_eprog='$1' no és un programa vàlid
 cups_opts=Opcions de $1
 cups_ecmd=No s'ha trobat al sistema l'ordre $1, cosa que indica que el sistema d'impressió CUPS no s'ha instal·lat.
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 irix_ecmd=No s'ha trobat al sistema l'ordre $1, cosa que indica que el sistema d'impressió d'IRIX no s'ha instal·lat.
@@ -342,11 +406,19 @@ aix_edesc=Descripció invàlida - només es permeten lletres i números, sense e
 aix_ecmd=No s'ha trobat el servidor d'impressió $1 d'AIX. Pot ser que no estigui instal·lat o que hi hagi un altre sistema d'impressió en ús.
 
 =======
+=======
+
+>>>>>>> upstream/master
 irix_ecmd=No s'ha trobat al sistema l'ordre $1, cosa que indica que el sistema d'impressió d'IRIX no s'ha instal·lat.
 irix_eiface=No existeix el directori de scripts d'interfície $1, cosa que indica que el sistema d'impressió d'IRIX no està instal·lat.
+
 aix_port=Port d'impressora $1
 aix_edesc=Descripció invàlida - només es permeten lletres i números, sense espais
 aix_ecmd=No s'ha trobat el servidor d'impressió $1 d'AIX. Pot ser que no estigui instal·lat o que hi hagi un altre sistema d'impressió en ús.
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 cluster_title=Servidors d'Impressió del Clúster
 cluster_none=Encara no s'ha afegit cap servidor al clúster d'impressió.
@@ -360,8 +432,12 @@ cluster_return=als servidors del clúster
 cluster_delete=Elimina els Seleccionats
 cluster_ecannot=No tens permís per gestionar els servidors d'impressió del clúster
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 add_title=Addició de Servidors
 add_msg=S'està afegint $1...

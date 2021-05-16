@@ -1394,10 +1394,31 @@ $cmd =~ s/^\s*\[.*\]\s+\|\|\s+//;
 while($cmd =~ s/(\d*)(<|>)((\/\S+)|&\d+)\s*$//) { }
 $cmd =~ s/^\((.*)\)\s*$/$1/;
 $cmd =~ s/\s+$//;
+my $eos;
 if ($config{'match_mode'} == 1) {
 	$cmd =~ s/\s.*$//;
+	$eos = '$';
 	}
-($proc) = grep { $_->{'args'} =~ /\Q$cmd\E/ &&
+else {
+	my $cmd_ = $cmd;
+	$cmd_ =~ s/\s.*$//;
+	if ($cmd_ eq $cmd) {
+		$eos = '$';
+		}
+	}
+
+# If `Input to command` is set, remove it for test case
+# otherwise cmd will always be displayed as not running
+my $cmd_ = $cmd;
+
+# First remove only input to command and preserve
+# potential arguments containing escaped %, like \\%
+$cmd_ =~ s/(?<!\\)%.*//;
+
+# Now replace escaped \\ special chars for testing purposes
+$cmd_ =~ s/\\//g;
+
+($proc) = grep { $_->{'args'} =~ /\Q$cmd_\E$eos/ &&
 		 (!$config{'match_user'} || $_->{'user'} eq $_[0]->{'user'}) }
 		@procs;
 if (!$proc && $cmd =~ /^$config_directory\/(.*\.pl)(.*)$/) {

@@ -16,18 +16,6 @@ $letsencrypt_chain_urls = [
 	"https://letsencrypt.org/certs/lets-encrypt-r3-cross-signed.pem",
 	];
 
-sub get_letsencrypt_python_cmd
-{
-return &has_command("python3") || &has_command("python30") ||
-       &has_command("python3.9") || &has_command("python39") ||
-       &has_command("python3.8") || &has_command("python38") ||
-       &has_command("python3.7") || &has_command("python37") ||
-       &has_command("python3.6") || &has_command("python36") ||
-       &has_command("python2.7") || &has_command("python27") ||
-       &has_command("python2.6") || &has_command("python26") ||
-       &has_command("python");
-}
-
 # check_letsencrypt()
 # Returns undef if all dependencies are installed, or an error message
 sub check_letsencrypt
@@ -36,7 +24,7 @@ if (&has_command($letsencrypt_cmd)) {
 	# Use official client
 	return undef;
 	}
-my $python = &get_letsencrypt_python_cmd();
+my $python = &get_python_cmd();
 if (!$python || !&has_command("openssl")) {
         return $text{'letsencrypt_ecmds'};
         }
@@ -162,6 +150,11 @@ if ($letsencrypt_cmd) {
 	&print_tempfile(TEMP, "text = True\n");
 	&close_tempfile(TEMP);
 	my $dir = $letsencrypt_cmd;
+	my $cmd_ver = &get_certbot_major_version($letsencrypt_cmd);
+	my $old_flags;
+	if ($cmd_ver < 1.11) {
+		$old_flags = " --manual-public-ip-logging-ok";
+		}
 	$dir =~ s/\/[^\/]+$//;
 	$size ||= 2048;
 	my $out;
@@ -175,7 +168,7 @@ if ($letsencrypt_cmd) {
 			" --webroot-path ".quotemeta($webroot).
 			" --duplicate".
 			" --force-renewal".
-			" --manual-public-ip-logging-ok".
+			"$old_flags".
 			" --non-interactive".
 			" --agree-tos".
 			" --config $temp".
@@ -197,7 +190,7 @@ if ($letsencrypt_cmd) {
 			" --manual-cleanup-hook $cleanup_hook".
 			" --duplicate".
 			" --force-renewal".
-			" --manual-public-ip-logging-ok".
+			"$old_flags".
 			" --non-interactive".
 			" --agree-tos".
 			" --config $temp".
@@ -293,7 +286,7 @@ else {
 	&copy_source_dest($csr, "/tmp/lets.csr", 1);
 
 	# Find a reasonable python version
-	my $python = &get_letsencrypt_python_cmd();
+	my $python = &get_python_cmd();
 
 	# Request the cert and key
 	my $cert = &transname();
@@ -416,6 +409,17 @@ while ($bd =~ /\./) {
 	$bd =~ s/^[^\.]+\.//;
 	}
 return ( );
+}
+
+# Returns Let's Encrypt client major version, such as 1.11 or 0.40
+sub get_certbot_major_version
+{
+my ($cmd) = @_;
+my $out = &backquote_command("$cmd --version");
+if ($out && $out =~ /\s*(\d+\.\d+)\s*/) {
+	return $1;
+	}
+	return 0;
 }
 
 1;

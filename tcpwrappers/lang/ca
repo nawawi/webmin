@@ -11,8 +11,12 @@ index_cmd=Ordre
 index_delete=Suprimeix les Seleccionades
 index_none=cap
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_title1allow=Creació de Regla de Permissió
 edit_title2allow=Edició de Regla de Permissió
@@ -27,16 +31,24 @@ edit_hostsexcept=Hosts exceptuats
 edit_cmd=Ordres shell
 edit_efound=No s'ha trobat el dimoni '$1' a la configuració xinetd.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 save_errtitle=Error en desar la regla
 save_ehost=L'entrada del host conté caràcters incorrectes
 save_ecmd=L'entrada de l'ordre conté caràcters incorrectes
 save_eservice=El nom del dimoni conté caràcters incorrectes
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 del_errtitle=Error en suprimir la/es regla/es
 del_enone=No has marcat cap regla per suprimir

@@ -21,8 +21,12 @@ index_tabsched=Còpies planificades
 index_tabbackup=Copia-ho ara
 index_tabrestore=Restaura-ho ara
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_title1=Creació de Còpia Planificada
 edit_title2=Edició de Còpia Planificada
@@ -49,15 +53,21 @@ edit_other=Altres fitxers llistats...
 edit_pre=Ordre pre de la còpia
 edit_post=Ordre post de la còpia
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 save_err=No s'ha pogut desar la còpia
 save_emods=No has seleccionat cap mòdul
 save_ewebmin=No has seleccionat ni els fitxers de configuració de Webmin ni els del servidor
 
+<<<<<<< HEAD
 =======
 save_err=No s'ha pogut desar la còpia
 save_emods=No has seleccionat cap mòdul
 save_ewebmin=No has seleccionat ni els fitxers de configuració de Webmin ni els del servidor
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 backup_mode0=Fitxer local
 backup_mode1=Servidor FTP
@@ -76,8 +86,12 @@ backup_euntar=L'extracció TAR ha fallat: $1
 backup_enone2=Cap dels fitxers dels mòduls seleccionats es troba a la còpia
 backup_epre2=El mòdul $1 ha rebutjat la restauració: $2
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 backup_err=La còpia ha fallat
 backup_edest=Hi falta un fitxer local absolut o bé és invàlid
@@ -95,8 +109,12 @@ backup_doing=S'està començant la còpia dels fitxers de configuració de mòdu
 backup_failed=... ha fallat! $1
 backup_done=... completa. La mida final de la còpia és de $1 i conté $2 fitxers.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 restore_err=La restauració ha fallat
 restore_emods=No has seleccionat cap mòdul ni cap altre fitxer
@@ -107,8 +125,12 @@ restore_failed=... ha fallat! $1
 restore_done=... completa. S'han restaurat $1 fitxers.
 restore_done2=... els fitxers de la còpia són:
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 nice_ftp=$2 on $1 via FTP
 nice_ftpp=$2 al port $3 de $1 via FTP
@@ -117,8 +139,12 @@ nice_sshp=$2 al port $3 de $1 via SSH
 nice_upload=fitxer pujat
 nice_download=navegador
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_backup=S'han copiat $1 mòduls a $2
 log_restore=S'han restaurat $1 mòduls de $2
@@ -127,16 +153,24 @@ log_modify_backup=S'ha modificat la còpia de $1 mòduls a $2
 log_delete_backup=S'ha suprimit la còpia de $1 mòduls a $2
 log_run_backup=S'ha executat la còpia de $1 mòduls a $2
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 run_title=Còpia de Configuracions
 run_doing=S'està iniciant la còpia de $1 mòduls a $2...
 run_ok=...la còpia s'ha completat correctament.
 run_failed=...la còpia ha fallat! Vegeu el missatge d'error per saber-ne el motiu.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 email_mods=La còpia dels mòduls
 email_failed=a $1 ha fallat:

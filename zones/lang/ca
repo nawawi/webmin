@@ -5,8 +5,12 @@ index_add=Afegeix una zona nova.
 index_return=a la llista de zones
 index_zones=Zones Existents
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_title=Edició de Zona
 edit_common=Configuració general de la zona
@@ -62,6 +66,9 @@ edit_attradd=Afegeix un atribut genèric.
 edit_webmin=Obre el Webmin
 edit_brand=Reinicia
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 ui_cancel=Cancel·la
 
@@ -69,22 +76,28 @@ save_err=No s'ha pogut desar la zona
 save_epool=Hi falta el pool o bé és invàlid
 save_ewebmin=El Webmin no s'està executant en aquesta zona
 
+<<<<<<< HEAD
 =======
 ui_cancel=Cancel·la
 save_err=No s'ha pogut desar la zona
 save_epool=Hi falta el pool o bé és invàlid
 save_ewebmin=El Webmin no s'està executant en aquesta zona
 >>>>>>> upstream/master
+=======
+>>>>>>> upstream/master
 reboot_title=Reinici de Zona
 reboot_rusure=Segur que vols reiniciar la zona $1? Tots els processos quer s'hi estan executant es reiniciaran.
 reboot_err=No s'ha pogut reiniciar la zona
 reboot_doing=Reengegant la zona...
+
 reboot_failed=...ha fallat:
 reboot_ok=...completat.
+
 halt_title=Tancament de Zona
 halt_rusure=Segur que vols tancar la zona $1? Tots els processos quer s'hi estan executant s'aturaran.
 halt_err=No s'ha pogut tancar la zona
 halt_doing=Tancant la zona...
+
 boot_title=Engegada de Zona
 boot_err=No s'ha pogut engegar la zona
 boot_doing=Engegant la zona...
@@ -97,14 +110,21 @@ delete_rusure=Segur que vols suprimir la zona $1? Es perdran tots els fitxers de
 delete_err=No s'ha pogut suprimir la zona
 delete_doing=Suprimint la zona...
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 uninstall_title=Desinstal·lació del Sistema
 uninstall_rusure=Segur que vols desinstal·lar el programari del sistema de la zona $1? Es perdran tots els fitxers dels seus sistemes de fitxers privats.
 uninstall_err=No s'ha pogut desinstal·lar el programari de sistema de la zona
 uninstall_doing=Desinstal·lant el sistema de la zona...
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 install_title=Instal·lació del Sistema
 install_doing=Instal·lant el sistema a la zona...
@@ -126,8 +146,12 @@ net_eaddress=Adreça IP invàlida
 net_egone=La interfície ja no existeix!
 net_eclash=Ja existeix una interfície de xarxa amb aquesta IP en aquesta zona
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 pkg_title1=Addició de Directori de Paquets
 pkg_title2=Edició de Directori de Paquets
@@ -141,9 +165,13 @@ pkg_inherit=Hereta els paquets de la zona global
 pkg_inherit_yes=Sí (zona arrel dispersa)
 pkg_inherit_no=No (tota la zona arrel)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 fs_title1=Creació de Sistema de Fitxers
 fs_title2=Edició de Sistema de Fitxers
@@ -167,8 +195,12 @@ fs_egone=El sistema de fitxers ja no existeix!
 fs_mount=Munta'l després de crear-lo
 fs_eclash=Ja existeix un sistema de fitxers que utilitza aquest directori a la mateixa zona
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 rctl_title1=Creació de Control de Recurs
 rctl_title2=Edició de Control de Recurs
@@ -191,8 +223,12 @@ rctl_eaction=No has seleccionat cap senyal a la fila $1
 rctl_evalues=No has introduït cap límit
 rctl_eclash=ja existeix un control d'aquest recurs en aquesta zona
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 attr_title1=Creació d'Atribut Genèric
 attr_title2=Edició d'Atribut Genèric
@@ -212,8 +248,12 @@ attr_eboolean=El valor no és 'true' o 'false'
 attr_egone=L'atribut ja no existeix!
 attr_eclash=Ja existeix un atribut amb aquest nom en aquesta zona
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 status_running=En execució
 status_installed=Aturada
@@ -222,16 +262,22 @@ status_incomplete=Instal·lant-se
 status_ready=Llest
 status_down=Tancat
 status_shutting_down=Tancant-se
+
 list_name=Nom de la zona
 list_id=Nº d'ID
 list_path=Directori de la zona
 list_status=Estat
 list_actions=Accions
+
 zone_in=A la zona $1
 pool_none=Cap
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 create_title=Creació de Zona
 create_header=Detalls de la nova zona
@@ -293,6 +339,7 @@ create_erouter=Hi falta l'adreça IP de l'encaminador per defecte o bé és inv�
 create_removingpkgs=eliminant els directoris de paquets heretats...
 create_brand=Reinicia
 create_brandmsg=Reinici de Zona
+
 log_create_zone=S'ha creat la zona $1
 log_delete_zone=S'ha suprimit la zona $1
 log_save_zone=S'ha modificat la configuració de la zona $1
@@ -317,6 +364,7 @@ log_create_attr=S'ha creat l'atribut genèric $1 a la zona $2
 log_modify_attr=S'ha modificat l'atribut genèric $1 a la zona $2
 log_delete_attr=S'ha suprimit l'atribut genèric $1 a la zona $2
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 webmin_eperl=$1 no té Perl instal·lat
 webmin_eroot=El directori $1 no existeix o bé no conté el Webmin.
@@ -324,6 +372,9 @@ webmin_title=Instal·lació de Webmin
 
 __norefs=1
 =======
+=======
+
+>>>>>>> upstream/master
 webmin_eperl=$1 no té Perl instal·lat
 webmin_eroot=El directori $1 no existeix o bé no conté el Webmin.
 webmin_title=Instal·lació de Webmin

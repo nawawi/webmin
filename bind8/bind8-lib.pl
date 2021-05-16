@@ -3161,10 +3161,13 @@ my ($zone) = @_;
 my @rv;
 if (!$access{'ro'} && $access{'apply'}) {
 	my $r = $ENV{'REQUEST_METHOD'} eq 'POST' ? 0 : 1;
-	my $zone_name;
+	my $link_params = "";
 	if ($zone) {
-		$zone_name = "&" . "zone=$zone->{'name'}&type=$zone->{'type'}";
-	}
+		$link_params = "&zone=$zone->{'name'}&type=$zone->{'type'}";
+		if ($zone->{'viewindex'}) {
+			$link_params .= "&view=$zone->{'viewindex'}";
+			}
+		}
 	if (&is_bind_running()) {
 		if ($zone && ($access{'apply'} == 1 || $access{'apply'} == 2)) {
 			# Apply this zone
@@ -3175,16 +3178,16 @@ if (!$access{'ro'} && $access{'apply'}) {
 			}
 		# Apply whole config
 		if ($access{'apply'} == 1 || $access{'apply'} == 3) {
-			push(@rv, &ui_link("restart.cgi?return=$r$zone_name", $text{'links_restart'}) );
+			push(@rv, &ui_link("restart.cgi?return=$r$link_params", $text{'links_restart'}) );
 			}
 		if ($access{'apply'} == 1) {
 			# Stop BIND
-			push(@rv, &ui_link("stop.cgi?return=$r$zone_name", $text{'links_stop'}) );
+			push(@rv, &ui_link("stop.cgi?return=$r$link_params", $text{'links_stop'}) );
 			}
 		}
 	elsif ($access{'apply'} == 1) {
 		# Start BIND
-		push(@rv, &ui_link("start.cgi?return=$r$zone_name", $text{'links_start'}));
+		push(@rv, &ui_link("start.cgi?return=$r$link_params", $text{'links_start'}));
 		}
 	}
 return join('<br>', @rv);
@@ -3491,25 +3494,27 @@ return $out if ($tries >= 10);
 
 # Merge records back into original file, by deleting all NSEC and RRSIG records
 # and then copying over
-for(my $i=$#recs; $i>=0; $i--) {
-	if ($recs[$i]->{'type'} eq 'NSEC' ||
-	    $recs[$i]->{'type'} eq 'NSEC3' ||
-	    $recs[$i]->{'type'} eq 'RRSIG' ||
-	    $recs[$i]->{'type'} eq 'NSEC3PARAM') {
-		&delete_record($fn, $recs[$i]);
+my @delrecs;
+foreach my $r (@recs) {
+	if ($r->{'type'} eq 'NSEC' ||
+	    $r->{'type'} eq 'NSEC3' ||
+	    $r->{'type'} eq 'RRSIG' ||
+	    $r->{'type'} eq 'NSEC3PARAM') {
+		push(@delrecs, $r);
 		}
 	}
+&delete_multiple_records($fn, \@delrecs);
 my @signedrecs = &read_zone_file($fn.".webmin-signed", $dom);
+my @addrecs;
 foreach my $r (@signedrecs) {
 	if ($r->{'type'} eq 'NSEC' ||
 	    $r->{'type'} eq 'NSEC3' ||
 	    $r->{'type'} eq 'RRSIG' ||
 	    $r->{'type'} eq 'NSEC3PARAM') {
-		&create_record($fn, $r->{'name'}, $r->{'ttl'}, $r->{'class'},
-			       $r->{'type'}, join(" ", @{$r->{'values'}}),
-			       $r->{'comment'});
+		push(@addrecs, $r);
 		}
 	}
+&create_multiple_records($fn, \@addrecs);
 &unlink_file($signed);
 return undef;
 }

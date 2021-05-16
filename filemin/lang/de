@@ -27,7 +27,7 @@ owner_group=Gruppe
 permissions=Rechte
 selinux=Sicherheits Kontext
 attributes=Attribute
-last_mod_time=Letzte änderung
+last_mod_time=Letzte Änderung
 rename=Umbenennen
 edit=Bearbeiten
 extract_archive=Entpacke Archiv
@@ -124,7 +124,6 @@ http_downloading=Wird heruntergeladen
 http_done=$1 von $2 heruntergeladen.
 uploading=Hochladen, bitte warten ...
 acl_allowed_paths=Zugang zu Verzeichnissen erlauben
-acl_allowed_paths2=(Nur für root-Benutzer
 acl_allowed_for_edit=Mimetypen erlaubt zum Editieren von engebautenEditor
 acl_work_as=Auf Dateien als System-Benutzer zugreifen
 acl_root=Root (nicht vertrauenswürdigen Benutzern mit Vorsicht zu gewähren!)
@@ -155,8 +154,10 @@ menu_bookmarks=Lesezeichen
 notallowed=Sie haben keine Erlaubnis, auf $1 zuzugreifen. Die erlaubten Verzeichnisse sind: $2
 error_upload_emax=Die hochgeladene Datei ist größer als die Grenze von $1
 extract_etype=Nicht unterstützter Archivdateityp
+
 info_total1=Gesamt: $1 Datei und $2 Verzeichnis
 info_total2=Gesamt: $1 Dateien und $2 Verzeichnis
 info_total3=Gesamt: $1 Datei und $2 Verzeichnisse
 info_total4=Gesamt: $1 Dateien und $2 Verzeichnisse
+
 ownership=Besitzer

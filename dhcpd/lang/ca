@@ -62,6 +62,7 @@ index_match1=conté
 index_match2=coincideix amb
 index_dhcpd=DHCPd ISC
 index_delete=Suprimeix els Seleccionats
+
 butt_save=Desa
 butt_eco=Edita les Opcions de Client
 butt_vco=Mostra les Opcions de Client
@@ -69,8 +70,12 @@ butt_del=Suprimeix
 butt_create=Crea
 butt_leases=Llista els Préstecs
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 esub_crheader=Creació de Subxarxa
 esub_edheader=Edició de Subxarxa
@@ -85,6 +90,7 @@ esub_groups=Grups directament en aquesta subxarxa
 esub_pools=Conjunt d'adreces per a la subxarxa
 esub_pool=Conjunt $1
 esub_poolnone=No hi ha cap conjunt d'adreces definit
+
 esub_pooladd=Afegeix un conjunt d'adreces.
 esub_none=Cap
 esub_return=a la llista de subxarxes
@@ -92,8 +98,12 @@ esub_retshar=xarxa compartida
 esub_desc=Descripció de la subxarxa
 esub_fopeer=Parell de Recanvi
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 esh_crheader=Creació de Xarxa Compartida
 esh_eheader=Edició de Xarxa Compartida
@@ -106,8 +116,12 @@ esh_return=a la llista de subxarxes
 esh_pools=Pools d'Adreces de Xarxa Compartida
 esh_desc=Descripció de la xarxa compartida
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 ehost_crheader=Creació de Host
 ehost_eheader=Edició de Host
@@ -130,8 +144,12 @@ ehost_retsubn=subxarxa
 ehost_retshar=xarxa compartida
 ehost_desc=Descripció del host
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 egroup_crheader=Creació de Grup de Hosts
 egroup_eheader=Edició de Grup de Hosts
@@ -144,6 +162,9 @@ egroup_retsubn=subxarxa
 egroup_retshar=xarxa compartida
 egroup_desc=Descripció del grup
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 default=Defecte
 secs=segs
@@ -179,21 +200,30 @@ listl_pc=Percentatge
 listl_err=No s'han pogut suprimir els préstecs
 listl_enone=No n'has seleccionat cap
 listl_refresh=Refresca la llista
+
 restart_errmsg1=No s'ha pogut reiniciar dhcpd
 restart_errmsg2=No s'ha pogut enviar el senyal al procés
 start_failstart=No s'ha pogut iniciar dhcpd
 restart_conftext=Línies al voltant de $1 a $2:
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 sgroup_faildel=No s'ha pogut suprimir el grup
 sgroup_failsave=No s'ha pogut desar el grup
 sgroup_invassign=grup assignat a una secció incorrecta
 sgroup_echanged=S'ha canviat el fitxer de configuració. Prova-ho un altre cop.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 shost_faildel=No s'ha pogut suprimir el host
 shost_failsave=No s'ha pogut desar el host
@@ -202,8 +232,12 @@ shost_invalidhwa='$1' no és una adreça $2 vàlida
 shost_invalidaddr='$1' conté un nom de host o una adreça IP invàlida
 shost_invassign=host assignat a una secció incorrecta
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 sopt_failsave=No s'han pogut desar les opcions de client
 sopt_invalidip=no és una adreça IP vàlida
@@ -215,16 +249,24 @@ sopt_edtype='$1' no és un tipus d'opció vàlid
 sopt_ecval=Hi falta el valor de l'opció personalitzada '$1'
 sopt_ecip=El valor de l'opció personalitzada '$1' ha de ser una adreça IP
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 sshared_faildel=No s'ha pogut suprimir la xarxa compartida
 sshared_failsave=No s'ha pogut desar la xarxa compartida
 sshared_invalidsname=Hi falta el nom de la xarxa compartida o bé no és vàlid.
 sshared_nosubnet=La xarxa compartida '$1' no conté cap subxarxa.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 ssub_faildel=No s'ha pogut suprimir la subxarxa
 ssub_failsave=No s'ha pogut desar la subxarxa
@@ -234,8 +276,12 @@ ssub_invalidipr=no és un rang d'adreces IP vàlid
 ssub_nosubnet=La xarxa compartida '$1' no conté cap subxarxa.
 ssub_invalidfopeer=no és un parell de recanvi vàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 plib_deflt=Temps de préstec per defecte
 plib_bfname=Nom del fitxer d'engegada
@@ -291,8 +337,12 @@ plib_auth_subnet=El servidor és autoritatiu per a aquesta subxarxa
 plib_auth_shared-network=El servidor és autoritatiu per a aquesta xarxa compartida
 plib_auth_global=El servidor és autoritatiu per a totes les subxarxes
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 eopt_header=Opcions de Client
 eopt_subtitle=de la subxarxa $1
@@ -345,8 +395,12 @@ eopt_slpaips=Només aquestes IPs
 eopt_slps=Abast del servei SLP
 eopt_slpsonly=Només aquest abast
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_apply=S'han aplicat els canvis
 log_start=S'ha iniciat el servidor DHCP
@@ -370,6 +424,7 @@ log_options_group=S'han modificat les opcions del grup de hosts $1
 log_delete_lease=S'ha suprimit el préstec de $1
 log_delete_subnets=S'han suprimit $1 subxarxes i xarxes compartides
 log_delete_hosts=S'han suprimit $1 hosts grups de hosts
+
 keys_edit=Edita la clau TSIG
 keys_create=S'han creat les claus TSIG
 keys_title=Claus DNS
@@ -380,6 +435,7 @@ keys_ecannot=No tens permís per editar les claus DNS
 keys_err=No s'han pogut desar les claus DNS
 keys_ekey='$1' no és un ID de clau vàlid
 keys_esecret=Hi falta la cadena secreta base-64 de la clau $1
+
 pool_edit=Edita el Conjunt d'Adreces
 pool_create=S'ha creat el conjunt d'adreces
 pool_header=Opcions del conjunt d'adreces
@@ -387,8 +443,12 @@ pool_allow=Clients permesos
 pool_deny=Clients denegats
 pool_return=a la subxarxa
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 cdel_header=Atenció
 cdel_shared1=xarxa compartida
@@ -408,8 +468,12 @@ cdel_confirm=Segur que vols suprimir aquest $1 ?
 cdel_eunknown=Error desconegut
 cdel_return=a la llista de hosts i xarxes
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 eacl_aviol=Violació del control d'accés
 eacl_np=No tens permís per
@@ -436,6 +500,7 @@ eacl_pdl=suprimir préstecs
 eacl_psl=veure préstecs
 eacl_pglob=editar les opcions globals
 eacl_papply=reiniciar aquest servei
+
 acl_apply=Pot aplicar els canvis
 acl_r_leases=Pot veure els préstecs
 acl_w_leases=Pot treure els préstecs
@@ -466,6 +531,7 @@ acl_ernow=Si vols activar l'accés d'escriptura a les ACLs globals per algun tip
 acl_normal=normal
 acl_paranoic=paranoic
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 iface_title=Interfície de Xarxa
 iface_desc=El servidor DHCP només pot assignar adreces IP a les xarxes connectades a una de les interfícies seleccionades a sota. S'hi ha d'incloure la interfície de xarxa per a totes les subxarxes definides. Si no n'hi ha cap de seleccionada, el servidor DHCP intentarà trobar-ne una automàticament.
@@ -476,6 +542,13 @@ iface_title=Interfície de Xarxa
 iface_desc=El servidor DHCP només pot assignar adreces IP a les xarxes connectades a una de les interfícies seleccionades a sota. S'hi ha d'incloure la interfície de xarxa per a totes les subxarxes definides. Si no n'hi ha cap de seleccionada, el servidor DHCP intentarà trobar-ne una automàticament.
 iface_listen=Escolta les interfícies
 >>>>>>> upstream/master
+=======
+
+iface_title=Interfície de Xarxa
+iface_desc=El servidor DHCP només pot assignar adreces IP a les xarxes connectades a una de les interfícies seleccionades a sota. S'hi ha d'incloure la interfície de xarxa per a totes les subxarxes definides. Si no n'hi ha cap de seleccionada, el servidor DHCP intentarà trobar-ne una automàticament.
+iface_listen=Escolta les interfícies
+
+>>>>>>> upstream/master
 lookup_ehost=No existeix cap host amb el nom, adreça IP o adreça MAC $1
 lookup_ehostname=No has introduït cap nom de host, adreça IP o adreça MAC
 lookup_egroup=No existeix cap grup amb el nom o el domini $1
@@ -485,8 +558,12 @@ lookup_esubnetname=No has introduït cap adreça o adreça/màscara
 lookup_eshared=No existeix cap xarxa compartida amb el nom $1
 lookup_esharedname=No has introduït cap nom de xarxa compartida
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 zone_key=Zones DNS
 index_addzone=Afegeix una nova zona DNS.
@@ -504,15 +581,21 @@ zone_failsave=No s'ha pogut desar la zona
 zone_tsigkey=Clau TSIG
 zone_ecannot=No tens permís per editar zones DNS
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> upstream/master
+=======
+
+>>>>>>> upstream/master
 plib_clientupdates=Els clients poden actualitzar els seus propis registres
+
 text_title=dhcpd.conf
 text_editor=Editor de text
 text_return=al menú principal
 text_undo=desfés
 text_ecannot=No tens permís permís per editar el fitxer de configuració
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 index_buttetext=Edita Manualment la Configuració
@@ -522,10 +605,18 @@ stop_err=No s'ha pogut aturar el servidor DHCP
 stop_ekill=No està en execució!
 
 =======
+=======
+
+>>>>>>> upstream/master
 index_buttetext=Edita Manualment la Configuració
 index_text=Edita el fitxer de configuració manualment
+
 stop_err=No s'ha pogut aturar el servidor DHCP
 stop_ekill=No està en execució!
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 sdelete_err=Ho s'han pogut suprimir les subxarxes i les xarxes compartides
 sdelete_enone=No has seleccionat cap xarxa
@@ -534,6 +625,7 @@ sdelete_rusure1=Segur que vols suprimir les $1 subxarxes i les $2 xarxes compart
 sdelete_rusure2=Segur que vols suprimir les $1 subxarxes seleccionades? També es perdran les altres subxarxes i objectes dins de les subxarxes.
 sdelete_rusure3=Segur que vols suprimir les $1 xarxes compartides seleccionades? També es perdran les altres xarxes i objectes dins de les xarxes.
 sdelete_ok=Suprimeix-les Ara
+
 hdelete_err=No s'han pogut suprimir els hosts i els grups
 hdelete_enone=No has seleccionat cap host ni cap grup
 hdelete_title=Supressió de Hosts i Grups

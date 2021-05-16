@@ -53,8 +53,12 @@ index_always=Sempre
 index_ladd=Crea un nou agent launchd.
 index_lname=Nom de l'agent
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_title=Edició d'Acció
 create_title=Creació d'Acció
@@ -90,8 +94,12 @@ edit_return=a l'acció
 edit_status=Iniciada ara
 edit_unknown=Desconeguda
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 save_err=No s'ha pogut desar l'acció
 save_ecannot=No tens permís per editar accions d'engegada
@@ -102,8 +110,12 @@ save_eclash=Ja existeix una acció amb el mateix nom
 save_escript=No has introduït cap script d'acció
 save_estartcmd=Hi falta l'ordre d'engegada
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 ss_ecannot=No tens permís per editar accions d'inici o atur
 ss_start=Acció d'Inici
@@ -116,8 +128,12 @@ ss_doingstart=S'està iniciant l'acció $1...
 ss_doingstop=S'està aturant l'acció $1...
 ss_doingstatus=S'està demanant l'estat de l'acció $1...
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 shutdown_ecannot=No tens permís per tancar el sistema
 shutdown_title=Tancament
@@ -125,8 +141,12 @@ shutdown_rusure=Segur que vols tancar el sistema amb l'ordre $1?
 shutdown_ok=Tanca el sistema
 shutdown_exec=S'està tancant el sistema amb l'ordre $1...
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 reboot_ecannot=No tens permís per reengegar el sistema
 reboot_title=Reengega
@@ -134,8 +154,12 @@ reboot_rusure=Segur que vols reiniciar el sistema amb l'ordre $1?
 reboot_ok=Reengega el sistema
 reboot_exec=S'està reengegant el sistema $1...
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 acl_script=Pot editar el script d'engegada
 acl_actions=Pot executar, editar, crear i suprimir accions
@@ -143,8 +167,12 @@ acl_runonly=Només executar
 acl_reboot=Pot reengegar el sistema
 acl_shutdown=Pot tancar el sistema
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_rename=S'ha renomenat l'acció $1 a $2
 log_modify=S'ha modificat l' acció $1
@@ -167,8 +195,12 @@ log_massenable=S'han activat les accions $1
 log_massdisable=S'han desactivat les accions $1
 log_telinit=S'ha canviat al nivell d'execució $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_hostconfig_startup=El script $1 s'executa en engegar el sistema si aquesta acció és activa. Pots editar-la a sota
 edit_hostconfig_plist=El fitxer $1 estableix certs paràmetres amb respecte el script d'engegada. El pots editar a sota
@@ -182,6 +214,9 @@ edit_hostconfig_further=Després de crear la nova acció d'engegada, se t'enviar
 edit_hostconfig_hostconfig=El fitxer $1 controla els serveis globals del sistema i els dimonis que s'inicien en engegar el sistema. Els pots editar a sota.
 edit_hostconfig_title=Edició de Hostconfig
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 mass_enone=No has seleccionat cap acció
 mass_start=Accions d'Inici
@@ -211,6 +246,7 @@ mass_ustarting=S'està iniciant el servei $1...
 mass_ustopping=S'està aturant el servei $1...
 mass_urestarting=S'està reiniciant el servei $1...
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 change_err=No tens permís per canviar de nivell d'execució
 change_title=Canvia el Nivell d'Execució
@@ -221,6 +257,13 @@ change_err=No tens permís per canviar de nivell d'execució
 change_title=Canvia el Nivell d'Execució
 change_cmd=S'està canviant al nivell d'execució $1 amb l'ordre $2. Això pot trigar una mica, i pot ser que el Webmin ja no estigui disponible després del canvi.
 >>>>>>> upstream/master
+=======
+
+change_err=No tens permís per canviar de nivell d'execució
+change_title=Canvia el Nivell d'Execució
+change_cmd=S'està canviant al nivell d'execució $1 amb l'ordre $2. Això pot trigar una mica, i pot ser que el Webmin ja no estigui disponible després del canvi.
+
+>>>>>>> upstream/master
 mode_init=SysV init
 mode_osx=MacOS
 mode_local=Script d'inici simple
@@ -230,8 +273,12 @@ mode_upstart=Upstart
 mode_systemd=Systemd
 mode_launchd=LaunchD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 upstart_title1=Creació de Servei <i>Upstart</i>
 upstart_title2=Edició de Servei <i>Upstart</i>
@@ -258,8 +305,12 @@ upstart_eserver2=L'ordre del servidor no existeix
 upstart_eserver3=Només es pot introduir una ordre del servidor
 upstart_return=al servei <i>upstart</i>
 <<<<<<< HEAD
+<<<<<<< HEAD
  
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 systemd_title1=Creació de Servei Systemd
 systemd_title2=Edició de Servei Systemd
@@ -285,8 +336,12 @@ systemd_return=al servei systemd
 systemd_econf=No has introduït cap configuració de systemd
 systemd_estart=Hi falten les ordres a executar en iniciar
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 launchd_title1=Creació d'Agent Launchd
 launchd_title2=Edició d'Agent Launchd

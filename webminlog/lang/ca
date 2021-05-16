@@ -31,8 +31,12 @@ index_shost=Servidor Webmin origen
 index_long=Mostra les descripcions llargues de les accions
 index_global=&lt;A cap mòdul&gt;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 search_title=Resultats de la Recerca
 search_date=Data
@@ -68,8 +72,12 @@ search_global_badpass=La contrasenya és incorrecta
 search_global_twofactor=El testimoni de dos factors és invàlid
 search_csv=Exporta com a CSV
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 view_title=Detalls de l'Acció
 view_header=Detalls de l'acció registrada $1
@@ -105,8 +113,12 @@ view_raw=Dades del registre pelades
 view_rawname=Nom del paràmetre
 view_rawvalue=valor del paràmetre
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 acl_mods=Pot veure els registres dels mòduls
 acl_all=Tots
@@ -114,8 +126,12 @@ acl_sel=Els seleccionats a sota...
 acl_users=Pot veure les accions per usuari
 acl_rollback=Pot revertir les accions
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 rollback_title=Acció de Reversió
 rollback_rusure=Segur que vols revertir tots els fitxers llistats a sota al seu contingut abans d'haver pres aquesta acció? Totes les dades que contenen actualment es reescriuran amb els canvis següents:
@@ -140,6 +156,9 @@ rollback_deleted=S'ha suprimit el fitxer $1.
 rollback_nodeleted=S'ha omès el fitxer inexistent $1.
 rollback_enone=No has seleccionat cap fitxer
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 log_rollback=S'ha revertit l'acció $1 al mòdul $2
 __norefs=1

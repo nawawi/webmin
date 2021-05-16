@@ -3,6 +3,7 @@ connect_elogin=No s'ha pogut entrar a la base de dades $1: $2.
 index_title=Servidor de Correu Postfix
 index_epath=L'ordre de control de Postfix $1 no està instal·lada al sistema. Pot ser que la <a href='$2'>configuració del mòdul</a> sigui incorrecta, o bé que el Postfix no estigui instal·lat.
 index_postfix=Postfix
+
 internal_error=Error Intern
 index_econfig=L'ordre de configuració de Postfix $1 no existeix. Pot ser que la <a href='$2'>configuració del mòdul</a> sigui incorrecta.
 index_esuper=L'ordre del supervisor Postfix $1 no existeix. Pot ser que la <a href='$2'>configuració del mòdul</a> sigui incorrecta.
@@ -15,13 +16,19 @@ index_reloadmsg=Fes clic sobre aquest botó per fer que Postfix rellegeixi tots 
 index_version=Postfix versió $1
 opts_err=No s'han pogut desar les opcions
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 check_error=Error en comprovar la configuració actual del Postfix. Arregla manualment la configuració del Postfix, si et plau.
 check_manual=Edita manualment el fitxer de configuració de Postfix.
 
+<<<<<<< HEAD
 =======
 check_error=Error en comprovar la configuració actual del Postfix. Arregla manualment la configuració del Postfix, si et plau.
 check_manual=Edita manualment el fitxer de configuració de Postfix.
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 address_rewriting_title=Reescriptura i Emmascarament d'Adreces
 address_rewriting_ecannot=No tens permís per editar la reescriptura i emmascarament d'adreces
@@ -50,6 +57,7 @@ aliases_type6=Aplica el fitxer de filtre $1
 aliases_none=Cap
 aliases_delete=Suprimeix els Àlies Seleccionats
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 postfinger_title=Comprovació de la Configuració
 postfinger_show=Mostra
@@ -60,6 +68,13 @@ postfinger_title=Comprovació de la Configuració
 postfinger_show=Mostra
 postfinger_ecannot=No tens permís per comprovar la configuració de Postfix
 >>>>>>> upstream/master
+=======
+
+postfinger_title=Comprovació de la Configuració
+postfinger_show=Mostra
+postfinger_ecannot=No tens permís per comprovar la configuració de Postfix
+
+>>>>>>> upstream/master
 mailclean_title=Neteja la Cua de Correu
 mailclean_ecannot=No tens privilegis per netejar la Cua de Correu
 mailclean_active=Cua-Activa
@@ -68,6 +83,7 @@ mailclean_deferred=Cua-Diferida
 mailclean_defer=Cua-Diferiment
 mailclean_all=Totes les Cues
 mailclean_search=Cadena-Cerca
+
 aform_type0=Cap
 aform_type1=Adreça de correu
 aform_type2=Adreces del fitxer
@@ -84,8 +100,12 @@ aform_afile=Edita...
 aform_return=als àlies
 aform_cmt=Descripció
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 asave_err=No s'ha pogut desar l'àlies
 asave_eaddr='$1' no és una adreça vàlida
@@ -98,8 +118,12 @@ asave_etype5=El fitxer d'autoresposta '$1' no és vàlid
 asave_etype4none=No has donat cap program
 asave_etype6=El fitxer de filtre '$1' no és vàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 afile_title=Edició de Fitxer d'Adreces
 afile_desc=Utilitza l'àrea de text de sota per editar les adreces del fitxer $1.
@@ -107,8 +131,12 @@ afile_efile=No tens permís per editar $1.
 afile_undo=Desfés els Canvis
 afile_ewrite=No s'han pogut escriure les adreces al fitxer: $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 ffile_title=Edició del Fitxer de Filtre
 ffile_desc=Utilitza el formulari de sota per configurar les regles de filtratge del fitxer $1.
@@ -126,8 +154,12 @@ ffile_err=No s'ha pogut desar el fitxer de filtre
 ffile_ematch=Hi falta la condició
 ffile_eaction=Hi falta l'adreça de reenviament
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 rfile_title=Edició del Fitxer d'Autoresposta
 rfile_desc=Utilitza l'àrea de text de sota per editar el missatge d'autoresposta de $1. El missatge pot contenir les macros $SUBJECT, $FROM, $TO, $DATE i $BODY, que s'expandiran quan s'activi l'autoresposta.
@@ -148,8 +180,12 @@ rfile_auto=Automàtica (basada en l'adreça del destinatari)
 rfile_efrom=Hi falta l'adreça From:
 rfile_fromdesc=S'ha d'especificar una adreça From: sempre que sigui possible, ja que el mètode automàtic pot no ser fiable.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 general_title=Opcions Generals
 general_title_sensible=Opcions Generals més Útils
@@ -157,8 +193,12 @@ general_title_others=Altres Opcions Generals
 general_ecannot=No tens permís per editar les Opcions Generals
 what_is_it=Què és això?
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 opts_default=Defecte
 opts_none=Cap
@@ -179,13 +219,18 @@ opts_mail_owner=Propietari del correu
 opts_default_privs=Drets per defecte de l'agent de lliurament
 opts_inet_interfaces=Interfícies de xarxa per rebre correu
 opts_all_interfaces=Tots
+
 opts_local_recipient_maps=Rebutja els usuaris locals desconeguts
 opts_no=No
 opts_save=Desa i Aplica
 opts_edir=Només tens permís per especificar fitxers de mapejat sota $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 opts_allow_percent_hack=Reescriu "usuari%domini" com "usuari@domini"
 opts_append_at_myorigin=Reescriu "usuari" com "usuari@$mondomini"
@@ -196,6 +241,7 @@ opts_swap_bangpath=Reescriu "lloc!usuari" com "usuari@lloc"
 opts_masquerade_domains=Mascarada d'adreces
 opts_masquerade_exceptions=Excepcions de la mascarada
 index_return=a la configuració Postfix
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -211,13 +257,22 @@ new_aliasmsg=Fes clic sobre aquest botó per crear un nou àlies
 
 
 =======
+=======
+
+>>>>>>> upstream/master
 opts_alias_maps=Bases de dades d'àlies utilitzades per l'agent de lliurament local
 opts_alias_database=Bases de dades d'àlies construïdes per l'ordre "newaliases"
 aliases_warning=Atenció: <ul><li>quan el primer camp no és buit, per construir les bases de dades corresponents, s'utilitza l'ordre de generació d'àlies de Postfix per defecte; <li>altrament s'utilitza l'ordre compatible de Sendmail "newaliases", això utilitzarà el segon camp de la base de dades.</ul>
+
 aliases_name=Nom
 aliases_value=Àlies de...
+
 new_alias=Crea un nou àlies
 new_aliasmsg=Fes clic sobre aquest botó per crear un nou àlies
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 local_delivery_ecannot=No tens permís per editar les opcions de lliurament local
 local_delivery_title=Lliurament Local
@@ -244,6 +299,7 @@ opts_local_destination_recipient_limit=Màxim nombre de destinataris per al lliu
 opts_local_destination_recipient_limit_default=Defecte
 opts_prepend_delivered_header=Posa davant de <tt>Delivered-To:</tt> en...
 opts_prepend_delivered_header_default=Defecte
+
 resource_title=Control General de Recursos
 resource_ecannot=No tens permís per editar els paràmetres de control de recursos
 opts_bounce_size_limit=Mida màxima de missatge rebotat
@@ -264,9 +320,13 @@ opts_queue_minfree=Espai lliure mínim al sistema de fitxers de la cua
 opts_stale_lock_time=Temps màxim de permanència d'un bloqueig
 opts_transport_retry_time=Temps en segons entre intents de contactar un MDT perdut
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 opts_always_bcc=Adreça que rep les copies cegues de cada missatge
 opts_always_bcc_none=Cap
@@ -309,6 +369,7 @@ opts_delay_warning_time_default=Per defecte de Postfix
 =======
 >>>>>>> upstream/master
 opts_content_filter_default=Cap
+
 smtpd_title=Opcions del Servidor SMTP
 smtpd_ecannot=No tens permís per editar les opcions del servidor SMTP
 opts_disable_vrfy_command=Desactiva l'ordre VRFY del SMTP
@@ -340,6 +401,7 @@ smtpd_nomap=Encara no s'ha introduït cap mapa d'adreces autoritzades a retransm
 smtpd_nomap2=Encara no s'ha introduït cap mapa de restriccions sobre les adreces remitents.
 smtpd_map=Adreces de reenviament permeses
 smtpd_map2=Restriccions sobre les adreces remitents
+
 smtp_title=Opcions de Client SMTP
 smtp_ecannot=No tens permís per editar les opcions de client SMTP
 opts_best_mx_transport=Acció en cas d'estar llistat com a millor host MX
@@ -364,6 +426,7 @@ opts_smtp_data_done_timeout=Temps límit d'espera de la resposta a "." final
 opts_smtp_quit_timeout=Temps límit d'espera de la resposta a QUIT
 opts_smtp_use_tls=Utilitza TLS per a les connexions SMTP
 opts_smtp_sasl_security_options=Opcions de seguretat SASL
+
 rate_title=Ritmes de Lliurament
 rate_ecannot=No tens permís per editar les opcions de ritme de lliurament
 opts_default_destination_concurrency_limit=Nombre màxim de lliuraments en paral·lel a la mateixa destinació
@@ -375,9 +438,13 @@ opts_minimal_backoff_time=Temps mínim (segs) entre intents de lliurar un missat
 opts_queue_run_delay=Temps (segs) entre rastrejos de la cua diferida
 opts_defer_transports=Transports que no s'han de lliurar
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 debug_title=Característiques de Depuració
 debug_ecannot=No tens permís per editar les característiques de depuració
@@ -386,8 +453,12 @@ opts_debug_peer_level=Nivell de registre detallat en coincidir amb la llista de 
 debug_version=Mòdul Postfix de Webmin - Versió $1
 opts_edebug=Hi falta el nivell de verbositat del registre o bé és invàlid - ha de ser més gran que zero
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 ldap_title=Consultes LDAP
 ldap_ecannot=No tens permís per editar les opcions de consulta LDAP
@@ -396,8 +467,12 @@ opts_ldap_lookup_timeout=Temps límit de consultes a la base de dades LDAP
 opts_ldap_search_base=Base de dades LDAP per buscar
 opts_ldap_server_host=Nom del host servidor LDAP
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 canonical_title=Mapejat Canònic
 canonical_ecannot=No tens permís per editar la configuració del mapejat canònic
@@ -413,8 +488,12 @@ canonical_return_sender=als mapes canònics del remitent
 canonical_return_recipient=als mapes canònics del destinatari
 canonical_return=als mapes canònics
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 mapping_name=Nom
 mapping_value=Mapeja a...
@@ -439,6 +518,7 @@ map_noname=Hi falta el nom del mapejat o bé és invàlid
 map_cannot=Aquest mapa no es pot editar: $1
 map_unknown=Webmin no suporta el tipus de mapa $1
 mapping_none=Encara no s'ha definit cap mapejat d'aquest tipus.
+
 virtual_title=Dominis Virtuals
 virtual_ecannot=No tens permís per editar la configuració del mapejat de dominis virtuals
 opts_virtual_maps=Taules de consulta del mapejat de dominis
@@ -446,25 +526,35 @@ opts_virtual_alias_maps=Taules de consulta del mapejat de dominis
 opts_virtual_alias_domains=Dominis que s'han de mapejar virtualment
 virtual_same=De les taules de mapejat de dominis
 virtual_return=als dominis virtuals
+
 transport_title=Mapejat del Transport
 transport_ecannot=No tens permís per editar la configuració del mapejat de transport
 opts_transport_maps=Taules de consulta del mapejat de transport
 transport_return=als mapes de transport
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 relocated_title=Mapejat de Reubicació
 relocated_ecannot=No tens permís per editar la configuració del mapejat de reubicació
 relocated_return=als mapes de reubicació
 opts_relocated_maps=Taules de consulta del mapejat de reubicació
 opts_content_filter=Filtre de contingut del correu
+
 map_click=Fes clic sobre qualsevol mapejat per editar-ne les propietats:
 no_map=(No hi ha cap mapa definit. Defineix-ne un primer, llavors edita'l)
 no_map2=No hi ha cap mapa definit. Defineix-ne un primer, llavors edita'l.
+
 stop_efailed=No s'ha pogut aturar Postfix
 stop_ecannot=No tens permís per aturar Postfix
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 start_efailed=No s'ha pogut iniciar Postfix
 start_ecannot=No tens permís per iniciar Postfix
@@ -472,17 +562,21 @@ start_ecannot=No tens permís per iniciar Postfix
 reload_efailed=No s'ha pogut recarregar Postfix
 reload_ecannot=NO tens permís per recarregar Postfix
 
+<<<<<<< HEAD
 =======
 start_efailed=No s'ha pogut iniciar Postfix
 start_ecannot=No tens permís per iniciar Postfix
 reload_efailed=No s'ha pogut recarregar Postfix
 reload_ecannot=NO tens permís per recarregar Postfix
 >>>>>>> upstream/master
+=======
+>>>>>>> upstream/master
 query_get_efailed=No s'ha pogut consultar l'ordre de configuració de Postfix per obtenir el valor actual del paràmetre $1: <tt>$2</tt>
 query_set_efailed=No s'ha pogut consultar l'ordre de configuració de Postfix per establir el valor actual del paràmetre $1 a $2: <tt>$3</tt>
 regenerate_ecannot=No tens permís per regenerar els Àlies
 regenerate_alias_efailed=No s'han pogut regenerar els àlies: <tt>$1</tt>
 regenerate_table_efailed=No s'ha pogut regenerar la taula $1: <tt>$2</tt>
+
 acl_resource=Pot editar els recursos
 acl_aliases=Pot editar els àlies
 acl_aliases_options=Pot editar les opcions dels àlies
@@ -519,8 +613,12 @@ acl_manual=Pot editar el fitxer de configuració
 acl_dir=Directori permès de fitxers de mapejat
 acl_bcc=Pot editar el mapejat BCC
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 boxes_title=Bústies d'Usuari
 boxes_user=Usuari
@@ -531,6 +629,7 @@ boxes_sent=Correu enviat
 boxes_ecannot=No tens permís per llegir correu
 boxes_toomany=Hi ha massa usuaris al sistema com per llistar totes les seves bústies.
 boxes_go=Veure el correu de l'usuari:
+
 mail_title=Correu d'Usuari
 mail_from=De
 mail_date=Data
@@ -569,6 +668,7 @@ mail_forward=Reenvia
 mail_rfc=De la línia
 mail_move=Desplaça a:
 mail_eexists=El missatge ja no existeix!
+
 view_title=Lectura de Correu
 view_desc=Missatge $1 a $2
 view_desc2=Missatge $1 de l'usuari $2
@@ -598,8 +698,12 @@ view_afile=Nom de l'adjunció
 view_atype=Tipus d'adjunció
 view_asize=Mida del fitxer
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 compose_title=Redacció de correu
 reply_title=Resposta de Correu
@@ -612,8 +716,12 @@ reply_attach2=Adjuncions de la part del servidor i del client
 reply_send=Envia correu
 reply_ecannot=No tens permís per enviar correu com a aquest usuari
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 send_err=No s'ha pogut enviar el correu
 send_eto=Hi falta l'adreça del destinatari
@@ -629,8 +737,12 @@ send_eperms2=No tens permís per enviar el fitxer $1
 send_epath=L'executable $1 de sendmail no existeix.
 send_ewrapper=El programa interfície sendmail de postfix no existeix
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 search_title=Resultats de la Cerca
 search_ecannot=No tens permís per buscar dins del correu d'aquest usuari
@@ -639,6 +751,7 @@ search_efield=Has de seleccionar un tipus de recerca.
 search_none=No s'ha trobat cap missatge
 search_results2=$1 missatges de correu que coincideixen $2...
 search_results3=$1 missatges de correu que no coincideixen amb $2...
+
 match_from=De: coincideix
 match_subject=Assumpte: coincideix
 match_to=A: coincideix
@@ -657,8 +770,12 @@ match_!body=Body no coincideix
 match_!size=La mida és menor de
 match_!headers=Les capçaleres no coincideixen
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 mailq_title=Cua de Correu
 mailq_count=$1 missatges
@@ -688,16 +805,22 @@ mailq_active=Activa
 mailq_deferred=Diferida
 mailq_hold=Retingues els Seleccionats
 mailq_unhold=Allibera els Seleccionats
+
 flushq_title=Buidatge de Cua
 flushq_desc=S'està forçant el lliurament del correu amb l'ordre $1...
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 qview_title=Missatge en Cua
 qview_desc=A partir del fitxer $1
 qview_headers=Capçaleres de correu
 qview_attach=Adjuncions
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 fter_err=Error de configuració de Postfix: $1
@@ -708,6 +831,12 @@ searchq_none=No s'ha trobat cap missatge en cua.
 =======
 searchq_title=Resultats de la Cerca a les Cues
 searchq_none=No s'ha trobat cap missatge en cua.
+>>>>>>> upstream/master
+=======
+
+searchq_title=Resultats de la Cerca a les Cues
+searchq_none=No s'ha trobat cap missatge en cua.
+
 >>>>>>> upstream/master
 header_title=Comprovacions de Capçaleres
 header_ecannot=No tens permís per editar les comprovacions de capçaleres
@@ -728,21 +857,30 @@ header_warn=Registra un avís (amb el missatge...)
 header_ename=Expressió regular invàlida - ha de ser de la forma /quelcom/
 header_return=a les comprovacions de capçaleres
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 body_title=Comprovacions del Cos
 body_ecannot=No tens permís per editar les comprovacions del cos
 body_eregexp=El mapa de comprovacions del cos ha d'estar en el format <tt>expreg:</tt><i>nomfitxer</i>
 opts_body_checks=Taules de comprovació de cossos de missatges
 body_return=a les comprovacions del cos
+
 dependent_title=Mapeigs de Transport Dependents del Remitent
 dependent_ecannot=No tens permís per editar els mapeigs de transport dependents del remitent
 dependent_eregexp=El mapa de transport dependent del remitent ha d'estar en el format <tt>regexp:</tt><i>nom_fitxer</i>
 dependent_return=als mapeigs de transport dependents del remitent
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 manual_title=Edició de Fitxer de Mapa
 manual_file=Selecciona el fitxer de mapa a editar:
@@ -752,12 +890,17 @@ manual_err=No s'ha pogut desar el fitxer de mapa
 manual_efile=Nom de fitxer de mapa invàlid!
 manual_ecannot=No tens permís per editar fitxers de mapejat manualment
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 delq_titles=Supressió de Missatges
 delq_rusure=Segur que vols suprimir els $1 missatges seleccionats?
 delq_confirm=Suprimeix els Missatges
+
 master_title=Processos Servidors
 master_name=Nom del procés
 master_enabled=Actiu
@@ -799,6 +942,7 @@ master_ecommand=Hi falta l'ordre del procés servidor
 master_ewakeup=Hi falta el temps de despertar o bé és invàlid
 master_emaxprocs=Hi falta el nombre màxim de processos o bé és invàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 delete_err=No s'han pogut suprimir els mapejats
 delete_enone=No n'hi ha cap de seleccionat
@@ -806,6 +950,12 @@ delete_enone=No n'hi ha cap de seleccionat
 =======
 delete_err=No s'han pogut suprimir els mapejats
 delete_enone=No n'hi ha cap de seleccionat
+>>>>>>> upstream/master
+=======
+
+delete_err=No s'han pogut suprimir els mapejats
+delete_enone=No n'hi ha cap de seleccionat
+
 >>>>>>> upstream/master
 cmanual_title=Edició dels Fitxers de Configuració
 cmanual_ecannot=No tens permís per editar el fitxer de configuració de Postfix
@@ -815,16 +965,24 @@ cmanual_file=Edita el fitxer de configuració:
 cmanual_edata=No has introduït res!
 cmanual_err=No s'ha pogut desar el fitxer de configuració
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 access_return=a la taula de mapes d'accés
 edit_map_file=Edició de Fitxer de Mapa
 opts_reject_rbl_client=Consultes de Llistes Negres en Temps Real (RBL)
 opts_check_sender_access=Comprova la taula de mapes d'accés del remitent
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_misc=S'han canviat les opcions generals
 log_opts=S'ha canviat la reescriptura d'adreces i la mascarada
@@ -911,8 +1069,12 @@ log_sender_dependent_default_transport_maps_delete=S'ha suprimit l'adreça $1 de
 log_delete_sender_dependent_default_transport_mapss=S'han suprimit $1 adreces dependents del remitent
 log_manual_sender_dependent_default_transport_mapss=S'han editat manualment les adreces dependents del remitent a $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 sasl_title=Autenticació i Xifratge de SMTP
 opts_smtpd_sasl_auth_enable=Requereix l'autenticació SMTP SASL
@@ -961,8 +1123,12 @@ sasl_userpass=Entra com a $1 amb contrasenya $2
 sasl_elogin=Hi falta l'entrada SMTP o bé és invàlida (no es permeten espais ni dos punts)
 sasl_epass=La contrasenya SMTP és invàlida (no es permeten espais)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 client_title=Restriccions del Client SMTP
 client_ecannot=No tens permís per editar les restriccions del client SMTP
@@ -974,8 +1140,12 @@ client_err=No s'han pogut desar les restriccions del client
 client_evalue=Hi falta el valor de la restricció $1
 client_return=a les restriccions del client SMTP
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 chooser_title=Selecció de l'Origen del Mapa
 chooser_header=Origen del mapa $1
@@ -1033,8 +1203,12 @@ chooser_elresult_attribute=Hi falta el nom de l'atribut del resultat del mapa $1
 chooser_elbind_dn=Hi falta l'usuari del servidor LDAP del mapa $1
 chooser_elbind_pw=Hi falta la contrasenya del servidor LDAP del mapa $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 mysql_ecfile=No s'ha trobat el fitxer de configuració $1 de MySQL
 mysql_edriver=No s'ha pogut carregar el controlador $1 de la base de dades
@@ -1047,8 +1221,12 @@ mysql_elist=La consulta SQL ha fallat: $1
 mysql_esource=No s'ha trobat cap origen MySQL anomenat $1
 mysql_eneed=No s'ha trobat el paràmetre de configuració $1 de MySQL. Webmin  el necessita per saber quina taula i quins camps cal consultar.
 <<<<<<< HEAD
+<<<<<<< HEAD
  
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 ldap_ecfile=No s'ha trobat el fitxer de configuració $1 de LDAP
 ldap_eldapmod=El mòdul Perl $1 necessari per comunicar-se amb LDAP no està instal·lat o bé bo es pot carregar
@@ -1061,8 +1239,12 @@ ldap_equery=La recerca LDAP de $1 ha fallat: $2
 ldap_erename=El reanomenament LDAP de $1 a $2 ha fallat: $3
 ldap_emodify=La modificació LDAP de $1 ha fallat: $2
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 bcc_title=Mapejats BCC
 bcc_ecannot=No tens permís per editar els mapejats BCC

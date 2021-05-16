@@ -9,6 +9,10 @@ index_toomany=W&nbsp;systemie jest zbyt wielu użytkowników, aby ich wszystkich
 =======
 index_euseradmin=Nie można korzystać z tego modułu, gdyż nie zainstalowano w systemie modułu Użytkownicy i grupy.
 index_toomany=W systemie jest zbyt wielu użytkowników, aby ich wszystkich tu pokazać. Podaj poniżej nazwę użytkownika, którego hasło chcesz zmienić.
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 passwd_title=Zmień hasło
 passwd_header=Zmiana hasła uniksowego
@@ -25,6 +29,7 @@ passwd_eold=Nieprawidłowe poprzednie hasło
 passwd_erepeat=Nowe hasła nie są identyczne
 passwd_ok=Hasło użytkownika $1 zmieniono pomyślnie. Jeśli jest to użytkownik Webmina jako który pracujesz, możesz być zmuszony do ponownego zalogowania się.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 log_passwd=Zmieniono hasło użytkownika $1
 
@@ -33,7 +38,11 @@ acl_old=Musi podawać poprzednie hasło?
 acl_old_this=Tylko dla użytkowników
 acl_others=Zmieniać hasło w&nbsp;innych modułach?
 =======
+=======
+
+>>>>>>> upstream/master
 log_passwd=Zmieniono hasło użytkownika $1
+
 acl_repeat=Musi podawać hasło dwukrotnie?
 acl_old=Musi podawać poprzednie hasło?
 acl_old_this=Tylko dla użytkowników

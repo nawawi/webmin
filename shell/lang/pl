@@ -21,8 +21,10 @@ log_clear=Wyczyszczono historie poleceń
 log_run=Uruchom komendę $1
 =======
 index_edit=Edytuj poprzednie polecenia
+
 acl_user=Wykonać polecenie jako użytkownik
 acl_user_def=Aktualny użytkownik Webmina
+
 log_run=Uruchom komendę $1
 log_clear=Wyczyszczono historie poleceń
 >>>>>>> upstream/master

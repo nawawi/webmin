@@ -11,7 +11,7 @@ index_refresh=Refresh Modules
 index_refreshmsg=Re-check all Webmin modules for installed servers, and update those that appear in the 'Un-used modules' category.
 
 access_title=IP Access Control
-access_desc=The Webmin server can be configured to deny or allow access only from certain IP addresses using this form. Hostnames (like foo.bar.com) and IP networks (like 10.254.3.0 or 10.254.1.0/255.255.255.128 or 10.254.1.0/25 or 10.254.1.5-10.254.97.127) can also be entered. You should limit access to your server to trusted addresses, especially if it is accessible from the Internet. Otherwise, anyone who guesses your password will have complete control of your system.
+access_desc=The Webmin server can be configured to deny or allow access only from certain IP addresses using this form. Hostnames (like foo.bar.com) and IP networks (like 10.254.3.0 or 10.254.1.0/255.255.255.128 or 10.254.1.0/25 or 10.254.1.5-10.254.97.127 or 2001:DB8::A0BC:0001 or 2001:DB8::/32) can also be entered. You should limit access to your server to trusted addresses, especially if it is accessible from the Internet. Otherwise, anyone who guesses your password will have complete control of your system.
 access_ip=Allowed IP addresses
 access_local=Include local network in list
 access_header=Access control options
@@ -63,6 +63,12 @@ bind_eipv6=IPv6 cannot be enabled unless the $1 Perl module is installed
 bind_redirecting=Redirecting to new URL ..
 bind_elsof=New port $1 is already in use by another process
 bind_eonsystem=The IP address $1 is not active on this system, and so cannot be used
+bind_maxconns=Maximum total concurrent connections
+bind_maxconns_per_ip=Maximum concurrent connections per IP
+bind_maxconns_per_net=Maximum concurrent connections per network
+bind_emaxconns=Maximum concurrent connections must be a number greater than 1
+bind_emaxconns_per_ip=Maximum concurrent connections per IP must be a number greater than 1
+bind_emaxconns_per_net=Maximum concurrent connections per network must be a number greater than 1
 
 log_title=Logging
 log_desc=Webmin can be configured to write a log of web server hits, in the standard CLF log file format. If logging is enabled, you can also choose whether IP addresses or hostnames are recorded, and how often the log file is cleared. When enabled, logs are written to the file $1.
@@ -718,7 +724,7 @@ log_letsencryptcleanup=Removed Let's Encrypt DNS record for $1
 themes_title=Webmin Themes
 themes_desc=Themes control the appearance of the Webmin user interface, including icons, colours, backgrounds and the layout of pages. The selection box below can be used to choose one of the themes installed on your system.
 themes_sel=Current theme :
-themes_default=Old Webmin theme
+themes_default=Legacy Theme
 themes_none=None - let theme decide
 themes_change=Change
 themes_overdesc=Overlays modify the appearance of a theme, by changing the colors, backgrounds and icons. They do not change the layout.
@@ -892,6 +898,8 @@ advanced_listdir=List directories without an index file?
 advanced_headers=Extra HTTP headers
 advanced_eheader=Headers must be formatted like <tt>Header: Value</tt>
 advanced_sortconfigs=Save config files sorted by its keys?
+advanced_bufsize=Network buffer size in bytes
+advanced_ebufsize=Network buffer size must be a number greater than zero
 
 syslog_errorlog=Webmin error log
 

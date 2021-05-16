@@ -8,8 +8,12 @@ index_stopmsg=Tryck på denna knapp för att stanna den körande sendmail-proces
 index_start=Starta sendmail
 index_startmsg=Tryck på denna knapp för att starta sendmail med kommando $1. Innan sendmail startats delas ingen e-post från andra system ut till lokala användare, och e-postklienter kan inte använda detta system som e-postserver.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 opts_title=Inställningar för sendmail
 opts_ecannot=Du får inte ändra sendmail-inställningarna
@@ -48,8 +52,12 @@ opts_queue-only=köa endast
 opts_interactive=Interaktiva
 opts_deferred=Försenade
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 aliases_title=E-postalias
 aliases_ecannot=Du får inte ändra alias
@@ -62,6 +70,7 @@ aliases_type4=Program $1
 aliases_type5=Automatsvarsfil $1
 aliases_none=Inga
 aliases_return=aliaslista
+
 aform_type0=Inget
 aform_type1=E-postadress
 aform_type2=Adresser i fil
@@ -76,24 +85,36 @@ aform_val=Alias för
 aform_afile=Ändra ...
 aform_return=alias
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 afile_title=Ändra adressfil
 afile_desc=Använd inmatningsrutan nedan för att ändra adresserna i filen $1
 afile_efile=Du får inte ändra $1
 afile_undo=Ångra ändringar
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 rfile_title=Ändra filen för automatsvar
 rfile_desc=Använd inmatningsrutan nedan för att ändra automatsvarsmeddelandet i $1. Meddelandet får innehålla följande makron: $SUBJECT, $FROM, $TO, $DATE och $BODY. Dessa kommer att expanderas då automatsvaret aktiveras.
 rfile_efile=Du får inte ändra $1.
 rfile_undo=Ångra ändringar
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 asave_err=Det gick inte att spara alias
 asave_ecannot2=Du får inte ändra alias
@@ -110,8 +131,12 @@ asave_etype4='$1' är inte ett giltigt program eller finns inte
 asave_etype5=Automatsvarsfilen '$1' är inte giltig eller finns inte
 asave_etype4none=Du har inte angivit något program
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 cws_title=Lokala domäner
 cws_ecannot=Du får inte ändra lokala domäner
@@ -122,8 +147,12 @@ cws_err=Det gick inte att spara lokala domäner
 cws_ehost='$1' är inte ett giltigt dator- eller domännamn
 cws_eip='$1' är en IP-adress, inte en domän
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 masq_title=Maskering av domäner
 masq_ecannot=Du får inte konfigurera maskeringen
@@ -136,8 +165,12 @@ masq_edomain='$1' är inte en giltig domän att maskera som
 masq_ehost='$1' är inte ett giltigt dator- eller domännamn
 masq_eip='$1' är en IP-adress, inte en domän
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 trusts_title=Betrodda användare
 trusts_ecannot=Du får inte ändra betrodda användare
@@ -146,6 +179,9 @@ trusts_desc=Om en lokal användare försöker skicka e-post, kommer sendmail end
 trusts_err=Det gick inte att spara betrodda användare
 trusts_euser='$1' är inte en giltig användare
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 virtusers_title=Adressomskrivningar
 virtusers_ecannot=Du får inte ändra adressomskrivningar
@@ -164,8 +200,12 @@ virtusers_domain=Domän $1
 virtusers_address=Adress $1
 virtusers_return=adressomskrivningslista
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 vform_edit=Ändra adressomskrivning
 vform_create=Lägg till adressomskrivning
@@ -184,9 +224,12 @@ vform_err_proto=protokoll
 vform_end=Gå till slutet
 vform_ecannot=Du får inte ändra denna adressomskrivning
 
+<<<<<<< HEAD
 =======
 vform_end=Gå till slutet
 vform_ecannot=Du får inte ändra denna adressomskrivning
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 vsave_ecannot=Du får inte ändra adressomskrivningar
 vsave_ecannot2=Du får inte ändra denna adressomskrivning
@@ -203,8 +246,12 @@ vsave_ecannot4=Du får inte lägga upp omskrivningar till domäner
 vsave_edomdom=Du kan bara skriva om en domän till en annan domän
 vsave_ecannot5=Du får inte lägga upp omskrivningar som ger fel
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 mailers_title=Domänrouting
 mailers_cannot=Du får inte ändra domänroutingen
@@ -217,6 +264,7 @@ mailers_delivery=Befordran
 mailers_to=Skicka till ...
 mailers_return=domänroutinglista
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 mform_edit=Ändra routing
 mform_create=Lägg till routing
@@ -224,6 +272,9 @@ mform_for=E-post till
 mform_host=Dator
 mform_domain=Domän
 =======
+=======
+
+>>>>>>> upstream/master
 mform_edit=Ändra routing
 mform_create=Lägg till routing
 mform_for=E-post till
@@ -246,16 +297,24 @@ mform_mail11=DECnet mail11
 mform_error=Fel
 mform_ecannot=Du får inte ändra domänrouting
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 msave_ecannot=Du får inte ändra domänrouting
 msave_err=Det gick inte att spara domänrouting
 msave_edomain='$1' är inte en giltig dator eller domän
 msave_edup=Det finns redan en domänrouting för '$1'
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 generics_title=Utgående adresser
 generics_cannot=Du får inte ändra utgående adresser
@@ -267,8 +326,12 @@ generics_from=E-post från ...
 generics_to=Ändra till ...
 generics_return=adressomskrivningslista
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 gform_edit=Ändra adressomskrivning
 gform_create=Lägg till adressomskrivning
@@ -276,8 +339,12 @@ gform_from=E-post från
 gform_to=Ändra till
 gform_ecannot=Du får inte ändra denna utgående adress
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 gsave_ecannot=Du får inte ändra utgående adresser
 gsave_ecannot2=Du får inte ändra denna utgående adress
@@ -286,8 +353,12 @@ gsave_efrom='$1' är inte en giltig avsändaradress
 gsave_ematch=Avsändaradressen stämmer inte med '$1'
 gsave_eto='$1' är inte en giltig ny adress
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 cgs_title=Utgående domäner
 cgs_ecannot=Du får inte ändra utgående domäner
@@ -297,8 +368,12 @@ cgs_err=Det gick inte att spara utgående domäner
 cgs_ehost='$1' är inte ett giltigt dator- eller domännamn
 cgs_eip='$1' är en IP-adress, inte en domän
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 domains_title=Domänomskrivning
 domains_ecannot=Du får inte ändra domänomskrivningar
@@ -309,8 +384,12 @@ domains_from=Från domän ...
 domains_to=Till domän ...
 domains_return=domänomskrivningslista
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 dform_edit=Ändra omskrivning
 dform_create=Lägg till omskrivning
@@ -318,6 +397,9 @@ dform_from=Från domän
 dform_to=Till domän
 dform_ecannot=Du får inte ändra domänomskrivningar
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 dsave_ecannot=Du får inte ändra domänomskrivningar
 dsave_err=Det gick inte att spara domänomskrivningar
@@ -359,9 +441,13 @@ sform_err=Felkod
 sform_msg=Meddelande
 sform_ecannot=Du får inte ändra spam-kontrollen
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ssave_ecannot=Du får inte ändra spam-kontrollen
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 ssave_err=Det gick inte att spara spam-regeln
 ssave_etype0='$1' är inte en giltig adress
@@ -370,8 +456,12 @@ ssave_etype2='$1' är inte ett giltigt användarnamn
 ssave_etype3='$1' är inte en giltig domän
 ssave_ecode='$1' är inte en giltig SMTP-felkod
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 relay_title=Reläa domäner
 relay_ecannot=Du får inte ändra reläade domäner
@@ -382,8 +472,12 @@ relay_desc2=Om ditt system agerar gateway för andra domäner som inte är direk
 relay_err=Det gick inte att spara reläade domäner
 relay_edomain='$1' är inte ett giltigt domännamn
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 mailq_title=E-postkö
 mailq_ecannot=Du får inte titta på e-postkön
@@ -408,8 +502,13 @@ flushq_desc=Försöker skicka köad e-post nu med kommando $1 ...
 =======
 mailq_delete=Ta bort de valda meddelandena
 mailq_return=e-postkö
+
 flushq_title=Skicka köade brev
 flushq_desc=Försöker skicka köad e-post nu med kommando $1 ...
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 delq_err=Det gick inte att ta bort brevet
 delq_ecannot=Du får inte ta bort brevet
@@ -428,6 +527,10 @@ delq_ok=klart
 
 =======
 delq_title=Tar bort brev
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 boxes_title=Användarnas brevlådor
 boxes_user=Användare
@@ -436,8 +539,12 @@ boxes_none=Inga brev
 boxes_return=brevlådor
 boxes_ecannot=Du får inte läsa e-post
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 mail_title=Användar-e-post
 mail_from=Från
@@ -468,8 +575,12 @@ mail_match=innehåller
 mail_ok=Sök
 mail_nonefrom=Ingen
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 view_title=Läs e-post
 view_desc=Brev $1 i $2
@@ -482,8 +593,12 @@ view_forward=Skicka vidare
 view_delete=Radera
 view_ecannot=Du får inte läsa e-post till denna användare
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 compose_title=Skriv brev
 reply_title=Svara på brev
@@ -494,8 +609,12 @@ reply_attach2=Bilagor
 reply_send=Skicka
 reply_ecannot=Du får inte skicka e-post som denna användare
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 send_err=Det gick inte att skicka brevet
 send_eto=Mottagaradress saknas
@@ -509,6 +628,7 @@ send_eattach=Den sammanlagda storleken på bilagorna får inte vara större än 
 send_eperms=Användare $1 kan inte läsa $2
 send_eperms2=Du får inte skicka filen $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 delete_ecannot=Du får inte radera e-post från denna användare
 delete_enone=Du har inte angivit vilket meddelande som ska tas bort
@@ -517,14 +637,24 @@ delete_enone=Du har inte angivit vilket meddelande som ska tas bort
 delete_ecannot=Du får inte radera e-post från denna användare
 delete_enone=Du har inte angivit vilket meddelande som ska tas bort
 >>>>>>> upstream/master
+=======
+
+delete_ecannot=Du får inte radera e-post från denna användare
+delete_enone=Du har inte angivit vilket meddelande som ska tas bort
+
+>>>>>>> upstream/master
 search_title=Sökresultat
 search_ecannot=Du får inte söka i denna användares e-post
 search_ematch=Du måste ange en text som brevet ska innehålla
 search_none=Inget brev passade in på angivna villkor
 <<<<<<< HEAD
+<<<<<<< HEAD
 search_results=Brev som matchar $1 ...
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 file_title=Ändra Sendmail-filen
 file_desc=Använd inmatningsrutan nedan för att manuellt ändra i Sendmail-filen $1
@@ -539,8 +669,12 @@ file_eaccess=Du får inte ändra spam-kontrollfilen.
 file_emode=Okänd mode!
 file_err=Det gick inte att ändra filen
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 acl_opts=Kunna ändra sendmail-inställningar?
 acl_cws=Kunna ändra lokala domäner?
@@ -587,8 +721,12 @@ acl_fdom=valfri adress@domän
 acl_apath=Begränsa filer och program till katalog
 acl_attach=Maximal sammanlagd storlek på bilagor 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_opts=Ändrade sendmail-inställningar
 log_alias_create=Lade till alias $1
@@ -618,6 +756,7 @@ log_domain_manual=Ändrade domänomskrivningsfilen $1 för hand
 log_access_create=Lade till spam-kontroll för $1
 log_access_modify=Modifierade spam-kontroll för $1
 log_access_delete=Tog bort spam-kontroll för $1
+
 log_access_manual=Ändrade spam-kontrollfilen $1 för hand
 log_relay=Ändrade reläade domäner
 log_flushq=Skickade köade brev
@@ -627,6 +766,7 @@ log_stop=Stannade sendmail-demonen
 log_start=Startade sendmail-demonen
 log_delmail=Tog bort $1 brev från $2
 log_send=Skickade e-post till $1
+
 match_from=From: matchar
 match_subject=Subject: matchar
 match_to=To: matchar

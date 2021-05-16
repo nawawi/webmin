@@ -29,18 +29,27 @@ index_updesc=Seleccione una connexión de la lista de al lado del botón y presi
 index_nopol=No se ha encontrado ninguna política de red -puede ser que la <a href='$1'>configuración de la red</a> sea incorrecta.
 index_import=Importa la conexión del fichero.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 stop_err=No he podido detener el servidor IPsec
 start_err=No he podido iniciar el servidor IPsec
 restart_err=No he podido reiniciar el servidor IPsec
 start_elog=Se han registrado los errores siguientes: $1
+
 newkey_err=No he podido generar la clave
 newkey_ehost=Falta el nombre del host o bien es inválido
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_title1=Creación de Conexión
 edit_title2=Edición de Conexión
@@ -91,8 +100,12 @@ edit_secret=Clave secreta compartida
 edit_rsasigsecret=Clave RSA de secreto compartido
 edit_never=No permetir nunca la autenticación
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 config_title=Configuración del Servidor
 config_header=Valores globales del servidor VPN
@@ -111,8 +124,12 @@ config_err=No he podido salvar la configuración del servidor
 config_eri=La interfaz real '$1' esta listada más de una vez
 config_enone=No se ha especificado ninguna interfaz de red
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 showkey_title=Mostrar la Clave Pública
 showkey_desc1=Habría que copiar la clave pública RSA mostrada a bajo de la configuración de los otros sistemas que se conectan con éste, en la sección relacionada con este host. 
@@ -121,6 +138,7 @@ showkey_flags=Banderas
 showkey_proto=Protocolo
 showkey_alg=Algoritmo
 showkey_key=Datos de la clave
+
 policy_desc_block=Redes bloqueadas
 policy_desc_clear=Limpiar las redes de Tráfico
 <<<<<<< HEAD
@@ -146,8 +164,12 @@ policy_err=No he podido salvar las redes
 policy_enet=Dirección IP de red inválida en la línea $1
 policy_emask=Longitud de prefijo inválido en la fila $2
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 save_err=No he podido salvar la conexión
 save_ename=Falta el nombre de la conexión o bien es inválido
@@ -164,8 +186,12 @@ save_erightkey=Falta la clave pública del servidor remoto
 save_elefthop=Falta el portal de salto siguiente del servidor local o bien es inválido
 save_erighthop=Falta el portal de salto siguiente del servidor remoto o bien es inválido
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_create_conn=He creado la conexión $1
 log_delete_conn=He suprimido la conexión $1
@@ -186,6 +212,7 @@ log_create_secret_nn=He creado la clave secreta de cualquier host
 log_modify_secret_nn=He modificado la clave secreta de cualquier host
 log_delete_secret_nn=He suprimido la clave secreta de cualquier host
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 up_title=Inicio de Conexión
 up_cmd=Iniciando la conexión con la orden $1...
@@ -193,6 +220,12 @@ up_cmd=Iniciando la conexión con la orden $1...
 =======
 up_title=Inicio de Conexión
 up_cmd=Iniciando la conexión con la orden $1...
+>>>>>>> upstream/master
+=======
+
+up_title=Inicio de Conexión
+up_cmd=Iniciando la conexión con la orden $1...
+
 >>>>>>> upstream/master
 export_title=Exportación de la Configuración
 export_desc=Puedes utilizar este formulario para exportar la sección de ficheros de configuración de la conexión $1, de manera que se pueda importar fácilmente al servidor.
@@ -204,8 +237,12 @@ export_efile=Falta el nombre del fichero
 export_esave=No he podido escribir en el fichero: $1
 export_done=He exportado la configuración de la conexión $1 a $2 ($3 bytes).
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 import_title=Importación de la Configuración
 import_desc=Puedes utilizar este formulario para importar la sección de ficheros de configuración de una sección, como la creada con la característica de exportación de este módulo en otro sistema.
@@ -213,8 +250,12 @@ import_upload=Importa del fichero subido...
 import_file=Importa del fichero del servidor...
 import_ok=Importarlo ahora
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 import_err=No he podido importar la configuración
 import_eupload=No has seleccionado ningún fichero para subir
@@ -226,8 +267,12 @@ import_done1=He agregado con éxito la nueva conexión IPsec $1.
 import_done2=He actualizado con éxito la conexión IPsec $1.
 import_over=Reescribo la conexión existente con el mismo nombre?
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 secrets_title=Claves Secretas
 secrets_none=No he encontrado ninguna clave secreta!
@@ -243,8 +288,12 @@ secrets_newpsk=Crea la nueva clave secreta compartida.
 secrets_newrsa=Crea la nueva clave RSA.
 secrets_return=la lista de claves secretas
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 secret_title1=Creación de Clave Secreta
 secret_title2=Edición de Clave Secreta

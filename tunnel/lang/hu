@@ -11,11 +11,17 @@ login_user=Felhasználó név
 =======
 index_url=Írja be a megnyitandó URL címet:
 index_open=Megnyitás
+
 link_eurl=Érvénytelen alagút URL : $1
+
 login_title=Weboldal belépés
 login_user=Felhasználó név
 login_pass=Jelszó
 login_login=Belépés
 login_clear=Törlés
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 seturl_eurl=Érvénytelen URL

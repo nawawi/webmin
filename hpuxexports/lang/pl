@@ -15,8 +15,12 @@ index_sel_rw=do zapisu dla wybranych hostów
 index_all_rw=do zapisu dla wszystkich hostów
 index_sel_root=prawa <tt>root</tt>-a dla wybranych hostów
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_title=Zmień udostępnianie
 create_title=Udostępnij
@@ -65,8 +69,12 @@ edit_anon_notset=Nie ustawiono
 edit_anon_noaccess=Brak dostępu
 edit_async=Asynchroniczny zapis
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 save_err=Nie udało sie zachować parametrów udostępniania
 save_edir=Katalog '$1' nie istnieje
@@ -78,8 +86,12 @@ save_enohost='$1' - Nie podano żadnego hosta
 save_euids=Niewiarygodne UID-y muszą być rozdzieloną przecinkami listą liczb lub zakresów
 save_egids=Niewiarygodne GID-y muszą być rozdzieloną przecinkami listą liczb lub zakresów
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_modify=Zmieniono eksport NFS $1
 log_modify_l=Zmieniono eksport NFS $1 do $2

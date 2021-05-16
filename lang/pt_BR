@@ -17,6 +17,10 @@ main_skill=Nível de Habilidade
 
 =======
 main_return=Voltar à $1
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 category_servers=Servidores
 category_hardware=Hardware
@@ -27,9 +31,13 @@ category_syslet=Syslets
 category_cluster=Cluster
 category_info=Informação
 <<<<<<< HEAD
+<<<<<<< HEAD
 category_=Outros
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 header_webmin=Índice do Webmin
 header_module=Índice do Módulo
@@ -37,8 +45,12 @@ header_help=Ajuda ..
 header_config=Configuração do Módulo
 header_servers=Servidores Webmin
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 index=índice
 yes=Sim
@@ -57,13 +69,18 @@ cancel=Cancelar
 helpsearch=Procurar nos Documentos ..
 switch_remote_euser=O usuário Unix $1 não existe.
 programname=Webmin
+
 chooser_title1=Escolher Arquivo ..
 chooser_title2=Escolher Diretório ..
 chooser_dir=Diretório de $1
 chooser_ok=Ok
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 users_title1=Selecionar Usuários ..
 users_title2=Selecionar Usuário ..
@@ -72,6 +89,7 @@ users_all=Todos os Usuários
 users_ok=Ok
 users_cancel=Cancelar
 users_clear=Limpar
+
 groups_title1=Selecionar Grupos ..
 groups_title2=Selecionar Grupo ..
 groups_all=Todos os Grupos
@@ -80,8 +98,12 @@ groups_ok=Ok
 groups_cancel=Cancelar
 groups_clear=Limpar
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 config_ecannot=Você não permissão para configurar este módulo
 config_title=Configuração
@@ -92,6 +114,7 @@ config_eaccess=Você não permissão para acessar este módulo
 config_err=Falha ao gravar configuração
 config_nochange=Nãu mudar
 config_setto=Definir para
+
 help_err=Falha ao exibir a ajuda
 help_epath=Caminho de ajuda faltando ou inválido
 help_efile=Falha ao ler arquivo de ajuda $1
@@ -99,6 +122,7 @@ help_eheader=Faltando seção &lt;header&gt;
 help_einclude=Falha ao incluir $1
 help_eif=$1 falhou : $2
 help_eexec=$1 falhou : $2
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 referer_title=Aviso de Segurança
@@ -112,6 +136,13 @@ referer_title=Aviso de Segurança
 referer_warn=<b>Aviso !</b> O Webmin detectou que o programa $2 foi chamado a partir da URL $1, a qual parece estar fora do servidor Webmin. Isto pode ser uma tentativa de fazer com que seu servidor execute um comando perigoso.
 referer_warn_unknown=<b>Aviso !</b> O Webmin detectou que o programa $1 foi chamado a partir de uma URL que parece estar fora do servidor Webmin. Isto pode ser uma tentativa de fazer com que seu servidor execute um comando perigoso.
 >>>>>>> upstream/master
+=======
+
+referer_title=Aviso de Segurança
+referer_warn=<b>Aviso !</b> O Webmin detectou que o programa $2 foi chamado a partir da URL $1, a qual parece estar fora do servidor Webmin. Isto pode ser uma tentativa de fazer com que seu servidor execute um comando perigoso.
+referer_warn_unknown=<b>Aviso !</b> O Webmin detectou que o programa $1 foi chamado a partir de uma URL que parece estar fora do servidor Webmin. Isto pode ser uma tentativa de fazer com que seu servidor execute um comando perigoso.
+
+>>>>>>> upstream/master
 session_header=Login no Webmin
 session_mesg=Você deve informar um nome de usuário e uma senha para se logar no servidor Webmin em $1.
 session_mesg2=Você deve informar um nome de usuário e uma senha para se logar.
@@ -124,8 +155,12 @@ session_logout=O logout foi feito com sucesso. Utilize o formulário abaixo para
 session_timed_out=A sessão expirou após de $1 minutos de inatividade.
 session_save=Lembrar login permanentemente ?
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 acl_root=Diretório raíz do selecionador de arquivos
 acl_home=Diretório pessoal do usuário
@@ -151,8 +186,12 @@ acl_rpc2=Somente para o <tt>root</tt> ou <tt>admin</tt>
 acl_rpc1=Sim
 acl_rpc0=Não
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 month_1=Janeiro
 month_2=Fevereiro
@@ -166,6 +205,7 @@ month_9=Setembro
 month_10=Outubro
 month_11=Novembro
 month_12=Dezembro
+
 day_0=Domingo
 day_1=Segunda
 day_2=Terça
@@ -174,8 +214,12 @@ day_4=Quinta
 day_5=Sexta
 day_6=Sábado
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 smonth_1=Jan
 smonth_2=Fev
@@ -189,6 +233,7 @@ smonth_9=Set
 smonth_10=Out
 smonth_11=Nov
 smonth_12=Dez
+
 sday_0=Dom
 sday_1=Seg
 sday_2=Ter
@@ -196,6 +241,7 @@ sday_3=Qua
 sday_4=Qui
 sday_5=Sex
 sday_6=Sáb
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 emodule=Acesso negado : Usuário $1 não permissão para usar o módulo $2
@@ -206,10 +252,18 @@ skill_medium=Intermediário
 skill_low=Iniciante
 
 =======
+=======
+
+>>>>>>> upstream/master
 emodule=Acesso negado : Usuário $1 não permissão para usar o módulo $2
+
 skill_high=Expert
 skill_medium=Intermediário
 skill_low=Iniciante
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 feedback_title=Comentários sobre o Webmin
 feedback_desc=Este formulário lhe permite reportar bugs ou fazer sugestões para os desenvolvedores do Webmin sobre quaisquer problemas ou características que você acha que estejam faltando. Quando o botão Enviar for clicado os detalhes informados no formulário serão enviados por e-mail para $1.
@@ -240,9 +294,13 @@ feedback_enoto=Nenhum endereço para onde o comentário pudesse ser enviado foi 
 feedback_ecannot=Você não tem permissão de enviar comentários
 feedback_ecannot2=Você não tem permissão de enviar comentários contendo arquivos de configuração
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 progress_size=Fazendo o download de $1 ($2 bytes) ..
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 progress_nosize=Fazendo o download de $1 ..
 progress_done=.. Download finalizado.

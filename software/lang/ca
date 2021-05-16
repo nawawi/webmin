@@ -25,6 +25,7 @@ index_echeckupdate=No s'ha detectat cap sistema d'actualització!
 index_filter=Filtra els Paquets
 index_filterclear=Treu el Filtre
 index_filtered=S'estan mostrant <tt>$1</tt> paquets de <tt>$2</tt>
+
 search_title=Cerca de Paquet
 search_nomatch=No hi ha cap paquet que coincideixi amb '$1'
 search_none=Cap
@@ -38,8 +39,12 @@ search_delete=Desinstal·la els paquets seleccionats
 search_selall=Selecciona'ls tots
 search_invert=Inverteix la selecció
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_title=Edició de Paquet
 edit_details=Detalls del Paquet
@@ -58,8 +63,12 @@ edit_uninstdesc=Elimina aquest paquet del sistema.
 edit_return=al detall dels paquets
 edit_egone=El paquet ja no està instal·lat
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 list_title=Fitxers de Paquet
 list_files=Fitxers del Paquet $1
@@ -73,9 +82,13 @@ list_ok=Bé
 list_view=(Vista)
 list_eview=No s'ha pogut obrir $1: $2
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 delete_title=Supressió de Paquet
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 delete_err=No s'ha pogut suprimir el paquet $1
 delete_epack=El paquet $1 no existeix
@@ -89,8 +102,12 @@ delete_efile=Fitxer temporal a esborrar invàlid
 delete_purge=Depura els fitxers de configuració
 delete_depstoo=Elimina també les dependències no utilitzades
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 file_title=Informació de Fitxer
 file_notfound=No hi ha cap informació disponible sobre $1
@@ -106,9 +123,13 @@ file_class=Classe
 file_desc=Descripció
 file_none=Cap
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 install_title=Instal·lació de Paquet
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 install_err=No s'ha pogut instal·lar el paquet
 install_elocal=No has donat cap fitxer local
@@ -136,6 +157,7 @@ install_title=Instal·lació de Paquet
 install_header=Instal·lació de paquet
 install_packs=Paquet(s) a instal·lar
 install_ok=Instal·la
+
 do_err=No s'ha pogut instal·lar el paquet $1
 do_title=Instal·lació de Paquet
 >>>>>>> upstream/master
@@ -153,10 +175,12 @@ do_arch=Arquitectura
 do_inst=Instal·lat
 do_none=Cap
 do_files=Fitxers del Paquet
+
 pkgadd_root=Directori arrel
 pkgadd_eroot=El directori arrel '$1' no existeix
 pkgadd_unknown=Desconegut
 pkgadd_manager=Gestor de Paquets System V
+
 rpm_upgrade=Actualitza el paquet
 rpm_replacepkgs=Sobreescriu el paquet
 rpm_nodeps=Ignora les dependències
@@ -175,13 +199,18 @@ rpm_findrpm=Nom del fitxer de paquet
 rpm_finddistro=Distribució
 rpm_finddesc=Descripció
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 bsd_unknown=Desconegut
 bsd_scripts=Executa els scripts pre i post instal·lació
 bsd_force=Força la instal·lació si falten prerequisits
 bsd_manager=Gestor de Paquets $1
+
 slack_unclass=Altres
 slack_unknown=Desconegut
 slack_missing=Hi falta
@@ -189,6 +218,7 @@ slack_root=Directori arrel
 slack_eroot=Hi falta el directori arrel o bé és invàlid
 slack_manager=Gestor de Paquets Slackware
 slack_edir=Hi falta el directori $1 de paquets de Slackware
+
 debian_unknown=Desconegut
 debian_depends=Ignora problemes de dependència
 debian_conflicts=Ignora conflictes de paquets
@@ -196,8 +226,12 @@ debian_overwrite=Sobreescriu els fitxers d'altres paquets
 debian_downgrade=Reemplaça el paquet nou pel vell
 debian_manager=DPKG de Debian
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_install_package=S'ha instal·lat el paquet $1
 log_install_apt_l=S'ha(n) instal·lat el(s) paquet(s) $1 des d'APT
@@ -217,6 +251,7 @@ log_upgrade_yum_l=S'ha(n) actualitzat paquet(s) $1 des de YUM
 log_upgrade_yum=S'ha(n) actualitzat $2 paquet(s) des de YUM
 log_check_rhn_l=S'ha(n) actualitzat paquet(s) $1 des de la xarxa de Redhat
 log_check_rhn=S'ha(n) actualitzat $2 paquet(s) des de la xarxa de Redhat
+
 rhn_input=Paquet de Redhat Network
 rhn_find=Busca a RHN...
 rhn_install=S'esta(n) instal·lant el(s) paquet(s) amb l'ordre $1...
@@ -244,6 +279,7 @@ rhn_eproxy=Hi falta el servidor proxy o bé no és vàlid
 rhn_skip=Omet els paquets que coincideixin amb
 rhn_nonefound=no hi ha cap paquet disponible per actualitzar
 rhn_name=Xarxa de RedHat
+
 apt_input=Paquet d'APT
 apt_install=S'esta(n) instal·lant el(s) paquets(s) amb l'ordre $1...
 apt_ok=...instal·lació completa.
@@ -274,8 +310,12 @@ apt_repo_path=Components del camí de distribució
 apt_repo_eurl=Hi falta l'URL base o bé sembla invàlid
 apt_repo_epath=Hi falta el camí de distribució
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 yum_input=Paquet de YUM
 yum_install=S'esta(n) instal·lant el(s) paquet(s) amb l'ordre $1...
@@ -307,6 +347,7 @@ yum_repo_ename=Hi falta el nom del repositori
 yum_repo_eurl=Hi falt al'URL del repositori o bé és invàlid
 yum_repo_egpg=Hi falta el fitxer de certificat GPG o bé no existeix
 yum_repo_efile=El fitxer del repositori ja existeix!
+
 urpmi_name=URPMI
 urpmi_input=Paquet d'URPMI
 urpmi_find=Fulleja URPMI...
@@ -322,8 +363,12 @@ urpmi_install=S'esta(n) instal·lant el(s) paquet(s) amb l'ordre $1...
 urpmi_ok=...instal·lació completa.
 urpmi_failed=...la instal·lació ha fallat!
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 rpm_missing=Hi falta
 rpm_checkfail=Ha fallat la comprovació $1
@@ -336,6 +381,7 @@ rpm_user=usuari
 rpm_perm=permisos
 rpm_group=grup
 rpm_erpm=No s'ha trobat el RPM $1: $2
+
 soft_reg=Fitxer Regular
 soft_dir=Directori
 soft_spec=Fitxer Especial
@@ -347,6 +393,7 @@ soft_euncompress=El fitxer està comprimit, però no s'ha trobat l'ordre <tt>unc
 soft_euncmsg=No s'ha pogut descomprimir el fitxer: $1
 soft_egzip=El fitxer està comprimit amb gzip, però no s'ha trobat l'ordre <tt>gzip</tt> al sistema.
 soft_egzmsg=No s'ha pogut descomprimir el fitxer amb gzip: $1
+
 aix_unknown=Desconegut
 aix_device=Dispositiu d'ENTRADA / directori de programari
 aix_software=PROGRAMARI per instal·lar
@@ -364,6 +411,7 @@ aix_accept=ACCEPTA els nous acords de llicència
 aix_license=Mostra prèviament els nous acords de LLICÈNCIA
 aix_clean=Fes neteja després d'una fallada
 aix_manager=Gestor de Paquets AIX
+
 emerge_input=Del repositori de <i>Portage</i>
 emerge_find=Cerca...
 emerge_install=S'està instal·lant el paquet amb l'ordre $1...
@@ -379,6 +427,7 @@ emerge_noreplace=Substitueix els paquets existents
 emerge_onlydeps=Instal·la només les dependències
 emerge_title=Recerca a Portage
 emerge_name=Portage
+
 cygwin_fmissing=Hi falta el fitxer
 cygwin_lmissing=Hi falta el fitxer al qual apunta l'enllaç
 cygwin_estat=No s'ha trobat el fitxer: $1
@@ -388,6 +437,7 @@ cygwin_badpostscript=Atenció: no sembla que aquest script s'hagi executat
 cygwin_pkgexists=El paquet $1 ja existeix.
 cygwin_warnuse=Atenció: Aquesta no és una interfície oficial per a gestionar programari de Cygwin. Utilitza'l pel teu propi compte i risc.
 cygwin_edb=Hi falta la base de dades $1 de paquets de Cygwin
+
 deletes_err=No s'han pogut suprimir els paquets
 deletes_enone=No has seleccionat cap paquet
 deletes_title=Supressió de Paquets
@@ -398,6 +448,7 @@ deletes_failed2=La desinstal·lació ha fallat: $1
 deletes_success2=...desinstal·lació completa.
 deletes_rusure=Segur que vols desinstal·lar els paquets $1?
 deletes_ok=Suprimeix-los Tots
+
 csw_input=Paquet de CSW
 csw_install=S'esta(n) instal·lant el(s) paquet(s) amb l'ordre $1...
 csw_ok=...instal·lació completa.
@@ -413,10 +464,14 @@ csw_form=Actualitza els Paquets
 csw_upgrade=Actualitza tots els Paquets Instal·lats
 csw_updatedesc=S'estan actualitzant tots els paquets instal·lats amb l'ordre $1...
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 missing_link=Webmin pot instal·lar automàticament el paquet $1. Fes clic <a href='$2'>aquí</a> per descarregar-lo i instal·lar-lo utilitzant $3.
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 find_title=Recerca de Paquet
 find_search=Busca els paquets que coincideixin amb:
@@ -425,8 +480,12 @@ find_version=Versió
 find_desc=Descripció
 find_none=No s'ha trobat cap paquet que coincideixi amb la cerca.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 msi_users=Fes que la nova aplicació estigui disponible per a
 msi_users0=Ningú
@@ -435,8 +494,12 @@ msi_users2=Tots els usuaris
 msi_missing=No existeix
 msi_size=Mida incorrecta
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 hpux_create_target_path=Creat el camí destí
 hpux_mount_all_filesystems=Munta tots els sistemes de fitxers
@@ -454,8 +517,12 @@ hpux_enforce_scripts=Força els scripts
 hpux_enforce_dsa=Força l'anàlisi d'espai al disc
 hpux_root=Directori arrel
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 ports_install=S'estan instal·lant els ports FreeBSD $1...
 ports_failed=...alguns ports han fallat
@@ -468,8 +535,12 @@ ports_apply=Descarrega la Darrera Versió
 ports_upgrade=S'està Descarregant la Darrera Versió
 ports_running=S'està executant l'ordre $1...
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 pkg_install=S'estan instal·lant els paquets FreeBSD $1...
 pkg_failed=...alguns paquets han fallat
@@ -477,19 +548,28 @@ pkg_ok=...instal·lació completa
 pkg_find=Cerca pkgng
 pkg_input=Paquet de pkgng
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 pkgsrc_install=S'estan instal·lant els paquets pkgsrc $1...
 pkgsrc_failed=...alguns paquets han fallat
 pkgsrc_ok=...instal·lació completa
 pkgsrc_find=Busca pkgng
 pkgsrc_input=Paquet de pkgsrc
+
 log_IPKG_update=S'ha actualitzat la base de dades IPKG
 log_IPKG_upgrade=S'han actualitzat els paquets IPKG instal·lats
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 IPKG_name=IPKG
 IPKG_input=Paquet d'IPKG

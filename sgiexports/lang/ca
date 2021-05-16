@@ -8,8 +8,12 @@ index_apply=Aplica la Configuració
 index_applydesc=Fes clic sobre aquest botó per activar totes les exportacions llistades a sobre amb les opcions configurades.
 index_return=a la llista d'exportacions
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_title1=Creació d'Exportació
 edit_title2=Edició d'Exportació
@@ -29,8 +33,12 @@ edit_all=Tots els hosts
 edit_sel=Els hosts llistats...
 edit_none=Cap host
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 save_err=No s'ha pogut desar l'exportació
 save_edir=Hi falta el directori per exportar o bé no existeix
@@ -39,8 +47,12 @@ save_erw=No has introduït cap host per a lectura/escriptura
 save_eroot=No has introduït cap host per accés root
 save_eaccess=No has introduït cap host per a l'accés al muntatge
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_create_export=S'ha creat l'exportació de $1
 log_delete_export=S'ha suprimit l'exportació de $1

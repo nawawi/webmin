@@ -41,6 +41,7 @@ index_file=Modificirana datoteka
 index_wall=Od bilo kojeg Webmin servera
 index_whost=Od servera
 <<<<<<< HEAD
+<<<<<<< HEAD
 index_yesterday=Samo za juÄer
 rollback_changes=SljedeÄe promjene bit Äe izvrÂene :
 rollback_clink=Link sa $1 Äe biti napravljen.
@@ -76,6 +77,9 @@ search_date=Datum
 search_err=Polje za pretragu
 search_etime=Pogreno start ili stop vrijeme
 =======
+=======
+
+>>>>>>> upstream/master
 search_title=Rezultat pretrage
 search_date=Datum
 search_time=Vrijeme
@@ -101,6 +105,7 @@ search_critt2=na $1
 search_config=Promjeni modul konfiguracije
 search_etime=Pogrešno start ili stop vrijeme
 search_err=Polje za pretragu
+
 view_title=Detalji Akcije
 view_header=Detalji pohranjenih akcija $1
 view_action=Opis
@@ -144,11 +149,13 @@ view_type_rename=Promjenjeno ime $1 u $2
 view_ecannot=Nije vam dozvoljen pristup ovom logu
 view_return=detalji akcije
 view_input=Ulaz naredbe
+
 acl_mods=Mogu vidjeti zapise u modulima
 acl_all=Svi
 acl_sel=Odabrani ispod
 acl_users=Mogu vidjeti akcije korisnika
 acl_rollback=Mogu napraviti korak nazad
+
 rollback_title=Akcija povrata
 rollback_rusure=Da li ste sigurni da želite vratiti sve datoteke ispod svojim sadržajima prije poduzimanja akcije ? Svi podaci koje imate sada će biti prebrisani sa sljedećim promjenana.
 rollback_isdir=Folder - neće biti promjena.

@@ -1357,7 +1357,8 @@ elsif ($src->{'type'} == 1 && $dest->{'type'} == 0) {
 	foreach my $f (@files) {
 		&open_as_mail_user(SOURCE, $f);
 		print DEST $fromline;
-		while(read(SOURCE, $buf, 1024) > 0) {
+		my $bs = &get_buffer_size();
+		while(read(SOURCE, $buf, $bs) > 0) {
 			print DEST $buf;
 			}
 		close(SOURCE);
@@ -3796,6 +3797,21 @@ else {
 	print STDERR "switch_from_folder_user called more often ",
 		     "than switch_to_folder_user!\n";
 	}
+}
+
+# remove_spam_subject(&mail)
+# Removes the [spam] prefix from the subject, if there is one
+sub remove_spam_subject
+{
+my ($mail) = @_;
+my $rv = 0;
+foreach my $h (@{$mail->{'headers'}}) {
+	if (lc($h->[0]) eq 'subject' && $h->[1] =~ /^\[spam\]\s*(.*)$/i) {
+		$h->[1] = $1;
+		$rv = 1;
+		}
+	}
+return $rv;
 }
 
 1;

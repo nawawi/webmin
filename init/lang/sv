@@ -11,8 +11,12 @@ index_desc=Beskrivning
 index_boot=Starta vid systemstart?
 index_status=Startad nu?
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_title=Ändra funtion
 create_title=Skapa funktion
@@ -46,16 +50,24 @@ edit_return=funktion
 edit_status=Startad nu?
 edit_unknown=Okänd
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 save_err=Det gick inte att spara funktion
 save_ecannot=Du får inte ändra startfunktioner
 save_ealready=Det finns redan en funktion som heter '$1'
 save_ewrite=Det gick inte att skriva till $1: $2
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 ss_ecannot=Du får inte starta eller avsluta startfunktioner
 ss_start=Startfunktion
@@ -65,8 +77,12 @@ ss_reload=Omladdningsfunktion
 ss_status=Funktionsstatus
 ss_exec=Utför $1 ...
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 shutdown_ecannot=Du får inte stänga av systemet
 shutdown_title=Stäng av
@@ -74,8 +90,12 @@ shutdown_rusure=Vill du verkligen stänga av systemet med kommandot $1?
 shutdown_ok=Stäng av systemet
 shutdown_exec=Stänger av med kommando $1 ...
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 reboot_ecannot=Du får inte starta om systemet
 reboot_title=Starta om
@@ -83,16 +103,24 @@ reboot_rusure=Vill du verkligen starta om systemet med kommandot $1?
 reboot_ok=Starta om systemet
 reboot_exec=Startar om med kommando $1 ...
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 acl_script=Kunna ändra startscriptet?
 acl_actions=Kunna ändra, skapa och ta bort funktioner?
 acl_reboot=Kunna starta om systemet?
 acl_shutdown=Kunna stänga av systemet?
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_rename=Bytte namn på funktion $1 till $2
 log_modify=Modifierade funktion $1

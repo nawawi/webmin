@@ -124,7 +124,7 @@ http_downloading=Stahování
 http_done=Staženo $1 až $2.
 uploading=Nahrávání, čekejte prosím. ..
 acl_allowed_paths=Povolit přístup k adresářům
-acl_allowed_paths2=(Pro uživatele bez oprávnění root)
+acl_allowed_paths_explain=Pro uživatele s oprávněním root, pokud je povolený adresář nastaven pouze na $HOME, bude to ekvivalent / (plný přístup k disku)
 acl_allowed_for_edit=Mimetypy byly povoleny pro úpravy vestavěným editorem
 acl_work_as=Přístup k souborům jako uživatel Unix
 acl_root=Root (udělejte opatrně nedůvěryhodným uživatelům!)
@@ -155,8 +155,13 @@ menu_bookmarks=Záložky
 notallowed=Nemáte přístup k $1. Povolené adresáře jsou : $2 
 error_upload_emax=Nahraný soubor je větší než limit $1 
 extract_etype=Nepodporovaný typ archivního souboru
+
 info_total1=Celkem: soubor $1 a adresář $2 
 info_total2=Celkem: $1 souborů a $2 adresáře
 info_total3=Celkem: $1 soubor a $2 adresáře
 info_total4=Celkem: $1 souborů a $2 adresářů
+
 ownership=Majitel
+acls=Seznam řízení přístupu
+file_detect_encoding=Automaticky detekovat kódování souborů
+index_return=seznam souborů

@@ -3,8 +3,12 @@ index_return=al menú NIS
 index_enis=No sembla que la teva màquina tingui instal·lat el suport de servidor ni client NIS.
 index_enis2=Només es podrà utilitzar la característica de serveis de client d'aquest mòdul.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 client_title=Client NIS
 client_header=Configuració del client NIS
@@ -22,13 +26,18 @@ client_eypwhich=no s'ha pogut enllaçar amb el domini NIS
 client_ehosts='$1' no és al fitxer de hosts
 client_enis=No sembla que la teva màquina tingui el suport de client NIS instal·lat.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 switch_title=Serveis Client
 switch_service=Servei
 switch_srcs=Origen de les dades
 switch_return=als serveis del client
+
 order_= 
 order_nisplus=NIS+
 order_nis=NIS
@@ -40,6 +49,7 @@ order_hesiod=Hesiod
 order_ldap=LDAP
 order_user=Impressores de l'usuari
 order_xfn=XFN
+
 server_title=Servidor NIS
 server_header=Opcions del servidor NIS
 server_boot=Activa el servidor NIS
@@ -74,8 +84,12 @@ server_edir=Directori de fitxers font invàlid
 server_epwdir=Directori de fitxers font de contrasenyes invàlid
 server_enis=No sembla que la teva màquina tingui el suport de NIS instal·lat.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 tables_title=Taules NIS
 tables_switch=Edita la taula NIS:
@@ -94,8 +108,12 @@ tables_nomatch=No hi ha cap registre que coincideixi amb la recerca
 tables_build=Reconstrueix les taules NIS
 tables_buildmsg=Fes clic sobre aquest botó per reconstruir les bases de dades NIS a partir de les dades de la taula. Si hi has fet algun canvi, ho hauràs de fer per posar-lo a disposició dels clients NIS.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 desc_aliases=Àlies sendmail
 desc_mail=Àlies sendmail
@@ -133,8 +151,12 @@ desc_ipnodes=Nodes IP
 desc_timezone=Zones horàries
 desc_locale=Localitzacions
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 hosts_title=Adreça de Host
 hosts_ip=Adreça IP
@@ -145,8 +167,12 @@ hosts_eip=Hi falta l'adreça IP o bé no és vàlida
 hosts_ename=Hi falta el nom del host o bé no és vàlid
 hosts_aliases=Àlies
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 group_name=Nom del grup
 group_gid=ID del grup
@@ -157,6 +183,7 @@ group_none=No cal contrasenya
 group_encrypted=Contrasenya prexifrada
 group_clear=Contrasenya normal
 group_err=No s'ha pogut desar el grup
+
 passwd_name=Nom de l'usuari
 passwd_uid=ID d'usuari
 passwd_real=Nom Real
@@ -195,9 +222,13 @@ passwd_emin=Nombre mínim de dies invàlids
 passwd_einactive=Nombre dies inactius invàlid
 passwd_eexpiry=Data d'expiració invàlida
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 services_title=Servei de Xarxa
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 services_name=Nom del servei
 services_proto=Protocol
@@ -208,12 +239,16 @@ services_err=No s'ha pogut desar el servei
 services_ename=Hi falta el nom del servei o bé no és vàlid
 services_eport=Hi falta el port o bé és invàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 protocols_title=Protocol de Xarxa Protocol
 protocols_name=Nom del protocol
 protocols_number=Número
 protocols_aliases=Àlies
 =======
+=======
+
+>>>>>>> upstream/master
 protocols_name=Nom del protocol
 protocols_number=Número
 protocols_aliases=Àlies
@@ -224,9 +259,13 @@ protocols_err=No s'ha pogut desar el protocol
 protocols_ename=Hi falta el nom o bé és invàlid
 protocols_enumber=Hi falta el número o bé és invàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 netgroup_title=Grup de Xarxa
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 netgroup_name=Nom del grup de xarxa
 netgroup_members=Membres
@@ -243,11 +282,15 @@ netgroup_ehost=Hi falta el host a la fila $1 o bé no és vàlid
 netgroup_euser=Hi falta l'usuari o bé no és vàlid
 netgroup_edom=Hi falta el domini NIS a la fila $1 o bé no és vàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ethers_title=Adreça Ethernet
 ethers_mac=Adreça Ethernet
 ethers_ip=Adreça IP
 =======
+=======
+
+>>>>>>> upstream/master
 ethers_mac=Adreça Ethernet
 ethers_ip=Adreça IP
 ethers_title=Adreça Ethernet
@@ -257,12 +300,16 @@ ethers_err=No s'ha pogut desar l'adreça Ethernet
 ethers_emac=Adreça Ethernet invàlida
 ethers_eip=Adreça IP invàlida
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 rpc_title=Programa RPC
 rpc_name=Nom del programa
 rpc_number=Número
 rpc_aliases=Àlies
 =======
+=======
+
+>>>>>>> upstream/master
 rpc_name=Nom del programa
 rpc_number=Número
 rpc_aliases=Àlies
@@ -273,8 +320,12 @@ rpc_err=No s'ha pogut desar el programa RPC
 rpc_ename=Hi falta el nom del programa o bé no és vàlid
 rpc_enumber=Hi falta el número o bé no és vàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 networks_title=Adreça de Xarxa
 networks_ip=Adreça IP
@@ -285,8 +336,12 @@ networks_eip=Hi falta l'adreça IP o bé no és vàlida
 networks_ename=Hi falta el nom o bé no és vàlid
 networks_aliases=Àlies
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 netmasks_net=Adreça de Xarxa
 netmasks_mask=Màscara de subxarxa
@@ -296,8 +351,12 @@ netmasks_err=No s'ha pogut desar la màscara
 netmasks_enet=Hi falta l'adreça de xarxa o bé no és vàlida
 netmasks_emask=Hi falta la màscara de subxarxa o bé no és vàlida
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 aliases_from=Adreça
 aliases_to=Alia a
@@ -307,8 +366,12 @@ aliases_err=No s'ha pogut desar l'àlies
 aliases_efrom=Hi falta l'adreça o bé no és vàlida
 aliases_eto=Hi falten les adreces de destinació
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 security_title=Seguretat del Servidor
 security_header=Opcions de seguretat del servidor NIS
@@ -339,8 +402,12 @@ security_ehost='$1' no és un nom de host vàlid
 security_emap='$1' no és una taula NIS vàlida
 security_efield='$1' no és un número de camp vàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 eswitch_title=Edició de Servei
 eswitch_egone=El servei no existeix!

@@ -8,8 +8,12 @@ index_dmodel=Fabricant i model
 index_dparts=Llesques
 index_return=a la llista de discs
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 disk_title=Edició de Disc
 disk_egone=El disc ja no existeix!
@@ -35,12 +39,17 @@ disk_return=als detalls del disc i la llista de llesques
 disk_add=Crea una nova llesca.
 disk_smart=Mostra l'estat SMART
 disk_smartdesc=Mostra l'estat actual d'aquesta unitat tal i com el detecta SMART i en comprova els errors.
+
 select_device=$1 dispositiu $2
 select_slice=$1 dispositiu $2 llesca $3
 select_part=$1 dispositiu $2 llesca $3 partició $4
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 slice_title=Edició de Llesca
 slice_egone=La llesca seleccionada no existeix!
@@ -67,8 +76,12 @@ slice_err=No s'ha pogut modificar la llesca
 slice_header=Detalls de la llesca
 slice_suse=Utilitzada directament per
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 dslice_title=Supressió de Llesca
 dslice_rusure=Segur que vols suprimir la llesca $1? Se suprimiran també totes les particions i sistemes de fitxers que conté.
@@ -78,8 +91,12 @@ dslice_deleting=S'està suprimint la llesca $1...
 dslice_failed=...la supressió ha fallat: $1
 dslice_done=...fet
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 nslice_title=Creació de Llesca
 nslice_header=Detalls de la nova llesca
@@ -103,8 +120,12 @@ nslice_parting=Crea una partició per defecte a la llesca $1 de $2...
 nslice_pfailed=...la creació de la partició ha fallat: $1
 nslice_pdone=...s'ha afegit la partició
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 npart_title=Creació de Partició
 npart_header=Detalls de la nova partició
@@ -119,8 +140,12 @@ npart_creating=S'està creant la partició $1 a $2...
 npart_failed=...la creació de la partició ha fallat: $1
 npart_done=...s'ha afegit la partició
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 part_title=Edició de Partició
 part_egone=La partició ja no existeix!
@@ -149,8 +174,12 @@ part_mountmsg=Munta aquest dispositiu un un nou directori al sistema de manera q
 part_mountmsg2=Munta aquest dispositiu com a memòria virtual del sistema per a incrementar la quantitat de memòria disponible.
 part_cannotedit=Aquesta partició no es pot modificar perquè està essent utilitzada.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 dpart_title=Supressió de Partició
 dpart_rusure=Segur que vols suprimir la partició $1? Se suprimiran també tots els sistemes de fitxers que conté.
@@ -160,8 +189,12 @@ dpart_deleting=S'està suprimint la partició $1...
 dpart_failed=...la supressió ha fallat: $1
 dpart_done=...fet
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 newfs_title=Creació de Sistema de Fitxers
 newfs_header=Detalls del nou sistema de fitxers
@@ -178,8 +211,12 @@ newfs_creating=S'està creant el sistema de fitxers a $1...
 newfs_failed=...la creació ha fallat!
 newfs_done=...s'ha creat correctament
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 fsck_title=Comprovació de Sistema de Fitxers
 fsck_err=No s'ha pogut comprovar el sistema de fitxers
@@ -187,8 +224,12 @@ fsck_checking=S'està comprovant el sistema de fitxers de $1...
 fsck_failed=...la comprovació ha fallat!
 fsck_done=...s'ha completat la comprovació sense trobar cap error
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_create_slice=S'ha creat la llesca $1
 log_delete_slice=S'ha suprimit la llesca $1

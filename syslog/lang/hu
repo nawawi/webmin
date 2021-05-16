@@ -16,6 +16,7 @@ index_pipe=A $1 csővezeték
 index_pipe2=A $1 program bemenete
 index_host=A $1 számítógép
 index_all=Minden felhasználó
+
 index_users=$1 felhasználó(k)
 index_add=Új napló létrehozása
 index_return=a rendszernaplókhoz
@@ -28,8 +29,11 @@ all=Bármelyik
 
 restart_ekill=Nem sikerült jelzést küldeni a $1 processznek: $2
 
+<<<<<<< HEAD
 =======
 restart_ekill=Nem sikerült jelzést küldeni a $1 processznek: $2
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 edit_title=Rendszernapló módosítása
 create_title=Új rendszernapló
@@ -61,16 +65,24 @@ edit_none=Egyik sem
 edit_view=A logfile megtekintése
 edit_tag=Mely programtól származó naplóadatok kerülnek ide?
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 view_title=Egy logfile megtekintése
 view_header=A $2 file utolsó $1 sora
 view_empty=A logfile üres
 view_refresh=Frissítés
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 save_err=Nem sikerült elmenteni
 save_efile=A '$1' file nem nyitható meg: $2
@@ -83,8 +95,12 @@ save_efacils=A kategória nem volt megadva
 save_esel=Nincsenek megadva a naplózandó üzenetfajták
 save_epri=Nincs megadva a prioritás
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_modify=$1 felé irányuló naplózás módosítása
 log_create=$1 felé irányuló naplózás elindítása

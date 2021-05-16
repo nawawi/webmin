@@ -93,8 +93,12 @@ index_ipvxmode=Canvia la versió del protocol IP:
 index_ipvx4=IPv4
 index_ipvx6=IPv6
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 desc_p=el protocol és $1
 desc_p!=el protocol no és $1
@@ -122,6 +126,8 @@ desc_tcp-option=el paquet utilitza l'opció TCP $1
 desc_tcp-option!=el paquet no utilitza l'opció TCP $1
 desc_icmp-type=el tipus ICMP és $1
 desc_icmp-type!=el tipus ICMP no és $1
+desc_icmpv6-type=El tipus ICMP és $1
+desc_icmpv6-type!=El tipus ICMP no és $1
 desc_mac-source=l'adreça ethernet és $1
 desc_mac-source!=l'adreça ethernet no és $1
 desc_limit=el ritme és menor que $1
@@ -155,6 +161,9 @@ desc_args--match-set=$2 està contingut al conjunt IP $1
 desc_src=origen
 desc_dest=destinació
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 redhat_einstalled=No s'ha trobat cap acció d'engegada <tt>iptables(6)</tt> que indiqui que el paquet IPtables no està instal·lat al sistema
 redhat_eoutput=S'ha produït un error en buscar l'estat d'IPtables amb l'ordre $1. Això probablement indica que el sistema està configurat per utilitzar IPchains en lloc d'IPtables.
@@ -162,12 +171,17 @@ redhat_eoutput=S'ha produït un error en buscar l'estat d'IPtables amb l'ordre $
 gentoo_escript=No s'ha trobat al sistema el script $1 d'inici d'IPtables Gentoo.
 
 eiptables=Línia del fitxer d'IPtables desconeguda: $1
+<<<<<<< HEAD
 
 =======
 redhat_einstalled=No s'ha trobat cap acció d'engegada <tt>iptables(6)</tt> que indiqui que el paquet IPtables no està instal·lat al sistema
 redhat_eoutput=S'ha produït un error en buscar l'estat d'IPtables amb l'ordre $1. Això probablement indica que el sistema està configurat per utilitzar IPchains en lloc d'IPtables.
 gentoo_escript=No s'ha trobat al sistema el script $1 d'inici d'IPtables Gentoo.
 eiptables=Línia del fitxer d'IPtables desconeguda: $1
+>>>>>>> upstream/master
+=======
+eip6tables=Línia del fitxer de desat d'ip6tables desconeguda: $1
+
 >>>>>>> upstream/master
 edit_title1=Addició de Regla
 edit_title2=Edició de Regla
@@ -237,6 +251,7 @@ edit_physdevout=Interfície física de sortida
 edit_physdevisin=Entrada de paquets a la interfície pont
 edit_physdevisout=Sortida de paquets a la interfície pont
 edit_physdevisbridged=Els paquets s'estan pontejant
+
 save_err=No s'ha pogut desar la regla
 save_echain=Hi falta la cadena a executar o bé és invàlida
 save_esource=Hi falta l'adreça o xarxa origen o bé és invàlida
@@ -282,14 +297,19 @@ save_ecanjump=No tens permís per utilitzar aquest acció
 save_ephysdevin=Hi falta la interfície física d'entrada o bé és invàlida
 save_ephysdevout=Hi falta la interfície física de sortida o bé és invàlida
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 delete_title=Supressió de Cadena
 delete_rusure=Segur que vols suprimir la cadena $1? Se'n suprimiran les $2 regles que conté.
 delete_ok=Suprimeix-ho ara
 delete_ecannot=No tens permís per suprimir cadenes
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 clear_title=Buidatge de Cadena
 clear_rusure=Segur que vols suprimir totes les $2 regles de la cadena $1?
@@ -300,13 +320,24 @@ clear_title=Buidatge de Cadena
 clear_rusure=Segur que vols suprimir totes les $2 regles de la cadena $1?
 clear_ecannot=No tens permís per buidar cadenes
 >>>>>>> upstream/master
+=======
+
+clear_title=Buidatge de Cadena
+clear_rusure=Segur que vols suprimir totes les $2 regles de la cadena $1?
+clear_ecannot=No tens permís per buidar cadenes
+
+>>>>>>> upstream/master
 new_err=No s'ha pogut crear la cadena
 new_ename=Hi falta el nom de la cadena o bé és invàlid
 new_etaken=Ja existeix una cadena amb aquest nom
 new_ecannot=No tens permís per crear cadenes
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 apply_err=No s'ha pogut aplicar la configuració
 apply_ecannot=No tens permís per aplicar la configuració
@@ -315,8 +346,12 @@ unapply_err=No s'ha pogut restaurar la configuració
 unapply_ecannot=No tens permís per revertir la configuració
 bootup_ecannot=No tens permís per activar ni desactivar el tallafoc en engegar
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_create_rule=S'ha afegit la regla a la cadena $1 de la taula $2
 log_modify_rule=S'ha modificat la regla de la cadena $1 a la taula $2
@@ -341,13 +376,19 @@ log_delete_host=S'ha eliminat el servidor de clúster $1
 log_delete_group=S'han eliminat $1 servidors de clúster
 log_openports=S'han obert els ports del tallafoc $1
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 setup_eiface=No has introduït cap interfície extern de xarxa
 setup_ecannot=No tens permís per configurar el tallafoc
 
+<<<<<<< HEAD
 =======
 setup_eiface=No has introduït cap interfície extern de xarxa
 setup_ecannot=No tens permís per configurar el tallafoc
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 acl_tables=IPtables permeses
 acl_apply=Pot aplicar la configuració
@@ -361,6 +402,7 @@ acl_newchain=Pot crear noves cadenes
 acl_delchain=Pot suprimir o buidar cadenes
 acl_policy=Pot canviar la política per defecte
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 etable=No tens permís per editar aquesta IPtable
 ejump=No tens permís per editar aquesta regla
@@ -370,6 +412,13 @@ ecluster=No tens permís per gestionar el clúster del tallafoc
 etable=No tens permís per editar aquesta IPtable
 ejump=No tens permís per editar aquesta regla
 ecluster=No tens permís per gestionar el clúster del tallafoc
+>>>>>>> upstream/master
+=======
+
+etable=No tens permís per editar aquesta IPtable
+ejump=No tens permís per editar aquesta regla
+ecluster=No tens permís per gestionar el clúster del tallafoc
+
 >>>>>>> upstream/master
 cluster_title=Servidors del Clúster Tallafoc
 cluster_none=Encara no s'ha afegir cap servidor al clúster tallafoc.
@@ -382,8 +431,12 @@ cluster_need=Has d'afegir servidors amb un usuari i una contrasenya al mòdul d'
 cluster_return=als servidors del clúster
 cluster_delete=Elimina els Seleccionats
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 add_title=Addició de Servidors
 add_msg=S'està afegint $1...
@@ -395,11 +448,17 @@ add_emissing=El servidor $1 no té l'ordre $2 del tallafoc
 add_ok=S'ha afegit $1, amb $2 regles actives del tallafoc.
 add_enone=No has seleccionat cap servidor per afegir!
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 policy_ecannot=No tens permís per canviar la política per defecte d'aquesta cadena
 
 =======
 policy_ecannot=No tens permís per canviar la política per defecte d'aquesta cadena
+>>>>>>> upstream/master
+=======
+
+policy_ecannot=No tens permís per canviar la política per defecte d'aquesta cadena
+
 >>>>>>> upstream/master
 move_title=Desplaçament de Regles
 move_count=Regles seleccionades
@@ -408,8 +467,12 @@ move_dest=Cadena de destinació
 move_ok=Desplaça-la Ara
 move_header=Opcions de desplaçament de la regla
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 rename_title=Reanomenament de Cadena
 rename_count=Regles de la cadena
@@ -421,9 +484,12 @@ rename_adjust=Modifica les altres regles que salten a aquesta cadena
 rename_none=Cap
 rename_ecannot=No tens permís per reanomenar cadenes
 <<<<<<< HEAD
+<<<<<<< HEAD
 __norefs=1
 =======
 >>>>>>> upstream/master
 desc_icmpv6-type=El tipus ICMP és $1
 desc_icmpv6-type!=El tipus ICMP no és $1
 eip6tables=Línia del fitxer de desat d'ip6tables desconeguda: $1
+=======
+>>>>>>> upstream/master

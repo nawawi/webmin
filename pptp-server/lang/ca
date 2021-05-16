@@ -11,8 +11,12 @@ index_applydesc=Fes clic sobre aquest botó per aplicar les opcions actuals del 
 index_return=a l'índex de mòduls
 index_epppd=El programa servidor PPP $1 no està instal·lat. PPTP en depèn per poder operar.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 conf_title=Opcions del Servidor PPTP
 conf_ecannot=No tens permís per editar les opcions del servidor PPTP
@@ -40,8 +44,12 @@ conf_eremoteip='$1' no és una adreça IP ni un rang remot vàlid
 conf_efrom=Hi falta l'adreça origen de la xarxa IPX o bé és invàlida
 conf_eto=Hi falta l'adreça de destinació de la xarxa IPX o bé és invàlida
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 options_title=Opcions del PPP
 options_ecannot=No tens permís per editar les opcions PPP
@@ -76,8 +84,12 @@ options_mschap-v2=Autenticació MS-CHAP versió 2
 options_chapms=Autenticació MS-CHAP
 options_chapms-v2=Autenticació MS-CHAP versió 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 secrets_title=Comptes PPP
 secrets_ecannot=No tens permís per editar els comptes PPP
@@ -93,8 +105,12 @@ secrets_create=Crea un nou compte PPP.
 secrets_desc=Els comptes PPP llistats en aquesta pàgina es treuen del fitxer $1, que s'utilitza per a l'autenticació $3. Només es mostren les del teu servidor $2, no els comptes per fer connexions cap a l'exterior.
 secrets_delete=Suprimeix els Comptes PPP Seleccionats
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_secret_etitle=Edició de Compte PPP
 edit_secret_ctitle=Creació de Compte PPP
@@ -114,9 +130,13 @@ edit_secret_anone=No en permetis cap
 edit_secret_alist=Permet les llistades
 edit_secret_del=Suprimeix
 edit_secret_return=a la llista de comptes
+
 save_secret_esave=No s'ha pogut desar el compte
 save_secret_enoip='$1' no és una adreça vàlida
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 stop_err=No s'ha pogut aturar el servidor PPTP
 stop_egone=Ja no està en execució
@@ -128,6 +148,7 @@ start_ecannot=No tens permís per iniciar el servidor PPTP
 apply_err=No s'ha pogut reiniciar el servidor PPTP
 apply_ecannot=No tens permís per reiniciar el servidor PPTP
 
+<<<<<<< HEAD
 =======
 stop_err=No s'ha pogut aturar el servidor PPTP
 stop_egone=Ja no està en execució
@@ -136,6 +157,8 @@ start_err=No s'ha pogut iniciar el servidor PPTP
 start_ecannot=No tens permís per iniciar el servidor PPTP
 apply_err=No s'ha pogut reiniciar el servidor PPTP
 apply_ecannot=No tens permís per reiniciar el servidor PPTP
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 conns_title=Connexions Actives
 conns_ecannot=No tens permís per gestionar connexions actives
@@ -148,12 +171,17 @@ conns_remote=Adreça VPN del client
 conns_none=No hi ha cap connexió PPTP activa en aquests moments.
 conns_unknown=Desconegut
 conns_user=Usuari
+
 disc_err=No s'ha pogut desconnectar
 disc_egone=La connexió ja no és activa
 disc_ekill=El procés ja no està en execució
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_secret_create=S'ha creat el compte PPP $1
 log_secret_modify=S'ha modificat el compte PPP $1
@@ -166,8 +194,12 @@ log_start=S'ha iniciat el servidor PPTP
 log_stop=S'ha aturat el servidor PPTP
 log_apply=S'ha aplicat la configuració del servidor PPTP
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 acl_conf=Pot editar la configuració
 acl_options=Pot editar les opcions

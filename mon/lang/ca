@@ -11,9 +11,13 @@ mon_status_title=Estat d'Operació
 hostgroups_title=Configuració MON-Grups de Hosts
 services_title=Grups d'Observació-Definició de Serveis
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 CAPÇALERES:
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 head_hostgroups=Grups de Hosts i Serveis
 head_groups=Nom del Grup de Hosts
@@ -27,9 +31,13 @@ head_usr=Usuari
 head_pass=Contrasenya
 head_mand=(Els paràmetres de "RED COLOR" són obligatoris)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ERRORS:
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 err_nomon=El paquet 'mon' no està instal·lat al sistema
 err_nomonconf=No s'ha trobat al sistema el fitxer $1 de configuració de MON. Pot ser que MON no estigui instal·lat, o bé que la <a href='$2'>configuració del mòdul</a> sigui incorrecta.
@@ -42,6 +50,7 @@ stop_epid=Ja no està en execució
 start_err=No s'ha pogut iniciar MON
 restart_err=No s'ha pogut reiniciar MON
 restart_epid=No s'ha pogut obtenir el PID
+
 other=Altres (separats per espais)
 next=Següent
 mon_stat=Estat de MON
@@ -57,6 +66,7 @@ save_apply=Desa i Aplica
 watch=Grup d'Observació
 members=Membres
 def_perargs=ds {Dss-Dmg}
+
 def_desc=description
 def_inter=interval
 def_mon=monitor
@@ -72,12 +82,17 @@ def_trapdur=trapduration
 def_rand=randskew
 def_exclhost=exclude_hosts
 def_exclper=exclude_period
+
 groups_title=Grups de Hosts
 groups_group=Nom del grup
 groups_members=Hosts membres
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 watches_title=Llistes d'Observació
 watches_group=Grup d'observació
@@ -87,8 +102,12 @@ watches_add=Afegeix llista d'observació per al grup:
 watches_return=a les llistes d'observació
 watches_none=Encara no s'ha definit cap llista d'observació.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 global_title=Opcions Globals
 global_header=Opcions globals de configuració MON
@@ -108,8 +127,12 @@ global_ealertdir=Hi falta el directori de programes d'avís o bé és invàlid
 global_emondir=Hi falta el directori de programes monitors o bé és invàlid
 global_euserfile=Hi falta el fitxer d'usuaris MON o bé és invàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 watch_title=Edició de la Llista d'Observació
 watch_header=Detalls d'observació del grup de hosts
@@ -120,8 +143,12 @@ watch_monitor=Monitor a utilitzar
 watch_interval=Comprova cada
 watch_periods=Períodes de monitorització
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 service_title=Addició de Servei
 service_title2=Edició de Servei
@@ -176,16 +203,24 @@ service_known0=Cadena <tt>Hora::Període</tt>
 service_known1=Dies i hores especificats
 service_known2=Període definit
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 status_title=Estat de MON
 status_ecgi=El programa CGI $1 d'estat de MON no existeix. Pot ser que no estigui instal·lat, o bé que la <a href='$2'>configuració del mòdul</a> sigui incorrecta.
 status_eperl=El programa CGI d'estat de MON necessita el mòdul Perl $1. <a href='$2'>Fes clic aquí</a> per instal·lar-lo directament des de CPAN.
 status_esame=El programa CGI d'estat de MON $1 s'ha configurat al script <tt>mon.cgi</tt> en aquest mòdul de Webmin, no el programa CGI que ve amb MON. Ajusteu la <a href='$2'>configuració del mòdul</a> per utilitzar el camí correcte.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 users_title=Usuaris de MON
 users_etype=No es pot editar la llista d'usuaris de MON perquè MON no està actualment configurat per utilitzar-lo per a autenticació a la pàgina d'<a href='$1'>opcions Globals</a>e.
@@ -194,8 +229,12 @@ users_nousers=No hi ha cap usuari MON definit a $1.
 users_add=Crea un nou usuari.
 users_return=a la llista d'usuaris de MON
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 user_create=Creació d'Usuari de MON
 user_edit=Edició d'Usuari de MON
@@ -206,6 +245,7 @@ user_leave=Deixa-ho tal com està
 user_err=No s'ha pogut desar l'usuari
 user_euser=Hi falta el nom de l'usuari o bé és invàlid
 user_esame=ja existeix un usuari amb aquest mateix nom
+
 auth_title=Ordres de Client
 auth_desc=Aquesta pàgina permet controlar quines ordres de MON poden ser executades per quins usuaris quan utilitzen els programes client.
 auth_cmd=Ordres de MON
@@ -216,8 +256,12 @@ auth_sel=Només els usuaris
 auth_err=No s'han pogut desar les ordres dels clients
 auth_eusers=No has introduït cap usuari per a l'ordre $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 periods_title=Períodes definits
 periods_period=Nom del període
@@ -228,6 +272,9 @@ periods_err=No s'han pogut desar els períodes definits
 periods_ename='$1' no és un nom de període vàlid
 periods_ehour=Hi falta l'hora del període $1 o bé és invàlida (ha de ser com ara 9am o 5pm)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 show_title=Estat Operacional
 show_ecgi=L'estat del programa MON $1 no existeix. Pot ser que no estigui instal·lat, o bé que la <a href='$2'>configuració del mòdul</a> sigui incorrecta.

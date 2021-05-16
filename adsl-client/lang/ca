@@ -17,8 +17,12 @@ index_canceldesc=El client ADSL està provant d'establir una connexió. Fes clic
 index_cdemand=Cancel·la Sota Demanda
 index_cdemanddesc=Actualment, el client ADSL està esperant una petició de connexió sota demanda. Fes clic sobre aquest botó per aturar-lo amb l'ordre $1.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 index_header=Opcions de la configuració del client ADSL
 index_desc=Els valors de sota s'apliquen a qualsevol nova connexió ADSL activada pel sistema. Si els canvies, la connexió s'ha de desactivar i reactivar per tal que les modificacions tinguin efecte.
@@ -41,8 +45,12 @@ index_fw_masquerade=Per al portal NAT
 index_connect=Temps durant el qual cal intentar la connexió
 index_forever=Sempre
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 start_err=No s'ha pogut activar la connexió ADSL
 start_title=Activació de l'ADSL
@@ -50,8 +58,12 @@ start_ip=S'ha establert una connexió ADSL amb adreça IP $1.
 start_demand=Com que la connexió sota petició està activada, la connexió ADSL només s'activarà quan calgui.
 start_bg=La connexió ADSL no s'ha activat en 20 segons. El client ADSL seguirà provant de connectar-se en segon pla fins que reïxi.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 save_err=No s'ha pogut desar la configuració ADSL
 save_eeth=Hi falta la interfície Ethernet o bé sembla invàlida
@@ -62,16 +74,24 @@ save_emss=Hi falta la mida màxima de paquet o bé és invàlida
 save_title=Desa la Configuració
 save_desc=La configuració del client ADSL ha estat desada amb èxit, però no s'utilitzarà fins que et reconnectis.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 stop_err=No s'ha pogut tancar la connexió ADSL
 stop_title=Desactivació de l'ADSL
 stop_ok=La connexió ADSL s'ha desactivat amb èxit.
 stop_failed=Per alguna raó. la connexió ADSL encara està activa!
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_save=S'ha desat la configuració del client
 log_stop=S'ha desactivat l'ADSL

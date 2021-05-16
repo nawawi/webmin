@@ -11,8 +11,12 @@ index_create=Skapade ett nytt schemalagt cronjobb
 index_allow=Styr användaråtkomst till cronjobb
 index_return=cron-lista
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_title=Ändra cronjobb
 create_title=Skapa cronjobb
@@ -33,8 +37,12 @@ edit_all=Alla
 edit_selected=Valt ...
 edit_run=Kör nu
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 save_err=Det gick inte att spara cronjobb
 save_ecmd=Du har inte angivit något kommando som ska utföras
@@ -44,8 +52,12 @@ save_eallow=Användare '$1' får inte komma åt cron
 save_ecannot=Du får inte skapa eller ändra cronjobb för '$1'
 save_enone=Du valde inte någon $1 att utföra
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 allow_title=Styr cron-tillgång
 allow_desc=I detta formulär kan du ange vilka användare som får skapa och köra cronjobb.
@@ -56,26 +68,37 @@ allow_all3=Tillåt alla användare
 allow_allow=Tillåt bara uppräknade användare
 allow_deny=Förbjud bara uppräknade användare
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 env_title=Cron-omgivning
 env_ecannot=Du får inte ändra cron-omgivningen för denna användare
 env_desc=Cron-omgivning för $1
+=======
+
+>>>>>>> upstream/master
 env_name=Variabelnamn
 env_value=Värde
 env_ename='$1' är inte ett giltigt variabelnamn
 
+<<<<<<< HEAD
 =======
 env_name=Variabelnamn
 env_value=Värde
 env_ename='$1' är inte ett giltigt variabelnamn
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 exec_title=Utför cronjobb
 exec_ecannot=Du får inte utföra cronjobb för denna användare
 exec_cmd=Resultat från kommando $1 ...
 exec_none=Inget resultat fanns
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 acl_users=Får ändra cronjobb för
 acl_all=Alla användare

@@ -4,12 +4,16 @@ index_none=Inga egna kommandon definierade
 index_create=Skapa ett nytt kommando
 index_return=kommandon
 <<<<<<< HEAD
+<<<<<<< HEAD
 acl_commands=Kommandon som denna användare får köra
 acl_create=Kunna skapa och ändra kommandon?
 yes=Ja
 no=Nej
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_title=Ändra kommando
 create_title=Skapa kommando
@@ -38,8 +42,12 @@ edit_type6=Katalog
 edit_type7=Inställning ...
 edit_type8=Lösenord
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 save_err=Det gick inte att spara kommando
 save_ecannot=Du får inte ändra kommandon
@@ -47,8 +55,12 @@ save_ecmd=Du har inte angivit något kommando
 save_edesc=Du har inte angivit någon beskrivning av kommandot
 save_euser=Användaren finns inte eller är inte giltig
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 run_err=Det gick inte att utföra kommandot
 run_ecannot=Du får inte utföra detta kommando
@@ -57,13 +69,18 @@ run_egroup=Gruppen finns inte eller är inte giltig
 run_title=Utför kommando
 run_out=Resultat från $1 ...
 run_noout=Inget resultat finns
+
 log_modify=Modifierade kommando $1
 log_create=Skapade kommando $1
 log_delete=Tog bort kommando $1
 log_exec=Utförde kommando $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 acl_cmds=Kommandon som denna användare får köra
 acl_call=Alla kommandon

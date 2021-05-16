@@ -1,7 +1,11 @@
 quota_unlimited=Obegränsad
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 acl_fss=Filsystem som denna användare får ändra i
 acl_fall=Alla filsystem
@@ -22,15 +26,21 @@ acl_gnone= Inga grupper
 acl_gonly= Endast grupperna
 acl_gexcept= Alla grupper utom
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 activate_eallow=Du får inte slå på och av quota på detta filsystem
 activate_eon=Det gick inte att slå på quota
 activate_eoff=Det gick inte att slå av quota
 
+<<<<<<< HEAD
 =======
 activate_eallow=Du får inte slå på och av quota på detta filsystem
 activate_eon=Det gick inte att slå på quota
 activate_eoff=Det gick inte att slå av quota
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 check_title=Kontrollera quota
 check_return=Lista över $1
@@ -40,8 +50,12 @@ check_done=... Klart.
 check_rgroup=grupp
 check_ruser=användare
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 cgroup_efail=Det gick inte att kopiera quota
 cgroup_ecannot=Du får inte kopiera quota
@@ -49,8 +63,12 @@ cgroup_egallow=Du får inte kopiera denna grupps quota
 cgroup_enogroup=Du har inte angivit någon grupp att kopiera till
 cgroup_eallowto=Du får inte kopiera quota till '$1'
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 cgform_title=Kopiera quota
 cgform_return=gruppquota
@@ -61,14 +79,19 @@ cgform_all=Alla grupper på ditt system
 cgform_select=Angivna grupper
 cgform_contain=Grupper med följande användare
 cgform_doit=Kopiera
+
 cuser_efail=Det gick inte att kopiera quota
 cuser_ecannot=Du får inte kopiera quota
 cuser_euallow=Du får inte kopiera denna användares quota
 cuser_enouser=Du har inte angivit någon användare att kopiera till
 cuser_eallowto=Du får inte kopiera quota till '$1'
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 cuform_title=Kopiera quota
 cuform_return=användarquota
@@ -80,8 +103,12 @@ cuform_select=Angivna användare
 cuform_members=Medlemmar i angivna grupper
 cuform_doit=Kopiera
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 egroup_title=Ändra quota
 egroup_freturn=filsystemslista
@@ -98,8 +125,12 @@ egroup_hflimit=Hård filgräns
 egroup_update=Uppdatera
 egroup_listall=Lista alla quota
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 euser_title=Ändra quota
 euser_freturn=filsystemslista
@@ -115,6 +146,7 @@ euser_sflimit=Mjuk filgräns
 euser_hflimit=Hård filgräns
 euser_update=Uppdatera
 euser_listall=Lista alla quota
+
 gfilesys_title=Gruppquota
 gfilesys_return=filsystemslista
 gfilesys_ecannot=Du får inte ändra quota för '$1'
@@ -128,6 +160,7 @@ gfilesys_hard=Hård gräns
 gfilesys_nogquota=Gruppen <tt>$1</tt> har ingen quota på något filsystem
 gfilesys_edit=Ändra quota på:
 gfilesys_copy=Kopiera quota
+
 ggracef_title=Tidsintervall
 ggracef_return=grupplista
 ggracef_ecannot=Du får inte ändra tidsintervall på detta filsystem
@@ -136,12 +169,17 @@ ggracef_graces=Grupptidsintervall för <tt>$1</tt>
 ggracef_block=För blockquota
 ggracef_file=För filquota
 ggracef_update=Uppdatera
+
 ggraces_esave=Det gick inte att spara tidsintervall
 ggraces_eedit=Du får inte ändra tidsintervall på detta filsystem
 ggraces_enumber='$1' är inte ett antal
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 index_quser=Användarquota
 index_qgroup=Gruppquota
@@ -161,8 +199,12 @@ index_euser=Ändra användarquota:
 index_egroup=Ändra gruppquota:
 index_nosupport=Inget lokalt filsystem stödjer quota
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 lgroups_failed=Det gick inte att lista grupper
 lgroups_eallow=Du får inte ändra quota på detta filsystem
@@ -181,6 +223,7 @@ lgroups_equota=Ändra quota för:
 lgroups_grace=Ändra tidsintervall
 lgroups_check=Kontrollera quota
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 sgroup_egroup=Du får inte ändra quota för denna grupp
 sgroup_efs=Du får inte ändra quota på detta filsystem
@@ -191,11 +234,20 @@ suser_euser=Du får inte ändra quota för denna användare
 suser_efs=Du får inte ändra quota på detta filsystem
 
 =======
+=======
+
+>>>>>>> upstream/master
 sgroup_egroup=Du får inte ändra quota för denna grupp
 sgroup_efs=Du får inte ändra quota på detta filsystem
+
 ssync_ecannot=Du får inte ställa in standardquota för detta filsystem
+
 suser_euser=Du får inte ändra quota för denna användare
 suser_efs=Du får inte ändra quota på detta filsystem
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 ufilesys_title=Användarquota
 ufilesys_return=filsystemslista
@@ -210,6 +262,7 @@ ufilesys_hard=Hård gräns
 ufilesys_nouquota=Användare <tt>$1</tt> har ingen quota på något filsystem
 ufilesys_edit=Ändra quota på:
 ufilesys_copy=Kopiera quota
+
 ugracef_title=Tidsintervall
 ugracef_return=användarlista
 ugracef_ecannot=Du får inte ändra tidsintervall på detta filsystem
@@ -218,12 +271,17 @@ ugracef_graces=Användartidsintervall för <tt>$1</tt>
 ugracef_block=För blockquota
 ugracef_file=För filquota
 ugracef_update=Uppdatera
+
 ugraces_esave=Det gick inte att spara tidsintervall
 ugraces_eedit=Du får inte ändra tidsintervall på detta filsystem
 ugraces_enumber='$1' är inte ett antal
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 lusers_failed=Det gick inte att lista användare
 lusers_eallow=Du får inte ändra quota på detta filsystem
@@ -249,6 +307,7 @@ lusers_hblimit=Hård blockgräns
 lusers_sflimit=Mjuk filgräns
 lusers_hflimit=Hård filgräns
 lusers_apply=Ta i drift
+
 grace_seconds=Sekunder
 grace_minutes=Minuter
 grace_hours=Timmar
@@ -256,8 +315,12 @@ grace_days=Dagar
 grace_weeks=Veckor
 grace_months=Månader
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_activate_u=Slog på användarquota på $1
 log_activate_g=Slog på gruppquota på $1

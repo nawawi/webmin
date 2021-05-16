@@ -10,8 +10,12 @@ index_action=Servis
 index_desc=Açıklama
 index_boot=Açılışta başlasın mı?
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_title=Servis Değiştir
 create_title=Servis Oluştur
@@ -41,24 +45,36 @@ edit_startnow=Şimdi Başlat
 edit_stopnow=Şimdi Durdur
 edit_return=servis
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 save_err=Servisi kaydetmede hata oluştu
 save_ecannot=Açılış servislerini değiştirmeye hakkınız yoktur
 save_ealready='$1' servisi her zaman mevcut.
 save_ewrite=$1'e yazmada hata oluştu : $2
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 ss_ecannot=Açılış servislerini başlatma ya da durdurmaya izininiz yoktur.
 ss_start=Servis Başlat 
 ss_stop=Servis Durdur
 ss_exec=$1 Çalıştırılıyor ..
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 shutdown_ecannot=Sistemi kapatmaya izininiz yoktur
 shutdown_title=Kapanış
@@ -66,8 +82,12 @@ shutdown_rusure=$1 komutu ile sistemi kapatmak istediğiniza eminmisiniz?
 shutdown_ok=Sistemi Kapat
 shutdown_exec=$1 komutu ile kapatılıyor ..
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 reboot_ecannot=Sistemi tekrar başlatmaya izininiz yoktur
 reboot_title=Tekrar Başlat
@@ -75,16 +95,24 @@ reboot_rusure=Sisteminizi $1komutu ile tekrar başlatman istediğinizden eminmis
 reboot_ok=Sistemi Tekrar Başlat
 reboot_exec=$1 komutu ile yeniden başlatılıyor ..
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 acl_script=Açılış programcığını değiştirebilsin?
 acl_actions=Değiştirme, oluşturma ya da silme servislerini yapabilsin?
 acl_reboot=Sistemi yeniden başlatabilsin?
 acl_shutdown=Sistemi kapatabilsin?
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_rename=İşlem $1, $2 olarak yeniden isimlendirildi
 log_modify=İşlem $1 değiştirildi

@@ -44,11 +44,16 @@ index_nataction=Mode NAT
 index_natfrom=Paquets que han de coincidir
 index_natto=Traducció
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> upstream/master
+=======
+
+>>>>>>> upstream/master
 dir_in=D'entrada
 dir_out=De sortida
+
 action_pass=<font color=#00aa00>Pas</font>
 action_block=<font color=#ff0000>Bloc</font>
 action_skip=Omet
@@ -61,6 +66,7 @@ action_map=Mapejat
 action_rdr=Redirecció
 action_bimap=Mapejat Bidireccional
 action_map-block=Bloqueja el mapejat
+
 laction_pass=<font color=#00aa00>Passa el paquet</font>
 laction_block=<font color=#ff0000>Paquet de bloc, amb codi ICMP</font>
 laction_log=Registra el paquet, al nivell
@@ -70,8 +76,12 @@ laction_auth=Autorització d'espai d'usuari
 laction_preauth=Comprova l'autorització anterior
 laction_call=Crida funció de nucli
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_title1=Creació de Regla
 edit_title2=Edició de Regla
@@ -138,6 +148,7 @@ edit_icmp=Tipus ICMP
 edit_icmpany=&lt;Qualsevol tipus&gt;
 edit_icmpcode=i codi
 edit_codeany=&lt;Qualsevol codi&gt;
+
 save_err=No s'ha pogut desar la regla
 save_ehostfrom=Hi falta el nom de host origen o bé és invàlid
 save_ehostto=Hi falta el nom de host destí o bé és invàlid
@@ -167,14 +178,19 @@ save_etoip=L'adreça IP de sortida és invàlida
 save_ereplyto=Hi falta la interfície de resposta o bé és invàlida
 save_ereplytoip=L'adreça IP de resposta és invàlida
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 apply_err=No s'ha pogut aplicar la configuració
 apply_remote=Error de $1: $2
 unapply_err=No s'ha pogut revertir la configuració
 unapply_ein=No s'han pogut obtenir les regles d'entrada
 unapply_eout=No s'han pogut obtenir les regles de sortida
+
 desc_if=Si $1
 desc_and=i
 desc_always=Sempre
@@ -209,8 +225,12 @@ desc_dport1=el port és $1
 desc_dport2=el port està entre $1 i $2
 desc_nattoiface=adreça de la interfície
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_create_rule=S'ha creat la regla $1
 log_delete_rule=S'ha suprimit la regla $1
@@ -241,8 +261,12 @@ log_add_group=S'han afegit els servidors de clúster del grup $1
 log_delete_host=S'ha eliminat el servidor de clúster $1
 log_delete_group=S'han eliminat $1 servidors de clúster
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 cluster_title=Servidors Tallafoc de Clúster
 cluster_none=Encara no s'ha afegit cap servidor al clúster del tallafoc.
@@ -255,8 +279,12 @@ cluster_need=Has d'afegir els servidors amb un usuari i una contrasenya al mòdu
 cluster_return=als servidors de clúster
 cluster_delete=Elimina els Seleccionats
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 add_title=Addició de Servidors
 add_msg=S'està afegint $1...
@@ -267,8 +295,12 @@ add_echeck=El servidor $1 no té el mòdul de Tallafoc IPFilter
 add_emissing=El servidor $1 no té l'ordre $2 del tallafoc
 add_ok=S'ha afegit $1, amb $2 regles del tallafoc actives.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 nat_title1=Creació de regla NAT
 nat_title2=Edició de regla NAT
@@ -329,6 +361,9 @@ net_erdrip='$1' no és una adreça IP de destinació vàlida
 nat_erdrips=No has introduït cap IP de destinació
 nat_erdrport=Hi falta el port de destinació o bé és invàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 boot_esmf=El servei SMF $1 ja no existeix o bé no està en un estat conegut
 

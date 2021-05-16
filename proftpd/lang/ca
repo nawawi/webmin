@@ -27,7 +27,9 @@ index_global=Configuració Global
 index_create=Crea un servidor virtual
 index_version=Versió ProFTPd $1
 index_proftpd=ProFTPd
+
 efailed=No s'ha pogut desar $1
+
 type_0=Opcions de xarxa
 type_1=Opcions de Registre
 type_2=Fitxers i Directoris
@@ -36,8 +38,12 @@ type_4=Miscel·lània
 type_5=Usuari i Grup
 type_6=Autenticació
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 virt_title=Opcions del Servidor Virtual
 virt_header1=De $1
@@ -55,8 +61,12 @@ virt_return=al servidor virtual
 virt_virt=Configura Servidor Virtual
 virt_edit=Edita les Directives
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 vserv_title=Configuració de Servidor Virtual
 vserv_addr=Adreça
@@ -67,8 +77,12 @@ vserv_eaddr=Hi falta l'adreça o bé és invàlida
 vserv_eport=Hi falta el número del port o bé és invàlid
 vserv_ename=Hi falta el nom del servidor
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 anon_title=Opcions de FTP Anònim
 anon_header1=Del servidor virtual $1
@@ -78,8 +92,12 @@ anon_return=a les opcions de FTP anònim
 anon_header3=De l'FTP anònim del servidor virtual $1
 anon_header4=De l'FTP anònim del servidor per defecte
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 aserv_title=Configuració de l'FTP Anònim
 aserv_create=Configura l'FTP Anònim
@@ -92,8 +110,12 @@ aserv_euser=Hi falta l'usuari Unix o bé és invàlid
 aserv_egroup=Hi falta el grup Unix o bé és invàlid
 aserv_desc=Encara no s'ha configurat l'FTP anònim d'aquest servidor virtual. Utilitza aquest formulari per configurar les opcions inicials.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 dir_title=Opcions per Directori
 dir_header2=Del directori $1 del servidor per defecte
@@ -106,8 +128,12 @@ dir_dir=Configura el Directori
 dir_header4=Del directori $1 de l'FTP anònim
 dir_header5=Globalment per al directori $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 manual_title=Edició de Directives
 manual_header=Utilitza la caixa de text de sota per editar manualment les directives ProFTPD de $1 que s'apliquen a aquest servidor virtual, directori o ordres.
@@ -117,8 +143,12 @@ manual_file=Edita les Directives del Fitxer:
 manual_efile=Fitxer de configuració ProFTPd
 manual_etest=S'ha detectat un error al fitxer de configuració: $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 limit_title=Opcions per Ordre
 limit_header4=De les ordres $1 del directori $2
@@ -132,8 +162,12 @@ limit_header5=de les ordres $1 de l'FTP anònim
 limit_header6=de les ordres $1 del fitxer $2
 limit_header7=Globalment per a les ordres $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 lserv_title=Configuració d'Ordres
 lserv_cmd=Ordres FTP
@@ -141,8 +175,12 @@ lserv_delete=Suprimeix la configuració del les ordres
 lserv_err=No s'han pogut desar les ordres
 lserv_ecmd=No has seleccionat cap ordre
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 dserv_title=Configuració de Directori
 dserv_dir=Camí del directori
@@ -151,8 +189,12 @@ dserv_edir=Hi falta el camí del directori
 dserv_delete=Suprimeix la configuració del directori
 dserv_eanondir=El directori ha d'estar sota el directori de FTP anònim
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 mod_core_type=Tipus de servidor
 mod_core_inetd=Executa'l des d'Inetd
@@ -342,8 +384,12 @@ mod_core_eip='$1' no és una adreça IP vàlida
 mod_core_enet='$1' no és una adreça de xarxa vàlida
 mod_core_ehost='$1' no és un nom de host vàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 mod_ls_fakegroup=Simula el grup en els llistats de directori
 mod_ls_fakeuser=Simula l'usuari en els llistats de directori
@@ -362,8 +408,12 @@ mod_ls_efakegroup=Hi falta el grup simulat o bé és incorrecte
 mod_ls_options=Opcions de llista del directori
 mod_ls_strict=Deixar de banda les opcions de l'usuari
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 mod_auth_chdir=Directori inicial de connexió
 mod_auth_echdir=Hi falta el directori d'entrada inicial o bé és invàlid
@@ -379,10 +429,15 @@ mod_auth_echroot=Hi falta el directori <i>chroot</i> o bé és invàlid
 mod_auth_login=No demanis la contrasenya si la connexió està denegada
 mod_auth_root=Permet la connexió de root
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> upstream/master
+=======
+
+>>>>>>> upstream/master
 mod_site_chmod=Permet l'ordre <i>chmod</i>
+
 mod_unixpw_ufile=Fitxer alternatiu de contrasenyes Unix
 mod_unixpw_eufile=Hi falta el fitxer alternatiu de contrasenyes o bé és invàlid
 mod_unixpw_gfile=Fitxer alternatiu de grups Unix
@@ -390,6 +445,7 @@ mod_unixpw_egfile=Hi falta el fitxer alternatiu de grups o bé és invàlid
 mod_unixpw_none=Cap
 mod_unixpw_pam=Tracta sempre els PAM com a autoritzats
 mod_unixpw_persist=Mantingues el fitxer de contrasenyes permanentment obert
+
 mod_log_syslog=Enregistra els errors al fitxer
 mod_log_sysdef=Registre del sistema
 mod_log_esyslog=Hi falta el fitxer de registre o bé és invàlid
@@ -407,6 +463,9 @@ mod_log_format=Formats de registre personalitzats
 mod_log_enickname=Hi falta el nom del format o bé és invàlid
 mod_log_efmt=Hi falta la cadena de format
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 mod_pam_pam=Utilitza PAM per a l'autenticació
 mod_pam_config=Autentica utilitzant el servei PAM
@@ -416,6 +475,7 @@ mod_readme_display=Avisa a l'usuari dels fitxers <i>readme</i> que coincideixin 
 mod_readme_none=Cap
 mod_readme_edisplay=Hi falta el patró dels fitxers <i>readme</i>
 
+<<<<<<< HEAD
 =======
 mod_pam_pam=Utilitza PAM per a l'autenticació
 mod_pam_config=Autentica utilitzant el servei PAM
@@ -424,11 +484,15 @@ mod_readme_display=Avisa a l'usuari dels fitxers <i>readme</i> que coincideixin 
 mod_readme_none=Cap
 mod_readme_edisplay=Hi falta el patró dels fitxers <i>readme</i>
 >>>>>>> upstream/master
+=======
+>>>>>>> upstream/master
 start_err=No s'ha pogut engegar el servidor FTP
 start_einetd=No pots engegar el dimoni servidor en mode <i>inetd</i>.
+
 stop_err=No s'ha pogut aturar el servidor FTP
 stop_einetd=No pots aturar el dimoni del servidor quan està en mode inetd.
 stop_erun=No està en execució
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 apply_err=No s'ha pogut aplicar la configuració FTP
@@ -437,6 +501,12 @@ apply_egone=Ja no està en execució
 =======
 apply_err=No s'ha pogut aplicar la configuració FTP
 apply_egone=Ja no està en execució
+>>>>>>> upstream/master
+=======
+
+apply_err=No s'ha pogut aplicar la configuració FTP
+apply_egone=Ja no està en execució
+
 >>>>>>> upstream/master
 ftpaccess_title=Fitxers d'Opcions per Directori
 ftpaccess_desc=Les opcions per directori addicionals es poden especificar amb un fitxer (anomenat normalment <tt>.ftpaccess</tt>) a cada directori. Les opcions s'apliquen a tots els fitxers del directori i a qualsevol subdirectori, a menys que sigui obviat per un altre fitxer d'opcions.
@@ -445,11 +515,16 @@ ftpaccess_find=Busca Fitxers d'Opcions
 ftpaccess_auto=Sota anònim
 ftpaccess_from=A partir del directori
 ftpaccess_return=a la llista de fitxers d'opcions
+
 ftpusers_title=Usuaris FTP Denegats
 ftpusers_desc=Si està activat sota la icona d'<tt>Autenticació</tt>, els usuaris del fitxer $1 llistat a a sota tindran l'accés denegat al servidor FTP.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 ftpindex_title=Fitxer d'Opcions per Directori
 ftpindex_delete=Suprimeix el fitxer
@@ -460,11 +535,16 @@ ftpindex_addlimit=Afegeix opcions d'ordre a...
 ftpindex_header2=$1 a $2
 ftpindex_return=a l fitxer d'opcions per directori
 ftpindex_header=De $1
+
 find_err=No s'ha pogut trobar cap fitxer d'opcions
 find_eanon=L'FTP anònim no està configurat a cap servidor virtual
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_global=S'han canviat les opcions globals $1
 log_ftpusers=S'han canviat els usuaris FTP denegats
@@ -500,8 +580,12 @@ log_anon=S'ha canviat $1 a l'FTP anònim del servidor $2
 log_start=S'ha iniciat proftpd
 log_apply=S'han aplicat els canvis
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 eafter=La verificació de la configuració ha fallat: no s'han desat $1 canvis.
 proftpd_apply=Aplica els Canvis

@@ -13,8 +13,12 @@ index_delete=Suprimeix les Exportacions Seleccionades
 index_disable=Desactiva les Seleccionades
 index_enable=Activa les Seleccionades
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_title=Edició d'Exportació
 create_title=Creació d'Exportació
@@ -73,8 +77,12 @@ edit_sec_krb5p=Privacitat Kerberos
 edit_sec_lipkey=LIPKEY
 edit_sec_spkm=SPKM
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 save_err=No s'ha pogut desar l'exportació
 save_edir=El directori '$1' no existeix
@@ -90,6 +98,7 @@ save_create_dir=No es pot crear el directori '$1'
 save_eanonuid=L'usuari d'accés anònim és invàlid
 save_eanongid=El grup d'accés anònim és invàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 exports_webnfs=Clients&nbsp;WebNFS
 exports_ngroup=Grup de xarxa&nbsp;$1
@@ -100,6 +109,9 @@ exports_host=Host&nbsp;$1
 exports_gss=Xarxa autenticada:&nbsp;$1
 
 =======
+=======
+
+>>>>>>> upstream/master
 exports_webnfs=Clients WebNFS
 exports_ngroup=Grup de xarxa $1
 exports_net=Xarxa $1
@@ -107,6 +119,10 @@ exports_all=Tothom
 exports_hosts=Hosts $1
 exports_host=Host $1
 exports_gss=Xarxa autenticada: $1
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_modify=S'ha modificat l'exportació NFS $1
 log_modify_l=S'ha modificat l'exportació NFS $1 a $2

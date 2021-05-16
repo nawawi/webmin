@@ -89,6 +89,7 @@ right_recollect=Rafraîchir l'information système
 >>>>>>> upstream/master
 right_vvirtualmin=Version Virtualmin
 right_vvm2=Version Cloudmin
+
 acl_show=Information système à afficher
 acl_showall=Tout
 acl_showsel=Seulement sélectionné

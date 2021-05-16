@@ -31,8 +31,12 @@ index_other_kde=Documentació KDE
 index_and=Busca-ho tot
 index_or=Busca'n qualsevol
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 search_efor=No hi ha cap pàgina del manual
 search_title=Resultats de la Recerca
@@ -52,6 +56,9 @@ search_for=per a $1
 search_google=Resultats de la recerca Google
 search_doxfer=Documentació en línia de Webmin
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 howto_title=Document HOWTO
 howto_header=Fitxer $1 del document HOWTO
@@ -61,6 +68,7 @@ doc_title=Documentació de Paquet
 doc_header=Fitxer $1 de documentació de paquet
 doc_epath=Camí de la documentació del paquet invàlid
 
+<<<<<<< HEAD
 =======
 howto_title=Document HOWTO
 howto_header=Fitxer $1 del document HOWTO
@@ -69,10 +77,13 @@ doc_title=Documentació de Paquet
 doc_header=Fitxer $1 de documentació de paquet
 doc_epath=Camí de la documentació del paquet invàlid
 >>>>>>> upstream/master
+=======
+>>>>>>> upstream/master
 man_title=Pàgina del Manual
 man_header=Pàgina del manual de $1($2)
 man_noentry=La pàgina del manual de $1 no existeix!
 man_epath=La pàgina del manual no pot ser un camí!
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 kernel_title=Documentació del Nucli
@@ -89,12 +100,17 @@ perl_emod=Nom de mòdul Perl invàlid
 
 __norefs=1
 =======
+=======
+
+>>>>>>> upstream/master
 kernel_title=Documentació del Nucli
 kernel_header=Fitxer $i de la documentació del nucli
 kernel_epath=Camí de la documentació del nucli invàlid
+
 kde_title=Documentació KDE
 kde_header=Fitxer $1 de documentació KDE
 kde_epath=Camí de la documentació KDE invàlid
+
 perl_title=Mòdul Perl
 perl_header=Documentació del mòdul Perl $1
 perl_emod=Nom de mòdul Perl invàlid

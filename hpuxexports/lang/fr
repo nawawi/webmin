@@ -9,8 +9,12 @@ index_applymsg=Cliquer sur ce bouton pour appliquer la configuration.  Ceci va m
 index_return=liste des partages
 index_eprog=L'exécutable du serveur NFS n'a pas été trouvé sur votre système.  Le composant NFS ne semble pas avoir été installé.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_title=Éditer un Partage
 create_title=Créer un Partage
@@ -41,8 +45,12 @@ edit_anonuid=Les usagers insécure sont traités comme
 edit_default=Défaut
 edit_anongid=Les groupes insécure sont traités comme
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 save_err=Impossible d'enregistrer le partage
 save_edir=Le répertoire $1 n'existe pas

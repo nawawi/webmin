@@ -25,8 +25,12 @@ index_dlang=γλώσσα εμφάνισης των αρθρωμάτων
 index_dtheme=το θέμα που ελέγχει την εμφάνιση του Webmin
 index_dpass=Ο κωδικός σύνδεσης που χρησιμοποιείται
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 change_title=Αλλαγή Ρυθμίσεων
 change_user=Τροποποίηση σύνδεσης σε Webmin  ..
@@ -35,6 +39,9 @@ change_restart=Επανεκκίνηση Webmin ..
 change_redirect=Ανακατεύθυνση στο βασικό μενού ..
 change_ecolon=Ο κωδικός σας δεν μπορεί να περιέχει τον χαρακτήρα :
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 acl_lang=Μπορεί να αλλάξει γλώσσα?
 acl_theme=Μπορεί να αλλάξει θέμα?

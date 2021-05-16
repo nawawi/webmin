@@ -124,7 +124,7 @@ http_downloading=Download
 http_done=Scaricato da $1 a $2.
 uploading=Caricamento in corso, attendere. ..
 acl_allowed_paths=Consentire l'accesso alle directory
-acl_allowed_paths2=(Per utenti non root)
+acl_allowed_paths_explain=Per utenti abilitati root, se la directory consentita è impostata solo su $HOME, sarà equivalente a / (accesso completo al disco)
 acl_allowed_for_edit=Mimetipi consentiti per la modifica dall'editor integrato
 acl_work_as=Accedi ai file come utente Unix
 acl_root=Root (concedi con attenzione agli utenti non fidati!)
@@ -155,8 +155,13 @@ menu_bookmarks=segnalibri
 notallowed=Non puoi accedere a $1. Le directory consentite sono : $2 
 error_upload_emax=Il file caricato è superiore al limite di $1 
 extract_etype=Tipo di file di archivio non supportato
+
 info_total1=Totale: file $1 e directory $2 
 info_total2=Totale: $1 file e $2 directory
 info_total3=Totale: file $1 e $2 directory
 info_total4=Totale: $1 file e $2 directory
+
 ownership=Proprietario
+acls=Elenco di controllo degli accessi
+file_detect_encoding=Rileva automaticamente la codifica dei file
+index_return=elenco dei file

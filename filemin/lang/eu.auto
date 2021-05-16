@@ -124,7 +124,7 @@ http_downloading=Deskargen
 http_done=$1 etik $2 deskargatu dira.
 uploading=Kargatzen, itxaron. ..
 acl_allowed_paths=Baimendu direktorioetara sarbidea
-acl_allowed_paths2=(Ez diren erroko erabiltzaileentzat)
+acl_allowed_paths_explain=Root gaitasuna duen erabiltzailearentzat, baimendutako direktorioa $HOME gisa soilik ezarrita badago, (disko osorako sarbidea) baliokidea izango da.
 acl_allowed_for_edit=Eraiki editatu editore editoreak baimendutako tipografia
 acl_work_as=Sartu fitxategiak Unix erabiltzaile gisa
 acl_root=Erro (laguntza eman konfiantzarik ez duten erabiltzaileei arretaz!)
@@ -155,8 +155,13 @@ menu_bookmarks=Bookmarks
 notallowed=Ezin duzu $1 era sartu. Baimendutako direktorio hauek hauek dira : $2 
 error_upload_emax=Kargatutako fitxategia $1 ren muga baino handiagoa da
 extract_etype=Onartu gabeko artxibo mota
+
 info_total1=Guztira: $1 fitxategia eta $2 direktorio
 info_total2=Guztira: $1 fitxategi eta $2 direktorio
 info_total3=Guztira: $1 fitxategia eta $2 direktorio
 info_total4=Guztira: $1 fitxategi eta $2 direktorio
+
 ownership=Jabea
+acls=Sarbide Kontrol Zerrenda
+file_detect_encoding=Automatikoki detektatu fitxategien kodeketa
+index_return=fitxategi zerrenda

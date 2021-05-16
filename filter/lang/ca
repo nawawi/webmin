@@ -46,8 +46,12 @@ index_charset=Joc de caràcters del missatge d'autoresposta
 index_subject=Assumpte del missatge d'autoresposta
 index_nowebmin=Aquest mòdul és per utilitzar només a Usermin. Si està visible a Webmin, el tema que estàs utilitzant és incomplet.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_title1=Creació de Filtre
 edit_title2=Edició de Filtre
@@ -75,6 +79,7 @@ edit_amode7=Desa'l a una nova carpeta anomenada
 edit_nobounce=Suprimeix el reenviament de missatges rebotats
 edit_apply=Mostra el Correu Coincident de la Carpeta:
 edit_move=Aplica-ho al Correu de la Carpeta:
+
 save_err=No s'ha pogut desar el filtre
 save_egone=El filtre ja no existeix!
 save_econdheader=Hi falta la capçalera de correu o bé és invàlida
@@ -94,13 +99,19 @@ save_estart=Data d'inici d'autorespostes invàlida
 save_eend=Data de fi d'autorespostes invàlida
 save_echarset=Hi falta el joc de caràcters del missatge d'autoresposta o bé és invàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 delete_err=No s'han pogut suprimir els filtres
 delete_enone=No n'has seleccionat cap
 
+<<<<<<< HEAD
 =======
 delete_err=No s'han pogut suprimir els filtres
 delete_enone=No n'has seleccionat cap
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 aliases_type1=Adreça $1
 aliases_type2=Adreces del fitxer $1
@@ -113,8 +124,12 @@ aliases_delete=Suprimeix el correu
 aliases_other=Bústia de l'usuari $1
 aliases_auto=Autoresponedor amb el missatge $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 auto_title=Resposta Automàtica de Correu
 auto_header=Opcions de resposta automàtica de correu
@@ -127,8 +142,12 @@ auto_charsetother=Un altre joc de caràcters
 auto_period=Interval mínim entre respostes
 auto_err=No s'ha pogut desar la resposta automàtica
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 forward_title=Reenviament de Correu
 forward_header=Opcions de reenviament de correu
@@ -136,6 +155,7 @@ forward_enabled=Reenviament de correu activat
 forward_to=Reenvia a les adreces
 forward_cont=Lliura'l també normalment
 forward_err=No s'ha pogut desar el reenviament de correu
+
 move_err=No s'ha pogut aplicar el filtre
 move_esrc=La carpeta origen $1 no existeix!
 move_edest=La carpeta de destí $1 no existeix!

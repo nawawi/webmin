@@ -29,21 +29,31 @@ index_updesc=Selecciona una connexió de la llista del costat del botó i fes-hi
 index_nopol=No s'ha trobat cap política de xarxa -pot ser que la <a href='$1'>configuració de la xarxa</a> sigui incorrecta.
 index_import=Importa la connexió del fitxer.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 stop_err=No s'ha pogut aturar el servidor IPsec
 start_err=No s'ha pogut iniciar el servidor IPsec
 restart_err=No s'ha pogut reiniciar el servidor IPsec
 start_elog=S'han enregistrat els error següents: $1
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 newkey_err=No s'ha pogut generar la clau
 newkey_ehost=Hi falta el nom de host o bé és invàlid
 
+<<<<<<< HEAD
 =======
 newkey_err=No s'ha pogut generar la clau
 newkey_ehost=Hi falta el nom de host o bé és invàlid
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 edit_title1=Creació de Connexió
 edit_title2=Edició de Connexió
@@ -116,8 +126,12 @@ edit_unit_m=mins
 edit_unit_h=hores
 edit_unit_d=dies
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 config_title=Configuració del Servidor
 config_header=Valors globals del servidor VPN
@@ -137,8 +151,12 @@ config_err=No s'ha pogut desar la configuració del servidor
 config_eri=La interfície real '$1' està llistada més d'un cop
 config_enone=No s'ha especificat cap interfície de xarxa
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 showkey_title=Mostra la Clau Pública
 showkey_desc1=Caldria copiar la clau pública RSA mostrada a sota a la configuració dels altres sistemes que es connecten amb aquest, a la secció relacionada amb aquest host.
@@ -147,6 +165,7 @@ showkey_flags=Banderes
 showkey_proto=Protocol
 showkey_alg=Algorisme
 showkey_key=Dades de la clau
+
 policy_desc_block=Xarxes Bloquejades
 policy_desc_clear=Neteja les Xarxes de Trànsit
 <<<<<<< HEAD
@@ -171,8 +190,12 @@ policy_err=No s'han pogut desar les xarxes
 policy_enet=Adreça IP de xarxa invàlida a la línia $1
 policy_emask=Llargada de prefix invàlida a la fila $2
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 save_err=No s'ha pogut desar la connexió
 save_ename=Hi falta el nom de la connexió o bé és invàlid
@@ -194,8 +217,12 @@ save_erightcert=Hi falta el certificat del servidor remot o bé és invàlid
 save_ekeylife=Hi falta el temps de vida de la clau de connexió o bé és invàlid
 save_eikelifetime=Hi falta el temps de vida del canal de la clau o bé és invàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_create_conn=S'ha creat la connexió $1
 log_delete_conn=S'ha suprimit la connexió $1
@@ -216,6 +243,7 @@ log_create_secret_nn=S'ha creat la clau secreta de qualsevol host
 log_modify_secret_nn=S'ha modificat la clau secreta de qualsevol host
 log_delete_secret_nn=S'ha suprimit la clau secreta de qualsevol host
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 up_title=Inici de Connexió
 up_cmd=S'està iniciant la connexió amb l'ordre $1...
@@ -223,6 +251,12 @@ up_cmd=S'està iniciant la connexió amb l'ordre $1...
 =======
 up_title=Inici de Connexió
 up_cmd=S'està iniciant la connexió amb l'ordre $1...
+>>>>>>> upstream/master
+=======
+
+up_title=Inici de Connexió
+up_cmd=S'està iniciant la connexió amb l'ordre $1...
+
 >>>>>>> upstream/master
 export_title=Exportació de la Configuració
 export_desc=Pots utilitzar aquest formulari per exportar la secció de fitxers de configuració de la connexió $1, de manera que es pugui importar fàcilment al servidor de l'altre cap.
@@ -234,8 +268,12 @@ export_efile=Hi falta el nom del fitxer
 export_esave=No s'ha pogut escriure al fitxer: $1
 export_done=S'ha exportat la configuració de la connexió $1 a $2 ($3 bytes).
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 import_title=Importació de la Configuració
 import_desc=Pots utilitzar aquest formulari per exportar la secció de fitxers de configuració d'una secció, com ara una creada amb la característica d'exportació d'aquest mòdul en un altre sistema.
@@ -243,8 +281,12 @@ import_upload=Importa del fitxer pujat...
 import_file=Importa del fitxer del servidor...
 import_ok=Importa-ho ara
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 import_err=No s'ha pogut importar la configuració
 import_eupload=No has seleccionat cap fitxer per pujar
@@ -256,8 +298,12 @@ import_done1=S'ha afegit amb èxit la nova connexió IPsec $1.
 import_done2=S'ha actualitzat amb èxit la connexió IPsec $1.
 import_over=Reescric la connexió existent amb amb el mateix nom?
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 secrets_title=Claus Secretes
 secrets_none=No s'ha trobat cap clau secreta!
@@ -273,8 +319,12 @@ secrets_newpsk=Crea la nova clau secreta compartida.
 secrets_newrsa=Crea la nova clau RSA.
 secrets_return=a la llista de claus secretes
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 secret_title1=Creació de Clau Secreta
 secret_title2=Edició de Clau Secreta

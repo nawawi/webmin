@@ -181,8 +181,12 @@ whats_this_SCOPE=El nom de l'abast de la instància del servei. Vegeu: smf(5). V
 whats_this_STIME=L'hora (si és avui) o la data que el servei ha entrat a l'estat actual. vegeu: smf(5). Vegeu: svcs(1).
 whats_this_Select=Marca aquí la llista de serveis que vols activar/desactivar/refrescar, etc.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 whats_this_service_detail=Especifica/edita aquí la informació de primer nivell del servei: nom del servei, número de versió, nom de paquet del manifest i estabilitat. Vegeu: smf(5). Vegeu: svccfg(1M). Vegeu: service_bundle(4).
 whats_this_bundle_name=Nom del paquet de servei en el manifest. Es poden empaquetar múltiples serveis en un manifest, però el nom aquí no és important. Per a serveis que ja existeixen, es configurarà per exportar-ho, ja que això és el que svccfg fa quan exporta un manifest a partir del repositori SMF. Vegeu: svccfg(1M). Vegeu: service_bundle(4).

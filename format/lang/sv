@@ -16,10 +16,15 @@ index_free=Ledigt
 index_format=Den här disken är inte formaterad
 index_return=disklista
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> upstream/master
+=======
+
+>>>>>>> upstream/master
 edit_ecannot=Du får inte ändra något för den här disken
+
 edit_title=Ändra partition
 edit_header=Uppgifter om partition
 edit_location=Plats
@@ -61,8 +66,12 @@ edit_tunedesc3=Det går inte att trimma filsystemet på denna partition eftersom
 edit_tunedesc4=Det går inte att trimma filsystemet på denna partition eftersom den inte har något.
 edit_tunedesc5=Det går inte att trimma filsystemet på denna partition eftersom endast <tt>UFS</tt>-filsystem kan trimmas.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 save_ecannot=Du får inte ändra något för denna disk
 save_edelete=Det gick inte att ta bort partitionen
@@ -73,8 +82,12 @@ save_estartmin=Startcylindern måste vara > 0
 save_eendmax=Slutcylindern måste vara < $1
 save_estartend=Startcylindern måste ha ett lägre värde än slutcylindern
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 newfs_title=Skapa filsystem
 newfs_ecannot=Du får inte formatera denna disk
@@ -101,6 +114,7 @@ newfs_err=Det gick inte att skapa filsystem
 newfs_exec=Utför kommando $1 ...
 newfs_failed=... det gick inte!
 newfs_ok=... klart.
+
 fsck_title=Reparera filsystem
 fsck_ecannot=Du får inte reparera denna disk
 fsck_desc=Om du trycker på knappen <b>Reparera</b> kommer $1 på $2 att kontrolleras och repareras. Ange nivå för kontroll och reparation nedan.
@@ -119,8 +133,12 @@ fsck_39=hittade fel som inte går att rätta till!
 fsck_40=inga fel hittades
 fsck_unknown=okänt fel
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 tunefs_title=Trimma filsystem
 tunefs_ecannot=Du får inte trimma denna disk
@@ -139,8 +157,12 @@ tunefs_exec=Utför kommando $1 ...
 tunefs_failed=... det gick inte!
 tunefs_ok=... klart.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 select_device=SCSI-kontroller $1 mål $2 disk $3
 select_idedevice=IDE-disk $1
@@ -151,11 +173,16 @@ esun=Partitioner kan endast modifieras på Sun-hårdvara
 emounted=Disken har monterade partitioner
 elast=Den sista partitionen får inte tas bort
 eformat=<tt>format</tt> hittade inga diskar!
+
 fstype_ufs=Solaris Unix-filsystem
 fstype_unknown=Okänt filsystem
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 acl_disks=Diskar som denna användare får partitionera och formatera
 acl_dall=Alla diskar

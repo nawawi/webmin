@@ -95,6 +95,7 @@ foreach (@lines) {
 			push(@{$section->{'members'}}, $dir);
 			$section->{'eline'} = $lnum;
 			}
+		$dir->{'value'} =~ s/\s+$//;
 
 		# Fix up references to other variables
 		my @w = split(/\s+/, $dir->{'value'});
@@ -251,7 +252,10 @@ elsif (!$dir && defined($value)) {
 		&renumber($conf, $cmt->{'line'}+1, $cmt->{'file'}, 1);
 		push(@$conf, { 'name' => $name,
 			       'value' => $value,
+			       'enabled' => 1,
+			       'file' => $cmt->{'file'},
 			       'line' => $cmt->{'line'}+1,
+			       'eline' => $cmt->{'line'}+1,
 			       'sectionname' => $sname,
 			       'sectionvalue' => $svalue });
 		}
@@ -267,7 +271,10 @@ elsif (!$dir && defined($value)) {
 		&renumber($conf, $line, $insect[$#insect]->{'file'}, 1);
 		push(@$conf, { 'name' => $name,
 			       'value' => $value,
+			       'enabled' => 1,
+			       'file' => $insect[$#insect]->{'file'},
 			       'line' => $line,
+			       'eline' => $line,
 			       'sectionname' => $sname,
 			       'sectionvalue' => $svalue });
 		}
@@ -277,7 +284,10 @@ elsif (!$dir && defined($value)) {
 		push(@$lref, $newline);
 		push(@$conf, { 'name' => $name,
 			       'value' => $value,
+			       'enabled' => 1,
+			       'file' => &get_config_file(),
 			       'line' => scalar(@$lref)-1,
+			       'eline' => scalar(@$lref)-1,
 			       'sectionname' => $sname,
 			       'sectionvalue' => $svalue });
 		}
@@ -306,6 +316,47 @@ my $i = 1;
 foreach my $m (@{$section->{'members'}}) {
 	$m->{'line'} = $m->{'eline'} = $section->{'line'} + $i++;
 	$m->{'space'} = "  ";
+	$m->{'file'} = $section->{'file'};
+	$m->{'sectionname'} = $section->{'name'};
+	$m->{'sectionvalue'} = $section->{'value'};
+	}
+}
+
+# create_section(&conf, &section, [&parent])
+# Adds a section to the config file
+sub create_section
+{
+local ($conf, $section, $parent) = @_;
+local $indent = "  " x $section->{'indent'};
+local @newlines;
+push(@newlines, $indent.$section->{'name'}." ".$section->{'value'}." {");
+foreach my $m (@{$section->{'members'}}) {
+	push(@newlines, $indent."  ".$m->{'name'}." = ".$m->{'value'});
+	}
+push(@newlines, $indent."}");
+my $file;
+my $lref;
+if ($parent) {
+	# Add to another config block
+	$file = $parent->{'file'};
+	$lref = &read_file_lines($file);
+	$section->{'line'} = $parent->{'eline'};
+	}
+else {
+	# Add to the end of the global config file
+	$file = &get_config_file();
+	$lref = &read_file_lines($file);
+	$section->{'line'} = scalar(@$lref);
+	}
+splice(@$lref, $section->{'line'}, 0, @newlines);
+&renumber($conf, $section->{'eline'}, $section->{'file'},
+	  scalar(@newlines)-$oldlen);
+$section->{'eline'} = $section->{'line'} + scalar(@newlines) - 1;
+my $i = 1;
+foreach my $m (@{$section->{'members'}}) {
+	$m->{'line'} = $m->{'eline'} = $section->{'line'} + $i++;
+	$m->{'space'} = "  ";
+	$m->{'indent'} = $section->{'indent'} + 1;
 	$m->{'file'} = $section->{'file'};
 	$m->{'sectionname'} = $section->{'name'};
 	$m->{'sectionvalue'} = $section->{'value'};

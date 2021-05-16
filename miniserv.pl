@@ -782,6 +782,15 @@ while(1) {
 		@childpids = grep { $_ != $pid } @childpids;
 		} while($pid != 0 && $pid != -1);
 	@childpids = grep { kill(0, $_) } @childpids;
+	my %childpids = map { $_, 1 } @childpids;
+
+	# Clean up connection counts from IPs that are no longer in use
+	foreach my $ip (keys %ipconnmap) {
+		$ipconnmap{$ip} = [ grep { $childpids{$_} } @{$ipconnmap{$ip}}];
+		}
+	foreach my $net (keys %netconnmap) {
+		$netconnmap{$net} = [ grep { $childpids{$_} } @{$netconnmap{$net}}];
+		}
 
 	# run the unblocking procedure to check if enough time has passed to
 	# unblock hosts that never been blocked because of password failures
@@ -876,17 +885,38 @@ while(1) {
 			if (!$acptaddr) { next; }
 			binmode(SOCK);
 
+			# Work out IP and port of client
+			local ($peerb, $peera, $peerp) =
+				&get_address_ip($acptaddr, $ipv6fhs{$s});
+			print DEBUG "peera=$peera peerp=$peerp\n";
+
+			# Check the number of connections from this IP
+			$ipconnmap{$peera} ||= [ ];
+			$ipconns = $ipconnmap{$peera};
+			if ($config{'maxconns_per_ip'} >= 0 &&
+			    @$ipconns > $config{'maxconns_per_ip'}) {
+				print STDERR "Too many connections (",scalar(@$ipconns),") from IP $peera\n";
+				close(SOCK);
+				next;
+				}
+
+			# Also check the number of connections from the network
+			($peernet = $peera) =~ s/\.\d+$/\.0/;
+			$netconnmap{$peernet} ||= [ ];
+			$netconns = $netconnmap{$peernet};
+			if ($config{'maxconns_per_net'} >= 0 &&
+			    @$netconns > $config{'maxconns_per_net'}) {
+				print STDERR "Too many connections (",scalar(@$netconns),") from network $peernet\n";
+				close(SOCK);
+				next;
+				}
+
 			# create pipes
 			local ($PASSINr, $PASSINw, $PASSOUTr, $PASSOUTw);
 			if ($need_pipes) {
 				($PASSINr, $PASSINw, $PASSOUTr, $PASSOUTw) =
 					&allocate_pipes();
 				}
-
-			# Work out IP and port of client
-			local ($peerb, $peera, $peerp) =
-				&get_address_ip($acptaddr, $ipv6fhs{$s});
-			print DEBUG "peera=$peera peerp=$peerp\n";
 
 			# Work out the local IP
 			(undef, $locala) = &get_socket_ip(SOCK, $ipv6fhs{$s});
@@ -979,6 +1009,8 @@ while(1) {
 				exit;
 				}
 			push(@childpids, $handpid);
+			push(@$ipconns, $handpid);
+			push(@$netconns, $handpid);
 			if ($need_pipes) {
 				close($PASSINw); close($PASSOUTr);
 				push(@passin, $PASSINr);
@@ -1588,7 +1620,15 @@ if ($method eq 'POST' &&
 	$clen = $header{"content-length"};
 	$clen_read = $clen > $config{'max_post'} ? $config{'max_post'} : $clen;
 	while(length($posted_data) < $clen_read) {
-		$buf = &read_data($clen_read - length($posted_data));
+		alarm(60);
+		$SIG{'ALRM'} = sub { die "timeout" };
+		eval {
+			$buf = &read_data($clen_read - length($posted_data));
+			};
+		alarm(0);
+		if ($@) {
+			&http_error(500, "Timeout reading POST request");
+			}
 		if (!length($buf)) {
 			&http_error(500, "Failed to read POST request");
 			}
@@ -2088,10 +2128,10 @@ if ($config{'userfile'}) {
 				&write_data("\r\n");
 				&reset_byte_count();
 				&write_data("<html>\n");
-				&write_data("<head><title>Unauthorized</title></head>\n");
-				&write_data("<body><h2 style='color: #de0000; margin-bottom: -8px;'>Unauthorized</h2>\n");
-				&write_data("A password is required to access this\n");
-				&write_data("web server. Please try again. <p>\n");
+				&write_data("<head>".&embed_error_styles($roots[0])."<title>401 &mdash; Unauthorized</title></head>\n");
+				&write_data("<body><h2 class=\"err-head\">401 &mdash; Unauthorized</h2>\n");
+				&write_data("<p class=\"err-content\">A password is required to access this\n");
+				&write_data("web server. Please try again.</p> <p>\n");
 				&write_data("</body></html>\n");
 				&log_request($loghost, undef, $reqline, 401, &byte_count());
 				return 0;
@@ -2169,9 +2209,11 @@ local $preroots = $mobile_device && defined($config{'mobile_preroot'}) ?
 local @preroots = reverse(split(/\s+/, $preroots));
 
 # Canonicalize the directories
+local @themes;
 foreach my $preroot (@preroots) {
 	# Always under the current webmin root
 	$preroot =~ s/^.*\///g;
+	push(@themes, $preroot);
 	$preroot = $roots[0].'/'.$preroot;
 	}
 
@@ -2347,10 +2389,11 @@ if (-d _) {
 	&write_keep_alive(0);
 	&write_data("\r\n");
 	&reset_byte_count();
-	&write_data("<h2 style='color: #de0000; margin-bottom: -8px;'>Index of $simple</h2>\n");
-	&write_data("<pre>\n");
+	&write_data("".&embed_error_styles($roots[0])."<h2 class=\"err-head\">Index of $simple</h2>\n");
+	&write_data("<pre class=\"err-content\">\n");
 	&write_data(sprintf "%-35.35s %-20.20s %-10.10s\n",
 			"Name", "Last Modified", "Size");
+	&write_data("</pre>\n");
 	&write_data("<hr>\n");
 	opendir(DIR, $full);
 	while($df = readdir(DIR)) {
@@ -2417,9 +2460,8 @@ if (&get_type($full) eq "internal/cgi" && $validated != 4) {
 	$ENV{"SSL_USER"} = $peername if ($validated == 2);
 	$ENV{"ANONYMOUS_USER"} = "1" if ($validated == 3 || $validated == 4);
 	$ENV{"DOCUMENT_ROOT"} = $roots[0];
-	$ENV{"THEME_ROOT"} = "$roots[0]/" .
-	                     ($config{"preroot_$authuser"} ||
-	                      $config{"preroot"});
+	$ENV{"THEME_ROOT"} = $preroots[0];
+	$ENV{"THEME_DIRS"} = join(" ", @themes) || "";
 	$ENV{"DOCUMENT_REALROOT"} = $realroot;
 	$ENV{"GATEWAY_INTERFACE"} = "CGI/1.1";
 	$ENV{"SERVER_PROTOCOL"} = "HTTP/1.0";
@@ -2595,8 +2637,9 @@ if (&get_type($full) eq "internal/cgi" && $validated != 4) {
 		if ($on_windows) {
 			# Run the CGI program, and feed it input
 			chdir($ENV{"PWD"});
-			local $qqueryargs = join(" ", map { "\"$_\"" }
-						 split(/\s+/, $queryargs));
+			local $qqueryargs = join(" ",
+				map { s/([<>|&"^])/^$1/g; "\"$_\"" }
+				    split(/\s+/, $queryargs));
 			if ($first =~ /(perl|perl.exe)$/i) {
 				# On Windows, run with Perl
 				open(CGIOUTr, "$perl_path \"$full\" $qqueryargs <$infile |");
@@ -2766,16 +2809,36 @@ else {
 	&write_keep_alive(0);
 	&write_data("\r\n");
 	&reset_byte_count();
-	&write_data("<h2 style='color: #de0000; margin-bottom: -8px;'>Error - $msg</h2>\n");
+	&write_data("<html>\n");
+	&write_data("<head>".&embed_error_styles($roots[0])."<title>$code &mdash; $msg</title></head>\n");
+	&write_data("<body class=\"err-body\"><h2 class=\"err-head\">Error &mdash; $msg</h2>\n");
 	if ($body) {
-		&write_data("<p>$body</p>\n");
+		&write_data("<p class=\"err-content\">$body</p>\n");
 		}
+	&write_data("</body></html>\n");
 	}
 &log_request($loghost, $authuser, $reqline, $code, &byte_count())
 	if ($reqline);
 &log_error($msg, $body ? " : $body" : "") if (!$noerr);
 shutdown(SOCK, 1);
 exit if (!$noexit);
+}
+
+# embed_error_styles()
+# Returns HTML styles for nicer errors. For internal use only.
+sub embed_error_styles
+{
+my ($root) = @_;
+if ($root) {
+	my $err_style = &read_any_file("$root/unauthenticated/errors.css");
+	if ($err_style) {
+		$err_style =~ s/[\n\r]//g;
+		$err_style =~ s/\s+/ /g;
+		$err_style = "<style data-err type=\"text/css\">$err_style</style>";
+		return "\n$err_style\n";
+		}
+	}
+return undef;
 }
 
 sub get_type
@@ -3091,7 +3154,7 @@ local($idx, $more, $rv);
 while(($idx = index($main::read_buffer, "\n")) < 0) {
 	if (length($main::read_buffer) > 100000 && !$nolimit) {
 		&http_error(414, "Request too long",
-		    "Received excessive line <pre>".&html_strip($main::read_buffer)."</pre>");
+		    "Received excessive line <pre class=\"err-content\">".&html_strip($main::read_buffer)."</pre>");
 		}
 
 	# need to read more..
@@ -4119,10 +4182,10 @@ $authuser = $vu if ($ok);
 # check if the test cookie is set
 if ($header{'cookie'} !~ /testing=1/ && $vu &&
     !$config{'no_testing_cookie'} && !$notest) {
-	&http_error(500, "No cookies",
-	   "Your browser does not support cookies, ".
-	   "which are required for this web server to ".
-	   "work in session authentication mode");
+	&http_error(500, "Cache issue or no cookies support",
+	   "Please clear your browser's cache for the given ".
+	   "domain and/or try incognito tab; double check ".
+	   "to have cookies support enabled.");
 	}
 
 # check with main process for delay
@@ -4635,6 +4698,19 @@ close(CONF);
 return %rv;
 }
 
+# read_any_file(file)
+# Reads any given file and returns its content
+sub read_any_file
+{
+my ($realfile) = @_;
+my $rv;
+open(my $fh, "<".$realfile) || return $rv;
+local $/;
+$rv = <$fh>;
+close($fh);
+return $rv;
+}
+
 # update_vital_config()
 # Updates %config with defaults, and dies if something vital is missing
 sub update_vital_config
@@ -4654,6 +4730,8 @@ my %vital = ("port", 80,
 	  "password_form", "/password_form.cgi",
 	  "password_change", "/password_change.cgi",
 	  "maxconns", 50,
+	  "maxconns_per_ip", 25,
+	  "maxconns_per_net", 35,
 	  "pam", "webmin",
 	  "sidname", "sid",
 	  "unauth", "^/unauthenticated/ ^/robots.txt\$ ^[A-Za-z0-9\\-/_]+\\.jar\$ ^[A-Za-z0-9\\-/_]+\\.class\$ ^[A-Za-z0-9\\-/_]+\\.gif\$ ^[A-Za-z0-9\\-/_]+\\.png\$ ^[A-Za-z0-9\\-/_]+\\.conf\$ ^[A-Za-z0-9\\-/_]+\\.ico\$ ^/robots.txt\$",
@@ -6304,9 +6382,8 @@ if (!$pid) {
 	$ENV{"SERVER_PORT"} = $config{'port'};
 	$ENV{"WEBMIN_CRON"} = 1;
 	$ENV{"DOCUMENT_ROOT"} = $root0;
-	$ENV{"THEME_ROOT"} = "$root0/" .
-	                     ($config{"preroot_$ENV{'REMOTE_USER'}"} ||
-	                      $config{"preroot"});
+	$ENV{"THEME_ROOT"} = $root0."/".$config{"preroot"};
+	$ENV{"THEME_DIRS"} = $config{"preroot"} || "";
 	$ENV{"DOCUMENT_REALROOT"} = $root0;
 	$ENV{"MINISERV_CONFIG"} = $config_file;
 	$ENV{"HTTPS"} = "ON" if ($use_ssl);
@@ -6418,8 +6495,10 @@ while(1) {
 return $line;
 }
 
+# getenv(env_key)
+# Returns env var disregard of case
 sub getenv
 {
-    my ($key) = @_;
-    return $ENV{ uc($key) } || $ENV{ lc($key) };
+my ($key) = @_;
+return $ENV{ uc($key) } || $ENV{ lc($key) };
 }

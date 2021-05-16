@@ -6,14 +6,20 @@ index_boot=Pokrenuti kod bootanja?
 index_return=index modula
 index_version=Verzija $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 log_apply=Dodana Konfiguracija
 log_bootdown=OnemoguÄen Dovecot kod bootanja
 log_bootup=OmoguÄen Dovecot kod bootanja
 log_login=Promijenjene KorisniÄke i Opcije Logiranja
 log_mail=Promijenjeni Mail Dokumenti
 =======
+=======
+
+>>>>>>> upstream/master
 apply_err=Neuspjelo dodavanje konfiguracije
+
 imap_title=IMAP Opcije
+
 login_none=Ništa
 >>>>>>> upstream/master
 login_anonymous=Anonimni
@@ -22,10 +28,14 @@ login_cram-md5=Cram-MD5
 login_apop=APOP
 login_checkpassword=Vanjski program $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 login_cram-md5=Cram-MD5
 login_digest-md5=Digest-MD5
 login_none=Nita
 =======
+=======
+
+>>>>>>> upstream/master
 log_login=Promijenjene Korisničke i Opcije Logiranja
 log_mail=Promijenjeni Mail Dokumenti
 log_apply=Dodana Konfiguracija

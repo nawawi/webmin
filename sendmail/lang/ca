@@ -11,6 +11,7 @@ index_version2=Sendmail versió $1, configuració $2
 index_xversion=Sendmail versió $1
 index_version=Configuració Sendmail $1
 index_sendmail=Sendmail
+
 opts_title=Opcions de Sendmail
 opts_ecannot=No tens permís per editar les opcions del sendmail
 opts_ds=Envia el correu sortint a través del host
@@ -57,8 +58,12 @@ opts_priority=Prioritat
 opts_host=Nom de host
 opts_time=Data de recepció
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 aliases_title=Àlies de Correu
 aliases_ecannot=No tens permís per editar àlies
@@ -77,8 +82,12 @@ aliases_toomany=Hi ha massa àlies de correu al sistema com per mostrar-los en a
 aliases_go=Busca àlies que coincideixin amb:
 aliases_delete=Suprimeix els Àlies Seleccionats
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 aform_ecannot=No tens permès d'editar aquest àlies
 aform_type0=Cap
@@ -98,14 +107,19 @@ aform_afile=Edita...
 aform_return=a l'àlies
 aform_cmt=Descripció
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 afile_title=Edició del Fitxer d'Adreces
 afile_desc=Utilitza l'àrea de text de sota per editar les adreces del fitxer $1.
 afile_efile=No tens permís per editar $1.
 afile_undo=Desfés els canvis
 afile_ewrite=No s'ha pogut escriure al fitxer d'adreces: $1
+
 ffile_title=Edita el Fitxer de Filtre
 ffile_desc=Utilitza el formulari de sota per establir les regles de filtratge del fitxer $1.
 ffile_efile=No tens permís per editar $1.
@@ -122,11 +136,15 @@ ffile_err=No s'ha pogut desar el fitxer de filtre
 ffile_ematch=Hi falta el patró
 ffile_eaction=Hi falta l'adreça de reenviament
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 rfile_title=Edició del Fitxer d'Autoresposta
 rfile_desc2=També pots afegir capçaleres de correu o reemplaçar les capçaleres per defecte utilitzades en l'autoresposta posant-hi línies com ara:<br><tt>From: foo@bar.com</tt><br><tt>Subject: De vacances</tt><br>a dalt de tot del missatge, separat del cos per una sola línia en blanc.
 rfile_desc=Utilitza l'àrea de text de sota per editar el missatge d'autoresposta de $1. El missatge pot contenir les macros $SUBJECT, $FROM, $TO, $DATE i $BODY, que s'expandiran quan s'activi l'autoresposta.
 =======
+=======
+
+>>>>>>> upstream/master
 rfile_title=Edició del Fitxer d'Autoresposta
 rfile_desc=Utilitza l'àrea de text de sota per editar el missatge d'autoresposta de $1. El missatge pot contenir les macros $SUBJECT, $FROM, $TO, $DATE i $BODY, que s'expandiran quan s'activi l'autoresposta.
 rfile_desc2=També pots afegir capçaleres de correu o reemplaçar les capçaleres per defecte utilitzades en l'autoresposta posant-hi línies com ara:<br><tt>From: foo@bar.com</tt><br><tt>Subject: De vacances</tt><br>a dalt de tot del missatge, separat del cos per una sola línia en blanc.
@@ -148,8 +166,12 @@ rfile_auto=Automàtica (basada en l'adreça del destinatari)
 rfile_efrom=Hi falta l'adreça From:
 rfile_fromdesc=Cal especificar una adreça From: sempre que sigui possible, ja que el mètode automàtic pot no ser fiable.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 asave_err=No s'ha pogut desar l'àlies
 asave_ecannot2=No tens permís per editar l'àlies
@@ -168,6 +190,7 @@ asave_etype4none=No has donat cap programa
 asave_etype6=El fitxer de filtre '$1' no és vàlid
 asave_esame=Només tens permès de crear un àlies amb el mateix nom que el teu nom d'usuari Webmin
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 adelete_err=No s'han pogut suprimir els àlies
 adelete_enone=No n'hi ha cap de seleccionat
@@ -178,6 +201,13 @@ adelete_err=No s'han pogut suprimir els àlies
 adelete_enone=No n'hi ha cap de seleccionat
 adelete_ecannot=No tens permís per suprimir l'àlies $1
 >>>>>>> upstream/master
+=======
+
+adelete_err=No s'han pogut suprimir els àlies
+adelete_enone=No n'hi ha cap de seleccionat
+adelete_ecannot=No tens permís per suprimir l'àlies $1
+
+>>>>>>> upstream/master
 cws_title=Dominis Locals
 cws_ecannot=No tens permís per editar els dominis locals
 cws_domains=Dominis gestionats per aquest servidor
@@ -187,8 +217,12 @@ cws_err=No s'han pogut desar els dominis locals
 cws_ehost='$1' no és un nom de host o de domini vàlid
 cws_eip='$1' és una adreça IP no un domini
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 masq_title=Emmascarament de Dominis
 masq_ecannot=No tens permís per configurar l'emmascarament
@@ -202,8 +236,12 @@ masq_edomain='$1' no és un nom de domini vàlid per a un emmascarament
 masq_ehost='$1' no és un nom vàlid de host ni de domini
 masq_eip='$1' és una adreça IP, no un domini
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 trusts_title=Usuaris Fiables
 trusts_ecannot=No tens permís per editar els usuaris fiables
@@ -212,8 +250,12 @@ trusts_desc=Si un usuari local prova d'enviar correu, el sendmail només li perm
 trusts_err=No s'han pogut desar els usuaris fiables
 trusts_euser='$1' no és un usuari vàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 virtusers_title=Mapejats d'Adreces
 virtusers_ecannot=No tens permís per editar el mapejat d'adreces
@@ -233,8 +275,12 @@ virtusers_toomany=Hi ha massa mapejats d'adreces al sistema com per mostrar-los 
 virtusers_go=Busca mapejats d'adreces que coincideixin amb:
 virtusers_delete=Suprimeix els Mapejats d'Adreces Seleccionats
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 vform_edit=Edició de Mapejat d'Adreces
 vform_create=Creació de Mapejat d'Adreces
@@ -254,9 +300,12 @@ vform_err_proto=Error de protocol
 vform_end=Desplaça al final
 vform_ecannot=No tens permís per editar aquest mapejat d'adreces
 
+<<<<<<< HEAD
 =======
 vform_end=Desplaça al final
 vform_ecannot=No tens permís per editar aquest mapejat d'adreces
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 vsave_ecannot=No tens permís per editar mapeigs d'adreces
 vsave_ecannot2=No tens permís per editar aquest mapejat d'adreces
@@ -274,6 +323,7 @@ vsave_ecannot4=No tens permís per crear mapeigs de dominis
 vsave_edomdom=A un domini només s'hi pot mapejar un altre domini
 vsave_ecannot5=No tens permís per crear mapeigs que retornin error
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 vdelete_err=No s'han pogut suprimir els mapejats d'adreces
 vdelete_ecannot=No tens permís per suprimir el mapejat de $1
@@ -281,6 +331,12 @@ vdelete_ecannot=No tens permís per suprimir el mapejat de $1
 =======
 vdelete_err=No s'han pogut suprimir els mapejats d'adreces
 vdelete_ecannot=No tens permís per suprimir el mapejat de $1
+>>>>>>> upstream/master
+=======
+
+vdelete_err=No s'han pogut suprimir els mapejats d'adreces
+vdelete_ecannot=No tens permís per suprimir el mapejat de $1
+
 >>>>>>> upstream/master
 mailers_title=Encaminament de Dominis
 mailers_cannot=No tens permís per editar l'encaminament de dominis
@@ -296,8 +352,12 @@ mailers_to=Envia'l a...
 mailers_return=a la llista de rutes de dominis
 mailers_delete=Suprimeix les Rutes de Domini
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 mform_edit=Edició d'Encaminament
 mform_create=Creació d'Encaminament
@@ -323,13 +383,18 @@ mform_mail11=DECnet mail11
 mform_error=Error
 mform_ecannot=No tens permís per editar l'encaminament de domini
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 msave_ecannot=No tens permís per editar l'encaminament de domini
 msave_err=No s'ha pogut desar l'encaminament de domini
 msave_edomain='$1' no és un nom vàlid de host ni de domini
 msave_edup=L'encaminament de domini de '$1' ja està definit
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 mdelete_err=No s'han pogut suprimit les rutes de domini
@@ -338,6 +403,12 @@ mdelete_ecannot=No tens permís per suprimir la ruta de $1
 =======
 mdelete_err=No s'han pogut suprimit les rutes de domini
 mdelete_ecannot=No tens permís per suprimir la ruta de $1
+>>>>>>> upstream/master
+=======
+
+mdelete_err=No s'han pogut suprimit les rutes de domini
+mdelete_ecannot=No tens permís per suprimir la ruta de $1
+
 >>>>>>> upstream/master
 generics_title=Adreces de Sortida
 generics_cannot=No tens permís per editar adreces de sortida
@@ -353,8 +424,12 @@ generics_toomany=Hi ha massa adreces sortints al sistema com per poder-les mostr
 generics_go=Busca adreces de sortida que coincideixin amb:
 generics_delete=Suprimeix les Adreces de Sortida Seleccionades
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 gform_edit=Edició de Mapejat
 gform_create=Creació Mapejat
@@ -362,8 +437,12 @@ gform_from=Correu de
 gform_to=Canvia a
 gform_ecannot=No tens permís per editar aquesta adreça de sortida
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 gsave_ecannot=No tens permís per editar adreces de sortida
 gsave_ecannot2=No tens permís per editar aquesta adreça de sortida
@@ -374,13 +453,19 @@ gsave_ematch=L'adreça de procedència no coincideix amb '$1'
 gsave_eto='$1' no és una nova adreça vàlida
 gsave_ealready=Ja existeix un mapejat d'adreça de sortida per '$1'
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 gdelete_err=No s'han pogut suprimir els mapejats d'adreces de sortida
 gdelete_ecannot=No tens permís per suprimir el mapejat de $1
 
+<<<<<<< HEAD
 =======
 gdelete_err=No s'han pogut suprimir els mapejats d'adreces de sortida
 gdelete_ecannot=No tens permís per suprimir el mapejat de $1
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 cgs_title=Dominis de Sortida
 cgs_ecannot=No tens permís per editar dominis de sortida
@@ -390,8 +475,12 @@ cgs_err=No s'han pogut desar els dominis de sortida
 cgs_ehost='$1' no és un nom vàlid de host ni de domini
 cgs_eip='$1' és una adreça IP, no un domini
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 domains_title=Mapejat de Dominis
 domains_ecannot=No tens permís per editar el mapejat de dominis
@@ -404,8 +493,12 @@ domains_to=Al domini...
 domains_return=a la llista de mapejat d'adreces
 domains_delete=Suprimeix els Mapejats de Domini Seleccionat
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 dform_edit=Edició de Mapejat
 dform_create=Creació de Mapejat
@@ -413,18 +506,27 @@ dform_from=Del domini
 dform_to=Al domini
 dform_ecannot=No tens permís per editar mapeigs de dominis
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 dsave_ecannot=No tens permís per editar mapeigs de dominis
 dsave_err=No s'ha pogut desar el mapejat de dominis
 dsave_edomain='$1' no és un nom de domini vàlid
 dsave_ealready=Ja existeix un mapejat de domini per a '$1'
+
 ddelete_err=No s'han pogut suprimir els mapejats de domini
 ddelete_ecannot=No tens permís per suprimir el mapejat de $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 access_title=Control de Spam
 access_ecannot=No tens permís per configurar el control de <i>spam</i>
@@ -439,8 +541,12 @@ access_toomany=Hi ha massa regles de control de spam al sistema com per mostrar-
 access_go=Busca regles de control de spam que coincideixin amb:
 access_delete=Suprimeix les Regles de Control de Spam Seleccionades
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 sform_edit=Edició de Regla de Control de Spam
 sform_create=Creació de Regla de Control de Spam
@@ -464,8 +570,12 @@ sform_err=Codi d'error
 sform_msg=Missatge
 sform_ecannot=No tens permís per editar aquest control de <i>spam</i>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 ssave_err=No s'ha pogut desar la regla de control de <i>spam</i>
 ssave_etype0='$1' no és una adreça vàlida
@@ -476,6 +586,7 @@ ssave_ecode='$1' no és un codi d'error SMTP vàlid
 ssave_ealready=Ja existeix una regla de control de spam '$1'
 ssave_ecannot2=No tens permís per desar aquesta regla de control de spam
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 sdelete_err=No es pot suprimir les regles de control de spam
 sdelete_ecannot=No tens permís per suprimir la regla de $1
@@ -483,6 +594,12 @@ sdelete_ecannot=No tens permís per suprimir la regla de $1
 =======
 sdelete_err=No es pot suprimir les regles de control de spam
 sdelete_ecannot=No tens permís per suprimir la regla de $1
+>>>>>>> upstream/master
+=======
+
+sdelete_err=No es pot suprimir les regles de control de spam
+sdelete_ecannot=No tens permís per suprimir la regla de $1
+
 >>>>>>> upstream/master
 relay_title=Dominis de Reemissió
 relay_ecannot=No tens permís per editar dominis de reemissió
@@ -493,8 +610,12 @@ relay_desc2=Si el sistema està fent de portal de diferents dominis que no són 
 relay_err=No s'han pogut desar els dominis de reemissió
 relay_edomain='$1' no és un nom de domini vàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 mailq_title=Cua de Correu
 mailq_count=$1 missatges
@@ -526,19 +647,28 @@ mailq_quar=En quarantena
 mailq_refresh=Refresca la Cua de Correu
 mailq_refreshdesc=Recarrega aquesta pàgina per mostrar l'estat actual de la cua de correu.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 flushq_title=Buidat de la Cua
 flushq_desc=S'està forçant el lliurament de tots els missatges amb l'ordre $1...
 flushq_desc2=S'està forçant el lliurament dels $1 missatges seleccionats...
 flushq_ecannot=No tens permís per buidar la cua de correu
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> upstream/master
+=======
+
+>>>>>>> upstream/master
 searchq_title=Resultats de la Recerca de Cues
 searchq_none=No s'ha trobat cap missatge a les cues.
+
 delq_err=No s'ha pogut suprimir el missatge
 delq_ecannot=No tens permís per treure missatges de la cua
 delq_locked=El fitxer està en aquests moments bloquejat per enviar
@@ -555,8 +685,12 @@ delq_ecannot2=no pots suprimir aquest missatge
 delq_rusure=Segur que vols suprimir els $1 missatges en cua seleccionats?
 delq_confirm=Suprimeix els Missatges
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 boxes_title=Bústies d'Usuaris
 boxes_user=Usuari
@@ -567,6 +701,7 @@ boxes_sent=Correu enviat
 boxes_ecannot=No tens permís per llegir correu
 boxes_toomany=Hi ha massa usuaris al sistema com per llistar-ne totes les bústies.
 boxes_go=Veure el correu de l'usuari:
+
 mail_title=Correu d'Usuari
 mail_from=De
 mail_date=Data
@@ -607,6 +742,7 @@ mail_move=Desplaça a:
 mail_copy=Copia a:
 mail_rfc=De la línia
 mail_eexists=El missatge ja no existeix!
+
 view_title=Lectura de Correu
 view_desc=Missatge $1 de $2
 view_desc2=Missatge $1 de l'usuari $2
@@ -643,8 +779,12 @@ view_afile=Nom de l'adjunció
 view_atype=Tipus d'adjunció
 view_asize=Mida del fitxer
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 compose_title=Redacció de Correu
 reply_title=Respon al Correu
@@ -657,6 +797,7 @@ reply_attach2=Adjuncions de client i de la part del servidor
 reply_send=Envia Correu
 reply_ecannot=No tens permís per enviar correu amb aquest usuari
 reply_body=Text del missatge
+
 send_err=No s'ha pogut enviar el correu
 send_eto=Hi falta l'adreça de destinació
 send_efrom=Hi falta l'adreça del remitent
@@ -670,9 +811,13 @@ send_eperms=L'usuari $1 no pot llegir $2
 send_eperms2=No tens permís per enviar el fitxer $1
 send_epath=L'executable $1 de sendmail no existeix.
 <<<<<<< HEAD
+<<<<<<< HEAD
 send_eperms2=No tens permís per enviar el fitxer $1
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 delete_title=Supressió de Correu
 delete_rusure=Segur que vols suprimir els $1 missatges seleccionats de $2? Això pot trigar una mica si el fitxer de correu és gran. Fins que no s'hagi acabat d'esborrar, convé no executar cap altra acció.
@@ -687,8 +832,12 @@ delete_emovecannot=No tens permís per desplaçar el correu a l'usuari especific
 delete_emovenone=No has seleccionat el correu a desplaçar
 delete_nobutton=No has fet clic a cap botó
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 search_title=Resultats de la Recerca
 search_ecannot=No tens permís per buscar dins del correu d'aquest usuari
@@ -703,8 +852,12 @@ search_local=A les carpetes locals
 search_all=A totes les carpetes
 search_eboolean=Les recerques lògiques utilitzant 'i' i 'o' al mateix temps no estan suportades
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 file_title=Edició de Fitxer Sendmail
 file_desc=Utilitza la caixa de text de sota per editar manualment el fitxer $1 de sendmail.
@@ -722,8 +875,12 @@ file_err=No s'ha pogut editar el fitxer
 file_ealias=El format de la línia del fitxer d'àlies és invàlid: $1
 file_etab=El format de la línia del fitxer de mapejats és invàlid: $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 acl_opts=Pot editar les opcions del sendmail
 acl_ports=Pot editar els ports de xarxa
@@ -797,6 +954,7 @@ acl_usersm=Usuaris que coincideixen amb
 acl_asame=Igual que el nom de l'usuari
 acl_usersu=Amb UID en el rang
 acl_spam=Adreces de control de <i>spam</i> que aquest usuari pot editar
+
 log_opts=S'han canviat les opcions del sendmail
 log_ports=S'han canviat els ports de xarxa
 log_alias_create=S'ha creat l'àlies $1
@@ -848,8 +1006,12 @@ log_delete_accesses=S'han suprimit $1 entrades de control de spam
 log_delete_generics=S'han suprimit $1 adreces de sortida
 log_delete_mailers=S'han suprimit $1 rutes de domini
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 match_from=Coincidències amb From:
 match_subject=Coincidències amb Subject:
@@ -875,8 +1037,12 @@ match_!body=El cos no hi coincideix
 match_!size=La mida és menor de
 match_!headers=Les capçaleres no coincideixen
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 features_title=Configuració M4 de Sendmail
 features_desc=Aquesta pàgina llista les entrades rellevants del fitxer de configuració M4 $1 de Sendmail, a partir del qual es construeix de fet el fitxer de configuració $2.
@@ -898,8 +1064,12 @@ features_econfig=No s'han establert les ubicacions del directori base M4 de Send
 features_move=Desplaça
 features_manual=Edita el fitxer manualment
 <<<<<<< HEAD
+<<<<<<< HEAD
  
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 feature_add=Addició d'Entrada de Configuració
 feature_edit=Edició d'Entrada de Configuració
@@ -922,18 +1092,27 @@ feature_eostype=El tipus de SO ja està definit com $1
 feature_manual=Edita el Fitxer M4
 feature_mdesc=La pàgina permet editar manualment el fitxer de configuració M4 $1 de sendmail. Compte, perquè no s'hi farà cap comprovació de sintaxi.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 feat_access_db=Fitxer de control de spam
 feat_virtusertable=Mapejat d'Adreça
 feat_mailertable=Encaminament de Dominis
 feat_genericstable=Adreces de Sortida
 feat_domaintable=Mapejat de Dominis
+
 mailer_local=Lliurament Unix local
+<<<<<<< HEAD
 <<<<<<< HEAD
  
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 build_title=Reconstrucció de la Configuració Sendmail
 build_em4=No s'ha trobat al sistema l'ordre $1 necessària per a reconstruir el fitxer de configuració de Sendmail.
@@ -944,19 +1123,28 @@ build_ok=Sí, substitueix-lo ara mateix
 build_diff=Es faran els canvis següents al fitxer de configuració de Sendmail...
 build_nodiff=El fitxer de configuració de sendmail ja està actualitzat.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 stop_err=No s'ha pogut aturar sendmail
 stop_ecannot=No tens permís per aturar sendmail
 stop_epid=Sembla que sendmail no s'està executant
 restart_epids=No s'han pogut trobar els processos sendmail
 restart_ekill=no s'ha pogut enviar el senyal als processos sendmail: $1
+
 start_err=No s'ha pogut iniciar sendmail
 start_ecannot=No tens permís per iniciar sendmail
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 ports_title=Ports  de Xarxa
 ports_name=Nom del port

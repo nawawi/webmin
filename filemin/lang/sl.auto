@@ -124,7 +124,7 @@ http_downloading=Prenašanje
 http_done=Preneseni od $1 do $2.
 uploading=Nalaganje, počakajte. ..
 acl_allowed_paths=Dovoli dostop do imenikov
-acl_allowed_paths2=(Za uporabnike, ki niso koreninski)
+acl_allowed_paths_explain=Če je dovoljeni imenik za uporabnika s korenskim dostopom nastavljen samo na $HOME, bo enakovreden / (popoln dostop do diska)
 acl_allowed_for_edit=Mimetipi, ki jih omogoča urejanje urejevalnika
 acl_work_as=Do datotek dostopate kot Unixov uporabnik
 acl_root=Root (dodelite previdno uporabnikom brez zaupanja!)
@@ -155,8 +155,13 @@ menu_bookmarks=Zaznamki
 notallowed=Dostop do $1 ni dovoljen. Dovoljeni imeniki so : $2 
 error_upload_emax=Naložena datoteka je večja od omejitve $1 
 extract_etype=Nepodprta vrsta arhivske datoteke
+
 info_total1=Skupaj: $1 datoteka in $2 imenik
 info_total2=Skupaj: $1 datotek in $2 imenik
 info_total3=Skupaj: $1 datoteka in $2 imeniki
 info_total4=Skupaj: $1 datotek in $2 imenikov
+
 ownership=Lastnik
+acls=Seznam nadzora dostopa
+file_detect_encoding=Samodejno zaznaj kodiranje datotek
+index_return=seznam datotek

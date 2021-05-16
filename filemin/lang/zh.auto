@@ -124,7 +124,7 @@ http_downloading=正在下载
 http_done=已将 $1下载到 $2。
 uploading=上载中，请稍候. ..
 acl_allowed_paths=允许访问目录
-acl_allowed_paths2=（对于非root用户）
+acl_allowed_paths_explain=对于具有root用户权限的用户，如果允许的目录仅设置为$HOME，它将等效于/（完全磁盘访问）
 acl_allowed_for_edit=内置编辑器允许编辑的Mimetypes
 acl_work_as=以Unix用户访问文件
 acl_root=根（小心不信任的用户！）
@@ -155,8 +155,13 @@ menu_bookmarks=书签
 notallowed=您无权访问 $1。允许的目录为： $2
 error_upload_emax=上传的文件大于 $1的限制
 extract_etype=不支持的存档文件类型
+
 info_total1=总计： $1个文件和 $2个目录
 info_total2=总计： $1个文件和 $2目录
 info_total3=总计： $1个文件和 $2个目录
 info_total4=总计： $1个文件和 $2个目录
+
 ownership=所有者
+acls=访问控制列表
+file_detect_encoding=自动检测文件编码
+index_return=文件清单

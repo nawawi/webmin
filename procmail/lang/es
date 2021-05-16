@@ -26,8 +26,12 @@ index_none=No se han configurado acciones de Procmail aún.
 index_return=lista de acciones
 index_env=Poner variable $1 a $2
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_title2=Editar Acción
 edit_title1=Crear Acción
@@ -59,8 +63,12 @@ edit_cmode_lt=El correo es menor de
 edit_cmode_gt=El correo es mayor que
 edit_conddesc=Para llevar a cabo la accción de arriba, todas las condiciones de abajo deben de coincidir. Si no hay condiciones, la acción siempre se ejecutará.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 save_err=No pude salvar acción
 save_eaction_0=Falta el archivo donde añadir
@@ -73,8 +81,12 @@ save_esize=La medida de correo para condición $1 falta o es inválida
 save_ere=Falta expresión regular para condición $1
 save_eshell=Falta comando para condición $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 env_title1=Crear Variable
 env_title2=Editar Variable
@@ -84,7 +96,11 @@ env_value=Valor
 env_err=No pude salvar variable
 env_ename=Nombre de variable falta o es inválido
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 config_eline=Línea desconocida $1 en $2: $3

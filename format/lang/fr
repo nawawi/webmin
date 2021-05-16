@@ -16,10 +16,15 @@ index_free=Libre
 index_format=Ce disque n'est pas formatté
 index_return=liste de disques
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> upstream/master
+=======
+
+>>>>>>> upstream/master
 edit_ecannot=Vous n'êtes pas autorisé à éditer ce disque
+
 edit_title=Editer la partition
 edit_header=Détails de la partition
 edit_location=Emplacement
@@ -61,8 +66,12 @@ edit_tunedesc3=Vous ne pouvez pas paramétrer le système de fichiers sur cette 
 edit_tunedesc4=Vous ne pouvez pas paramétrer le système de fichiers sur cette partition car il n'a pas de système de fichiers.
 edit_tunedesc5=Vous ne pouvez pas paramétrer le système de fichiers sur cette partition car seuls les systèmes de fichiers <tt>UFS</tt> peuvent être paramétrés.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 save_ecannot=Vous n'avez pas le droit d'éditer ce disque
 save_edelete=Echec de la suppression de partition
@@ -73,8 +82,12 @@ save_estartmin=Le cylindre de départ doit être > 0
 save_eendmax=Le cylindre de fin doit être < $1
 save_estartend=Le cylindre de départ doit être inférieur à celui de fin
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 newfs_title=Créer un système de fichiers
 newfs_ecannot=Vous n'êtes pas autorisé à formater ce disque
@@ -102,8 +115,12 @@ newfs_exec=Exécution de la commande $1 ...
 newfs_failed=... commande échouée !
 newfs_ok=... commande réussie.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 fsck_title=Réparer un système de fichiers
 fsck_ecannot=Vous n'êtes pas autorisé à réparer ce disque
@@ -123,8 +140,12 @@ fsck_39=erreurs non-corrigeables détectées !
 fsck_40=aucune erreur détectée
 fsck_unknown=erreur inconnue
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 tunefs_title=Paramétrer le système de fichiers
 tunefs_ecannot=Vous n'êtes pas autorisé à paramétrer ce disque
@@ -143,8 +164,12 @@ tunefs_exec=Exécution de la commande $1 ...
 tunefs_failed=... commande échouée!
 tunefs_ok=... commande réussie.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 select_device=Contrôleur SCSI $1 cible $2 unité $3
 select_idedevice=Périphérique IDE $1
@@ -156,13 +181,19 @@ emounted=Le disque a des partitions montées
 elast=La dernière partition ne peut pas être enlevée
 eformat=<tt>format</tt> n'a trouvé aucun disque !
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 fstype_ufs=Système de fichiers Solaris
 fstype_unknown=Système de fichiers inconnu
 
+<<<<<<< HEAD
 =======
 fstype_ufs=Système de fichiers Solaris
 fstype_unknown=Système de fichiers inconnu
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 acl_disks=Disques que cet utilisateur peut partionner et formater
 acl_dall=Tous les disques

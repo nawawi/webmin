@@ -8,8 +8,12 @@ index_start=Sunucuyu Başlat
 index_startmsg=Bu butonu tıklayarak FTP sunucunu mevcut yapılandırma ile başlatabilirsiniz. FTP sunucunuzun açılışta otomatik olarak başlamasını istiyorsanız <a href='$1'>Internet Servisleri</a> modülünü kullanmalısınız.
 index_return=FTP sunucusu seçenekleri
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 class_title=Kullanıcı ve Sınıflar
 class_header=Kullanıcı sınıfları ve kullanıcı seçenekleri
@@ -34,8 +38,12 @@ class_eclass='$1' geçerli bir sınıf ismi değil
 class_etypes='$1' sınıfı için tip seçilmedi
 class_eaddrs='$1' sınıfı için adres girilmedi
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 message_title=Mesajlar ve Giriş Başlığı
 message_header=Mesajlar, giriş başlıkları ve README dosyaları
@@ -66,8 +74,12 @@ message_ebanner='$1' geçerli bir giriş başlığı dosyası değildir
 message_ehostname=Kayıp ya da yanlış makine adı
 message_eemail=Kayıp ya da yanlış e-posta adresi
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 acl_title=Limitler ve Giriş Kontrolü
 acl_header=Limiler ve giriş kontrol seçenekleri
@@ -116,8 +128,12 @@ acl_efbcount='$1' geçerli bir dosya  ya da byte sayısı değildir
 acl_elimit='$1' geçerli bir zaman limiti değildir
 acl_efails='$1' geçerli bir giriş başarsızlığı sayısı değildir
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 net_title=Ağ
 net_header=Ağ Seçenekleri
@@ -137,8 +153,12 @@ net_enet='$1' geçerli bir ağ adresi değildir
 net_ecidr='$1' geçerli bir network bits numarası değildir
 net_eport='$1' geçerli bir port numarası değildir
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_title=Kayıt Tutma
 log_header=Kayıt Tutma Seçenekleri
@@ -157,8 +177,12 @@ log_syslog=Sistem kaydı
 log_xferlog=XFER kayıt dosyası
 log_err=Kayıt tutma seçeneklerinin kaydedilmesinde hata oluştu
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 alias_title=Takma İsimler ve Yollar
 alias_header=Takma isim ve yol seçenekleri
@@ -171,8 +195,12 @@ alias_efrom='$1' geçerli bir takma isim değildir
 alias_eto='$1' geçerli bir takma isim dizini değildir
 alias_ecdpath='$1' geçerli bir CD arama dizini değildir
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 anon_title=Anonymous FTP
 anon_eftp=Uyarı! - sisteminiz bir <tt>ftp</tt> kullanıcısına sahip değil, ve anonymous FTP büyük olasılıkla yapılandırılmadı
@@ -197,8 +225,12 @@ anon_err=Anonymous FTP seçeneklerinin kaydedilmesinde hata oluştu
 anon_edir='$1' geçerli bir dizin değildir
 anon_egroup='$1' geçerli bir grup değildir
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 perm_title=İzinler
 perm_header=İzin Seçenekleri
@@ -222,11 +254,17 @@ perm_echar='$1' düzenleme ifadelerini oluşturmak için geçerli bir karakter d
 perm_etypes=Kullanıcı tipleri seçilmedi
 perm_emesg='$1' geçerli bir hata mesajı değildir
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 host_title=Makine Giriş Kontrolü
 
 =======
 host_title=Makine Giriş Kontrolü
+>>>>>>> upstream/master
+=======
+
+host_title=Makine Giriş Kontrolü
+
 >>>>>>> upstream/master
 misc_title=Çeşitli Seçenekler
 misc_header=Çerşitli seçenekler
@@ -249,8 +287,12 @@ misc_eshutdown=Kapatma bildirim dosyası bulunamadı
 misc_enice='$1' geçerli bir iyileştirme seviyesi değildir
 misc_eumask='$1' geçerli bir umask değildir
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_class=Kullanıcı ve sınıfları değiştirildi
 log_message=Mesaj ve başlıklar değiştirildi

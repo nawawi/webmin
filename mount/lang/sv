@@ -9,8 +9,12 @@ index_auto=Okänd typ
 index_swap=Virtuellt minne
 index_return=lista över filsystem
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_title=Ändra filsystem
 create_title=Lägg till filsystem
@@ -40,6 +44,7 @@ edit_save_apply=Spara och ta i drift
 edit_umount=Montera av
 edit_perm=Gör permanent
 edit_del_umount=Montera av och ta bort
+
 save_err=Det gick inte att spara filsystemet
 save_edir='$1' är inte en katalog
 save_edirname='$1' är inte ett giltigt katalognamn
@@ -54,11 +59,16 @@ save_perm=Ändringarna för montering på $1 kunde inte genomföras, eftersom fi
 save_apply=Spara för framtida bruk
 save_eremount=Det gick inte att montera igen: $1
 save_enone=Du har inte angivit om det ska sparas eller monteras
+
 swap_err=Det gick inte att skapa en swap-fil
 swap_esize='$1' är inte en giltig storlek
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 nfs_server=Ange NFS-server ...
 nfs_select=Ange en NFS-server att montera från ...
@@ -70,6 +80,7 @@ nfs_failed=Det gick inte att hämta NFS-exporteringen från $1: $2 NFS-servern k
 nfs_seldir=Ange en NFS-katalog att montera ...
 nfs_dir=Katalog
 nfs_clients=Klienter
+
 smb_choose=Ange SMB-server ...
 smb_elist=Det gick inte att hämta någon serverlista från $1. Servern kanske inte tillåter sökning
 smb_ehost=Server $1 finns inte
@@ -85,8 +96,12 @@ smb_share=Resurs
 smb_comment=Kommentar
 smb_noshares=Det finns ingen delad resurs på server $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 solaris_scsidev=SCSI-controller $1 mål $2 enhet $3 partition $4
 solaris_mddev=RAID-disk $1
@@ -220,8 +235,12 @@ solaris_ecachedir='$1' är inte en giltig cache-katalog
 solaris_efmode='$1' är inte en giltig oktal filmod
 solaris_edmode='$1' är inte en giltig oktal katalogmod
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 linux_eamd=AMD gick inte
 linux_eauto=Det gick inte att automontera: $1
@@ -323,8 +342,12 @@ linux_epidfile='$1' är inte en giltig PID-fil
 linux_efmode='$1' är inte en giltig oktal filmod
 linux_edmode='$1' är inte en giltig oktal katalogmod
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_mount=Monterade $3
 log_mount_l=Monterade $2 $1 på $3

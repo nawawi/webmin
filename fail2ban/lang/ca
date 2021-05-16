@@ -13,13 +13,18 @@ index_restartdesc=Fes clic sobre aquest botó per aplicar la configuració actua
 index_return=a l'índex de mòduls
 index_header=Mòdul Fail2Ban
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 check_edir=El directori de configuració $1 no existeix
 check_econf=El fitxer de configuració $2 de $1 no existeix
 check_eclient=No s'ha trobat l'ordre client '$1'
 check_eserver=No s'ha trobat l'ordre servidor '$1'
+
 filters_title=Filtres de Registres
 filters_name=Nom del filtre
 filters_re=Expressió regular
@@ -30,8 +35,12 @@ filters_derr=No s'han pogut suprimir els filtres
 filters_enone=No n'hi ha cap de seleccionat
 filters_einuse=No es pot suprimir el filtre $1, ja que està en ús per part de les presons: $2
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 filter_title1=Creació de Filtre
 filter_title2=Edició de Filtre
@@ -48,8 +57,12 @@ filter_eclash=El nom del filtre ja està en ús
 filter_efail=No has introduït cap expressió regular
 filter_einuse=Aquest filtre no es pot suprimir, ja que està en ús per part de les presons: $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 actions_title=Accions de Coincidència
 actions_name=Nom de l'acció
@@ -61,8 +74,12 @@ actions_derr=No s'han pogut suprimir les accions
 actions_enone=No n'hi ha cap de seleccionada
 actions_einuse=L'acció $1 no es pot suprimir, ja que està en ús per part de les presons: $2
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 action_title1=Creació d'Acció de Coincidència
 action_title2=Edició d'Acció de Coincidència
@@ -81,8 +98,12 @@ action_unban=Ordre per a autoritzar una IP
 action_desc=<i>&lt;ip&gt;</i> se substituirà per l'adreça IP que s'està prohibint.
 action_einuse=Aquesta acció no es pot suprimir, ja que està en ús per part de les presons: $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 jails_title=Presons d'Accions de Filtre
 jails_add=Afegeix una nova presó
@@ -97,8 +118,12 @@ jails_return=a la llista de presons
 jails_derr=No s'han pogut suprimir les presons
 jails_enone=No n'hi ha cap de seleccionada
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 jail_title1=Creació de Presó
 jail_title2=Edició de Presó
@@ -142,21 +167,29 @@ jail_allprotocol=Tots els protocols
 jail_edestemail=Hi falta el correu de notificació per defecte o bé és invàlid
 jail_eignoreip=L'adreça IP a ignorar és invàlida
 
+<<<<<<< HEAD
 =======
 jail_edestemail=Hi falta el correu de notificació per defecte o bé és invàlid
 jail_eignoreip=L'adreça IP a ignorar és invàlida
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 jaildef_title=Opcions per Defecte de les Presons
 jaildef_header=Valors per defecte de totes les presons
 jaildef_err=No s'han pogut desar els valors per defecte de les presons
 jaildef_egone=No s'ha trobat cap presó per DEFECTE!
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 start_err=No s'ha pogut iniciar el servidor
 stop_err=No s'ha pogut aturar el servidor
 restart_err=No s'ha pogut reiniciar el servidor
+
 log_create_filter=S'ha creat el filtre $1
 log_delete_filter=S'ha suprimit el filtre $1
 log_create_action=S'ha creat l'acció $1
@@ -179,8 +212,12 @@ log_delboot=S'ha desactivat Fail2Ban en engegar el sistema
 log_manual=S'ha editat el fitxer de configuració $1
 log_jaildef=S'han modificat les opcions per defecte de les presons
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 config_title=Configuració Global
 config_edef=No s'ha trobat cap secció 'Definition' al fitxer de configuració!
@@ -195,8 +232,12 @@ config_err=No s'ha pogut desar la configuració global
 config_elogtarget=El fitxer de registre ha de ser un camí absolut
 config_esocket=El fitxer de sòcol ha de ser un camí absolut
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 manual_title=Edició de Fitxers de Configuració
 manual_desc=Fitxer a editar:
@@ -205,7 +246,11 @@ manual_efile=El fitxer seleccionar no forma part de la configuració de Fail2Ban
 manual_err=No s'ha pogut editar el fitxer de configuració
 manual_edata=No has introduït cap contingut al fitxer de configuració
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 syslog_logtarget=Registre d'accions de Fail2Ban

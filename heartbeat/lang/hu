@@ -12,6 +12,9 @@ index_startmsg=Kattintson erre a gombra ha el szeretné indítani a szívverés 
 index_apply=Modosulások elfogadása
 index_applymsg=Click this button to force the running szívverés monitor process to reload the current konfigurációuration.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 conf_title=Konfigurációs beállítások
 conf_header=Szívverés konfigurációs beállítások
@@ -30,6 +33,7 @@ conf_secs=másodperc
 conf_deadtime=Az idő, miután a csomópont halottnak lesz tekintve
 conf_watchdog=Watchdog eszköz file
 conf_node=Hosztok a füzéren
+
 node_edit=A fürtök erőforrásainak szerkesztése
 node_header=Fürt erőforrásainak részletezése
 node_node=Elsőszámú csomópontja az erőforrásoknak
@@ -46,8 +50,12 @@ node_eip='$1' nem valós IP cím
 node_ecidr='$1' nem valós CIDR
 node_ebroad='$1' nem valós üzenetszóró cím
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 auth_title=Hitelesítési kulcs
 auth_header=Fürt csomópont hitelesítés
@@ -59,6 +67,7 @@ auth_err=Nem lehet menteni a hitelesítési kulcsot
 auth_emd5=Hibás vagy érvénytelen MD5 jelszó
 auth_esha1=Hibás vagy érvénytelen SHA1 jelszó
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 start_err=Nem lehet indítani a szívverést
 
@@ -66,7 +75,11 @@ apply_err=Nem lehet menteni a változásokat
 apply_epid=A folyamat már nem fut
 
 =======
+=======
+
+>>>>>>> upstream/master
 start_err=Nem lehet indítani a szívverést
+
 apply_err=Nem lehet menteni a változásokat
 apply_epid=A folyamat már nem fut
 >>>>>>> upstream/master

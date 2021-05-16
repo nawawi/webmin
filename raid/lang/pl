@@ -18,11 +18,16 @@ index_none=Nie skonfigurowano urządzeń RAID
 index_add=Utwórz urządzenie RAID poziomu:
 index_return=Urządzenia RAID
 index_emdstat=W systemie brak pliku stanu RAID w kernelu $1. Prawdopodobnie Twój kernel nie obsługuje RAID.
+
 linear=Złączenie (liniowo)
 raid0=Rozdzielenie (RAID0)
 raid1=Powielenie (RAID1)
 raid4=Z parzystością (RAID4)
 raid5=Nadmiarowy (RAID5)
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 create_title=Utwórz urządzenie RAID
 create_header=Opcje urządzenia RAID
@@ -44,8 +49,12 @@ create_edisks2=Dla powielania trzeba wybrać co najmniej 2 partycje
 create_espare=Partycja zapasowa $1 nie może być jednocześnie partycją RAID
 create_epdisk=Partycja parzystości nie może być jednocześnie partycją RAID
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 view_title=Urządzenie RAID
 view_header=Opcje urządzenia RAID
@@ -72,10 +81,14 @@ view_resync=Procent odtworzenia
 view_down=(nieczynne)
 view_cannot=Tego urządzenia RAID nie można zmieniać, gdyż jest aktualnie zamontowane.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 mkfs_title=Utwórz system plików
 mkfs_header=Za pomocą tego formularza możesz utworzyć nowy system plików Linuksa EXT2 na $1. <b>Wszystkie</b> istniejące dane zostaną usunięte!
 =======
+=======
+
+>>>>>>> upstream/master
 mkfs_title=Utwórz system plików
 >>>>>>> upstream/master
 mkfs_options=Opcje nowego systemu plików Linuksa
@@ -84,6 +97,7 @@ mkfs_exec=Wykonywanie polecenia $1 ..
 mkfs_failed=.. nie powiodło się!
 mkfs_ok=.. zakończone.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 emkraid=<tt>mkraid</tt> nie powiodło się&nbsp;: $1
 eraidstop=<tt>raidstop</tt> nie powiodło się&nbsp;: $1
@@ -91,10 +105,17 @@ eraidstart=<tt>raidstart</tt> nie powiodło się&nbsp;: $1
 eforce=Musisz wymusić inicjalizację tego RAID&nbsp;: $1
 
 =======
+=======
+
+>>>>>>> upstream/master
 emkraid=<tt>mkraid</tt> nie powiodło się : $1
 eraidstop=<tt>raidstop</tt> nie powiodło się : $1
 eraidstart=<tt>raidstart</tt> nie powiodło się : $1
 eforce=Musisz wymusić inicjalizację tego RAID : $1
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_create=Utworzono $1 raid device $2
 log_stop=Dezaktywowano urządzenie RAID $1

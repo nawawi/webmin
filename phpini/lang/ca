@@ -10,27 +10,38 @@ index_manual=Edita Manualment
 index_anyfile=Edita un altre fitxer de configuració de PHP:
 index_return=als fitxers de configuració
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 file_global=Configuració global de PHP
 file_eread=No s'ha pogut llegir $1: $2
 
+<<<<<<< HEAD
 =======
 file_global=Configuració global de PHP
 file_eread=No s'ha pogut llegir $1: $2
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 manual_title=Edició Manual de Configuració
 manual_desc=Aquesta pàgina es pot utilitzar per editar manualment un fitxer de configuració de PHP. Això s'ha de fer amb compte, ja que no es durà a terme cap comprovació de sintaxi ni cap altra validació dels canvis.
 manual_err=No s'ha pogut editar el fitxer de configuració
 manual_edata=No has introduït cap contingut nou
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 list_title=Gestió de la Configuració de PHP
 list_ecannot=No tens permís per gestionar aquest fitxer de configuració de PHP
 list_return=a la configuració de PHP
 list_format_ini=Format INI
 list_format_fpm=Format FPM
+
 vars_title=Variables de PHP
 vars_header=Creació de variables de PHP i opcions de cometes
 vars_magic=Posa cometes a totes les variables d'entrada
@@ -40,8 +51,12 @@ vars_args=Converteix els paràmetres de la línia d'ordres en variables globals
 vars_long=Crea matrius a l'estil antic com ara <tt>HTTP_GET_VARS</tt>
 vars_err=No s'ha pogut desar la configuració de les variables de PHP
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 dirs_title=Configuració de Directoris
 dirs_header=Configuració dels directoris de scripts i extensions de PHP
@@ -55,8 +70,12 @@ dirs_eincs=No has introduït cap directori de recerca d'inclusió
 dirs_eutmp=Hi falta el directori de fitxers temporals o bé és invàlid
 dirs_eext=Hi falta el directori d'extensions
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 db_title=Configuració de Bases de Dades
 db_header1=Configuració de la connexió a la base de dades MySQL
@@ -77,8 +96,12 @@ db_etimeout=Hi falta el temps límit de connexió o bé és invàlid
 db_ehost=Hi falta el host servidor MySQL o bé és invàlid
 db_eport=Hi falta el port servidor MySQL o bé és invàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 session_title=Opcions de Sessió
 session_header=Opcions per al rastreig de sessions PHP
@@ -96,8 +119,12 @@ session_epath=Hi falta el directori dels fitxers de sessió o bé és invàlid
 session_elife=Hi falta el temps de vida de les galetes o bé és invàlid
 session_emaxlife=Hi falta el temps de vida màxim de la sessió o bé és invàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 safe_title=Opcions de Mode Segur
 safe_header=Opcions del mode d'accés segur de fitxers
@@ -112,8 +139,12 @@ safe_einclude=Hi falta el directori permès per als fitxers inclosos o bé és i
 safe_eexec=Hi falta el directori permès per als programes executats o bé és invàlid
 safe_ebasedir=Hi falta el directori d'operacions de fitxers o bé és invàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 limits_title=Límits de Recursos
 limits_header=Opcions de limitació de memòria i transferències
@@ -129,8 +160,12 @@ limits_eupload=Hi falta la mida màxima dels fitxers pujats
 limits_eexec=Hi falta el temps màxim d'execució
 limits_einput=Hi falta el temps màxim d'anàlisi sintàctica
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 errors_title=Registre d'Errors
 errors_header=Mostra dels missatges d'error i opcions de registre
@@ -162,6 +197,7 @@ errors_err=No s'ha pogut desar el registre d'errors
 errors_ereporting=No has introduït cap expressió de tipus d'error
 errors_emaxlen=Hi falta la mida màxima dels errors registrats o bé és invàlida
 errors_efile=Hi falta el fitxer de registre d'errors
+
 misc_title=Altres Configuracions
 misc_header=Altres configuracions diverses de PHP
 misc_short=Permet els scripts PHP que comencen amb &lt;
@@ -183,8 +219,12 @@ misc_path=Informació del Camí de Correcció de CGI
 misc_timezone=Zona horària PHP
 misc_charset=Joc de caràcters per defecte
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_manual=Edita manualment el fitxer $1
 log_vars=S'han canviat les variables PHP de $1
@@ -196,8 +236,12 @@ log_limits=S'han canviat els límits de recursos de $1
 log_errors=S'ha canviat el registre d'errors de $1
 log_misc=S'han canviat les configuracions diverses de $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 acl_global=Pot editar la configuració global de PHP
 acl_anyfile=Pot editar qualsevol fitxer com a configuració de PHP

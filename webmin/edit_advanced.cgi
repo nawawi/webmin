@@ -73,6 +73,11 @@ if (&has_command("chattr")) {
 		    &ui_yesno_radio("chattr", $gconfig{'chattr'}));
 	}
 
+# Network buffer size
+print &ui_table_row($text{'advanced_bufsize'},
+	&ui_opt_textbox("bufsize", $miniserv{'bufsize'}, 6,
+			$text{'default'}." (32768)"));
+
 # Nice level for cron jobs
 if (&foreign_check("proc")) {
 	&foreign_require("proc", "proc-lib.pl");
@@ -105,8 +110,7 @@ print &ui_table_row($text{'advanced_headers'},
 
 # Sort config file's keys alphabetically
 print &ui_table_row($text{'advanced_sortconfigs'},
-	    &ui_yesno_radio("sortconfigs", $gconfig{'sortconfigs'}));
-
+	&ui_yesno_radio("sortconfigs", $gconfig{'sortconfigs'}));
 
 print &ui_table_end();
 print &ui_form_end([ [ "save", $text{'save'} ] ]);

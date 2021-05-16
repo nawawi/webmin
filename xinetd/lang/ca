@@ -26,8 +26,12 @@ index_noport=Desconegut
 index_enable=Activa els Seleccionats
 index_disable=Desactiva els Seleccionats
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 serv_create=Creació de Servei Internet
 serv_edit=Edició de Servei Internet
@@ -83,30 +87,44 @@ serv_ecps0=Hi falta el nombre de connexions per segon o bé és invàlid
 serv_ecps1=Hi falta el retard o bé és invàlid
 serv_etimes=Les hores d'accés han d'estar en el format HH:MM-HH:MM
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 sock_stream=Stream
 sock_dgram=Datagrama
 sock_raw=Pelat
 sock_seqpacket=Datagrama seqüencial
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 proto_=Defecte
 proto_ip=IP (Protocol d'Internet)
 proto_tcp=TCP (Protocol de Control de Transmissió)
 proto_udp=UDP (Protocol de Datagrama d'Usuari)
+
 restart_err=No s'han pogut aplicar els canvis
 restart_ekill=No s'ha pogut enviar el senyal USR2 al PID $1: $2
 restart_epid=Ja no s'està executant
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> upstream/master
+=======
+
+>>>>>>> upstream/master
 start_err=No s'ha pogut iniciar xinetd
 start_estart=$1 ha fallat: $2
+
 defs_title=Opcions per Defecte
 defs_header=Opcions per defecte dels serveis
 defs_log=Mode de registre Xinetd
@@ -132,8 +150,12 @@ defs_efile=Hi falta el nom del fitxer de registre o bé és invàlid
 defs_esoft=Hi falta el límit de programari o bé és invàlid
 defs_ehard=Hi falta or el límit de maquinari o bé és invàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_create_serv=S'ha creat el servei $2 $1
 log_modify_serv=S'ha modificat el servei $2 $1
@@ -146,8 +168,12 @@ log_disable=S'han desactivat $1 serveis
 log_enable_l=S'han activat els serveis $1
 log_disable_l=S'han desactivat els serveis $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 config_dirdef=Fitxer de configuració de Xinetd
 config_dirto=Fitxer nou al directori

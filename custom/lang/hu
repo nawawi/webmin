@@ -4,8 +4,12 @@ index_none=Nincs saját parancs definiálva
 index_create=Új saját parancs készítése
 index_return=parancsok
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_title=Parancs szerkesztése
 create_title=Parancs létrehozása
@@ -29,8 +33,12 @@ edit_type6=Könyvtár
 edit_type7=Opció...
 edit_type8=Jelszó
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 save_err=A parancs mentése sikertelen
 save_ecannot=Önnek nincs jogosultsága a parancsok szerkesztéséhez
@@ -38,8 +46,12 @@ save_ecmd=Nincs parancs megadva
 save_edesc=Nincs leírás megadva
 save_euser=Üres vagy hibás felhasználói név
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 run_err=A parancs végrehajtása nem sikerült
 run_ecannot=Ennek a parancsnak a futtatásához Önnek nincs jogosultsága

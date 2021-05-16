@@ -24,8 +24,12 @@ index_forcetar=En format TAR
 index_delete=Suprimeix les Còpies Seleccionades
 index_nostrftime=Atenció - alguns treballs de còpia utilitzen % en els noms de fitxer, però la substitució strftime no es troba activada a la pàgina de Configuració del Mòdul.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 dump_dir=Directori a copiar
 dump_dirs=Directoris a copiar
@@ -113,8 +117,12 @@ dump_eftpupdate=No és possible afegir fitxers a un arxiu existent utilitzant FT
 dump_eleveldir=Per als directoris que no són punts de muntatge, només es permeten còpies de nivell 0
 dump_eupdatedir=El fitxer <tt>/etc/dumpdates</tt> només es pot actualitzar per a aquells directoris que són punts de muntatge
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_err=No s'ha pogut crear la còpia
 edit_edir=Hi falta el directori a copiar
@@ -143,10 +151,15 @@ edit_when=Quan cal copiar
 
 =======
 edit_clone=Clona
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 save_err=No s'ha pogut desar la còpia
 save_edir=Hi falta el directori a copiar o bé és invàlid
 save_efs=El directori a copiar no pot canviar a un sistema de fitxers diferents
+
 backup_title=Copia Ara
 backup_desc=S'està executant la còpia de $1 sobre $2 ..
 backup_reverify=... complet. Ara verifico la còpia...
@@ -160,8 +173,12 @@ backup_egone=La còpia no existeix!
 backup_bg=S'està iniciant el procés de còpia en segon pla. En podeu monitoritzar el progrés a la secció <b>Treballs de Còpia en Execució</b> a la pàgina principal del mòdul, i es notificarà del seu estat final via e-mail.
 backup_ecannot=No tens permís per copiar aquest directori
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 restore_title=Restauració de Còpia
 restore_err=No s'ha pogut restaurar la còpia
@@ -207,8 +224,12 @@ restore_keep=No reescriguis els fitxers
 restore_emulti=No es poden fer restauracions multivolum des d'un dispositiu de cinta
 restore_emulti2=No es poden fer restauracions multivolum des d'un servidor remot
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_create=S'ha creat la configuració de còpia de $1
 log_modify=S'ha modificat la configuració de còpia de $1
@@ -218,23 +239,33 @@ log_bgbackup=S'ha iniciat la còpia de $1 a $2
 log_restore=S'ha restaurat la còpia de $1
 log_kill=S'ha acabat la còpia de $1
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 kill_err=No s'ha pogut acabar la còpia
 kill_egone=Ja no està en execució!
 kill_ecannot=No tens permís per avortar aquesta còpia
 
+<<<<<<< HEAD
 =======
 kill_err=No s'ha pogut acabar la còpia
 kill_egone=Ja no està en execució!
 kill_ecannot=No tens permís per avortar aquesta còpia
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 newtape_err=No s'ha pogut donar avís de la nova cinta
 newtape_egone=La còpia ja no està en execució!
 newtape_estatus=La còpia ja no està esperant una nova cinta
 newtape_ecannot=No tens permís per gestionar aquesta còpia
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 acl_edit=Pot crear i editar còpies
 acl_restore=Pot restaurar còpies
@@ -244,6 +275,7 @@ acl_dirs=Directoris que es poden copiar
 acl_all=Tots els directoris
 acl_list=Només els llistats...
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 delete_err=No s'han pogut suprimir les còpies
 delete_enone=No has seleccionat cap còpia
@@ -251,6 +283,12 @@ delete_enone=No has seleccionat cap còpia
 =======
 delete_err=No s'han pogut suprimir les còpies
 delete_enone=No has seleccionat cap còpia
+>>>>>>> upstream/master
+=======
+
+delete_err=No s'han pogut suprimir les còpies
+delete_enone=No has seleccionat cap còpia
+
 >>>>>>> upstream/master
 email_already=La còpia ja s'està executant amb PID $1.
 email_ebefore=L'ordre d'abans de la còpia ha fallat!
@@ -260,12 +298,16 @@ email_subject=Còpia de $1 a $2
 email_ok=La còpia ha reeixit
 email_failed=La còpia ha fallat!
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 newtape_subject=Canvi de la cinta $1 per a la còpia de $2 a $3
 newtape_body=La còpia de $2 a $3 ha atès la quantitat màxima de dades permesa a la cinta $1. Has de posar una nova cinta i prémer l'enllaç 'Cinta carregada' al mòdul de Còpia de Sistemes de Fitxers de Webmin per seguir amb la còpia.
 edit_clone=Clona
 __norefs=1
 =======
+=======
+
+>>>>>>> upstream/master
 newtape_subject=Canvi de la cinta $1 per a la còpia de $2 a $3
 newtape_body=La còpia de $2 a $3 ha atès la quantitat màxima de dades permesa a la cinta $1. Has de posar una nova cinta i prémer l'enllaç 'Cinta carregada' al mòdul de Còpia de Sistemes de Fitxers de Webmin per seguir amb la còpia.
 >>>>>>> upstream/master

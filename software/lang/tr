@@ -13,6 +13,7 @@ index_ident=Bir dosyayı tanımla
 index_identmsg=$1 veritabanı arama için bir dosya ya da komut yolu giriniz..
 index_identok=Ara:
 index_return=paket listesi
+
 search_title=Paket Ara
 search_nomatch=Eşlenilen paket yok $1
 search_none=Hiçbiri
@@ -22,8 +23,12 @@ search_pack=Paket
 search_match=Paketler karşılaştırılıyor $1
 search_return=arama sonuçları
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_title=Paketi Değiştir
 edit_details=Paket Ayrıntıları
@@ -39,8 +44,12 @@ edit_list=Paketteki dosyaları listele
 edit_uninst=Kaldır
 edit_return=paket ayrıntıları
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 list_title=Paket Dosyaları
 list_files=$1 Paketi için Dosyalar
@@ -51,14 +60,19 @@ list_type=Tip
 list_size=Boyut
 list_status=Durum
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 delete_err=$1 paketinin silinmesinde hata oluştu
 delete_epack=$1 paketi mevcut değil
 delete_title=Paketi Sil
 delete_rusure=$1 paketini silmek istediğinizden eminmisiniz? $2 dosyaları($3) silinecektir.
 delete_ok=Sil
+
 file_title=Dosya Bilgisi
 file_notfound=$1 hakkında ulaşılabilir bilgi mevcut değil
 file_path=Yol
@@ -73,8 +87,12 @@ file_class=Sınıf
 file_desc=Açıklama
 file_none=Hiçbiri
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 install_err=Paket kurulumunda hata oluştu
 install_elocal=Alınan yerel dosya yok
@@ -89,8 +107,12 @@ install_header=Paketi kur
 install_packs=Paket(ler) kurulumuş olmalıdır
 install_ok=Kur
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 do_err=$1 paketinin kurulmasında hata oluştu
 do_title=Paketi Kur
@@ -109,15 +131,21 @@ do_inst=Kuruldu
 do_none=Hiçbiri
 do_files=Paket dosyaları
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 pkgadd_root=Kök dizini
 pkgadd_eroot=Root dizini '$1' mevcut değil
 pkgadd_unknown=Bilinmeyen
 
+<<<<<<< HEAD
 =======
 pkgadd_root=Kök dizini
 pkgadd_eroot=Root dizini '$1' mevcut değil
 pkgadd_unknown=Bilinmeyen
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 rpm_upgrade=Paketleri güncelle?
 rpm_replacepkgs=Paketleri üstüne yaz?
@@ -129,6 +157,7 @@ rpm_replacefiles=Dosyaları üzerine yaz?
 rpm_root=Root dizini
 rpm_eroot=Root dizini $1 mevcut değil
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 bsd_unknown=Bilinmeyen
 bsd_scripts=Ön ve arka kurulum programcıklarını çalıştır?
@@ -138,6 +167,13 @@ bsd_force=Önceden gerekli olan dosyalar yok ise yine de kurulsun?
 bsd_unknown=Bilinmeyen
 bsd_scripts=Ön ve arka kurulum programcıklarını çalıştır?
 bsd_force=Önceden gerekli olan dosyalar yok ise yine de kurulsun?
+>>>>>>> upstream/master
+=======
+
+bsd_unknown=Bilinmeyen
+bsd_scripts=Ön ve arka kurulum programcıklarını çalıştır?
+bsd_force=Önceden gerekli olan dosyalar yok ise yine de kurulsun?
+
 >>>>>>> upstream/master
 slack_unclass=Diğeri
 slack_unknown=Bilinmeyen
@@ -145,8 +181,12 @@ slack_missing=Kayıp
 slack_root=Root dizini
 slack_eroot=Kayıp ya da yanlış root dizini
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 debian_unknown=Bilinmeyen
 debian_depends=Bağımlılık sorunlarını yoksay?
@@ -154,11 +194,15 @@ debian_conflicts=Paket çakışmalarını yoksay?
 debian_overwrite=Diğer paketlerin dosyalarını üzerine yaz?
 debian_downgrade=Eskisini daha yenisiyle değiştir?
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 log_install_package=$1 paketi kuruldu
 log_delete=$1 paketi kaldırıldı
 
 =======
+=======
+
+>>>>>>> upstream/master
 log_install_package=$1 paketi kuruldu
 log_delete=$1 paketi kaldırıldı
 >>>>>>> upstream/master

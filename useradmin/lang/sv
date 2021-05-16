@@ -20,15 +20,21 @@ index_matches=matchar
 index_nequals=inte är samma som
 index_nmatches=inte matchar
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 search_title=Sökresultat
 search_notfound=Inga användare matchade sökvillkoret
 search_gnotfound=Inga grupper matchade sökvillkoret
 
+<<<<<<< HEAD
 =======
 search_title=Sökresultat
 search_notfound=Inga användare matchade sökvillkoret
 search_gnotfound=Inga grupper matchade sökvillkoret
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 uedit_title=Ändra användare
 uedit_title2=Lägg till användare
@@ -81,8 +87,12 @@ uedit_admin=Det är bara root som får ändra lösenord
 uedit_admchg=Användaren måste ange ett nytt lösenord
 uedit_nocheck=Kontrollera inte begränsningar för lösenord
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 usave_err=Det gick inte att spara användare
 usave_eedit=Du får inte ändra denna användare
@@ -128,8 +138,12 @@ usave_emkdir=det gick inte att skapa hemkatalogen: $1
 usave_echown=det gick inte att göra chown för hemkatalogen: $1
 usave_echmod=det gick inte att göra chmod för hemkatalogen: $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 gedit_title=Ändra grupp
 gedit_title2=Lägg till grupp
@@ -142,8 +156,12 @@ gedit_allfiles=Alla filer
 gedit_ecreate=Du får inte skapa nya grupper
 gedit_eedit=Du får inte ändra den här gruppen
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 gsave_err=Det gick inte att spara grupp
 gsave_eedit=Du får inte ändra denna grupp
@@ -157,8 +175,12 @@ usave_egidused=Grupp $1 har redan GID $2
 usave_efromroot=Du får inte flytta hemkatalogen från /
 usave_etoroot=Du får inte flytta hemkatalogen till /
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 logins_title=Registrerade inloggningar
 logins_head=Registrerade inloggningar för $1
@@ -173,8 +195,12 @@ logins_elist=Du får inte lista inloggningar
 logins_elistu=Du får inte lista inloggningar för '$1'
 logins_local=Lokal
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 udel_title=Ta bort användare
 udel_err=Det gick inte att ta bort användare
@@ -193,8 +219,12 @@ udel_del1=Ta bort användare
 udel_del2=Ta bort användare och hemkatalog
 udel_others=VARNING! Hemkatalogen $1 innehåller $2 filer som ägs av andra användare.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 gdel_title=Ta bort grupp
 gdel_err=Det gick inte att ta bort grupp
@@ -206,8 +236,12 @@ gdel_eprimary=Gruppen är primär grupp för användare $1
 gdel_sure=Vill du verkligen ta bort grupp $1?
 gdel_del=Ta bort grupp
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 many_title=Lägg till flera användare
 many_desc=I detta formulär kan du lägga till flera användare på en gång från en fil. Varje rad i filen definierar en användare på följande format:
@@ -233,8 +267,12 @@ many_emkdir=Det gick inte att skapa hemkatalog $1: $2
 many_egtaken=Gruppnamnet används redan på rad $1: $2
 many_ok=Användare $1 skapad
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 acl_uedit=Unix-användare som kan ändras
 acl_uedit_all=Alla
@@ -269,8 +307,12 @@ acl_lall=Alla användare
 acl_epeopt=Kunna ändra inställningar för lösenordslivslängd?
 acl_egp=Kunna ändra grupplösenord?
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_urename=Bytte namn på användaren $1 till $2
 log_umodify=Modifierade användaren $1
@@ -280,6 +322,7 @@ log_udeletehome=Tog bort användaren $1 och katalogen $2
 log_gmodify=Modifierade gruppen $1
 log_gcreate=Skapade gruppen $1
 log_gdelete=Tog bort gruppen $1
+
 batch_title=Exekvera batchfil
 batch_desc=Med detta formulär kan du skapa, ändra och ta bort många användare på en gång från en nedladdad eller lokal textfil. Varje rad i filen motsvarar en sak som ska göras. Exakt vad som ska göras bestäms av det första fältet på raden. Radformaten är följande:
 batch_desc2=<b>skapa</b>:username:passwd:uid:gid:realname:homedir:shell:min:max:warn:inactive:expire<p><b>ändra</b>:oldusername:username:passwd:uid:gid:realname:homedir:shell:min:max:warn:inactive:expire<p><b>ta bort</b>:username

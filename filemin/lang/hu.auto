@@ -124,7 +124,7 @@ http_downloading=A letöltés
 http_done=Letöltve: $1 - $2.
 uploading=Feltöltés, kérjük, várjon. ..
 acl_allowed_paths=Hozzáférés engedélyezése a könyvtárakhoz
-acl_allowed_paths2=(Nem root felhasználók számára)
+acl_allowed_paths_explain=Gyökérképes felhasználó esetén, ha az engedélyezett könyvtár csak $HOME-ra van állítva, akkor ez egyenértékű lesz a
 acl_allowed_for_edit=A betűtípusok szerkeszthetők a beépített szerkesztő által
 acl_work_as=A fájlok elérése Unix felhasználóként
 acl_root=Gyökér (óvatosan adja meg a megbízhatatlan felhasználók számára!)
@@ -155,8 +155,13 @@ menu_bookmarks=Könyvjelzők
 notallowed=A (z) $1 hozzáférése nem engedélyezett. Az engedélyezett könyvtárak : $2 
 error_upload_emax=A feltöltött fájl nagyobb, mint a (z) $1 korlát
 extract_etype=Nem támogatott archívumtípus
+
 info_total1=Összesen: $1 fájl és $2 könyvtár
 info_total2=Összesen: $1 fájl és $2 könyvtár
 info_total3=Összesen: $1 fájl és $2 könyvtár
 info_total4=Összesen: $1 fájl és $2 könyvtár
+
 ownership=Tulajdonos
+acls=Beléptető lista
+file_detect_encoding=A fájlkódolás automatikus észlelése
+index_return=fájl felsorolása

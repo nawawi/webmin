@@ -15,8 +15,12 @@ index_comments=Aviso - tu archivo de configuración de Jabber $1 contiene coment
 index_return=Menús de Jabber
 index_version=Versión $1 de Jabber
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 general_title=Opciones Generales
 general_header=Opciones globales de servidor Jabber
@@ -34,8 +38,12 @@ general_erlog=Archivo de diario de tráfico falta o es inválido
 general_erlogfmt=Falta formato de diario de tráfico
 general_epidfile=Archivo de ID de proceso falta o es inválido
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 messages_title=Mensajes
 messages_header=Mensaje de servidor Jabber para clientes
@@ -50,8 +58,12 @@ messages_err=No pude salvar mensajes
 messages_evcard=XML de vCard Inválido: $1
 messages_etag=El XML de vCard de servidor no empieza por &lt;vCard&gt;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 modules_title=Módulos de Jabber
 modules_desc=Los módulos listados debajo son usados con el fin de procesar los mensajes recibidos por el gestor de sesiones de Jabber. Sólo deberías de cambiar esta lista si sabes lo que reálmente estás haciendo.
@@ -62,8 +74,12 @@ modules_err=No pude salvar los módulos de Jabber
 modules_emod='$1' no es un nombre válido de módulo
 modules_eso=La biblioteca compartida '$1' no existe
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 karma_title=Control de Tráfico Karma
 karma_header=Opciones de control de tasa de tráfico
@@ -94,8 +110,12 @@ karma_erestore=Períodos de restauración faltan o son inválidos
 karma_epoints=Número de conexiones falta o es inválido
 karma_etime=Tiempo durante el que bloquear falta o es inválido
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 ips_title=Control de Acceso a IP
 ips_header=Control de acceso IP al servidor Jabber
@@ -107,16 +127,24 @@ ips_sel=Las direcciones/máscaras de red listadas...
 ips_err=No pude salvar control de acceso a IP
 ips_eaddr='$1' no es una dirección válida de IP o dirección/máscara de red IP
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 file_title=Editar Archivo de Configuración
 file_desc=Usa el formulario inferior para editar el archivo de configuración de Jabber diréctamente. Esto sólo se debería de hacer si comprendes el formato de configuración XML.
 file_header=Editar archivo de configuración de Jabber
 file_err=No pude salvar archivo de configuración
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 admin_title=Usuarios Adminsitrativos
 admin_header=Usuarios de administración de Servidor
@@ -125,11 +153,13 @@ admin_write=Admins de acceso de escritura
 admin_reply=¿Autorespondo a mensajes de admin?
 admin_rsubject=Asunto de autorespuesta
 admin_rbody=Mensaje de autorespuesta
+
 filter_title=Filtros de Usuario
 filter_header=Permisos de filtro de usuario
 filter_max=Máximas reglas de filtro
 filter_conds=Condiciones de filtro permitidas
 filter_acts=Acciones de filtro permitidas
+
 restart_err=No pude aplicar cambios
 stop_err=No pude parar Jabber
 start_err=No pude arrancar Jabber

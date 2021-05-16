@@ -1,7 +1,11 @@
 quota_unlimited=Il·limitada
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 acl_fss=Sistemes de fitxers que aquest usuari pot editar
 acl_fall=Tots els sistemes de fitxers
@@ -29,15 +33,21 @@ acl_maxfiles=Quota màxima de fitxers concedible
 acl_unlimited=Il·limitada
 acl_email=Pot configurar les notificacions de correu
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 activate_eallow=No tens permís per activar o desactivar quotes en aquest sistema de fitxers
 activate_eon=No s'han pogut activar les quotes
 activate_eoff=No s'han pogut desactivar les quotes
 
+<<<<<<< HEAD
 =======
 activate_eallow=No tens permís per activar o desactivar quotes en aquest sistema de fitxers
 activate_eon=No s'han pogut activar les quotes
 activate_eoff=No s'han pogut desactivar les quotes
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 check_title=Comprovació de Quotes
 check_return=a la llista $1
@@ -46,14 +56,19 @@ check_running=Ara s'està executant l'ordre <tt>quotacheck</tt> per verificar l'
 check_done=...Fet. 
 check_rgroup=grup
 check_ruser=usuari
+
 cgroup_efail=No s'han pogut copiar les quotes
 cgroup_ecannot=No pots copiar quotes
 cgroup_egallow=No tens permís per copiar les quotes d'aquest grup
 cgroup_enogroup=No ha cap grup de destinació
 cgroup_eallowto=No tens permís per copiar quotes a '$1'
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 cgform_title=Còpia de Quotes
 cgform_return=a la quota de grup
@@ -64,14 +79,19 @@ cgform_all=Tots els grups del sistema
 cgform_select=Grups seleccionats
 cgform_contain=Grups que contenen els usuaris
 cgform_doit=Copia
+
 cuser_efail=No s'han pogut copiar les quotes
 cuser_ecannot=No pots copiar quotes
 cuser_euallow=No tens permís per copiar les quotes d'aquest usuari
 cuser_enouser=No ha cap usuari de destinació
 cuser_eallowto=No tens permís per copiar quotes a '$1'
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 cuform_title=Còpia de Quotes
 cuform_return=a la quota d'usuari
@@ -83,8 +103,12 @@ cuform_select=Usuaris seleccionats
 cuform_members=Membres dels grups seleccionats
 cuform_doit=Copia
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 egroup_title=Edició de Quota de Grup
 egroup_freturn=llista de sistemes de fitxers 
@@ -105,8 +129,12 @@ egroup_update=Actualitza
 egroup_listall=Llista totes les Quotes
 egroup_listalldesc=Fes clic sobre aquest botó per mostrar una llista de tots els sistemes de fitxers sobre els quals aquest grup té quotes, amb enllaços per editar-les.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 euser_title=Edició de Quota d'Usuari
 euser_freturn=llista de sistemes de fitxers
@@ -131,8 +159,12 @@ euser_update=Actualitza
 euser_listall=Llista Totes les Quotes
 euser_listalldesc=Fes clic sobre aquest botó per mostrar una llista de tots els sistemes de fitxers sobre els quals aquest usuari té quotes, amb enllaços per editar-les.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 gfilesys_title=Quotes de Grup
 gfilesys_return=a la llista de sistemes de fitxers
@@ -153,8 +185,12 @@ gfilesys_editdesc=Visualitza i edita les quotes d'aquest grup en algun altre sis
 gfilesys_copydesc=Copia els límits de quota d'aquest grup a tots els sistemes de fitxers a algun o a tots els altres grups.
 gfilesys_enone=No has introduït cap nom de grup
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 ggracef_title=Períodes de Gràcia
 ggracef_return=a la llista de grups
@@ -165,15 +201,21 @@ ggracef_block=De la quota de blocs
 ggracef_file=De la quota de fitxers
 ggracef_update=Actualitza
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 ggraces_esave=No s'han pogut desar els períodes de gràcia
 ggraces_eedit=No pots editar els períodes de gràcia d'aquest sistema de fitxers
 ggraces_enumber='$1' no és un número
 
+<<<<<<< HEAD
 =======
 ggraces_esave=No s'han pogut desar els períodes de gràcia
 ggraces_eedit=No pots editar els períodes de gràcia d'aquest sistema de fitxers
 ggraces_enumber='$1' no és un número
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 index_quser=Quotes d'usuari
 index_qgroup=Quotes de grup
@@ -199,8 +241,12 @@ index_egroupdesc=Introdueix o selecciona un grup i fes clic sobre aquest botó p
 index_nosupport=No hi ha cap sistema de fitxers local que suporti quotes.
 index_mountmod=Pots activar les quotes d'un sistema de fitxers al mòdul <a href='$1'>Sistemes de Fitxers en Disc en Xarxa</a>.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 lgroups_failed=No s'han pogut llistar els grups
 lgroups_tablist=Llista de grups
@@ -231,6 +277,7 @@ lgroups_emailheader=Envia correu als grups que s'acostin a la quota
 lgroups_email=Envia correu als grups
 lgroups_tovirt=Propietari del domini de Virtualmin
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 sgroup_egroup=No tens permís per editar les quotes d'aquest grup
 sgroup_efs=No tens permís per editar les quotes d'aquest sistema de fitxers
@@ -238,17 +285,29 @@ sgroup_efs=No tens permís per editar les quotes d'aquest sistema de fitxers
 ssync_ecannot=No tens permís per establir la quota per defecte d'aquest sistema de fitxers
 
 =======
+=======
+
+>>>>>>> upstream/master
 sgroup_egroup=No tens permís per editar les quotes d'aquest grup
 sgroup_efs=No tens permís per editar les quotes d'aquest sistema de fitxers
+
 ssync_ecannot=No tens permís per establir la quota per defecte d'aquest sistema de fitxers
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 suser_euser=No tens permís per editar les quotes d'aquest usuari
 suser_efs=No tens permís per editar les quotes d'aquest sistema de fitxers
 suser_emaxblocks=No tens permís per concedir límits de blocs per sobre de $1
 suser_emaxfiles=No tens permís per concedir límits de fitxers per sobre de $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 ufilesys_title=Quotes d'Usuari
 ufilesys_return=a la llista de sistemes de fitxers
@@ -270,8 +329,12 @@ ufilesys_copy=Copia les Quotes
 ufilesys_grace=Gràcia
 ufilesys_enone=No has introduït cap nom d'usuari
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 ugracef_title=Períodes de Gràcia
 ugracef_return=a la llista d'usuaris
@@ -281,6 +344,7 @@ ugracef_graces=Períodes de Gràcia d'Usuari de <tt>$1</tt>
 ugracef_block=De la quota de blocs
 ugracef_file=De la quota de fitxers
 ugracef_update=Actualitza
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 ugraces_esave=No s'han pogut desar els períodes de gràcia
@@ -292,9 +356,13 @@ lusers_tabdefault=Quotes per defecte
 lusers_tabemail=Notificacions de correu electrònic
 lusers_failed=No s'han pogut llistar els usuaris
 =======
+=======
+
+>>>>>>> upstream/master
 ugraces_esave=No s'han pogut desar els períodes de gràcia
 ugraces_eedit=No pots editar els períodes de gràcia d'aquest sistema de fitxers
 ugraces_enumber='$1' no és un número
+
 lusers_failed=No s'han pogut llistar els usuaris
 lusers_tablist=Llista d'usuaris
 lusers_tabdefault=Quotes per defecte
@@ -345,6 +413,10 @@ lusers_nocc=Ningú
 
 =======
 lusers_nocc=Ningú
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 grace_seconds=Segons
 grace_minutes=Minuts
@@ -352,6 +424,7 @@ grace_hours=Hores
 grace_days=Dies
 grace_weeks=Setmanes
 grace_months=Mesos
+
 log_activate_u=S'han activat les quotes d'usuari a $1
 log_activate_g=S'han activat les quotes de grup a $1
 log_activate_ug=S'han activat les quotes d'usuari i grup a $1
@@ -369,6 +442,7 @@ log_check=S'han comprovat les quotes de $1
 log_copy_u=S'han copiat les quotes de l'usuari $1
 log_copy_g=S'han copiat les quotes del grup $1
 log_support=S'ha activat el suport de quotes de $1
+
 email_err=No s'han pogut desar les opcions de correu
 email_ecannot=No tens permís per modificar les opcions de correu
 email_einterval=Hi falta l'interval o bé és invàlid
@@ -382,8 +456,12 @@ email_subject=S'ha excedit la quota de disc
 gemail_subject=S'ha excedit la quota de disc
 email_eto=Hi falta l'adreça de destinació
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 umass_title=Actualització de Quotes d'Usuari
 umass_header=Canvis de la quota a aplicar als usuaris seleccionats
@@ -402,8 +480,12 @@ umass_ehfiles=Hi falta el límit estricte de fitxers o bé és invàlid
 umass_count=Els canvis de sota s'aplicaran als $1 usuaris seleccionats...
 umass_err=No s'han pogut actualitzar les quotes d'usuari
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 gmass_title=Actualització de Quotes de Grup
 gmass_header=Canvis de la quota a aplicar als grups seleccionats

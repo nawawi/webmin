@@ -26,8 +26,12 @@ index_cluster=Servidors del Clúster
 index_clusterdesc=fes clic sobre aquest botó per configurar servidors Webmin addicionals als qual es copiarà automàticament la configuració del tallafoc.
 index_return=a les regles del tallafoc
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 index_num=Núm
 index_action=Acció
@@ -42,8 +46,12 @@ index_existing=Webmin ha detectat $1 regles del tallafoc IPFW actualment en ús 
 index_saveex=Desa les Regles del Tallafoc
 index_headerex=Configuració del tallafoc existent
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 action_allow=<font color=#00aa00>Permet</font>
 action_deny=<font color=#ff0000>Elimina</font>
@@ -64,8 +72,12 @@ laction_reject=<font color=#ff4400>Retorna un rebuig ICMP</font>
 laction_reset=<font color=#ff4400>Reinicia la connexió TCP</font>
 laction_skipto=Salta a la regla
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_title1=Creació de Regla
 edit_title2=Edició de la Regla $1
@@ -127,8 +139,12 @@ edit_src-port=Des del port d'origen...
 edit_dst-addr=A l'adreça de destinació...
 edit_dst-port=Al port de destinació...
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 save_err=No s'ha pogut desar la regla
 save_enum=Hi falta el número de regla o bé és invàlid
@@ -161,11 +177,17 @@ save_elimit=Hi falta el límit màxim o bé és invàlid
 save_edstport=Hi falta el port de destinació o bé és invàlid
 save_esrcport=Hi falta el port d'origen o bé és invàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 apply_err=No s'ha pogut aplicar la configuració
 
 =======
 apply_err=No s'ha pogut aplicar la configuració
+>>>>>>> upstream/master
+=======
+
+apply_err=No s'ha pogut aplicar la configuració
+
 >>>>>>> upstream/master
 desc_if=Si $1
 desc_and=i
@@ -220,8 +242,12 @@ desc_all=per a tots els paquets
 desc_in=el paquet és d'entrada
 desc_out=el paquet és de sortida
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_create_rule=S'ha creat la regla $1
 log_delete_rule=S'ha suprimit la regla $1
@@ -239,8 +265,12 @@ log_setup=S'ha dut a terme la configuració inicial del tallafoc
 log_unapply=S'ha revertit la configuració del tallafoc
 log_delsel=S'han suprimit $1 regles
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 cluster_title=Servidors del Tallafoc del Clúster
 cluster_none=Encara no s'ha afegit cap servidor al clúster del tallafoc.
@@ -253,8 +283,12 @@ cluster_need=Has d'afegir servidors amb usuari i contrasenya al mòdul d'índex 
 cluster_return=als servidors del clúster
 cluster_delete=Elimina els Seleccionats
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 add_title=Addició de Servidors
 add_msg=S'està afegint $1...

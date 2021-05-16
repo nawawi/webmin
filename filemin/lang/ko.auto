@@ -124,7 +124,7 @@ http_downloading=다운로드 중
 http_done=$1 을 (를) $2 에 다운로드했습니다.
 uploading=업로드 중입니다. 잠시만 기다려주세요. ..
 acl_allowed_paths=디렉토리 접근 허용
-acl_allowed_paths2=(루트가 아닌 사용자의 경우)
+acl_allowed_paths_explain=루트 가능 사용자의 경우 허용 된 디렉토리가 $HOME으로 만 설정된 경우 / (전체 디스크 액세스)와 동일합니다.
 acl_allowed_for_edit=내장 편집기로 편집 할 수있는 Mimetypes
 acl_work_as=Unix 사용자로 파일에 액세스
 acl_root=루트 (신뢰할 수없는 사용자에게주의를 기울임)
@@ -155,8 +155,13 @@ menu_bookmarks=북마크
 notallowed=$1 에 액세스 할 수 없습니다. 허용되는 디렉토리는 $2 입니다.
 error_upload_emax=업로드 한 파일이 $1 한도보다 큽니다.
 extract_etype=지원되지 않는 아카이브 파일 유형
+
 info_total1=총계 : $1 파일 및 $2 디렉토리
 info_total2=총계 : $1 파일 및 $2 디렉토리
 info_total3=총계 : $1 파일 및 $2 디렉토리
 info_total4=총계 : $1 개 파일 및 $2 개 디렉토리
+
 ownership=소유자
+acls=액세스 제어 목록
+file_detect_encoding=파일 인코딩 자동 감지
+index_return=파일 목록

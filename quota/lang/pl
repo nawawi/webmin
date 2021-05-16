@@ -46,6 +46,7 @@ check_done=... Zakończono.
 check_ecannot=Nie masz uprawnień do weryfikacji poprawności quota na tym systemie plików
 =======
 quota_unlimited=Brak
+
 acl_fss=Systemy plików, które ten użytkownik może zmieniać
 acl_fall=Wszystkie
 acl_fsel=Wybrane..
@@ -71,9 +72,11 @@ acl_maxblocks=Maksymalna nadawana wartość quota dla bloków
 acl_maxfiles=Maksymalna nadawana wartość quota dla plików
 acl_unlimited=Nieograniczona
 acl_email=Może konfigurować powiadomienia e-mail?
+
 activate_eallow=Nie masz uprawnień do włączania ani wyłączania quota dla tego systemu plików
 activate_eon=Nie udało się włączyć quota
 activate_eoff=Nie udało się wyłączyć quota
+
 check_title=Sprawdź Quota
 >>>>>>> upstream/master
 check_return=listy $1
@@ -177,11 +180,13 @@ ggracef_info=Każdy system plików posiada czas ulgi dla bloków i dla plików. 
 ggracef_return=listy grup
 =======
 check_ruser=użytkowników
+
 cgroup_efail=Nie udało się skopiować quota
 cgroup_ecannot=Nie masz uprawnień do kopiowania quota
 cgroup_egallow=Nie masz uprawnień do kopiowania quota tej grupy
 cgroup_enogroup=Nie podano grup, do których kopiować
 cgroup_eallowto=Nie masz uprawnień do kopiowania quota do '$1'
+
 cgform_title=Kopiuj quota
 cgform_return=quota dla grupy
 cgform_ecannot=Nie masz uprawnień do kopiowania quota
@@ -191,11 +196,13 @@ cgform_all=Wszystkich grup w systemie
 cgform_select=Wybranych grup
 cgform_contain=Grup zawierających użytkowników
 cgform_doit=Kopiuj
+
 cuser_efail=Nie udało się skopiować quota
 cuser_ecannot=Nie masz uprawnień do kopiowania quota
 cuser_euallow=Nie masz uprawnień do kopiowania quota tego użytkownika
 cuser_enouser=Nie podano użytkowników, do których kopiować
 cuser_eallowto=Nie masz uprawnień do kopiowania quota do '$1'
+
 cuform_title=Kopiuj quota
 cuform_return=quota dla użytkownika
 cuform_ecannot=Nie masz uprawnień do kopiowania quota
@@ -205,6 +212,7 @@ cuform_all=Wszystkich użytkowników systemu
 cuform_select=Wybranych użytkowników
 cuform_members=Członków wybranych grup
 cuform_doit=Kopiuj
+
 egroup_title=Zmień quota
 egroup_freturn=listy systemów plików
 egroup_greturn=listy grup
@@ -223,6 +231,7 @@ egroup_hflimit=Twardy limit dla plików
 egroup_update=Aktualizuj
 egroup_listall=Pokaż wszystkie quota
 egroup_listalldesc=Kliknij ten przycisk aby wyświetlić listę wszystkich systemów plików, na których ta grupa ma ustawione limity quota, z linkami do ich edycji.
+
 euser_title=Zmień quota
 euser_freturn=listy systemów plików
 euser_ureturn=listy użytkowników
@@ -245,6 +254,7 @@ euser_hflimit=Twardy limit dla plików
 euser_update=Aktualizuj
 euser_listall=Pokaż wszystkie quota
 euser_listalldesc=Kliknij ten przycisk aby wyświetlić listę wszystkich systemów plików, na których ten użytkownik ma ustawione limity quota, z linkami do ich edycji.
+
 gfilesys_title=Quota dla grup
 gfilesys_return=lista systemów plików
 gfilesys_ecannot=Nie masz uprawnień do zmiany quota dla '$1'
@@ -263,6 +273,10 @@ gfilesys_copy=Kopiuj quota
 gfilesys_editdesc=Przeglądaj i edytuj limity quota dla tej grupy na innych systemach plików.
 gfilesys_copydesc=Kopiuj limity quota dla tej grupy na wszystkich systemach plików to wszystkich pozostałych lub wybranych grup.
 gfilesys_enone=Nie podano nazwy grupy
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 ggracef_title=Czasy ulgi
 ggracef_return=listy grup
@@ -272,6 +286,7 @@ ggracef_graces=Czasy ulgi dla grupy dla <tt>$1</tt>
 ggracef_block=Dla bloków
 ggracef_file=Dla plików
 ggracef_update=Aktualizuj
+<<<<<<< HEAD
 <<<<<<< HEAD
 ggraces_eedit=Nie masz uprawnień do zmiany czasów ulgi dla tego systemu plików
 ggraces_enumber='$1' nie jest liczbą
@@ -309,9 +324,13 @@ index_return=indeksu
 index_status=Stan
 index_supported=Przydziały nie są wspierane
 =======
+=======
+
+>>>>>>> upstream/master
 ggraces_esave=Nie udało się zapisać czasów ulgi
 ggraces_eedit=Nie masz uprawnień do zmiany czasów ulgi dla tego systemu plików
 ggraces_enumber='$1' nie jest liczbą
+
 index_quser=Quota dla użytkowników
 index_qgroup=Quota dla grup
 index_qboth=Quota dla użytkowników i grup
@@ -347,6 +366,7 @@ index_egroup=Zmień quota dla grupy:
 index_egroupdesc=Wprowadź lub wybierz grupę i kliknij ten przycisk aby obejrzeć jej quota na wszystkich systemach plików.
 index_nosupport=Żaden lokalny system plików nie obsługuje quota
 index_mountmod=Możesz włączyć quota dla systemu plików w module <a href='$1'>Lokalne i sieciowe systemy plików</a>
+
 lgroups_failed=Nie udało się pokazać listy grup
 lgroups_tablist=Lista grup
 lgroups_eallow=Nie masz uprawnień do zmiany quota na tym systemie plików
@@ -491,13 +511,17 @@ ugracef_return=listy użytkowników
 lgroups_emailheader=E-mail do grup zbliżających się do limitów quota
 lgroups_email=Wysyłać e-mail do grup?
 lgroups_tovirt=Właściciel domeny Virtualmina
+
 sgroup_egroup=Nie masz uprawnień do zmiany quota dla tej grupy
 sgroup_efs=Nie masz uprawnień do zmiany quota na tym systemie plików
+
 ssync_ecannot=Nie masz uprawnień do ustawiania domyślnych limitów quota dla tego systemu plików
+
 suser_euser=Nie masz uprawnień do zmiany quota dla tego użytkownika
 suser_efs=Nie masz uprawnień do zmiany quota na tym systemie plików
 suser_emaxblocks=Nie masz uprawnień do ustawiania ograniczenia quota dla bloków ponad $1
 suser_emaxfiles=Nie masz uprawnień do ustawiania ograniczenia quota dla plików ponad $1
+
 ufilesys_title=Quota dla użytkowników
 ufilesys_return=listy systemów plików
 ufilesys_ecannot=Nie masz uprawnień do zmiany quota dla '$1'
@@ -517,6 +541,10 @@ ufilesys_copydesc=Kopiuj limity quota dla tego użytkownika na wszystkich system
 ufilesys_copy=Kopiuj quota
 ufilesys_grace=Ulga
 ufilesys_enone=Nie podano nazwy użytkownika
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 ugracef_title=Czasy ulgi
 ugracef_return=listy użytkowników
@@ -526,6 +554,7 @@ ugracef_graces=Czasy ulgi dla użytkownika dla <tt>$1</tt>
 ugracef_block=Dla bloków
 ugracef_file=Dla plików
 ugracef_update=Aktualizuj
+<<<<<<< HEAD
 <<<<<<< HEAD
 ugraces_eedit=Nie masz uprawnień do zmiany czasów ulgi dla tego systemu plików
 ugraces_enumber='$1' nie jest liczbą
@@ -546,9 +575,13 @@ umass_set=Ustaw na
 umass_sfiles=Miękki limit plików
 umass_title=Aktualizuj quota użytkowników
 =======
+=======
+
+>>>>>>> upstream/master
 ugraces_esave=Nie udało się zapisać czasów ulgi
 ugraces_eedit=Nie masz uprawnień do zmiany czasów ulgi dla tego systemu plików
 ugraces_enumber='$1' nie jest liczbą
+
 lusers_failed=Pobranie listy użytkowników nie powiodło się
 lusers_tablist=Lista użytkowników
 lusers_tabdefault=Quota domyślne
@@ -594,12 +627,14 @@ lusers_from=E-mail nadawcy
 lusers_mass=Aktualizuj wybranych użytkowników
 lusers_cc=DW:
 lusers_nocc=Nie wysyłaj DW
+
 grace_seconds=Sekund
 grace_minutes=Minut
 grace_hours=Godzin
 grace_days=Dni
 grace_weeks=Tygodni
 grace_months=Miesięcy
+
 log_activate_u=Włączono quota dla użytkowników na $1
 log_activate_g=Włączono quota dla grup na $1
 log_activate_ug=Włączono quota dla użytkowników i grup na $1
@@ -617,6 +652,7 @@ log_check=Sprawdzono quota na $1
 log_copy_u=Skopiowano quota użytkownika $1
 log_copy_g=Skopiowano quota grupy $1
 log_support=Włączono wsparcie przydziałów dla $1
+
 email_err=Zapisanie opcji e-mail nie powiodło się
 email_ecannot=Nie masz uprawnień do edycji opcji e-mail
 email_einterval=Nie podano lub nieprawidłowy interwał
@@ -629,6 +665,7 @@ gemail_msg=Wykorzystanie dysku dla grupy $1 na $2 osiągnęło $3% \ndozwolonego
 email_subject=Przekroczony limit quota
 gemail_subject=Przekroczony limit quota
 email_eto=Nie podano adresu e-mail odbiorcy
+
 umass_title=Aktualizuj quota użytkowników
 umass_header=Zmiany quota do zastosowania dla wybranych użytkowników
 umass_sblocks=Miękki limit bloków
@@ -646,6 +683,7 @@ umass_esfiles=Nie podano lub nieprawidłowy miękki limit plików
 umass_ehfiles=Nie podano lub nieprawidłowy twardy limit plików
 umass_count=Poniższe zmiany będą zastosowane do $1 wybranych użytkowników ..
 umass_err=Aktualizacja quota użytkownika nie powiodła się
+
 gmass_title=Aktualizuj quota grup
 gmass_header=Zmiany quota do zastosowania dla wybranych grup
 gmass_count=Poniższe zmiany będą zastosowane do $1 wybranych grup ..

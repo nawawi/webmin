@@ -18,8 +18,12 @@ index_desctime=Aquest formulari és per a canviar l'hora actual del sistema, que
 index_desczone=Aquest formulari permet canvia la zona horària per defecte del sistema, que s'utilitza per convertir l'hora del sistema a un format humanament llegible.
 index_descsync=Aquest formulari és per configurar el sistema per sincronitzar automàticament l'hora amb un servidor remot. La sincronització es farà utilitzant el protocol <tt>time</tt> de Unix o el protocol NTP, depenent de quines ordres hi hagi instal·lades i del que suportin els servidor remots.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 action_save=Desa
 action_apply=Aplica
@@ -29,8 +33,12 @@ action_timeserver_sys=Sincronitza l'hora del sistema
 action_timeserver_hw=Sincronitza l'hora del maquinari
 action_savezone=Canvia la zona horària
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 acl_sys=L'usuari pot editar l'hora del sistema
 acl_hw=L'usuari pot editar l'hora del maquinari
@@ -43,11 +51,16 @@ acl_nosys=No tens permís per editar l'hora del sistema
 acl_nohw=No tens permís per editar l'hora del maquinari
 acl_nontp=No tens permís per sincronitzar amb un servidor horari
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> upstream/master
+=======
+
+>>>>>>> upstream/master
 sys_title=Hora del Sistema
 hw_title=Hora del Maquinari
+
 day=Dia
 month=Mes
 date=Data
@@ -55,6 +68,7 @@ hour=Hora
 year=Any
 minute=Minut
 second=Segon
+
 error_cnf=Error: no s'ha trobat l'ordre $1
 error_hw=No es pot establir l'hora del maquinari: $1
 error_sync=No es pot sincronitzar amb l'hora del sistema: $1
@@ -62,8 +76,12 @@ error_ediff=La diferència del servidor horari amb l'hora local és massa gran: 
 error_entp=La sincronització horària NTP ha fallat: $1
 error_etimeserver=No hi ha cap servidor horari a sincronitzar amb el que has introduït
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_set_date=Estableix l'hora del sistema a $1
 log_set_hwclock=Estableix l'hora del maquinari a $1
@@ -75,8 +93,12 @@ log_sync=S'ha sincronitzat l'hora del sistema amb l'hora del maquinari
 log_sync_s=S'ha sincronitzat l'hora del maquinari amb l'hora del sistema
 log_timezone=S'ha canviat la zona horària a $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 timezone_err=No s'ha pogut desar la zona horària
 timezone_ecannot=No tens permís per canviar la zona horària

@@ -4,6 +4,7 @@
 BEGIN { push(@INC, ".."); };
 use WebminCore;
 &init_config();
+
 require 'view-lib.pl';
 if ($config{'mysql_libs'}) {
 	$ENV{$gconfig{'ld_env'}} .= ':' if ($ENV{$gconfig{'ld_env'}});
@@ -74,6 +75,13 @@ use DBI;
 \$driver_handle = DBI->install_driver("mysql");
 EOF
 }
+
+# Fix text if we're running MariaDB
+if ($mysql_version =~ /mariadb/i) {
+	foreach my $t (keys %text) {
+		$text{$t} =~ s/MySQL/MariaDB/g;
+		}
+	}
 
 if (&compare_version_numbers($mysql_version, "5.5") >= 0) {
 	@mysql_set_variables = ( "key_buffer_size", "sort_buffer_size",

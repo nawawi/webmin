@@ -25,6 +25,7 @@ index_header=Usuaris amb configuracions Fetchmail
 index_search=Mostra la configuració Fetchmail de:
 index_show=Mostra
 index_toomany=Hi ha massa usuaris al sistema com per mostrar-los tots.
+
 poll_create=Afegeix Servidor
 poll_edit=Edita Servidor
 poll_header=Opcions del servidor de correu
@@ -64,26 +65,36 @@ poll_ecannot=No tens permís per editar la configuració fetchmail d'aquest usua
 poll_efile=Només es poden editar fitxers de configuració fetchmail d'usuaris
 poll_eusername=L'usuari no existeix!
 poll_foruser=Per a l'usuari $1
+
 stop_err=No s'ha pogut aturar el fetchmail
 stop_ecannot=No tens permís per aturar fetchmail
 start_err=No s'ha pogut iniciar el fetchmail
 start_einterval=Hi falta l'interval de comprovació o bé no és vàlid
 start_ecannot=No tens permís per iniciar fetchmail
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 check_title=Comprovació de Servidors
 check_exec=S'està comprovant el correu al(s) servidor(s) amb l'ordre $1...
 check_ok=...comprovació completa.
 check_failed=...la comprovació ha fallat!
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 global_title=Valors per Defecte
 global_header=Valors per defecte de tots els servidors
 global_err=No s'han pogut desar els valors per defecte
+
 log_create_poll_file=S'ha afegit el servidor $1 al fitxer $2
 log_modify_poll_file=S'ha modificat el servidor $1 del fitxer $2
 log_delete_poll_file=S'ha suprimit el servidor $1 del fitxer $2
@@ -103,8 +114,12 @@ log_create_cron=S'ha activat la comprovació planificada
 log_update_cron=S'ha modificat la comprovació planificada
 log_delete_cron=S'ha desactivat la comprovació planificada
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 acl_users=Pot editar el fitxer de configuració de
 acl_all=Tots els usuaris
@@ -114,8 +129,12 @@ acl_except=Tots els usuaris excepte
 acl_cron=Pot configurar la comprovació planificada
 acl_daemon=Pot configurar el dimoni Fetchmail
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 cron_title=Comprovació Planificada
 cron_desc=Aquesta pàgina es pot utilitzar per activar o desactivar un treball Cron per comprovar i els servidors de correu de la configuració de Fetchmail de forma regular. Utilitzar un treball cron és millor que executar el dimoni de Fetchmail, ja que no cal reiniciar-lo en engegar el sistema.
@@ -136,15 +155,22 @@ cron_euser=Hi falta l'usuari Unix  o bé és invàlid
 cron_errors=Dóna un missatge només si es produeix un error
 cron_ecannot2=No tens permís per configurar la comprovació planificada
 <<<<<<< HEAD
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> upstream/master
 user_title=Configuració de Fetchmail
 user_header=De l'usuari $1
 user_return=a la configuració de l'usuari
 
+<<<<<<< HEAD
 =======
 user_title=Configuració de Fetchmail
 user_header=De l'usuari $1
 user_return=a la configuració de l'usuari
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 email_ok=Sortida de fetchmail
 email_failed=Error de fetchmail

@@ -12,6 +12,10 @@ main_none=Du har inte åtkomsträttighet till några Webmin-moduler
 
 =======
 main_return=Gå tillbaka till $1
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 category_servers=Servrar
 category_hardware=Hårdvara
@@ -19,15 +23,20 @@ category_system=System
 category_webmin=Webmin
 category_net=Nätverk
 <<<<<<< HEAD
+<<<<<<< HEAD
 category_=Övrigt
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 header_webmin=Webmin Index
 header_module=Modulindex
 header_help=Hjälp ...
 header_config=Modulkonfigurering
 header_servers=Webminservrar
+
 index=index
 yes=Ja
 no=Nej
@@ -42,16 +51,24 @@ reset=Återställ
 ok=OK
 cancel=Avbryt
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 chooser_title1=Välj fil ...
 chooser_title2=Välj katalog ...
 chooser_dir=Katalog för $1
 chooser_ok=OK
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 users_title1=Välj användare ...
 users_title2=Välj användare ...
@@ -61,8 +78,12 @@ users_ok=OK
 users_cancel=Avbryt
 users_clear=Nollställ
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 groups_title1=Välj grupper ...
 groups_title2=Välj grupp ...
@@ -72,8 +93,12 @@ groups_ok=OK
 groups_cancel=Avbryt
 groups_clear=Nollställ
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 config_ecannot=Du får inte konfigurera denna modul
 config_title=Konfigurering
@@ -82,8 +107,12 @@ config_header=Konfigurerbara inställningar för $1
 config_none=Inga
 config_eaccess=Du får inte komma åt denna modul
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 help_err=Hjälp kunde inte visas
 help_epath=Ingen sökväg till hjälp
@@ -92,6 +121,7 @@ help_eheader=Sektion &lt;header&gt; saknas
 help_einclude=Det gick inte att ta med $1
 help_eif=$1 misslyckades : $2
 help_eexec=$1 misslyckades : $2
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 referer_title=Säkerhetsvarning
@@ -102,6 +132,12 @@ referer_again=Visa inte denna varning igen
 =======
 referer_title=Säkerhetsvarning
 referer_warn=<b>Varning!</b> Webmin har upptäckt att URL $1 länkar till programmet $2, som verkar vara utanför Webminservern. Detta kan vara ett försök att lura din server att utföra ett farligt kommando. 
+>>>>>>> upstream/master
+=======
+
+referer_title=Säkerhetsvarning
+referer_warn=<b>Varning!</b> Webmin har upptäckt att URL $1 länkar till programmet $2, som verkar vara utanför Webminservern. Detta kan vara ett försök att lura din server att utföra ett farligt kommando. 
+
 >>>>>>> upstream/master
 month_1=januari
 month_2=februari
@@ -116,8 +152,12 @@ month_10=oktober
 month_11=november
 month_12=december
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 day_0=söndag
 day_1=måndag
@@ -143,8 +183,12 @@ smonth_10=okt
 smonth_11=nov
 smonth_12=dec
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 sday_0=sö
 sday_1=må

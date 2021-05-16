@@ -16,10 +16,14 @@ index_free=Lliure
 index_format=Aquest disc no està formatat
 index_return=a la llista de discs
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 edit_title=Edició de Partició
 edit_ecannot=No tens permís per editar aquest disc
 =======
+=======
+
+>>>>>>> upstream/master
 edit_ecannot=No tens permís per editar aquest disc
 edit_title=Edició de Partició
 >>>>>>> upstream/master
@@ -63,8 +67,12 @@ edit_tunedesc3=No pots sintonitzar el sistema de fitxers d'aquesta partició per
 edit_tunedesc4=No pots sintonitzar el sistema de fitxers d'aquesta partició perquè no en té cap.
 edit_tunedesc5=No pots sintonitzar el sistema de fitxers d'aquesta partició perquè només es poden sintonitzar els sistemes de fitxers <tt>UFS</tt>.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 save_ecannot=No tens permís per editar aquest disc
 save_edelete=No s'ha pogut suprimir la partició
@@ -75,8 +83,12 @@ save_estartmin=El cilindre inicial ha de ser > 0
 save_eendmax=El cilindre final ha de ser < $1
 save_estartend=EL cilindre inicial ha de ser menor que el final
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 newfs_title=Creació de Sistema de Fitxers
 newfs_ecannot=No tens permís per formatar aquest disc
@@ -104,8 +116,12 @@ newfs_exec=S'està executant l'ordre $1...
 newfs_failed=...l'ordre ha fallat!
 newfs_ok=...ordre completa.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 fsck_title=Reparació de Sistema de Fitxers
 fsck_ecannot=No tens permís per reparar aquest disc
@@ -125,8 +141,12 @@ fsck_39=s'han detectat errors no corregibles!
 fsck_40=no s'ha detectat cap error
 fsck_unknown=error desconegut
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 tunefs_title=Sintonització de Sistema de Fitxers
 tunefs_ecannot=No tens permís per sintonitzar aquest disc
@@ -144,6 +164,7 @@ tunefs_err=No s'ha pogut sintonitzar el sistema de fitxers
 tunefs_exec=S'està executant l'ordre $1...
 tunefs_failed=...l'ordre ha fallat!
 tunefs_ok=...ordre completa.
+
 select_device=Controladora SCSI $1 objectiu $2 unitat $3
 select_idedevice=Dispositiu IDE $1
 select_part=Controladora SCSI $1 objectiu $2 unitat $3 partició $4
@@ -153,17 +174,23 @@ esun=Les particions només es poden modificar en el maquinari de Sun
 emounted=El disc té particions muntades
 elast=La darrera partició no es pot treure
 eformat=<tt>format</tt> no ha trobat cap disc!
+
 fstype_ufs=Sistema de Fitxers Unix Solaris
 fstype_unknown=Sistema de fitxers desconegut
+
 acl_disks=Discs que aquest usuari pot particionar i formatar
 acl_dall=Tots els discs
 acl_dsel=Seleccionats...
 acl_view=Pot editar discs i particions
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 ecannot=No tens permís per editar particions
 
 __norefs=1
 =======
+=======
+
+>>>>>>> upstream/master
 ecannot=No tens permís per editar particions
 >>>>>>> upstream/master

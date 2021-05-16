@@ -124,7 +124,7 @@ http_downloading=Downloading
 http_done=Downloadet $1 til $2.
 uploading=Uploader, vent venligst. ..
 acl_allowed_paths=Tillad adgang til mapper
-acl_allowed_paths2=(For ikke-root-brugere)
+acl_allowed_paths_explain=For root-kompatibel bruger, hvis tilladt bibliotek kun er indstillet til $HOME, svarer det til / (fuld diskadgang)
 acl_allowed_for_edit=Mimetyper tilladt at redigere af den indbyggede editor
 acl_work_as=Få adgang til filer som Unix-bruger
 acl_root=Root (bevilg med omhu til ikke-betroede brugere!)
@@ -155,8 +155,13 @@ menu_bookmarks=bogmærker
 notallowed=Du har ikke adgang til $1. De tilladte mapper er : $2 
 error_upload_emax=Uploadet fil er større end grænsen på $1 
 extract_etype=Ikke-understøttet arkivfiltype
+
 info_total1=I alt: $1 fil og $2 bibliotek
 info_total2=I alt: $1 filer og $2 bibliotek
 info_total3=I alt: $1 fil og $2 mapper
 info_total4=I alt: $1 filer og $2 mapper
+
 ownership=Ejer
+acls=Adgangskontroliste
+file_detect_encoding=Registrer automatisk filkodning
+index_return=filoversigt

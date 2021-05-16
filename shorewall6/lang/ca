@@ -20,8 +20,12 @@ index_dumpdesc=Fes clic sobre aquest botó per veure la informació de rastreig 
 index_check=Comprova el Tallafoc
 index_checkdesc=Fes clic sobre aquest botó per fer que Shorewall validi la configuració amb l'ordre <tt>shorewall6 check</tt>.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 list_move=Desplaça
 list_add=Afegeix
@@ -35,8 +39,12 @@ list_manualdesc=fes clic sobre aquest botó per editar manualment el fitxer $1 d
 list_ecannot=No tens permís per editar aquesta taula de Shorewall.
 list_delete=Suprimeix els Seleccionats
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 restart_err=No s'ha pogut aplicar la configuració
 refresh_err=No s'ha pogut refrescar la configuració
@@ -50,8 +58,12 @@ check_ok=...la configuració del tallafoc sembla correcta.
 check_failed=...s'ha trobat un error a la configuració del tallafoc!
 check_cmd=S'està comprovant la configuració...
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 zones_title=Zones de Xarxa
 zones_desc=Les zones llistades en aquesta pàgina representen diferents xarxes abastables des del teu sistema. No obstant, les entrades d'aquí no tenen cap efecte sobre el tallafoc - defineixen noms i descripcions de zona.
@@ -85,8 +97,12 @@ zones_eopts=Opcions de zona invàlides
 zones_eopts_in=Opcions d'entrada de zona invàlides
 zones_eopts_out=Opcions de sortida de zona invàlides
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 policy_title=Polítiques per Defecte
 policy_desc=Aquesta pàgina permet configurar les accions per defecte per al trànsit entre zones diferents del tallafoc. Poden ser obviades per a hosts particulars o tipus de trànsit de la pàgina de Regles del Tallafoc.
@@ -109,8 +125,12 @@ policy_efw=El &lt;Tallafoc&gt; es pot seleccionar tant per la zona origen com la
 policy_elimit=Hi falta el nombre del trànsit límit o bé és invàlid
 policy_eburst=Hi falta el nombre del trànsit pic o bé és invàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 rules_title=Regles del Tallafoc
 rules_desc=Aquesta taula llista les excepcions de les polítiques per defecte per a certs tipus de trànsit, origen, o destí. L'acció triada s'aplicarà als paquets que coincideixin amb els criteris triats enlloc de la política per defecte.
@@ -159,8 +179,12 @@ rules_macro=Paràmetre d'acció de la macro
 rules_none2=Cap
 rules_emacro=Hi falta paràmetre de la macro o bé és invàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 tos_title=Tipus de Serveis
 tos_desc=Aquesta pàgina defineix tipus de serveis IP per a tipus particulars de trànsit, que es poden utilitzar per augmentar o disminuir-ne les prioritats.
@@ -181,8 +205,12 @@ tos_create=Creació de Tipus de Servei
 tos_header=Detalls del tipus de servei
 tos_err=No s'ha pogut desar el tipus de servei
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 interfaces_title=Interfícies de Xarxa
 interfaces_desc=EN aquesta pàgina, hi hauria d'haver totes i cadascuna de les interfícies de xarxa del sistema que vols que Shorewall gestioni, associades amb la zona a la qual estan connectades. La interfície de loopback <tt>lo</tt> no ha d'aparèixer llistada mai.
@@ -200,8 +228,12 @@ interfaces_err=No s'ha pogut desar la interfície de xarxa
 interfaces_eiface=Hi falta el nom de la interfície o bé és invàlid
 interfaces_ebroad=Hi falta l'adreça de retransmissió o bé és invàlida
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 masq_title=Emmascarament
 masq_desc=Les entrades d'aquesta pàgina configuren la traducció d'adreces de xarxa per al trànsit encaminat entre alguna xarxa i una interfície particular.
@@ -234,8 +266,12 @@ masq_esnat=Adreça SNAT IP invàlida
 masq_eports=Hi falta la llista de ports separats per comes o bé és invàlida
 masq_eipsec=Hi falten les opcions IPsec
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 nat_title=NAT estàtica
 nat_desc=Les entrades de traducció d'adreces de xarxa origen d'aquesta taula es poden utilitzar per configurar una correspondència 1 a 1 entre una adreça externa del tallafoc i una adreça RFC1918 d'una màquina darrere el tallafoc. La NAT  estàtica s'utilitza sovint per permetre connexions a un servidor intern des de fora de la teva xarxa.
@@ -256,8 +292,12 @@ nat_eext=Adreça IP externa invàlida
 nat_eint=Adreça IP interna invàlida
 nat_evirt=Número d'interfície virtual invàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 proxyndp_title=Proxy NDP
 proxyndp_desc=Aquesta pàgina permet configurar el sistema per tal que respongui les peticions NDP d'altres adreces diferents de la pròpia, de manera que pugui reenviar paquets a aquelles adreces a la seva destinació real.
@@ -275,6 +315,7 @@ proxyndp_err=No s'ha pogut desar la proxy NDP
 proxyndp_have=Existeix la ruta al host
 proxyndp_eaddr=Hi falta l'adreça a NDP o bé és invàlida
 proxyndp_pers=Deixa la ruta encara que el tallafoc estigui aturat
+
 routestopped_title=En Aturar-se
 routestopped_desc=Per defecte, quan Shorewall s'aturi, denegarà l'accés des de tots els hosts. Aquesta pàgina permet definir hosts o xarxes que encara seran accessibles.
 routestopped_add=Afegeix una nova adreça aturada.
@@ -291,8 +332,12 @@ routestopped_eaddr=No has introduït cap adreça
 routestopped_all=Totes les adreces
 routestopped_list=Les adreces i xarxes llistades...
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 tunnels_title=Túnels VPN
 tunnels_desc=Aquesta pàgina llista els túnels VPN que passen a través del teu tallafoc, i per tant han de ser permesos per la configuració de Shorewall
@@ -327,8 +372,12 @@ tunnels_gsel=Zones llistades
 tunnels_eopenvpn=Número de port invàlid del túnel OpenVPN
 tunnels_egeneric=Hi falta el protocol o el protocol i el port del túnel genèric
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 hosts_title=Hosts de Zona
 hosts_desc=Aquesta pàgina llista els hosts i les xarxes que són part de zones particulars. Per regla general, no cal que facis canvis en aquesta llista.
@@ -349,11 +398,16 @@ hosts_ip=Adreça o xarxa $1
 hosts_mac=Adreça MAC $1
 hosts_ipset=Conjunt IP $1
 hosts_any=Qualsevol host
+
 edit_before=Abans de l'entrada $1
 edit_after=Després de l'entrada $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 blacklist_title=Llista Negra de Hosts
 blacklist_desc=Aquesta pàgina llista els hosts i els serveis que es bloquejaran si el trànsit des dels mateixos arriba en una interfície amb l'opció <b>blacklist</b> establerta. 
@@ -378,8 +432,12 @@ blacklist_eports=Número de port invàlid o llista de ports separats per comes i
 blacklist_eports2=Els ports només es poden especificar per als protocols TCP i UDP
 blacklist_return=als hosts de llista negra
 <<<<<<< HEAD
+<<<<<<< HEAD
  
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 providers_title=Proveïdors d'Encaminament Addicionals
 providers_desc=Aquesta pàgina defineix taules d'encaminament addicionals. Aquestes són necessàries si tens connexions a més d'un ISP o múltiples connexions al mateix ISP, o estàs executant Squid com una proxy transparent en un altre host diferent del tallafoc.
@@ -416,8 +474,12 @@ providers_emark=Hi falta el número de la marca del proveïdor o bé és invàli
 providers_edup=Hi falta el proveïdor per duplicar
 providers_egateway=Hi falta el portal o bé és invàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 manual_desc=Aquest formulari es pot utilitzar per editar manualment el fitxer $1 de Shorewall. Ves amb compte, perquè no es farà cap comprovació de sintaxi dels els canvis.
 manual_reset=Desfés
@@ -425,18 +487,27 @@ manual_err=No s'ha pogut desar el fitxer de taules
 manual_efile=Nom de taula invàlid!
 manual_edata=No has introduït cap contingut de fitxer de taules.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 acl_nochange=Pot aplicar, aturar i iniciar la configuració de Shorewall
 acl_files=Taules de Shorewall disponibles
 acl_all=Totes
 acl_sel=Les seleccionades a sota...
+
 delete_err=No s'han pogut suprimir les files
 delete_enone=No has seleccionat cap fila
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 opts_routeback=Accepta el trànsit de tornada al host
 opts_source=Permet des del host a qualsevol destinació
@@ -455,8 +526,12 @@ opts_ndp_filter=Respon a les peticions NDP només per l'IP de la interfície
 opts_detectnets=Adequa la zona per incloure només els hosts encaminats
 opts_upnp=Remapeja els paquets via UPNP
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 opts_dhcp=La interfície utilitza DHCP
 opts_forward=Estableix el reenviament
@@ -465,8 +540,12 @@ opts_optional=La interfície és opcional
 opts_required=La interfície és necessària
 opts_bridge=La interfície és un pont
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 comment_add=Afegeix un nou comentari.
 comment_edit=Edita el comentari
@@ -476,8 +555,12 @@ comment_msg=Missatge
 comment_err=No s'ha pogut desar el comentari
 comment_enone=No has introduït cap missatge
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_create_table=S'ha afegit l'entrada a la taula $1
 log_modify_table=S'ha modificat l'entrada de la taula $1
@@ -495,8 +578,12 @@ log_refresh=S'ha refrescat el tallafoc
 log_restart=S'ha reiniciat el tallafoc
 log_clear=S'ha netejat el tallafoc
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 shorewall_conf_title=Fitxer Mestre de Configuració
 shorewall_conf_desc=Aquesta pàgina permet configurar les variables de configuració globals. NOTA: No és recomanable canviar aquí l'ordre de les variables si vols conservar la posició relativa dels comentaris al fitxer de configuració.
@@ -512,8 +599,12 @@ shorewall_conf_header=Detalls de la variable de configuració
 shorewall_conf_err=No s'ha pogut desar la variable de configuració
 shorewall_conf_varname=Nom de variable invàlid (ha de ser un nom de variable shell vàlid)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 params_title=Paràmetres Personalitzats
 params_desc=Aquesta pàgina permet configurar els paràmetres personalitzats de Shorewall. NOTA: No és recomanable canviar aquí l'ordre de les variables si vols conservar la posició relativa dels comentaris al fitxer de configuració.

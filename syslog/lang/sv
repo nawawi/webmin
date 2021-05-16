@@ -19,10 +19,15 @@ index_start=Starta syslogserver
 index_startmsg=Tryck på denna knapp för att starta syslogserver $1. Innan den är startad loggas ingenting.
 all=Alla
 index_view=Visa ...
+
 restart_ekill=Det gick inte att skicka signal till syslogprocess $1: $2
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_title=Ändra systemlogg
 create_title=Lägg till systemlogg
@@ -50,13 +55,18 @@ edit_none=Ingen
 edit_view=Visa loggfil
 edit_tag=Endast för program
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 view_title=Visa loggfil
 view_header=Senaste $1 raderna i $2
 view_empty=Loggfilen är tom
 view_refresh=Uppdatera
+
 save_err=Det gick inte att spara loggen
 save_efile='$1' är inte en giltig fil: $2
 save_epipe='$1' är inte en giltig namngiven pipa
@@ -68,16 +78,24 @@ save_efacils=Du har inte angivit någon resurs
 save_esel=Du har inte angivit någon meddelandetyp som ska loggas
 save_epri=Du har inte angivit någon prioritet
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_modify=Modifierade loggning till $1
 log_create=Lade till loggning till $1
 log_delete=Tog bort loggning till $1
 log_apply=Tog ändringar i drift
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 desc_sysmesg=Systemmeddelanden
 desc_mail=E-postlogg

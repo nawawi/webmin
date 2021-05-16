@@ -18,7 +18,12 @@ link_essl=The Net::Le module SSLeay Perl requis pour créer des connections HTTP
 
 =======
 main_return=Retourner à $1
+
 link_essl=The Net::Le module SSLeay Perl requis pour créer des connections HTTPS n'est pas installé sur votre système.
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 category_servers=Serveurs
 category_hardware=Matériel
@@ -28,6 +33,7 @@ category_net=Réseau
 category_syslet=Syslets
 category_cluster=Cluster
 category_info=Information
+
 longcategory_servers=Modules pour les configurations web, email, FTP et autres serveurs
 longcategory_hardware=Modules pour les imprimantes, disques et autres configurations de matériel
 longcategory_system=Modules pour les utilisateurs, fichiers système, tâches Cron et autres paramètres du système
@@ -36,15 +42,20 @@ longcategory_net=Modules pour la configuration de gestion du réseau et des serv
 longcategory_cluster=Modules permettant de contrôler de multiple serveurs à partir d'une seule interface
 longcategory_info=Modules qui affichent des informations sur votre système
 <<<<<<< HEAD
+<<<<<<< HEAD
 longcategory_=Modules qui ne vont pas dans les autres catégories
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 header_webmin=Index de Webmin
 header_module=Index du module
 header_help=Aide...
 header_config=Configuration du module
 header_servers=Serveurs Webmin
+
 index=index
 yes=Oui
 no=Non
@@ -65,14 +76,19 @@ cancel=Annuler
 helpsearch=Rechercher la documentation...
 switch_remote_euser=L'utilisateur Unix $1 n'existe pas.
 programname=Webmin
+
 chooser_title1=Choisir le fichier...
 chooser_title2=Choisir le dossier.
 chooser_dir=Dossier de $1
 chooser_ok=Ok
 chooser_date=Choisir la date
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 users_title1=Sélectionner les utilisateurs...
 users_title2=Sélectionner l'utilisateur...
@@ -82,8 +98,12 @@ users_ok=Ok
 users_cancel=Annuler
 users_clear=Vider
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 groups_title1=Sélectionner les groupes...
 groups_title2=Sélectionner le groupe...
@@ -93,8 +113,12 @@ groups_ok=Ok
 groups_cancel=Annuler
 groups_clear=Vider
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 modules_title1=Sélectionner les modules...
 modules_title2=Sélectionner le module...
@@ -104,8 +128,12 @@ modules_ok=Ok
 modules_cancel=Annuler
 modules_clear=Vider
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 config_ecannot=Vous n'êtes pas autorisé à configurer ce module
 config_title=Configuration
@@ -118,8 +146,12 @@ config_nochange=Ne pas changer
 config_setto=Placer à
 config_ewebmin=Le type de paramètre 14 fonctionne uniquement dans Webmin
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 help_err=Échec de l'affichage de l'aide
 help_epath=Chemin de destination de l'aide invalide ou manquant
@@ -128,6 +160,7 @@ help_eheader=Section &lt;header&gt; manquante
 help_einclude=Échec de l'inclusion $1
 help_eif=$1 échec : $2
 help_eexec=$1 échec : $2
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 referer_title=Avertissement de sécurité
@@ -141,6 +174,13 @@ referer_title=Avertissement de sécurité
 referer_warn=<b>Avertissement!</b> Webmin a détecté que le programme $2 a été relié à partir de l'adresse $1, il advient qu'elle se trouve en dehors du serveur Webmin. Ceci peut être une tentative de pieger votre serveur dans le but d'exécuter une commande dangereuse.
 referer_warn_unknown=<b>Avertissement!</b> Webmin a détecté que le programme $1 a été relié à partir d'une adresse inconnue, il advient qu'elle se trouve en dehors du serveur Webmin. Ceci peut être une tentative de pieger votre serveur dans le but d'exécuter une commande dangereuse.
 >>>>>>> upstream/master
+=======
+
+referer_title=Avertissement de sécurité
+referer_warn=<b>Avertissement!</b> Webmin a détecté que le programme $2 a été relié à partir de l'adresse $1, il advient qu'elle se trouve en dehors du serveur Webmin. Ceci peut être une tentative de pieger votre serveur dans le but d'exécuter une commande dangereuse.
+referer_warn_unknown=<b>Avertissement!</b> Webmin a détecté que le programme $1 a été relié à partir d'une adresse inconnue, il advient qu'elle se trouve en dehors du serveur Webmin. Ceci peut être une tentative de pieger votre serveur dans le but d'exécuter une commande dangereuse.
+
+>>>>>>> upstream/master
 session_header=Se connecter à Webmin
 session_mesg=Vous devez entrer un nom d'utilisateur et un mot de passe pour vous identifier sur le serveur Webmin.
 session_mesg2=Vous devez entrer un nom d'utilisateur et un mot de passe pour vous identifier.
@@ -153,8 +193,12 @@ session_logout=Déconnecté avec succès. Utilisez le formulaire ci-dessous pour
 session_timed_out=La session a expirée après $1 minutes d'inactivité.
 session_save=Se souvenir de l'ouverture de manière permanente ?
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 pam_header=S'identifier à Webmin
 pam_mesg=Vous devez répondre à la question ci-dessous pour vous identifier au serveur Webmin sur $1.
@@ -162,8 +206,12 @@ pam_mesg2=Vous devez répondre à la question ci-dessous pour vous identifier.
 pam_login=Continuer
 pam_restart=Redémarrer
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 acl_root=Répertoire racine pour le sélectionneur de fichiers
 acl_nodot=Cacher les fichiers dot dans le sélectionneur de fichiers?
@@ -190,6 +238,7 @@ acl_rpc=Possibilité d'accepter les appels RPC?
 acl_rpc2=Seulement pour <tt>root</tt> ou <tt>admin</tt>
 acl_rpc1=Oui
 acl_rpc0=Non
+
 month_1=Janvier
 month_2=Février
 month_3=Mars
@@ -202,6 +251,7 @@ month_9=Septembre
 month_10=Octobre
 month_11=Novembre
 month_12=Decembre
+
 day_0=Dimanche
 day_1=Lundi
 day_2=Mardi
@@ -209,6 +259,7 @@ day_3=Mercredi
 day_4=Jeudi
 day_5=Vendredi
 day_6=Samedi
+
 smonth_1=Jan
 smonth_2=Fev
 smonth_3=Mar
@@ -221,6 +272,7 @@ smonth_9=Sep
 smonth_10=Oct
 smonth_11=Nov
 smonth_12=Dec
+
 sday_0=Di
 sday_1=Lu
 sday_2=Ma
@@ -229,6 +281,7 @@ sday_4=Je
 sday_5=Ve
 sday_6=Sa
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 emodule=Accès refusé : L'utilisateur $1 n'est pas autorisé à utiliser le module $2
 elock_tries=Échec du blocage du fichier $1 après $2 minutes
@@ -236,9 +289,15 @@ elock_tries=Échec du blocage du fichier $1 après $2 minutes
 =======
 emodule=Accès refusé : L'utilisateur $1 n'est pas autorisé à utiliser le module $2
 >>>>>>> upstream/master
+=======
+
+emodule=Accès refusé : L'utilisateur $1 n'est pas autorisé à utiliser le module $2
+
+>>>>>>> upstream/master
 skill_high=Expert
 skill_medium=Intermédiaire
 skill_low=Novice
+
 feedback_title=Rapport Webmin
 feedback_desc=Ce formulaire vous permet de rapporter les bugs présents et de soumettre des suggestions aux développeurs de Webmin concernant n'importe quel problème ou des dispositifs manquants que vous avez trouvé. Lorsque vous cliquerez sur le boutton d'envoi, les détails contenus dans le formulaire seront envoyés par mail à $2.
 feedback_desc2=Ce rapport sera envoyé aux développeurs de Webmin, et non votre administrateur système, FAI ou votre fournisseur d'hébergement. Veuillez écrire en Anglais uniquement, même dans le cas où vous utilisez l'application sous un autre language.
@@ -268,8 +327,12 @@ feedback_enoto=Aucune adresse n'a été entrée pour envoyer le rapport
 feedback_ecannot=Vous n'êtes pas autorisé à envoyé un rapport
 feedback_ecannot2=Vous n'êtes pas autorisé à envoyé un rapport contenant des fichiers de configuration
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 progress_size=Téléchargement de $1 ($2 bytes) ..
+=======
+
+>>>>>>> upstream/master
 progress_nosize=Téléchargement de $1 ..
 progress_data=$1 bytes reçus ($2 %)
 progress_data2=$1 bytes reçus
@@ -279,12 +342,15 @@ readparse_cdheader=Header de Contenu-Diposition manquant
 readparse_enc=Encodage de forme spécifique de données attendu, mais obtention d'un encode normal
 readparse_max=Les données onty excédées la taille maximum de $1 bytes
 
+<<<<<<< HEAD
 =======
 progress_nosize=Téléchargement de $1 ..
 progress_done=.. téléchargement terminé.
 readparse_cdheader=Header de Contenu-Diposition manquant
 readparse_enc=Encodage de forme spécifique de données attendu, mais obtention d'un encode normal
 readparse_max=Les données onty excédées la taille maximum de $1 bytes
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 password_expired=Votre mot de passe a expiré, et un nouveau doit être choisi.
 password_header=Choisissez un nouveau mot de passe
@@ -303,8 +369,12 @@ password_enew2=Les saisies de votre nouveau mot de passe ne correspondent pas
 password_epam=Erreur PAM : $1
 password_emodpam=The Authen::Le module PAM perl requis pour réaliser les changements de mot de passe n'est pas installé!
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 ui_mandatory=Ce champs est obligatoire
 ui_checkmandatory=Rien n'a été sélectionné
@@ -320,10 +390,15 @@ ui_etime=Heure invalide
 ui_paging=Affichage des rangées $1 à $2 de $3
 ui_rowlabel=$2 dans la rangée $1 :
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 header_statusmsg=$1 identifié dans $2 $3 sur $4 ($5)
 =======
+=======
+
+>>>>>>> upstream/master
 header_statusmsg=$1 identifié dans $2 $3 sur $4 ($5)
+
 nice_size_PB=Po
 nice_size_PiB=Pio
 nice_size_TB=To

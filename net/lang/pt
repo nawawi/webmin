@@ -1,8 +1,12 @@
 index_title=Configuração de Rede
 index_return=configuração de rede
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 ifcs_title=Interfaces de Rede
 ifcs_now=Interfaces Activas
@@ -25,6 +29,7 @@ ifcs_mtu=MTU
 ifcs_virts=Interfaces Virtuais
 ifcs_addvirt=Adicionar interface virtual
 ifcs_return=interfaces de rede
+
 aifc_create=Criar Interface Activa
 aifc_edit=Editar Interface Activa
 aifc_desc1=Parâmetros da Interface Activa
@@ -44,8 +49,12 @@ aifc_emtu='$1' não é um MTU válido
 aifc_ehard='$1' não é um endereço de hardware válido
 aifc_eexist=A interface '$1' não existe
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 bifc_create=Criar Interface de Arranque
 bifc_edit=Editar Interface de Arranque
@@ -63,6 +72,7 @@ bifc_emask='$1' não é uma máscara de sub-rede válida
 bifc_ebroad='$1' não é um endereço de broadcast válido
 bifc_emtu='$1' não é um MTU válido
 bifc_err3=Falha ao activar interface
+
 routes_title=Routing e Gateways
 routes_boot=Configuração de routing activado no <i>arranque</i>
 routes_default=Router predefinido
@@ -83,6 +93,7 @@ routes_egateway='$1' não é um gateway válido
 routes_defaults=Routers predefinidos
 routes_possible=Se possivel
 routes_local=Routes locais
+
 dns_title=Cliente DNS
 dns_options=Opções do Cliente DNS
 dns_hostname=Nome do Anfitrião
@@ -93,8 +104,12 @@ dns_none=Nenhum
 dns_listed=Listados ..
 dns_eorder=Ordem de resolução em falta
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 hosts_title=Endereços do Anfitrião
 hosts_ip=Endereço IP

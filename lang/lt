@@ -16,6 +16,7 @@ main_title2=Webmin
 main_none=Jums neleista naudotis Webmin moduliais.
 main_skill=Lygis
 main_return=Gráþti á $1
+
 category_servers=Servisai
 category_hardware=Hardware
 category_system=Sistema
@@ -24,11 +25,13 @@ category_net=Tinklas
 category_syslet=Syslets
 category_cluster=Klasteris
 category_info=Info
+
 header_webmin=Webmin indeksas
 header_module=Modulio indeksas
 header_help=Pagalba..
 header_config=Modulio nustatymai
 header_servers=Webmin serveriai
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 index=indeksą
@@ -36,6 +39,9 @@ yes=Taip
 no=Ne
 save=Išsaugoti
 =======
+=======
+
+>>>>>>> upstream/master
 index=indeksà
 yes=Taip
 no=Ne
@@ -67,11 +73,13 @@ chooser_dir=Vienas iš $1 katalogų
 helpsearch=Dokumentø paieðka..
 switch_remote_euser=Unix sisteminis vartotojas $1 neegzistuoja.
 programname=Webmin
+
 chooser_title1=Pasirinkite failà..
 chooser_title2=Pasirinkite katalogà..
 chooser_dir=Vienas ið $1 katalogø
 >>>>>>> upstream/master
 chooser_ok=Vykdyti
+
 users_title1=Pasirinkite vartotojus..
 <<<<<<< HEAD
 users_title2=Pasirinkite vartotoją..
@@ -83,6 +91,7 @@ users_all=Visi Vartotojai
 users_ok=Vykdyti
 users_cancel=Atsisakyti
 users_clear=Trinti
+
 groups_title1=Pasirinkti grupes..
 <<<<<<< HEAD
 groups_title2=Pasirinkti grupę..
@@ -95,9 +104,13 @@ groups_ok=Vykdyti
 groups_cancel=Atsisakyti
 groups_clear=Trinti
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 config_ecannot=Jums apribotos teisės konfigūruoti šį modulį.
 =======
+=======
+
+>>>>>>> upstream/master
 config_ecannot=Jums apribotos teisës konfigûruoti ðá modulá.
 >>>>>>> upstream/master
 config_title=Nustatymai
@@ -161,6 +174,7 @@ config_eaccess=Jums neleista naudotis ðiuo moduliu.
 config_err=Konfigûracijos iðsaugojimo klaida
 config_nochange=Nekeisti
 config_setto=Pakeisti á
+
 help_err=Pagalbos iðvedimo klaida
 help_epath=Nëra arba nenurodytas kelias iki pagalbos failø
 help_efile=Pagalbos failo nuskaitymo klaida $1
@@ -168,9 +182,11 @@ help_eheader=Nenustatytas &lt;header&gt; parametras
 help_einclude=Klaida áterpiant $1
 help_eif=$1 suklysta : $2
 help_eexec=$1 suklysta : $2
+
 referer_title=Saugumo sistemos perspëjimas
 referer_warn=<b>Perspëjimas!</b> Webmin nustatë, kad programa $2 buvo adresuota ið internetinio adreso $1, kuris nëra Webmin serverio adresas. Gali bûti, kad kas nors bando ásilauþti á jûsø serverá, bandydamas paleisti pavojingà komandà.
 referer_warn_unknown=<b>Perspëjimas!</b> Webmin nustatë kad programa $1 buvo adresuota ið neþinomo internetinio adreso, kuris nëra Webmin serverio adresas. Gali bûti, kad kas nors bando ásilauþti á jûsø serverá, bandydamas paleisti pavojingà komandà.
+
 session_header=Registruotis Webmin
 session_mesg=Jûs turite ávesti vartotojo vardà ir slaptaþodá, norit registruotis Webmin serveryje $1.
 session_mesg2=Registracijai reikia ávesti vardà ir slaptaþodá.
@@ -182,6 +198,7 @@ session_failed=Registracijos klaida. Bandykite dar kartà.
 session_logout=Iðsiregistravote sëkmingai. Naudokite þemiau esanèià formà pakartotinai registracijai.
 session_timed_out=Registracijos sesija atmesta po $1 minuèiø pertraukos.
 session_save=Ásiminti registracijos parametrus?
+
 acl_root=Root'o katalogas failø pasirinkimui
 acl_home=Vartotojø namø katalogai
 acl_uedit=Matomas vartotojø sàraðas
@@ -206,6 +223,7 @@ acl_rpc=Gali priimti RPC uþklausas?
 acl_rpc2=Tiktai <tt>root</tt> arba <tt>admin</tt>
 acl_rpc1=Taip
 acl_rpc0=Ne
+
 month_1=Sausis
 month_2=Vasaris
 month_3=Kovas
@@ -226,6 +244,7 @@ month_9=Rugsëjis
 month_10=Spalis
 month_11=Lapkritis
 month_12=Gruodis
+
 day_0=Sekmadienis
 day_1=Pirmadienis
 day_2=Antradienis
@@ -253,6 +272,7 @@ day_3=Treèiadienis
 day_4=Ketvirtadienis
 day_5=Penktadienis
 day_6=Ðeðtadienis
+
 smonth_1=Sausio
 smonth_2=Vasario
 smonth_3=Kovo
@@ -265,6 +285,10 @@ smonth_9=Rugsëjo
 smonth_10=Spalio
 smonth_11=Lapkrièio
 smonth_12=Gruodþio
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 sday_0=Sek
 sday_1=Pir
@@ -280,11 +304,17 @@ elock_tries=Nespėta užblokuoti failo $1 per $2 minučių
 
 =======
 sday_6=Ðeð
+
 emodule=Uþdrausta: Vartotojui $1 yra ribojamas naudojimas  $2 moduliu
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 skill_high=Ekspertas
 skill_medium=Profesionalas
 skill_low=Naujokas
+
 feedback_title=Webmin atsiliepimai
 <<<<<<< HEAD
 feedback_desc=Ši forma jums leis pranešti apie pasitaikiusią klaidą, ar pastabas webmin programuotojams atsižvelgiant į tai kokios jums iškilo problemos ar pasigedote kokių nors savybių. Kai paspausite siųsti, aprašymas,  užpildytas formoje, bus išsiųstas adresu $1.
@@ -347,6 +377,7 @@ feedback_to=Siøsti atsiliepimus adresu
 feedback_enoto=Neávestas adresas kur siøsti atsiliepimus
 feedback_ecannot=Jums neleista siøsti atsiliepimø
 feedback_ecannot2=Jums neleista siøsti atsiliepimø su konfigûracija
+
 progress_nosize=Atsiustas(a) $1 ..
 >>>>>>> upstream/master
 progress_done=.. atsiuntimas baigtas.

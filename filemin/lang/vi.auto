@@ -124,7 +124,7 @@ http_downloading=Đang tải xuống
 http_done=Đã tải xuống $1 đến $2.
 uploading=Đang tải lên, vui lòng đợi. ..
 acl_allowed_paths=Cho phép truy cập vào thư mục
-acl_allowed_paths2=(Dành cho người dùng không root)
+acl_allowed_paths_explain=Đối với người dùng có khả năng root, nếu thư mục được phép chỉ được đặt thành $HOME, nó sẽ tương đương với / (toàn bộ quyền truy cập đĩa)
 acl_allowed_for_edit=Mimetypes được phép chỉnh sửa bởi trình soạn thảo dựng sẵn
 acl_work_as=Truy cập tệp dưới dạng người dùng Unix
 acl_root=Root (cấp quyền chăm sóc cho người dùng không đáng tin cậy!)
@@ -155,8 +155,13 @@ menu_bookmarks=Dấu trang
 notallowed=Bạn không được phép truy cập $1. Các thư mục được phép là : $2 
 error_upload_emax=Tệp đã tải lên lớn hơn giới hạn của $1 
 extract_etype=Loại tệp lưu trữ không được hỗ trợ
+
 info_total1=Tổng cộng: $1 tệp và thư mục $2 
 info_total2=Tổng cộng: $1 tệp và thư mục $2 
 info_total3=Tổng cộng: $1 tệp và $2 thư mục
 info_total4=Tổng cộng: $1 tệp và $2 thư mục
+
 ownership=Chủ nhân
+acls=Danh sách điều khiển truy cập
+file_detect_encoding=Tự động phát hiện mã hóa tệp
+index_return=danh sách hồ sơ

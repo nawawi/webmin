@@ -19,6 +19,7 @@ index_load=<b>Càrrega mitjana de la CPU:</b> $1 (1 mins) , $2 (5 mins) , $3 (15
 index_loadname=Mitjanes de càrrega de la CPU:
 index_loadnums=$1 (1 mins) , $2 (5 mins) , $3 (15 mins)
 index_cpuname=Tipus de CPU:
+
 pid=ID
 owner=Usuari
 command=Ordre
@@ -30,6 +31,7 @@ nice=Nivell <i>nice</i>
 stime=Inici
 sclass=Classe de planificació E/S
 sprio=Prioritat E/S
+
 search_user=de l'usuari
 search_match=amb patró de coincidència
 search_cpupc=que utilitza més del $1% de la CPU
@@ -47,8 +49,12 @@ search_port=que utilitza el port
 search_protocol=protocol
 search_ip=Utilitzant l'adreça IP
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 run_command=Ordre a executar
 run_submit=Executa
@@ -64,8 +70,12 @@ run_as=Executa com a usuari
 run_euser=Hi falta el nom d'usuari o bé és invàlid
 run_euser2=No tens permís per executar ordres com l'usuari seleccionat
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_title=Informació del Procés
 edit_gone=Aquest procés ja no està en execució
@@ -87,21 +97,31 @@ edit_open=Fitxers i Connexions
 edit_trace=Rastreja el Procés
 edit_return=als detalls del procés
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 kill_err=No s'ha pogut enviar el senyal $1 al procés $2
 kill_title=Envia el Senyal
 kill_sent=s'ha enviat
 kill_ecannot=No tens permís per matar processos
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 renice_err=No s'ha pogut canviar el nivell <i>nice</i> de $1
 renice_ecannot=No tens permís per canviar els nivells <i>nice</i> dels processos.
 
+<<<<<<< HEAD
 =======
 renice_err=No s'ha pogut canviar el nivell <i>nice</i> de $1
 renice_ecannot=No tens permís per canviar els nivells <i>nice</i> dels processos.
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 linux_pri=Prioritat
 linux_tty=TTY
@@ -113,14 +133,17 @@ linux_ruser=Usuari real
 linux_rgroup=Grup real
 linux_pgid=ID del grup de processos
 linux_stime=Inici
+
 linuxstat_R=Executant
 linuxstat_S=Dormint
 linuxstat_D=Dormint profundament
 linuxstat_T=Aturat
 linuxstat_Z=Zombi
+
 linux_real=Temps real
 linux_be=Millor esforç
 linux_idle=Inactiu
+
 freebsd_ruser=Usuari real
 freebsd_rgroup=Grup real
 freebsd_tty=TTY
@@ -131,12 +154,17 @@ freebsd_lim=Límit de memòria
 
 =======
 freebsd_lim=Límit de memòria
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 hpux_pri=Prioritat
 hpux_tty=TTY
 hpux_status=Estat
 hpux_wchan=Esperant
 hpux_stime=Inici
+
 hpuxstat_0=Inexistent
 hpuxstat_S=Dormint
 hpuxstat_W=Esperant
@@ -145,7 +173,9 @@ hpuxstat_I=Intermedi
 hpuxstat_Z=Zombi
 hpuxstat_T=Aturat
 hpuxstat_G=Creixent
+
 macos_tty=TTY
+
 sysv_group=Grup
 sysv_ruser=Usuari real
 sysv_rgroup=Grup real
@@ -154,6 +184,7 @@ sysv_tty=TTY
 sysv_stime=Inici
 sysv_task=ID de Tasca
 sysv_zone=Nom de la Zona
+
 log_run=S'ha executat l'ordre "$1"
 log_kill=S'ha enviat el senyal $1 al procés $2
 log_kills=S'ha enviat el senyal $1 a $2 processos
@@ -161,8 +192,12 @@ log_kill_l=S'ha enviat el senyal $1 al procés $2
 log_kills_l=S'ha enviat el senyal $1 als processos<br>$2
 log_renice=S'ha canviat la prioritat del procés $2 a $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 acl_manage=Gestiona els processos com un usuari
 acl_manage_def=Usuari Webmin actual
@@ -174,6 +209,7 @@ acl_who0=Tots els usuaris
 acl_who1=Usuari Webmin actual
 acl_who2=Usuaris llistats...
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 kill_kill=Mata el procés
 kill_term=&nbsp;Mata&nbsp;&nbsp;
@@ -182,11 +218,18 @@ kill_stop=&nbsp;&nbsp;&nbsp;&nbsp;Atura&nbsp;&nbsp;&nbsp;&nbsp;
 kill_cont=&nbsp;&nbsp;Continua&nbsp;&nbsp;
 
 =======
+=======
+
+>>>>>>> upstream/master
 kill_kill=Mata el procés
 kill_term= Mata  
 kill_hup=  Reinicia   
 kill_stop=    Atura    
 kill_cont=  Continua  
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 open_title=Obertura de Fitxers i Connexions
 open_proc=Del procés $1 (PID $2)
@@ -212,8 +255,12 @@ open_size=Mida del fitxer
 open_inode=Inode
 open_file=Camí
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 trace_title=Rastreig de Procés
 trace_start=S'està iniciant el rastreig de les crides del sistema de $1...
@@ -226,10 +273,16 @@ trace_all=Totes
 trace_sel=Les llistades...
 trace_change=Canvia
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 windows_threads=Fils del procés
 
 =======
 windows_threads=Fils del procés
+>>>>>>> upstream/master
+=======
+
+windows_threads=Fils del procés
+
 >>>>>>> upstream/master
 syslog_dmesg=Missatges del nucli

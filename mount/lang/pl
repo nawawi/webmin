@@ -9,8 +9,12 @@ index_auto=Nieznany typ
 index_swap=Pamięć wirtualna
 index_return=listy systemów plików
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_title=Zmień montowanie
 create_title=Zamontuj nowy
@@ -45,8 +49,12 @@ edit_umount=Odmontuj
 edit_perm=Na stałe
 edit_del_umount=Odmontuj i skasuj
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 save_err=Nie udało sie zachować montowania
 save_edir='$1' nie jest katalogiem
@@ -72,9 +80,14 @@ save_perm=Zmiany montowania $1 nie mogą być wykonane, gdyż to montowanie jest
 save_apply=Zastosuj do listy montowań stałych
 save_eremount=Przemontowanie się nie powiodło : $1
 save_enone=Nie wybrałeś zachowania ani zamontowania
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 swap_err=Nie udało się utworzyć pliku wymiany
 swap_esize='$1' nie jest poprawnym rozmiarem
+
 nfs_server=Wybierz serwer NFS..
 <<<<<<< HEAD
 nfs_select=Wybierz serwer NFS, z&nbsp;którego montować..
@@ -93,6 +106,7 @@ nfs_failed=Nie udało się uzyskać listy katalogów udostępnianych po NFS z $
 nfs_seldir=Wybierz katoalog NFS do zamontowania..
 nfs_dir=Katalog
 nfs_clients=Klienci
+
 smb_choose=Wybierz serwer SMB..
 <<<<<<< HEAD
 smb_elist=Nie udało sie uzyskac listy srwerów z&nbsp;$1. Możliwe, że serwer nie pozwala na przeglądanie
@@ -116,8 +130,12 @@ smb_share=Zasób
 smb_comment=Opis
 smb_noshares=Brak dostępnych zasobów plikowych na serwerze $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 solaris_scsidev=Kontroler SCSI $1 urządzenie $2 podurządzenie $3 partycja $4
 solaris_mddev=Urządzenie RAID $1
@@ -285,6 +303,7 @@ solaris_efstyp2=Nie udało się sprawdzić rodzaju systemu plików : $1
 solaris_ecachedir='$1' nie jest poprawnym katalogiem cache
 solaris_efmode='$1' nie jest poprawnym trybem ósemkowym dla plików
 solaris_edmode='$1' nie jest poprawnym trybem ósemkowym dla katalogów
+
 linux_eamd=AMD zawiódł
 linux_eauto=Nieudane automatyczne montowanie: $1
 linux_esmbconn=Nie udało się połączyć z serwerem
@@ -410,9 +429,13 @@ linux_enr_blocks=Nie podana lub niepoprawna liczba bloków
 linux_enr_inodes=Nie podana lub niepoprawna liczba inodów
 linux_etmpmode=Nie podane lub niepoprawne ósemkowe uprawnienia punkty montowania
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_mount=Zamontowano $3
 log_mount_l=Zamontowano $2 $1 na $3

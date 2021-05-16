@@ -11,8 +11,12 @@ index_applydesc=Presione sobre este botón para aplicar las opciones actuales de
 index_return=índice de módulos
 index_epppd=El programa servidor PPP $1 no está instalado. PPTP depende para poder operar.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 conf_title=Opciones del Servidor PPTP
 conf_header=Configuración del servidor PPTP
@@ -39,8 +43,12 @@ conf_eremoteip='$1' no es una dirección IP ni un rango remoto válido
 conf_efrom=Falta la dirección de origen de la red IPX o bien es inválida
 conf_eto=Falta la dirección de destinación de la red IPX o bien es inválida
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 options_title=Opciones del PPP
 options_desc0=Las opciones PPP a bajo de $1 se aplican a TODAS las conexiones de entrada recibidas por el sistema, incluyendo las llamadas por modem.
@@ -73,6 +81,7 @@ options_mschap=Autenticación MS-CHAP
 options_mschap-v2=Autenticación MS-CHAP versión 2
 options_chapms=$options_mschap
 options_chapms-v2=$options_mschap-v2
+
 secrets_title=Cuentas PPP
 secrets_return=el índice
 secrets_none=Todavía no se ha creado ninguna cuenta PPP.
@@ -85,8 +94,12 @@ secrets_sany=Cualquiera
 secrets_create=Crear una nueva cuenta PPP
 secrets_desc=Las cuentas PPP listadas en esta página se extraen del fichero $1, que se utiliza para la autenticación $3. Sólo se muestran las de tu servidor $2, no las cuentas para hacer conexiones hacia el exterior.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_secret_etitle=Edición de Cuenta PPP
 edit_secret_ctitle=Creación de Cuenta PPP
@@ -106,16 +119,24 @@ edit_secret_anone=No permitas ninguna
 edit_secret_alist=Permitir las listadas
 edit_secret_del=Suprimir
 edit_secret_return=la lista de cuentas
+
 save_secret_esave=No he podido salvar la cuenta
 save_secret_enoip='$1' no es una dirección válida
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
 >>>>>>> upstream/master
+=======
+
+>>>>>>> upstream/master
 stop_err=No he podido detener el servidor PPTP
 stop_egone=Ya no está en ejecución
+
 start_err=No he podido iniciar el servidor PPTP
+
 apply_err=No he podido reiniciar el servidor PPTP
+
 conns_title=Conexiones Activas
 conns_desc=Esta página muestra las conexiones PPTP actualmente activas en el servidor. Para desconenctar una a la fuerza, presione sobre el nombre de su interfaz.
 conns_iface=Interfaz PPP
@@ -125,12 +146,17 @@ conns_local=Dirección VPN del servidor
 conns_remote=Dirección VPN del cliente
 conns_none=No hay ninguna conexión PPTP activa en estos momentos.
 conns_unknown=Desconocido
+
 disc_err=No he podido desconectar
 disc_egone=La conexión ya no es activa
 disc_ekill=El proceso ya no está en ejecución
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_secret_create=He creado la cuenta PPP $1
 log_secret_modify=He modificado la cuenta PPP $1

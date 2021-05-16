@@ -6,6 +6,7 @@ index_printershare=a la impressora compartida
 index_shareconf=a la configuració del recurs
 index_version=Versió Samba $1
 index_samba=Samba
+
 index_sharename=Nom del Recurs
 index_path=Camí
 index_security=Seguretat
@@ -50,6 +51,7 @@ index_stopmsg_wb=Fes clic sobre aquest botó per tancar els servidors Winbind en
 index_einclude=Atenció - El fitxer de configuració $1 de Samba conté la directiva $2 o $3. Això pot provocar que Webmin modifiqui el fitxer incorrectament.
 >>>>>>> upstream/master
 index_delete=Suprimeix els Recursos Seleccionats
+
 config_mins=Mins
 config_secs=segs
 config_bytes=Bytes
@@ -57,8 +59,12 @@ config_never=Mai
 config_all=Tots
 config_neither=Cap
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 global_title=Configuració Global
 global_unixnetwork=Xarxa Unix
@@ -73,8 +79,12 @@ global_users=Usuaris Samba
 global_group=Grups Samba
 global_bind=Opcions Winbind
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 error_nosamba=No s'ha trobat l'executable servidor de samba <tt>$1</tt>. O bé el Samba no està instal·lats, o bé la <a href="$2">configuració del mòdul</a> és incorrecta.
 error_version=El Webmin no ha pogut obtenir la versió de l'executable servidor de Samba <tt>$1</tt>. Comprova la <a href="$2">configuració del mòdul</a> per assegurar que el camí és el correcte.
@@ -84,8 +94,12 @@ error_delshare=No s'ha pogut suprimir el recurs
 error_delcopy=El recurs '$1' és una còpia del recurs
 error_savename=No s'han pogut desar els noms de fitxers
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 convert_title=Conversió d'Usuaris
 convert_msg=Aquest formulari permet sincronitzar ls llista d'usuaris de Unix i de Samba. Quan el Samba utilitza <a href=$1>contrasenyes xifrades</a>, s'utilitza una llista separada d'usuaris i contrasenyes en lloc de la llista d'usuaris del sistema.
@@ -104,8 +118,12 @@ convert_who=Usuaris Unix a convertir
 convert_who0=Només els usuaris o rangs d'UIDs llistats
 convert_who1=Tots excepte els usuaris o rangs d'UIDs llistats
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 misc_title=Opcions Miscel·lànies
 misc_debug=Nivell de Depuració
@@ -121,8 +139,12 @@ misc_smbrun=Camí de <tt>smbrun</tt>
 misc_clienttime=Marge de temps del client
 misc_readprediction=Predicció de lectura
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 net_title=Opcions de Xarxa Unix
 net_idle=Temps d'inacció abans de desconnectar
@@ -140,8 +162,12 @@ net_listen=Escolta l'adreça
 net_ip=Adreça IP
 net_socket=Opcions del sòcol
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 passwd_title=Opcions de Contrasenya
 passwd_encrypt=Utilitza contrasenyes xifrades
@@ -157,14 +183,19 @@ passwd_map=Mapeig de noms d'usuari
 passwd_unixuser=Usuaris Unix
 passwd_winuser=Usuaris Windows
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 print_title=Opcions d'Impressió
 print_style=Impressió estil Unix
 print_show=Mostra totes les impressores
 print_printcap=Fitxer printcap
 print_cachetime=Temps del cau de l'estat d'impressora
+
 smb_title=Opcions de Xarxa Windows
 smb_workgroup=Grup de treball
 smb_wins=Mode WINS
@@ -200,20 +231,29 @@ smb_fromlist=De la llista...
 smb_ip=Adreça IP
 smb_asworkgroup=<b>Com a Grup de Treball</b> (opcional)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 create_title=Creació de Còpia
 create_msg=Una còpia d'un recurs heretarà tots els seus valors per defecte del recurs que triïs. Si el recurs original es canvia, la còpia també. 
 create_from=Recurs origen:
 create_name=Nou recurs:
+
 smbuser_title=Usuaris Samba
 smbuser_list=Llista d'Usuaris de Samba
 smbuser_nouser=No hi ha cap usuari de Samba definit.
 smbuser_cannot=No es poden llistar els usuaris Samba
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 euser_title=Edició d'Usuari Samba
 euser_name=Usuari
@@ -234,8 +274,12 @@ euser_nopwrequired=No cal contrasenya
 euser_disable=Compte desactivat
 euser_trust=Compte de fiabilitat d'estació de treball
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 fmisc_title=Valors Miscel·lanis de Fitxer
 fmisc_for=Del recurs <tt>$1</tt>
@@ -254,6 +298,7 @@ fmisc_conncmd=Ordre a executar en connectar
 fmisc_disconncmd=Ordre a executar en desconnectar
 fmisc_rootconn=Ordre a executar en connectar <i>com a root</i>
 fmisc_rootdisconn=Ordre a executar en desconnectar <i>com a root</i>
+
 fname_title1=Nomenament de Fitxers
 fname_title2=Edició de Noms de Fitxers
 fname_option=Opcions de Noms de Fitxers
@@ -268,6 +313,7 @@ fname_hide=Oculta els fitxers .
 fname_archive=Conserva l'atribut de fitxer de DOS
 fname_hidden=Conserva l'atribut d'ocultació de DOS
 fname_system=Conserva l'atribut de sistema de DOS
+
 fperm_title1=Permisos de Fitxers
 fperm_title2=Edició de Permisos de Fitxers
 fperm_option=Opcions de Permisos de Fitxers
@@ -281,8 +327,12 @@ fperm_delro=Permet la supressió de fitxers només lectura
 fperm_forcefile=Força el mode de fitxer Unix
 fperm_forcedir=Força el mode de directori Unix
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 share_title1=Directori Compartit
 share_title2=Edició de Directori Compartit
@@ -308,8 +358,12 @@ share_misc=Opcions Miscel·lànies
 share_samedesc1=Nota - aquests valors també afectaran els valors per defecte de tots els recursos compartits. 
 share_samedesc2=Nota - aquests valors també afectaran els valors per defecte de totes les impressores compartides.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 print_title1=Opcions d'Impressió
 print_title2=Edició d'Opcions d'Impressió
@@ -322,6 +376,7 @@ print_delete=Ordre de supressió de treball
 print_pause=Ordre de suspensió de treball
 print_unresume=Ordre de represa de treball
 print_driver=Controlador d'impressora
+
 pshare_title1=Impressora Compartida
 pshare_title2=Edició d'Impressora Compartida
 pshare_title3=Creació d'Impressora Compartida
@@ -330,6 +385,7 @@ pshare_name=Nom de la Impressora
 pshare_all=Totes les Impressores Compartides
 pshare_unixprn=Impressora Unix
 pshare_spool=Directori de spool
+
 sec_index1=Seguretat
 sec_index2=Edició de la Seguretat
 sec_writable=Lectura/Escriptura
@@ -353,8 +409,12 @@ sec_rogroup=Grups només lectura
 sec_rwuser=Usuaris lectura/escriptura
 sec_rwgroup=Grups lectura/escriptura
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 esync_title=Sincronització d'Usuaris
 esync_msg=Webmin es pot configurar de manera que els canvis a la llista d'usuaris de Unix s'apliquin automàticament a la llista d'usuaris del Samba. Això només funcionarà si s'utilitza el mòdul <b>Usuaris i Grups</b> de Webmin per a afegir, suprimir o canviar usuaris.
@@ -368,8 +428,12 @@ esync_apply=Aplica
 esync_cannot=No es pot configurar la sincronització d'usuaris
 esync_egid=Hi falta el SID o RID del grup o bé és invàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 mkpass_title=Conversió d'Usuaris
 mkpass_convfail=No s'ha pogut convertir l'usuari
@@ -384,16 +448,24 @@ mkpass_user=Usuari
 mkpass_action=Acció presa
 mkpass_skipcount=S'han omès $1 usuaris en la conversió.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 savecopy_fail=No s'ha pogut crear la còpia
 savecopy_global=El nom 'global' no es pot utilitzar per a cap recurs
 savecopy_exist=Ja existeix un recurs anomenat '$1'
 savecopy_ename=No has introduït cap nom de recurs
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 saveuser_fail=No s'ha pogut desar l'usuari
 saveuser_uid='$1' no és un UID de Unix vàlid
@@ -403,6 +475,7 @@ saveuser_shell=$1 no és una shell vàlida
 saveuser_pass=No s'ha pogut canviar la contrasenya amb smbpasswd : $1
 saveuser_ews=No es pot activar l'opció 'Compte de fiabilitat d'estació de treball' per als usuaris existents
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 savefmisc_fail=No s'han pogut desar les opcions miscel·lànies
 savefmisc_number='$1' no és un nombre vàlid de connexions
@@ -411,10 +484,18 @@ savefperm_fail=No s'han pogut desar els permisos de fitxers
 savefperm_mode='$1' no és un mode de fitxer Unix vàlid
 
 =======
+=======
+
+>>>>>>> upstream/master
 savefmisc_fail=No s'han pogut desar les opcions miscel·lànies
 savefmisc_number='$1' no és un nombre vàlid de connexions
+
 savefperm_fail=No s'han pogut desar els permisos de fitxers
 savefperm_mode='$1' no és un mode de fitxer Unix vàlid
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 savefshare_fail=No s'ha pogut desar el recurs
 savefshare_nopath=No s'ha donat el camí
@@ -425,6 +506,7 @@ savefshare_owner=Hi falta l'usuari del nou directori o bé és invàlid
 savefshare_group=Hi falta grup del nou directori o bé és invàlid
 savefshare_perms=Hi falten els permisos del nou directori o bé són invàlids
 savefshare_emkdir=No s'ha pogut crear el directori: $1
+
 savemisc_fail=No s'han pogut desar les opcions
 savemisc_lockdir=El directori que conté el directori de bloqueigs no existeix
 savemisc_logdir=El directori que conté el fitxer de registre no existeix
@@ -434,8 +516,12 @@ savemisc_chroot=El directori chroot '$1' no existeix
 savemisc_smbrun=El programa smbrun '$1' no existeix o no és executable
 savemisc_time='$1' no és un marge de temps vàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 savenet_fail=No s'han pogut desar les opcions
 savenet_timeout='$1' no és un temps límit de desconnexió vàlid
@@ -443,8 +529,12 @@ savenet_ip='$1' no és un byte IP vàlid
 savenet_keep='$1' no és un interval 'keepalive' vàlid
 savenet_maxxmit='$1' no és una mida màxima de paquet vàlida
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 savepass_fail=No s'han pogut desar les opcions
 savepass_nopass=La teva versió de Samba no suporta contrasenyes xifrades
@@ -452,6 +542,9 @@ savepass_passwd=No s'ha donat cap programa de canvi de contrasenyes
 savepass_level='$1' no és un valor vàlid de caixa
 savepass_chat=El guió de canvi de contrasenya és buit
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 savepopts_fail=No s'han pogut desar les opcions de la impressora
 savepopts_number=L'espai lliure mínim ha de ser un número
@@ -460,6 +553,7 @@ saveprint_fail=No s'han pogut desar les opcions
 saveprint_printcap=El fitxer printcap '$1' no existeix
 saveprint_cache='$1' no és un temps de cau vàlid
 
+<<<<<<< HEAD
 =======
 savepopts_fail=No s'han pogut desar les opcions de la impressora
 savepopts_number=L'espai lliure mínim ha de ser un número
@@ -467,22 +561,30 @@ saveprint_fail=No s'han pogut desar les opcions
 saveprint_printcap=El fitxer printcap '$1' no existeix
 saveprint_cache='$1' no és un temps de cau vàlid
 >>>>>>> upstream/master
+=======
+>>>>>>> upstream/master
 savepshare_fail=No s'ha pogut desar la impressora compartida
 savepshare_exist=Ja existeix un recurs anomenat '$1'
 savepshare_name='$1' no és un nom de recurs vàlid
 savepshare_global=El nom 'global' no es pot utilitzar per a cap recurs
+
 savesec_fail=No s'ha pogut desar la seguretat
+
 savesmb_fail=No s'han pogut desar les opcions
 savesmb_size='$1' no és una mida vàlida de disc
 savesmb_oslevel='$1' no és una prioritat de mestre d'exploració vàlida
 savesmb_server=Has d'introduir un servidor de contrasenyes
+
 start_err=No s'han pogut iniciar els servidors Samba
 start_fail=$1 ha fallat
 start_err_wb=No s'han pogut iniciar els servidors Winbind
+
 restart_err=No s'han pogut reiniciar els servidors Samba
 restart_err_wb=No s'han pogut reiniciar els servidors Winbind
+
 swats_fail=No s'ha pogut desar el nom d'usuari
 swats_user=Falta el nom d'usuari SWAT
+
 viewu_index=Usuaris Actuals
 viewu_list=Usuaris actuals de $1
 viewu_share=Recurs
@@ -500,8 +602,12 @@ viewu_kill=Desconnecta els Usuaris Seleccionats
 viewu_enone=No has seleccionat cap usuari
 viewu_refresh=Refresca la pàgina.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_apply=S'han reiniciat els servidors Samba
 log_apply_wb=S'han reiniciat els servidors Winbind
@@ -549,8 +655,12 @@ log_delete_group=S'ha suprimit el grup Samba $1
 log_gsync=S'ha configurat la sincronització de grups Unix
 log_manual=S'ha editat manualment el fitxer de configuració $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 swat_title=Connexió SWAT
 swat_list=Connexió SWAT
@@ -564,8 +674,12 @@ swat_login=Connecta't
 swat_clear=Neteja
 swat_logout=Surt de SWAT
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 eacl_aviol=Violació del control d'accés
 eacl_np=No tens permisos per
@@ -602,6 +716,7 @@ eacl_pafs=accedir aquest directori compartit
 eacl_paps=accedir aquesta impressora compartida
 eacl_pcps=crear impressores compartides
 eacl_pcfs=crear directoris compartits
+
 acl_apply=Pot aplicar canvis i aturar Samba
 acl_view_all_con=Pot veure totes les connexions
 acl_kill_con=Pot eliminar connexions
@@ -648,6 +763,7 @@ acl_maint_groups=Pot veure, editar i afegir grups
 acl_maint_gsync=Pot mantenir la sincronia automàtica entre grups Unix i Samba
 acl_winbind=Pot vincular a dominis
 acl_bind=Pot accedir a les opcions de winbind
+
 groups_title=Grups Samba
 groups_name=Nom del grup
 groups_unix=Grup Unix
@@ -664,8 +780,12 @@ groups_add=Afegeix un nou grup Samba.
 groups_ecannot=No tens permís per veure ni editar els grups Samba
 groups_cannot=No es poden llistar els grups Samba
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 gedit_title2=Edició de Grup Samba
 gedit_title1=Creació de Grup Samba
@@ -679,14 +799,19 @@ gedit_unix=Grup Unix
 gedit_unixgr=Grup...
 gedit_none=Cap
 gedit_set=Els llistats...
+
 gsave_err=No s'ha pogut desar el grup
 gsave_eunix=Hi falta el nom del grup i GID Unix, oi bé és invàlid
 gsave_ename=Hi falta el nom del grup
 gsave_epriv=Hi falten els privilegis del grup
 gsave_elocal=Només es poden establir privilegis per a grups locals
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 gsync_title=Sincronització de Grups
 gsync_msg=Webmin es pot configurar per tal que els canvis en els grups Unix s'apliquin automàticament als grups Samba. Això només funcionarà si s'utilitza el mòdul <b>Usuaris i Grups</b> de Webmin per a afegir, suprimir o canviar grups.
@@ -699,16 +824,24 @@ gsync_priv=Privilegis dels grups nous (si són locals)
 gsync_ecannot=No tens permís per configurar la sincronització de grups
 gsync_cannot=No es pot configurar la sincronització de grups
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 check_user1=$1: El xifratge de contrasenyes no està activat a la pàgina d'<a href='$2'>Autenticació</a>.
 check_user2=$1: No estan especificats a la pàgina de <a href='$2'>Configuració del Mòdul</a> ni el fitxer de contrasenyes de Samba ni el camí de pdbedit.
 check_group1=$1: Els grups només estan suportats a la versió 3 de Samba.
 check_group2=$1: No estan especificats a la pàgina de <a href='$2'>Configuració del Mòdul</a> ni el camí de l'ordre smbgroupedit ni el de l'ordre net.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 winbind_title=Vinculació a Domini
 winbind_ecannot=No tens permís per vincular a dominis
@@ -725,6 +858,7 @@ winbind_edom=Hi falta el nom del domini
 winbind_cmd=S'està vinculant al domini amb l'ordre $1...
 winbind_failed=...ha fallat! Vegeu la sortida de sobre per veure'n la raó.
 winbind_ok=...completat
+
 bind_title=Opcions Winbind
 bind_ecannot=No tens permís per editar les opcions winbind
 bind_header=Opcions de vincle a domini Windows
@@ -744,16 +878,24 @@ bind_ecache=Hi falta el temps de cau o bé és invàlid
 bind_euid=Rang de UID invàlid - ha de ser com 20000-30000
 bind_egid=Rang de GID invàlid - ha de ser com 20000-30000
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 manual_title=Edició del Fitxer de Configuració
 manual_desc=S'està editant el fitxer de configuració de Samba $1...
 manual_err=No s'ha pogut desar el fitxer de configuració
 manual_edata=No has introduït res!
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 delete_err=No s'han pogut suprimir els recursos
 delete_enone=No has seleccionat cap recurs

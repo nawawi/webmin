@@ -124,7 +124,7 @@ http_downloading=Tniżżil
 http_done=Niżżilt $1 sa $2.
 uploading=Tella, jekk jogħġbok stenna. ..
 acl_allowed_paths=Ħalli aċċess għad-direttorji
-acl_allowed_paths2=(Għal utenti li mhumiex radikali)
+acl_allowed_paths_explain=Għal utent kapaċi għall-għeruq, jekk id-direttorju permess huwa ssettjat biss għal $HOME, ikun ekwivalenti għal / (aċċess sħiħ għad-diska)
 acl_allowed_for_edit=Tipi permessi għall-editjar minn editur builtin
 acl_work_as=Aċċess għall-fajls bħala utent Unix
 acl_root=Għerq (għotja b'attenzjoni lil utenti mhux fdati!)
@@ -155,8 +155,13 @@ menu_bookmarks=Bookmarks
 notallowed=M'għandekx permess ta ' $1. Id-direttorji permessi huma : $2 
 error_upload_emax=Fajl imtella 'huwa akbar mil-limitu ta' $1 
 extract_etype=Tip ta 'fajl ta' arkivju mhux appoġġat
+
 info_total1=Total: $1 fajl u $2 direttorju
 info_total2=Total: $1 fajls u $2 direttorju
 info_total3=Total: $1 fajl u $2 direttorji
 info_total4=Total: $1 fajls u $2 direttorji
+
 ownership=Sid il-prodott
+acls=Lista tal-Kontroll tal-Aċċess
+file_detect_encoding=Skopri awtomatikament il-kodifikazzjoni tal-fajl
+index_return=elenkar tal-fajl

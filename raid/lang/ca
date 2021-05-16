@@ -22,8 +22,12 @@ index_program=Ordre a executar quan es detecta un problema
 index_programnone=No n'executis cap
 index_monitor=Monitorització activada
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 linear=Lineal (Concatenat)
 raid0=RAID0 (A tires)
@@ -34,8 +38,12 @@ raid6=RAID6 (Paritat Dual Distribuïda)
 raid10=RAID10 (A tires i Replicat)
 blocks=blocs
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 create_title=Creació de Dispositiu RAID
 create_header=Opcions del dispositiu RAID
@@ -71,8 +79,12 @@ create_n3_layout=3 Copies Pròximes
 create_f3_layout=3 Copies Llunyanes
 create_o3_layout=3 Còpies Offset
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 view_title=Dispositiu RAID
 view_header=Opcions de dispositiu RAID
@@ -137,8 +149,12 @@ view_mountmsg2=Fes clic sobre aquest botó per utilitzar aquest dispositiu RAID 
 view_blocks=$1 blocs
 view_sparegroup=Grup d'esgrunats
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 mkfs_title=Creació de Sistema de Fitxers
 mkfs_header2=Aquest formulari permet construir un nou sistema de fitxers $2 a $1. S'esborraran <b>totes</b> les dades existents!
@@ -147,6 +163,7 @@ mkfs_err=No s'ha pogut crear el sistema de fitxers
 mkfs_exec=S'està executant l'ordre $1...
 mkfs_failed=...l'ordre ha fallat!
 mkfs_ok=...ordre completa.
+
 emkraid=<tt>mkraid</tt> ha fallat: $1
 eraidstop=<tt>raidstop</tt> ha fallat: $1
 eraidstart=<tt>raidstart</tt> ha fallat: $1
@@ -158,6 +175,7 @@ emdadmgrow=<tt>mdadm</tt> en mode <tt>--grow</tt> ha fallat: $1
 emdadmremove=<tt>mdadm</tt> en mode <tt>--manage --remove</tt> ha fallat: $1
 emdadmreplace=<tt>mdadm</tt> en mode <tt>--manage --replace</tt> ha fallat: $1
 emdadmfail=<tt>mdadm</tt> en mode <tt>--manage --fail</tt> ha fallat: $1
+
 log_create=S'ha creat el dispositiu RAID $1 $2
 log_stop=S'ha desactivat el dispositiu RAID $1
 log_start=S'ha activat el dispositiu RAID $1
@@ -171,24 +189,36 @@ log_convert_to_raid6=S'ha convertit el dispositiu RAID5 $1 a un dispositiu RAID6
 log_convert_to_raid5=S'ha convertit el dispositiu RAID6 $1 a un dispositiu RAID5
 log_notif=S'han actualitzat les opcions de notificació de problemes RAID
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 notif_err=No s'han pogut desar les opcions de notificació de problemes RAID
 notif_emailaddr=Hi falta l'adreça de notificació o bé és invàlida
 notif_emailfrom=Hi falta l'adreça From: o bé és invàlida
 notif_eprogram=Hi falta el programa a executar o bé no existeix
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 delete_title=Supressió d'Array RAID
 delete_rusure=Segur que vols suprimir l'array RAID $1, que utilitza $2 d'espai al disc?
 delete_ok=Sí, Suprimeix-lo
 delete_eidx=No has seleccionat cap array RAID!
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 remove_title=Eliminació de Partició de l'Array RAID
 remove_rusure=Segur que vols eliminar la partició $2 de l'array RAID $1?

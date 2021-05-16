@@ -8,11 +8,15 @@ index_search=Sök
 index_run=Utför ...
 index_return=processlista
 <<<<<<< HEAD
+<<<<<<< HEAD
 index_mem=<b>Fysiskt minne:</b> $1 kB totalt / $2 kB ledigt
 index_swap=<b>Swap-utrymme:</b> $1 kB totalt / $2 kB ledigt
 index_load=<b>Medelvärden för CPU-last:</b> $1 (5 min) , $2 (10 min) , $3 (15 min)
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 pid=Process-ID
 owner=Ägare
@@ -23,8 +27,12 @@ parent=Föräldraprocess
 runtime=Körtid
 nice=Nice-nivå
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 search_user=Ägd av
 search_match=Stämmer med
@@ -37,8 +45,12 @@ search_kill=Skicka signal
 search_ignore=Strunta i sökprocesserna
 search_return=sökformulär
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 run_command=Utför kommando
 run_submit=Utför
@@ -49,6 +61,7 @@ run_input=Inmatning till kommando
 run_title=Utmatning från kommando
 run_output=Utmatning från $1 ...
 run_none=Det kom ingen utmatning
+
 edit_title=Processinformation
 edit_gone=Denna process kör inte längre
 edit_sub=Delprocesses
@@ -58,15 +71,22 @@ edit_prilow=Låg prioritet
 edit_prihigh=Hög prioritet
 edit_pridef=Standard
 edit_none=Ingen
+
 kill_err=Det gick inte att skicka signal $1 till process $2
 kill_title=Skicka signal
 kill_sent=skickat
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 renice_err=Det gick inte att ge process $1 ett nytt nice-värde
 
 =======
 renice_err=Det gick inte att ge process $1 ett nytt nice-värde
+>>>>>>> upstream/master
+=======
+
+renice_err=Det gick inte att ge process $1 ett nytt nice-värde
+
 >>>>>>> upstream/master
 linux_pri=Prioritet
 linux_tty=TTY
@@ -78,8 +98,12 @@ linux_ruser=Verklig användare
 linux_rgroup=Verklig grupp
 linux_pgid=Processens grupp-ID
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 linuxstat_R=Kör
 linuxstat_S=Vilande
@@ -87,8 +111,12 @@ linuxstat_D=Sover djupt
 linuxstat_T=Stannad
 linuxstat_Z=Zombie
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 freebsd_ruser=Verklig användare
 freebsd_rgroup=Verklig grupp
@@ -100,14 +128,22 @@ freebsd_lim=Minnesbegränsning
 
 =======
 freebsd_lim=Minnesbegränsning
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 hpux_pri=Prioritet
 hpux_tty=TTY
 hpux_status=Status
 hpux_wchan=Väntar på
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 hpuxstat_0=Obefintlig
 hpuxstat_S=Vilande
@@ -118,24 +154,34 @@ hpuxstat_Z=Zombie
 hpuxstat_T=Stannad
 hpuxstat_G=Växer
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> upstream/master
+=======
+
+>>>>>>> upstream/master
 macos_tty=TTY
+
 sysv_group=Grupp
 sysv_ruser=Verklig användare
 sysv_rgroup=Verklig grupp
 sysv_pgid=Processens grupp-ID
 sysv_tty=TTY
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_run=Körde kommando "$1"
 log_kill=Skickade signal $1 till process $2
 log_kills=Skickade signal $1 till $2 processer
 log_kill_l=Skickade signal $1 till process $2
 log_kills_l=Skickade signal $1 till processerna<br>$2
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 acl_manage=Hantera processer som användare
@@ -146,7 +192,11 @@ kill_hup=&nbsp;Starta om&nbsp;
 kill_stop=&nbsp;&nbsp;Stanna&nbsp;&nbsp;&nbsp;
 kill_cont=&nbsp;Fortsätt&nbsp;&nbsp;
 =======
+=======
+
+>>>>>>> upstream/master
 acl_manage=Hantera processer som användare
+
 kill_kill=Slå ihjäl process
 kill_term=  Avbryt   
 kill_hup= Starta om 

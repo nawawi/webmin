@@ -151,7 +151,8 @@ while(1) {
 			if (open(FILE, ">$file")) {
 				binmode(FILE);
 				print STDERR "fastrpc: tcpwrite $file writing\n" if ($gconfig{'rpcdebug'});
-				while(read(TRANS, $buf, 1024) > 0) {
+				my $bs = &get_buffer_size();
+				while(read(TRANS, $buf, $bs) > 0) {
 					local $ok = (print FILE $buf);
 					if (!$ok) {
 						$err = "Write to $file failed : $!";
@@ -180,7 +181,8 @@ while(1) {
 		local ($data, $got);
 		open(FILE, "<$arg->{'file'}");
 		binmode(FILE);
-		while(read(FILE, $got, 1024) > 0) {
+		my $bs = &get_buffer_size();
+		while(read(FILE, $got, $bs) > 0) {
 			$data .= $got;
 			}
 		close(FILE);

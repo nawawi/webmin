@@ -25,6 +25,7 @@ index_cms=Statistik för cache-hanteringen
 index_rebuild=Töm och bygg upp cachen igen
 index_calamaris=Calamaris logganalysering
 index_return=index
+
 buttsave=Spara
 buttdel=Ta bort
 buttcreat=Skapa
@@ -35,8 +36,12 @@ none=Ingen
 on=På
 off=Av
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 acl_header1=Skapa åtkomstlista
 acl_header2=Ändra åtkomstlista
@@ -80,8 +85,12 @@ acl_buttsave=Spara
 acl_buttdel=Ta bort
 acl_return=åtkomstlista
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 aclsave_failsave=Det gick inte att spara åtkomstlista
 aclsave_faildel=Det gick inte att ta bort åtkomstlista
@@ -101,15 +110,21 @@ aclsave_esmin=Felaktigt startklockslag (minuter)
 aclsave_eemin=Felaktigt slutklockslag (minuter)
 aclsave_efile=Du får inte skriva i ACL-filen '$1'
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 cach_err=Fel
 cach_nfound=Squids cache-hanteringsprogram <tt>$1</tt> finns inte på ditt system. Dina <a href=/config.cgi?$2 >modulinställningar</a> kanske är felaktiga.
 cach_return=squid-index
 
+<<<<<<< HEAD
 =======
 cach_err=Fel
 cach_nfound=Squids cache-hanteringsprogram <tt>$1</tt> finns inte på ditt system. Dina <a href=/config.cgi?$2 >modulinställningar</a> kanske är felaktiga.
 cach_return=squid-index
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 chown_header=Ändra ägare
 chown_stop=Stannar Squid ...
@@ -119,8 +134,12 @@ chown_restart=Startar Squid igen ...
 chown_failrestart=Det gick inte att starta Squid igen ...
 chown_return=squid-index
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 clear_header=Töm och bygg upp cachen igen
 clear_msgclear=Vill du verkligen tömma och bygga upp Squid-cachen igen? <b>Alla</b> filer i cachen kommer att tas bort och Squid-servern startas om.
@@ -133,8 +152,12 @@ clear_init=Initialiserar Squid-cachen med kommando <tt>$1</tt> ...
 clear_failrestart=Det gick inte att starta om Squid ...
 clear_return=squid-index
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 eacl_header=Åtkomstkontroll
 eacl_acls=Listor för åtkomstkontroll (ACL)
@@ -149,6 +172,7 @@ eacl_acls1=Listor
 eacl_move=Flytta
 eacl_nopr=Du har inte definierat någon proxy-begränsning
 eacl_addpr=Lägg till proxy-begränsning
+
 eacl_icpr=ICP-begränsningar
 eacl_noicpr=Du har inte definierat någon ICP-begränsning
 eacl_addicpr=Lägg till ICP-begränsning
@@ -156,8 +180,12 @@ eacl_return=squid-index
 eacl_allow=Tillåt
 eacl_deny=Spärra
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 eadm_header=Administrativa inställningar
 eadm_aao=Administrativa och annonseringsinställningar
@@ -184,6 +212,7 @@ eadm_caf=Cache-annonseringsfil
 eadm_annp=Annonseringsintervall
 eadm_buttsave=Spara
 eadm_return=squid-index
+
 eauth_header=Proxy-autentisering
 eauth_aopt=Autentiseringsinställningar
 eauth_puf=Proxy-användarfil
@@ -197,8 +226,12 @@ eauth_nopusers=Du har inte definierat någon proxy-användare.
 eauth_addpuser=Lägg till proxy-användare
 eauth_return=squid-index
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 ec_header=Cache-inställningar
 ec_cro=Inställningar för cachning och förfrågningar
@@ -248,8 +281,12 @@ ec_wrp=Port för WAIS-relä
 ec_buttsave=Spara
 ec_return=squid-index
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 ech_header=Lägg till cache-dator
 ech_header1=Ändra cache-dator
@@ -288,8 +325,12 @@ ech_buttsave=Spara
 ech_buttdel=Ta bort
 ech_return=cache-lista
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 eicp_header=Övriga cachar
 eicp_opcs=Övriga proxy-cache-servrar
@@ -323,8 +364,12 @@ eicp_never=ACL:er som aldrig ska hämtas direkt
 eicp_nonever=Du har inte angivit någon ACL som aldrig ska hämtas direkt
 eicp_addnever=Lägg till ACL:er som aldrig ska hämtas direkt
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 elogs_header=Loggning
 elogs_lalo=Inställningar för loggning
@@ -344,6 +389,7 @@ elogs_ln=Loggar nätmask
 elogs_do=Debuggningsinställningar
 elogs_mht=Tabell över MIME-huvuden
 elogs_return=squid-index
+
 emem_dheader=Minnes- och diskutnyttjande
 emem_header=Minnesutnyttjande
 emem_maduo=Inställningar för minnes- och diskutnyttjande
@@ -369,8 +415,12 @@ emem_hlru=Totalt minst använd
 emem_return=squid-index
 emem_mrp=Minnesutbytespolicy
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 emisc_header=Blandade inställningar
 emisc_mo=Blandade inställningar
@@ -402,8 +452,12 @@ emisc_hah=HTTP Accel-dator
 emisc_hap=HTTP Accel-port
 emisc_hawp=HTTP Accel med proxy
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 eports_header=Portar och nätverk
 eports_pano=Inställningar för portar och nätverk
@@ -422,8 +476,12 @@ eports_trb=TCP-mottagningsbuffer
 eports_od=Standard-OS
 eports_return=squid-index
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 eprogs_header=Hjälpprogram
 eprogs_chpo=Inställningar för cache-hjälpprogram
@@ -445,8 +503,12 @@ eprogs_cap=Eget autentiseringsprogram
 eprogs_noap=Antal autentiseringsprogram
 eprogs_return=squid-index
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 euser_header=Skapa proxy-användare
 euser_header1=Ändra proxy-användare
@@ -456,8 +518,12 @@ euser_p=Lösenord
 euser_u1=Oförändrat
 euser_return=användarlista
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 ahttp_header=Ny proxy-begränsning
 ahttp_header1=Ändra proxy-begränsning
@@ -469,11 +535,17 @@ ahttp_ma=Matcha åtkomstlistor
 ahttp_dma=Matcha inte åtkomstlistor
 ahttp_return=Åtkomstlista
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 sahttp_ftspr=Det gick inte att spara proxy-begränsning
 
 =======
 sahttp_ftspr=Det gick inte att spara proxy-begränsning
+>>>>>>> upstream/master
+=======
+
+sahttp_ftspr=Det gick inte att spara proxy-begränsning
+
 >>>>>>> upstream/master
 aicp_header=Ny ICP-begränsning
 aicp_header1=Ändra ICP-begränsning
@@ -485,11 +557,17 @@ aicp_ma=Matcha åtkomstlistor
 aicp_dma=Matcha inte åtkomstlistor
 aicp_return=Åtkomstlista
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 saicp_ftsir=Det gick inte att spara ICP-begränsning
 
 =======
 saicp_ftsir=Det gick inte att spara ICP-begränsning
+>>>>>>> upstream/master
+=======
+
+saicp_ftsir=Det gick inte att spara ICP-begränsning
+
 >>>>>>> upstream/master
 icache_ftic=Det gick inte att initialisera cache
 icache_ymcautrsa=Du måste ange vilken användare du vill köra Squid som
@@ -497,11 +575,17 @@ icache_itscwtc=Initialiserar Squid-cachen med kommando <tt>$1</tt> ...
 icache_return=squid-index
 icache_title=Initialisera cache
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 restart_ftrs=Det gick inte att ändra inställningar för Squid
 
 =======
 restart_ftrs=Det gick inte att ändra inställningar för Squid
+>>>>>>> upstream/master
+=======
+
+restart_ftrs=Det gick inte att ändra inställningar för Squid
+
 >>>>>>> upstream/master
 sadmin_ftsao=Det gick inte att spara administrativa inställningar
 sadmin_header=Ändra ägare
@@ -513,16 +597,24 @@ sadmin_inavh='$1' är inte ett giltigt datornamn
 sadmin_inavap='$1' är inte ett giltigt annonseringsintervall
 sadmin_inavp='$1' är inte en giltig port
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 sauth_ftsao=Det gick inte att spara autentiseringsinställningar
 sauth_iomuf=Användarfilnamn saknas eller är felaktigt angivet
 sauth_iomd=Domän saknas eller är felaktigt angiven
 sauth_msg1=Din version av Squid är inte kompilerad med proxy-autentiseringsstöd.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 scache_ftsco=Det gick inte att spara cache-inställningar
 scache_emsg0=Du måste ange minst en cache-katalog
@@ -541,8 +633,12 @@ scache_emsg12='$1' är inte en giltig katalogstorlek
 scache_emsg13='$1' är inte en giltig dator
 scache_emsg14='$1' är inte en giltig port
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 schost_ftsc=Det gick inte att spara cache
 schost_emsg1='$1' är inte ett giltigt cache-datornamn
@@ -551,6 +647,7 @@ schost_emsg3='$1' är inte en giltig ICP-port
 schost_emsg4='$1' är inte en giltig livstid
 schost_emsg5='$1' är inte en giltig viktning
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 sicp_ftsco=Det gick inte att spara cache-inställningar
 sicp_emsg1='$1' är inte en giltig tidsgräns
@@ -558,6 +655,12 @@ sicp_emsg1='$1' är inte en giltig tidsgräns
 =======
 sicp_ftsco=Det gick inte att spara cache-inställningar
 sicp_emsg1='$1' är inte en giltig tidsgräns
+>>>>>>> upstream/master
+=======
+
+sicp_ftsco=Det gick inte att spara cache-inställningar
+sicp_emsg1='$1' är inte en giltig tidsgräns
+
 >>>>>>> upstream/master
 slogs_ftslo=Det gick inte att spara logginställningar
 slogs_emsg1='$1' är inte ett absolut filnamn
@@ -566,8 +669,12 @@ slogs_emsg3=Katalogen '$1' finns inte
 slogs_emsg4='$1' är inte en giltig nätmask
 slogs_emsg5='$1' är inte giltiga debuggningsinställningar
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 smem_ftsmo=Det gick inte att spara minnesinställningar
 smem_emsg1='$1' är inte en giltig cache-storlek
@@ -575,8 +682,12 @@ smem_emsg2='$1' är inte ett giltigt högvattenmärke
 smem_emsg3='$1' är inte ett giltigt lågvattenmärke
 smem_emsg4='$1' är inte en giltig objektstorlek
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 smisc_ftso=Det gick inte att spara inställningar
 smisc_emsg1='$1' är inte ett giltigt rotationsantal
@@ -584,16 +695,24 @@ smisc_emsg2='$1' är inte en giltig domän
 smisc_emsg3='$1' är inte en giltig proxy
 smisc_emsg4='$1' är inte ett giltigt hops-antal
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 sport_ftspo=Det gick inte att spara port-inställningar
 sport_emsg1='$1' är inte ett giltigt portnummer
 sport_emsg2='$1' är inte en giltig adress
 sport_emsg3='$1' är inte en giltig bufferstorlek
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 sprog_ftshpo=Det gick inte att spara inställningar för hjälpprogram
 sprog_emsg1=FTP-inställningar saknas
@@ -605,6 +724,7 @@ sprog_emsg6='$1' är inte en giltig kolumnbredd
 sprog_emsg7=Du har inte angivit någon DNS-server
 sprog_emsg8='$1' är inte en giltig IP-adress
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 suser_ftsu=Det gick inte att spara användare
 suser_emsg1=Användarnamn saknas eller är felaktigt angivet
@@ -613,16 +733,27 @@ suser_emsg1=Användarnamn saknas eller är felaktigt angivet
 suser_ftsu=Det gick inte att spara användare
 suser_emsg1=Användarnamn saknas eller är felaktigt angivet
 >>>>>>> upstream/master
+=======
+
+suser_ftsu=Det gick inte att spara användare
+suser_emsg1=Användarnamn saknas eller är felaktigt angivet
+
+>>>>>>> upstream/master
 start_ftsq=Det gick inte att starta Squid
 stop_ftsq=Det gick inte att stanna Squid
+
 calamaris_title=Calamaris logganalysering
 calamaris_last=Begränsar analysen till de senaste $1 loggraderna ...
 calamaris_eprog=Den körbara Calamaris-filen $1 kunde inte hittas. Den kanske inte har installerats på systemet, eller också är dina <a href='$2'>modulinställningar</a> felaktiga.
 calamaris_elogs=Loggkatalogen $1 innehåller inte några <tt>access.log</tt>-filer. squid kanske inte har körts än, eller också är dina <a href='$2'>modulinställningar</a> felaktiga.
 calamaris_gen=Rapport genererad $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 lib_emsg1='$1' är inte en giltig IP-adress
 lib_seconds=sekunder
@@ -668,8 +799,12 @@ lib_buttac=Genomför ändringar
 lib_buttss=Stanna Squid
 lib_buttss1=Starta Squid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_ports=Ändrade port- och nätverksinställningar
 log_icp=Ändrade övriga cache-inställningar
@@ -710,6 +845,7 @@ log_never_modify=Modifierade ACL:er som aldrig ska hämtas direkt
 log_never_delete=Tog bort ACL:er som aldrig ska hämtas direkt
 log_never_move=Flyttade ACL:er som aldrig ska hämtas direkt
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 acl_root=Rotkatalog för ACL-filer
 
@@ -718,10 +854,18 @@ always_edit=Ändra lista att hämta direkt
 always_header=Hämta förfrågningar direkt, som matchar ACL:erna
 
 =======
+=======
+
+>>>>>>> upstream/master
 acl_root=Rotkatalog för ACL-filer
+
 always_create=Lägg till lista att hämta direkt
 always_edit=Ändra lista att hämta direkt
 always_header=Hämta förfrågningar direkt, som matchar ACL:erna
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 never_create=Lägg till lista som inte ska hämtas direkt
 never_edit=Ändra lista som inte ska hämtas direkt

@@ -4,6 +4,7 @@ index_userlist=användarlista
 index_fileshare=filresurs
 index_printershare=skrivarresurs
 index_shareconf=resurskonfiguration
+
 index_sharename=Resursnamn
 index_path=Sökväg
 index_security=Säkerhet
@@ -30,8 +31,12 @@ index_startmsg=Samba-servrarna verkar inte köras på ditt system. Detta medför
 index_restart=Starta om Samba-servrar
 index_restartmsg=Tryck på denna knapp för att starta om de Samba-servrar som körs på ditt system. De inställningar du nu har gjort kommer att tas i drift.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 config_mins=minuter
 config_secs=sekund
@@ -40,9 +45,13 @@ config_never=Aldrig
 config_all=Alla
 config_neither=Ingen
 <<<<<<< HEAD
+<<<<<<< HEAD
 config_default=Standard
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 global_title=Globala inställningar
 global_unixnetwork=Unix-nätverk
@@ -54,11 +63,15 @@ global_filedefault=Standardinställningar för filresurs
 global_prndefault=Standardinställningar för skrivarresurs
 global_password=Krypterade lösenord
 <<<<<<< HEAD
+<<<<<<< HEAD
 global_edit=Ändra Samba-användare och lösenord
 global_convert=Gör om Unix-användare till Samba-användare
 global_sync=Gör inställningar för automatisk synkronisering mellan Unix- och Samba-användare
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 error_nosamba=Samba-serverprogrammet <tt>$1</tt> kunde inte hittas. Samba verkar inte ha installerats på ditt system, eller också är dina <a href="$2">modulinställningar</a> felaktiga.
 error_version=Webmin kunde inte hitta något versionsnummer på ditt Samba-serverprogram <tt>$1</tt>. Kontrollera i dina <a href="$2">modulinställningar</a> att du verkligen har angivit rätt sökväg.
@@ -68,8 +81,12 @@ error_delshare=Det gick inte att ta bort resursen
 error_delcopy=Resursen '$1' kopierar denna resurs
 error_savename=Det gick inte att spara filnamnet
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 convert_title=Gör om Unix-användare till Samba-användare
 convert_msg=I detta formulär kan du synkronisera listorna med Unix- och Samba-användare. Om Samba kör med <a href=$1>krypterade lösenord</a>, kommer en separat lista med användare och lösenord att användas istället för systemets lista med användare.
@@ -83,8 +100,12 @@ convert_lock=Kontot låst
 convert_passwd=Använd detta lösenord
 convert_convert=Flytta över användare
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 misc_title=Blandade inställningar
 misc_debug=Debuggningsnivå
@@ -100,8 +121,12 @@ misc_smbrun=Sökväg till <tt>smbrun</tt>
 misc_clienttime=Client time offset
 misc_readprediction=Läsa i förväg?
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 net_title=Inställningar för Unix-nätverk
 net_idle=Väntetid före nedkoppling
@@ -118,8 +143,12 @@ net_maxpacket=Maximal paketstorlek
 net_listen=Lyssna på adress
 net_socket=Socket-inställningar
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 passwd_title=Lösenordsinställningar
 passwd_encrypt=Ska krypterade lösenord användas?
@@ -134,8 +163,12 @@ passwd_map=Uppslagning av användarnamn
 passwd_unixuser=Unix-användare
 passwd_winuser=Windows-användare
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 print_title=Skrivarinställningar
 print_style=Unix-utskrifter
@@ -143,8 +176,12 @@ print_show=Visa alla skrivare?
 print_printcap=Printcap-fil
 print_cachetime=Hur länge ska skrivarstatus cachas?
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 smb_title=Inställningar för Windows-nätverk
 smb_workgroup=Arbetsgrupp
@@ -172,20 +209,27 @@ smb_nowhere=Ingenstans
 smb_fromlist=Från lista ...
 smb_ip=IP-adress
 smb_asworkgroup=<b>Som arbetsgrupp</b> (valfritt)
+
 create_title=Skapa kopia
 create_msg=En kopierad resurs ärver alla standardvärden från den valda resursen. Om originalet ändras kommer kopian också att göra det.
 create_from=Resurs som ska kopieras:
 create_name=Namn på ny resurs:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 smbuser_title=Samba-användare
 smbuser_list=Lista över Samba-användare
 smbuser_nouser=Du har inte definierat några Samba-användare
 
+<<<<<<< HEAD
 =======
 smbuser_title=Samba-användare
 smbuser_list=Lista över Samba-användare
 smbuser_nouser=Du har inte definierat några Samba-användare
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 euser_title=Ändra Samba-användare
 euser_name=Användarnamn
@@ -204,8 +248,12 @@ euser_nopwrequired=Ingen lösenord behövs
 euser_disable=Kontot avstängt
 euser_trust=Betrott arbetsstationskonto
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 fmisc_title=Blandade standardinställningar för filer
 fmisc_for=För resurs <tt>$1</tt>
@@ -223,8 +271,12 @@ fmisc_disconncmd=Kommando vid nedkoppling
 fmisc_rootconn=Kommando vid uppkoppling <i>som root</i>
 fmisc_rootdisconn=Kommando vid nedkoppling <i>som root</i>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 fname_title1=Standardvärden för filnamngivning
 fname_title2=Ändra filnamngivning
@@ -241,8 +293,12 @@ fname_archive=Spara DOS-arkivflaggan?
 fname_hidden=Spara DOS Gömd-flagga?
 fname_system=Spara DOS systemflagga?
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 fperm_title1=Standardvärden för filrättigheter
 fperm_title2=Ändra filrättigheter
@@ -257,8 +313,12 @@ fperm_delro=Kunna ta bort filer som endast är läsbara?
 fperm_forcefile=Använd alltid Unix-filmode
 fperm_forcedir=Använd alltid Unix-katalogmode
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 share_title1=Standardvärden för filresurser
 share_title2=Ändra filresurs
@@ -278,8 +338,12 @@ share_permission=Filrättigheter
 share_naming=Filnamngivning
 share_misc=Blandade inställningar
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 print_title1=Standardinställningar för skrivare
 print_title2=Ändra skrivarinställningar
@@ -293,8 +357,12 @@ print_pause=Kommando för att stanna utskriftsjobb
 print_unresume=Kommando för att inte återuppta utskriftsjobb
 print_driver=Skrivardrivrutin
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 pshare_title1=Standardvärden för skrivarresurser
 pshare_title2=Ändra skrivarresurs
@@ -305,8 +373,12 @@ pshare_all=Resurs för alla skrivare
 pshare_unixprn=Unix-skrivare
 pshare_spool=Spool-katalog
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 sec_index1=Standardvärden för åtkomst
 sec_index2=Ändra åtkomst
@@ -331,8 +403,12 @@ sec_rogroup=Grupper som endast får läsa
 sec_rwuser=Användare som får läsa och skriva
 sec_rwgroup=Grupper som får läsa och skriva
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 esync_title=Användarsynkronisering
 esync_msg=Webmin kan ställas in så att ändringar av Unix-användare automatiskt också görs för motsvarande Samba-användare. Detta fungerar dock bara då Webmin-modulen <tt>Användare och grupper</tt> används för att lägga till, ta bort eller ändra användare.
@@ -341,8 +417,12 @@ esync_chg=Ändra Samba-användaren när motsvarande Unix-användare ändras
 esync_del=Ta bort Samba-användaren när motsvarande Unix-användare tas bort
 esync_apply=Ta i drift
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 mkpass_title=Gör om användare
 mkpass_convfail=Det gick inte att göra om användare
@@ -353,6 +433,7 @@ mkpass_update=uppdateras
 mkpass_del=tas bort
 mkpass_passfail=Det gick inte att sätta lösenordet
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 savecopy_fail=Det gick inte att skapa en kopia
 savecopy_global=Du får inte använda namnet 'global' på en resurs
@@ -362,6 +443,13 @@ savecopy_exist=Det finns redan en resurs med namnet '$1'
 savecopy_fail=Det gick inte att skapa en kopia
 savecopy_global=Du får inte använda namnet 'global' på en resurs
 savecopy_exist=Det finns redan en resurs med namnet '$1'
+>>>>>>> upstream/master
+=======
+
+savecopy_fail=Det gick inte att skapa en kopia
+savecopy_global=Du får inte använda namnet 'global' på en resurs
+savecopy_exist=Det finns redan en resurs med namnet '$1'
+
 >>>>>>> upstream/master
 saveuser_fail=Det gick inte att spara användare
 saveuser_uid='$1' är inte ett giltigt Unix-UID
@@ -370,6 +458,9 @@ saveuser_home=Hemkatalogen '$1' finns inte
 saveuser_shell=$1 är inte ett giltigt skal
 saveuser_pass=Det gick inte att byta lösenord med smbpasswd: $1
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 savefmisc_fail=Det gick inte att spara blandade inställningar
 savefmisc_number='$1' är inte ett giltigt antal uppkopplingar
@@ -377,11 +468,14 @@ savefmisc_number='$1' är inte ett giltigt antal uppkopplingar
 savefperm_fail=Det gick inte att spara filrättigheter
 savefperm_mode='$1' är inte en giltig Unix-filmod
 
+<<<<<<< HEAD
 =======
 savefmisc_fail=Det gick inte att spara blandade inställningar
 savefmisc_number='$1' är inte ett giltigt antal uppkopplingar
 savefperm_fail=Det gick inte att spara filrättigheter
 savefperm_mode='$1' är inte en giltig Unix-filmod
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 savefshare_fail=Det gick inte att spara resursen
 savefshare_nopath=Du har inte angivit någon sökväg
@@ -389,8 +483,12 @@ savefshare_exist=Det finns redan en resurs med namnet '$1'
 savefshare_mode='$1' är inte ett giltigt resursnamn
 savefshare_global=Du får inte använda namnet 'global' på en resurs
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 savemisc_fail=Det gick inte att spara inställningarna
 savemisc_lockdir=Katalogen som ska innehålla låskatalogen finns inte
@@ -400,6 +498,7 @@ savemisc_overlap='$1' är inte en giltig storlek för överskjutande läsning
 savemisc_chroot=chroot-katalogen '$1' finns inte
 savemisc_smbrun=smbrun-programmet '$1' finns inte eller går inte att köra
 savemisc_time='$1' är inte en giltig time offset
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 save_net_fail=Det gick inte att spara inställningar
@@ -432,6 +531,8 @@ save_smb_fail=Det gick inte att spara inställningar
 save_smb_size='$1' är inte en giltig diskstorlek
 save_smb_oslevel='$1' är inte en giltig prioritet för master browser
 save_smb_server=Du måste ange en lösenordsserver
+=======
+>>>>>>> upstream/master
 
 start_err=Det gick inte att starta någon Samba-server
 start_fail=$1 misslyckades
@@ -439,11 +540,14 @@ start_fail=$1 misslyckades
 swats_fail=Det gick inte att spara användarnamn
 swats_user=SWAT-användarnamn fattas
 
+<<<<<<< HEAD
 =======
 start_err=Det gick inte att starta någon Samba-server
 start_fail=$1 misslyckades
 swats_fail=Det gick inte att spara användarnamn
 swats_user=SWAT-användarnamn fattas
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 viewu_index=Uppkopplade användare
 viewu_list=Användare uppkopplade till $1
@@ -456,8 +560,12 @@ viewu_pid=Process-ID
 viewu_msg1=Klicka på ett process-ID i listan ovan för att koppla ned användaren.
 viewu_msg2=För tillfället är ingen användare uppkopplad
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_apply=Startade om Samba-servrar
 log_start=Startade Samba-servrar
@@ -488,8 +596,12 @@ log_copy=Kopierade resurs $2 to $1
 log_save_euser=Modifierade Samba-användare $1
 log_delete_euser=Tog bort Samba-användare $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 swat_title=SWAT-inloggning
 swat_list=SWAT-inloggning
@@ -502,8 +614,12 @@ swat_password=Lösenord
 swat_login=Logga in
 swat_clear=Rensa
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 eacl_aviol=Rättighetsöverträdelse
 eacl_np=Du har inte rättighet att
@@ -548,8 +664,12 @@ eacl_paps=komma åt denna skrivarresurs
 eacl_pcps=lägga till en skrivarresurs
 eacl_pcfs=lägga till en filresurs
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 acl_apply=Kunna ta ändringar i drift?
 acl_view_all_con=Kunna se alla förbindelser?

@@ -25,8 +25,12 @@ inittab_ctrlaltdel=Ctrl-Alt-Del
 inittab_kbdrequest=Specjalna kombinacja klawiszy
 inittab_return=tablicy inittaba
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_inittab_err=Nie masz uprawnień do zmiany procesów
 edit_inittab_title=Zmień proces $1
@@ -34,6 +38,9 @@ edit_inittab_details=Dane procesu
 edit_inittab_del=Usuń
 edit_inittab_save=Zachowaj
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 new_inittab_err=Nie masz uprawnień do tworzenia nowych procesów
 new_inittab_title=Nowy proces
@@ -42,12 +49,15 @@ save_inittab_err=Nie masz uprawnień do zachowania procesu
 save_inittab_noid=Błąd, nie podano nazwy procesu
 save_inittab_already=Błąd, ta nazwa procesu już istnieje
 
+<<<<<<< HEAD
 =======
 new_inittab_err=Nie masz uprawnień do tworzenia nowych procesów
 new_inittab_title=Nowy proces
 save_inittab_err=Nie masz uprawnień do zachowania procesu
 save_inittab_noid=Błąd, nie podano nazwy procesu
 save_inittab_already=Błąd, ta nazwa procesu już istnieje
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 log_modify=Zmieniono proces inita $1
 log_rename=Zmieniono nazwę procesu inita $1 na $2

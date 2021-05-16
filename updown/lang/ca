@@ -41,8 +41,12 @@ index_email=Envia un correu quan s'hagin fet les descàrregues
 index_emailto=Sí, a l'adreça
 index_email2=Envia un correu quan s'hagin fet les càrregues
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 upload_title=Càrrega de Fitxers
 upload_err=No s'han pogut carregar els fitxers
@@ -68,8 +72,12 @@ upload_saved=...s'ha escrit $1
 upload_unzipping=S'està extraient el fitxer $1...
 upload_unzipdone=...$1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 download_err=No s'ha pogut desar la descàrrega
 download_enone=No has introduït cap URL per descarregar
@@ -83,15 +91,21 @@ download_eaccess=No tens permís per descarregar fitxers a $1
 download_eucannot=No tens permís per descarregar fitxers com a usuari $1
 download_egcannot=El grup seleccionat no conté l'usuari seleccionat.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 cancel_err=No s'han pogut cancel·lar les descàrregues
 cancel_enone=No n'hi ha cap de seleccionada
 cancel_ecannot=No tens permís per cancel·lar descàrregues de l'usuari $1
 
+<<<<<<< HEAD
 =======
 cancel_err=No s'han pogut cancel·lar les descàrregues
 cancel_enone=No n'hi ha cap de seleccionada
 cancel_ecannot=No tens permís per cancel·lar descàrregues de l'usuari $1
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 log_cancel=S'han cancel·lat $1 descàrregues
 log_upload_l=S'ha(n) carregat el(s) fitxer(s) $1
@@ -101,8 +115,12 @@ log_download=S'ha(n) descarregat $1 URL(s)
 log_sdownload_l=S'ha planificat la descàrrega dels URLs $1
 log_sdownload=S'ha planificat la descàrrega de $1 URL(s)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 acl_users=Pot carregar i descarregar fitxers com a usuari
 acl_all=Tots els usuaris
@@ -118,6 +136,7 @@ acl_max=Mida màxima de càrrega
 acl_unlim=Il·limitada
 acl_b=bytes
 acl_fetch=Pot descarregar fitxers al PC
+
 fetch_err=No s'ha pogut descarregar el fitxer 
 fetch_ecannot=No tens permís per descarregar fitxers a un PC
 fetch_efile=No has introduït cap nom de fitxer
@@ -127,8 +146,12 @@ fetch_eaccess=No tens permís per descarregar fitxers des de $1
 fetch_ezip=No es pot descarregar un directori a menys que l'ordre <tt>zip</tt> estigui instal·lada
 fetch_eroot=El directori arrel no es pot descarregar!
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 email_downmsg=S'ha completat la descàrrega següent:
 email_downurl=URL: $1

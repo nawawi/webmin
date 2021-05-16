@@ -32,10 +32,16 @@ if (-r "$mdir/config_info.pl") {
 	}
 if (!$func) {
 	# Use config.info to parse config inputs
-	&parse_config(\%newconfig, "$mdir/config.info", $m);
+	my $cdir;
+	foreach my $d (map { $_."/".$m } @theme_root_directories) {
+		$cdir = $d if (-r $d."/config.info");
+		}
+	$cdir ||= $mdir;
+	&parse_config(\%newconfig, "$cdir/config.info", $m);
 	}
 &write_file("$config_directory/$m/config", \%newconfig);
 &unlock_file("$config_directory/$m/config");
+&save_module_preferences($m, \%newconfig);
 
 # Call any post-config save function
 local $pfn = "${m}::config_post_save";

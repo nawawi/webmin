@@ -14,8 +14,12 @@ index_newrpc=Yeni bir RPC programı oluştur
 index_apply=Değişiklikleri Uygula
 index_applymsg=Bu butonu tıkladığınızda çalışan inetd işlemine SIGHUP sinyali gönderilerek mevcut yapılandırma uygulanacaktır.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 error_restart=Inetd'nin tekrar başlatılmasında hata oluştu
 error_saverpc=RPC programının kaydedilmesinde hata oluştu
@@ -43,8 +47,12 @@ error_serviceexist=Servisin kullandığı port $1 ve protokol $2 her zaman mevcu
 error_nameexist=Servis $1 ve protokol $2 her zaman mevcuttur.
 error_inetservice=İnternet servisi $1 ve protokol $2 her zaman mevcuttur.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 editrpc_title1=RPC Programı Oluştur
 editrpc_title2=RPC Programı Değiştir
@@ -69,8 +77,12 @@ editrpc_max=En çok dakika başına
 editrpc_default=Öntanımlı
 editrpc_execasgrp=Grup olarak çalıştır
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 editserv_title1=İnternet Servisi Oluştur
 editserv_title2=İnternet Servisi Değiştir
@@ -84,8 +96,12 @@ editserv_execlogin=Giriş Sınıfı Olarak Çalıştır
 editserv_wrapper=TCP-Gönderimi
 editserv_inetd=<tt>inetd</tt>'ye dahil et
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_apply=Değişiklikler uygulandı
 log_create_serv=$1 servisi oluşturuldu
@@ -101,8 +117,12 @@ log_create_prog_l=Program $3 için port $2'deki $1 servisi oluşturuldu
 log_modify_prog_l=Program $3 için port $2'deki $1 servisi değiştirildi
 log_delete_prog_l=Program $3 için port $2'deki $1 servisi silindi
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_create_rpc=RPC $1 oluşturuldu
 log_modify_rpc=RPC $1 değiştirildi

@@ -5,8 +5,12 @@ index_add=Lägg till en PAM-tjänst
 index_return=tjänstelista
 index_none=Det gick inte att hitta någon PAM-inställningsfil på ditt system i katalogen $1. PAM kanske inte stöds, eller också är dina <a href='$2'>modulinställningar</a> felaktiga.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 desc_su=Byt användare
 desc_login=Logga in lokalt eller från annan dator
@@ -53,8 +57,12 @@ desc_qpop=POP-e-postserver
 desc_sshd=SSH-inloggning
 desc_squid=Squid-proxyserver
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_title=Ändra PAM-tjänst
 edit_header=Information om PAM-tjänst
@@ -73,8 +81,12 @@ edit_delete=Ta bort PAM-tjänst
 edit_move=Flytta
 edit_return=PAM-tjänst
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 pam_pwdb.so=Autentisering med Unix-lösenord
 pam_securetty.so=Utför säker TTY-kontroll för root
@@ -116,6 +128,7 @@ pam_filter.so=Inmatnings/utmatningsfilter
 pam_desgold.so=Autentisering med DESGold-smartcard
 pam_console.so=Kontrollera endast för konsolen
 pam_xauth.so=X-autentisering
+
 control_requisite=Obligatoriskt
 control_required=Nödvändigt
 control_sufficient=Tillräckligt
@@ -125,8 +138,12 @@ control_desc_required=Skicka felmeddelande om att autentiseringen misslyckats n�
 control_desc_sufficient=Skicka meddelande om lyckad autentisering direkt den har lyckats
 control_desc_optional=Det spelar ingen roll om autentiseringen lyckas eller ej.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 create_title=Skapa PAM-tjänst
 create_header=Inställningar för ny PAM-tjänst
@@ -137,8 +154,12 @@ create_0=Ingen
 create_1=Unix-autentisering
 create_2=Neka all åtkomst
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 mod_edit=Ändra PAM-modul
 mod_create=Lägg till PAM-modul
@@ -154,16 +175,24 @@ mod_control=Kontrollnivå
 mod_args=Argument till modulen
 mod_err=Det gick inte att spara modulen
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 pwdb_shadow=Ska en skugglösenordsfil användas?
 pwdb_nullok=Ska tomma lösenord accepteras?
 pwdb_md5=Ska MD5-krypterade lösenord användas?
 pwdb_nodelay=Fördröjning efter misslyckat inloggningsförsök?
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 listfile_item=Sök i fil efter
 listfile_item_user=användarnamn
@@ -182,34 +211,49 @@ listfile_all=Alla användare
 listfile_user=Endast användare
 listfile_group=Endast grupp
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 cracklib_type=Ange lösenordstyp i prompten
 cracklib_retry=Maximalt antal försök innan autentiseringen misslyckas
 cracklib_eretry=Antalet försök har inte angivits eller är felaktigt angivet
 cracklib_etype=Lösenordstyp saknas eller är felaktigt angiven
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 rhosts_equiv=Läsa filen <tt>/etc/hosts.equiv</tt>?
 rhosts_rhosts=Läsa användarnas <tt>.rhosts</tt>-filer?
 rhosts_promiscuous=<tt>+</tt>-post tillåter alla datorer?
 rhosts_suppress=Logga autentiseringsmisslyckanden?
+
 env_var=Variabelnamn
 env_def=Standardvärde
 env_over=Värde som gäller över standardvärdet
 env_evar=Variabelnamn får inte innehålla mellanslag
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 securetty_ttys=Säkra TTY:er
 
 shells_shells=Tillåtna användarskal
 
+<<<<<<< HEAD
 =======
 securetty_ttys=Säkra TTY:er
 shells_shells=Tillåtna användarskal
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 tally_deny=Skicka meddelande om misslyckat försök innan åtkomst nekas
 tally_reset=Nollställ felräknaren vid lyckad autentisering
@@ -217,8 +261,12 @@ tally_edeny=Antal misslyckade försök saknas eller är felaktigt angivet
 tally_magic=Ska misslyckade försök räknas även för <tt>root</tt>?
 tally_root=Kan <tt>root</tt>-kontot nekas åtkomst?
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 time_services=Tjänster
 time_ttys=TTY:er
@@ -226,8 +274,12 @@ time_users=Användare
 time_times=Åtkomsttider
 time_info=Alla fält kan innehålla flera värden separerade med |, och man kan använda * som jokertecken och ! som negationstecken.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 group_services=Tjänster
 group_ttys=TTY:er
@@ -236,14 +288,19 @@ group_times=Åtkomsttider
 group_groups=Lägg till grupper
 group_info=Alla fält kan innehålla flera värden separerade med |, och man kan använda * som jokertecken och ! som negationstecken.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 wheel_group=Kontrollera medlemskap i gruppen
 wheel_group_def=Standard (<tt>wheel</tt> eller GID 0)
 wheel_trust=Ska medlemmar i denna grupp släppas igenom utan ytterligare autentisering?
 wheel_deny=Neka medlemmar i denna grupp istället för att släppa fram dem?
 wheel_egroup=Namn på gruppen saknas eller är felaktigt angivet
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 motd_file=Fil som ska visas
@@ -254,6 +311,13 @@ motd_efile=Namn på filen saknas eller är felaktigt angivet
 motd_file=Fil som ska visas
 motd_file_def=Standard (<tt>/etc/motd</tt>)
 motd_efile=Namn på filen saknas eller är felaktigt angivet
+>>>>>>> upstream/master
+=======
+
+motd_file=Fil som ska visas
+motd_file_def=Standard (<tt>/etc/motd</tt>)
+motd_efile=Namn på filen saknas eller är felaktigt angivet
+
 >>>>>>> upstream/master
 mail_nopen=Ska ett meddelande om e-post visas vid inloggning?
 mail_close=Ska ett meddelande om e-post visas vid utloggning?
@@ -262,8 +326,12 @@ mail_noenv=Ska $MAIL-miljövariabeln sättas?
 mail_dir=E-post-spool-katalog
 mail_edir=E-post-spool-katalog saknas eller är felaktigt angiven
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_pam_create=Lade till PAM-tjänsten $1
 log_pam_delete=Tog bort PAM-tjänsten $1

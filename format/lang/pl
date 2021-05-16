@@ -16,10 +16,15 @@ index_free=Wolne
 index_format=Ten dysk jest niesformatowany
 index_return=listy dysków
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> upstream/master
+=======
+
+>>>>>>> upstream/master
 edit_ecannot=Nie masz uprawnień do zmian tego dysku
+
 edit_title=Zmień partycję
 edit_header=Dane partycji
 edit_location=Położenie
@@ -80,6 +85,10 @@ edit_tunedesc5=Nie możesz dostrajać systemu plików na tej partycji, gdyż mo�
 edit_tunedesc3=Nie możesz dostrajać systemu plików na tej partycji, gdyż jest ona aktualnie zamontowana. Odmontuj ją najpierw za pomocą modułu <a href=/mount/>Lokalne i sieciowe systemy plików</a>.
 edit_tunedesc4=Nie możesz dostrajać systemu plików na tej partycji, gdyż nie zawiera ona systemu plików.
 edit_tunedesc5=Nie możesz dostrajać systemu plików na tej partycji, gdyż można dostrajać jedynie systemy plików <tt>UFS</tt>.
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 save_ecannot=Nie masz upranień do zmian tego dysku
 save_edelete=Nie udało się skasować partycji
@@ -90,12 +99,16 @@ save_estartmin=Numer początkowego cylindra musi być > 0
 save_eendmax=Numer końcowego cylindra musi być < $1
 save_estartend=Numer początkowego cylindra musi być mniejszy niź numer końcowego cylindra
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 newfs_title=Utwórz system plików
 newfs_ecannot=Nie masz uprawnień do formatowania tego dysku
 newfs_desc=Naciskając przycisk u&nbsp;dołu tego formularza utworzysz nowy $1 na urządzeniu $2. Wszystkie dane z&nbsp;tej partycji zostaną nieodwracalnie usunięte.
 newfs_warn=Ta partycja jest zamontowa na w&nbsp;$1. Utworzenie nowego systemu plików usunie wszystkie pliki, które były uprzednio dostępne w&nbsp;tym katalogu.
 =======
+=======
+
+>>>>>>> upstream/master
 newfs_title=Utwórz system plików
 newfs_ecannot=Nie masz uprawnień do formatowania tego dysku
 newfs_desc=Naciskając przycisk u dołu tego formularza utworzysz nowy $1 na urządzeniu $2. Wszystkie dane z tej partycji zostaną nieodwracalnie usunięte.
@@ -123,6 +136,7 @@ newfs_exec=Wykonywanie polecenia $1 ..
 newfs_failed=.. polecenie zakończyło się niepowodzeniem!
 newfs_ok=.. zakończone.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 fsck_title=Napraw system plików
 fsck_ecannot=Nie masz uprawnień do naprawy tego dysku
@@ -131,6 +145,9 @@ fsck_mode0=Tylko podaj stan systemu plików.
 fsck_mode1=Sprawdź cały system plików pod kątem błędów, ale nic nie naprawiaj.
 fsck_mode2=Sprawdź i&nbsp;napraw wszystkie znalezione w&nbsp;tym systemie plików błędy.
 =======
+=======
+
+>>>>>>> upstream/master
 fsck_title=Napraw system plików
 fsck_ecannot=Nie masz uprawnień do naprawy tego dysku
 fsck_desc=Naciskajęc przycisk <b>Napraw</b> sprawdzisz i ewentualnie naprawisz $1 na $2. Poziom sprawdzania i naprawy zależy od Twojego wyboru poniżej.
@@ -150,8 +167,12 @@ fsck_39=znaleziono nienaprawialne błędy!
 fsck_40=nie znaleziono błędów
 fsck_unknown=nieznany błąd
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 tunefs_title=Dostrój system plików
 tunefs_ecannot=Nie masz uprawnień do dostrajania systemów plików na tym dysku
@@ -174,8 +195,12 @@ tunefs_exec=Wykonywanie polecenia $1 ..
 tunefs_failed=.. polecenie zakończyło się niepowodzeniem!
 tunefs_ok=.. zakończone.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 select_device=Kontroler SCSI $1 urządzenie $2 podurządzenie $3
 select_idedevice=Urządzenie IDE $1
@@ -187,14 +212,19 @@ emounted=Dysk zawiera podmontowane partycje
 elast=Nie można usunąć ostatniej partycji
 eformat=<tt>format</tt> nie znalazł żadnego dysku!
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 fstype_ufs=Uniksowy system plików Solarisa
 fstype_unknown=Nieznany system plików
 
 acl_disks=Dyski, które ten użytkownik może partycjonować i&nbsp;formatować
 =======
+=======
+
+>>>>>>> upstream/master
 fstype_ufs=Uniksowy system plików Solarisa
 fstype_unknown=Nieznany system plików
+
 acl_disks=Dyski, które ten użytkownik może partycjonować i formatować
 >>>>>>> upstream/master
 acl_dall=Wszystkie dyski

@@ -2,6 +2,7 @@ index_title=Systemtid
 index_timeserver=Tidsserver
 index_zone=Tidszon
 index_tz=Plats
+
 action_save=Spara
 action_apply=Ta i drift
 action_sync=Synkronisera systemtiden med hårdvarutid
@@ -10,8 +11,12 @@ action_timeserver_sys=Synkronisera systemtiden
 action_timeserver_hw=Synkronisera hårdvarutiden
 action_savezone=Ändra tidszon
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 acl_sys=Användaren får ändra systemtiden
 acl_hw=Användaren får ändra hårdvarutiden
@@ -21,19 +26,26 @@ acl_error=Du får komma åt systemtidmodulen, men du får varken ändra systemti
 acl_nosys=Du får inte ändra systemtiden
 acl_nohw=Du får inte ändra hårdvarutiden
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 sys_title=Systemtid
 hw_title=Hårdvarutid
 
+<<<<<<< HEAD
 =======
 sys_title=Systemtid
 hw_title=Hårdvarutid
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 day=Dag
 month=Månad
 date=Datum
 hour=Timme
 year=År
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 error_cnf=Fel: kommando $1 finns inte
@@ -44,6 +56,13 @@ error_sync=Det går inte att synkronisera med systemtiden: $1
 error_cnf=Fel: kommando $1 finns inte
 error_hw=Det går inte att ställa hårdvarutiden: $1
 error_sync=Det går inte att synkronisera med systemtiden: $1
+>>>>>>> upstream/master
+=======
+
+error_cnf=Fel: kommando $1 finns inte
+error_hw=Det går inte att ställa hårdvarutiden: $1
+error_sync=Det går inte att synkronisera med systemtiden: $1
+
 >>>>>>> upstream/master
 log_set_date=Satte systemtiden till $1
 log_set_hwclock=Satte hårdvarutiden till $1

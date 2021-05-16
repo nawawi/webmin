@@ -34,10 +34,13 @@ index_mandesc=Edita directament el fitxer de configuració primari de Procmail p
 index_ecmd=No s'ha trobat al sistema el programa $1 de Procmail. O bé no està instal·lat, o bé la <a href='$2'>configuració del mòdul</a> és incorrecta.
 index_delete=Suprimeix les Accions Seleccionades
 
+<<<<<<< HEAD
 =======
 index_mandesc=Edita directament el fitxer de configuració primari de Procmail per crear les teves pròpies regles, variables i blocs.
 index_ecmd=No s'ha trobat al sistema el programa $1 de Procmail. O bé no està instal·lat, o bé la <a href='$2'>configuració del mòdul</a> és incorrecta.
 index_delete=Suprimeix les Accions Seleccionades
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 edit_title2=Edició d'Acció
 edit_title1=Creació d'Acció
@@ -75,8 +78,12 @@ edit_lock=Fitxer específic
 edit_ctype=Tipus de condició
 edit_cvalue=Expressió regular o ordre
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 save_err=No s'ha pogut desar l'acció
 save_eaction_0=Hi falta el fitxer on afegir
@@ -91,8 +98,12 @@ save_esize=Hi falta la mida del correu de la condició $1
 save_ere=Hi falta l'expressió regular de la condició $1
 save_eshell=Hi falta l'ordre de la condició $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 env_title1=Creació de Variable
 env_title2=Edició de Variable
@@ -102,8 +113,12 @@ env_value=Valor
 env_err=No s'ha pogut desar la variable
 env_ename=Hi falta el nom de la variable o bé és invàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 inc_title1=Addició de Fitxer d'Inclusió
 inc_title2=Edició de Fitxer d'Inclusió
@@ -111,15 +126,22 @@ inc_header=Fitxer de regles procmail inclòs
 inc_inc=Fitxer inclòs
 inc_einc=No has introduït cap fitxer d'inclusió
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 config_eline=Línia $1 desconeguda a $2: $3
 
 =======
 config_eline=Línia $1 desconeguda a $2: $3
 >>>>>>> upstream/master
+=======
+
+config_eline=Línia $1 desconeguda a $2: $3
+
+>>>>>>> upstream/master
 manual_title=Edició de la Configuració
 manual_desc=Aquesta pàgina es pot utilitzar per editar manualment el fitxer $1 de configuració de Procmail. Ves amb compte, no es farà cap verificació de sintaxi.
 manual_edata=El teu navegador no ha subministrat cap dada!
+
 log_create_rec=S'ha creat una recepta a $1
 log_delete_rec=S'ha suprimit una recepta a $1
 log_modify_rec=S'ha modificat una recepta a $1
@@ -140,11 +162,16 @@ log_manual=S'ha editat manualment la configuració
 log_up=S'ha desplaçat una entrada cap amunt
 log_down=S'ha desplaçat una entrada cap avall
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> upstream/master
+=======
+
+>>>>>>> upstream/master
 delete_err=No s'han pogut suprimir les accions
 delete_enone=No has seleccionat cap acció
+
 check_epostfix=Procmail no està activat a la configuració de Postfix. EL fitxer de configuració <tt>$2</tt> ha de tenir l'opció <tt>$1</tt> posada a <tt>$3</tt>.
 check_esendmail=Sendmail no està configurat per utilitzar Procmail per al lliurament local. Això es pot configurar al mòdul del <a href='$1'>Servidor de Correu Sendmail</a> de Webmin.
 <<<<<<< HEAD

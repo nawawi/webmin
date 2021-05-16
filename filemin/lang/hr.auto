@@ -124,7 +124,7 @@ http_downloading=preuzimanje
 http_done=Preuzeto $1 do $2.
 uploading=Prijenos, pričekajte. ..
 acl_allowed_paths=Dopusti pristup direktorijima
-acl_allowed_paths2=(Za korisnike koji nisu korijeni)
+acl_allowed_paths_explain=Za korisnike s root sposobnošću, ako je dopušteni direktorij postavljen samo na $HOME, bit će ekvivalentan / (puni pristup disku)
 acl_allowed_for_edit=Mimetipi dopušteni za uređivanje pomoću uređenog uređivača
 acl_work_as=Pristupite datotekama kao Unix korisnik
 acl_root=Korijen (dajte pažljivo korisnicima bez povjerenja!)
@@ -155,8 +155,13 @@ menu_bookmarks=Oznake
 notallowed=Nije vam dopušten pristup $1. Dopušteni direktoriji su : $2 
 error_upload_emax=Prenesena datoteka veća je od granice od $1 
 extract_etype=Nepodržana vrsta datoteke arhiva
+
 info_total1=Ukupno: $1 datoteka i $2 direktorij
 info_total2=Ukupno: $1 datoteka i $2 direktorij
 info_total3=Ukupno: $1 datoteka i $2 direktorije
 info_total4=Ukupno: $1 datoteka i $2 direktorije
+
 ownership=Vlasnik
+acls=Popis kontrole pristupa
+file_detect_encoding=Automatski otkrij kodiranje datoteka
+index_return=popis datoteka

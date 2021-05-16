@@ -4,15 +4,20 @@ index_add=Lägg till RAID-disk på nivå:
 index_return=RAID-diskar
 index_emdstat=RAID-statusfilen $1 finns inte på ditt system. Din kärna stödjer förmodligen inte RAID.
 <<<<<<< HEAD
+<<<<<<< HEAD
 index_emkraid=RAID-verktygspaketet har inte installerats på ditt system.
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 linear=Sammanfogad (linjärt)
 raid0=Striped (RAID0)
 raid1=Speglad (RAID1)
 raid4=Paritet (RAID4)
 raid5=Redundant (RAID5)
+
 create_title=Skapa RAID-disk
 create_header=Inställningar för RAID-disk
 create_device=Diskfil
@@ -33,8 +38,12 @@ create_edisks2=Minst 2 partitioner måste anges för spegling
 create_espare=Reservpartition $1 får inte vara en RAID-partition också
 create_epdisk=Paritetspartitionen får inte vara en RAID-partition också
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 view_title=RAID-disk
 view_header=Inställningar för RAID-disk
@@ -56,6 +65,9 @@ view_resync=Andel resync utförd
 view_down=(Nere)
 view_cannot=Denna RAID-disk kan inte ändras eftersom den är monterad.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 mkfs_title=Skapa filsystem
 mkfs_header=I detta formulär kan du bygga upp ett nytt EXT2-filsystem för Linux på $1. <b>Alla</b> existerande data kommer att raderas!
@@ -68,16 +80,24 @@ mkfs_exec=Utför kommando $1 ...
 mkfs_failed=... kommandot gick inte att utföra.
 mkfs_ok=... kommandot utfört.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 emkraid=<tt>mkraid</tt> misslyckades: $1
 eraidstop=<tt>raidstop</tt> misslyckades: $1
 eraidstart=<tt>raidstart</tt> misslyckades: $1
 eforce=Du måste tvinga fram initialisering av denna RAID-disk: $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_create=Lade till $1 raid-disk $2
 log_stop=Deaktiverade raid-disk $1

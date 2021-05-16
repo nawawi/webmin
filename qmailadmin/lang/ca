@@ -7,8 +7,12 @@ index_stopmsg=Fes clic sobre aquest botó per aturar els processos QMail en sego
 index_start=Inicia els processos QMail
 index_startmsg=Fes clic sobre aquest boto per iniciar els processos QMail en segon pla responsables del lliurament del correu en cua. Sense aquest processos, no s'enviarà ni es rebrà correu apropiadament.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 opts_title=Opcions de QMail
 opts_me=Nom de host local
@@ -29,8 +33,12 @@ opts_ebytes=Mida màxima de missatge invàlida
 opts_etimeout=Temps límit d'espera de dades SMTP entrants invàlid
 opts_elocalip=Nom de host per a l'adreça IP local invàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 aliases_title=Àlies de Correu
 aliases_addr=Adreça
@@ -47,8 +55,12 @@ aliases_toomany=Hi ha massa àlies de correu al teu sistema com per mostrar-los 
 aliases_go=Busca els àlies que coincideixin amb:
 aliases_delete=Suprimeix els Àlies Seleccionats
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 aform_type0=Cap
 aform_type1=Adreça de correu
@@ -65,8 +77,12 @@ aform_afile=Edita...
 aform_novirt=&lt;Tots els dominis&gt;
 aform_return=a l'àlies
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 asave_err=No s'ha pogut desar l'àlies
 asave_eaddr='$1' no és una adreça vàlida
@@ -79,16 +95,22 @@ asave_etype5=El fitxer d'autoresposta '$1' no és vàlid
 asave_etype4none=No has donat cap programa
 asave_etype6=El fitxer de filtre '$1' no és vàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> upstream/master
+=======
+
+>>>>>>> upstream/master
 adelete_err=No s'han pogut suprimir els àlies
 adelete_enone=No n'hi ha cap de seleccionat
+
 locals_title=Dominis Locals
 locals_domains=Dominis locals d'aquest servidor
 locals_desc=Qmail acceptarà retrametre o lliurar localment correu només als dominis de correu i noms de hosts llistats a la caixa de l'esquerra. Si vols que el servidor de correu gestioni dominis de correu múltiples, cal que estiguin tots llistats en aquest formulari.
 locals_only=Només el nom de host local $1
 locals_sel=Els dominis llistats...
+
 rcpts_title=Dominis Acceptats
 rcpts_domains=Dominis locals i de reemissió acceptats
 rcpts_all=Qualsevol domini
@@ -97,15 +119,21 @@ rcpts_desc=Qmail acceptarà retrametre o lliurar localment correu només als dom
 rcpts_domains2=Dominis locals i de reemissió addicionals
 rcpts_desc2=Si tens un nombre gran de dominis acceptats, hauries d'introduir en aquesta caixa els que s'utilitzin amb menys freqüència. En general, els teus primers 50 dominis permesos s'haurien d'introduir a la caixa de text superior,  la resta en aquesta altra.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 bads_title=Adreces Rebutjades
 bads_addresses=Adreces de correu rebutjades
 bads_desc=Qmail rebutjarà retrametre o lliurar localment correu des dels dominis de correu i noms de hosts llistats a la caixa de l'esquerra, que s'han d'introduir com <tt>usuari@nomdedomini</tt>. Si vols rebutjar el correu des de tot un domini, cal introduir-lo com a <tt>@nomdedomini</tt>.
 
+<<<<<<< HEAD
 =======
 bads_title=Adreces Rebutjades
 bads_addresses=Adreces de correu rebutjades
 bads_desc=Qmail rebutjarà retrametre o lliurar localment correu des dels dominis de correu i noms de hosts llistats a la caixa de l'esquerra, que s'han d'introduir com <tt>usuari@nomdedomini</tt>. Si vols rebutjar el correu des de tot un domini, cal introduir-lo com a <tt>@nomdedomini</tt>.
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 routes_title=Rutes de Dominis
 routes_toomany=Hi ha massa rutes de dominis al sistema com per poder-les mostraren aquesta pàgina.
@@ -116,26 +144,37 @@ routes_direct=Lliura directament
 routes_defroute=Lliura tota la resta de correu a través de: 
 routes_return=a les rutes de dominis
 routes_delete=Suprimeix les Rutes de Dominis Seleccionades
+
 rform_edit=Edita la Ruta de Domini
 rform_create=Creat la Ruta de Domini
 rform_from=Correu del host o domini
 rform_to=Envia a través del servidor SMTP
 rform_port=Port SMTP
+
 rsave_err=No s'ha pogut desar la ruta de domini
 rsave_efrom='$1' no és un nom de domini vàlid
 rsave_eto='$1' no és un servidor SMTP vàlid
 rsave_eport='$1' no és un número de port vàlid
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> upstream/master
+=======
+
+>>>>>>> upstream/master
 rdelete_err=No s'han pogut suprimir les rutes de dominis
+
 percents_title=Dominis d'Adreces %
 percents_domains=Dominis que suporten adreces %
 percents_desc=QMail acceptarà correu amb adreces amb format <tt>usuari%primerdomini@segondomini</tt> si <tt>segondomini</tt> està llistat al la caixa de l'esquerra. Llavors, els missatges amb aquest format seran reenviats a <tt>usuari@primerdomini</tt> per aquest servidor de corre.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 virts_title=Mapejats Virtuals
 virts_toomany=Hi ha massa mapejats virtuals al sistema com per mostrar-los tots em aquesta pàgina.
@@ -147,6 +186,7 @@ virts_none=No virtual
 virts_desc=QMail utilitza els mapejats virtuals per gestionar el correu per a diferents dominis dins del servidor, prefixant el text de l'adreça de correu de la part de l'usuari abans de cap altre procés. Pots utilitzar-los per establir dominis de correu virtuals, creant un mapejat nou per a un domini i utilitzant llavors la pàgina d'<a href='$1'>Àlies de Correu</a> per crear àlies en aquest domini.
 virts_return=als mapejats virtuals
 virts_delete=Suprimeix els Mapejats Virtuals Seleccionats
+
 vform_edit=Edita Mapejat Virtual
 vform_create=Creat Mapejat Virtual
 vform_from=Correu per a l'adreça
@@ -158,8 +198,12 @@ vform_none=Res
 vform_prepend=Prefix especificat
 vform_auto=Prefix triat automàticament
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 vsave_err=No s'ha pogut desar el mapejat virtual
 vsave_edomain='$1' no és un domini de correu vàlid
@@ -167,14 +211,23 @@ vsave_euser='$1' no és un nom d'usuari de correu vàlid
 vsave_eprepend='$1' no és un prefix de mapejat vàlid
 vsave_eboth=No pots seleccionar 'Qualsevol adreça que no coincideixi amb cap altre mapejat virtual' i 'Res' alhora
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 vdelete_err=No s'han pogut suprimir els mapejats virtuals
 
 stop_err=El procés qmail-send ja no està en execució
 
 =======
+=======
+
+>>>>>>> upstream/master
 vdelete_err=No s'han pogut suprimir els mapejats virtuals
+
 stop_err=El procés qmail-send ja no està en execució
+<<<<<<< HEAD
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_stop=Processos QMail aturats
 log_start=Processos QMail iniciats
@@ -207,8 +260,12 @@ log_delmail=S'han suprimit $1 missatges de $2
 log_movemail=S'han desplaçat $1 missatges de $2 a $3
 log_send=S'ha enviat correu a $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 rfile_title=Edició del Fitxer d'Autoresposta
 rfile_desc=Utilitza l'àrea de text de sota per editar el missatge d'autoresposta de $1. El missatge pot contenir les macros $SUBJECT, $FROM, $TO, $DATE i $BODY, que s'expandiran quan s'activi l'autoresposta.
@@ -229,8 +286,12 @@ rfile_auto=Automàtica (basada en l'adreça del destinatari)
 rfile_efrom=Hi falta l'adreça From:
 rfile_fromdesc=S'ha d'especificar l'adreça From: sempre que sigui possible, ja que el mètode automàtic pot no ser fiable.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 ffile_title=Edició del Fitxer de Filtre
 ffile_desc=Utilitza el formulari de sota per configurar les regles de filtratge del fitxer al fitxer $1.
@@ -248,8 +309,12 @@ ffile_err=No s'ha pogut desar el fitxer de filtre
 ffile_ematch=Hi falta el patró
 ffile_eaction=Hi falta l'adreça de redirecció
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 queue_title=Cua de Correu
 queue_count=$1 missatges
@@ -267,13 +332,18 @@ queue_invert=Inverteix la selecció
 queue_refresh=Refresca la Cua de Correu
 queue_refreshdesc=Recarrega aquesta pàgina per mostrar l'estat actual de la cua de correu.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 qview_title=Missatge en Cua
 qview_desc=Del fitxer $1
 qview_headers=Capçaleres de correu
 qview_attach=Adjuncions
+
 assigns_title=Assignacions d'Usuari de Correu
 assigns_return=a les assignacions d'usuari de correu
 assigns_toomany=Hi ha massa usuaris de correu al sistema com per mostrar-los en aquesta pàgina.
@@ -285,6 +355,7 @@ assigns_gid=GID
 assigns_home=Directori arrel
 assigns_desc=Les assignacions d'usuaris de correu permeten crear bústies per als usuaris que no estan definits a la llista d'usuaris de Unix. Cada assignació lliurarà el correu d'un usuari o un patró d'usuaris triat, com si s'estigués lliurant a la bústia d'un usuari real de Unix.
 assigns_delete=Suprimeix els Usuaris de Correu Seleccionats
+
 sform_edit=Edita usuari de correu
 sform_create=Crea usuari de correu
 sform_address=Nom d'usuari de l'adreça
@@ -294,6 +365,7 @@ sform_user=Usuari Unix
 sform_uid=UID
 sform_gid=GID
 sform_home=Directori arrel
+
 ssave_err=No s'ha pogut desar l'usuari de correu
 ssave_eaddress=Hi falta el nom d'usuari de l'adreça o bé és invàlid
 ssave_euser=Hi falta l'usuari Unix o bé és invàlid
@@ -301,15 +373,24 @@ ssave_euid=Hi falta l'UID o bé és invàlid
 ssave_egid=Hi falta el GID o bé és invàlid
 ssave_ehome=Hi falta el directori arrel o bé és invàlid
 <<<<<<< HEAD
-
-=======
->>>>>>> upstream/master
-sdelete_err=No s'han pogut suprimir els usuaris de correu
-delete_egone=El missatge en cua ja no existeix
-delete_ebogus=Nom de fitxer de cua invàlid
 <<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
+>>>>>>> upstream/master
+sdelete_err=No s'han pogut suprimir els usuaris de correu
+
+delete_egone=El missatge en cua ja no existeix
+delete_ebogus=Nom de fitxer de cua invàlid
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 boxes_title=Bústies d'Usuari
 boxes_user=Usuari
@@ -320,6 +401,7 @@ boxes_sent=Correu enviat
 boxes_ecannot=No tens permís per llegir correu
 boxes_toomany=Hi ha massa usuaris al sistema per llistar-ne totes les bústies.
 boxes_go=Veure el correu de l'usuari:
+
 mail_title=Correu d'Usuari
 mail_from=De
 mail_date=Data
@@ -358,6 +440,7 @@ mail_forward=Reenviat
 mail_rfc=De la línia
 mail_move=Desplaça a:
 mail_eexists=El missatge ja no existeix!
+
 view_title=Lectura de Correu
 view_desc=Missatge $1 a $2
 view_desc2=Missatge $1 per a l'usuari $2
@@ -382,8 +465,12 @@ view_mark2=Especial
 view_return=al correu original
 view_sub=Correu adjuntat
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 compose_title=Redacció de Correu
 reply_title=Resposta de Correu
@@ -396,8 +483,12 @@ reply_attach2=Adjuncions de la part del servidor i del client
 reply_send=Envia el Correu
 reply_ecannot=No tens permís per enviar correu com a aquest usuari
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 send_err=No s'ha pogut enviar el correu
 send_eto=Hi falta l'adreça del destinatari
@@ -412,8 +503,12 @@ send_eperms=L'usuari $1 no pot llegir $2
 send_eperms2=No tens permís per enviar el fitxer $1
 send_epath=L'executable $1 de sendmail no existeix.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 delete_title=Supressió de Correu
 delete_rusure=Segur que vols suprimir els $1 missatges seleccionats de $2? Això pot trigar una mica si el fitxer de correu és gran. Fins que no s'hagi acabat d'esborrar, convé no executar cap altra acció.
@@ -424,8 +519,12 @@ delete_enone=No has seleccionat cap correu per suprimir
 delete_emnone=No has seleccionat cap correu per marcar
 delete_nobutton=No has fet clic a cap botó
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 search_title=Resultats de la Cerca
 search_ecannot=No tens permís per buscar dins del correu d'aquest usuari
@@ -434,6 +533,7 @@ search_efield=Has de seleccionar un tipus de recerca.
 search_none=No s'ha trobat cap missatge
 search_results2=$1 missatges de correu que coincideixen amb $2...
 search_results3=$1 missatges de correu que no coincideixen amb $2...
+
 match_from=De: coincideix
 match_subject=Assumpte: coincideix
 match_to=A: coincideix
@@ -452,8 +552,12 @@ match_!body=El cos no coincideix
 match_!size=La mida és més petita de
 match_!headers=Les capçaleres no coincideixen
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 delq_titles=Supressió de Missatges
 delq_rusure=Segur que vols suprimir els $1 missatges en cua seleccionats?

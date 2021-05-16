@@ -9,8 +9,12 @@ index_applymsg=Bu düğmeyi tıklayarak mevcut dosya bağlantı ayarlarını uyg
 index_return=bağlantılar listesi
 index_eprog=NFS sunucusu çalıştrılabilir dosyası bulunamadı. NFS paketi yüklenmemiş olabilir
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_title=Bağlantıyı Değiştir
 create_title=Bağlantı Oluştur
@@ -41,8 +45,12 @@ edit_anonuid=Onaylanmamış kullanıcıları araştır
 edit_default=Öntanımlı
 edit_anongid=Onaylanmamış grupları araştır
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 save_err=Bağlantının kaydedilmesinde hata oluştu
 save_edir='$1' dizini mevcut değil
@@ -53,8 +61,12 @@ save_ehost='$1' geçerli bir makşne adı değil
 save_euids=Sayı ya da alan listesinin virgülle ayrılmış olan UID'leri onaylanmaz
 save_egids=Sayy ya da alan listesinin virgülle ayrylmyş olan GID'leri onaylanmaz
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_modify=NFS sunumu $1 değiştirildi
 log_modify_l=$2'de NFS sunumu $1 değiştirildi

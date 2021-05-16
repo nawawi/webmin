@@ -546,6 +546,13 @@ elsif ($init_mode eq "systemd") {
 		# Exists .. but is it started at boot?
 		return lc($1) eq 'enabled' || lc($1) eq 'static' ? 2 : 1;
 		}
+	else {
+		my $out = &backquote_command("systemctl is-enabled ".
+					quotemeta($unit)." 2>&1");
+		$out = &trim($out);
+		return 2 if ($out eq "enabled");
+		return 1 if ($out eq "disabled");
+		}
 	}
 if ($init_mode eq "init" || $init_mode eq "upstart" ||
     $init_mode eq "systemd") {
@@ -2077,7 +2084,7 @@ sub list_systemd_services
 {
 # Get all systemd unit names
 my $out = &backquote_command("systemctl list-units --full --all -t service --no-legend");
-&error("Failed to list systemd units : $out") if ($?);
+my $ex = $?;
 foreach my $l (split(/\r?\n/, $out)) {
 	$l =~ s/^[^a-z0-9\-\_\.]+//i;
 	my ($unit, $loaded, $active, $sub, $desc) = split(/\s+/, $l, 5);
@@ -2088,6 +2095,7 @@ foreach my $l (split(/\r?\n/, $out)) {
 		push(@units, $unit);
 		}
 	}
+&error("Failed to list systemd units : $out") if ($ex && @units < 10);
 
 # Also find unit files for units that may be disabled at boot and not running,
 # and so don't show up in systemctl list-units

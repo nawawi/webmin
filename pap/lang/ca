@@ -14,13 +14,18 @@ index_apply=Aplica
 index_return=a l'índex
 index_none=No tens accés a cap de les característiques d'aquest mòdul.
 index_delete=Suprimeix els Comptes Seleccionats
+
 secrets_title=Comptes PPP
 secrets_return=a l'índex
 secrets_none=Encara no s'ha creat cap compte PPP
 secrets_ecannot=No tens permís per editar comptes PPP
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_secret_etitle=Edició de Compte PPP
 edit_secret_ctitle=Creació de Compte PPP
@@ -41,11 +46,16 @@ edit_secret_alist=Permet les llistades...
 edit_secret_save=Desa
 edit_secret_del=Suprimeix
 edit_secret_return=a la llista de comptes
+
 save_secret_esave=No s'ha pogut desar el compte
 save_secret_enoip='$1' no es una adreça vàlida
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 log_create=He creat el compte PPP $1
 log_modify=He modificat el compte PPP $1
@@ -63,8 +73,12 @@ log_mgetty_create=He creat el port sèrie $1
 log_mgetty_modify=He modificat port sèrie $1
 log_mgetty_delete=He suprimit el port sèrie $1
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 options_title=Opcions PPP
 options_serial=Del port sèrie $1
@@ -97,8 +111,12 @@ options_idle_def=Mai
 options_eidle=Hi falta el temps límit o bé és invàlid
 options_ecannot=No tens permís per editar les opcions PPP
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 mgetty_title=Configuració dels Ports Sèrie
 mgetty_ecmd=No s'ha trobat al sistema l'ordre $1. Aquest programa és necessari per a manipular les entrades per ports sèrie a través de mòdem o d'una connexió directa.
@@ -142,8 +160,12 @@ mgetty_applydesc=Fes clic sobre aquest botó per aplicar la configuració actual
 mgetty_applyerr=No s'ha pogut aplicar la configuració
 mgetty_ecannot=No tens permís per editar les configuracions dels ports sèrie
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 dialin_title=Accés de l'ID de Trucada
 dialin_desc=Aquesta pàgina permet configurar Mgetty per permetre o denegar l'accés de trucades entrants basant-se en el número de telèfon que truca. Quan entra una trucada, la primera entrada de la llista que coincideixi amb el número de telèfon determinarà si la trucada s'accepta o no.
@@ -166,6 +188,9 @@ dialin_err=No s'ha pogut desar el número d'ID de trucada
 dialin_enumber=Hi falta el número de telèfon o bé és incorrecte
 dialin_ecannot=No tens permís per editar l'ID d'accés de trucada
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 acl_pages=Pàgines disponibles
 acl_direct=Ves directament a una pàgina
@@ -173,11 +198,14 @@ acl_direct=Ves directament a una pàgina
 sync_ecannot=No tens permís per editar les opcions de sincronització Unix-ppp
 sync_title=Sincronització d'Usuaris
 
+<<<<<<< HEAD
 =======
 acl_pages=Pàgines disponibles
 acl_direct=Ves directament a una pàgina
 sync_ecannot=No tens permís per editar les opcions de sincronització Unix-ppp
 sync_title=Sincronització d'Usuaris
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 delete_err=No s'han pogut suprimir els comptes
 delete_enone=No has seleccionat cap compte

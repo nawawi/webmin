@@ -30,8 +30,12 @@ index_other_kde=Documentación de KDE
 index_and=Que coincidan todas
 index_or=Que coincidan con cualquiera
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 search_efor=No se ha digitado página de manual a buscar
 search_title=Resultados de la Búsqueda
@@ -49,6 +53,9 @@ search_none=No se ha hallado documentación que coincida con $1.
 search_for=Para $1
 search_google=Resultado de búsqueda en Google
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> upstream/master
 
 howto_title=Documento COMO-HACER (HOWTO)
 howto_header=Archivo $1 de documento de COMO-HACER (HOWTO)

@@ -30,8 +30,11 @@ index_tabsuggest=Mòduls suggerits
 index_allmods=Mòduls que falten utilitzats per Webmin
 index_wantmods=Mòduls a instal·lar
 
+<<<<<<< HEAD
 =======
 index_wantmods=Mòduls a instal·lar
+>>>>>>> upstream/master
+=======
 >>>>>>> upstream/master
 download_err=No s'ha pogut instal·lar el mòdul
 download_elocal=No s'ha donat cap fitxer local
@@ -77,8 +80,12 @@ download_yum=S'està instal·lant el mòdul Perl $1 del paquet $2...
 download_missingok=Mòduls que falten de CPAN
 download_fallback=No s'han pogut instal·lar alguns mòduls a partir dels paquets, es provarà la instal·lació a partir dels fonts...
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 install_title=Instal·lació de Mòdul
 install_untar=S'està desempaquetant el fitxer del mòdul
@@ -100,8 +107,12 @@ install_exec=S'està executant $1...
 install_efile=El fitxer $1 del mòdul ja no existeix
 install_needunlink=Pots provar de fer un altre cop la instal·lació tornant enrere a la pàgina anterior i seleccionant opcions diferents. Altrament, <a href='$1'>fes clic aquí per suprimir els fitxers temporals del paquet</a> per tal d'estalviar espai al disc.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 cpan_sel=Mòduls de $1 ..
 cpan_title=Selecció de mòdul Perl
@@ -109,8 +120,12 @@ cpan_search=Busca mòduls anomenats
 cpan_match=Mòduls que coincideixen amb $1...
 cpan_none=No s'ha trobat cap coincidència.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 edit_title=Detalls del Mòdul
 edit_header=Informació del mòdul
@@ -129,8 +144,12 @@ edit_rpm=Paquet RPM $1
 edit_debian=Paquet Debian $1
 edit_manual=Instal·lació manual de mòdul Perl
 <<<<<<< HEAD
+<<<<<<< HEAD
  
 =======
+>>>>>>> upstream/master
+=======
+
 >>>>>>> upstream/master
 uninstall_title=Desinstal·la el Mòdul
 uninstall_rusure=Segur que vols desinstal·lar el mòdul Perl $1? S'esborraran els següents fitxers:
@@ -140,11 +159,17 @@ uninstall_rpm=El mòdul s'eliminarà desinstal·lant el paquet RPM $1.
 uninstall_debian=El mòdul s'eliminarà desinstal·lant el paquet Debian $1.
 uninstall_err=No s'ha pogut desintal·lar el mòdul
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 delete_efile=Fitxer de paquet invàlid!
 
 =======
 delete_efile=Fitxer de paquet invàlid!
+>>>>>>> upstream/master
+=======
+
+delete_efile=Fitxer de paquet invàlid!
+
 >>>>>>> upstream/master
 uninstalls_title=Desinstal·lació de Mòduls
 uninstalls_err=No s'han pogut desinstal·lar els mòduls
